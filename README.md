@@ -44,6 +44,18 @@ Console.WriteLine("Inserted one record into pos/item table.");
 
 ---
 
+## 📦 Dependencies
+
+- **iText 7** – Used for PDF generation and document handling.
+  Install from NuGet:
+  ```bash
+  dotnet add package itext7
+  ```
+- **.NET Runtime 6 or later** – required to build and run the engine.
+- No other external dependencies — the engine is fully self-contained.
+
+---
+
 ## 🏗️ Build
 
 ```bash
