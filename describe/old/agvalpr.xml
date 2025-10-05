@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agvalpr" System="old" ModifyStamp="0">
+      <Field Size="4" Type="2" name="vp_price" Caption="Price"/>
+      <Field Size="30" name="vp_name" Caption="Name"/>
+      <Field Size="1" name="vp_conf" Caption="Confirm?"/>
+      <Field Size="1" name="vp_charge" Caption="Charge?"/>
+      <Field Size="4" Type="8" name="vp_value" Caption="VALUE"/>
+      <Field Size="64" Type="1" name="vp_future" Caption="Future"/>
+      <Index name="agvalpr">
+         <IndexEntry name="vp_price"/>
+      </Index>
+   </Table>
+</xml>

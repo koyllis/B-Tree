@@ -1,0 +1,12 @@
+<xml>
+   <Table name="agcualt" System="old" ModifyStamp="0" >
+      <Field Caption="NUMBER" Size="2" Type="2" name="al_cuno"/>
+      <Field Caption="LOC" Size="1" Type="2" name="al_loc"/>
+      <Field Caption="CODE" Size="8" name="al_code"/>
+      <Field Caption="ACCOUNT" Size="6" name="al_account"/>
+      <Index name="agcualt">
+         <IndexEntry name="al_cuno"/>
+         <IndexEntry name="al_loc"/>
+      </Index>
+   </Table>
+</xml>

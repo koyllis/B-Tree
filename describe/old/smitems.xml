@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="smitems" System="old" ModifyStamp="0">
+      <Field Caption="Item" Size="12" name="si_item"/>
+      <Field Caption="Stock items" Size="12" name="si_stock"/>
+      <Field Caption="Ovwrwrite (0/1/2)?" Format="#" Size="1" Type="2" name="si_over"/>
+      <Field Caption="Offer (0/1)?" Format="#" Size="1" Type="2" name="si_offer"/>
+      <Field Caption="Return (0/1)?" Format="#" Size="1" Type="2" name="si_return"/>
+      <Field Caption="Nostock (0/1)?" Format="#" Size="1" Type="2" name="si_nostock"/>
+      <Field Caption="Disc(%)" Format="###" Size="8" Type="3" name="si_disc"/>
+      <Field Caption="Profit(%)" Format="###" Size="8" Type="3" name="si_profit"/>
+      <Field Caption="Weight?" Size="1" name="si_weight"/>
+      <Field Caption="Extra" Format="###.##" Size="8" Type="3" name="si_extra"/>
+      <Field Caption="Special" Format="###.###" Size="8" Type="3" name="si_special"/>
+      <Field Caption="Coupon(%)" Format="##.##" Size="8" Type="3" name="si_coupon"/>
+      <Field Caption="Link" Format="###.##" Size="8" Type="3" name="si_link"/>
+      <Field Caption="Access (0/1)?" Format="#" Size="1" Type="2" name="si_access"/>
+      <Field Caption="From date" Size="4" Type="5" name="si_frdate"/>
+      <Field Caption="From date" Size="4" Type="5" name="si_todate"/>
+      <Field Caption="Free (0/1)?" Format="#" Size="1" Type="2" name="si_free"/>
+      <Field Caption="Gift (0/1)?" Format="#" Size="1" Type="2" name="si_gift"/>
+      <Field Caption="Future" Size="21" name="si_future"/>
+      <Index name="smitems">
+         <IndexEntry name="si_item"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Tank Relations" System="pos">
+      <Field Size="4" Type="2" File="pos.tanktrans" name="tanktrans" Caption="Tank movement"/>
+      <Field Size="4" Type="2" File="pos.paralavi" name="paralavi" Caption="Collection"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="tankparalavi">
+         <IndexEntry name="tanktrans"/>
+         <IndexEntry name="paralavi"/>
+      </Index>
+      <Index name="tankparalavi[paralavi]">
+         <IndexEntry name="paralavi"/>
+         <IndexEntry name="tanktrans"/>
+      </Index>
+   </Table>
+</xml>

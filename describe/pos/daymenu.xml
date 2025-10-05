@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="daymenu" System="pos">
+      <Field Size="2" Type="2" File="pos.division" name="division" Caption="Division"/>
+      <Field Size="1" Format="b" Type="2" name="week" Caption="Even week"/>
+      <Field Size="1" Options="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" Type="2" name="day" Caption="Day"/>
+      <Field Size="2" Type="2" File="system.user" name="user" Caption="User"/>
+      <Field Size="1" Type="2" File="pos.menu" name="menu" Caption="Menu"/>
+      <Field Size="2" Type="5" name="frtime" Caption="From Time"/>
+      <Field Size="2" Type="5" name="totime" Caption="To Time"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="daymenu">
+         <IndexEntry name="division"/>
+         <IndexEntry name="week"/>
+         <IndexEntry name="day"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="daymenu[menu]">
+         <IndexEntry name="menu"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="week"/>
+         <IndexEntry name="day"/>
+      </Index>
+      <Index name="daymenu[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="week"/>
+         <IndexEntry name="day"/>
+      </Index>
+   </Table>
+</xml>

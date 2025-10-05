@@ -1,0 +1,17 @@
+<xml>
+   <Table System="old" name="stroute" ModifyStamp="0">
+      <Field Caption="Agent" Format="u" Size="8" name="ro_agent"/>
+      <Field Caption="Week (1-4)" Format="#" Size="1" Options="0-4" Type="2" name="ro_week"/>
+      <Field Caption="Day (1-7)" Format="#" Size="1" Options=",,1-7" Type="2" name="ro_day"/>
+      <Field Caption="Serial" Format="###" Size="2" Type="2" name="ro_serial"/>
+      <Field Caption="Customer" Format="u" Size="8" name="ro_code"/>
+      <Field Caption="Movement" Format="u" Size="8" name="ro_move"/>
+      <Field Caption="Weekly/Bi-weekly/Monthly" Format="u" Size="1" Options="W,B,M" name="ro_wbm"/>
+      <Index name="stroute">
+         <IndexEntry name="ro_agent"/>
+         <IndexEntry name="ro_week"/>
+         <IndexEntry name="ro_day"/>
+         <IndexEntry name="ro_serial"/>
+      </Index>
+   </Table>
+</xml>

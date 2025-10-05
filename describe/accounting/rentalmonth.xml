@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="accounting" SoftDelete="1" CanDelete="0" name="Monthly Rentals">
+      <Field Caption="Rental" File="accounting.rental" Size="4" Type="2" Force="1" name="rental"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Reference" Size="4" Auto="1" Type="2" AutoCounter="1" name="reference"/>
+      <Field Caption="Amount" Format="#####.##" Size="4" Type="4" Force="1" name="amount"/>
+      <Field Caption="Transaction" Strict="1" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      
+      <Index name="rentalmonth">
+         <IndexEntry name="rental"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      
+   </Table>
+</xml>

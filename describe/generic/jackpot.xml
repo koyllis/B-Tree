@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="generic" name="jackpot" CreateStamp="1">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Time" Size="2" Type="5" name="time"/>
+      <Field Caption="Reference" Size="8" Type="2" name="reference"/>
+      <Field Caption="Gift" File="generic.jackpot_gift" Size="2" Type="2" name="gift"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Created" Strict="1" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="jackpot">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="jackpot[gift]">
+         <IndexEntry name="gift"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="jackpot_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+   </Table>
+</xml>

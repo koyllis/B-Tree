@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="rewaitr" System="old">
+      <Field Size="3" Format="u" name="rw_waiter" Caption="Employee"/>
+      <Field Size="1" Format="0" Type="2" name="rw_loc" Caption="Loc."/>
+      <Field Size="20" Format="u" name="rw_name"/>
+      <Field Size="20" Format="u" name="rw_phone" Caption="Telephones"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="rw_birth" Caption="Birth date"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="rw_start" Caption="Employeed on"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="rw_date" Caption="Terminated on"/>
+      <Field Size="8" name="rw_si" Caption="S.I. No."/>
+      <Field Size="8" name="rw_id" Caption="I.C. No."/>
+      <Field Size="20" Format="u" name="rw_notes" Caption="Notes"/>
+      <Field Size="1" Format="##" Type="2" name="rw_dptno" Caption="Dep. No."/>
+      <Field Size="4" Format="0" Type="2" name="rw_number" Caption="Emp. No."/>
+      <Field Size="8" Format="####.####" Type="3" name="rw_hrate" Caption="Hourly rate"/>
+      <Field Size="4" Format="###,###.##" Type="4" name="rw_mrate" Caption="Monthly salary"/>
+      <Field Size="1" Format="##" Type="2" name="rw_leave" Caption="Annual leave (days)"/>
+      <Field Size="1" Options=",,F,P" Format="u" name="rw_part" Caption="Full-time/Part-time(F) (F/P)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="rw_io" Caption="Dine-in waiter(N) (Y/N)?"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="rw_transfer" Caption="Transfer date"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="rw_season" Caption="Seasonal term."/>
+      <Field Size="8" name="rw_pass" Caption="Password"/>
+      <Index name="rewaitr">
+         <IndexEntry name="rw_waiter"/>
+         <IndexEntry name="rw_loc"/>
+      </Index>
+   </Table>
+</xml>

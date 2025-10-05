@@ -1,0 +1,34 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="calc4" name="Account Allocation" System="accounting">
+      <Field Size="2" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Size="2" Type="2" File="accounting.location" name="location" Caption="Location"/>
+      <Field Size="2" Type="2" File="accounting.operation" name="operation" Caption="Operation"/>
+      <Field Size="2" Type="2" File="accounting.category" name="category" Caption="Category"/>
+      <Field Size="2" Format="###.##" Type="2" name="allocation" Total="1" Caption="Allocation%"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="chartallocation">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="chartallocation[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="chartallocation[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="chartallocation[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

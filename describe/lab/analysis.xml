@@ -1,0 +1,44 @@
+<xml>
+   <Table System="lab" Icon="writingpad" name="Analysis Reports" CreateStamp="1" UserStamp="1">
+      <Field Strict="1" Caption="Date" Size="4" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Strict="1" Caption="Analysis No." Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Fund" File="accounting.people" Size="4" Type="2" name="people_fund"/>
+      <Field Caption="Clinic" File="accounting.people" Size="4" Type="2" name="people_clinic"/>
+      <Field Caption="Discount" Format="###,##" Size="8" Type="3" name="discount"/>
+      <Field Strict="1" Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Invoice" Strict="1" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="analysis">
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="analysis[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="analysis[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="analysis[people_clinic]">
+         <IndexEntry name="people_clinic"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="analysis[people_fund]">
+         <IndexEntry name="people_fund"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="analysis[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

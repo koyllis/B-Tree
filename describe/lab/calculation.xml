@@ -1,0 +1,13 @@
+<xml>
+   <Table System="lab" name="Calculation Values">
+      <Field Caption="Calculation"/>
+      <Field Caption="Value" Format="##########.####" Size="8" Type="3" name="value"/>
+      <Field Caption="From value" Format="##########.####" Size="8" Type="3" name="value_from"/>
+      <Field Caption="Constant" Format="##########.####" Size="8" Type="3" name="constant"/>
+      <Field Caption="Average column" Format="##" Size="1" Type="2" name="average"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="calculation">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

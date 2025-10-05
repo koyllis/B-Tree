@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="group" System="payroll" Bookmark="1">
+      <Field/>
+      <Field Size="1" Format="b" Type="2" name="ignore" Caption="Ignore Time"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Field Hide="1" Size="16" System="1" name="@bookmark" Caption="Bookmark"/>
+      <Index name="group">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="group_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

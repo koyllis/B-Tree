@@ -1,0 +1,38 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="ivcredi" ModifyStamp="0" System="old">
+      <Field Caption="Date" Size="4" Type="5" name="n_date"/>
+      <Field Caption="Inv. No." Size="4" Type="2" name="n_invno"/>
+      <Field Caption="Customer" Size="8" name="n_code"/>
+      <Field Caption="Loc" Size="1" Type="2" name="n_loc"/>
+      <Field Caption="Doc." Size="2" name="n_doc"/>
+      <Field Caption="Marks Numbers" Size="15" name="n_marks" Dim="3"/>
+      <Field Caption="Quantity" Size="2" Type="2" name="n_quant" Dim="3"/>
+      <Field Caption="Description" Size="33" name="n_desc" Dim="3"/>
+      <Field Caption="Weight" Size="8" name="n_weight" Dim="3"/>
+      <Field Caption="Send by" Size="1" Options=",,V,B,A,P" name="n_vbap"/>
+      <Field Caption="Reference" Size="15" name="n_srefer"/>
+      <Field Caption="Ship date" Size="4" Type="5" name="n_sdate"/>
+      <Field Caption="Manifest" Size="8" name="n_man"/>
+      <Field Caption="Bill of lading" Size="10" name="n_bill"/>
+      <Field Caption="Cash book No." Size="10" name="n_cash"/>
+      <Field Caption="Date" Size="4" Type="5" name="n_cdate"/>
+      <Field Caption="From port" Size="12" name="n_port"/>
+      <Field Caption="Deposit No." Size="10" name="n_deposit"/>
+      <Field Caption="Date" Size="4" Type="5" name="n_ddate"/>
+      <Field Caption="Supplier" Size="20" name="n_sup"/>
+      <Field Caption="Notes" Size="33" name="n_notes" Dim="6"/>
+      <Field Caption="Total cost" Size="4" Type="4" name="n_total"/>
+      <Field Caption="Discount" Size="4" Type="4" name="n_disc"/>
+      <Field Caption="V.A.T." Size="4" Type="4" name="n_vat"/>
+      <Field Caption="Recharge" Size="4" Type="4" name="n_recha"/>
+      <Field Caption="Canceled" Size="4" Type="5" name="n_process"/>
+      <Field Caption="Created by" Size="8" name="n_userid"/>
+      <Field Caption="Journal No." Size="4" Type="2" name="n_journal"/>
+      <Index name="ivcredi">
+         <IndexEntry name="n_date"/>
+         <IndexEntry name="n_invno"/>
+         <IndexEntry name="n_code"/>
+         <IndexEntry name="n_loc"/>
+      </Index>
+   </Table>
+</xml>

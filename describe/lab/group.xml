@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Parent="group" Child="name" Bookmark="1" System="lab" Icon="tree" name="Parameter Grouping">
+      <Field Size="80"/>
+      <Field Caption="Group" File="lab.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Extra columns (U/LD/LQ)" Format="b" Size="1" Type="2" name="extra"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="Web,OnlyResults,Solid" name="option"/>
+      <Field Caption="Web group" File="lab.group" Size="2" Type="2" name="group_web"/>
+      <Field Caption="Default calculation" File="lab.calculation" Size="2" Type="2" name="calculation"/>
+      <Field Caption="Report layout" Size="20" Type="1" name="report"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="group">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="group[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="group[group_web]">
+         <IndexEntry name="group_web"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="group_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

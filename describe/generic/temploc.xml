@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="location" Common="1" Static="1" name="Temp Locations" System="generic" Index="temploc">
+      <Field Size="2" Format="0" Type="2" name="code" Caption="Code"/>
+      <Field Size="20" Format="u" name="description"/>
+      <Field Size="20" name="parameters" Caption="Parameters"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="temploc">
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

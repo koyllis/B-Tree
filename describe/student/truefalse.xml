@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" name="True/False Types">
+      <Field/>
+      <Field Caption="True" name="true"/>
+      <Field Caption="False" name="false"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="truefalse">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

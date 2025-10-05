@@ -1,0 +1,18 @@
+<xml>
+   <Table System="old" name="bankacc" ModifyStamp="0">
+      <Field Caption="Bank account" Format="u" Size="6" name="b_bank"/>
+      <Field Caption="Bank name" name="b_name"/>
+      <Field Caption="Address" Size="26" name="b_address"/>
+      <Field Caption="Company code" Size="3" name="b_code"/>
+      <Field Caption="Input date(N) (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="b_idate"/>
+      <Field Caption="Account No." Format="u" Size="16" name="b_accno"/>
+      <Field Caption="Import layout" Format="##" Size="1" Type="2" name="b_layout"/>
+      <Field Caption="Ignore reconciliation(N) (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="b_ignore"/>
+      <Field Caption="Document" Format="u" Size="2" name="b_doc"/>
+      <Field Caption="Next cheque No." Format="00000000" Size="4" Type="2" name="b_cheque"/>
+      <Field Caption="Currency" Format="u" Size="3" name="b_currency"/>
+      <Index name="bankacc">
+         <IndexEntry name="b_bank"/>
+      </Index>
+   </Table>
+</xml>

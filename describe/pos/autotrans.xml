@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" CanDelete="0" name="Automated Transfers">
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Strict="1" Caption="Date" Size="8" Auto="1" Type="5" name="date"/>
+      <Field Strict="1" Caption="User" File="system.user" Size="4" Auto="1" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="autotrans">
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="autotrans[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,42 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="stock_take" name="Stock Take Browse">
+
+      <Field Caption="User" File="system.user" Size="2" Type="2" Force="1" name="user"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" Force="1" name="location"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Balance" Size="4" Type="8" Format="quantity" name="balance"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="4" Type="8" name="quantity" Persistent="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="takebrowse" CRC64="1">
+
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="takebrowse[color]" CRC64="1">
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="takebrowse[location]" CRC64="1">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="takebrowse[size]" CRC64="1">
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

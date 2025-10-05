@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" name="Reminder">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="4" Type="2" name="vehicle"/>
+      <Field Caption="Amount" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Strict="1" Caption="Recorded" Size="8" Auto="1" Type="5" name="record"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="reminder">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="reminder[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="reminder[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

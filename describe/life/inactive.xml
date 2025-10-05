@@ -1,0 +1,74 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table FormatField="amount" Icon="skull #2" Dynamic="1" name="In-active Members" System="life">
+      <Field Size="4" Tip="1" Force="1" Type="2" File="life.member" name="member" Caption="Member"/>
+      <Field Size="2" Force="1" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="1" Options="Standard,Loan" Force="1" Type="2" name="type" Caption="Type"/>
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Entry date"/>
+      <Field Size="4" Strict="1" Modify="1" AutoCounter="1" Type="2" name="reference" Caption="Reference"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="2" File="life.contractplan" name="contractplan" Caption="Plan"/>
+      <Field Size="12" name="accountno" Caption="Account No."/>
+      <Field Size="12" name="memberno" Caption="Member No."/>
+      <Field Size="8" Format="######.##" Type="3" name="amount" Total="1" Caption="Initial amount"/>
+      <Field Size="4" Format="####.##" Modify="1" Type="4" name="premium" Total="1" Caption="Premium"/>
+      <Field Size="4" Format="####.##" Type="4" name="extra" Total="1" Caption="Extra"/>
+      <Field Size="1" Modify="1" Type="2" name="persons" Caption="Persons"/>
+      <Field Size="1" Format="b" Modify="1" Type="2" name="death" Caption="Death only"/>
+      <Field Size="8" Modify="1" Type="5" name="pending" Caption="Pending"/>
+      <Field Modify="1" name="notes" Caption="Notes"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="inactive">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="inactive[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="inactive[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="inactive[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="member" Index="member_idnumber"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index Force="1" name="inactive_accountno">
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="inactive_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="inactive_memberno">
+         <IndexEntry name="memberno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

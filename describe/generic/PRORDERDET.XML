@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Details" System="generic">
+      <Field Size="4" Type="3" File="generic.prorder" name="prorder" Caption="Tender"/>
+      <Field Size="4" Type="2" name="quantity" Caption="Quantity"/>
+      <Field Size="4" Format="####.##" Type="4" name="price" Caption="Price"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="prorderdet">
+         <IndexEntry name="prorder"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+   </Table>
+</xml>

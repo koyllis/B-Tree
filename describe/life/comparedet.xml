@@ -1,0 +1,36 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Comparison Records" System="life">
+      <Field Size="4" Type="2" File="life.member" name="member" Caption="Member"/>
+      <Field Size="4" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="10" name="idno" Caption="Ident. No."/>
+      <Field Size="4" Type="2" File="life.contractplan" name="contractplan" Caption="Plan"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="1" Options="MissingAllianz,MissingCompany,PlanMismatch,UnknownMember,UnknownPlan" Type="2" name="type" Caption="Type"/>
+      <Field Size="1" name="plan" Caption="Plan"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="comparedet">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="idno"/>
+         <IndexEntry name="contractplan"/>
+      </Index>
+      <Index name="comparedet[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="comparedet[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="comparedet_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="contractplan"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="account_fl" System="old" ModifyStamp="0">
+      <Field Caption="AccountCode" Size="10" name="ac_code"/>
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="ac_date"/>
+      <Field Caption="Reference" Size="4" Type="2" name="ac_inv"/>
+      <Field Caption="Store" Size="2" name="ac_store"/>
+      <Field Caption="Time" Size="12" name="ac_time"/>
+      <Field Caption="Debit" Size="4" Type="4" name="ac_debit"/>
+      <Field Caption="Credit" Size="4" Type="4" name="ac_credit"/>
+      <Field Caption="Comments" Size="20" name="ac_comments"/>
+      <Field Caption="AddressCode" Size="10" name="ac_acode"/>
+      <Index name="account_fl">
+         <IndexEntry name="ac_code"/>
+         <IndexEntry name="ac_date"/>
+         <IndexEntry name="ac_inv"/>
+         <IndexEntry name="ac_store"/>
+         <IndexEntry name="ac_time"/>
+      </Index>
+   </Table>
+</xml>

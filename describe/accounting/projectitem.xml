@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Project Items" System="accounting">
+      <Field Size="2" Type="2" File="accounting.location" name="location" Caption="Project"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="accounting.operation" name="operation" Caption="Operation"/>
+      <Field Size="8" Type="3" name="quantity" Caption="Quantity"/>
+      <Field Size="4" Format="#####.##" Type="4" name="amount" Caption="Amount"/>
+      <Field Size="4" Format="#####.##" Type="4" name="commission" Caption="Fixed commission"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="projectitem">
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="projectitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="projectitem[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

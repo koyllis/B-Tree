@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Expenses Allocation">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Account" File="accounting.chart" Size="4" Type="2" name="chart"/>
+      <Field Caption="Operation" File="accounting.operation" Size="1" Type="2" name="operation"/>
+      <Field Caption="Amount" Total="1" Format="########.##" Size="8" Type="4" name="amount"/>
+      <Field Caption="Journal" Total="1" File="accounting.journal" Size="4" Type="2" name="journal"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="allocation">
+         <IndexEntry name="date"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="allocation[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="allocation[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="allocation[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

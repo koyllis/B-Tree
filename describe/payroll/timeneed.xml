@@ -1,0 +1,37 @@
+<xml>
+   <Table System="payroll" name="Workload Requirements">
+      <Field Caption="Location" File="system.location" Size="2" Type="2" Force="1" name="location"/>
+      <Field Caption="Season" File="pos.season" Size="2" Force="1" Type="2" name="season"/>
+      <Field Caption="Department" File="payroll.timedef" Size="2" Type="2" Force="1" name="timedef"/>
+      <Field Caption="Weekday" Size="1" Type="2" Force="1" Options="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday" name="weekday"/>
+      <Field Caption="Shift" File="payroll.timetable" Size="4" Type="2" Force="1" name="timetable"/>
+      <Field Caption="Persons" Format="####" Size="2" Type="2" Force="1" name="persons"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="timeneed">
+         <IndexEntry name="location"/>
+         <IndexEntry name="season"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="weekday"/>
+         <IndexEntry name="timetable"/>
+      </Index>
+      <Index name="timeneed[season]">
+         <IndexEntry name="season"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="weekday"/>
+         <IndexEntry name="timetable"/>
+      </Index>
+      <Index name="timeneed[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season"/>
+         <IndexEntry name="timetable"/>
+      </Index>
+      <Index name="timeneed[timetable]">
+         <IndexEntry name="timetable"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season"/>
+         <IndexEntry name="timedef"/>
+      </Index>
+   </Table>
+</xml>

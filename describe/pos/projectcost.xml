@@ -1,0 +1,52 @@
+<xml>
+   <Table System="pos" name="Project Costing">
+      <Field Caption="Project" File="accounting.location" Size="2" Type="2" Force="1" name="project"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Account" File="accounting.chart" Size="2" Type="2" name="chart"/>
+      <Field Caption="Operation" File="accounting.operation" Size="2" Type="2" name="operation"/>
+      <Field Caption="Height" Size="20" name="height"/>
+      <Field Caption="Trunk height" Format="###" Size="2" Type="2" name="trunk"/>
+      <Field Caption="Spread" Format="###" Size="2" Type="2" name="spread"/>
+      <Field Caption="Girth" Size="10" name="girth"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Total" Strict="1" Total="1" Format="####.##" Size="8" Type="3" name="total" Modify="1"/>
+      <Field Strict="1" Caption="Delivered" Total="1" Format="quantity" Size="4" Type="8" name="delivered" Modify="1"/>
+      <Field Caption="Delivered total" Strict="1" Total="1" Format="####.##" Size="8" Type="3" name="totaldeliv" Modify="1"/>
+      <Field Caption="Adjustment" Total="1" Format="####.##" Size="8" Type="3" name="adjustment" Modify="1"/>
+      <Field Strict="1" Caption="Invoiced" Total="1" Format="quantity" Size="4" Type="8" name="invoiced" Modify="1"/>
+      <Field Caption="Replacements" Total="1" Format="###.##" Size="4" Type="8" name="replacement"/>
+      <Field Caption="Unit cost" Strict="1" Format="####.##" Size="8" Type="3" name="unitcost" Modify="1"/>
+      <Field Strict="1" Caption="Cost" Total="1" Format="####.##" Size="8" Type="3" name="cost" Modify="1"/>
+      <Field Strict="1" Caption="Profit" Total="1" Format="####.##" Size="8" Type="3" name="profit" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="projectcost">
+         <IndexEntry name="project"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="height"/>
+      </Index>
+      <Index name="projectcost[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="project"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="height"/>
+      </Index>
+      <Index name="projectcost[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="project"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="height"/>
+      </Index>
+      <Index name="projectcost[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="project"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="height"/>
+      </Index>
+   </Table>
+</xml>

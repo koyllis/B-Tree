@@ -1,0 +1,16 @@
+<xml>
+   <Table System="accounting" name="Group Over Limits">
+      <Field Caption="Group" File="accounting.group" Size="2" Force="1" Type="2" name="group"/>
+      <Field Caption="User" File="system.user" Size="2" Force="1" Type="2" name="user"/>
+      <Field Caption="Over limit %" Format="##.##" Size="8" Force="1" Type="3" name="overlimit"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="overgroup">
+         <IndexEntry name="group"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="overgroup[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="group"/>
+      </Index>
+   </Table>
+</xml>

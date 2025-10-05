@@ -1,0 +1,35 @@
+<xml>
+   <Table System="lab" Icon="lego" name="Excel Combinations">
+      <Field Caption="Excel item" File="lab.excelitem" Size="2" Type="2" name="excelitem"/>
+      <Field Caption="Column" Size="2" Type="2" name="column"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Frequency" File="pos.producttype" Size="2" Type="2" name="producttype"/>
+      <Field Caption="Unit" File="pos.unit" Size="2" Type="2" name="unit"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="excelpeople">
+         <IndexEntry name="excelitem"/>
+         <IndexEntry name="column"/>
+      </Index>
+      <Index name="excelpeople[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="excelitem"/>
+         <IndexEntry name="column"/>
+      </Index>
+      <Index name="excelpeople[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="excelitem"/>
+         <IndexEntry name="column"/>
+      </Index>
+      <Index name="excelpeople[producttype]">
+         <IndexEntry name="producttype"/>
+         <IndexEntry name="excelitem"/>
+         <IndexEntry name="column"/>
+      </Index>
+      <Index name="excelpeople[unit]">
+         <IndexEntry name="unit"/>
+         <IndexEntry name="excelitem"/>
+         <IndexEntry name="column"/>
+      </Index>
+   </Table>
+</xml>

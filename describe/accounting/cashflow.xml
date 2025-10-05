@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="money32" name="Cashflow Projection" System="accounting">
+      <Field Size="4" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="10" name="reference" Caption="Reference"/>
+      <Field Size="50" name="description" Caption="Description"/>
+      <Field Size="4" Format="######.##" Type="4" name="projected" Caption="Projected amount"/>
+      <Field Size="4" Format="#######.##" Type="4" name="amount" Caption="Actual amount"/>
+      <Field Size="4" Type="2" name="count" Caption="Occurances"/>
+      <Field Size="4" Format="#######.##" Type="4" name="result" Caption="Result"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="cashflow">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

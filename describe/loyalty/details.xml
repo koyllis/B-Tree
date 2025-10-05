@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table DataHeader="1" Icon="details" name="Details" System="loyalty" Index="details">
+      <Field Size="4" Format="#######" Type="2" File="loyalty.sales" name="sales" Caption="Sales"/>
+      <Field Size="20" name="code" Caption="Code"/>
+      <Field Size="4" Format="#######.##" Type="4" name="net" Caption="Net sale" Total="1"/>
+      <Field Size="4" Format="#######" Type="2" name="points" Caption="Points"/>
+      <Field Size="12" name="style" Caption="Style"/>
+      <Field Size="1" name="season" Caption="Season"/>
+      <Field Size="2" Type="2" name="collection" Caption="Collection"/>
+      <Field Size="5" name="category" Caption="Category"/>
+      <Field Size="3" name="department" Caption="Department"/>
+      <Field Size="5" name="color" Caption="Color"/>
+      <Field Size="3" name="size" Caption="Size"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="details">
+         <IndexEntry name="sales"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

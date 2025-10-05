@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="chart5" name="YTD Analysis" System="accounting">
+      <Field Size="4" Type="2" File="accounting.stline" name="stline" Caption="Layout line"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ytd" Caption="YTD"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ytd_budget" Caption="YTD budget"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ytd_last" Caption="YTD Last"/>
+      <Field Size="4" Format="#######.##" Type="4" name="period" Caption="Period "/>
+      <Field Size="4" Format="#######.##" Type="4" name="period_budget" Caption="Period budget"/>
+      <Field Size="4" Format="#######.##" Type="4" name="period_last" Caption="Period last"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="ytdanalysis">
+         <IndexEntry name="stline"/>
+      </Index>
+   </Table>
+</xml>

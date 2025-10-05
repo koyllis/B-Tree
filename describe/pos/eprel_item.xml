@@ -1,0 +1,23 @@
+<xml>
+   <Table System="pos" Icon="author" name="Models">
+      <Field Caption="Model" Tip="1" name="model"/>
+      <Field Caption="Act" File="pos.eprel_act" Size="2" Type="2" Tip="1" name="act"/>
+      <Field Caption="Start date" Size="4" Type="5" name="start_date"/>
+      <Field Caption="Description" Size="80" name="description"/>
+      <Field Caption="Label as provided" Format="b" Size="1" Type="2" name="label"/>
+      <Field Caption="Category" File="pos.eprel_cat" Size="2" Type="2" name="category"/>
+      <Field Caption="Registered" Size="4" Type="5" name="registered"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="eprel_item">
+         <IndexEntry name="model"/>
+      </Index>
+      <Index name="eprel_item[act]">
+         <IndexEntry name="act"/>
+         <IndexEntry name="model"/>
+      </Index>
+      <Index name="eprel_item[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="model"/>
+      </Index>
+   </Table>
+</xml>

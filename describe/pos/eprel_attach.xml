@@ -1,0 +1,11 @@
+<xml>
+   <Table System="pos" Icon="attach" name="Attachments">
+      <Field Caption="Model" File="pos.eprel_item" Size="4" Type="2" name="eprel_item"/>
+      <Field Caption="Attachment" Size="80" name="attachment"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="eprel_attach">
+         <IndexEntry name="eprel_item"/>
+         <IndexEntry name="attachment"/>
+      </Index>
+   </Table>
+</xml>

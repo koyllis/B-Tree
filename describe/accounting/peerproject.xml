@@ -1,0 +1,18 @@
+<xml>
+   <Table System="accounting" name="Peer Projects">
+      <Field Caption="Associate" File="accounting.peer" Size="4" Force="1" Type="2" name="peer"/>
+      <Field Caption="Project" Size="40" Force="1"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Force="1" Type="2" name="area"/>
+      <Field Caption="Note" Size="80" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peerproject">
+         <IndexEntry name="peer"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="peerproject[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="peer"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

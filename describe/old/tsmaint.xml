@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="tsmaint" System="old" ModifyStamp="0">
+      <Field Caption="Location" Size="1" Type="2" name="ma_loc"/>
+      <Field Caption="Currency" Size="3" name="ma_curr"/>
+      <Field Caption="Type (0,1,2,3)" Size="1" name="ma_type"/>
+      <Field Caption="Maintenance" Format="###,###" Size="4" Type="4" name="ma_maint"/>
+      <Index name="tsmaint">
+         <IndexEntry name="ma_loc"/>
+         <IndexEntry name="ma_curr"/>
+         <IndexEntry name="ma_type"/>
+      </Index>
+   </Table>
+</xml>

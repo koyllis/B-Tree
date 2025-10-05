@@ -1,0 +1,56 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="amazon.ico" name="Amazon Sales ">
+      <Field Caption="Order ID" Size="20" Force="1" name="orderid"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Order,Refund,ServiceFee" Force="1" name="type"/>
+      <Field Caption="SKU" name="sku"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Time" Size="2" Type="5" name="time"/>
+      <Field Strict="1" Caption="Layout" File="pos.amazonlay" Size="2" Type="2" name="amazonlay" Modify="1"/>
+      <Field Caption="Description" Size="100" name="description"/>
+      <Field Caption="Currency" File="accounting.currency" Size="2" Type="2" name="currency"/>
+      <Field Caption="Sales" Total="1" Size="8" Type="3" Format="######.##" name="sales"/>
+      <Field Caption="Fees" Total="1" Size="8" Type="3" Format="######.##" name="fees"/>
+      <Field Caption="Postage" Total="1" Size="8" Type="3" Format="######.##" name="postage"/>
+      <Field Caption="Total" Total="1" Size="8" Type="3" Format="######.##" name="total"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Strict="1" Caption="Local amount" Total="1" Size="8" Type="3" name="amount" Modify="1"/>
+      <Field Caption="Item" Strict="1" File="pos.item" Size="4" Type="2" name="item" Modify="1"/>
+      <Field Caption="Transaction" Strict="1" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="amazon">
+         <IndexEntry name="orderid"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="sku"/>
+      </Index>
+      <Index name="amazon[amazonlay]">
+         <IndexEntry name="amazonlay"/>
+         <IndexEntry name="orderid"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="sku"/>
+      </Index>
+      <Index name="amazon[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="orderid"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="sku"/>
+      </Index>
+      <Index name="amazon[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="orderid"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="sku"/>
+      </Index>
+      <Index name="amazon[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="orderid"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="sku"/>
+      </Index>
+      <Index name="amazon_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="orderid"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="sku"/>
+      </Index>
+   </Table>
+</xml>

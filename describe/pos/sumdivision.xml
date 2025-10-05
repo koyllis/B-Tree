@@ -1,0 +1,17 @@
+<xml>
+   <Table System="pos" name="sumdivision">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" name="division"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="sumdivision">
+         <IndexEntry name="item"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="sumdivision[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,20 @@
+<xml>
+   <Table System="pos" name="Stick and Win Gifts">
+      <Field Caption="Stick and win" File="pos.stickandwin" Size="2" Type="2" name="stickandwin"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Stickers required" Size="2" Type="2" name="stickers"/>
+      <Field Caption="Money required" Format="###.##" Size="8" Type="3" name="money"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="stickgift">
+         <IndexEntry name="stickandwin"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="stickers"/>
+      </Index>
+      <Index name="stickgift[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="stickandwin"/>
+         <IndexEntry name="stickers"/>
+      </Index>
+   </Table>
+</xml>

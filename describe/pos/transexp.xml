@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table ChildMutex="1" System="pos" SoftDelete="1" Dynamic="1" name="Purchase Expenses" Unordered="1">
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Expense" File="pos.exptype" Size="2" Type="2" name="exptype"/>
+      <Field Caption="Date" Total="1" Size="4" Type="5" name="date"/>
+      <Field Caption="Amount" Total="1" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Foreign" Total="1" Format="b" Size="1" Type="2" name="base"/>
+      <Field Caption="Rate" Total="1" Format="##.####" Size="4" Type="8" name="xrate"/>
+      <Field Caption="Agent" Total="1" Format="b" Size="1" Type="2" name="agent"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="transexp">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="exptype"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="transexp[exptype]">
+         <IndexEntry AllDimension="1" name="exptype"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

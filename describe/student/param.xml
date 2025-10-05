@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" name="param">
+      <Field Caption="Location" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Current year" Format="####" Size="2" Type="2" name="year"/>
+      <Field Caption="Options" Format="b" Size="2" Options="EditNotes" Type="2" name="option"/>
+      <Field Caption="Schedule start date" Size="4" Type="5" name="start"/>
+      <Field Caption="Schedule end date" Size="4" Type="5" name="end"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="param">
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

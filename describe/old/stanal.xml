@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="stanal" System="old">
+      <Field Size="12" Format="u" name="sk_item" Caption="Item"/>
+      <Field Size="1" Format="###" Type="2" name="sk_loc" Caption="Loc."/>
+      <Field Size="8" Format="#######.##" Type="3" name="sk_free" Caption="Available"/>
+      <Field Size="8" Format="#######.##" Type="3" name="sk_wayb" Caption="Waybill"/>
+      <Field Size="8" Format="#######.##" Type="3" name="sk_cnto" Caption="Cons. to"/>
+      <Field Size="8" Format="#######.##" Type="3" name="sk_cnfr" Caption="Cons. from"/>
+      <Field Size="8" Format="#######.##" Type="3" name="sk_onor" Caption="On order"/>
+      <Field Size="8" Format="#######.##" Type="3" name="sk_minlv" Caption="Minimum"/>
+      <Field Size="8" Format="#######.##" Type="3" name="sk_order" Caption="Reorder"/>
+      <Field Size="8" Format="#######.##" Type="3" name="sk_reser" Caption="Reserved"/>
+      <Field Size="2" Format="00-00" Type="2" name="sk_bin" Caption="Bin No."/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="sk_neg" Caption="Negative (Y/N)?"/>
+      <Index name="stanal">
+         <IndexEntry name="sk_item"/>
+         <IndexEntry name="sk_loc"/>
+      </Index>
+   </Table>
+</xml>

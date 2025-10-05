@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="system" CanDelete="0" name="attach_image">
+      <Field Caption="Date" Strict="1" Size="8" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Caption="System" Size="20" Force="1" name="system"/>
+      <Field Caption="Table" Force="1" name="table"/>
+      <Field Caption="Field" Force="1" name="field"/>
+      <Field Caption="Separator" Size="1" name="separator"/>
+      <Field Caption="Files" Strict="1" Size="2" Type="2" name="files" Modify="1"/>
+      <Field Caption="Attached" Strict="1" Size="2" Type="2" name="attached" Modify="1"/>
+      <Field Caption="Failed" Strict="1" Size="2" Type="2" name="failed" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="attach_image">
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

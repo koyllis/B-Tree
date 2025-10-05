@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Dynamic="1" name="Price List Items">
+      <Field Caption="Price list" File="pos.pricelist" Size="4" Force="1" Type="2" name="pricelist"/>
+      <Field Caption="Sequence" Size="4" Type="2" AutoCounter="1" name="seq"/>
+      <Field Caption="Item" File="pos.item" Size="4" Force="1" Type="2" name="item"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Discount%" Format="##.##" Size="4" Type="8" name="discount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="priceitem">
+         <IndexEntry name="pricelist"/>
+         <IndexEntry name="seq"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="priceitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="seq"/>
+         <IndexEntry name="pricelist"/>
+      </Index>
+      <Index name="priceitem[seq]">
+         <IndexEntry name="seq"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="pricelist"/>
+      </Index>
+   </Table>
+</xml>

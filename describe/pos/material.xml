@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Materials" System="pos">
+      <Field Size="5" Format="u" name="code" Caption="Code"/>
+      <Field Size="40" Format="u"/>
+      <Field Size="40" Format="u" name="desc" Caption="Description"/>
+      <Field Size="8" Format="#######.##" Type="3" name="price" Caption="Stock price"/>
+      <Field Size="8" Format="#######.##" Type="3" name="cost" Caption="Costing price"/>
+      <Field Size="10" name="reference" Caption="Ref. No."/>
+      <Field Size="4" Format="#######.##" Type="4" name="transport" Caption="Transport"/>
+      <Field Size="8" Format="#######.##" Type="4" name="rate" Caption="Exch. rate"/>
+      <Field Size="8" Format="#######.##" Type="4" name="local" Caption="Local value (tons)"/>
+      <Field Size="8" Format="#######.##" Type="4" name="foreign" Caption="Foreign value (tons)"/>
+      <Field Size="2" Type="2" File="accounting.currency" name="currency" Caption="Currency"/>
+      <Field Size="2" Type="2" File="accounting.location" name="location" Caption="Location"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="material">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="material[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="material[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

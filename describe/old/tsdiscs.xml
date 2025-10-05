@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="tsdiscs" System="old" ModifyStamp="0">
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="di_date"/>
+      <Field Caption="Refer." Format="u" Size="8" name="di_refer"/>
+      <Field Caption="Customer" Format="u" Size="8" name="di_code"/>
+      <Field Caption="Discount" Format="###,###.##" Size="4" Type="4" name="di_amount"/>
+      <Field Caption="Rate" Format="####.####" Size="8" Type="3" name="di_rate"/>
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="di_cdate"/>
+      <Field Caption="Refer. No." Format="######" Size="4" Type="2" name="di_crefer"/>
+      <Field Caption="Journal" Format="######" Size="4" Type="2" name="di_journal"/>
+      <Index name="tsdiscs">
+         <IndexEntry name="di_date"/>
+         <IndexEntry name="di_refer"/>
+         <IndexEntry name="di_code"/>
+      </Index>
+   </Table>
+</xml>

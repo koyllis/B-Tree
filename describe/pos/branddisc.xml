@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Brand Discounts">
+      <Field Caption="Brand" File="pos.brand" Size="2" Type="2" name="brand"/>
+      <Field Caption="Season" File="pos.season" Size="2" Type="2" name="season"/>
+      <Field Caption="Collection" Format="####" Size="2" Type="2" name="collection"/>
+      <Field Caption="Discount" Format="###.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="branddisc">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="season"/>
+         <IndexEntry name="collection"/>
+      </Index>
+      <Index name="branddisc[season]">
+         <IndexEntry name="season"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="collection"/>
+      </Index>
+   </Table>
+</xml>

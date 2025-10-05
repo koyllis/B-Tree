@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="money" name="Examination Pricing" System="life">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Doctor/Lab"/>
+      <Field Size="2" Type="2" File="life.examination" name="examination" Caption="Examination"/>
+      <Field Size="4" Format="####.##" Type="4" name="price" Caption="Price"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="examprice">
+         <IndexEntry name="people"/>
+         <IndexEntry name="examination"/>
+      </Index>
+      <Index name="examprice[examination]">
+         <IndexEntry name="examination"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

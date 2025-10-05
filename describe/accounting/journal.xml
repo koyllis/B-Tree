@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ShowModifyStamp="1" ManualIndex="1" DeleteChildren="1" DataHeader="1" Icon="j2" SoftDelete="1" System="accounting" Dynamic="1" PDA="0" CanDelete="0" Index="journal" Short="Journal" name="Journal entries" CreateStamp="1" FavoriteMatch="accounting|detail" UserStamp="1" MatchEdit="0" Unordered="1">
+      <Field Caption="Date" Size="4" Type="5" Tip="1" name="date"/>
+      <Field Caption="Journal" Strict="1" Format="######" Size="4" Type="2" Tip="1" name="journal"/>
+      <Field Caption="Document definitions" Format="#######" File="accounting.document" Size="2" Type="2" Tip="1" name="document"/>
+      <Field Caption="Printed" Strict="1" Size="4" Type="5" name="printed"/>
+      <Field Strict="1" Caption="Options" Format="b" Size="1" Type="2" Options="Locked,Pending,ReverseVAT" name="options"/>
+      <Field Caption="Auto" Strict="1" Format="b" Size="1" Type="2" name="mode"/>
+      <Field Caption="Current user" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+      <Index CRC64="1" name="journal">
+         <IndexEntry name="date"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="document"/>
+      </Index>
+      <Index CRC64="1" name="journal[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="journal"/>
+      </Index>
+      <Index CRC64="1" name="journal_journal">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+      </Index>
+   </Table>
+</xml>

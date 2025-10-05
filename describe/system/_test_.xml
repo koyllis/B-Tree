@@ -1,0 +1,12 @@
+<xml>
+   <Table System="system" SoftDelete="1" DataHeader="1" PDA="0" name="Research table" Root="1" UserStamp="1">
+      <Field Caption="Test" Size="8" Type="2" name="test"/>
+      <Field Caption="Other" Format="########" Size="2" Type="2" name="other"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="_test_" Balance="0">
+         <IndexEntry name="test"/>
+      </Index>
+   </Table>
+</xml>

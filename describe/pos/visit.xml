@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Visits Tracking" CreateStamp="1" UserStamp="1">
+      <Field Strict="1" Caption="Number" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Sex" Size="1" Type="2" Options="Male,Female,Couple" name="sex"/>
+      <Field Caption="New customer?" Format="b" Size="1" Type="2" name="new"/>
+      <Field Caption="Nationality" File="accounting.nationality" Size="2" Type="2" name="nationality"/>
+      <Field Caption="Age group" Size="1" Type="2" Options="20-30,31-40,41-50,51-65,65+" name="age"/>
+      <Field Caption="Visit time" Size="1" Type="2" Options="9-13,13-15,15-19" name="visit"/>
+      <Field Caption="Sale" Format="b" Size="1" Type="2" name="sale"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="visit">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="visit[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="visit[nationality]">
+         <IndexEntry name="nationality"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,31 @@
+<xml>
+   <Table name="agclear" System="old" ModifyStamp="0">
+      <Field Caption="SUPPLIER" Format="####" Size="2" Type="2" name="cl_suno"/>
+      <Field Caption="ITEM" Format="####" Size="2" Type="2" name="cl_itno"/>
+      <Field Caption="QUAL" Format="#" Size="1" Type="2" name="cl_qual"/>
+      <Field Caption="DATE" Size="4" Type="5" name="cl_date"/>
+      <Field Caption="CUSTOMER" Format="####" Size="2" Type="2" name="cl_cuno"/>
+      <Field Caption="REFER" Format="######" Size="4" Type="2" name="cl_refer"/>
+      <Field Caption="LOC" Size="1" Type="2" name="cl_loc"/>
+      <Field Caption="LINE" Format="##" Size="1" Type="2" name="cl_line"/>
+      <Field Caption="CASE" Format="###" Size="2" Type="2" name="cl_cases"/>
+      <Field Caption="QUANT" Format="###.##" Size="4" Type="4" name="cl_quant"/>
+      <Field Caption="PRICE" Format="###.##" Size="4" Type="4" name="cl_price"/>
+      <Field Caption="TOTAL" Format="####.##" Size="4" Type="4" name="cl_total"/>
+      <Field Caption="INV DATE" Size="4" Type="5" name="cl_idate"/>
+      <Field Caption="AMEND" Size="8" name="cl_amend"/>
+      <Field Caption="RATE" Format="##.##" Size="8" Type="3" name="cl_rate"/>
+      <Field Caption="CANCEL" Size="4" Type="5" name="cl_cancel"/>
+      <Field Caption="TIME" Size="2" Type="2" name="cl_time"/>
+      <Index name="agclear">
+         <IndexEntry name="cl_suno"/>
+         <IndexEntry name="cl_itno"/>
+         <IndexEntry name="cl_qual"/>
+         <IndexEntry name="cl_date"/>
+         <IndexEntry name="cl_cuno"/>
+         <IndexEntry name="cl_refer"/>
+         <IndexEntry name="cl_loc"/>
+         <IndexEntry name="cl_line"/>
+      </Index>
+   </Table>
+</xml>

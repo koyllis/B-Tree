@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ManualIndex="1" System="pos" SoftDelete="1" name="Customer Discount">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Discount" Format="##,########" Size="8" Type="3" name="discount"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Quantity" Format="######" Size="4" Type="2" name="quantity"/>
+      <Field Caption="Location" File="system.location" Size="1" Type="2" name="location"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="peoplediscount">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="peoplediscount_item">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="peoplediscount_modified">
+         <IndexEntry name="@modify_stamp"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

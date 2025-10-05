@@ -1,0 +1,23 @@
+<xml>
+   <Table System="accounting" Icon="document_accounts" name="Document accounts" Common="1">
+      <Field Caption="Document" File="accounting.document" Size="4" Type="2" name="document"/>
+      <Field Caption="Account" File="accounting.chart" Size="2" Force="1" Type="2" name="chart"/>
+      <Field Caption="Debit/Credit" Negative="0" Size="1" Options="Debit,Credit" Force="1" Type="2" name="dc"/>
+      <Field Caption="Type" Size="2" Options="Gross,Discount,Vat,Cost of Sales,Stock,Municipal,Service,Commission,Cases,VoucherDiscount" Force="1" Type="2" name="type"/>
+      <Field Caption="Foreign group account" File="accounting.chart" Size="2" Type="2" name="chart_foreign"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="dochart">
+         <IndexEntry name="document"/>
+         <IndexEntry name="chart"/>
+      </Index>
+      <Index name="dochart[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="document"/>
+      </Index>
+      <Index name="dochart[chart_foreign]">
+         <IndexEntry name="chart_foreign"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="chart"/>
+      </Index>
+   </Table>
+</xml>

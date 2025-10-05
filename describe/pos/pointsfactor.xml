@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="pointsfactor">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Other route" File="accounting.route" Size="2" Type="2" name="route"/>
+      <Field Caption="Multiplication factor" Size="8" Type="3" name="factor"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pointsfactor">
+         <IndexEntry name="date"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="pointsfactor[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="pointsfactor[route]">
+         <IndexEntry name="route"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="group"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,44 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="customer" name="Customers" System="pos">
+      <Field Size="2" Type="2" File="system.location" name="location" Auto="1" Caption="Location"/>
+      <Field Size="8" Format="############" Type="2" name="phone" Caption="Telephone"/>
+      <Field Size="2" Type="2" name="ext" Caption="Extention"/>
+      <Field Size="40"/>
+      <Field Size="4" Type="2" File="pos.address" name="address" Caption="Address"/>
+      <Field Size="5" name="street" Caption="Street No."/>
+      <Field Size="5" name="flat" Caption="Flat No"/>
+      <Field Size="20" name="building" Caption="Buidling"/>
+      <Field Size="15" name="vatno" Caption="VAT No."/>
+      <Field Size="35" name="profession" Caption="Professsion"/>
+      <Field Size="20" name="tax" Caption="Tax Office"/>
+      <Field Size="1" Options="Home,Work" Type="2" name="Type" Caption="Type"/>
+      <Field Size="1" Type="2" name="children" Caption="Children"/>
+      <Field Size="8" Type="3" name="discount" Caption="Discount%"/>
+      <Field Size="1" Format="b" Type="2" name="novat" Caption="No VAT"/>
+      <Field Size="50" name="destination" Caption="Destination"/>
+      <Field Size="50" name="delivery" Caption="Delivery"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="customer">
+         <IndexEntry name="location"/>
+         <IndexEntry name="phone"/>
+         <IndexEntry name="ext"/>
+      </Index>
+      <Index name="customer[address]">
+         <IndexEntry name="address"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="phone"/>
+         <IndexEntry name="ext"/>
+      </Index>
+      <Index name="customer_name">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="customer_phone">
+         <IndexEntry name="phone"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="ext"/>
+      </Index>
+      <Index name="customer_vatno">
+         <IndexEntry name="vatno"/>
+      </Index>
+   </Table>
+</xml>

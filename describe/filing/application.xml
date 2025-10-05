@@ -1,0 +1,91 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Dynamic="1" name="application" System="filing">
+      <Field Size="4" Format="#####" Force="1" Type="2" File="filing.oikodomi" name="oikodomi" Caption="File No."/>
+      <Field Size="4" Force="1" Type="5" name="receiptdate" Caption="Receipt date"/>
+      <Field Size="4" Force="1" Type="2" File="filing.dimotes" name="dimotis" Caption="Customer"/>
+      <Field Size="4" Type="2" File="filing.dimotes" name="architect" Caption="Architect"/>
+      <Field Size="4" Type="2" File="filing.dimotes" name="engineer" Caption="Engineer"/>
+      <Field Size="4" Type="2" File="filing.dimotes" name="supervisor" Caption="Supervisor"/>
+      <Field Size="4" Type="2" File="filing.dimotes" name="supervisor_2" Caption="Supervisor"/>
+      <Field Size="4" Type="2" File="filing.dimotes" name="contractor" Caption="Contractor"/>
+      <Field Size="60" Force="1" name="landno" Caption="Land No."/>
+      <Field Size="40" name="address" Caption="Address"/>
+      <Field Size="4" Format="####" Type="2" name="zip" Caption="Zip"/>
+      <Field Size="1" Force="1" Type="2" File="filing.oikotype" name="oikotype" Caption="Application type"/>
+      <Field Size="20" name="licenceno" Caption="Licence No."/>
+      <Field Size="4" Type="5" name="licensedate" Caption="License date"/>
+      <Field Size="4" Type="5" name="renewaldate" Caption="Renewal date"/>
+      <Field Size="4" Modify="1" Type="5" name="notifydate" Caption="Notification date"/>
+      <Field Size="4" Modify="1" Type="5" name="expiredate" Caption="Expiration date"/>
+      <Field Size="4" Format="######" Modify="1" Type="2" name="issuereference" Caption="Issue reference"/>
+      <Field Size="4" Modify="1" Type="5" name="issuedate" Caption="Issue date"/>
+      <Field Size="4" Modify="1" Type="5" name="issueexpire" Caption="Issue expiration date"/>
+      <Field Size="40" Modify="1" name="constructiontype" Caption="Construction type"/>
+      <Field Size="100" Modify="1" name="usage" Caption="Approved usage"/>
+      <Field Size="4" Format="#####" Modify="1" Type="2" name="intendedm2" Caption="Intended area(m2)"/>
+      <Field Size="4" Format="#####" Modify="1" Type="2" name="existm2" Caption="Existence area(m2)"/>
+      <Field Size="4" Format="#####" Modify="1" Type="2" name="range" Caption="Range(m2)"/>
+      <Field Size="4" Format="#####" Modify="1" Type="2" name="plot" Caption="Plots number"/>
+      <Field Size="4" Format="#####" Modify="1" Type="2" name="streetlength" Caption="Street length"/>
+      <Field Size="4" Format="#####" Modify="1" Type="2" name="greenarea" Caption="Green area(m2)"/>
+      <Field Size="4" Format="#######.##" Modify="1" Type="4" name="value" Caption="Value"/>
+      <Field Size="50" Modify="1" name="plans" Caption="Approved plans"/>
+      <Field Size="80" Modify="1" name="terms" Caption="Terms"/>
+      <Field Size="4" Format="######" Modify="1" Type="2" name="approvalreference" Caption="Final approval number"/>
+      <Field Size="4" Modify="1" Type="5" name="approvaldate" Caption="Final approval date"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="application">
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application[architect]">
+         <IndexEntry name="architect"/>
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application[contractor]">
+         <IndexEntry name="contractor"/>
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application[dimotis]">
+         <IndexEntry name="dimotis"/>
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application[engineer]">
+         <IndexEntry name="engineer"/>
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application[oikodomi]">
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application[oikotype]">
+         <IndexEntry name="oikotype"/>
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application[supervisor]">
+         <IndexEntry name="supervisor"/>
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application[supervisor_2]">
+         <IndexEntry name="supervisor_2"/>
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application_expiredate">
+         <IndexEntry name="expiredate"/>
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+      <Index name="application_notifydate">
+         <IndexEntry name="notifydate"/>
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="receiptdate"/>
+      </Index>
+   </Table>
+</xml>

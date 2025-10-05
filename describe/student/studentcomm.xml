@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Unordered="1" System="student" name="Student Feedback">
+      <Field Caption="Student program" File="student.studentprog" Size="4" Type="2" name="studentprog"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Mode" Size="1" Options="Absent,Note,Communication,Test,Homework" Type="2" name="mode"/>
+      <Field Caption="Test" File="student.quiz" Size="2" Type="2" name="quiz"/>
+      <Field Caption="Subject" name="subject"/>
+      <Field Caption="Result" Size="20" name="result"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="studentcomm">
+         <IndexEntry name="studentprog"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="mode"/>
+         <IndexEntry name="quiz"/>
+      </Index>
+      <Index CRC64="1" name="studentcomm[quiz]">
+         <IndexEntry name="quiz"/>
+         <IndexEntry name="studentprog"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="mode"/>
+      </Index>
+      <Index CRC64="1" name="studentcomm_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="studentprog"/>
+         <IndexEntry name="mode"/>
+         <IndexEntry name="quiz"/>
+      </Index>
+   </Table>
+</xml>

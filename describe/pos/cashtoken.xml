@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="money32" name="Machine Tokens" System="pos">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Type="2" File="office.machine" name="machine" Caption="Machine"/>
+      <Field Size="2" Force="1" Type="2" name="tokens" Caption="Tokens"/>
+      <Field Size="4" Format="#####.##" Modify="1" Strict="1" Type="4" name="total" Caption="Total"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="cashtoken">
+         <IndexEntry name="date"/>
+         <IndexEntry name="machine"/>
+      </Index>
+      <Index name="cashtoken[machine]">
+         <IndexEntry name="machine"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

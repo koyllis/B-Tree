@@ -1,0 +1,36 @@
+<xml>
+   <Table Bookmark="1" System="system" name="host">
+      <Field/>
+      <Field Caption="IP Address" name="ip"/>
+      <Field Caption="Receive folder" Size="40" name="folder"/>
+      <Field Caption="Send folder" Size="40" name="folder_send"/>
+      <Field Caption="Items folder" Size="40" name="folder_items"/>
+      <Field Caption="User" Size="40" name="user"/>
+      <Field Caption="Password" Size="40" name="password"/>
+      <Field Caption="Layout" Size="2" Type="2" Options="MEFAL,MARATHON,FILOMEDICA,PHARMALINK" name="layout"/>
+      <Field Caption="Sales suffix" Size="20" name="suffix_add"/>
+      <Field Caption="Returns suffix" Size="20" name="suffix_deduct"/>
+      <Field Caption="Items file name" Size="40" name="file_item"/>
+      <Field Caption="Stock file name" Size="40" name="file_stock"/>
+      <Field Caption="Separator" Size="1" Type="2" Options="Semicolon,Tab,Comma" name="separator"/>
+      <Field Caption="Host group" File="system.hostgroup" Size="2" Type="2" name="hostgroup"/>
+      <Field Caption="Supplier No." Size="4" Type="2" name="supplier"/>
+      <Field Caption="Port" Negative="0" Size="2" Type="2" name="port"/>
+      <Field Caption="POST string" Size="100" name="post"/>
+      <Field Caption="DELETE string" Size="100" name="post_delete"/>
+      <Field Caption="Workstation" Size="20" name="workstation"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="host">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="host_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="host_hostgroup">
+         <IndexEntry name="hostgroup"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

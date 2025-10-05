@@ -1,0 +1,38 @@
+<xml>
+   <Table System="pos" Icon="defrag2" name="Item Summary" DeleteChildren="1" MergeType="1">
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Location" Total="1" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Order" Total="1" Size="4" Type="2" name="order"/>
+      <Field Caption="Purchase" Total="1" Size="4" Type="2" name="purchase"/>
+      <Field Caption="Transfer" Total="1" Size="4" Type="2" name="transfer"/>
+      <Field Caption="Movement" Total="1" Size="4" Type="2" name="movement"/>
+      <Field Caption="Sale" Total="1" Size="4" Type="2" name="sale"/>
+      <Field Caption="Discounted sale" Total="1" Size="8" Type="2" name="saledisc"/>
+      <Field Caption="Stock" Total="1" Size="4" Type="2" name="stock"/>
+      <Field Caption="Stock before disc" Total="1" Size="4" Type="2" name="stockdisc"/>
+      <Field Caption="Purchase value" Total="1" Size="8" Type="3" name="purchase_value" Format="price"/>
+      <Field Caption="Transfer value" Total="1" Size="8" Type="3" name="transfer_value"  Format="price"/>
+      <Field Caption="Sale value" Total="1" Percentage="2" Size="8" Type="3" name="sale_value" Format="price"/>
+      <Field Caption="Discounted sale value" Total="1" Size="8" Type="3" name="saledisc_value" Format="price"/>
+      <Field Caption="Order value" Total="1" Size="8" Type="3" name="order_value" Format="price"/>
+      <Field Caption="Cost value" Total="1" Size="8" Type="3" name="cost_value" Format="price"/>
+      <Field Size="4" Type="5" name="last_purchase" Caption="Date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemsummary"  CRC64="1">
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="itemsummary[item]" CRC64="1">
+         <IndexEntry name="item"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="itemsummary[location]"  CRC64="1">
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="categs" System="old">
+      <Field Size="8" name="ca_categ" Caption="Category"/>
+      <Field Format="u" name="ca_desc" Caption="Description"/>
+      <Field Size="2" Format="u" name="ca_short" Caption="Short code"/>
+      <Field Size="8" Format="#######.##" Type="3" name="ca_overhead" Caption="Overhead (%)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="ca_profit" Caption="Profit rate"/>
+      <Field Size="4" Format="#######" Type="2" name="ca_number" Caption="Next No."/>
+      <Field Size="1" name="ca_sep" Caption="Separator"/>
+      <Field Size="12" name="ca_picture" Caption="Picture"/>
+      <Field Size="8" Format="#######.##" Type="3" name="ca_round" Caption="Round to the nearest"/>
+      <Field Size="8" Format="#######.##" Type="3" name="ca_vat" Caption="VAT on sales (%)"/>
+      <Field Size="1" Type="1" name="ca_barcode" Caption="Barcode digit"/>
+      <Field Size="1" Type="1" name="ca_taxfree" Caption="Tax free"/>
+      <Field Size="1" Type="2" name="ca_type" Caption="Type" Format="##"/>
+      <Field Size="1" Type="1" name="ca_taxrep" Caption="Tax report"/>
+      <Field Size="4" Type="1" name="ca_future" Caption="Future"/>
+      <Field Size="1" Format="###" Type="2" name="ca_loc" Caption="Sales default loc."/>
+      <Field Size="1" Options=",,G,D" Format="u" name="ca_gd" Caption="General/Detail"/>
+      <Field Size="1" Format="###" Type="2" name="ca_discode" Caption="Discount matrix vertical coordinate"/>
+      <Field Size="1" Format="###" Type="2" name="ca_pcode" Caption="Price matrix horizontal coordinate"/>
+      <Field Size="1" Format="###" Type="2" name="ca_comcode" Caption="Commission matrix vertical coordinate"/>
+      <Field Size="6" name="ca_debit" Caption="Debit account"/>
+      <Field Size="6" name="ca_credit" Caption="Credit account"/>
+      <Index name="categs">
+         <IndexEntry name="ca_categ"/>
+      </Index>
+   </Table>
+</xml>

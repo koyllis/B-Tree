@@ -1,0 +1,29 @@
+<xml>
+   <Table System="old" name="cycle" ModifyStamp="0">
+      <Field Caption="Doc. code" Size="2" name="cy_tcode"/>
+      <Field Caption="Associate" Size="8" name="cy_code"/>
+      <Field Caption="Trans. date" Size="4" Type="5" name="cy_date"/>
+      <Field Caption="Ref. No." Size="8" name="cy_refer"/>
+      <Field Caption="Loc." Size="1" Type="2" name="cy_loc"/>
+      <Field Caption="Gross" Format="###,###.##" Size="4" Type="4" name="cy_gross"/>
+      <Field Caption="V.A.T." Format="###.##" Size="4" Type="4" name="cy_vat"/>
+      <Field Caption="Discount" Format="###.##" Size="4" Type="4" name="cy_disc"/>
+      <Field Caption="Amount" Format="###,###.##" Size="4" Type="4" name="cy_net"/>
+      <Field Caption="Currency" Size="3" name="cy_curr"/>
+      <Field Caption="Base" Format="###,###.##" Size="4" Type="4" name="cy_system"/>
+      <Field Caption="Remarks" name="cy_remarks"/>
+      <Field Caption="Due date" Size="4" Type="5" name="cy_tdate"/>
+      <Field Caption="Journal No." Format="######" Size="4" Type="2" name="cy_journal"/>
+      <Field Caption="User ID" Size="8" name="cy_userid"/>
+      <Field Caption="Recorded" Size="4" Type="5" name="cy_record"/>
+      <Field Caption="Time" Format="##:##" Size="2" Type="2" name="cy_time"/>
+      <Field Caption="VAT" Size="3" name="cy_vatcat"/>
+      <Index name="cycle">
+         <IndexEntry name="cy_tcode"/>
+         <IndexEntry name="cy_code"/>
+         <IndexEntry name="cy_date"/>
+         <IndexEntry name="cy_refer"/>
+         <IndexEntry name="cy_loc"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Postal Codes">
+      <Field Caption="Postal code" Format="####" Size="4" Force="1" Type="2" name="postal"/>
+      <Field Size="40"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Force="1" Type="2" name="area"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="postal">
+         <IndexEntry name="postal"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="postal[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="postal"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="postal_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="postal"/>
+      </Index>
+   </Table>
+</xml>

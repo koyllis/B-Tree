@@ -1,0 +1,19 @@
+<xml>
+   <Table System="payroll" name="Employee Items">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Force="1" Type="2" name="employee"/>
+      <Field Caption="Item" File="pos.item" Size="4" Force="1" Type="2" name="item"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Quantity" Format="##" Size="1" Force="1" Type="2" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="employeeitem">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="employeeitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

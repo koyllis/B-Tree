@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" name="Compensation Forms" CreateStamp="1">
+      <Field Caption="Compensation" File="life.compensation" Size="4" Type="2" name="compensation"/>
+      <Field Caption="Form" File="life.reqform" Size="4" Type="2" name="reqform"/>
+      <Field Caption="Requested on" Size="8" Type="5" name="requested"/>
+      <Field Caption="Completed on" Size="8" Type="5" name="completed"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="compenform">
+         <IndexEntry name="compensation"/>
+         <IndexEntry name="reqform"/>
+      </Index>
+      <Index name="compenform[reqform]">
+         <IndexEntry name="reqform"/>
+         <IndexEntry name="compensation"/>
+      </Index>
+   </Table>
+</xml>

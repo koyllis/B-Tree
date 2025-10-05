@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Date Numbering">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Last number" Size="4" Type="2" name="number"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="dateno">
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

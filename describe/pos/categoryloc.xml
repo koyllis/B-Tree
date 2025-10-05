@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="categoryloc" System="pos">
+      <Field Size="4" Type="2" File="pos.category" name="category" Caption="Category"/>
+      <Field Size="4" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="categoryloc">
+         <IndexEntry name="category"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="categoryloc[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

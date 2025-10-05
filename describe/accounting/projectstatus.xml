@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Project Status" System="accounting" RetainColumns="1">
+      <Field Size="2" Type="2" File="accounting.location" name="location" Caption="Project"/>
+      <Field Size="4" Type="2" File="accounting.operation" name="operation" Caption="Operation"/>
+      <Field Size="8" Format="###.##" Type="3" name="perc" Caption="Percentage%"/>
+      <Field Size="4" Format="######.##" Type="4" name="amount" Caption="Amount" Strict="1"/>
+      <Field Size="8" Format="###.##" Type="3" name="toperc" Caption="Perc% to invoice"/>
+      <Field Size="4" Format="######.##" Type="4" name="toamount" Caption="Amount to invoice"/>
+      <Field Size="40" Type="1" name="note" Caption="Note"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="projectstatus">
+         <IndexEntry name="location"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="projectstatus[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

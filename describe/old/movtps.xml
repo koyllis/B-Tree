@@ -1,0 +1,46 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="movtps" System="old">
+      <Field Size="2" Format="u" name="mt_doc" Caption="Document code"/>
+      <Field Size="25" Format="u" name="mt_name" Caption="Document name"/>
+      <Field Format="u" name="mt_acname" Caption="Accounts name"/>
+      <Field Size="4" Format="#######" Type="2" name="mt_lastno" Caption="Next No."/>
+      <Field Size="1" Format="###" Type="2" name="mt_level" Caption="Access level"/>
+      <Field Size="1" Options=",,Y,N,A" Format="u" name="mt_print" Caption="Print(N) (Yes/No/Ask)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_date" Caption="Override date(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_loc" Caption="Request loc(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_links" Caption="Update links(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N,E" Format="u" name="mt_linked" Caption="Links (Y/N/Explode)?"/>
+      <Field Size="1" Options=",,L,D,N" Format="u" name="mt_cost" Caption="Update costs(N) (L/D/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_create" Caption="Create items(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_overide" Caption="Overide price(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_total" Caption="Override total (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_cancel" Caption="Cancelable(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_refer" Caption="Input ref.(N) (Y/N)?"/>
+      <Field Size="1" Options=",,C,R,M" Format="u" name="mt_account" Caption="Account effect (Cash/cRedit/Multiple)?"/>
+      <Field Size="2" Options=",,SP,SM,ST,SA,SB,CP,CM,CT" Format="u" name="mt_stock" Caption="Stock effect (SP,SM,ST,SA,SB,CP,CM,CT)?"/>
+      <Field Size="2" Format="u" name="mt_candoc" Caption="Cancellation suffix"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_local" Caption="Multiply with packing(N) (Y/N)?"/>
+      <Field Size="8" name="mt_printer" Caption="Printer"/>
+      <Field name="mt_device" Caption="Device"/>
+      <Field Size="1" Format="###" Type="2" name="mt_defloc" Caption="Default loc."/>
+      <Field Size="3" Format="u" name="mt_pycode" Caption="Default rec."/>
+      <Field Size="2" Format="u" name="mt_dfpcode" Caption="Price (00=cost, 01=avg, 02=DFcost)"/>
+      <Field Size="2" Dim="12" Format="u" name="mt_condoc" Caption="Convertible to"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_batch" Caption="Batch update mode(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_suppwa" Caption="Supplier mismatch warning(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_price" Caption="Price update(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_locover" Caption="Override location(Y) (Y/N)?"/>
+      <Field Size="1" name="mt_prefix" Caption="Program prefix"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_supp" Caption="Update item supplier(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_trans" Caption="Generate diskette(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="mt_dupl" Caption="Allow duplicates(N) (Y/N)?"/>
+      <Field Size="1" Options=",,D,C" Format="u" name="mt_dcgross" Caption="Debit/Credit"/>
+      <Field Size="6" Format="u" name="mt_relacc" Caption="Related account"/>
+      <Field Size="6" Format="u" name="mt_disacc" Caption="Discount account"/>
+      <Field Size="6" Format="u" name="mt_vatacc" Caption="V.A.T. account"/>
+      <Field Size="6" Format="u" name="mt_othacc" Caption="Other account"/>
+      <Index name="movtps">
+         <IndexEntry name="mt_doc"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml>
+   <Table System="pos" name="colorcompo">
+      <Field Caption="Color group" File="pos.colorgroup" Size="2" Type="2" name="colorgroup"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="colorcompo">
+         <IndexEntry name="colorgroup"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="colorcompo[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="colorgroup"/>
+      </Index>
+   </Table>
+</xml>

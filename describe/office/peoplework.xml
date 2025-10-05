@@ -1,0 +1,15 @@
+<xml>
+   <Table System="office" name="Associate Specialties">
+      <Field Caption="Associate" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Work type" File="office.tenderwork" Size="2" Force="1" Type="2" name="tenderwork"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peoplework">
+         <IndexEntry name="people"/>
+         <IndexEntry name="tenderwork"/>
+      </Index>
+      <Index name="peoplework[tenderwork]">
+         <IndexEntry name="tenderwork"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

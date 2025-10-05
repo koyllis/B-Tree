@@ -1,0 +1,39 @@
+<xml>
+   <Table System="student" name="Daily Schedule">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Slot" File="office.schslot" Size="2" Type="2" name="slot"/>
+      <Field Caption="To slot" File="office.schslot" Size="2" Force="1" Type="2" name="toslot"/>
+      <Field Caption="Student" File="student.student" Size="4" Type="2" name="student"/>
+      <Field Caption="Class" File="student.class" Size="2" Type="2" name="class"/>
+      <Field Caption="instructor" File="student.instructor" Size="4" Force="1" Type="2" name="instructor"/>
+      <Field Caption="Replaced by" File="student.student" Size="4" Type="2" name="replace"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="dateslot">
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="dateslot[class]">
+         <IndexEntry name="class"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="dateslot[replace]">
+         <IndexEntry name="replace"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="dateslot[slot]">
+         <IndexEntry name="slot"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="dateslot[student]">
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+      </Index>
+   </Table>
+</xml>

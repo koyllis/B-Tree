@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Dynamic="1" name="Help Desk Items" System="office">
+      <Field Size="4" Type="2" File="office.helpdesk" name="helpdesk" Caption="Helpdesk"/>
+      <Field Size="2" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="4" Type="2" File="pos.serial" name="serial" Caption="Serial"/>
+      <Field Size="2" Format="###" Type="2" name="quantity" Caption="Quantity"/>
+      <Field Size="4" Format="#####.##" Type="4" name="price" Caption="Price"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Index name="helpitem">
+         <IndexEntry name="helpdesk"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="serial"/>
+      </Index>
+      <Index name="helpitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="helpdesk"/>
+         <IndexEntry name="serial"/>
+      </Index>
+      <Index name="helpitem[serial]">
+         <IndexEntry name="serial"/>
+         <IndexEntry name="helpdesk"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

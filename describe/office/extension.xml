@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Extensions" System="office">
+      <Field Size="4" Type="2" name="code" Caption="Code"/>
+      <Field/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="extension">
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

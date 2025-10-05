@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="inrefty" System="old" ModifyStamp="0">
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="ft_inno" Caption="Ins. type"/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="ft_no" Caption="Refer. No."/>
+      <Index name="inrefty">
+         <IndexEntry name="ft_inno"/>
+         <IndexEntry name="ft_no"/>
+      </Index>
+   </Table>
+</xml>

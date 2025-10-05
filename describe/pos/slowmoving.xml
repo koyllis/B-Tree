@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="turtle" name="Slow Moving">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Last sale" Size="4" Type="5" name="last_sale"/>
+      <Field Caption="Last transfer" Total="1" Size="4" Type="5" name="last_transfer"/>
+      <Field Caption="Stock" Total="1" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Sales" Total="1" Size="8" Type="3" name="sales"/>
+      <Field Caption="After cut-off" Total="1" Size="8" Type="3" name="cutoff"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="slowmoving">
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="slowmoving_last_sale">
+         <IndexEntry name="last_sale"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

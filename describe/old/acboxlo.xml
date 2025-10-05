@@ -1,0 +1,10 @@
+<xml>
+   <Table System="old" name="acboxlo" ModifyStamp="0">
+      <Field Caption="Box" Format="##" Size="1" Type="2" name="bl_box"/>
+      <Field Format="u" name="bl_name"/>
+      <Field Caption="Calculation" Format="u" name="bl_calc"/>
+      <Index name="acboxlo">
+         <IndexEntry name="bl_box"/>
+      </Index>
+   </Table>
+</xml>

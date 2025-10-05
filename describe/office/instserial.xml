@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="instserial" Dynamic="1" name="Installation Serials" System="office">
+      <Field Size="4" Type="2" File="office.instdetails" name="instdetails" Caption="Installation detail"/>
+      <Field name="serial" Caption="Serial"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="instserial">
+         <IndexEntry name="instdetails"/>
+         <IndexEntry name="serial"/>
+      </Index>
+      <Index name="instserial_serial">
+         <IndexEntry name="serial"/>
+         <IndexEntry name="instdetails"/>
+      </Index>
+   </Table>
+</xml>

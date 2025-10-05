@@ -1,0 +1,14 @@
+<xml>
+   <Table System="old" name="acboxes" ModifyStamp="0">
+      <Field Caption="Account" Format="u" Size="6" name="bx_account"/>
+      <Field Caption="Loc." Format="00" Size="1" Type="2" name="bx_loc"/>
+      <Field Caption="Box" Format="##" Size="1" Type="2" name="bx_box"/>
+      <Field Caption="Positive/Negative(P) (P/N)?" Format="u" Size="1" Options=",,P,N" name="bx_effect"/>
+      <Field Caption="Debits/Credits/Both(B) (D/C/B)?" Format="u" Size="1" Options=",,D,C,B" name="bx_dcb"/>
+      <Index name="acboxes">
+         <IndexEntry name="bx_account"/>
+         <IndexEntry name="bx_loc"/>
+         <IndexEntry name="bx_box"/>
+      </Index>
+   </Table>
+</xml>

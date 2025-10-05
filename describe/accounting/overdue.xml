@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Overdue Log" CanModify="1" CanDelete="0" Color="1">
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Code" Size="20" Type="1" Strict="1" name="code"/>
+      <Field Caption="Phones" Size="40" Type="1" Strict="1" name="phones"/>
+      <Field Caption="Terms" Size="2" Type="2" Strict="1" name="terms" File="accounting.terms"/>
+      <Field Caption="Balance" Format="#####.##" Size="8" Type="3" name="balance" Strict="1"/>
+      <Field Caption="Overdue" Format="#####.##" Size="8" Type="3" name="overdue" Strict="1"/>
+      <Field Strict="1" Caption="Last debit" Size="4" Type="5" name="last_debit"/>
+      <Field Caption="Person" Size="20" name="person"/>
+      <Field Caption="Reply" Size="60" name="reply"/>
+      <Field Caption="Type" Size="1" Options="MailCheque,PickupCheck,CallAgain,NoAnswer" Type="2" name="type"/>
+      <Field Caption="Reminder date" Size="4" Type="5" name="reminder"/>
+      <Field Caption="Run date" Size="4" Type="5" name="date" Strict="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="overdue">
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="overdue_reminder">
+         <IndexEntry name="reminder"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

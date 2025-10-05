@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="operators" name="Operators" System="pos">
+      <Field Size="4" Type="2" File="system.user" name="user" Caption="User"/>
+      <Field Size="8" name="cancel" Caption="Cancellation access"/>
+      <Field Size="1" Format="b" Type="2" name="create" Caption="Forbid customer creation"/>
+      <Field Size="1" Format="b" Type="2" name="discount" Caption="Allow discount override"/>
+      <Field Size="1" Format="b" Type="2" name="modify" Caption="Allow modifications"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="operator">
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

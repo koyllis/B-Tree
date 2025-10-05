@@ -1,0 +1,40 @@
+<xml>
+   <Table ManualIndex="1" CanModify="0" System="pos" Export="date" Dynamic="1" PDA="0" CanDelete="0" name="Item Analysis" MergeType="1" Unordered="1">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Division" File="pos.division" Size="1" PersistentReport="1" Type="2" name="division"/>
+      <Field Caption="Vat" Total="1" Percentage="2" Size="8" Type="3" name="vat" PercentageLocal="1"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Percentage="2" Size="4" Type="8" name="quantity" PercentageLocal="1"/>
+
+      <Field Caption="Total" Total="1" Format="######.##" Size="8" Type="3" name="total"/>
+      <Field Caption="Net" Total="1" Format="######.##" Percentage="2" Size="8" Type="3" name="net" PercentageLocal="1"/>
+      <Field Caption="Discount Voucher" Total="1" Format="######.##" Size="8" Type="3" name="voucher_discount"/>
+      <Field Caption="Discount" Total="1" Format="######.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Quotas" Total="1" Format="######.##" Size="8" Type="3" name="quota"/>
+      <Field Caption="Non Customer" Total="1" Format="######.##" Size="8" Type="3" name="no_customer"/>
+      <Field Caption="Cost" Total="1" Format="######.##" Size="8" Type="3" name="cost"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+
+      <Index name="sumdetail" CRC64="1" Unordered="1">
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index CRC64="1" name="sumdetail[item]" Unordered="1">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+      </Index>
+
+     <Index name="sumdetail[location]" CRC64="1">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+   </Table>
+</xml>

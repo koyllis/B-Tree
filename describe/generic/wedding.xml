@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="wedding" System="generic">
+      <Field Size="50"/>
+      <Field Size="4" Format="#####.##" Type="4" name="amount" Caption="Amount" Total="1"/>
+      <Field Size="2" Type="2" File="accounting.area" name="area" Caption="Area"/>
+      <Field Size="40" name="comments" Caption="Comments"/>
+      <Field Size="1" Options="Wife,Husband" Type="2" name="spouse" Caption="Spouse"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="wedding">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="wedding[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="wedding_amount">
+         <IndexEntry name="amount"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

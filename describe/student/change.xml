@@ -1,0 +1,34 @@
+<xml>
+   <Table System="student" name="Changes" Icon="defrag2">
+      <Field Caption="Student" File="student.student" Size="4" Type="2" name="student" Force="1"/>
+      <Field Caption="Date" Size="4" Type="5" name="date" Force="1"/>
+      <Field Caption="Slot" File="office.schslot" Size="2" Type="2" name="slot" Force="1"/>
+      <Field Caption="Class" File="student.class" Size="2" Type="2" name="class" Force="1"/>
+      <Field Caption="instructor" File="student.instructor" Size="4" Force="1" Type="2" name="instructor"/>
+      <Field Caption="Fee" Format="####.##" Size="4" Type="4" name="fee" Strict="1" Total="1"/>
+      <Field Caption="To date" Size="4" Type="5" name="to_date" Force="1"/>
+      <Field Caption="To Slot" File="office.schslot" Size="2" Type="2" name="to_slot" Force="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="change">
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+      </Index>
+      <Index name="change[class]">
+         <IndexEntry name="class"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+      </Index>
+      <Index name="change[slot]">
+         <IndexEntry name="slot"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="change[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+   </Table>
+</xml>

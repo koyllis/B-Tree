@@ -1,0 +1,90 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table FormatField="amount" Icon="backup" Dynamic="1" name="Archived Members" System="life">
+      <Field Size="4" Tip="1" Force="1" Type="2" File="life.member" name="member" Caption="Member"/>
+      <Field PersistentReport="1" Size="2" Format="####" Type="2" name="year" Caption="Year"/>
+      <Field Size="2" Force="1" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="1" Options="Standard,Loan" Force="1" Type="2" name="type" Caption="Type"/>
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Entry date"/>
+      <Field Size="4" Modify="1" Strict="1" AutoCounter="1" Type="2" name="reference" Caption="Reference"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="2" File="life.contractplan" name="contractplan" Caption="Plan"/>
+      <Field Size="12" name="accountno" Caption="Account No."/>
+      <Field Size="12" name="memberno" Caption="Member No."/>
+      <Field Size="8" Format="######.##" Type="3" name="amount" Caption="Initial amount" Total="1"/>
+      <Field Size="4" Format="####.##" Modify="1" Type="4" name="premium" Caption="Premium" Total="1"/>
+      <Field Size="4" Format="####.##" Type="4" name="extra" Caption="Extra" Total="1"/>
+      <Field Size="1" Modify="1" Type="2" name="persons" Caption="Persons"/>
+      <Field Size="1" Format="b" Modify="1" Type="2" name="death" Caption="Death only"/>
+      <Field Size="8" Modify="1" Type="5" name="pending" Caption="Pending"/>
+      <Field Modify="1" name="notes" Caption="Notes"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="archive">
+         <IndexEntry name="member"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="archive[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="archive[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="archive[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="member" Index="member_idnumber"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index Force="1" name="archive_accountno">
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="archive_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="archive_memberno">
+         <IndexEntry name="memberno"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="archive_year">
+         <IndexEntry name="year"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

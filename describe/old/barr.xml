@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="barr" System="old" ModifyStamp="0">
+      <Field Caption="Style" Size="22" name="barr_style"/>
+      <Field Caption="Number" Size="22" name="barr_number"/>
+      <Index name="barr">
+         <IndexEntry name="barr_style"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Miles Expiry Details">
+      <Field Caption="Memmbership No." File="generic.cymember" Size="4" Type="2" name="memberno"/>
+      <Field Caption="Expire date 1" Size="11" name="expire1"/>
+      <Field Caption="Expire miles 1" Size="8" name="miles1"/>
+      <Field Caption="Expire date 2" Size="11" name="expire2"/>
+      <Field Caption="Expire miles 2" Size="8" name="miles2"/>
+      <Field Caption="Expire date 3" Size="11" name="expire3"/>
+      <Field Caption="Expire miles 3" Size="8" name="miles3"/>
+      <Field Caption="Expire date 4" Size="11" name="expire4"/>
+      <Field Caption="Expire miles 4" Size="8" name="miles4"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cyexpire">
+         <IndexEntry name="memberno"/>
+      </Index>
+   </Table>
+</xml>

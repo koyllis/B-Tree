@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" Icon="cardclass" name="Credit Card Fees" Bookmark="0">
+      <Field Caption="Class" File="accounting.cardclass" Size="2" Type="2" Force="1" name="cardclass"/>
+      <Field Caption="Type" File="accounting.cardkey" Size="2" Type="2" Force="1" name="cardkey"/>
+      <Field Caption="Fee(%)" Format="##.####" Size="8" Type="3" name="fee"/>
+      <Field Caption="Statement mnemonic" Size="12" Type="1" name="mnemonic"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cardfees">
+         <IndexEntry name="cardclass"/>
+         <IndexEntry name="cardkey"/>
+      </Index>
+   </Table>
+</xml>

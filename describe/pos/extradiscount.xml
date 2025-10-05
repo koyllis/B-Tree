@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Extra Discounts">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Discount%" Format="###.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Price discount %" Format="###.##" Size="8" Type="3" name="discount_price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="extradiscount">
+         <IndexEntry name="people"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="extradiscount[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="extradiscount[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

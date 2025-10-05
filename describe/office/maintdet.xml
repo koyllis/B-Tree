@@ -1,0 +1,33 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Dynamic="1" name="Maintenance details" System="office">
+      <Field Size="4" Type="2" File="office.maintenance" name="maintenance" Caption="Maintenance"/>
+      <Field Size="2" Type="2" File="office.type" name="type" Caption="Equipment"/>
+      <Field Size="4" Type="2" File="office.instserial" name="instserial" Caption="Serial"/>
+      <Field name="serial" Caption="Other serial"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="maintdet">
+         <IndexEntry name="maintenance"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="instserial"/>
+         <IndexEntry name="serial"/>
+      </Index>
+      <Index name="maintdet[instserial]">
+         <IndexEntry name="instserial"/>
+         <IndexEntry name="maintenance"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="serial"/>
+      </Index>
+      <Index name="maintdet[serial]">
+         <IndexEntry name="serial"/>
+         <IndexEntry name="maintenance"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="instserial"/>
+      </Index>
+      <Index name="maintdet[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="maintenance"/>
+         <IndexEntry name="serial"/>
+         <IndexEntry name="instserial"/>
+      </Index>
+   </Table>
+</xml>

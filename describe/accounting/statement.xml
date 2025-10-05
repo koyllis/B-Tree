@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" Icon="balls" name="Financial Statements" Common="1">
+      <Field/>
+      <Field Caption="Cumulative" Format="b" Size="1" Type="2" name="cumulative"/>
+      <Field Caption="Word Document" Size="32" name="word"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="statement">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

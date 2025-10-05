@@ -1,0 +1,46 @@
+ <xml>
+   <Table System="generic" name="Layout Fields">
+      <Field Caption="Layout" File="generic.pdflayout" Size="2" Type="2" Tip="1" name="layout"/>
+      <Field Caption="Type" Size="1" Options="Header,Detail" Tip="1" Type="2" name="type"/>
+      <Field Caption="Sequence" Tip="1" Size="2" Type="2" name="seq"/>
+      <Field Caption="Field" Size="20" Tip="1" name="field"/>
+      <Field Caption="Data length" Total="1" Format="###" Size="2" Type="2" name="length"/>
+      <Field Caption="Print sequence" Tip="1" Size="2" Type="2" name="seq_print"/>
+      <Field Caption="Page No." Size="1" Type="2" name="page"/>
+      <Field Caption="Page group" Size="1" Type="2" File="generic.pdfpagegroup" name="group"/>
+      <Field Caption="X" Format="####.##" Size="4" Type="8" name="x"/>
+      <Field Caption="Y" Format="####.##" Size="4" Type="8" name="y"/>
+      <Field Caption="Data" Size="30" Type="1" name="data"/>
+      <Field Caption="Value if blank" Size="30" Type="1" name="ifblank"/>
+      <Field Caption="Caption" Size="40" Type="1" name="caption" Tip="1"/>
+      <Field Caption="Caption length" Size="1" Type="2" name="caption_length"/>
+      <Field Caption="Bold?" Format="b" Size="1" Type="2" name="bold"/>
+      <Field Caption="MICR font?" Format="b" Size="1" Type="2" name="micr"/>
+      <Field Caption="Barcode ?" Format="b" Size="1" Type="2" name="barcode"/>
+      <Field Caption="Next line?" Format="b" Size="1" Type="2" name="nextline"/>
+      <Field Caption="Join to line" Size="2" Type="2" name="joinline"/>
+      <Field Caption="Source line" Size="20" Type="1" name="sourceline"/>
+      <Field Caption="Remove characters" Size="2" Format="b" Options="Space,Dash" Type="2" name="remove"/>
+      <Field Caption="Detail line" Size="2" Type="2" name="detail"/>
+      <Field Caption="Padding" Size="1" Type="2" name="padding"/>
+      <Field Caption="Font size" Size="1" Type="2" name="font"/>
+      <Field Caption="Prefix" Size="40" name="prefix"/>
+      <Field Caption="Suffix" Size="40" name="suffix"/>
+      <Field Caption="Prefix (import)" Size="40" name="prefix_import"/>
+      <Field Caption="Decimals" Size="2" name="decimals"/>
+      <Field Caption="Ignore digits" Size="3" name="ignore"/>
+      <Field Caption="Address key" Size="1" Type="1" name="sort"/>
+      <Field Caption="Language character" Size="1" Type="1" name="langchar"/>
+      <Field Caption="Language criteria" Size="60" Type="1" name="langcrit"/>
+      <Field Caption="Language prerequisites" Size="20" Type="1" name="langpreq"/>
+      <Field Caption="XML tag" Size="30" Type="1" name="xmltag"/>
+      <Field Caption="Options" Size="2" Options="Country,Postcode,Exclude,PoBox,Long,Adshot,Language,Pages,Category,ChequeNo,Account,District,Key" Type="2" name="option"/>
+      <Field Caption="Apply" Size="2" Options="Single,American,ChildNote,MultiPage,ChildOnly,ReverseDate,LanguageAdd,Vertical,AlternateSource" Type="2" Format="b" name="apply"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdffield">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

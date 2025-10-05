@@ -1,0 +1,38 @@
+<xml>
+   <Table System="office" name="Appointments">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Slot" File="office.schslot" Size="2" Type="2" Force="1" name="slot"/>
+      <Field Caption="Area" File="office.scharea" Size="2" Type="2" Force="1" name="area"/>
+      <Field Caption="Customer" File="office.schcustomer" Size="4" Type="2" Force="1" name="customer"/>
+      <Field Caption="Exam type" File="office.schtype" Size="2" Type="2" Force="1" name="type"/>
+      <Field Caption="Extend"  Size="1" Type="2" name="extend" Format="b"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="schappoint">
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="area"/>
+      </Index>
+      <Index name="schappoint[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+      </Index>
+      <Index name="schappoint[customer]">
+         <IndexEntry name="customer"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="area"/>
+      </Index>
+      <Index name="schappoint[slot]">
+         <IndexEntry name="slot"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="area"/>
+      </Index>
+      <Index name="schappoint[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="area"/>
+      </Index>
+   </Table>
+</xml>

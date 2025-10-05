@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Root="1" Icon="transfers" name="Import/Export Log" System="system">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="1" Type="2" File="system.location" Auto="1" name="location" Caption="Location"/>
+      <Field Size="160" Modify="1" name="status" Caption="Status"/>
+      <Field Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Index name="ielog">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

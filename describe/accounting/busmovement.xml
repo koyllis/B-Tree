@@ -1,0 +1,49 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" SoftDelete="1" Icon="bus-icon" CanDelete="0" name="Actual Routes">
+      <Field Strict="1" Caption="Number" Size="4" Auto="1" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Route" File="accounting.busroute" Size="4" Type="2" Force="1" name="busroute"/>
+      <Field Caption="Start time" Size="2" Force="1" Type="5" name="start"/>
+      <Field Caption="End time" Size="2" Type="5" name="end"/>
+      <Field Strict="1" Caption="Kilometers" Format="####.###" Size="4" Type="8" name="km"/>
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="4" Type="2" name="vehicle" Modify="1"/>
+      <Field Caption="Category" File="accounting.vehcategory" Size="2" Type="2" name="vehcategory" Modify="1"/>
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee" Modify="1"/>
+      <Field Caption="Actual start" Size="2" Type="5" name="actual_start" Modify="1"/>
+      <Field Caption="Actual end" Size="2" Type="5" name="actual_end" Modify="1"/>
+      <Field Caption="Start KM" Format="######" Size="4" Type="2" name="start_km" Modify="1"/>
+      <Field Caption="End KM" Format="######" Size="4" Type="2" name="end_km" Modify="1"/>
+      <Field Caption="Reference" Size="10" name="reference" Modify="1"/>
+      <Field Strict="1" Caption="Program" Format="b" Size="1" Type="2" name="program" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="busmovement">
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="busmovement[busroute]">
+         <IndexEntry name="busroute"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="busmovement[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="busmovement[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="busmovement[vehcategory]">
+         <IndexEntry name="vehcategory"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="busmovement[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,75 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="settings" Dynamic="1" name="Item Rules" ImmediateChild="1" Unordered="1">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Next Item" File="pos.item" Size="4" Type="2" name="next_item"/>
+      <Field Caption="Next Category" File="pos.category" Size="2" Type="2" name="next_category"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Option" Size="1" Force="1" Type="2" Options="Required,Illegal,Recipe,Price,Transfer" name="option"/>
+      <Field Caption="Quantity" Format="####.#####" Size="4" Force="1" Type="8" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemrule">
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="next_item"/>
+         <IndexEntry name="next_category"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="itemrule[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="next_item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="itemrule[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="next_item"/>
+         <IndexEntry name="next_category"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="itemrule[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="next_item"/>
+         <IndexEntry name="next_category"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="itemrule[next_category]">
+         <IndexEntry name="next_category"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="next_item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="itemrule[next_item]">
+         <IndexEntry name="next_item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="itemrule[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="next_item"/>
+         <IndexEntry name="next_category"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

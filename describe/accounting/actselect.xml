@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Activity Questions">
+      <Field Caption="Activity" File="accounting.activity" Size="2" Type="2" name="activity"/>
+      <Field Caption="Question" File="accounting.actques" Size="2" Type="2" name="actques"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="actselect">
+         <IndexEntry name="activity"/>
+         <IndexEntry name="actques"/>
+      </Index>
+      <Index name="actselect[actques]">
+         <IndexEntry name="actques"/>
+         <IndexEntry name="activity"/>
+      </Index>
+   </Table>
+</xml>

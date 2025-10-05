@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" Icon="edit_add" name="Extra Fields">
+      <Field/>
+      <Field Caption="Field type" Size="1" Options="Date,Number,Time" Type="2" name="type"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="AlowFutureDate,AutoSelect" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="extra">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

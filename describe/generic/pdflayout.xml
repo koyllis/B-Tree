@@ -1,0 +1,53 @@
+<xml>
+   <Table System="generic" name="Layouts">
+      <Field/>
+      <Field Caption="Procedure" name="procedure"/>
+      <Field Caption="Header file" Size="40" name="header"/>
+      <Field Caption="Details file" Size="40" name="detail"/>
+      <Field Caption="Totals file" Size="40" name="total"/>
+      <Field Caption="Header fields" Size="2" Type="2" name="header_count"/>
+      <Field Caption="Detail fields" Size="2" Type="2" name="detail_count"/>
+      <Field Caption="Separator" Size="1" name="separator"/>
+      <Field Caption="Pages per folder" Size="4" Type="2" name="pages"/>
+      <Field Caption="Key pages" Size="1" Type="2" name="key_pages"/>
+      <Field Caption="Line spacing" Format="##.##" Size="8" Type="3" name="spacing"/>
+      <Field Caption="Y coordinate" Size="2" Type="2" name="y"/>
+      <Field Caption="Y coordinate (page 2)" Size="2" Type="2" name="y2"/>
+      <Field Caption="Lines per page" Size="2" Type="2" name="lines"/>
+      <Field Caption="Y coordinate (last)" Size="2" Type="2" name="last_y"/>
+      <Field Caption="Lines per page (last)" Size="2" Type="2" name="last_lines"/>
+      <Field Caption="Page No X" Size="2" Type="2" name="page_x"/>
+      <Field Caption="Page No Y" Size="2" Type="2" name="page_y"/>
+      <Field Caption="Footer X" Size="2" Type="2" name="footer_x"/>
+      <Field Caption="Footer Y" Size="2" Type="2" name="footer_y"/>
+      <Field Caption="Feeder" Format="b" Size="1" Options="FS1,FS2,ZS1,ZS2" Type="2" name="feeder"/>
+      <Field Caption="Font" Size="1" Type="2" name="font" Options="cour,arial"/>
+      <Field Caption="Font Size" Size="1" Type="2" name="font_size"/>
+      <Field Caption="Long pages" Size="1" Type="2" name="long"/>
+      <Field Caption="Start position" Size="1" Type="2" name="start"/>
+      <Field Caption="Key start" Size="2" Type="2" name="key_start"/>
+      <Field Caption="Key length" Size="1" Type="2" name="key_length"/>
+      <Field Caption="Page height" Size="4" Type="8" Format="####.##" name="page_height"/>
+      <Field Caption="Page width" Size="4" Type="8" Format="####.##" name="page_width"/>
+      <Field Caption="Report scheme" Size="50" name="report"/>
+      <Field Caption="Report layout" Size="50" name="report_layout"/>
+      <Field Caption="Mold name" Size="64" name="mold"/>
+      <Field Caption="Codepage" Size="4" Type="2" name="codepage"/>
+      <Field Caption="MICR line" Size="2" Type="2" name="micrline"/>
+      <Field Caption="MICR bank code" Size="2" Type="1" name="micrcode"/>
+      <Field Caption="MICR trans code" Size="2" Type="1" name="micrtran"/>
+      <Field Caption="MICR amount line" Size="2" Type="2" name="amountline"/>
+      <Field Caption="Name field" File="generic.pdffield" Size="2" Type="2" name="field"/>
+      <Field Caption="Start position" Size="1" Type="2" name="name_start"/>
+      <Field Caption="Length" Size="1" Type="2" name="name_length"/>
+      <Field Caption="Alternate source" Size="30" Type="1" name="source"/>
+      <Field Caption="Remove if not exist" File="generic.pdffield" Size="2" Type="2" name="remove"/>
+      <Field Caption="Control number length" Size="1" Type="2" name="control"/>
+      <Field Caption="Control line" Size="2" Type="2" name="controlline"/>
+      <Field Caption="Options" Size="2" Options="OMR,NoPageNumber,DuplicateTable,ZoneNaming" Type="2" Format="b" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdflayout">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

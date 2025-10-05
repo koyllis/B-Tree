@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="tsprice" System="old" ModifyStamp="0">
+      <Field Caption="Week No." Format="##" Size="1" Type="2" name="p_week"/>
+      <Field Caption="Type (0,1,2,3)" Size="1" name="p_type"/>
+      <Field Caption="Location" Size="1" Type="2" name="p_loc"/>
+      <Field Caption="Currency" Size="3" name="p_curr"/>
+      <Field Caption="Price" Format="###,###" Size="4" Type="4" name="p_price"/>
+      <Index name="tsprice">
+         <IndexEntry name="p_week"/>
+         <IndexEntry name="p_type"/>
+         <IndexEntry name="p_loc"/>
+         <IndexEntry name="p_curr"/>
+      </Index>
+   </Table>
+</xml>

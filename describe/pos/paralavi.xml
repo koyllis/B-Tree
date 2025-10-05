@@ -1,0 +1,41 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanDelete="0" Icon="grapes" Dynamic="1" SoftDelete="1" name="Collect" System="pos" DeleteChildren="1">
+      <Field Size="4" Strict="1" Modify="1" AutoCounter="1" Type="2" name="number" Caption="Number"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Supplier"/>
+      <Field Size="2" Strict="1" Modify="1" Type="2" File="system.user" name="user" Auto="1" Caption="User"/>
+      <Field Size="4" Strict="1" Modify="1" Type="2" File="accounting.journal" name="journal" Caption="Journal"/>
+      <Field Size="4" Strict="1" Modify="1" Type="2" File="pos.trans" name="trans" Caption="Transaction"/>
+      <Field Size="8" Modify="1" Strict="1" Type="5" name="printed" Caption="Printed"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" name="@delete" System="1" HideReport="1" Caption="SoftDelete"/>
+      <Index name="paralavi">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="paralavi[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="paralavi[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="paralavi[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="paralavi[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="paralavi[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="paralavi_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

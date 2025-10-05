@@ -1,0 +1,81 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" SoftDelete="1" Icon="taxi" Dynamic="1" name="Vehicles" Merge="1" CreateStamp="1" UserStamp="1">
+      <Field Caption="Reg No" Size="20" name="registration" Tip="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people" Dll="1"/>
+      <Field Caption="Owner" File="accounting.people" Size="4" Type="2" name="people_owner"/>
+      <Field Caption="Street" File="accounting.street" Size="4" Type="2" name="street"/>
+      <Field Caption="Str No" Size="5" name="street_no"/>
+      <Field Caption="Chassis" Size="20" name="chassis"/>
+      <Field Caption="Engine No." Size="20" name="engine"/>
+      <Field Caption="Type" File="accounting.make" Size="2" Type="2" Tip="1" name="make"/>
+      <Field Caption="Model" File="accounting.vehmodel" Size="2" Type="2" name="vehmodel"/>
+      <Field Caption="Consuption" File="accounting.vehconsumption" Size="2" Type="2" name="vehconsumption"/>
+      <Field Caption="Description" Size="40" name="model"/>
+      <Field Caption="Color" Size="20" name="color"/>
+      <Field Caption="Category" File="accounting.vehcategory" Size="4" Type="2" name="vehcategory"/>
+      <Field Caption="Category 2" File="accounting.vehcategory" Size="4" Type="2" name="vehcategory2"/>
+      <Field Caption="Group" File="accounting.vehgroup" Size="2" Type="2" name="vehgroup"/>
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Original value" Format="#####.##" Size="4" Type="4" name="value"/>
+      <Field Caption="Rent" Format="####.##" Size="4" Type="4" name="rent"/>
+      <Field Caption="Frequency" Format="b" Size="4" Options="Monthly,2Months,3Months,6Months,Year" Type="2" name="frequency"/>
+      <Field Caption="Commission%" Format="###.##" Size="4" Type="8" name="commission"/>
+      <Field Caption="Last invoice" Size="4" Type="5" name="last"/>
+      <Field Caption="Next invoice" Size="4" Type="5" name="next"/>
+      <Field Caption="Date aquired" Size="4" Type="5" name="date"/>
+      <Field Caption="Last count (digital)" Size="4" Type="2" name="lastcount_digital"/>
+      <Field Caption="Last count" Size="4" Type="2" name="lastcount"/>
+      <Field Caption="Last money" Format="####.##" Size="4" Type="4" name="lastmoney"/>
+      <Field Caption="Last stock" Format="####.##" Size="4" Type="4" name="laststock"/>
+      <Field Caption="Commision Amount" Format="####.##" Size="4" Type="4" name="commamount"/>
+      <Field Caption="Options" Format="b" Size="2" Options="CashDifference,Sub-contract,Replacement,On-Loan,NoService,NoExpenses" Type="2" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="vehicle">
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[make]">
+         <IndexEntry name="make"/>
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[people_owner]">
+         <IndexEntry name="people_owner"/>
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[street]">
+         <IndexEntry name="street"/>
+         <IndexEntry name="street_no"/>
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[vehcategory2]">
+         <IndexEntry name="vehcategory2"/>
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[vehcategory]">
+         <IndexEntry name="vehcategory"/>
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[vehconsumption]">
+         <IndexEntry name="vehconsumption"/>
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[vehgroup]">
+         <IndexEntry name="vehgroup"/>
+         <IndexEntry name="registration"/>
+      </Index>
+      <Index name="vehicle[vehmodel]">
+         <IndexEntry name="vehmodel"/>
+         <IndexEntry name="registration"/>
+      </Index>
+   </Table>
+</xml>

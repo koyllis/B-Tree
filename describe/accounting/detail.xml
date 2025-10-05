@@ -1,0 +1,153 @@
+<xml>
+   <Table ManualIndex="1" ChildMutex="1" DeleteChildren="1" System="accounting" SoftDelete="1" Icon="details" DataHeader="1" Dynamic="1" CanSoftDelete="0" Location="people.location" PDA="0" Index="detail" CanDelete="0" CanModify="0" name="Journal details" MapRecord="1" MatchEdit="0" OnExistModify="0" ImmediateChild="1" Unordered="1" Shards="1" Date="journal.date">
+      <Field Caption="Journal entries" Format="#######" File="accounting.journal" Size="4" Type="2" name="journal"/>
+      <Field Caption="Line No." Format="###" Size="2" Type="2" name="line"/>
+      <Field Caption="Ref. No." Size="20" name="reference"/>
+      <Field Caption="Description" Size="50" name="description"/>
+      <Field Caption="Due date" Size="4" Type="5" name="duedate"/>
+      <Field Caption="Chart of accounts" Format="#######" File="accounting.chart" Size="2" PersistentReport="1" Type="2" name="chart"/>
+      <Field Caption="Business associates" Format="#######" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Location" File="accounting.location" Size="2" PersistentReport="1" Type="2" name="location"/>
+      <Field Caption="VAT codes" Format="#######" File="accounting.vat" Size="1" Type="2" name="vat" DontExpandNode="1"/>
+      <Field Caption="Currency" Format="#######" File="accounting.currency" Size="1" Type="2" name="currency"/>
+      <Field Caption="Base amount" Total="1" Format="#########.##" Size="8" Type="4" name="system"/>
+      <Field Caption="Amount" Total="1" Format="#########.##" Round="0" IgnoreSmallAmounts="1" Size="8" Type="4" name="amount"/>
+      <Field Caption="Presented Date" Size="4" Type="5" name="presented" Modify="1"/>
+      <Field Caption="Asset No." Size="4" Type="2" name="number"/>
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="2" Type="2" name="vehicle"/>
+      <Field Caption="Office" File="accounting.office" Size="2" Type="2" name="office"/>
+      <Field Caption="Accumulated Depreciation" Size="8" Type="4" name="accdep"/>
+      <Field Caption="Category" File="accounting.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Operation" File="accounting.operation" Size="2" Type="2" name="operation"/>
+      <Field Caption="Channel" File="pos.channel" Size="2" Type="2" name="channel"/>
+      <Field Caption="Other" Format="#####.##" Size="4" Type="2" name="other"/>
+      <Field Caption="Age date" Size="4" Type="5" name="agedate"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+      <Index CRC64="1" name="detail">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="detail[chart]" AlwaysCheck="1">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="amount"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" name="detail[chart_bookmark]">
+         <IndexEntry Index="chart_@bookmark" name="chart"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="amount"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" name="detail[chart_duedate]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="amount"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" name="detail[chart_reference]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="amount"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" name="detail[people]" AlwaysCheck="1">
+         <IndexEntry name="people"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="amount"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" name="detail[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" name="detail_category">
+         <IndexEntry name="category"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="detail_location">
+         <IndexEntry name="location"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" name="detail_number">
+         <IndexEntry name="number"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="detail_operation">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="detail_channel">
+         <IndexEntry name="channel"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="detail_peopledue">
+         <IndexEntry name="people"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="amount"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" Force="1" name="detail_presented">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="presented"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="amount"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" name="detail_reconcile">
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="amount"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index CRC64="1" name="detail_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="detail_vehicle">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

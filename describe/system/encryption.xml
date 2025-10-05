@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="system" name="encryption" Root="1">
+      <Field Caption="Company" File="system.master" Size="2" Type="2" name="master"/>
+      <Field Caption="Field" Size="64" name="field"/>
+      <Field Caption="Record" Size="4" Type="2" name="record"/>
+      <Field Caption="Key" Size="344" name="key"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="encryption">
+         <IndexEntry name="master"/>
+         <IndexEntry name="field"/>
+         <IndexEntry name="record"/>
+      </Index>
+   </Table>
+</xml>

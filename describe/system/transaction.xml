@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Btrieve Transactions" System="system" Root="1" Audit="0">
+      <Field Hide="1" Size="4" Type="2" name="counter" Caption="Counter"/>
+      <Field Size="8" Type="5" name="@date" Caption="Date"/>
+      <Field Size="32" name="@user" Caption="User"/>
+      <Field Size="32" name="file" Caption="File"/>
+      <Field Size="32" name="system" Caption="System"/>
+      <Field Size="32" name="company" Caption="Company"/>
+      <Field Size="1" Options="Write,Insert,Erase,SoftUnerase,SoftErase,Lock,Zap" Type="2" name="@operation" Caption="Operation"/>
+      <Field Size="8" Type="2" name="transaction" Caption="Transaction"/>
+      <Field Size="1" Options="Begin,Process,End" Type="2" name="@transaction_mode" Caption="Transaction Mode"/>
+      <Field Size="4" Format="#########" Type="2" name="record" Caption="Record"/>
+      <Field Size="8" Type="2" name="undo" Caption="Undo"/>
+      <Field Size="8" Type="2" name="redo" Caption="Redo"/>
+      <Field Size="4" Type="2" name="pos" Caption="Data Position"/>
+      <Field Size="2" Type="2" name="length" Caption="Length"/>
+      <Field Size="384" name="data" Caption="Data"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="transaction">
+         <IndexEntry name="counter"/>
+         <IndexEntry name="@date"/>
+         <IndexEntry name="@user"/>
+      </Index>
+   </Table>
+</xml>

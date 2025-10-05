@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="precalc">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Total" Total="1" Size="8" Type="3" name="total"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="precalc">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="precalc[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

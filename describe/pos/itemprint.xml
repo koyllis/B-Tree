@@ -1,0 +1,55 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" Icon="catprint" Dynamic="1" name="Item Printers" Common="1">
+      <Field Caption="Group" Size="1" Type="2" name="group"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Port" File="system.port" Size="2" Type="2" name="port"/>
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemprint">
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="port"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="itemprint[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="port"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="itemprint[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="port"/>
+      </Index>
+      <Index name="itemprint[port]">
+         <IndexEntry name="port"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="itemprint[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="port"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="itemprint_item">
+         <IndexEntry name="item"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="port"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

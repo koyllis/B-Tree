@@ -1,0 +1,35 @@
+<xml>
+   <Table Bookmark="1" System="pos" Icon="butterfly" Short="Brand" name="Brands" Merge="1" json_replicate="1">
+      <Field/>
+      <Field Caption="Type" File="pos.type" Size="2" Type="2" name="type"/>
+      <Field Caption="Origin" File="accounting.area" Size="2" Type="2" name="origin"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Web name" Size="40" name="webname"/>
+      <Field Caption="Sequence" Size="2" Type="2" name="sequence"/>
+      <Field Caption="Web discount%" Size="8" Type="3" name="webdiscount"/>
+      <Field Caption="Clearance discount%" Size="8" Type="3" name="cleardiscount"/>
+      <Field Caption="Code suffix" Size="3" name="suffix"/>
+      <Field Caption="Options" Format="b" Size="2" Options="NoWebPrice,Promotion,Inactive" Type="2" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="brand">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="brand[origin]">
+         <IndexEntry name="origin"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="brand[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="brand[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="brand_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

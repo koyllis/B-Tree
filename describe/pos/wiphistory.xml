@@ -1,0 +1,75 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table Icon="new_post" name="WIP History" System="pos">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Type="2" File="system.user" name="user" Caption="Station"/>
+      <Field Size="4" Type="2" File="pos.transdet" name="transdet" Caption="Transaction"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="pos.color" name="color" Caption="Width"/>
+      <Field Size="2" Type="2" File="pos.size" name="size" Caption="Length"/>
+      <Field Size="8" Type="3" name="quantity" Caption="Quantity"/>
+      <Field Size="2" Type="2" File="payroll.employee" name="employee" Caption="Employee"/>
+      <Field Size="8" Type="5" name="completed" Caption="Completed"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="wiphistory">
+         <IndexEntry name="date"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="wiphistory[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="wiphistory[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="wiphistory[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="wiphistory[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="wiphistory[transdet]">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="wiphistory[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="wiphistory_completed">
+         <IndexEntry name="completed"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+   </Table>
+</xml>

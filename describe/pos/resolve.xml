@@ -1,0 +1,23 @@
+<xml>
+   <Table System="pos" name="Resolution Center" CanModify="0" CanDelete="1">
+      <Field Caption="Date" Size="4" Type="5" Strict="1" Auto="1" name="date"/>
+      <Field Caption="Time" Size="2" Type="5" Strict="1" Format="HH:mm" Auto="1" name="time"/>
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" Strict="1" name="trans"/>
+      <Field Caption="Transaction detail" File="pos.transdet" Size="8" Type="2" Strict="1" name="transdet"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Strict="1" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" Strict="1" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" Strict="1" name="size"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" Strict="1" name="quantity"/>
+      <Field Caption="Difference" Format="quantity" Size="4" Type="8" Strict="1" name="difference"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="resolve">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+   </Table>
+</xml>

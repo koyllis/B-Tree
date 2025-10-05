@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="system" Icon="rights" Core="1" Index="constraint" name="User constraints" Root="1">
+      <Field Caption="Level" Negative="0" Size="1" Options="User,Manager" Type="2" name="level"/>
+      <Field Caption="User" Format="#######" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Company" Format="#######" File="system.master" Size="2" Type="2" name="master"/>
+      <Field Caption="Type" Format="###" Size="1" Options="engine,interface" Type="2" name="type"/>
+      <Field Caption="System" Size="32" name="system"/>
+      <Field Caption="Filename" Size="32" name="file"/>
+      <Field Caption="Field" Size="32" name="field"/>
+      <Field Caption="Record" Format="#######" Size="4" Type="2" name="$record"/>
+      <Field Caption="Event" Size="32" name="event"/>
+      <Field Caption="Read" Format="b" Size="1" Type="2" name="read"/>
+      <Field Caption="Write" Format="b" Size="1" Type="2" name="write"/>
+      <Field Caption="Delete" Format="b" Size="1" Type="2" name="delete"/>
+      <Field Caption="Insert" Format="b" Size="1" Type="2" name="insert"/>
+      <Field Caption="Print" Format="b" Size="1" Type="2" name="print"/>
+      <Field Caption="Soft Delete" Format="b" Size="1" Type="2" name="soft_delete"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="constraint">
+         <IndexEntry name="level"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="master"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="file"/>
+         <IndexEntry name="field"/>
+         <IndexEntry name="$record"/>
+         <IndexEntry name="event"/>
+      </Index>
+   </Table>
+</xml>

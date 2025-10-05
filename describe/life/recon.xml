@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="life" Icon="balance" name="Balance Reconciliation">
+      <Field Caption="Contract" File="life.contract" Size="2" Type="2" name="contract"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Opening" Total="1" Format="######.##" Size="4" Type="4" name="opening"/>
+      <Field Caption="Initial charge" Total="1" Format="######.##" Size="4" Type="4" name="initial"/>
+      <Field Caption="Initial extra" Total="1" Format="######.##" Size="4" Type="4" name="initextra"/>
+      <Field Caption="Debit" Total="1" Format="######.##" Size="4" Type="4" name="debit"/>
+      <Field Caption="Credit" Total="1" Format="######.##" Size="4" Type="4" name="credit"/>
+      <Field Caption="Extra" Total="1" Format="######.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Receipts" Total="1" Format="######.##" Size="4" Type="4" name="receipt"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="recon">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="recon[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="contract"/>
+      </Index>
+   </Table>
+</xml>

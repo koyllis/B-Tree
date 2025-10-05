@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="redirec" System="old">
+      <Field Size="1" Format="00" Type="2" Dim ="1" name="de_loc" Caption="Loc."/>
+      <Field Size="4" Options=",,10000-99999999" Format="#########" Type="2" Dim ="1" name="de_phone" Caption="Phone No."/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="de_ext" Caption="Ex."/>
+      <Field Size="56" Format="u" Dim ="1" name="de_dir1" Caption="Directions"/>
+      <Field Size="56" Format="u" Dim ="1" name="de_dir2" Caption=""/>
+      <Index name="redirec">
+         <IndexEntry name="de_loc"/>
+         <IndexEntry name="de_phone"/>
+         <IndexEntry name="de_ext"/>
+      </Index>
+   </Table>
+</xml>

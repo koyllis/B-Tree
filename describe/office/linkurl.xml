@@ -1,0 +1,21 @@
+<xml>
+   <Table Parent="category" System="office" Icon="tree" name="Announcements">
+      <Field Size="100" Force="1"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Category" File="office.linkurl" Size="4" Type="2" name="category"/>
+      <Field Caption="URL" Size="200" name="url"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="linkurl">
+         <IndexEntry name="name"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="linkurl[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="linkurl_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

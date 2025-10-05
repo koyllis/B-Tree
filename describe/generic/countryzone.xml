@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="countryzone">
+      <Field Caption="Country code" Size="2" name="countrycode"/>
+      <Field Size="40"/>
+      <Field Caption="Zone" Size="1" Type="2" Options="A,B" name="zone"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="countryzone">
+         <IndexEntry name="countrycode"/>
+      </Index>
+   </Table>
+</xml>

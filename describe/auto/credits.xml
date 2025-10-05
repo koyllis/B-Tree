@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Credits" CreateStamp="1">
+      <Field name="reference" Caption="Reference" Type="2" Size="4" AutoCounter="1"/>
+      <Field name="webuser" Caption="User" Type="2" Size="2" File="auto.webuser"/>
+      <Field name="credits" Caption="Credits" Type="2" Size="2"/>
+      <Field name="vehicle" Caption="Vehicle" Type="2" Size="4" File="auto.vehicle"/>
+      <Field name="total" Caption="Total" Type="3" Size="8" Format="####.##"/>
+      <Field name="discount" Caption="Discount" Type="3" Size="8" Format="####.##"/>
+      <Field name="voucher" Caption="Voucher" Type="2" Size="2" File="auto.voucher"/>
+      <Field name="reason" Caption="Reason" Type="2" Size="1" Options="Selling,Buying,Checking,Other"/>
+      <Field name="report" Caption="Report ID" Type="1" Size="30"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="9" name="@create_stamp"/>
+      <Index name="credits">
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="credits[webuser]">
+         <IndexEntry name="webuser"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="credits[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   	  <Index name="credits_createstamp" CRC64="1" Unordered="1">
+	     <IndexEntry name="@create_stamp" />
+	     <IndexEntry name="reference" />
+	  </Index>
+   </Table>
+</xml>

@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ManualIndex="1" System="pos" Export="date" name="sumvat">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Normal,Division,Service,Delivery" name="type"/>
+      <Field Caption="Vat" File="accounting.vat" Size="1" Type="2" name="vat"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" name="division"/>
+      <Field Caption="Gross" Total="1" Round="0" Format="#####,##" Size="8" Type="3" name="gross"/>
+      <Field Caption="Vat" Total="1" Round="0" Format="#####,##" Size="8" Type="3" name="vat_amount"/>
+      <Field Caption="Net" Total="1" Round="0" Format="#####,##" Size="8" Type="3" name="net"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="sumvat">
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="vat"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

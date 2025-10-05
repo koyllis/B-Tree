@@ -1,0 +1,100 @@
+<xml>
+   <Table System="office" SoftDelete="1" Icon="author" CanDelete="0" name="Tenders Management" CreateStamp="1">
+      <Field Strict="0" Caption="Tender No." Size="20" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="School" File="office.school" Size="2" Type="2" Force="1" name="school"/>
+      <Field Size="100" Force="1"/>
+      <Field Caption="Proclamation date" Size="4" Force="1" Type="5" name="prodate"/>
+      <Field Caption="Letter date" Size="4" Type="5" name="letter"/>
+      <Field Caption="Type" File="office.tendertype" Size="2" Force="1" Type="2" name="type"/>
+      <Field Caption="Category" Total="1" File="office.tendercat" Size="2" Type="2" Force="1" name="category"/>
+      <Field Caption="Group" File="office.tendergroup" Size="2" Type="2" name="group"/>
+      <Field Caption="Interface code" Size="5" Force="1" name="interface"/>
+      <Field Caption="Priority" Size="1" Options="High,Medium,Low" Force="1" Type="2" name="priority"/>
+      <Field Caption="Estimated cost" Total="1" Format="#####.##" Size="4" Type="4" name="estimated"/>
+      <Field Caption="Quantity" Total="1" Size="4" Type="2" name="quantity"/>
+      <Field Caption="Unit" File="office.tenderunit" Size="2" Type="2" name="unit"/>
+      <Field Caption="Price" Format="#####.##" Size="4" Type="4" name="price"/>
+      <Field Caption="Amount" Total="1" Format="######.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Provision" Total="1" Format="######.##" Size="4" Type="4" name="provision"/>
+      <Field Caption="Yearly estimation" Format="######.##" Size="4" Type="4" name="yearly"/>
+      <Field Caption="Duration" Format="###" Size="2" Type="2" name="duration"/>
+      <Field Caption="Unit" File="office.tenderunit" Size="2" Type="2" name="unit_duration"/>
+      <Field Caption="Withholding %" Format="##" Size="8" Type="3" name="withholding"/>
+      <Field Strict="1" Caption="Withholding amount" Total="1" Format="#######.##" Size="4" Type="4" name="withamount" Modify="1"/>
+      <Field Caption="Vat" File="accounting.vat" Size="2" Type="2" Force="1" name="vat"/>
+      <Field Caption="With V.A.T." Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="withvat" Modify="1"/>
+      <Field Caption="Sponsor" File="accounting.people" Size="4" Type="2" name="sponsor" Modify="1"/>
+      <Field Caption="Reason" File="office.tenderreason" Size="2" Type="2" name="tenderreason" Modify="1"/>
+      <Field Caption="Provision paid" Total="1" Format="######.##" Size="4" Type="4" name="provisionpaid" Modify="1"/>
+      <Field Caption="Guarantee" Format="######.##" Size="4" Type="4" name="guarantee" Modify="1"/>
+      <Field Caption="Guarantee date" Size="4" Type="5" name="guadate" Modify="1"/>
+      <Field Caption="Agreement date" Size="4" Type="5" name="agreement" Modify="1"/>
+      <Field Caption="Expire date" Size="4" Type="5" name="expdays" Modify="1"/>
+      <Field Caption="Sign date" Size="4" Type="5" name="sign" Modify="1"/>
+      <Field Strict="1" Caption="Estimated completion" Size="4" Type="5" name="completion" Modify="1"/>
+      <Field Caption="Status" Size="1" Options="InProgress,PendingReceipt,Completed" Type="2" name="status" Modify="1"/>
+      <Field Caption="Delay note" Size="50" name="delaynote" Modify="1"/>
+      <Field Caption="Year" Size="2" Type="2" name="year" Modify="1" Strict="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Created" Strict="1" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="tender">
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender[school]">
+         <IndexEntry name="school"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="tender[sponsor]">
+         <IndexEntry name="sponsor"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender[tenderreason]">
+         <IndexEntry name="tenderreason"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender[unit]">
+         <IndexEntry name="unit"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender[unit_duration]">
+         <IndexEntry name="unit_duration"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender_interface">
+         <IndexEntry name="interface"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tender_prodate">
+         <IndexEntry name="prodate"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="school"/>
+      </Index>
+   </Table>
+</xml>

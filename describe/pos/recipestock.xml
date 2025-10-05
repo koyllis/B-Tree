@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Export="date" name="Recipe Stock" System="pos" Dynamic="1">
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Force="1" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Force="1" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="4" Strict="1" Modify="1" Type="5" name="opendate" Caption="From date"/>
+      <Field Size="4" Format="#####.##" Modify="1" Strict="1" Type="4" name="openvalue" Total="1" Caption="Opening value"/>
+      <Field Size="4" Format="#####.###" Strict="1" Modify="1" Type="8" name="opening" Caption="Opening"/>
+      <Field Size="4" Format="#####.###" Strict="1" Modify="1" Type="8" name="additions" Caption="Additions"/>
+      <Field Size="4" Format="#####.###" Strict="1" Modify="1" Type="8" name="usage" Caption="Usage"/>
+      <Field Size="4" Format="#####.###" Strict="1" Modify="1" Type="8" name="sales" Caption="Sales"/>
+      <Field Size="4" Format="#####.###" Type="8" name="closing" Caption="Closing"/>
+      <Field Size="4" Format="#####.###" Strict="1" Modify="1" Type="8" name="cost" Total="1" Caption="Cost of sales"/>
+      <Field Size="4" Format="#####.##" Strict="1" Modify="1" Type="4" name="value" Total="1" Caption="Closing value"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="recipestock">
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="recipestock[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="recipestock[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

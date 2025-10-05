@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Best Customer">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Address" Size="60" name="address"/>
+      <Field Caption="Phones" Size="60" name="phones"/>
+      <Field Caption="Sales" Total="1" Format="######.##" Size="4" Type="4" name="sales"/>
+      <Field Caption="Profit" Total="1" Format="######.##" Size="4" Type="4" name="profit"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="bestpeople">
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="bestpeople_sales">
+         <IndexEntry name="sales"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="bestpeople_profit">
+         <IndexEntry name="profit"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

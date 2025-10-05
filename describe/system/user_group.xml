@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Root="1" name="user_group" System="system">
+      <Field name="user_group" Tip="1"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="user_group">
+         <IndexEntry name="user_group"/>
+      </Index>
+   </Table>
+</xml>

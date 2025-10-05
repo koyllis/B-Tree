@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="tsagent" System="old" ModifyStamp="0">
+      <Field Caption="Agent No." Format="###" Size="1" Type="2" name="ag_agent"/>
+      <Field Format="u" Size="20" name="ag_name"/>
+      <Index name="tsagent">
+         <IndexEntry name="ag_agent"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,17 @@
+<xml>
+   <Table System="old" name="chart" ModifyStamp="0">
+      <Field Caption="Account" Format="u" Size="6" name="a_account"/>
+      <Field name="a_name"/>
+      <Field Caption="Type" Format="u" Size="1" Options="A,L,C,R,E,O" name="a_type"/>
+      <Field Caption="Level" Format="###" Size="1" Options="1-5" Type="2" name="a_level"/>
+      <Field Caption="General/Detail" Format="u" Size="1" Options="G,D" name="a_gd"/>
+      <Field Caption="Parent" Format="u" Size="6" name="a_parent"/>
+      <Field Caption="Cashflow(N) (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="a_cash"/>
+      <Field Caption="Excempt from VAT(N) (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="a_novat"/>
+      <Field Caption="Active(Y) (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="a_active"/>
+      <Field Caption="Future" Size="46" name="a_future"/>
+      <Index name="chart">
+         <IndexEntry name="a_account"/>
+      </Index>
+   </Table>
+</xml>

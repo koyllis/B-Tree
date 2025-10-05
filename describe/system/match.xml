@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Root="1" name="match" System="system">
+      <Field name="table" Caption="Table"/>
+      <Field Size="256" name="match" Caption="Match"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="match">
+         <IndexEntry name="table"/>
+      </Index>
+   </Table>
+</xml>

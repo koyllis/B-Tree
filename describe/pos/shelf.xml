@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Shelfs">
+      <Field/>
+      <Field Caption="Height (cm)" Format="###" Size="2" Type="2" name="height"/>
+      <Field Caption="Width (cm)" Format="###" Size="2" Type="2" name="widtrh"/>
+      <Field Caption="Depth (cm) " Format="###" Size="2" Type="2" name="depth"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="shelf">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

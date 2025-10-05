@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="Machines" System="old">
+      <Field Size="2" Format="###" Type="2" name="ma_mano" Caption="Machine No."/>
+      <Field Size="20" Format="u" name="ma_name"/>
+      <Field Size="40" Format="u" name="ma_desc" Caption="Description"/>
+      <Field Size="2" Format="###" Type="2" name="ma_seq" Caption="Sequence No."/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="ma_order" Caption="Maintain order schedule(N) (Y/N)?"/>
+      <Field Size="1" Format="###" Type="2" name="ma_loc" Caption="Loc."/>
+      <Field Size="15" Format="u" name="ma_serial" Caption="Serial"/>
+      <Field Size="10" Format="u" name="ma_inv" Caption="Invoice No."/>
+      <Field Size="4" Format="#######.##" Type="4" name="ma_cost" Caption="Purchase cost"/>
+      <Field Size="4" Type="5" name="ma_date" Caption="Purchase date"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ma_dayc" Caption="Local cost/day"/>
+      <Field Size="1" Format="###" Type="2" name="ma_hours" Caption="Shifts per day"/>
+      <Field Size="4" Type="5" name="ma_main" Caption="Maintenance"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ma_export" Caption="Export cost/day"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ma_import" Caption="Import cost/day"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ma_stock" Caption="Stock cost/day"/>
+      <Field Size="20" name="ma_future" Caption="Future"/>
+      <Field Size="40" Format="u" name="ma_note1" Caption="Notes"/>
+      <Field Size="40" Format="u" name="ma_note2" Caption=""/>
+      <Field Size="40" Format="u" name="ma_note3" Caption=""/>
+      <Index name="prmachs">
+         <IndexEntry name="ma_mano"/>
+      </Index>
+   </Table>
+</xml>

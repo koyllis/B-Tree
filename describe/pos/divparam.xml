@@ -1,0 +1,120 @@
+<xml>
+   <Table System="pos" SoftDelete="1" Icon="divparam" Dynamic="1" name="Division Parameters" UserStamp="1" Dataset="1" Common="1">
+      <Field Caption="Location" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" name="division"/>
+      <Field Caption="Menu" File="pos.menu" Size="1" Type="2" name="menu"/>
+      <Field Caption="VAT%" File="accounting.vat" Size="1" Type="2" name="vat"/>
+      <Field Caption="Receipt method" Size="1" Type="2" Options="Cash-IN,Dispatch,Always" name="print_rec"/>
+      <Field Caption="CTO%" Format="##.##" Size="2" Type="2" name="cto"/>
+      <Field Caption="Service%" Format="##.##" Size="2" Type="2" name="service"/>
+      <Field Caption="Time limit" Size="2" Type="2" name="time"/>
+      <Field Caption="Drive time" Size="2" Type="2" name="drive"/>
+      <Field Caption="Warning time" Size="2" Type="2" name="warning"/>
+      <Field Caption="Maximum charge" Size="4" Type="4" name="maximum"/>
+      <Field Caption="No charge limit" Size="4" Type="4" name="nocharge"/>
+      <Field Caption="From date (happy hour)" Size="8" Type="5" name="frdate"/>
+      <Field Caption="To date (happy hour)" Size="8" Type="5" name="todate"/>
+      <Field Caption="Customer Script" Size="32" name="customer_script"/>
+      <Field Caption="Option" Format="b" Size="2" Type="2" Options="NoFtp,FrontDisplay,ForceFromLocation,IgnoreQuotasIfPriceLocation,NoLogo,Landscape" name="option"/>
+      <Field Caption="Request employee" Size="1" Type="2" Options="ORDER,CASH-IN,BOTH" name="employee"/>
+      <Field Caption="Receipt Copy" Format="b" Size="1" Type="2" name="print_copy"/>
+      <Field Caption="Discount method" File="pos.discount" Size="2" Type="2" name="discount"/>
+      <Field Caption="Receipt Medthod" File="pos.receipt" Size="2" Type="2" name="receipt"/>
+      <Field Caption="Print Receipt" Format="b" Size="1" Type="2" Options="Receipt,Category,NoCashin,CashinPrint,Coupon,Amended,Tally,Preview" name="print_receipt"/>
+      <Field Caption="Alternate Receipt Script" Size="32" name="alternate_receipt_script"/>
+      <Field Caption="Receipt Script" Size="32" name="receipt_script"/>
+      <Field Caption="Bluetooth Function" Size="32" name="bluetooth_function"/>
+      <Field Caption="Send On Cashin" Format="b" Size="1" Type="2" name="cashin_send"/>
+      <Field Caption="Auto Cashin" Format="b" Size="1" Type="2" name="auto_cashin"/>
+      <Field Caption="Printer port" File="system.port" Size="1" Type="2" name="port"/>
+      <Field Caption="Alternate port" File="system.port" Size="1" Type="2" name="alter_port"/>
+      <Field Caption="Service Charge" File="pos.item" Size="2" Type="2" name="service_charge"/>
+      <Field Caption="Host" File="system.host" Size="2" Type="2" name="host"/>
+      <Field Caption="Minimum Charge" Format="b" Size="1" Type="2" name="min_charge"/>
+      <Field Caption="Printing Tray" Size="32" name="tray"/>
+      <Field Caption="Alternative Printer" Format="printer" Size="64" name="alter_printer"/>
+      <Field Caption="Printer" Format="printer" Size="64" name="printer"/>
+      <Field Caption="Request" Format="b" Size="2" Type="2" Options="People,Location,ToLocation,Person,Table,Expenses,Employee,AlternateReference,Vehicle,References,CustomerGroup,People_Agent,DeliveryDate,Project" name="request"/>
+      <Field Caption="Maximum discount %" Format="###.##" Size="4" Type="8" name="maxdisc"/>
+      <Field Caption="End of day cashin" Format="b" Size="1" Type="2" name="endofday_cashin"/>
+      <Field Caption="Always Enable" Format="b" Size="1" Type="2" name="enabled"/>
+      <Field Caption="Print Copies" Size="1" Type="2" name="copies"/>
+      <Field Caption="Overrride" Format="b" Size="1" Type="2" Options="Price,Discount" name="override"/>
+      <Field Caption="Security" Format="b" Size="1" Type="2" Options="Password,CSV" name="security"/>
+      <Field Caption="Credit status" Size="1" Options="Cash,Credit" Type="2" name="credit"/>
+      <Field Caption="Transfer Location" File="system.location" Size="2" Type="2" name="transfer_location"/>
+      <Field Caption="Stock location" File="system.location" Size="2" Type="2" name="stock_location"/>
+      <Field Caption="User task" File="system.user" Size="2" Type="2" name="user_task"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="divparam">
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[alter_port]">
+         <IndexEntry name="alter_port"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[discount]">
+         <IndexEntry name="discount"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="divparam[host]">
+         <IndexEntry name="host"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[menu]">
+         <IndexEntry name="menu"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[port]">
+         <IndexEntry name="port"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[receipt]">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[service_charge]">
+         <IndexEntry name="service_charge"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[stock_location]">
+         <IndexEntry name="stock_location"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[transfer_location]">
+         <IndexEntry name="transfer_location"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[user_task]">
+         <IndexEntry name="user_task"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divparam_service">
+         <IndexEntry name="service"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

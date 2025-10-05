@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" Icon="mobileinv2" CanDelete="0" name="Sales Interface" CreateStamp="1">
+      <Field Caption="Reference" Size="20" name="reference"/>
+      <Field Caption="Date" Size="4" Auto="1" Type="5" name="date"/>
+      <Field Strict="1" Caption="Sale" File="pos.trans" Size="4" Auto="1" Type="2" name="trans"/>
+      <Field Caption="Receipt" Strict="1" File="accounting.cashreceipt" Size="4" Auto="1" Type="2" name="cashreceipt"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="salesint">
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="salesint[cashreceipt]">
+         <IndexEntry name="cashreceipt"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="salesint[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="salesint[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="customer" name="Collectors" System="insurance">
+      <Field/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="collector">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

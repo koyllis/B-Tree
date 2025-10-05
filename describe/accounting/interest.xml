@@ -1,0 +1,36 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="calc" name="Interest Calculation" CanDelete="0" CanModify="0" SoftDelete="1">
+      <Field Caption="Sub-account" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Reference" Size="4" Type="2" name="refer" Strict="1"/>
+      <Field Caption="Document" File="accounting.document" Size="2" Type="2" name="document"/>
+      <Field Caption="Balance" Strict="1" Total="1" Format="######.##" Size="8" Type="4" name="balance"/>
+      <Field Caption="Interest%" Strict="1" Format="##.##" Size="8" Type="3" name="rate"/>
+      <Field Caption="Interest" Strict="1" Total="1" Format="######.##" Size="8" Type="4" name="interest"/>
+      <Field Strict="1" Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="interest">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="interest[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="interest[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="interest_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

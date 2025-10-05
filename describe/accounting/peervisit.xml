@@ -1,0 +1,13 @@
+<xml>
+   <Table System="accounting" name="Pees Visits">
+      <Field Caption="Associate" File="accounting.peer" Size="4" Force="1" Type="2" name="peer"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Time" Size="2" Type="5" name="time"/>
+      <Field Caption="Note" Size="80" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peervisit">
+         <IndexEntry name="peer"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

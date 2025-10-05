@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" CanDelete="0" name="Dog Register">
+      <Field Strict="1" Caption="Number" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Microchip No." Size="20" name="microchip"/>
+      <Field Caption="Sex" Size="1" Force="1" Type="2" Options="Male,Female" name="sex"/>
+      <Field Caption="Type" name="type"/>
+      <Field Caption="Color" Size="4" Type="5" name="color"/>
+      <Field/>
+      <Field Caption="Note" Size="80" name="note"/>
+      <Field Caption="Amount" Format="####.##" Size="4" Force="1" Type="4" name="amount"/>
+      <Field Caption="Receipt" Strict="1" File="accounting.cashreceipt" Size="4" Type="2" name="cashreceipt" Modify="1"/>
+      <Field Strict="1" Caption="Expiration" Size="4" Type="5" name="expire" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="dogregister">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="dogregister[cashreceipt]">
+         <IndexEntry name="cashreceipt"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="dogregister[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agsatrs" System="old" ModifyStamp="0">
+      <Field Size="4" Type="5" name="st_date" Caption="Date"/>
+      <Field Size="4" Format="######" Type="2" name="st_refer" Caption="Refer"/>
+      <Field Size="2" Format="####" Type="2" name="st_cuno" Caption="Customer"/>
+      <Field Size="1" Type="2" name="st_loc" Caption="Loc"/>
+      <Field Size="4" Format="####.##" Type="4" name="st_total" Caption="Total"/>
+      <Field Size="4" Format="####.##" Type="4" name="st_casto" Caption="Cases+"/>
+      <Field Size="4" Format="####.##" Type="4" name="st_casre" Caption="Cases-"/>
+      <Field Size="4" Format="####.##" Type="4" name="st_mtota" Caption="Minicipal"/>
+      <Field Size="4" Format="####.##" Type="4" name="st_disco" Caption="Discount"/>
+      <Field Size="4" Format="####.##" Type="4" name="st_vat" Caption="VAT"/>
+      <Field Size="4" Format="####.##" Type="4" name="st_profit" Caption="Profit"/>
+      <Field Size="1" Format="#" Type="2" name="st_credit" Caption="Credit"/>
+      <Field Size="4" Type="5" name="st_cancel" Caption="Cancel"/>
+      <Field Size="4" Type="5" name="st_amend" Caption="Amend"/>
+      <Field Size="4" Format="##.##" Type="4" name="st_time" Caption="Time"/>
+      <Field Size="4" Format="######" Type="2" name="st_journal" Caption="Journal"/>
+      <Field Size="2" Format="######" Type="2" name="st_ttyno" Caption="Term"/>
+      <Field Size="8" name="st_user" Caption="User"/>
+      <Field Size="4" Type="5" name="st_stock" Caption="Stock"/>
+      <Field Size="4" Type="2" name="st_receipt" Caption="Receipt"/>
+      <Field Size="8" name="st_future" Caption="Future"/>
+      <Index name="agsatrs">
+         <IndexEntry name="st_date"/>
+         <IndexEntry name="st_refer"/>
+         <IndexEntry name="st_cuno"/>
+         <IndexEntry name="st_loc"/>
+      </Index>
+   </Table>
+</xml>

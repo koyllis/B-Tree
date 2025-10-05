@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agitems" System="old" ModifyStamp="0">
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="it_itno" Caption="No."/>
+      <Field Size="8" name="it_item" Caption="Code"/>
+      <Field name="it_desc" Caption="Name"/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="it_future3" Caption="Future3"/>
+      <Field Size="5" name="it_pack" Caption="Pack"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="it_min" Caption="Min"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="it_max" Caption="Maz"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="it_defp" Caption="Price"/>
+      <Field Size="1" name="it_unit" Caption="Unit"/>
+      <Field Size="1" name="it_nocom" Caption="No comm?"/>
+      <Field Size="1" name="it_future1" Caption="Future 1"/>
+      <Field Size="1" name="it_aver" Caption="Average?"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="it_comm" Caption="Comm%"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="it_group" Caption="Group"/>
+      <Field Size="1" name="it_vat" Caption="VAT?"/>
+      <Field Size="1" name="it_inact" Caption="Inactive?"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="it_duty" Caption="Duty%"/>
+      <Field Size="4" Format="####.##" Type="4" Dim ="1" name="it_price" Caption="Price"/>
+      <Field Size="4" Format="##" Type="4" Dim ="1" name="it_caspr" Caption="Case price"/>
+      <Field Size="1" Dim ="1" name="it_stock" Caption="Stock?"/>
+      <Field Size="1" Dim ="1" name="it_future2" Caption="Future 2"/>
+      <Field Size="1" name="it_qstock" Caption="Q stock?"/>
+      <Field Size="1" name="it_nostock" Caption="No stock?"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="it_prgroup" Caption="Price group"/>
+      <Field Size="8" Format="##.####" Type="3" Dim ="1" name="it_cost" Caption="Cost"/>
+      <Field Size="3" name="it_vatcat" Caption="VAT"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="it_cases" Caption="Cases"/>
+      <Field Size="20" Dim ="1" name="it_future" Caption="Future"/>
+      <Index name="agitems">
+         <IndexEntry name="it_itno"/>
+      </Index>
+   </Table>
+</xml>

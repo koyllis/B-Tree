@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="note1" name="Groups" System="insurance">
+      <Field/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" HideReport="1" Caption="Modified"/>
+      <Index name="group">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

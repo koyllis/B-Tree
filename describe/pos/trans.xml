@@ -1,0 +1,347 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table UserStamp="1" PDA="4" CanModify="0" FavoriteMatch="pos|transdet" CanDelete="0" DataHeader="1" ManualIndex="1" Icon="trans" Dynamic="1" EnableThread="1" SoftDelete="1" name="Transactions" System="pos" DeleteChildren="1" CreateStamp="1"  FindFunction="TransFind" Unordered="1" MatchEdit="0" UserTransactions="1">
+      <Field Size="4" Type="5" name="date" Auto="1" Caption="Date"/>
+      <Field PersistentReport="1" Negative="0" Size="2" Format="HH:mm" Type="5" name="time" Auto="1" Caption="Time"/>
+      <Field Size="4" Format="#########" Type="2" name="refer" Caption="Reference"/>
+      <Field Size="2" Type="2" File="system.location" name="location" Auto="1" Caption="Location" Distinct="1" PersistentReport="1"/>
+      <Field Size="2" Type="2" File="system.user" name="user" Auto="1" Caption="User"/>
+      <Field Size="1" Type="2" File="pos.division" name="division" Caption="Division" PersistentReport="1" Force="1" Importable="0"/>
+
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Sub-account" Tip="1"/>
+      <Field Size="2" Type="2" File="pos.table" name="table" Caption="Table"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people_agent" Caption="New Agent"/>
+      <Field Size="4" Type="2" File="accounting.address" name="address_delivery" Caption="Delivery to"/>
+      <Field Size="2" Type="2" File="accounting.route" name="route" Caption="Agent"/>
+      <Field Size="2" Type="2" File="payroll.employee" name="employee" Caption="Employee"/>
+      <Field Size="2" Type="2" File="payroll.employee" name="employee_service" Caption="Service employee"/>
+      <Field Size="2" Type="2" File="system.user" Auto="1" name="access_user" Caption="Access User"/>
+      <Field Size="1" Type="2" File="accounting.currency" name="currency" Caption="Currency"/>
+      <Field Size="2" Type="2" File="accounting.location" name="accounting_location" Caption="Project"/>
+      <Field Size="2" Type="2" File="system.location" name="to_location" Caption="To Location" Distinct="1"/>
+      <Field Size="2" Type="2" File="accounting.operation" name="operation" Caption="Operation"/>
+      <Field Size="1" Type="2" File="accounting.bank" name="bank" Caption="Bank"/>
+      <Field Size="2" Type="2" File="accounting.terms" name="terms" Caption="Terms"/>
+      <Field Size="4" Format="######.##" Type="4" name="amount" Caption="Amount"/>
+      <Field Size="4" Format="######.##" Type="4" name="subsidy" Caption="Subsidy"/>
+      <Field Size="4" Format="#####" Average="1" Type="2" name="persons" Caption="Persons" Total="1"/>
+      <Field Size="2" Format="HH:mm" Type="5" name="timeout" Caption="Timeout"/>
+      <Field Size="2" Format="HH:mm" Type="5" name="printed" Caption="Printed"/>
+      <Field Size="2" Type="5" name="wait" Caption="Wait time"/>
+      <Field Size="2" Format="HH:mm" Type="5" name="driverout" Caption="Driver out"/>
+      <Field Size="2" Format="HH:mm" Type="5" name="driverin" Caption="Driver in"/>
+      <Field Size="4" Type="5" name="delivery" Caption="Delivery Date"/>
+      <Field Size="2" Format="##.##" Type="2" name="cto" Caption="CTO%"/>
+      <Field Size="2" Format="##.##" Type="2" name="service" Caption="Service%"/>
+      <Field Size="1" Options="Printed,Collected,Updated,Aborted,Pending,Email" Type="2" name="mode" Negative="0" Caption="Mode"/>
+      <Field Size="8" Format="##########" Type="2" name="altref" Caption="Alternate Reference"/>
+      <Field Size="15" Type="1" name="alias" Caption="Alias"/>
+      <Field Size="1" Type="2" File="accounting.deliverymethod" name="deliverymethod" Caption="Delivery Method"/>
+      <Field Size="2" Type="2" File="system.port" name="port" Caption="Port"/>
+      <Field Size="1" Type="2" File="pos.receipt" name="orig_receipt" Caption="Original Receipt"/>
+      <Field Size="1" Type="2" File="pos.receipt" name="receipt" Caption="Receipt method"/>
+      <Field Size="4" Type="2" File="accounting.journal" name="journal" Caption="Journal" Overwrite="0"/>
+      <Field Size="1" Format="##" Type="2" name="vat" Caption="Vat Correction"/>
+      <Field Size="4" Type="5" name="tdate" Caption="Transaction Date"/>
+      <Field Size="4" Type="2" File="accounting.address" name="address" Caption="Address"/>
+      <Field Size="4" Type="2" File="pos.trans" name="trans_convert" Caption="Converted to" Overwrite="0"/>
+      <Field Size="4" Type="2" File="pos.trans" name="trans_from" Caption="Converted from" Overwrite="0"/>
+      <Field Size="4" Type="2" File="pos.trans" name="trans_voucher" Caption="Voucher"/>
+      <Field Size="1" Type="2" File="pos.discount" name="discount" Caption="Discount"/>
+      <Field Size="4" Format="#####.##" Type="8" name="trade_discount" Caption="Trade discount" Total="1"/>
+      <Field Size="4" Format="#####.##" Type="8" name="collected" Caption="Collected" Total="1"/>
+      <Field Size="8" Format="quantity" Type="3" name="costing_qty" Caption="Costing Qty"/>
+      <Field Size="8" Format="##.######" Type="3" name="xrate" Caption="Exchange rate"/>
+      <Field Size="4" Format="#####.##" Type="4" name="costing_total" Caption="Costing Total"/>
+      <Field Size="4" Format="#####.##" Type="4" name="weight" Caption="Total Weight" Total="1"/>
+      <Field Size="4" Type="2" File="accounting.vehicle" name="vehicle" Caption="Vehicle"/>
+      <Field Size="4" Type="2" File="accounting.vehcategory" name="vehcategory" Caption="Vehicle Category"/>
+      <Field Size="2" Type="2" File="pos.reason" name="reason" Caption="Reason"/>
+      <Field Size="2" Type="2" File="pos.source" name="source" Caption="Source"/>
+      <Field Size="2" Type="2" File="pos.switch" name="switch" Caption="Switching"/>
+      <Field Size="2" Type="2" File="pos.pager" name="pager" Caption="Pager"/>
+      <Field Size="2" Type="2" File="pos.decision" name="decision" Caption="Decision"/>
+      <Field Size="2" Type="2" File="accounting.area" name="area" Caption="Delivery area"/>
+      <Field Size="2" Options="PrintCategory,Unsent,From,Exported,Locked,Mapped,MarkClosed,SetDiscount,Invoiced,Email" Format="b" Type="2" name="option" Caption="Option"/>
+      <Field Size="2" Type="2" name="time_limit" Caption="Time Limit"/>
+      <Field Size="1" Format="##" Type="2" name="dispatch_seq" Caption="Dispatch Sequence"/>
+      <Field Size="1" Format="##" Type="2" name="group_dispatch" Caption="Group Dispatch"/>
+      <Field Size="4" Format="######" Type="2" name="points" Total="1" Caption="Points"/>
+      <Field Size="8" Type="5" name="mark" Caption="Mark" Total="1"/>
+      <Field Size="8" Type="5" name="processed" Caption="Processed" Total="1"/>
+      <Field Caption="Cancel Reason" Size="2" Type="2" name="cancel_reason" File="pos.cancel_reason"/>
+      <Field Size="8" Type="2" name="lastcount" Caption="Last count" Total="1"/>
+      <Field Size="8" Type="2" name="lastcount_digital" Caption="Last digital count"/>
+      <Field Size="8" Format="#########.##" Type="4" name="lastmoney" Caption="Last money"/>
+      <Field Size="8" Format="#########.##" Type="4" name="laststock" Caption="Last stock"/>
+      <Field Size="1" Format="b" Type="2" name="full" Caption="Full"/>
+      <Field Size="4" Type="2" File="accounting.journal" name="collection" Caption="Exp. Journal" Overwrite="0"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" HideReport="1" Caption="SoftDelete"/>
+      <Field Caption="User" Hide="1" System="1" Size="2" Type="2" name="@user_stamp" File="system.user"/>
+
+      <Index name="trans" CRC64="1" Unordered="1">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="trans[division]" CRC64="1" Unordered="1">
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="trans[employee]" CRC64="1" Unordered="1">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+      <Index name="trans[employee_service]" CRC64="1" Unordered="1">
+         <IndexEntry name="employee_service"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="trans[location]" CRC64="1" Unordered="1">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+      <Index name="trans[to_location]" CRC64="1" Unordered="1">
+         <IndexEntry name="to_location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+
+      <Index name="trans[accounting_location]" CRC64="1" Unordered="1">
+         <IndexEntry name="accounting_location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+      <Index name="trans[receipt]" CRC64="1" Unordered="1">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+      <Index name="trans[reason]" CRC64="1" Unordered="1">
+         <IndexEntry name="reason"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+
+      <Index name="trans[route]" Unordered="1">
+         <IndexEntry name="route"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="trans[table]" CRC64="1" Unordered="1">
+         <IndexEntry name="table"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="trans[user]" CRC64="1" Unordered="1">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="trans[access_user]" CRC64="1" Unordered="1">
+         <IndexEntry name="access_user"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="trans_address" CRC64="1" Unordered="1">
+         <IndexEntry name="address"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="trans_altref" CRC64="1">
+         <IndexEntry name="altref"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="trans_delivery">
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="trans_discount">
+         <IndexEntry name="discount"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="trans_journal" CRC64="1" AlwaysCheck="1">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="trans_people" CRC64="1">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="points"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="@delete"/>
+      </Index>
+      <Index name="trans_people_agent">
+         <IndexEntry name="people_agent"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="trans_refer" CRC64="1" AlwaysCheck="1">
+         <IndexEntry name="refer"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="trans_tdate">
+         <IndexEntry name="tdate"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="trans_trans_convert">
+         <IndexEntry name="trans_convert"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="trans_trans_from">
+         <IndexEntry name="trans_from"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="trans_trans_voucher">
+         <IndexEntry name="trans_voucher"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+
+      <Index name="trans_vehicle" CRC64="1">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+      <Index name="trans_operation" CRC64="1">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+       <Index name="trans_deliverymethod" CRC64="1">
+         <IndexEntry name="deliverymethod"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+      <Index name="trans_alias" CRC64="1">
+         <IndexEntry name="alias"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+      </Index>
+
+     <Index name="trans_modify" CRC64="1">
+         <IndexEntry name="@modify_stamp"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+
+      </Index>
+	  
+   </Table>
+</xml>

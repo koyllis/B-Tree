@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="labels" name="Customer Labels" System="accounting">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="forlabel">
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

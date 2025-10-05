@@ -1,0 +1,40 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="businesswear" name="Customer Commissions" System="insurance">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="2" Type="2" File="insurance.company" name="company" Caption="Company"/>
+      <Field Size="2" Type="2" File="insurance.agent" name="agent" Caption="Agent"/>
+      <Field Size="1" Type="2" File="insurance.type" name="type" Caption="Type"/>
+      <Field Size="8" Format="###.##" Type="3" name="officecomm" Caption="Office (%)"/>
+      <Field Size="8" Format="###.##" Type="3" name="agentcomm" Caption="Agent (%)"/>
+      <Field Size="8" Format="###.##" Type="3" name="subagentcomm" Caption="Sub-agent(%)"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="peoplecomm">
+         <IndexEntry name="people"/>
+         <IndexEntry name="company"/>
+         <IndexEntry name="agent"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="peoplecomm[agent]">
+         <IndexEntry name="agent"/>
+         <IndexEntry name="company"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="peoplecomm[company]">
+         <IndexEntry name="company"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="agent"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="peoplecomm[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="company"/>
+         <IndexEntry name="agent"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="peoplecomm[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="company"/>
+         <IndexEntry name="agent"/>
+      </Index>
+   </Table>
+</xml>

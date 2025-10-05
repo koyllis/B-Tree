@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="money" name="Receipt Methods" System="hotel">
+      <Field/>
+      <Field Size="2" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="receipt">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="receipt[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="sample">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

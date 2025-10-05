@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Purchase Order Links">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="To supplier" File="accounting.people" Size="4" Type="2" name="people_to"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="porderlink">
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="porderlink[people_to]">
+         <IndexEntry name="people_to"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

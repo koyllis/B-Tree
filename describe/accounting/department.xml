@@ -1,0 +1,19 @@
+<xml>
+   <Table System="accounting" Color="1" name="Departments">
+      <Field Size="40"/>
+      <Field Caption="Short Description" Size="128" name="short"/>
+      <Field Caption="Next " File="accounting.department" Size="2" Type="2" name="next"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="Process,DeliveryMethod,Machine,Map" name="option"/>
+      <Field Caption="Deadline factor" Format="##" Size="2" Type="2" name="deadline"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Index name="department">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="department[next]">
+         <IndexEntry name="next"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

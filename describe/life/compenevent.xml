@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="Compensation Events">
+      <Field Caption="Compensation" File="life.compensation" Size="4" Type="2" Force="1" name="compensation"/>
+      <Field Caption="Recorded" Strict="1" Size="8" Auto="1" Type="5" name="date"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="eventdate"/>
+      <Field Caption="Type" File="life.eventtype" Size="2" Type="2" Force="1" name="eventtype"/>
+      <Field Caption="Note" Size="80" Force="1" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="compenevent">
+         <IndexEntry name="compensation"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="compenevent[eventtype]">
+         <IndexEntry name="eventtype"/>
+         <IndexEntry name="compensation"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

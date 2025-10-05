@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" CanDelete="0" name="Terminated Relations">
+      <Field Caption="Tremination" File="life.termination" Size="4" Type="2" name="termination"/>
+      <Field Caption="Member" File="life.member" Size="4" Type="2" name="member"/>
+      <Field Caption="Extra" Format="####.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="termrelated">
+         <IndexEntry name="termination"/>
+         <IndexEntry name="member"/>
+      </Index>
+      <Index name="termrelated[member]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="termination"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table FormatField="amount" System="accounting" Icon="account_services" Dynamic="1" name="Account Services">
+      <Field Caption="Customer" File="accounting.people" Size="2" Type="2" name="people"/>
+      <Field Caption="Service" File="accounting.servicedef" Size="2" Type="2" name="servicedef"/>
+      <Field Caption="Amount" Total="1" Format="######.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Extra" Strict="1" Format="######.##" Size="4" Auto="1" Type="4" name="extra"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peopleserv">
+         <IndexEntry name="people"/>
+         <IndexEntry name="servicedef"/>
+      </Index>
+      <Index name="peopleserv[servicedef]">
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index CRC64="1" Force="1" name="peopleserv_addr">
+         <IndexEntry Index="people_addr" name="people"/>
+         <IndexEntry name="servicedef"/>
+      </Index>
+      <Index name="peopleserv_amount">
+         <IndexEntry name="amount"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="servicedef"/>
+      </Index>
+   </Table>
+</xml>

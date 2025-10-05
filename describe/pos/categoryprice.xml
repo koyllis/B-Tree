@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="categoryprice">
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Caption="Percentage%" Format="###.##" Size="8" Type="3" name="perc"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="categoryprice">
+         <IndexEntry name="category"/>
+         <IndexEntry name="price"/>
+      </Index>
+      <Index name="categoryprice[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="salpay" System="old">
+      <Field Size="4" Type="5" Dim ="1" name="sy_date" Caption="Trans. date"/>
+      <Field Size="2" Format="u" Dim ="1" name="sy_doc" Caption="Document"/>
+      <Field Size="4" Options="0-999999" Format="######" Type="2" Dim ="1" name="sy_refer" Caption="Refer. No."/>
+      <Field Size="3" Format="u" Dim ="1" name="sy_pycode" Caption="Payment type"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="sy_amount" Caption="Amount"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="sy_card" Caption="Card charge"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="sy_foreign" Caption="Foreign currency"/>
+      <Field Size="16" Format="u" Dim ="1" name="sy_referno" Caption="Refer. No."/>
+      <Field Size="4" Type="5" Dim ="1" name="sy_cdate" Caption="Cheque date"/>
+      <Index name="salpay">
+         <IndexEntry name="sy_date"/>
+         <IndexEntry name="sy_doc"/>
+         <IndexEntry name="sy_refer"/>
+         <IndexEntry name="sy_pycode"/>
+      </Index>
+   </Table>
+</xml>

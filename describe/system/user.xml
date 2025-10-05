@@ -1,0 +1,44 @@
+<xml>
+   <Table ManualIndex="1" EnableImport="0" Bookmark="1" System="system" SoftDelete="1" Immutable="1" Icon="user" Core="1" Index="user" name="System Users" Root="1">
+      <Field Caption="User" Format="u" Size="32" name="code"/>
+      <Field Caption="Password" Format="e" Size="16" name="password"/>
+      <Field Caption="Translate" Format="b" Size="1" Type="2" name="translate"/>
+      <Field Caption="Authority" Size="1" Negative="0" Type="2" Options="User,Manager,Administrator" name="authority"/>
+      <Field Caption="Group" File="system.user_group" Size="2" Type="2" name="user_group"/>
+      <Field Caption="Lookup rule" File="system.lookuprule" Size="2" Type="2" name="lookuprule"/>
+      <Field Caption="Display Port" Size="1" Type="2" name="display"/>
+      <Field Caption="Display User" Size="32" name="display_user"/>
+      <Field Caption="Extra printer" Format="printer" Size="64" name="extra_printer"/>
+      <Field Caption="Email printer" Format="printer" Size="64" name="email_printer"/>
+      <Field Caption="Alternate printer" Format="printer" Size="64" name="alter_printer"/>
+      <Field Caption="Printer" Format="printer" Size="64" name="printer"/>
+      <Field Caption="Display Port (lpt map)" File="system.port" Size="2" Type="2" name="display_port"/>
+      <Field Caption="Port" File="system.port" Size="2" Type="2" name="port"/>
+      <Field Caption="Menu Header" File="system.menuhead" Size="2" Type="2" name="menuheader"/>
+      <Field Caption="Company" File="system.master" Size="2" Type="2" Force="1" name="master"/>
+      <Field Caption="Options" Format="b" Size="4" Type="2" Options="Video,UnlockReports,CanMerge,SingleCompany,RestrictReportLocation,SwitchMenu,PrintWebSale,PriceChangeNotify,RequestLocation,FindAll,StockAllLocations,SingleLocation,ForceStockRules,Audit,RestrictUserGroup,PrivateFolder" name="options"/>
+      <Field Caption="Transaction user" File="system.user" Size="2" Type="2" name="trans_user"/>
+      <Field Caption="Tree font size" Size="2" Type="2" name="tree_font_size"/>
+      <Field Caption="Email" Size="40" name="email"/>
+      <Field Caption="Mobile phone" Size="12" name="mobile"/>
+      <Field Caption="Tax machine" File="system.taxmachine" Size="2" Type="2" name="taxmachine"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="user">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index Force="1" name="user_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="user_password">
+         <IndexEntry name="password"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="user_user_group">
+         <IndexEntry name="user_group"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

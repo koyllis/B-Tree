@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Packing List History">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Reference" Size="4" Type="2" name="refer"/>
+      <Field Caption="User" File="system.user" Size="2" Auto="1" Type="2" name="user" Modify="1"/>
+      <Field Caption="Transactions" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="packhistory">
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="packhistory[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="packhistory[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

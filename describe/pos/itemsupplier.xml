@@ -1,0 +1,39 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Supplier Item Codes"  MergeType="2" Unordered="1">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Code" Size="20" name="code"/>
+      <Field Caption="Available" Format="quantity" Size="4" Type="8" name="available"/>
+      <Field Size="50"/>
+      <Field Caption="Barcode" Size="20" name="barcode"/>
+      <Field Caption="Cost" Format="price" Size="8" Type="3" name="cost"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="VAT" File="accounting.vat" Size="2" Type="2" name="vat"/>
+      <Field Caption="Stock indicator" Format="b" Size="1" Type="2" name="stock"/>
+      <Field Caption="Extra discount" Size="100" Type="1" name="extra"/>
+      <Field Caption="Expire date" Size="4" Type="5" name="expire"/>
+      <Field Caption="Supplier" Size="50" name="supplier"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemsupplier">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index CRC64="1" name="itemsupplier[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="itemsupplier[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index CRC64="1" name="itemsupplier_code">
+         <IndexEntry name="code"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

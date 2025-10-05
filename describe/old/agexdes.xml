@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agexdes" System="old" ModifyStamp="0">
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="xi_cuno" Caption="Cust"/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="xi_itno" Caption="Item"/>
+      <Field name="xi_desc" Caption="Desc"/>
+      <Field Size="15" Dim ="1" name="xi_code" Caption="Code"/>
+      <Index name="agexdes">
+         <IndexEntry name="xi_cuno"/>
+         <IndexEntry name="xi_itno"/>
+      </Index>
+   </Table>
+</xml>

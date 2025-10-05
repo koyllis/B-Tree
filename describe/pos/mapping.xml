@@ -1,0 +1,23 @@
+<xml>
+   <Table System="pos" Icon="mapping" name="Code Mapping">
+      <Field Caption="Code" Size="10" Force="1" name="code"/>
+      <Field Caption="Type" Size="1" Force="1" Type="2" Options="Account,Item" name="type"/>
+      <Field Caption="Account" File="accounting.people" Size="4" Type="2" name="map_people"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="map_item"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="mapping">
+         <IndexEntry name="code"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="mapping[map_item]">
+         <IndexEntry name="map_item"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="mapping[map_people]">
+         <IndexEntry name="map_people"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

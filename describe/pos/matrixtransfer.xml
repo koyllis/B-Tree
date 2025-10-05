@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="matrixtransfer">
+      <Field Caption="Matrix import" File="pos.matriximport" Size="4" Type="2" name="matriximport"/>
+      <Field Caption="Transfer" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="matrixtransfer">
+         <IndexEntry name="matriximport"/>
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="matrixtransfer[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="matriximport"/>
+      </Index>
+   </Table>
+</xml>

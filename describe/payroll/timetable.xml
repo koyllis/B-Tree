@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table Bookmark="1" System="payroll" Icon="time_table" name="Time Tables">
+      <Field/>
+      <Field Caption="Start 1" Size="2" Type="5" name="start1" Dim="7"/>
+      <Field Caption="End 1" Size="2" Type="5" name="end1" Dim="7"/>
+      <Field Caption="Start 2" Size="2" Type="5" name="start2" Dim="7"/>
+      <Field Caption="End 2" Size="2" Type="5" name="end2" Dim="7"/>
+      <Field Caption="Start 3" Size="2" Type="5" name="start3" Dim="7"/>
+      <Field Caption="End 3" Size="2" Type="5" name="end3" Dim="7"/>
+      <Field Caption="Start 4" Size="2" Type="5" name="start4" Dim="7"/>
+      <Field Caption="End 4" Size="2" Type="5" name="end4" Dim="7"/>
+      <Field Caption="Overtime factor" Format="###.##" Size="8" Type="3" name="overtime" Dim="7"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="timetable">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="timetable_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

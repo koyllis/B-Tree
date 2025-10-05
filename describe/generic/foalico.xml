@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Alico Certificate" System="generic">
+      <Field Size="4" Type="2" name="serial" Caption="Serial No"/>
+      <Field name="name1" Caption="Name1"/>
+      <Field Size="40" name="addr1" Caption="Address1"/>
+      <Field Size="40" name="addr2" Caption="Address2"/>
+      <Field Size="10" name="date1" Caption="Date1"/>
+      <Field Size="10" name="postal" Caption="Postal"/>
+      <Field Size="40" name="addr3" Caption="Address3"/>
+      <Field Size="10" name="policy1" Caption="Policy1"/>
+      <Field Size="18" name="desc1" Caption="Desc1"/>
+      <Field name="name2" Caption="Name2"/>
+      <Field Size="11" name="id1" Caption="Identity1"/>
+      <Field Size="16" name="desc2" Caption="Desc2"/>
+      <Field Size="40" name="desc3" Caption="Desc3"/>
+      <Field Size="10" name="amount1" Caption="Amount1"/>
+      <Field Size="10" name="amount2" Caption="Amount2"/>
+      <Field Size="10" name="amount3" Caption="Amount3"/>
+      <Field Size="10" name="amount4" Caption="Amount4"/>
+      <Field Size="10" name="date2" Caption="Date2"/>
+      <Field Size="4" name="year" Caption="Year"/>
+      <Field Size="10" name="policy2" Caption="Policy2"/>
+      <Field Size="10" name="date3" Caption="Date3"/>
+      <Field Size="10" name="amount5" Caption="Amount5"/>
+      <Field Size="10" name="amount6" Caption="Amount6"/>
+      <Field Size="10" name="amount7" Caption="Amount7"/>
+      <Field Size="10" name="amount8" Caption="Amount8"/>
+      <Field Size="11" name="id2" Caption="Identity2"/>
+      <Field name="name3" Caption="Name3"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="foalico">
+         <IndexEntry name="serial"/>
+      </Index>
+   </Table>
+</xml>

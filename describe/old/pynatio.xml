@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="pynatio" System="old">
+      <Field Size="3" Format="u" name="na_natio" Caption="Nationality"/>
+      <Field Size="20" Format="u" name="na_name"/>
+      <Field Size="1" Format="u" name="na_short" Caption="Short code"/>
+      <Index name="pynatio">
+         <IndexEntry name="na_natio"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="system" name="report_mail">
+      <Field Caption="Report" File="system.report" Size="4" Type="2" name="report"/>
+      <Field Caption="Email" Size="50" name="email"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="report_mail">
+         <IndexEntry name="report"/>
+         <IndexEntry name="email"/>
+      </Index>
+   </Table>
+</xml>

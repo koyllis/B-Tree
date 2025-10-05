@@ -1,0 +1,15 @@
+<xml>
+   <Table System="accounting" name="Weekly Recon. Unpresented">
+      <Field Caption="Week" File="accounting.wrbalance" Size="4" Type="2" name="wrbalance"/>
+      <Field Caption="Transaction" File="accounting.detail" Size="8" Type="2" name="detail"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="wrunpres">
+         <IndexEntry name="wrbalance"/>
+         <IndexEntry name="detail"/>
+      </Index>
+      <Index name="wrunpres[wrbalance]">
+         <IndexEntry name="wrbalance"/>
+         <IndexEntry name="detail"/>
+      </Index>
+   </Table>
+</xml>

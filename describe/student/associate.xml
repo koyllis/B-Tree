@@ -1,0 +1,88 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Phone="mobiletel" Bookmark="1" System="student" Icon="profession" name="Educators" Merge="1" CreateStamp="1" >
+      <Field Caption="Ident. No." Size="12" Force="1" name="idno"/>
+      <Field Caption="File No." Format=",########" Size="4" Type="2" name="fileno"/>
+      <Field Caption="S.I. No." Format=",########" Size="4" Type="2" name="sino"/>
+      <Field Caption="Prefix" Size="50" name="prefix"/>
+      <Field Caption="Surname" Size="40" Force="1" Tip="1" name="surname"/>
+      <Field Size="20" Force="1"/>
+      <Field Caption="Middle" Size="20" name="middle"/>
+      <Field Caption="Sex" Size="1" Type="2" Options="Male,Female" name="sex"/>
+      <Field Caption="Home tel." Size="15" name="hometel"/>
+      <Field Caption="Work tel." Size="15" name="worktel"/>
+      <Field Caption="Mobile tel." Size="15" Force="1" name="mobiletel"/>
+      <Field Caption="E-mail" Size="64" name="email"/>
+      <Field Caption="Address 1" name="addr1"/>
+      <Field Caption="Address 2" name="addr2"/>
+      <Field Caption="Postal code" Format="######" Size="4" Type="2" name="postal"/>
+      <Field Caption="IBAN" Size="32" name="iban"/>
+      <Field Caption="Private" Format="b" Size="1" Type="2" name="private"/>
+      <Field Caption="No SMS" Format="b" Size="1" Type="2" name="nosms"/>
+      <Field Caption="No email" Format="b" Size="1" Type="2" name="noemail"/>
+      <Field Caption="Share question pool" Format="b" Size="1" Type="2" name="share"/>
+      <Field Caption="Grade" File="student.grade" Size="1" Type="2" name="grade"/>
+      <Field Caption="Specialty" File="student.specialty" Size="2" Type="2" name="specialty"/>
+      <Field Caption="Position" File="student.position" Size="1" Type="2" name="position"/>
+      <Field Caption="Organization" File="student.organization" Size="1" Type="2" name="organization"/>
+      <Field Caption="Group" File="student.group" Size="1" Type="2" name="group"/>
+      <Field Caption="Password" Size="20" name="password"/>
+      <Field Caption="Degree 1" Size="1" Type="2" Options="Bachelor,Master,PHD,Other" name="postgrad1"/>
+      <Field Caption="Subject 1" Size="100" name="postsub1"/>
+      <Field Caption="Degree 2" Size="1" Type="2" Options="Bachelor,Master,PHD,Other" name="postgrad2"/>
+      <Field Caption="Subject 2" Size="100" name="postsub2"/>
+      <Field Caption="Degree 3" Size="1" Options="Bachelor,Master,PHD,Other" Type="2" name="postgrad3"/>
+      <Field Caption="Subject 3" Size="100" name="postsub3"/>
+      <Field Caption="Degree 4" Size="1" Options="Bachelor,Master,PHD,Other" Type="2" name="postgrad4"/>
+      <Field Caption="Subject 4" Size="100" name="postsub4"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Created" Strict="1" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Index name="associate">
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate[grade]">
+         <IndexEntry name="grade"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate[organization]">
+         <IndexEntry name="organization"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate[position]">
+         <IndexEntry name="position"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate[specialty]">
+         <IndexEntry name="specialty"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index Force="1" name="associate_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate_email">
+         <IndexEntry name="email"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate_fileno">
+         <IndexEntry name="fileno"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate_mobiletel">
+         <IndexEntry name="mobiletel"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate_sino">
+         <IndexEntry name="sino"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="associate_surname">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="idno"/>
+      </Index>
+   </Table>
+</xml>

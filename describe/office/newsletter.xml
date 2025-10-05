@@ -1,0 +1,17 @@
+<xml>
+   <Table System="office" name="Newsletter">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Size="40" Force="1"/>
+      <Field Caption="Link" Size="100" Force="1" name="link"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="newsletter">
+         <IndexEntry name="date"/>
+      </Index>
+
+      <Index name="newsletter[name]">
+         <IndexEntry name="name"/>
+         <IndexEntry name="date"/>
+      </Index>
+
+   </Table>
+</xml>

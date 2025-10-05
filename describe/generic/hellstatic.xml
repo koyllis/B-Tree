@@ -1,0 +1,99 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table DeleteChildren="1" System="generic" name="Accounts Static">
+      <Field Caption="Number" Size="4" Type="2" name="number"/>
+      <Field Caption="Category" Size="1" name="category"/>
+      <Field Caption="District" Size="1" name="district"/>
+      <Field Caption="Post code" Size="10" name="postcode"/>
+      <Field Caption="Street name" name="street"/>
+      <Field Caption="Street No" Size="4" name="streetno"/>
+      <Field Caption="A/C branch" Size="3" name="accbranch"/>
+      <Field Caption="A/C cat" Size="2" name="acccat"/>
+      <Field Caption="A/C CIF" Size="6" name="acccif"/>
+      <Field Caption="A/C serial" Size="2" name="accser"/>
+      <Field Caption="Date" Size="10" name="date"/>
+      <Field Caption="Branch name" name="branchname"/>
+      <Field Caption="IBAN" Size="34" name="iban"/>
+      <Field Caption="Subtype name" name="subtype"/>
+      <Field Caption="Customer name" Size="35" name="customer"/>
+      <Field Caption="Currency name" Size="16" name="currency"/>
+      <Field Caption="Municipality" name="municipality"/>
+      <Field Caption="Country" name="country"/>
+      <Field Caption="Rate text 1" name="rate1"/>
+      <Field Caption="Rate text 2" name="rate2"/>
+      <Field Caption="Rate text 3" name="rate3"/>
+      <Field Caption="AD shot" Size="1" name="adshot"/>
+      <Field Caption="Excess rate" Size="7" name="excess"/>
+      <Field Caption="Print text" Size="1" name="print"/>
+      <Field Caption="Text message 1" Size="70" name="textmsg1"/>
+      <Field Caption="Text message 2" Size="70" name="textmsg2"/>
+      <Field Caption="Joint name 1" Size="35" name="jname1"/>
+      <Field Caption="Joint ID 1" Size="12" name="jid1"/>
+      <Field Caption="Joint country 1" Size="2" name="jcountry1"/>
+      <Field Caption="Joint name 2" Size="35" name="jname2"/>
+      <Field Caption="Joint ID 2" Size="12" name="jid2"/>
+      <Field Caption="Joint country 2" Size="2" name="jcountry2"/>
+      <Field Caption="Joint name 3" Size="35" name="jname3"/>
+      <Field Caption="Joint ID 3" Size="12" name="jid3"/>
+      <Field Caption="Joint country 3" Size="2" name="jcountry3"/>
+      <Field Caption="Joint name 4" Size="35" name="jname4"/>
+      <Field Caption="Joint ID 4" Size="12" name="jid4"/>
+      <Field Caption="Joint country 4" Size="2" name="jcountry4"/>
+      <Field Caption="B/F date" Size="5" name="bfdate"/>
+      <Field Caption="B/F amount" Size="23" name="bfamount"/>
+      <Field Caption="Balance after B/F" Size="23" name="balanceafterbf"/>
+      <Field Caption="Long?" Size="1" name="long"/>
+      <Field Caption="C/F description" Size="20" name="cfdesc"/>
+      <Field Caption="Balance after C/F" Size="23" name="balanceaftercf"/>
+      <Field Caption="DR interest desc" Size="20" name="drintdesc"/>
+      <Field Caption="DR interest amount" Size="23" name="drintamount"/>
+      <Field Caption="Balance after int" Size="23" name="balanceafterint"/>
+      <Field Caption="Totals description 1" Size="20" name="totalsdesc1"/>
+      <Field Caption="Total Dr " Size="23" name="totaldr"/>
+      <Field Caption="Total CR" Size="23" name="totalcr"/>
+      <Field Caption="Running total 1" Size="23" name="running1"/>
+      <Field Caption="Totals description 2" Size="20" name="totalsdesc2"/>
+      <Field Caption="Running total 2" Size="23" name="running2"/>
+      <Field Caption="Text 1" Size="39" name="text1"/>
+      <Field Caption="Text 2" Size="39" name="text2"/>
+      <Field Caption="DR interest B/F" Size="23" name="drintbf"/>
+      <Field Caption="CR interest B/F" Size="23" name="crintbf"/>
+      <Field Caption="Text 3" Size="39" name="text3"/>
+      <Field Caption="Text 4" Size="39" name="text4"/>
+      <Field Caption="Text 5" Size="39" name="text5"/>
+      <Field Caption="DR interest correction" Size="23" name="drintcorr"/>
+      <Field Caption="CR interest correction" Size="23" name="crintcorr"/>
+      <Field Caption="Text 6" Size="39" name="text6"/>
+      <Field Caption="Text 7" Size="39" name="text7"/>
+      <Field Caption="Text 8" Size="39" name="text8"/>
+      <Field Caption="DR interest" Size="23" name="drint"/>
+      <Field Caption="CR interest" Size="23" name="crint"/>
+      <Field Caption="Text 9" Size="39" name="text9"/>
+      <Field Caption="Text 10" Size="39" name="text10"/>
+      <Field Caption="Total DR interest" Size="23" name="totaldrint"/>
+      <Field Caption="Total CR interest" Size="23" name="totalcrint"/>
+      <Field Caption="Reconciled?" Size="1" name="recon"/>
+      <Field Caption="Account serial" Size="8" name="serial"/>
+      <Field Caption="Country code" Size="2" name="countrycode"/>
+      <Field Caption="Ending" Size="1" name="ending"/>
+      <Field Caption="Zone" Size="1" Type="2" Options="A,B" name="zone"/>
+      <Field Caption="Pages" Format="##" Size="1" Type="2" name="pages"/>
+      <Field Caption="Counter" Format="######" Size="4" Type="2" name="counter"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="hellstatic">
+         <IndexEntry name="number"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="hellstatic_account">
+         <IndexEntry name="accbranch"/>
+         <IndexEntry name="acccat"/>
+         <IndexEntry name="acccif"/>
+         <IndexEntry name="accser"/>
+      </Index>
+      <Index name="hellstatic_country">
+         <IndexEntry name="category"/>
+         <IndexEntry name="zone"/>
+         <IndexEntry name="countrycode"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

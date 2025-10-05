@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="timeshare" CanDelete="0" name="Apartment Occupancy">
+      <Field Caption="Apartment" File="timeshare.apartment" Size="4" Type="2" name="apartment"/>
+      <Field Caption="Week" Format="##" Size="1" Type="2" name="week"/>
+      <Field Caption="Contract" File="timeshare.contract" Size="4" Type="2" name="contract"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="aptoccu">
+         <IndexEntry name="apartment"/>
+         <IndexEntry name="week"/>
+      </Index>
+      <Index name="aptoccu[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="apartment"/>
+         <IndexEntry name="week"/>
+      </Index>
+   </Table>
+</xml>

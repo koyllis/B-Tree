@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="office" Icon="paste" Color="1" Dynamic="1" name="Questionaire">
+      <Field Caption="Questionaire" Size="50"/>
+      <Field Caption="Project" File="accounting.location" Size="4" Type="2" name="location"/>
+      <Field Caption="From date" Size="4" Type="5" name="from"/>
+      <Field Caption="To date" Size="4" Type="5" name="to"/>
+      <Field Caption="Sample size" Format="######" Size="4" Type="2" name="size"/>
+      <Field Caption="Timeout for next question" Format="######" Size="2" Type="2" name="timeout"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Index name="questionaire">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="questionaire[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

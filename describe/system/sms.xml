@@ -1,0 +1,26 @@
+<xml>
+   <Table CanModify="0" System="system" CanDelete="0" name="SMS Log" Root="1" CreateStamp="1" UserStamp="1" CodePage="windows-1253">
+      <Field Caption="Counter" Strict="1" Size="4" Type="2" AutoCounter="1" name="counter"/>
+      <Field Caption="Phone" Size="20" name="phone"/>
+      <Field Caption="Subject" Size="11" name="subject"/>
+      <Field Caption="Message" Size="320" name="message"/>
+      <Field Caption="Status" Size="64" name="status"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="SMS Body" Size="2" Type="2" name="smsbody" File="system.smsbody"/>
+      <Field Caption="Option" Size="2" Type="2" name="option" Format="b" Options="Used"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="sms">
+         <IndexEntry name="counter"/>
+      </Index>
+      <Index name="sms[phone]">
+         <IndexEntry name="phone"/>
+         <IndexEntry name="counter"/>
+      </Index>
+      <Index name="sms[smsbody]">
+         <IndexEntry name="smsbody"/>
+         <IndexEntry name="counter"/>
+      </Index>
+   </Table>
+</xml>

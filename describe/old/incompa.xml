@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="incompa" System="old" ModifyStamp="0">
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="ic_cono" Caption="Comp. No."/>
+      <Field Size="8" Dim ="1" name="ic_compa" Caption="Code"/>
+      <Field Size="6" Dim ="1" name="ic_comacc" Caption="Commission account"/>
+      <Field Size="1" Dim ="1" name="ic_netcomm" Caption="Net commission(Y) (Y/N)?"/>
+      <Field Size="6" Dim ="1" name="ic_proacc" Caption="Provision account"/>
+      <Field Size="25" Dim ="1" name="ic_future" Caption="Future"/>
+      <Index name="incompa">
+         <IndexEntry name="ic_cono"/>
+      </Index>
+   </Table>
+</xml>

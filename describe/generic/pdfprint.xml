@@ -1,0 +1,14 @@
+<xml>
+   <Table Unordered="1" System="generic" name="Print Log" Audit="0" ModifyStamp="0">
+      <Field Caption="Layout" File="generic.pdflayout" Size="2" Type="2" name="layout"/>
+      <Field Caption="Criteria" Size="20" Type="1" name="criteria"/>
+      <Field Caption="Accounts" Size="4" Type="2" name="accounts"/>
+      <Field Caption="Pages" Size="4" Type="2" name="pages"/>
+      <Field Caption="First" Size="40" Type="1" name="first"/>
+      <Field Caption="Last" Size="40" Type="1" name="last"/>
+      <Index name="pdfprint">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="criteria"/>
+      </Index>
+   </Table>
+</xml>

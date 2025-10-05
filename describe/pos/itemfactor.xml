@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="itemfactor" System="pos">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="1" Type="2" name="seq" Caption="Sequence"/>
+      <Field Size="8" Format="####.####" Type="3" name="factor" Caption="Factor"/>
+      <Field Size="1" Options="Multiply,Divide,Add,Deduct" Type="2" name="function" Caption="Function"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="itemfactor">
+         <IndexEntry name="item"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,47 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="redltrs" System="old">
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="d_date" Caption="Date"/>
+      <Field Size="4" Format="######" Type="2" name="d_refer" Caption="Ord. No."/>
+      <Field Size="1" Options=",,1-99" Type="2" name="d_loc" Caption="Loc."/>
+      <Field Size="1" Options=",,I,O,D" Format="u" name="d_iod" Caption="I/O/D"/>
+      <Field Size="4" Options=",,100000-999999999" Format="#########" Type="2" name="d_phone" Caption="Telephone"/>
+      <Field Size="2" Format="####" Type="2" name="d_ext" Caption="Ext./Tab."/>
+      <Field Size="1" Format="##" Type="2" name="d_repeat" Caption="Repeat"/>
+      <Field Size="3" Format="u" name="d_cash" Caption="Cashier"/>
+      <Field Size="4" Format="u" Type="2" File="old.rewaitr" name="d_waiter" Caption="Driver"/>
+      <Field Size="1" Format="##" Type="2" name="d_count" Caption="Persons"/>
+      <Field Size="4" Format="##.##" Type="4" name="d_tinn" Caption="Time in"/>
+      <Field Size="4" Format="##.##" Type="4" name="d_tout" Caption="Time out"/>
+      <Field Size="4" Format="##.##" Type="4" name="d_tact" Caption="Printed"/>
+      <Field Size="4" Format="##.##" Type="4" name="d_tdou" Caption="Driver out"/>
+      <Field Size="4" Format="##.##" Type="4" name="d_tdin" Caption="Driver in"/>
+      <Field Size="1" Format="###" Type="2" name="d_wait" Caption="Wait"/>
+      <Field Size="1" Format="###" Type="2" name="d_drive" Caption="Drive"/>
+      <Field Size="3" Format="u" name="d_grid" Caption="Grid"/>
+      <Field Size="2" Format="###" Type="2" name="d_area" Caption="Area/Sub"/>
+      <Field Size="4" Format="#####.##" Type="4" name="d_net" Caption="Net"/>
+      <Field Size="4" Format="#####.##" Type="4" name="d_dis" Caption="Discount"/>
+      <Field Size="4" Format="##.##" Type="4" name="d_ser" Caption="Service(%)"/>
+      <Field Size="4" Format="##.##" Type="4" name="d_cto" Caption="Municipal(%)"/>
+      <Field Size="4" Format="#####.##" Type="4" name="d_tot" Caption="Total"/>
+      <Field Size="4" Format="#####.##" Type="4" name="d_vat" Caption="V.A.T."/>
+      <Field Size="4" Format="#####.##" Type="4" name="d_col" Caption="Collected"/>
+      <Field Size="3" Format="u" name="d_rec" Caption="Receipt"/>
+      <Field Size="3" Format="u" name="d_prerec" Caption="Pre-receipt"/>
+      <Field Size="4" Format="######" Type="2" name="d_arefer" Caption="Alt. refer."/>
+      <Field Size="12" name="d_future" Caption="Future"/>
+      <Index name="redltrs">
+         <IndexEntry name="d_date"/>
+         <IndexEntry name="d_refer"/>
+         <IndexEntry name="d_loc"/>
+         <IndexEntry name="d_iod"/>
+      </Index>
+      <Index name="redltrs[d_waiter]">
+         <IndexEntry name="d_waiter"/>
+         <IndexEntry name="d_date"/>
+         <IndexEntry name="d_refer"/>
+         <IndexEntry name="d_loc"/>
+         <IndexEntry name="d_iod"/>
+      </Index>
+   </Table>
+</xml>

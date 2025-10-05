@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="defrag2" name="Item Profitability"  MergeType="2" RetainColumns="1">
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption=" Cases In" Total="1" Size="4" Type="2" name="pieces_in"/>
+      <Field Caption="Cases Out" Total="1" Size="4" Type="2" name="pieces_out"/>
+      <Field Caption="Quantity In" Total="1" Size="8" Type="3" name="quantity_in"/>
+      <Field Caption="Quantity Out" Total="1" Size="8" Type="3" name="quantity_out"/>
+      <Field Caption="Quantity Other" Total="1" Size="8" Type="3" name="quantity_other"/>
+      <Field Caption="Purchases" Total="1" Size="8" Type="3" name="purchase"/>
+      <Field Caption="Sales" Total="1" Size="8" Type="3" name="sale"/>
+      <Field Caption="Cost" Total="1" Size="8" Type="3" name="cost"/>
+      <Field Caption="Stock" Total="1" Size="8" Type="3" name="stock" Strict="1"/>
+      <Field Caption="Order" Size="8" Type="3" name="order"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemprofit">
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="itemprofit[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

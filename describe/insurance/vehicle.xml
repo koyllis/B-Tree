@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="insurance" Icon="vehicle" name="Vehicles">
+      <Field Size="10"/>
+      <Field Caption="Type" File="insurance.vehtype" Size="2" Type="2" Tip="1" name="type"/>
+      <Field Caption="Make" File="insurance.make" Size="2" Type="2" Tip="1" name="make"/>
+      <Field Caption="Model" Size="20" Tip="1" name="model"/>
+      <Field Caption="C.C." Size="10" Tip="1" name="cc"/>
+      <Field Caption="Year" Size="10" Tip="1" name="year"/>
+      <Field Caption="Passengers" Size="10" name="passengers"/>
+      <Field Caption="Side" Size="1" Options="Left,Right" Type="2" name="side"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vehicle">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="vehicle[make]">
+         <IndexEntry name="make"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="vehicle[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

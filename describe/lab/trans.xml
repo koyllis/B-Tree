@@ -1,0 +1,124 @@
+<xml>
+   <Table Bookmark="1" System="lab" SoftDelete="1" Icon="testtubes" CanDelete="0" name="Lab Samples" CreateStamp="1" MatchEdit="0" Unordered="1">
+      <Field Caption="Sample No." Strict="1" ReportWidth="15" Size="12" name="sampleno" Modify="1" Distinct="1"/>
+      <Field Caption="Receipt No." Size="4" Type="2" name="receipt"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" Force="1" name="people" Dll="1"/>
+      <Field Caption="Location" File="lab.customerlocation" Size="2" Type="2" name="customerlocation" FilterFunction="FilterLocation"/>
+      <Field Caption="Type" ReportWidth="20" Size="1" Type="2" Force="1" Options="Chemical,Microbiological,LabelControl,Organoleptic" PersistentReport="1" name="type"/>
+      <Field Caption="Sampler" File="office.staff" Size="2" Type="2" Force="1" PersistentReport="1" name="staff"/>
+      <Field Caption="Sampling date" ReportWidth="30" Size="8" Type="5" PersistentReport="1" name="sample" DefaultValue="1"/>
+      <Field Caption="Upto time" Size="2" Type="5" name="upto"/>
+      <Field Caption="Commission agent" File="accounting.people" Size="4" Type="2" name="commission"/>
+      <Field Caption="Agent" File="accounting.people" Size="4" Type="2" name="agent"/>
+      <Field Caption="Condition" File="lab.condition" Size="2" Type="2" name="condition"/>
+      <Field Caption="Sampling procedure" File="lab.procedure" Size="2" Type="2" name="procedure"/>
+      <Field Caption="Temperature" Size="5" name="temperature"/>
+      <Field Caption="Instructed by" name="instructed"/>
+      <Field Caption="Description" Size="120" Force="1" name="description"/>
+      <Field Caption="Note" Size="80" name="note"/>
+      <Field Caption="Extra sample" Format="b" Size="1" Type="2" name="extra"/>
+      <Field Caption="Delivery method" ReportWidth="20" Size="1" Type="2" Options="Email,ByHand,Post,Courier,Fax" name="delivery"/>
+      <Field Caption="Action after" ReportWidth="20" Size="1" Type="2" Options="Destroy,Return,Storage" name="action"/>
+      <Field Caption="According to customer" Format="b" Size="1" Type="2" name="according" Modify="1"/>
+      <Field Caption="Opnion charge" Format="####.##" Size="4" Type="4" name="opinion" Modify="1"/>
+      <Field Caption="Received date" Size="4" Type="5" PersistentReport="1" name="received" Modify="1"/>
+      <Field Caption="Analysis start" Size="4" Type="5" PersistentReport="1" name="start" Modify="1" DefaultValue="1"/>
+      <Field Caption="Analysis end" Size="4" Type="5" name="end" Modify="1" DefaultValue="1"/>
+      <Field Caption="Revision date" Size="4" Type="5" name="revision" Modify="1"/>
+      <Field Caption="Analysis group" File="lab.analysisgroup" Size="2" Type="2" name="analysisgroup" Modify="1"/>
+      <Field Caption="Parameter group" File="lab.group" Size="2" Type="2" name="group" Modify="1"/>
+      <Field Caption="HS" Format="###.##" Size="8" Type="3" name="hs" Modify="1"/>
+      <Field Caption="Discount" File="pos.discount" Size="1" Type="2" name="discount" Modify="1"/>
+      <Field Caption="Discount amount" Format="####.##" Size="4" Type="4" name="discamount" Modify="1"/>
+      <Field Caption="Price" Format="####.##" Size="4" Type="4" name="price" Modify="1"/>
+      <Field Caption="Remark" File="lab.remark" Size="1" Type="2" name="remark" Modify="1"/>
+      <Field Strict="1" Caption="Sampling date" Size="4" Type="5" name="sample_date" Modify="1"/>
+      <Field Caption="Report No." Strict="1" Format="######" Size="4" Type="2" name="reference" Modify="1"/>
+      <Field Caption="Invoice" File="pos.trans" Size="4" Type="2" name="trans" Modify="1" Strict="1"/>
+      <Field Caption="Printed" Size="8" Type="5" name="printed" Modify="1" Strict="1"/>
+      <Field Caption="User" File="system.user" Size="2" Auto="1" Type="2" name="user" Modify="1" Strict="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="trans">
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[analysisgroup]">
+         <IndexEntry name="analysisgroup"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+
+      <Index name="trans[condition]">
+         <IndexEntry name="condition"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[customerlocation]">
+         <IndexEntry name="customerlocation"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[discount]">
+         <IndexEntry name="discount"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[procedure]">
+         <IndexEntry name="procedure"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[remark]">
+         <IndexEntry name="remark"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index Force="1" name="trans_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans_receipt">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+
+     <Index name="trans_agent]">
+         <IndexEntry name="agent"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+
+       <Index name="trans_commission">
+         <IndexEntry name="commission"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+
+      <Index name="trans_sample">
+         <IndexEntry name="sample"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+      <Index name="trans_sample_date">
+         <IndexEntry name="sample_date"/>
+         <IndexEntry name="sampleno"/>
+      </Index>
+   </Table>
+</xml>

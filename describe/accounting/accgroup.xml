@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" name="Accounting Groups" Bookmark="1" Common="1">
+      <Field/>
+      <Field Caption="Depreciation(%)" Format="###.###" Size="8" Type="3" name="depreciation"/>
+      <Field Caption="Wear And tear(%)" Format="###.###" Size="8" Type="3" name="wear_tear"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="accgroup">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="accgroup_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

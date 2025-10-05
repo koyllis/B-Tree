@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="xtrans" System="old">
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="xt_date" Caption="Trans. date"/>
+      <Field Size="2" Format="u" name="xt_doc" Caption="Document"/>
+      <Field Size="4" Options="0-999999" Format="#######" Type="2" name="xt_refer" Caption="Doc. No."/>
+      <Field Size="8" Format="u" name="xt_code" Caption="Customer"/>
+      <Field Size="1" Options=",,1-99" Format="###" Type="2" name="xt_loc" Caption="Location"/>
+      <Field Size="2" Format="u" name="xt_pcode" Caption="Price"/>
+      <Field Size="8" Format="u" name="xt_agent" Caption="Agent"/>
+      <Field Size="8" Format="u" name="xt_person" Caption="Operator"/>
+      <Field Size="4" Format="#######.##" Type="4" name="xt_gross" Caption="Gross"/>
+      <Field Size="4" Format="#######.##" Type="4" name="xt_vat" Caption="V.A.T."/>
+      <Field Size="4" Format="#######.##" Type="4" name="xt_disc" Caption="Discount"/>
+      <Field Size="4" Format="#######.##" Type="4" name="xt_net" Caption="Net"/>
+      <Field Size="4" Format="#######.##" Type="4" name="xt_cost" Caption="Cost"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="xt_adat" Caption="Alloc. date"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="xt_analysis" Caption="Analysis"/>
+      <Field Size="8" Format="u" name="xt_userid" Caption="User ID"/>
+      <Field Size="4" Format="#######" Type="2" name="xt_journal" Caption="Journal No."/>
+      <Index name="xtrans">
+         <IndexEntry name="xt_date"/>
+         <IndexEntry name="xt_doc"/>
+         <IndexEntry name="xt_refer"/>
+         <IndexEntry name="xt_code"/>
+         <IndexEntry name="xt_loc"/>
+      </Index>
+   </Table>
+</xml>

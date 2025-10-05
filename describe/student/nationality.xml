@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="globe" name="Nationality" System="student">
+      <Field Size="20"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Index name="nationality">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

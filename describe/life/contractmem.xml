@@ -1,0 +1,125 @@
+<xml>
+   <Table FormatField="amount" System="life" SoftDelete="1" Icon="sqlbooks" Dynamic="1" CanDelete="0" name="Contract Members" CreateStamp="1" MergeTip="member.idno !today reference">
+      <Field Caption="Member" File="life.member" Size="4" Type="2" Force="1" Tip="1" name="member"/>
+      <Field Caption="Contract" File="life.contract" Size="2" Type="2" Force="1" PersistentReport="1" name="contract"/>
+      <Field Caption="Type" Size="1" Type="2" Force="1" Options="Standard,Loan" PersistentReport="1" name="type"/>
+      <Field Caption="Entry date" Size="4" Type="5" Force="1" PersistentReport="1" name="date"/>
+      <Field Caption="Serial" Strict="1" Size="4" Type="2" AutoCounter="1" name="reference" Modify="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" PersistentReport="1" name="people"/>
+      <Field Caption="Plan" File="life.contractplan" Size="4" Type="2" Force="1" name="contractplan"/>
+      <Field Caption="Account No." Size="13" StrictOnModify="1" name="accountno"/>
+      <Field Caption="Charge No." Size="13" name="chargeno"/>
+      <Field Caption="Return No." Size="13" name="creditno"/>
+      <Field Caption="CCB Account" Size="12" name="ccbno"/>
+      <Field Caption="CCB Charge Account" Size="12" name="ccbcharge"/>
+      <Field Caption="Member No." Size="12" name="memberno"/>
+      <Field Caption="Initial amount" Total="1" Format="#######.##" Size="8" Type="3" name="initial"/>
+      <Field Caption="Assured amount" Total="1" Format="#######.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Premium" Total="1" Format="####.##" Size="4" Type="4" name="premium" Modify="1"/>
+      <Field Caption="Extra" Total="1" Format="####.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Persons" Size="1" Type="2" name="persons" Modify="1"/>
+      <Field Caption="Death only" Format="b" Size="1" Type="2" name="death"/>
+      <Field Caption="Assignment" File="accounting.people" Size="4" Type="2" name="peopleto" Modify="1"/>
+      <Field Caption="Pending" Size="8" Type="5" name="pending" Modify="1"/>
+      <Field Caption="Notes" name="notes" Modify="1"/>
+      <Field Caption="Expiration" Size="4" Type="5" name="expire"/>
+      <Field Caption="Installment" Format="######.##" Size="4" Type="4" name="installment"/>
+      <Field Caption="Months" Format="###" Size="2" Type="2" name="months"/>
+      <Field Caption="Certificate No." Strict="1" Format="#######" Size="4" Type="2" AutoCounter="1" name="certno" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Created" Strict="1" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index CRC64="1" name="contractmem">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="contractmem[ccbcharge]">
+         <IndexEntry name="ccbcharge"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="contractmem[ccbno]">
+         <IndexEntry name="ccbno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="contractmem[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="contractmem[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry Index="member_idnumber" name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="contractmem[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry Index="member_idnumber" name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contractmem[peopleto]">
+         <IndexEntry name="peopleto"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="contractmem[reference]">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index CRC64="1" Force="1" name="contractmem_accountno">
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="contractmem_certno">
+         <IndexEntry name="certno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="contractmem_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contractmem_memberno">
+         <IndexEntry name="memberno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

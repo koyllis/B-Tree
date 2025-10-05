@@ -1,0 +1,15 @@
+<xml>
+   <Table System="accounting" name="chequereqdetail">
+      <Field Caption="Payment requisition" File="accounting.chequereq" Size="4" Type="2" name="chequereq"/>
+      <Field Caption="Detail" File="accounting.detail" Size="8" Type="2" name="detail"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="chequereqdetail">
+         <IndexEntry name="chequereq"/>
+         <IndexEntry name="detail"/>
+      </Index>
+      <Index name="chequereqdetail[detail]">
+         <IndexEntry name="detail"/>
+         <IndexEntry name="chequereq"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="xcrst" System="old">
+      <Field Size="2" name="c_store" Caption="Store"/>
+      <Field Size="12" name="c_style" Caption="Style"/>
+      <Field Size="5" name="c_clr" Caption="Colour"/>
+      <Field Size="3" name="c_size" Caption="Size"/>
+      <Field Size="4" Type="2" name="c_qty" Caption="Qty"/>
+      <Index name="xcrst">
+         <IndexEntry name="c_store"/>
+         <IndexEntry name="c_style"/>
+         <IndexEntry name="c_clr"/>
+         <IndexEntry name="c_size"/>
+      </Index>
+   </Table>
+</xml>

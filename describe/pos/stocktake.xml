@@ -1,0 +1,51 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="stock_take" Export="@modify_stamp" Dynamic="1" PDA="0" name="Stock Take">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" Force="1" name="location"/>
+      <Field Caption="Pieces" Size="4" Type="2" name="pieces"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Expire date" Size="4" Type="5" name="expire"/>
+      <Field Caption="Shelf" File="pos.shelf" Size="2" Type="2" name="shelf"/>
+      <Field Strict="1" Caption="Available" Format="quantity" Size="4" Type="8" name="available" Modify="1"/>
+      <Field Strict="1" Caption="Added (after stock date)" Format="quantity" Size="4" Type="8" name="added" Modify="1"/>
+      <Field Caption="Avail. (pieces)" Strict="1" Size="4" Type="2" name="avpieces" Modify="1"/>
+      <Field Strict="1" Caption="Cost" Format="######.######" Size="8" Type="3" name="cost" Modify="1"/>
+      <Field Strict="1" Caption="Options" Format="b" Size="1" Auto="1" Options="Color,Size" Type="2" name="option" Modify="1"/>
+      <Field Strict="1" Caption="Stock date" Size="4" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index name="stocktake" CRC64="1">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="stocktake[color]" CRC64="1">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="stocktake[location]" CRC64="1">
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="stocktake[size]" CRC64="1">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="stocktake_date" CRC64="1">
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+   </Table>
+</xml>

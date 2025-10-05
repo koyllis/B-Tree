@@ -1,0 +1,52 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Products" System="pos" Dynamic="1">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="pos.machine" name="machine" Caption="Machine No."/>
+      <Field Size="2" Type="2" File="pos.material" name="material" Caption="Material"/>
+      <Field Size="8" Format="#######.##" Type="3" name="thimin" Caption="Thickness (min)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="thimax" Caption="Thickness (max)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="diamin" Caption="Diameter (min)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="diamax" Caption="Diameter (max)"/>
+      <Field Size="4" Format="#######.##" Type="4" name="promax" Caption="Production (max)"/>
+      <Field Size="4" Format="#######.##" Type="4" name="promin" Caption="Production (min)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="loss" Caption="Loss(%)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="paint" Caption="Color(%)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="distr" Caption="Distr(%)"/>
+      <Field Size="4" Format="#######.##" Type="4" name="weight" Caption="Net weight"/>
+      <Field Size="4" Format="#######.##" Type="4" name="gweight" Caption="Gross weight"/>
+      <Field Size="4" Format="#######.##" Type="4" name="cweight" Caption="Control weight"/>
+      <Field Size="1" Options="Grams,Kilos,Square Meter" Type="2" name="weightunit" Caption="Weight unit"/>
+      <Field Size="1" Options="M,P,S,2" Type="2" name="type" Caption="Type"/>
+      <Field Size="8" Format="#######.##" Type="3" name="bin" Caption="Bin capacity"/>
+      <Field Size="8" Format="#######.##" Type="3" name="meters" Caption="Meters"/>
+      <Field Size="2" Format="##,###" Type="2" name="std" Caption="Standard"/>
+      <Field Size="2" Format="##,###" Type="2" name="cstd" Caption="Standard (cost)"/>
+      <Field Size="1" Options="Kilos,Meters,Pieces,Thousands,Square Meters,Set" Type="2" name="unit" Caption="Unit"/>
+      <Field Size="1" Options="Hours,Minutes" Type="2" name="hm" Caption="Hour unit"/>
+      <Field Size="1" Options="Kilos,Meters,Pieces,Thousands,Square Meters,Set,Rraw" Type="2" name="prunit" Caption="Prod. unit"/>
+      <Field Size="25" name="pack" Caption="Packaging"/>
+      <Field Size="50" name="print1" Caption="Printing"/>
+      <Field Size="50" name="print2"/>
+      <Field Size="50" name="rems1" Caption="Remarks"/>
+      <Field Size="50" name="rems2"/>
+      <Field Size="4" Type="5" name="lastpro" Caption="Last production"/>
+      <Field Size="8" name="who" Caption="Who"/>
+      <Field Size="4" Type="5" name="when" Caption="When"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="product">
+         <IndexEntry name="item"/>
+         <IndexEntry name="machine"/>
+         <IndexEntry name="material"/>
+      </Index>
+      <Index name="product[machine]">
+         <IndexEntry name="machine"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="material"/>
+      </Index>
+      <Index name="product[material]">
+         <IndexEntry name="material"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="machine"/>
+      </Index>
+   </Table>
+</xml>

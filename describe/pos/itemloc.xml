@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="windows-1253"?>
+<xml>
+  <Table System="pos" name="Stock" Icon="itemloc" Dynamic="1" Unordered="1" File="itemloc" MergeType="1" json_replicate="1">
+    <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item" />
+    <Field Caption="Location" File="system.location" Size="2" Type="2" name="location" />
+    <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color" />
+    <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size" />
+    <Field Caption="Minimum" Size="8" Type="3" name="minimum" Format="system" ReportWidth="10" />
+    <Field Caption="Maximum" Size="8" Type="3" name="maximum" Format="system" ReportWidth="10" />
+    <Field Caption="Shelf" File="pos.shelf" Size="2" Type="2" name="shelf" ReportWidth="10" />
+    <Field Caption="Transfer" Size="4" Type="8" name="transfer" Modify="1" Format="quantity" Total="1" ReportWidth="10" />
+    <Field Caption="Purchase" Size="4" Type="8" name="purchase" Strict="1" Modify="1" Format="quantity" Total="1" ReportWidth="10" />
+    <Field Caption="Sale" Size="4" Type="8" name="sale" Strict="1" Modify="1" Format="quantity" Total="1" ReportWidth="10" />
+    <Field Caption="Reserved" Size="4" Type="8" name="reserved" Strict="1" Modify="1" Format="quantity" Total="1" ReportWidth="10" />
+    <Field Caption="Quotation" Size="4" Type="8" name="quotation" Strict="1" Modify="1" Format="quantity" Total="1" ReportWidth="10" />
+    <Field Caption="On Order" Size="4" Type="8" name="onorder" Strict="1" Modify="1" Format="quantity" Total="1" ReportWidth="10" />
+    <Field Caption="Previous Quantity" Size="4" Type="8" name="prevquantity" Strict="1" Modify="1" Format="quantity" Total="1" ReportWidth="10" />
+    <Field Caption="Quantity" Size="4" Type="8" name="quantity" Strict="1" Modify="1" Format="quantity" Total="1" ReportWidth="10" />
+    <Field Caption="Pieces" Size="4" Type="2" name="pieces" Strict="1" Modify="1" Format="#######" Total="1" ReportWidth="10" />
+    <Field Caption="Available" Size="4" Type="8" name="available" Strict="1" Modify="1" Format="quantity" Total="1" ReportWidth="10" IgnoreSmallAmounts="1" />
+    <Field Caption="Average cost" Size="8" Type="3" name="cost" Strict="1" Modify="1" Format="########.##" Total="1" ReportWidth="10" />
+    <Field Caption="Average quantity" Size="8" Type="3" name="averageqty" Strict="1" Modify="1" Format="########.##" Total="1" ReportWidth="10" />
+    <Field Caption="Last on order" Size="4" Type="5" name="onorder_last" Strict="1" Modify="1" Total="1" ReportWidth="10" />
+    <Field Caption="Modified" Size="8" Type="9" name="@modify_stamp" Hide="1" System="1" />
+    <Index name="itemloc" CRC64="1" Unordered="1">
+      <IndexEntry name="item" />
+      <IndexEntry name="location" />
+      <IndexEntry name="color" />
+      <IndexEntry name="size" />
+    </Index>
+    <Index name="itemloc[color]" CRC64="1" Unordered="1">
+      <IndexEntry name="color" />
+      <IndexEntry name="item" />
+      <IndexEntry name="location" />
+      <IndexEntry name="size" />
+    </Index>
+    <Index name="itemloc[shelf]" Unordered="1">
+      <IndexEntry name="shelf" />
+    </Index>
+    <Index name="itemloc[size]" CRC64="1" Unordered="1">
+      <IndexEntry name="size" />
+      <IndexEntry name="item" />
+      <IndexEntry name="location" />
+      <IndexEntry name="color" />
+    </Index>
+    <Index name="itemloc_location" CRC64="1" Unordered="1">
+      <IndexEntry name="location" />
+      <IndexEntry name="item" />
+      <IndexEntry name="color" />
+      <IndexEntry name="size" />
+    </Index>
+    <Index name="itemloc_modifystamp" CRC64="1" Unordered="1">
+      <IndexEntry name="@modify_stamp" />
+      <IndexEntry name="item" />
+      <IndexEntry name="location" />
+      <IndexEntry name="color" />
+      <IndexEntry name="size" />
+    </Index>
+  </Table>
+</xml>

@@ -1,0 +1,89 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table DeleteChildren="1" System="filing" SoftDelete="1" Icon="letter" Dynamic="1" Index="letter" ChainInsert="relation" name="Letters" FavoriteMatch="filing.relation" CreateStamp="1" UserStamp="1">
+      <Field Caption="Letter No." Strict="1" Format="######" Size="4" Type="2" name="letterno"/>
+      <Field Caption="Letter Date" Size="4" Type="5" name="ddate"/>
+      <Field Caption="Movement" Format="###" Size="1" Type="2" Options="Incoming,Outgoing" name="inout" Default="Incoming"/>
+      <Field Caption="Subject" Size="120" Tip="1" name="subject"/>
+      <Field Caption="Registration" Size="4" Auto="1" Type="5" name="date"/>
+      <Field Caption="Delivery Type" Format="###" Size="1" Type="2" Options="Hand,Mail,Fax,E-mail,Telephone,Internal Note" name="deltype"/>
+      <Field Caption="Priority" Format="b" Size="1" Type="2" name="priority"/>
+      <Field Caption="Reference No." Size="40" name="reference"/>
+      <Field Caption="Sender / Receiver" Size="60" name="sender"/>
+      <Field Caption="Letters" Format="#######" File="filing.letter" Size="4" Type="2" name="letter"/>
+      <Field Caption="Page" Strict="1" Format="#######" Size="4" Type="2" name="pageno"/>
+      <Field Caption="Descriptions" Size="50" Tip="1" name="description" Dim="3"/>
+      <Field Caption="Answer Date" Size="4" Type="5" name="dateanswer"/>
+      <Field Caption="Type" Format="#######" File="filing.type" Size="2" Type="2" name="type"/>
+      <Field Caption="Action" Format="#######" File="filing.action" Size="2" Type="2" name="action"/>
+      <Field Caption="Staff" File="filing.staff" Size="2" Type="2" name="staff"/>
+      <Field Caption="Last office" File="filing.office" Size="2" Type="2" name="office"/>
+      <Field Caption="Completed" Size="4" Type="5" name="completed"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="letter">
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index NullKey="1" name="letter[action]">
+         <IndexEntry name="action"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index NullKey="1" name="letter[letter]">
+         <IndexEntry name="letter"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index name="letter[office]">
+         <IndexEntry name="office"/>
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index name="letter[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index NullKey="1" name="letter[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index name="letter_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index name="letter_dateanswer">
+         <IndexEntry name="dateanswer"/>
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index name="letter_ddate">
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index name="letter_letterno">
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="inout"/>
+      </Index>
+      <Index name="letter_subject">
+         <IndexEntry name="subject"/>
+         <IndexEntry name="ddate"/>
+         <IndexEntry name="letterno"/>
+         <IndexEntry name="inout"/>
+      </Index>
+   </Table>
+</xml>

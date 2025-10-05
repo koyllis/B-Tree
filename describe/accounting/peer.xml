@@ -1,0 +1,19 @@
+<xml>
+   <Table System="accounting" name="Peers">
+      <Field Size="50" Force="1"/>
+      <Field Caption="Phone" Size="10" Force="1" name="phone"/>
+      <Field Caption="Mobile" Size="10" Force="1" name="mobile"/>
+      <Field Caption="E-mail" Size="40" Force="1" name="email"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Force="1" Type="2" name="group"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peer">
+         <IndexEntry name="name"/>
+         <IndexEntry name="phone"/>
+      </Index>
+      <Index name="peer[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="phone"/>
+      </Index>
+   </Table>
+</xml>

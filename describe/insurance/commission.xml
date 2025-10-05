@@ -1,0 +1,36 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="insurance" Icon="checkbook" name="Commission Rates">
+      <Field Caption="Company" File="insurance.company" Size="2" Type="2" name="company"/>
+      <Field Caption="Agent" File="insurance.agent" Size="2" Type="2" name="agent"/>
+      <Field Caption="Type" File="insurance.type" Size="1" Type="2" name="type" Negative="0"/>
+      <Field Caption="Office(%)" Format="###.##" Size="8" Type="3" name="officecomm"/>
+      <Field Caption="Agent(%)" Format="###.##" Size="8" Type="3" name="agentcomm"/>
+      <Field Caption="Sub-agent(%)" Format="###.##" Size="8" Type="3" name="subagentcomm"/>
+      <Field Caption="Fees(%)" Format="###.##" Size="8" Type="3" name="feescomm"/>
+      <Field Caption="Extra (amount)" Format="###.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Include fee" Format="b" Size="1" Type="2" name="fees"/>
+      <Field Caption="Fees account" File="accounting.chart" Size="4" Type="2" name="chart_fees"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="commission">
+         <IndexEntry name="company"/>
+         <IndexEntry name="agent"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="commission[agent]">
+         <IndexEntry name="agent"/>
+         <IndexEntry name="company"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="commission[chart_fees]">
+         <IndexEntry name="chart_fees"/>
+         <IndexEntry name="company"/>
+         <IndexEntry name="agent"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="commission[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="company"/>
+         <IndexEntry name="agent"/>
+      </Index>
+   </Table>
+</xml>

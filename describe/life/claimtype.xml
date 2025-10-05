@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="Claim Types">
+      <Field/>
+      <Field Caption="Maximum" Format="####.##" Size="4" Type="4" name="maximum"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="Yearly" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="claimtype">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

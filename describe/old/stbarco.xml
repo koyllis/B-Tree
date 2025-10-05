@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="stbarco" System="old" ModifyStamp="0">
+      <Field Caption="Barcode" Format="######" Size="4" Type="2" name="b_barcode" Dim ="1"/>
+      <Field Caption="Item" Size="12" name="b_item" Dim ="1"/>
+      <Index name="stbarco">
+         <IndexEntry name="b_barcode"/>
+         <IndexEntry name="b_item"/>
+      </Index>
+   </Table>
+</xml>

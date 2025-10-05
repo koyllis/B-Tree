@@ -1,0 +1,11 @@
+<xml>
+   <Table System="pos" name="Delivery Restrictions">
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Delivery date" Size="4" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="deliveryrestr">
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

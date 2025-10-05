@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Family Member Transaction Details">
+      <Field Caption="Membership No." File="generic.cymember" Size="4" Type="2" name="memberno"/>
+      <Field Caption="Card No." Size="11" name="cardno"/>
+      <Field Caption="Line" Size="4" Type="2" name="line"/>
+      <Field Caption="Date" Size="11" name="date"/>
+      <Field Caption="Partner" Size="40" name="partner"/>
+      <Field Caption="Redemption miles" Format="########" Size="4" Type="2" name="redemption"/>
+      <Field Caption="Tier miles" Format="########" Size="4" Type="2" name="tier"/>
+      <Field Caption="Language" Size="80" name="language"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cyfamdetail">
+         <IndexEntry name="memberno"/>
+         <IndexEntry name="cardno"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

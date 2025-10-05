@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Vehicle Incident">
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="2" Type="2" name="vehicle" Force="1"/>
+      <Field Caption="Incident date" Size="4" Type="5" name="date" Force="1"/>
+      <Field Caption="Phone" Size="20" name="phone"/>
+      <Field Size="40"/>
+      <Field Caption="Note" Size="60" name="note"/>
+      <Field Caption="Contract" File="accounting.peopleinsure" Size="4" Type="2" name="peopleinsure" Strict="1" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vehicleincident">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="vehicleincident[peopleinsure]">
+         <IndexEntry name="peopleinsure"/>
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

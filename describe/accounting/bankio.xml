@@ -1,0 +1,38 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Cheque Deposits">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Bank" File="accounting.bank" Size="2" Type="2" Force="1" name="bank"/>
+      <Field Caption="Cheque No." Size="4" Type="2" Force="1" name="reference"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" Force="1" name="people"/>
+      <Field Caption="Amount" Total="1" Format="#####.##" Size="4" Type="4" Force="1" name="amount"/>
+      <Field Strict="1" Caption="Cash receipt" File="accounting.cashreceipt" Size="4" Type="2" name="cashreceipt" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="bankio">
+         <IndexEntry name="date"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="bankio[bank]">
+         <IndexEntry name="bank"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="bankio[cashreceipt]">
+         <IndexEntry name="cashreceipt"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="bankio[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="bankio_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="bank"/>
+      </Index>
+   </Table>
+</xml>

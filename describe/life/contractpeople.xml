@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="folderwhat" name="Contract Companies" System="life">
+      <Field Size="2" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Company"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="contractpeople">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="contractpeople[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="contract"/>
+      </Index>
+   </Table>
+</xml>

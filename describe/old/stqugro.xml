@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="stqugro" System="old" ModifyStamp="0" >
+      <Field Caption="Group" Format="u" Size="8" name="qg_code"/>
+      <Field Caption="Member" Format="u" Size="8" name="qg_member"/>
+      <Index name="stqugro">
+         <IndexEntry name="qg_code"/>
+         <IndexEntry name="qg_member"/>
+      </Index>
+   </Table>
+</xml>

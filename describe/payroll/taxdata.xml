@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="payroll" Icon="tax_form" name="Employee Tax Form">
+      <Field Caption="Year" Format="####" Size="2" Type="2" name="year"/>
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" Tip="1" name="employee"/>
+      <Field Caption="Spouse income" Format="######.##" Size="4" Type="4" name="spouce"/>
+      <Field Caption="Previous work income" Format="######.##" Size="4" Type="4" name="previous"/>
+      <Field Caption="Estimated period bonus" Format="######.##" Size="4" Type="4" name="estimated"/>
+      <Field Caption="Other income" Format="######.##" Size="4" Type="4" name="other"/>
+      <Field Caption="Paid tax" Format="######.##" Size="4" Type="4" name="paidtax"/>
+      <Field Caption="Start date" Size="4" Type="5" name="start"/>
+      <Field Caption="Period factor" Size="8" Type="3" name="hours"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="taxdata">
+         <IndexEntry name="year"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="taxdata_employee">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="year"/>
+      </Index>
+   </Table>
+</xml>

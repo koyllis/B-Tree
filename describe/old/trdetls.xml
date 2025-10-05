@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='windows-1253' standalone='yes'?>
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="trdetls" System="old">
+      <Field Size="4" Type="5" Dim ="1" name="td_date" Caption="†‹„‹."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="td_refer" Caption="€."/>
+      <Field Size="1" Format="00" Type="2" Dim ="1" name="td_loc" Caption="€."/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="td_line" Caption="‚€‹‹†"/>
+      <Field Size="12" Format="u" Dim ="1" name="td_item" Caption="„ƒ‘"/>
+      <Field Size="8" Format="####.##" Type="3" Dim ="1" name="td_quant" Caption="‘’."/>
+      <Field Size="8" Format="####.###" Type="3" Dim ="1" name="td_price" Caption="’‹†"/>
+      <Field Size="4" Format="####.##" Type="4" Dim ="1" name="td_total" Caption="‰"/>
+      <Field Size="4" Format="####.##" Type="4" Dim ="1" name="td_cost" Caption="‰‘’‘"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="td_vat" Caption="”€%"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="td_dis" Caption="„‰%"/>
+      <Index name="trdetls">
+         <IndexEntry name="td_date"/>
+         <IndexEntry name="td_refer"/>
+         <IndexEntry name="td_loc"/>
+         <IndexEntry name="td_line"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,33 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="clipboard" name="Charge Records" System="student">
+      <Field Size="4" Modify="1" Strict="1" AutoCounter="1" Type="2" name="reference" Caption="Reference"/>
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Force="1" Type="2" File="student.student" name="student" Caption="Student"/>
+      <Field Size="4" Force="1" Type="2" File="student.program" name="program" Caption="Program"/>
+      <Field Size="2" Force="1" Type="2" File="accounting.document" name="document" Caption="Document"/>
+      <Field Size="4" Format="####.##" Force="1" Type="4" name="amount" Caption="Amount"/>
+      <Field Size="4" Format="####.##" Force="1" Type="4" name="discount" Caption="Discount"/>
+      <Field Size="40" Force="1" name="note" Caption="Notes"/>
+      <Field Size="4" Force="1" Type="2" File="accounting.journal" name="journal" Caption="Journal"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="charge">
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="charge[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="charge[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="charge[program]">
+         <IndexEntry name="program"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="charge[student]">
+         <IndexEntry name="student"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

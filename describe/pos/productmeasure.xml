@@ -1,0 +1,17 @@
+<xml>
+   <Table System="pos" name="Product Measure">
+      <Field Caption="Productline" File="pos.productline" Size="2" Force="1" Type="2" name="productline"/>
+      <Field Caption="Measure" File="pos.measure" Size="2" Force="1" Type="2" name="measure"/>
+      <Field Caption="Centimeter" Format="###.##" Size="4" Force="1" Type="8" name="centimeter"/>
+      <Field Caption="Inch" Format="###.##" Size="4" Type="8" name="inch"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="productmeasure">
+         <IndexEntry name="productline"/>
+         <IndexEntry name="measure"/>
+      </Index>
+      <Index name="productmeasure[measure]">
+         <IndexEntry name="measure"/>
+         <IndexEntry name="productline"/>
+      </Index>
+   </Table>
+</xml>

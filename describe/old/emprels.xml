@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="emprels" System="old">
+      <Field Size="4" Format="0" Type="2" name="er_number" Caption="Emp. No."/>
+      <Field Size="5" Format="u" name="er_ad" Caption="Rate code"/>
+      <Field Size="1" Format="###" Type="2" name="er_rateno" Caption="Rate No."/>
+      <Field Size="6" Format="u" name="er_debit" Caption="Expense account"/>
+      <Index name="emprels">
+         <IndexEntry name="er_number"/>
+         <IndexEntry name="er_ad"/>
+         <IndexEntry name="er_rateno"/>
+      </Index>
+   </Table>
+</xml>

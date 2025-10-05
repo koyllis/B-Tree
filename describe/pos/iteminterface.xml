@@ -1,0 +1,22 @@
+<xml>
+   <Table PDA="1" System="pos" SoftDelete="1" Icon="bridge" name="Item Interface">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" Force="1" name="color"/>
+      <Field Caption="Interface code" Size="20" name="code" Force="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="iteminterface">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="iteminterface[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="iteminterface[code]">
+         <IndexEntry name="code"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

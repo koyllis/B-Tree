@@ -1,0 +1,33 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Destruction Certificates">
+      <Field Caption="Type" Size="1" Type="2" Options="Auto,Manual" name="type"/>
+      <Field Caption="Serial No." Size="4" Type="2" Force="1" AutoCounter="1" name="number"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Vehicle No." Size="10" name="vehicle"/>
+      <Field Caption="Chassis No." Size="20" name="chassis"/>
+      <Field Caption="Category" File="accounting.vehcategory" Size="2" Type="2" name="category"/>
+      <Field Caption="Model" File="accounting.vehmodel" Size="2" Type="2" name="model"/>
+      <Field Caption="Owner" Size="40" Auto="1" AutoCounter="1" name="owner"/>
+      <Field Caption="Address" Size="50" name="address"/>
+      <Field Caption="Ident. No." Size="10" name="idno"/>
+      <Field Caption="Transporter" File="accounting.people" Size="4" Type="2" name="transporter"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="destructioncert">
+         <IndexEntry name="type"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="destructioncert[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="destructioncert[model]">
+         <IndexEntry name="model"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="destructioncert[transporter]">
+         <IndexEntry name="transporter"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

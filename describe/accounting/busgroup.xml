@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Route Groups">
+      <Field/>
+      <Field Caption="From month" Format="##" Size="1" Type="2" name="from_month"/>
+      <Field Caption="From day" Format="##" Size="1" Type="2" name="from_day"/>
+      <Field Caption="To month" Format="##" Size="1" Type="2" name="to_month"/>
+      <Field Caption="To day" Format="##" Size="1" Type="2" name="to_day"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="busgroup">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Item/Grouip key">
+      <Field Size="20"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="hybridgroup">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="hybridgroup[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="hybridgroup[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="system" Dynamic="1" PDA="0" name="Audit Table" ModifyStamp="0" Audit="0" Root="1" TextAnalysis="0" Dataless="1" Shards="1">
+      <Field Caption="Company" Size="20" name="company"/>
+      <Field Caption="System" Size="16" name="system"/>
+      <Field Caption="File" Size="24" name="file"/>
+      <Field Caption="Shard" Size="1" Type="2" name="shard"/>
+
+      <Field Caption="Record" Format="#########" Size="4" Type="2" name="record"/>
+      <Field Caption="Position" Format="###########" Size="8" Type="2" name="position"/>
+      <Index PageSize="2" Large="1" CRC64="1" name="audit">
+         <IndexEntry name="company"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="file"/>
+         <IndexEntry name="shard"/>
+
+         <IndexEntry name="record"/>
+         <IndexEntry name="position"/>
+      </Index>
+   </Table>
+</xml>

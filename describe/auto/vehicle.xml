@@ -1,0 +1,76 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" SoftDelete="1" Icon="taxi" Dynamic="1" name="Vehicles" Merge="1" CreateStamp="1" UserStamp="1">
+      <Field Caption="Reg. No" Size="20" name="regno" Tip="1" Force="1"/>
+      <Field Caption="Request ID" Size="36" Type="1" name="request"/>
+      <Field Caption="First Reg. date (CY)" Size="4" Type="5" name="date"/>
+      <Field Caption="KM on registrastion" Size="4" Type="2" name="regkm"/>
+      <Field Caption="Chassis" Size="20" name="chassis"/>
+      <Field Caption="Engine Number" Size="20" name="engine"/>
+      <Field Caption="Year" Size="2" Type="2" name="year"/>
+      <Field Caption="Vehicle Category" File="auto.category" Size="2" Type="2" name="category" Force="0"/>
+      <Field Caption="European category" File="auto.eucategory" Size="2" Type="2" name="eucategory" Force="0"/>
+      <Field Caption="Make" File="auto.make" Size="2" Type="2" name="make"/>
+      <Field Caption="Model" File="auto.model" Size="2" Type="2" name="model"/>
+      <Field Caption="Fuel Type" File="auto.fuel" Size="2" Type="2" name="fuel"/>
+      <Field Caption="Body" Size="2" Type="2" File="auto.bodytype" name="bodytype"/>
+      <Field Caption="Color" File="auto.color" Size="2" Type="2" name="color"/>
+      <Field Caption="First registered country" File="auto.country" Size="2" Type="2" name="country"/>
+      <Field Caption="First Reg. Date" Size="4" Type="5" name="date_first"/>
+      <Field Caption="Imported condition" Size="50" Type="1" name="condition"/>
+      <Field Caption="Seats" Size="1" Type="2" name="seats" Options="1,2,3,4,5,6,7,8,9,>9"/>
+      <Field Caption="Gearbox" Size="1" Type="2" name="gearbox" Options="CVT,Automatic,Semi-Automatic,Manual,Triptronic"/>
+      <Field Caption="Drive" Size="1" Type="2" name="drive" Options="Front,Rear,4WD"/>
+      <Field Caption="Doors" Size="1" Type="2" name="doors" Options="2doors,4doors,6doors"/>
+      <Field Caption="Steering position" Size="1" Type="2" name="steering" Options="Left,Left/Right,Right,Center"/>
+      <Field Caption="Purpose of use" Size="1" Type="2" name="purpose" Options="Professional,PrivateProfessional,Private"/>
+      <Field Caption="Number of Owners" Size="1" Type="2" name="owners" Format="##"/>
+      <Field Caption="Stolen" Size="1" Type="2" name="stolen" Format="b"/>
+      <Field Caption="Changed colour" Size="1" Type="2" name="change_color" Format="b"/>
+      <Field Caption="Changed engine" Size="1" Type="2" name="change_engine" Format="b"/>
+      <Field Caption="Was/is Taxi" Size="1" Type="2" name="taxi" Format="b"/>
+      <Field Caption="Was/is Z" Size="1" Type="2" name="z" Format="b"/>
+      <Field Caption="Service History" Size="1" Type="2" name="service" Options="Full,Some,None"/>
+      <Field Caption="Engine capacity" Size="2" Type="2" name="hp"/>
+      <Field Caption="Engine power" Size="8" Type="3" name="power"/>
+      <Field Caption="Co2 Emmisions" Size="2" Type="2" name="co2"/>
+      <Field Caption="Gross weight" Size="2" Type="2" name="weight"/>
+      <Field Caption="Odometer" Size="4" Type="2" name="km"/>
+      <Field Caption="Next MOT" Size="4" Type="5" name="mot_date"/>
+      <Field Caption="Next Service" Size="4" Type="5" name="service_date"/>
+      <Field Caption="Original value" Format="#####.##" Size="4" Type="4" name="value"/>
+      <Field Caption="Owner" File="auto.webuser" Size="2" Type="2" name="webuser"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="vehicle">
+         <IndexEntry name="regno"/>
+         <IndexEntry name="request"/>
+      </Index>
+      <Index name="vehicle[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="regno"/>
+         <IndexEntry name="request"/>
+      </Index>
+      <Index name="vehicle[model]">
+         <IndexEntry name="model"/>
+         <IndexEntry name="regno"/>
+         <IndexEntry name="request"/>
+      </Index>
+      <Index name="vehicle[fuel]">
+         <IndexEntry name="fuel"/>
+         <IndexEntry name="regno"/>
+         <IndexEntry name="request"/>
+      </Index>
+      <Index name="vehicle[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="regno"/>
+         <IndexEntry name="request"/>
+      </Index>
+      <Index name="vehicle[bodytype]">
+         <IndexEntry name="bodytype"/>
+         <IndexEntry name="regno"/>
+         <IndexEntry name="request"/>
+      </Index>
+   </Table>
+</xml>

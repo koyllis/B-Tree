@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Card Prefixes" Icon="cardprefix">
+      <Field Caption="Prefix" Size="4" Type="2" Force="1" name="prefix"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cardprefix">
+         <IndexEntry name="prefix"/>
+      </Index>
+   </Table>
+</xml>

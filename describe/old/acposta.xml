@@ -1,0 +1,13 @@
+<xml>
+   <Table System="old" name="acposta" ModifyStamp="0">
+      <Field Caption="Customer" Format="u" Size="8" name="pa_code"/>
+      <Field Caption="Address" Format="u" name="pa_add1"/>
+      <Field Caption="" Format="u" name="pa_add2"/>
+      <Field Caption="" Format="u" name="pa_add3"/>
+      <Field Caption="E-mail" Size="40" name="pa_email"/>
+      <Field Caption="Future" Size="40" name="pa_future"/>
+      <Index name="acposta">
+         <IndexEntry name="pa_code"/>
+      </Index>
+   </Table>
+</xml>

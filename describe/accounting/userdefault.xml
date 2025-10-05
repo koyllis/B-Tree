@@ -1,0 +1,78 @@
+<xml>
+   <Table System="accounting" name="User Defaults">
+      <Field Caption="User" File="system.user" Size="4" Type="2" name="user"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Category" File="accounting.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Daily capacity" Format="####.##" Size="4" Type="8" name="capacity"/>
+      <Field Caption="Tollerance quantity" Format="####.##" Size="4" Type="8" name="tollerance"/>
+      <Field Caption="WIP days" Format="##" Size="1" Type="2" name="wip_days"/>
+      <Field Caption="Work minutes" Format="###" Size="2" Type="2" name="workminutes"/>
+      <Field Caption="Options" Format="b" Size="4" Options="SummaryView,NoDetails,NoRecipe,RequestQuantity,Punch,ModifyDocuments,FindByLocation,OverrideDate,OverrideLocation,OverridePrice,CostingView,NoTransactions,RelayTerminal,NoStockLookup,RequestLocation,BelowCost,OverrideDiscount,EnableCashin,ModifyJournals,ExtendDelivery,UserMode,DisableTranslate" Type="2" name="options"/>
+      <Field Caption="Credit Card Host" File="system.host" Size="2" Type="2" name="jcchost"/>
+      <Field Caption="Hotel Host" File="system.host" Size="2" Type="2" name="hotelhost"/>
+      <Field Caption="Hotel Port" Negative="0" Size="2" Type="2" name="hotelport"/>
+      <Field Caption="Code page" Size="2" Negative="0" Type="2" name="codepage"/>
+      <Field Caption="Over limit %" Format="###.##" Negative="0" Size="8" Type="3" name="overlimit"/>
+      <Field Caption="Default customer" File="accounting.people" Size="4" Negative="0" Type="2" name="people"/>
+      <Field Caption="Default agent" File="accounting.people" Size="4" Negative="0" Type="2" name="agent"/>
+      <Field Caption="Default document" File="accounting.document" Size="2" Negative="0" Type="2" name="document"/>
+      <Field Caption="Default project" File="accounting.location" Size="2" Negative="0" Type="2" name="location"/>
+      <Field Caption="Default delivery method" File="accounting.deliverymethod" Size="2" Negative="0" Type="2" name="deliverymethod"/>
+      <Field Caption="Default operation" File="accounting.operation" Size="2" Negative="0" Type="2" name="operation"/>
+      <Field Caption="Sampler" File="office.staff" Size="2" Negative="0" Type="2" name="staff"/>
+      <Field Caption="Maximum discount%" Format="###,##" Negative="0" Size="4" Type="8" name="maxdisc"/>
+      <Field Caption="Maximum payment" Format="######.##" Size="4" Negative="0" Type="4" name="maxpay"/>
+      <Field Caption="Employee" File="payroll.employee" Negative="0" Size="4" Type="2" name="employee"/>
+      <Field Caption="Barcode layout" File="pos.barclayout" Negative="0" Size="2" Type="2" name="layout"/>
+      <Field Caption="Default page" Size="32" Negative="0" name="default_page"/>
+      <Field Caption="Pos Display Message" Size="40" Negative="0" name="pos_display"/>
+
+      <Field Caption="Certificate top margin" Size="1" Type="2" Negative="0" name="topmargin"/>
+      <Field Caption="Net Info" Size="32" name="netinfo"/>
+      <Field Caption="E Voucher Token" Size="32" name="evoucher_token"/>
+      <Field Caption="E Voucher Name" Size="32" name="evoucher_name"/>
+
+
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="userdefault">
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[hotelhost]">
+         <IndexEntry name="hotelhost"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[jcchost]">
+         <IndexEntry name="jcchost"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

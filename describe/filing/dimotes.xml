@@ -1,0 +1,41 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Dynamic="1" AutoNumber="1" name="dimotes" System="filing">
+      <Field Size="4" Format="######" Strict="1" Type="2" name="number" Caption="Number"/>
+      <Field Size="50"/>
+      <Field Size="50" name="surname" Caption="Surname"/>
+      <Field Size="1" Options="Sir,Madam,Sirs,Madams" Type="2" name="prefix" Caption="Prefix"/>
+      <Field Size="40" name="address" Caption="Address"/>
+      <Field Size="2" Type="2" File="filing.area" name="area" Caption="Area"/>
+      <Field Size="4" Format="####" Type="2" name="zip" Caption="Zip"/>
+      <Field Size="4" Format="#####" Type="2" name="pobox" Caption="P.O.Box"/>
+      <Field Size="4" Format="####" Type="2" name="boxzip" Caption="P.O.Box Zip"/>
+      <Field Size="20" name="mobile" Caption="Mobile phone"/>
+      <Field Size="20" name="work" Caption="Work phone"/>
+      <Field Size="20" name="home" Caption="Home phone"/>
+      <Field Size="1" Type="2" File="filing.category" name="category" Caption="Category"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="dimotes">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="dimotes[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="surname"/>
+         <IndexEntry name="address"/>
+      </Index>
+      <Index name="dimotes[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="surname"/>
+         <IndexEntry name="address"/>
+      </Index>
+      <Index name="dimotes_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="dimotes_surname">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

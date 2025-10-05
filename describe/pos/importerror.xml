@@ -1,0 +1,12 @@
+<xml>
+   <Table System="pos" name="importerror">
+      <Field Caption="Key" name="key"/>
+      <Field Caption="Value" name="value"/>
+      <Field Caption="Line" Size="4" Type="2" name="line"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="importerror">
+         <IndexEntry name="key"/>
+         <IndexEntry name="value"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,73 @@
+<xml>
+   <Table DeleteChildren="1" System="payroll" SoftDelete="1" Icon="payroll" Dynamic="1" Parameters="bonus,other" RenderReport="payroll|transdet" PDA="0" name="Payroll Transactions" FavoriteMatch="payroll|transdet" MatchEdit="0" Unordered="1">
+      <Field Caption="Employee" File="payroll.employee" Size="2" Type="2" Tip="1" name="employee"/>
+      <Field Caption="Date" Size="4" Type="5" name="_date"/>
+      <Field Caption="Total earnings" Total="1" Format="######.##" Size="4" Type="4" name="totaladd"/>
+      <Field Caption="Insurable earnings" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="insearn" Modify="1" Distinct="1"/>
+      <Field Caption="Taxable earnings" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="taxearn" Modify="1"/>
+      <Field Caption="Total Deductions" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="totalded" Modify="1"/>
+      <Field Caption="Total contributions" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="totalcon" Modify="1"/>
+      <Field Caption="Stamps" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="stamps" Modify="1"/>
+      <Field Caption="Gross" Format="######.##" Size="4" Type="4" name="basic" Modify="1"/>
+      <Field Caption="Actual" Strict="1" Total="1" Format="###.##" Size="8" Type="3" name="normal" Modify="1"/>
+      <Field Caption="Extra" Total="1" Format="####.##" Size="8" Type="3" StrictOnModify="1" name="extra" Distinct="1"/>
+      <Field Caption="Overtime" Total="1" Format="###.##" Size="8" Type="3" StrictOnModify="1" name="overtime" Distinct="1"/>
+      <Field Caption="Minutes" Size="2" Type="2" name="minutes" Modify="1" Distinct="1"/>
+      <Field Caption="Cheque No." Size="10" name="cheque" Modify="1" Distinct="1" Persistent="1"/>
+      <Field Caption="Payment" Size="4" Type="5" name="payment"/>
+      <Field Caption="Bonus?" Size="1" Type="2" name="bonus" Format="b"/>
+      <Field Caption="Recorded" Strict="1" Size="8" Type="5" name="date" Modify="1"/>
+      <Field Caption="Closed" Strict="1" Size="8" Type="5" name="closed" Modify="1"/>
+      <Field Caption="Period" Strict="1" Size="1" Type="2" name="period" Modify="1"/>
+      <Field Caption="Group No." Strict="1" File="payroll.group" Size="2" Type="2" name="group" Modify="1"/>
+      <Field Caption="Department" Strict="1" File="payroll.timedef" Size="2" Type="2" name="timedef" Modify="1"/>
+      <Field Caption="S.I. group" Strict="1" File="payroll.sigroup" Size="2" Type="2" name="sigroup" Modify="1"/>
+      <Field Caption="Bank" Strict="1" File="accounting.bank" Size="2" Type="2" name="bank" Modify="1"/>
+      <Field Caption="User" Strict="1" File="system.user" Size="2" Type="2" name="user" Modify="1"/>
+      <Field Strict="1" Caption="Allocation journal" File="accounting.journal" Size="4" Type="2" name="journal_alloc" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="trans">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="_date"/>
+      </Index>
+      <Index name="trans[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="_date"/>
+      </Index>
+      <Index name="trans[journal_alloc]">
+         <IndexEntry name="journal_alloc"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="_date"/>
+      </Index>
+      <Index name="trans[sigroup]">
+         <IndexEntry name="sigroup"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="_date"/>
+      </Index>
+      <Index name="trans[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="_date"/>
+      </Index>
+      <Index name="trans[bank]">
+         <IndexEntry name="bank"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="_date"/>
+      </Index>
+      <Index name="trans[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="_date"/>
+      </Index>
+      <Index name="trans__date">
+         <IndexEntry name="_date"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="trans_timedef">
+         <IndexEntry Index="employee[timedef]" name="employee"/>
+         <IndexEntry name="_date"/>
+      </Index>
+   </Table>
+</xml>

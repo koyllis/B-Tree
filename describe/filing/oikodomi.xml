@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Dynamic="1" name="oikodomi" System="filing">
+      <Field Size="4" Format="#####" Force="1" Type="2" name="reference" Caption="Reference No"/>
+      <Field Size="2" Format="####" Force="1" Type="2" name="year" Caption="Year"/>
+      <Field Size="4" Force="1" Type="5" name="receiptdate" Caption="Receipt date"/>
+      <Field Size="1" Options="Construction,Separation" Force="1" Type="2" name="type" Caption="Type"/>
+      <Field Size="4" Type="2" File="filing.oikodomi" name="related" Caption="Related file"/>
+      <Field Size="20" Force="1" name="pageno" Caption="Page/Layout"/>
+      <Field Size="40" name="neigbourhood" Caption="Neigbourhood"/>
+      <Field Size="40" name="area" Caption="Area"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="oikodomi">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="year"/>
+      </Index>
+      <Index name="oikodomi[related]">
+         <IndexEntry name="related"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="year"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,21 @@
+<xml>
+   <Table System="old" name="rprefer" ModifyStamp="0">
+      <Field Caption="Doc. code" Format="u" Size="2" name="rr_tcode"/>
+      <Field Caption="Code" Format="u" Size="8" name="rr_code"/>
+      <Field Caption="Date" Size="4" Type="5" name="rr_date"/>
+      <Field Caption="Ref. No." Format="u" Size="8" name="rr_refer"/>
+      <Field Caption="Item ref." Format="u" Size="16" name="rr_chqrec"/>
+      <Field Caption="Description" Format="u" name="rr_desc"/>
+      <Field Caption="Quantity" Format="####.###" Size="8" Type="3" name="rr_quant"/>
+      <Field Caption="Price" Format="####.###" Size="8" Type="3" name="rr_price"/>
+      <Field Caption="Amount" Format="###,###.##" Size="4" Type="4" name="rr_amount"/>
+      <Field Caption="Duedate" Size="4" Type="5" name="rr_duedate"/>
+      <Index name="rprefer">
+         <IndexEntry name="rr_tcode"/>
+         <IndexEntry name="rr_code"/>
+         <IndexEntry name="rr_date"/>
+         <IndexEntry name="rr_refer"/>
+         <IndexEntry name="rr_chqrec"/>
+      </Index>
+   </Table>
+</xml>

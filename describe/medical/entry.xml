@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Entry form" System="medical">
+      <Field Size="4" Type="5" name="date" Caption="Entry date"/>
+      <Field Size="4" Type="2" File="medical.patient" name="patient" Caption="Patient"/>
+      <Field Size="1" Format="b" Type="2" name="hypertention" Caption="Hypertension"/>
+      <Field Size="1" Format="b" Type="2" name="diebetic" Caption="Diabetic melitus"/>
+      <Field Size="1" Format="b" Type="2" name="cva" Caption="C.V.A."/>
+      <Field Size="1" Format="b" Type="2" name="mi" Caption="M.I."/>
+      <Field Size="50" name="other" Caption="Other"/>
+      <Field Size="1" Format="b" Type="2" name="smoker" Caption="Smoker"/>
+      <Field Size="1" Format="b" Type="2" name="alcohol" Caption="Alcohol"/>
+      <Field Size="50" name="othermore" Caption="Other"/>
+      <Field Size="50" name="illness" Caption="Ilness"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="entry">
+         <IndexEntry name="date"/>
+         <IndexEntry name="patient"/>
+      </Index>
+      <Index name="entry[patient]">
+         <IndexEntry name="patient"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

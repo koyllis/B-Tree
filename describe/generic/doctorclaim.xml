@@ -1,0 +1,74 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" Dynamic="1" name="Insurance Claims">
+      <Field Strict="1" Caption="Number" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Incurance" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Policy No." Size="40" Force="1" name="policy"/>
+      <Field Force="1"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="birthday"/>
+      <Field Caption="Hotel" File="accounting.people" Size="4" Type="2" name="hotel"/>
+      <Field Caption="Arrival" Size="4" Type="5" name="arrival"/>
+      <Field Caption="Departure" Size="4" Type="5" name="departure"/>
+      <Field Caption="Examination" Size="4" Force="1" Type="5" name="examination"/>
+      <Field Caption="Illness" File="generic.claimtype" Size="2" Type="2" name="claimtype"/>
+      <Field Caption="Treatment" Size="80" name="treatment"/>
+      <Field Caption="Visit" Format="####.##" Size="4" Type="4" name="visit"/>
+      <Field Caption="Medicine" Format="####.##" Size="4" Type="4" name="medicine"/>
+      <Field Caption="Consultation" Format="####.##" Size="4" Type="4" name="consultation"/>
+      <Field Caption="Colsulation type" File="generic.chargetype" Size="2" Type="2" name="chargetype"/>
+      <Field Caption="X-ray" Format="####.##" Size="4" Type="4" name="xray"/>
+      <Field Caption="X-ray type" File="generic.chargetype" Size="2" Type="2" name="chargetype_xray"/>
+      <Field Caption="Excess" Format="####.##" Size="4" Type="4" name="excess"/>
+      <Field Caption="Reference" Size="20" name="reference"/>
+      <Field Caption="Old reference" Size="10" name="old_refer"/>
+      <Field Caption="Type" Size="1" Options="Physician,Peditriacian" Type="2" name="type"/>
+      <Field Caption="Comments" Size="40" name="comment"/>
+      <Field Caption="Insurance" File="accounting.people" Size="4" Type="2" name="insurance"/>
+      <Field Caption="Bank" File="accounting.bank" Size="2" Type="2" name="bank"/>
+      <Field Caption="Doctor" File="accounting.people" Size="4" Type="2" name="doctor"/>
+      <Field Caption="Paid" Strict="1" Size="8" Type="5" name="paid" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="doctorclaim">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim[bank]">
+         <IndexEntry name="bank"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim[chargetype]">
+         <IndexEntry name="chargetype"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim[chargetype_xray]">
+         <IndexEntry name="chargetype_xray"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim[claimtype]">
+         <IndexEntry name="claimtype"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim[doctor]">
+         <IndexEntry name="doctor"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim[hotel]">
+         <IndexEntry name="hotel"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim[insurance]">
+         <IndexEntry name="insurance"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim_examination">
+         <IndexEntry name="examination"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="doctorclaim_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="seservs" System="old" ModifyStamp="0">
+      <Field Size="4" Type="5" Dim ="1" name="s_date" Caption="Date"/>
+      <Field Size="2" Format="u" Dim ="1" name="s_doc" Caption="Doc."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="s_refer" Caption="Refer."/>
+      <Field Size="8" Format="u" Dim ="1" name="s_code" Caption="Customer"/>
+      <Field Size="1" Format="00" Type="2" Dim ="1" name="s_loc" Caption="Division"/>
+      <Field Size="8" Format="###,###.##" Type="4" Dim ="1" name="s_gross" Caption="Gross"/>
+      <Field Size="8" Format="###,###.##" Type="4" Dim ="1" name="s_disc" Caption="Discount"/>
+      <Field Size="8" Format="###,###.##" Type="4" Dim ="1" name="s_vat" Caption="V.A.T."/>
+      <Field Size="8" Format="###,###.##" Type="4" Dim ="1" name="s_cost" Caption="Cost"/>
+      <Field Size="3" Format="u" Dim ="1" name="s_curr" Caption="Currency"/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="s_journal" Caption="Journal"/>
+      <Field Size="4" Type="5" Dim ="1" name="s_cancel" Caption="Canceled"/>
+      <Field Size="8" Format="u" Dim ="1" name="s_user" Caption="User"/>
+      <Index name="seservs">
+         <IndexEntry name="s_date"/>
+         <IndexEntry name="s_doc"/>
+         <IndexEntry name="s_refer"/>
+         <IndexEntry name="s_code"/>
+         <IndexEntry name="s_loc"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,44 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="yyy" System="generic">
+      <Field Size="16" name="ly_cardno" Caption="CardNo"/>
+      <Field Size="4" Type="2" name="ly_idno" Caption="IdentityCard"/>
+      <Field Size="13" name="ly_accno" Caption="AccountNo"/>
+      <Field Size="40" name="ly_passno" Caption="E-mail"/>
+      <Field Size="16" name="ly_pcardno" Caption="PrimaryCardNo"/>
+      <Field Size="10" name="ly_relation" Caption="Relation"/>
+      <Field Size="2" name="ly_store" Caption="Store"/>
+      <Field Size="5" name="ly_cardtype" Caption="CardType"/>
+      <Field Size="4" Type="2" name="ly_appno" Caption="No"/>
+      <Field Size="16" name="ly_mgmno" Caption="MembGetMember"/>
+      <Field Size="15" name="ly_fname" Caption="FirstName"/>
+      <Field Size="25" name="ly_lname" Caption="LastName"/>
+      <Field Size="15" name="ly_mname" Caption="MiddleName"/>
+      <Field Size="25" name="ly_ename" Caption="EmbossingName"/>
+      <Field Size="25" name="ly_add1" Caption="Address1"/>
+      <Field Size="25" name="ly_add2" Caption="Address2"/>
+      <Field Size="15" name="ly_town" Caption="Town"/>
+      <Field Size="10" name="ly_district" Caption="District"/>
+      <Field Size="10" name="ly_ccode" Caption="CityCode"/>
+      <Field Size="10" name="ly_pobox" Caption="P.O.Box"/>
+      <Field Size="10" name="ly_hphone" Caption="HomePhone"/>
+      <Field Size="10" name="ly_bphone" Caption="BusinessPhone"/>
+      <Field Size="10" name="ly_mphone" Caption="MobilePhone"/>
+      <Field Size="10" name="ly_natio" Caption="Nationality"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="ly_bdate" Caption="BirthDate"/>
+      <Field Size="1" name="ly_gender" Caption="Gender"/>
+      <Field Size="1" name="ly_mstatus" Caption="MaritalStatus"/>
+      <Field Size="1" Type="2" name="ly_nchild" Caption="NoChildren"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="ly_cdate1" Caption="DateBirth1"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="ly_cdate2" Caption="DateBirth2"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="ly_cdate3" Caption="DateBirth3"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="ly_cdate4" Caption="DateBirth4"/>
+      <Field Size="1" name="ly_employ" Caption="EmploymentType"/>
+      <Field Size="5" name="ly_education" Caption="Education"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="ly_date" Caption="CrDate"/>
+      <Field Size="3" name="ly_newold" Caption="NewOldCust"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="yyy">
+         <IndexEntry name="ly_cardno"/>
+      </Index>
+   </Table>
+</xml>

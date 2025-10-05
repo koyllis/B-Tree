@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="money" name="Interest Calculation">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Reference" Size="20" name="reference"/>
+      <Field Caption="Description" Size="40" name="description"/>
+      <Field Caption="Debit" Total="1" Format="######.##" Size="8" Type="4" name="debit"/>
+      <Field Caption="Credit" Total="1" Format="######.##" Size="8" Type="4" name="credit"/>
+      <Field Caption="Balance" Format="######.##" Size="8" Type="4" name="balance"/>
+      <Field Caption="Days" Format="####" Size="2" Type="2" name="days"/>
+      <Field Caption="Rate%" Format="##.##" Size="4" Type="8" name="rate"/>
+      <Field Caption="Interest" Total="1" Format="#####.##" Size="8" Type="4" name="interest"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peopleinterest">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

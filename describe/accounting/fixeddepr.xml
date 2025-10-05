@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Depreciation Log" CanDelete="0" CanModify="1">
+      <Field Caption="Fixed asset" File="accounting.fixedasset" Size="4" Type="2" name="fixedasset" Strict="1"/>
+      <Field Caption="Date" Size="4" Type="5" name="date" Strict="1"/>
+      <Field Caption="Depreciation" Format="#####.##" Size="4" Type="4" Total="1" name="depreciation" Strict="1"/>
+      <Field Caption="Mode" Size="1" Type="2" name="mode" Options="Monthly,Quartely" Strict="1"/>
+      <Field Caption="User depreciation" Format="#####.##" Size="4" Type="4" Total="1" name="user_depreciation"/>
+      <Field Caption="No Journal" Format="b" Size="1" Type="2" name="nojournal"/>
+      <Field Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal" Strict="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="fixeddepr">
+         <IndexEntry name="fixedasset"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="fixeddepr[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="fixedasset"/>
+      </Index>
+      <Index name="fixeddepr[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="fixedasset"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,49 @@
+<xml>
+   <Table System="pos" SoftDelete="1" PDA="0" name="Detail Line Extras" Unordered="1"  DeleteChildren="1" ImmediateChild="1">
+      <Field Caption="Transaction detail" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="From date" Size="4" Type="5" name="from"/>
+      <Field Caption="To date" Size="4" Type="5" name="to"/>
+      <Field Caption="Counter" Size="2" Type="2" name="counter"/>
+      <Field Caption="Quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Value" Size="8" Type="3" name="value"/>
+      <Field Caption="Rate" Size="8" Type="3" name="rate"/>
+      <Field Caption="Product code" Size="14" name="pc"/>
+      <Field Caption="Expiration" Size="10" name="expire"/>
+      <Field Caption="Lot" Size="20" name="lot"/>
+      <Field Caption="Serial" Size="20" name="serial"/>
+      <Field Caption="Room" File="pos.tank" Size="2" Type="2" name="room"/>
+      <Field Caption="Lining" File="pos.item" Size="4" Type="2" name="lining" GetViewFunction="GetViewLining"/>
+      <Field Caption="Fabric" File="pos.item" Size="4" Type="2" name="fabric"/>
+      <Field Caption="Method" File="pos.notetype" Size="2" Type="2" name="method"/>
+      <Field Caption="Width(cm)" Type="8" Size="4" name="width" Format="####.##"/>
+      <Field Caption="Height(cm)" Type="8" Size="4" name="height" Format="####.##"/>
+      <Field Caption="Roller type" Type="2" Size="1" name="roller" Options="Blind,Recess"/>
+      <Field Caption="Rail" File="pos.item" Type="2" Size="4" name="rail" FilterFunction="FilteRail" GetViewFunction="GetViewRail"/>
+      <Field Caption="Supplier" File="accounting.people" Type="2" Size="4" name="supplier"/>
+      <Field Caption="Side 1" Type="2" Size="1" name="side" Options="Left,Right,Center-drawn–Left,Center-drawn–Right"/>
+      <Field Caption="Side 2" Type="2" Size="1" name="side2" Options="Left,Right,Center-drawn–Left,Center-drawn–Right"/>
+      <Field Caption="Mechanism" Type="2" Size="1" name="mechanism" Options="Manual,Automation,Switch,RemoteControl"/>
+      <Field Caption="Cord length" Type="2" Size="2" name="length"/>
+      <Field Caption="Panels" Type="2" Size="1" name="panels" Options="1,2"/>
+      <Field Caption="Fullness" Type="2" Size="1" name="fullness" Options="1:1.5,1:2,1:1,1:2.5,1:3,1:2.25,1:2.75"/>
+      <Field Caption="Configuration" Type="2" Size="1" name="config" Options="Standard,Zoto"/>
+      <Field Caption="Extras" Type="2" Size="1" name="extras" Format="b" Options="Girma,Varidi,VaridiGiropodo,VerticalJoint,HorizontalJoint"/>
+      <Field Caption="Fabric code" Size="20" name="fabric_code"/>
+      <Field Caption="Fabric name" Size="40" name="fabric_name"/>
+      <Field Caption="Fabric width" Size="20" name="fabric_width"/>
+      <Field Caption="Fabric Leadband" Size="1" Type="2" Options="LeadBand,NoLeadBand" name="fabric_band"/>
+      <Field Caption="Lining name" Size="40" name="lining_name"/>
+      <Field Caption="Rail type/hooks" Size="40" name="rail_name"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="transdetcalc">
+         <IndexEntry name="transdet"/>
+      </Index>
+
+      <Index name="transdetcalc_room">
+         <IndexEntry name="room"/>
+         <IndexEntry name="transdet"/>
+      </Index>
+
+   </Table>
+</xml>

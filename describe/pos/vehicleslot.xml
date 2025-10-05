@@ -1,0 +1,36 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" SoftDelete="1" name="Machine Slots" UserStamp="1">
+      <Field Caption="Machine" File="accounting.vehicle" Size="4" Type="2" Force="1" name="vehicle"/>
+      <Field Caption="Slot" Size="1" Negative="0" Type="2" Force="1" name="slot"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Quantity" Size="2" Type="2" name="quantity"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Special price" Format="price" Size="8" Type="3" name="special"/>
+      <Field Caption="VAT" File="accounting.vat" Size="1" Type="2" name="vat"/>
+      <Field Caption="Label" Size="5" name="label"/>
+      <Field Caption="Location" File="system.location" Size="1" Type="2" name="location"/>
+      <Field Caption="Zero Price" Format="b" Size="1" Type="2" name="zeroprice"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="vehicleslot">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="slot"/>
+      </Index>
+      <Index name="vehicleslot[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="slot"/>
+      </Index>
+      <Index name="vehicleslot[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="slot"/>
+      </Index>
+      <Index name="vehicleslot[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="slot"/>
+      </Index>
+   </Table>
+</xml>

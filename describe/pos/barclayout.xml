@@ -1,0 +1,37 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="new_post" name="Barcode  Layout">
+      <Field/>
+      <Field Caption="Brand" Size="1" Type="2" Options="Datamax,Zebra,Argox,Monarch,Intermec,ZebraZPL,TSC,Sato" name="brand"/>
+      <Field Caption="Select" Size="1" Type="2" Options="Item,Part Number,Barcode,Auto,Numbering" name="select"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Ean13,Ean8,Code39,Codabar,Interleave2of5,Code128,QRcode,Code93" name="type"/>
+      <Field Caption="Height" Format="###" Size="1" Type="2" name="height"/>
+      <Field Caption="Length" Format="###" Size="1" Type="2" name="length"/>
+      <Field Caption="Tear-off distance" Format="###" Size="2" Type="2" name="tearoff"/>
+      <Field Caption="Font" Size="10" name="font"/>
+      <Field Caption="Pound sign" Size="1" name="pound"/>
+      <Field Caption="Label accross" Size="1" Type="2" Options="One,Two,Three,Four,Five,Six" name="accross"/>
+      <Field Caption="Gap" Size="2" Type="2" name="gap"/>
+      <Field Caption="Orientation" Size="1" Type="2" Options="90,180,270" name="orientation"/>
+      <Field Caption="Sensor" Size="1" Type="2" Options="Edge,Reflective" name="sensor"/>
+      <Field Caption="Media" Size="1" Options="ThermalTransfer,DirectThermal" Type="2" name="media"/>
+      <Field Caption="Speed" Size="1" Type="2" Options="Normal,Slow,Fast,VeryFast" name="speed"/>
+      <Field Caption="Paper type" Size="10" name="paper"/>
+      <Field Caption="Code page" Size="4" Type="2" name="codepage" Negative="0"/>
+      <Field Caption="Printer" File="system.port" Size="1" Type="2" name="port"/>
+      <Field Caption="Logo file" name="logo"/>
+      <Field Caption="Initialization 1" Size="20" name="init1"/>
+      <Field Caption="Initialization 2" Size="20" name="init2"/>
+      <Field Caption="Initialization 3" Size="20" name="init3"/>
+      <Field Caption="Row" Size="5" name="row"/>
+      <Field Caption="Column" Size="5" name="column"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="NoTranslation,Bilingual,FormFeed,LineIndex" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="barclayout">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="barclayout[port]">
+         <IndexEntry name="port"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

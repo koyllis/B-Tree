@@ -1,0 +1,25 @@
+<xml>
+   <Table System="accounting" Color="1" name="Delivery Methods">
+      <Field/>
+      <Field Caption="Charge item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="No charge limit" Format="###.##" Size="8" Type="3" name="limit"/>
+      <Field Caption="Department" File="accounting.department" Size="2" Type="2" name="department"/>
+      <Field Caption="Convert division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Address fields" Size="100" Type="1" name="fields"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="RequestTracking,RequestAddress" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Index name="deliverymethod">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="deliverymethod[department]">
+         <IndexEntry name="department"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="deliverymethod[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

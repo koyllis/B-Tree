@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" Icon="bookshelf" name="Test Sections">
+      <Field Caption="Test" File="student.test" Size="4" Type="2" name="test"/>
+      <Field Caption="Seq" Size="1" Type="2" name="seq"/>
+      <Field Tip="1"/>
+      <Field Caption="Description" Size="100" name="description"/>
+      <Field Caption="Maximum questions" Size="2" Type="2" name="maximum"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="section">
+         <IndexEntry name="test"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

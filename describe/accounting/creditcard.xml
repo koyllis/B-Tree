@@ -1,0 +1,44 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="creditcard" name="Credit Card Log" SoftDelete="0">
+      <Field Caption="Transaction ID" Size="30" Type="1" Force="1" name="transaction"/>
+      <Field Caption="Outlet" Size="2" Type="2" File="accounting.cardoutlet" name="cardoutlet" Force="1"/>
+      <Field Caption="Outlet name" Size="50" Type="1" Force="1" name="name"/>
+      <Field Caption="Batch number" Size="4" Type="2" name="batch" Force="1"/>
+      <Field Caption="Process date" Size="4" Force="1" Type="5" name="process"/>
+      <Field Caption="Card No." Size="20" Type="1" Force="1" name="cardno"/>
+      <Field Caption="Order ID" Size="4" Type="2" name="order"/>
+      <Field Caption="Authorization" Size="20" Type="1" Force="1" name="authorization"/>
+      <Field Caption="Terminal ID" Size="20" Type="1" Force="1" name="terminal"/>
+      <Field Caption="Card class" File="accounting.cardclass" Size="2" Type="2" Force="1" name="cardclass"/>
+      <Field Caption="Network" Size="10" Type="1" Force="1" name="network"/>
+      <Field Caption="Card origin" Size="10" Type="1" Force="1" name="origin"/>
+      <Field Caption="Card type" Size="10" Type="1" Force="1" name="type"/>
+      <Field Caption="Description" File="accounting.cardkey" Size="2" Type="2" Force="1" name="cardkey"/>
+      <Field Caption="Date" Size="8" Force="1" Type="5" name="date"/>
+      <Field Caption="Currency" Size="2" Type="2" name="currency" File="accounting.currency"/>
+      <Field Caption="Amount" Format="#####.##" Size="4" Type="8" Force="1" Total="1" name="amount"/>
+      <Field Caption="Charge" Format="#####.##" Size="4" Type="8" Total="1" name="charge"/>
+      <Field Caption="Net" Format="#####.##" Size="4" Type="8" Force="1" Total="1" name="net"/>
+      <Field Caption="Journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="creditcard">
+         <IndexEntry name="transaction"/>
+      </Index>
+      <Index name="creditcard[cardoutlet]">
+         <IndexEntry name="cardoutlet"/>
+         <IndexEntry name="transaction"/>
+      </Index>
+      <Index name="creditcard[process]">
+         <IndexEntry name="process"/>
+         <IndexEntry name="transaction"/>
+      </Index>
+      <Index name="creditcard[cardclass]">
+         <IndexEntry name="cardclass"/>
+         <IndexEntry name="transaction"/>
+      </Index>
+      <Index name="creditcard[cardkey]">
+         <IndexEntry name="cardkey"/>
+         <IndexEntry name="transaction"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,48 @@
+<xml>
+   <Table System="accounting" name="Deposit Control" CreateStamp="1" UserStamp="1" CanDelete="0">
+      <Field Caption="Location" File="accounting.location" Size="2" Force="1" Type="2" name="location" Strict="1"/>
+      <Field Caption="Due date" Size="4" Type="5" Force="1" name="duedate" Strict="1"/>
+      <Field Caption="Bank" File="accounting.bank" Size="2" Type="2" Force="1" name="bank" Strict="1"/>
+      <Field Caption="Cheque No." Size="4" Type="2" Force="1" name="cheque" Strict="1"/>
+      <Field Caption="Amount" Total="1" Format="#####.##" Size="4" Type="4" Force="1" name="amount" Strict="1"/>
+      <Field Caption="Page" Size="1" Type="2" name="page" Modify="1" Persistent="1"/>
+      <Field Caption="Pending" Format="b" Size="1" Type="2" name="pending" Modify="1" Persistent="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people" Strict="1"/>
+      <Field Strict="1" Caption="Cash due date" File="accounting.cashduedate" Size="4" Type="2" name="cashduedate" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="depcontrol">
+         <IndexEntry name="location"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="depcontrol[bank]">
+         <IndexEntry name="bank"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="depcontrol[cashduedate]">
+         <IndexEntry name="cashduedate"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="depcontrol[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="depcontrol_cheque">
+         <IndexEntry name="cheque"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="duedate"/>
+         <IndexEntry name="bank"/>
+      </Index>
+   </Table>
+</xml>

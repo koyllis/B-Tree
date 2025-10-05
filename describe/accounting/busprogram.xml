@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Bus Program">
+      <Field Caption="Route" File="accounting.busroute" Size="4" Type="2" name="busroute"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Summer,Winter" name="type"/>
+      <Field Caption="Day" Size="1" Type="2" Options="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday" name="day"/>
+      <Field Caption="Start" Size="2" Type="5" name="hour"/>
+      <Field Caption="End" Size="2" Type="5" name="end"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="busprogram">
+         <IndexEntry name="busroute"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="day"/>
+         <IndexEntry name="hour"/>
+      </Index>
+      <Index name="busprogram_day">
+         <IndexEntry name="day"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="busroute"/>
+         <IndexEntry name="hour"/>
+      </Index>
+   </Table>
+</xml>

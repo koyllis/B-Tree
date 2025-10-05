@@ -1,0 +1,36 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="timer1" name="Time Filter" System="payroll">
+      <Field Size="2" Options="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Week,Month" Type="2" name="day" Caption="Day"/>
+      <Field Size="2" Type="2" File="payroll.timedef" name="timedef" Caption="Department"/>
+      <Field Size="4" Type="2" File="payroll.employee" name="employee" Caption="Employee"/>
+      <Field Size="4" Type="2" name="hours" Caption="Minutes"/>
+      <Field Size="2" Format="##" Type="2" name="break" Caption="Break minutes"/>
+      <Field Size="2" Format="##" Type="2" name="addbreak" Caption="Additional break"/>
+      <Field Size="2" Type="5" name="start" Caption="Start time"/>
+      <Field Size="4" Format="##.####" Type="8" name="rate" Caption="Rate"/>
+      <Field Size="4" Type="2" File="payroll.ratedef" name="ratedef" Caption="Definition"/>
+      <Field Size="4" Format="##.####" Type="8" name="overtime" Caption="Overtime factor"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="timefilter">
+         <IndexEntry name="day"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="timefilter[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="day"/>
+         <IndexEntry name="timedef"/>
+      </Index>
+      <Index name="timefilter[ratedef]">
+         <IndexEntry name="ratedef"/>
+         <IndexEntry name="day"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="timefilter[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="day"/>
+         <IndexEntry name="employee"/>
+      </Index>
+   </Table>
+</xml>

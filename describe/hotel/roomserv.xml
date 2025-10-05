@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="hotel" Icon="SwissArmy" name="Room Service">
+      <Field Caption="Check-out" Size="4" Type="5" name="date"/>
+      <Field Caption="Room" File="hotel.room" Size="2" Type="2" name="room"/>
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="roomserv">
+         <IndexEntry name="date"/>
+         <IndexEntry name="room"/>
+      </Index>
+      <Index name="roomserv[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="room"/>
+      </Index>
+      <Index name="roomserv[room]">
+         <IndexEntry name="room"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

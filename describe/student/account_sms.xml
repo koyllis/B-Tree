@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" name="Account SMS">
+      <Field Caption="Account" File="student.account" Size="4" Type="2" name="account"/>
+      <Field Caption="Type" File="student.type" Size="2" Type="2" name="type"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="account_sms">
+         <IndexEntry name="account"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="account_sms[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="account"/>
+      </Index>
+   </Table>
+</xml>

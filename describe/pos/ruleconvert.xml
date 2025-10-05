@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="settings" name="Rule Conversion" ImmediateChild="1" Unordered="1">
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" Force="1" name="category"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" Force="1" name="size"/>
+      <Field Caption="To Size" File="pos.size" Size="2" Type="2" name="tosize"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="ruleconvert">
+         <IndexEntry name="category"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="ruleconvert[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="ruleconvert[tosize]">
+         <IndexEntry name="tosize"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="size"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table name="Extra Parameters" Icon="add" System="lab" Unordered="1">
+      <Field Size="4" Type="2" File="lab.trans" name="trans" Caption="Transaction"/>
+      <Field Size="2" Type="2" File="lab.extra" name="extra" Caption="Extra field"/>
+      <Field name="value" Caption="Value"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="transextra">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="extra"/>
+      </Index>
+      <Index name="transextra[extra]">
+         <IndexEntry name="extra"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

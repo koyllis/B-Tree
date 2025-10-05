@@ -1,0 +1,20 @@
+<xml>
+   <Table System="office" Icon="calendr1" name="Event Management">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Time" Size="10" name="time"/>
+      <Field Caption="Place" File="office.place" Size="2" Type="2" name="place"/>
+      <Field Size="80"/>
+      <Field Caption="Duration" Size="20" name="duration"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="event">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="place"/>
+      </Index>
+      <Index name="event[place]">
+         <IndexEntry name="place"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+   </Table>
+</xml>

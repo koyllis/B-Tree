@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="payroll" Icon="taxdetail" Dynamic="1" PDA="0" name="Tax Details">
+      <Field Caption="Tax calculation" File="payroll.taxcalc" Size="4" Type="2" name="taxcalc"/>
+      <Field Caption="Tax form line" File="payroll.taxform" Size="4" Type="2" name="taxform"/>
+      <Field Caption="Discount" Format="######.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="taxcalcdet">
+         <IndexEntry name="taxcalc"/>
+         <IndexEntry name="taxform"/>
+      </Index>
+      <Index name="taxcalcdet[taxform]">
+         <IndexEntry name="taxform"/>
+         <IndexEntry name="taxcalc"/>
+      </Index>
+   </Table>
+</xml>

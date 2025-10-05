@@ -1,0 +1,37 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="writingpad" name="Adjust Prices" Unordered="1" MergeType="2">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Caption="Old price" Format="#####.##" Size="8" Type="3" name="oldprice"/>
+      <Field Caption="New price" Format="#####.##" Size="8" Type="3" name="newprice"/>
+      <Field Caption="Number" Format="#####.##" Size="8" Type="3" name="number"/>
+      <Field Caption="Percent" Format="b" Size="1" Type="2" name="percent"/>
+      <Field Caption="Rounding" Format="###" Size="2" Type="2" name="round"/>
+      <Field Caption="Mode" Size="1" Options="Items,ItemPricing" Type="2" name="mode"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="priceadjusthist">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="price"/>
+      </Index>
+      <Index name="priceadjusthist[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="price"/>
+      </Index>
+      <Index name="priceadjusthist[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="priceadjusthist[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="price"/>
+      </Index>
+   </Table>
+</xml>

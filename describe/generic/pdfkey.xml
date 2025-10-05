@@ -1,0 +1,52 @@
+<xml>
+   <Table Unordered="1" System="generic" name="Key File" Audit="0" ModifyStamp="0">
+      <Field Caption="Layout" File="generic.pdflayout" Size="2" Type="2" name="layout"/>
+      <Field Caption="Line No." Size="4" Type="2" name="line"/>
+      <Field Caption="Key" Size="20" name="key"/>
+      <Field Caption="Pages" Size="2" Type="2" name="pages" Total="1"/>
+      <Field Caption="Details" Size="2" Type="2" name="details"/>
+      <Field Caption="Category" Size="1" Type="2" name="category"/>
+      <Field Caption="District" Size="2" name="district"/>
+      <Field Caption="Language" Size="8" name="language"/>
+      <Field Caption="Zone" Size="1" Type="2" name="zone"/>
+      <Field Caption="Post code" Size="10" name="postcode"/>
+      <Field Caption="Ad Shot" Format="b" Size="1" Type="2" name="adshot"/>
+      <Field Caption="Long" Format="b" Size="1" Type="2" name="long"/>
+      <Field Caption="P.O.Box" Format="b" Size="1" Type="2" name="pobox"/>
+      <Field Caption="Exclude" Format="b" Size="1" Type="2" name="exclude"/>
+      <Field Caption="Sort key" Size="40" Type="1" name="sort"/>
+      <Field Caption="Export file" Size="20" Type="1" name="export"/>
+      <Field Caption="Mismatch" Size="2" Type="2" name="mismatch"/>
+      <Index CRC64="1" name="pdfkey">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="key"/>
+      </Index>
+      <Index CRC64="1" name="pdfkey_key">
+         <IndexEntry name="key"/>
+         <IndexEntry name="layout"/>
+         <IndexEntry name="line"/>
+      </Index>
+
+      <Index CRC64="1" name="pdfkey_category">
+         <IndexEntry name="category"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="key"/>
+         <IndexEntry name="layout"/>
+      </Index>
+
+      <Index CRC64="1" name="pdfkey_sort">
+         <IndexEntry name="sort"/>
+         <IndexEntry name="key"/>
+         <IndexEntry name="layout"/>
+         <IndexEntry name="line"/>
+      </Index>
+	  
+      <Index CRC64="1" name="pdfkey_language">
+         <IndexEntry name="language"/>
+         <IndexEntry name="layout"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="key"/>
+      </Index>
+   </Table>
+</xml>

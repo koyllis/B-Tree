@@ -1,0 +1,79 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="helpdesc" Dynamic="1" SoftDelete="1" AutoNumber="1" name="Help Desk" System="office">
+      <Field Size="4" Modify="1" Strict="1" Type="2" name="reference" Caption="Reference"/>
+      <Field Size="4" Force="1" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="40" Force="1" name="contact" Caption="Contact"/>
+      <Field name="contact_location" Caption="Contact Location"/>
+      <Field Size="32" name="contact_tel" Caption="Contact Phone"/>
+      <Field Size="2" Force="1" Type="2" File="office.type" name="type" Caption="Equip. type"/>
+      <Field Size="4" Type="2" File="office.instserial" name="instserial" Caption="Inst. serial"/>
+      <Field Size="4" Type="2" File="pos.serial" name="sales_serial" Caption="Sales Serial"/>
+      <Field name="serial" Caption="Other serial"/>
+      <Field Size="32" PrintWrap="1" name="password" ReportWidth="50" Caption="Password"/>
+      <Field Size="100" Force="1" PrintWrap="1" name="itemdesc" ReportWidth="50" Caption="Item description"/>
+      <Field Size="100" Force="1" PrintWrap="1" name="desc" ReportWidth="50" Caption="Problem description"/>
+      <Field Size="2" Force="1" Type="2" File="office.engineer" name="engineer" Caption="Engineer"/>
+      <Field Size="4" Type="5" name="schedule" Caption="Schedule date"/>
+      <Field Size="1" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="1" Options="Warranty,Maintenance" Type="2" name="warranty" Caption="Warranty/Maintenance"/>
+      <Field Size="1" Format="b" Type="2" name="recall" Caption="Recall"/>
+      <Field Size="1" Options="Repair,Installation,Service,Delivery,Per Copy,Per Call" Type="2" name="tos" Caption="Type Of Service"/>
+      <Field Size="1" Options="Open,Ready,Closed" Modify="1" Type="2" name="mode" Caption="Mode"/>
+      <Field Size="1" Options="Closed by Tel,Closed by Eng,Cancelled,RMA,Waiting for spare,Wating for client response,Out for repair" Modify="1" Type="2" name="status" Caption="Status"/>
+      <Field Size="200" Modify="1" PrintWrap="1" name="work" Caption="Work done"/>
+      <Field Size="4" Modify="1" Type="5" name="actual" Caption="Actual date"/>
+      <Field Size="4" Format="####.##" Modify="1" Type="4" name="charge" Caption="Charge"/>
+      <Field Size="2" Format="##.##" Modify="1" Type="2" name="hours" Caption="Hours"/>
+      <Field Size="15" Modify="1" name="invoice" Caption="Invoice No."/>
+      <Field Size="1" Format="b" Strict="1" Type="2" name="greek" Auto="1" Caption="Greek"/>
+      <Field Size="4" Strict="1" Modify="1" Type="5" name="date" Auto="1" Caption="Recorded"/>
+      <Field Size="2" Format="HH:mm" Modify="1" Type="5" Auto="1" name="time" Caption="Time"/>
+      <Field Size="2" Strict="1" Modify="1" Type="2" File="system.user" name="user" Auto="1" Caption="User"/>
+      <Field Negative="0" Size="4" Modify="1" Strict="1" Type="2" Auto="1" name="trans" Caption="Transaction"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" HideReport="1" Caption="SoftDelete"/>
+      <Index name="helpdesk">
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="helpdesk[engineer]">
+         <IndexEntry name="engineer"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="helpdesk[instserial]">
+         <IndexEntry name="instserial"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="helpdesk[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="helpdesk[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="helpdesk[sales_serial]">
+         <IndexEntry name="sales_serial"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="helpdesk[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="helpdesk[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="helpdesk_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="helpdesk_tos">
+         <IndexEntry name="tos"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

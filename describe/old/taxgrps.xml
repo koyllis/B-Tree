@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="taxgrps" System="old" ModifyStamp="0">
+      <Field Size="8" Format="u" Dim ="1" name="tg_group" Caption="Group code"/>
+      <Field Format="u" Dim ="1" name="tg_desc" Caption="Description"/>
+      <Field Size="13" Format="u" Dim ="1" name="tg_hscode" Caption="Customs code"/>
+      <Field Size="8" Format="#.####" Type="3" Dim ="1" name="tg_idr" Caption="Import duty (%)"/>
+      <Field Size="8" Format="#.####" Type="3" Dim ="1" name="tg_trl" Caption="Excise duty (%)"/>
+      <Field Size="8" Format="#####.####" Type="3" Dim ="1" name="tg_actual" Caption="Actual amount"/>
+      <Field Size="8" Format="#####.####" Type="3" Dim ="1" name="tg_quant" Caption="Per quantity"/>
+      <Index name="taxgrps">
+         <IndexEntry name="tg_group"/>
+      </Index>
+   </Table>
+</xml>

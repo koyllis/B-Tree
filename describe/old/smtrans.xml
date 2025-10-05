@@ -1,0 +1,32 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="smtrans" System="old" ModifyStamp="0">
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="t_date"/>
+      <Field Caption="Refer." Format="######" Size="4" Type="2" name="t_refer"/>
+      <Field Caption="Loc" Format="00" Size="1" Type="2" name="t_loc"/>
+      <Field Caption="Gross" Format="#####.##" Size="4" Type="4" name="t_gross"/>
+      <Field Caption="Discount" Format="#####.##" Size="4" Type="4" name="t_disc"/>
+      <Field Caption="VAT" Format="#####.##" Size="4" Type="4" name="t_vat"/>
+      <Field Caption="Cost" Format="#####.##" Size="4" Type="4" name="t_cost"/>
+      <Field Caption="Change" Format="#####.##" Size="4" Type="4" name="t_change"/>
+      <Field Caption="Receipt" Format="###" Size="1" Type="2" name="t_rec"/>
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="t_rdate"/>
+      <Field Caption="Time" Format="##:##" Size="2" Type="2" name="t_time"/>
+      <Field Caption="Terminal" Format="######" Size="2" Type="2" name="t_ttyno"/>
+      <Field Caption="Cashier" Format="###" Size="1" Type="2" name="t_cash"/>
+      <Field Caption="Customer" Size="4" Type="2" name="t_no"/>
+      <Field Caption="Agent" Size="4" Type="2" name="t_agent"/>
+      <Field Caption="Canceled" Format="##:##" Size="2" Type="2" name="t_cancel"/>
+      <Field Caption="Journal" Format="######" Size="4" Type="2" name="t_journal"/>
+      <Field Caption="Amend" Format="##:##" Size="2" Type="2" name="t_amend"/>
+      <Field Caption="Points" Format="####" Size="2" Type="2" name="t_points"/>
+      <Field Caption="Manager" Format="###" Size="1" Type="2" name="t_manager"/>
+      <Field Caption="Issue" Format="###" Size="1" Type="2" name="t_issue"/>
+      <Field Caption="Related" Format="######" Size="4" Type="2" name="t_relate"/>
+      <Field Caption="Future" Size="6" name="t_future"/>
+      <Index name="smtrans">
+         <IndexEntry name="t_date"/>
+         <IndexEntry name="t_refer"/>
+         <IndexEntry name="t_loc"/>
+      </Index>
+   </Table>
+</xml>

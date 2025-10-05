@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Quotas Package">
+      <Field/>
+      <Field Caption="From date" Size="4" Type="5" name="frdate"/>
+      <Field Caption="To date" Size="4" Type="5" name="todate"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="package">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

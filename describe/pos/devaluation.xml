@@ -1,0 +1,10 @@
+<xml>
+   <Table System="pos" name="Cost De-valuation">
+      <Field Caption="Days" Size="4" Force="1" Type="2" name="days"/>
+      <Field Caption="Rate%" Size="8" Type="3" Format="###.##" name="rate"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="devaluation">
+         <IndexEntry name="days"/>
+      </Index>
+   </Table>
+</xml>

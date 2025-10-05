@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Municipal Header" System="generic">
+      <Field Size="4" Strict="1" Type="2" name="number" Caption="Number"/>
+      <Field Size="4" Format="####" Type="2" name="zip" Caption="Zip"/>
+      <Field Size="4" Type="2" File="generic.sbcustomer" name="customer" Caption="Customer"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Type="5" name="duedate" Caption="Duedate"/>
+      <Field Size="10" name="reference" Caption="Reference"/>
+      <Field Size="4" Format="######.##" Type="4" name="subtotal" Caption="Subtotal"/>
+      <Field Size="4" Format="######.##" Type="4" name="vat" Caption="V.A.T."/>
+      <Field Size="4" Format="######.##" Type="4" name="total" Caption="Total"/>
+      <Field Size="40" name="prefix" Caption="Prefix"/>
+      <Field Size="80" name="message1" Caption="Message 1"/>
+      <Field Size="80" name="message2" Caption="Message 2"/>
+      <Field Size="80" name="somessage" Caption="S.O. Message"/>
+      <Field Size="15" name="addresscode" Caption="Address code"/>
+      <Field Size="2" Type="2" name="pages" Caption="Pages(25)"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="sbtrans">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="sbtrans[customer]">
+         <IndexEntry name="customer"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="zip"/>
+      </Index>
+   </Table>
+</xml>

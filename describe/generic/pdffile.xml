@@ -1,0 +1,18 @@
+<xml>
+   <Table System="generic" name="Input Files (Header)">
+      <Field Caption="Layout" File="generic.pdflayout" Size="2" Type="2" name="layout"/>
+      <Field Caption="File name" Size="20" name="file"/>
+      <Field Caption="Separator" Size="1" Type="2" name="separator" Options="Semicolon,Comma,Pipeline"/>
+      <Field Caption="Type" Size="1" Options="Header,Detail" Tip="1" Type="2" name="type"/>
+      <Field Caption="Start sequence" Size="2" Type="2" name="start"/>
+      <Field Caption="Key position" Size="2" Type="2" name="key"/>
+      <Field Caption="Data start position" Size="2" Type="2" name="data"/>
+      <Field Caption="Category" Size="1" Type="2" name="category"/>
+      <Field Caption="Pages" Size="2" Type="2" name="pages" Total="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdffile">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="file"/>
+      </Index>
+   </Table>
+</xml>

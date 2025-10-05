@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Location Pricing" MergeType="2" Zappable="1">
+      <Field Caption="Item" File="pos.item" Size="4" Force="1" Type="2" name="item"/>
+      <Field Caption="Location" File="system.location" Size="2" Force="1" Type="2" name="location"/>
+      <Field Caption="Cost" Format="price" Size="8" Type="3" name="cost"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+      <Index name="pricelocation">
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="pricelocation[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

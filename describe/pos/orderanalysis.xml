@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="defrag2" name="Order Analysis" System="pos">
+      <Field Size="2" Type="2" File="system.user" name="user" Caption="User"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="4" Type="2" name="order" Caption="Order" Total="1"/>
+      <Field Size="4" Type="2" name="purchase" Caption="Purchase" Total="1"/>
+      <Field Size="4" Type="2" name="transfer" Caption="Transfer" Total="1"/>
+      <Field Size="4" Type="2" name="sale" Caption="Sale" Total="1"/>
+      <Field Size="4" Type="2" name="stock" Caption="Stock" Total="1"/>
+      <Field Size="8" Type="3" name="order_value" Total="1" Caption="Order Value"/>
+      <Field Size="8" Type="3" name="purchase_value" Caption="Purchase value" Total="1"/>
+      <Field Size="8" Type="3" name="transfer_value" Total="1" Caption="Transfer value"/>
+      <Field Size="8" Type="3" name="sale_value" Caption="Sale value" Total="1"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="orderanalysis">
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="orderanalysis[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="orderanalysis[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

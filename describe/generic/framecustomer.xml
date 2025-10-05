@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Frame Customer" System="generic">
+      <Field Size="10" name="customer_no" Caption="Reference No."/>
+      <Field Size="60" name="customer_name"/>
+      <Field Size="20" name="customer_phone" Caption="Phone"/>
+      <Field Size="20" name="customer_fax" Caption="Fax"/>
+      <Field Dim="4" name="customer_address" Caption="Address"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="framecustomer">
+         <IndexEntry AllDimension="1" name="customer_no"/>
+      </Index>
+   </Table>
+</xml>

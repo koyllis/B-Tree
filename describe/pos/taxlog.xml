@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" name="taxlog">
+      <Field Caption="Tax machine" File="system.taxmachine" Size="2" Type="2" name="taxmachine"/>
+      <Field Caption="Date" Size="4" Auto="1" Type="5" name="date"/>
+      <Field Caption="Signature" Size="40" name="signature"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="taxlog">
+         <IndexEntry name="taxmachine"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="taxlog_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="taxmachine"/>
+      </Index>
+   </Table>
+</xml>

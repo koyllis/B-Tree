@@ -1,0 +1,32 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Parent="parent" CanModify="0" Bookmark="1" System="life" Icon="onrecord" CanDelete="0" name="Plans">
+      <Field Caption="Year" Format="####" Size="2" PersistentReport="1" Type="2" name="year"/>
+      <Field Size="40"/>
+      <Field Caption="Age" Format="##" Size="1" Type="2" name="age"/>
+      <Field Caption="Permium%%" Format="##.##" Size="4" Type="8" name="premium"/>
+      <Field Caption="Commission%" Format="##.##" Size="4" Type="8" name="commission"/>
+      <Field Caption="Factor" Format="##.##" Size="4" Type="8" name="factor"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Life,Disability" name="type"/>
+      <Field Caption="Maximum" Format="######.##" Size="8" Type="3" name="maximum"/>
+      <Field Caption="Link to plan" File="life.plan" Size="2" Type="2" name="plan_link"/>
+      <Field Caption="Basic plan" File="life.plan" Size="2" Type="2" name="basic_plan"/>
+      <Field Caption="Maximum date" Size="4" Type="5" name="maxdate"/>
+      <Field Caption="Maximum before date" Format="#######.##" Size="8" Type="3" name="maxbefore"/>
+	  <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Index name="arcplan">
+         <IndexEntry name="year"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="arcplan[plan_link]">
+         <IndexEntry name="plan_link"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="arcplan_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

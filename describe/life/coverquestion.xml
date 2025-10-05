@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="life" name="General Questions" >
+      <Field Caption="Cover note" File="life.covernote" Size="4" Type="2" name="covernote"/>
+      <Field Caption="Question" File="life.question" Size="2" Type="2" Force="1" name="question"/>
+      <Field Caption="Answer" Size="128" name="answer"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="coverquestion">
+         <IndexEntry name="covernote"/>
+         <IndexEntry name="question"/>
+      </Index>
+      <Index name="coverquestion[question]">
+         <IndexEntry name="question"/>
+         <IndexEntry name="covernote"/>
+      </Index>
+   </Table>
+</xml>

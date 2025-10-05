@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="segroup" System="old" ModifyStamp="0">
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="gr_group" Caption="Group"/>
+      <Field Size="40" Format="u" Dim ="1" name="gr_name" Caption="English"/>
+      <Field Size="40" Format="u" Dim ="1" name="gr_greek" Caption="Greek"/>
+      <Index name="segroup">
+         <IndexEntry name="gr_group"/>
+      </Index>
+   </Table>
+</xml>

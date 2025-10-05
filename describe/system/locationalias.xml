@@ -1,0 +1,11 @@
+<xml>
+   <Table System="system" name="Location Alias">
+      <Field Size="50" Force="1"/>
+      <Field Caption="Location" Force="1" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="locationalias">
+         <IndexEntry name="name"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

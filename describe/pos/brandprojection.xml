@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" name="brandprojection">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Brand" File="pos.brand" Size="2" Type="2" name="brand"/>
+      <Field Caption="Season" File="pos.season" Size="2" Type="2" name="season"/>
+      <Field Caption="Collection" Format="####" Size="2" Type="2" name="collectiom"/>
+      <Field Caption="Sales" Format="######.##" Size="4" Type="4" name="sales"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="brandprojection">
+         <IndexEntry name="people"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="season"/>
+         <IndexEntry name="collectiom"/>
+      </Index>
+      <Index name="brandprojection[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="season"/>
+         <IndexEntry name="collectiom"/>
+      </Index>
+      <Index name="brandprojection[season]">
+         <IndexEntry name="season"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="collectiom"/>
+      </Index>
+   </Table>
+</xml>

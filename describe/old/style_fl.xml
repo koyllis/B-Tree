@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="style_fl" System="old" ModifyStamp="0">
+      <Field Size="12" Dim ="1" name="ss_stylecode" Caption="Style"/>
+      <Field Size="20" Dim ="1" name="ss_description" Caption="Description"/>
+      <Field Size="1" Options="S,W,P,A,D" Format="u" Dim ="1" name="ss_season" Caption="Season"/>
+      <Field Size="5" Dim ="10" name="ss_colours" Caption="Colours"/>
+      <Field Size="3" Dim ="14" name="ss_sizes" Caption="Sizes"/>
+      <Field Size="4" Type="4" Dim ="14" name="ss_wholesale" Caption="Cost price"/>
+      <Field Size="4" Type="4" Dim ="14" name="ss_retail" Caption="Retail price"/>
+      <Field Size="4" Type="4" Dim ="14" name="ss_special" Caption="Special Price"/>
+      <Field Size="4" Type="4" Dim ="14" name="ss_foreing" Caption="Foreing Price"/>
+      <Field Size="3" Dim ="14" name="ss_sizerange1" Caption="Sizerange"/>
+      <Field Size="3" Dim ="14" name="ss_sizerange2" Caption="Sizerang"/>
+      <Field Size="5" Dim ="1" name="ss_group1" Caption="Group1"/>
+      <Field Size="5" Dim ="1" name="ss_categ" Caption="Categ"/>
+      <Field Size="50" Dim ="1" name="ss_details" Caption="Comments"/>
+      <Field Size="10" Dim ="1" name="ss_supplier" Caption="Supplier of the style"/>
+      <Field Dim ="1" name="ss_desc" Caption="Supplier Description"/>
+      <Field Size="4" Type="2" Dim ="1" name="ss_collection" Caption="Year Collection"/>
+      <Field Size="3" Dim ="1" name="ss_depart" Caption="Department/Section"/>
+      <Index name="style_fl">
+         <IndexEntry name="ss_stylecode"/>
+      </Index>
+   </Table>
+</xml>

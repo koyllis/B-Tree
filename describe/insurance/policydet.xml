@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="insurance" Icon="document1" name="Contract References" Unordered="1">
+      <Field Caption="Policy" File="insurance.policy" Size="4" Type="2" name="policy"/>
+      <Field Caption="Reference Type" File="insurance.reftype" Size="1" Type="2" name="reftype"/>
+      <Field Caption="Description" name="description"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="policydet">
+         <IndexEntry name="policy"/>
+         <IndexEntry name="reftype"/>
+      </Index>
+      <Index name="policydet[reftype]">
+         <IndexEntry name="reftype"/>
+         <IndexEntry name="policy"/>
+      </Index>
+   </Table>
+</xml>

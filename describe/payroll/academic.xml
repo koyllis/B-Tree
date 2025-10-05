@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" Icon="book #4" name="Academic Qualifications">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Force="1" Type="2" name="employee"/>
+      <Field Caption="Degree" File="payroll.degree" Size="2" Force="1" Type="2" name="degree"/>
+      <Field Caption="Subject" Size="40" Force="1" name="subject"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="academic">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="degree"/>
+      </Index>
+      <Index name="academic[degree]">
+         <IndexEntry name="degree"/>
+         <IndexEntry name="employee"/>
+      </Index>
+   </Table>
+</xml>

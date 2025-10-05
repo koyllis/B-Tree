@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="address" System="old" ModifyStamp="0">
+      <Field Caption="" Format="u" Size="10" name="aa_code" Dim ="1"/>
+      <Field name="aa_name" Dim ="1"/>
+      <Field Caption="" name="aa_add1" Dim ="1"/>
+      <Field Caption="" Size="25" name="aa_add2" Dim ="1"/>
+      <Field Caption="" Size="25" name="aa_add3" Dim ="1"/>
+      <Field Caption="" Size="25" name="aa_add4" Dim ="1"/>
+      <Field Caption="" Size="15" name="aa_phone" Dim ="1"/>
+      <Field Caption="" Format="u" Size="15" name="aa_telex" Dim ="1"/>
+      <Field Caption="" Format="u" Size="10" name="aa_acccode" Dim ="1"/>
+      <Field Caption="" Size="60" name="aa_comments" Dim ="1"/>
+      <Index name="address">
+         <IndexEntry name="aa_code"/>
+      </Index>
+   </Table>
+</xml>

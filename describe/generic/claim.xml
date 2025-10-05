@@ -1,0 +1,47 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Insurance Claims">
+      <Field Caption="Number" Strict="1" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Claim date" Size="4" Type="5" name="date"/>
+      <Field Caption="Claim receipt" Size="4" Type="5" name="receipt"/>
+      <Field Caption="File No." Size="10" name="fileno"/>
+      <Field Caption="School" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Child name" Size="20"/>
+      <Field Caption="Family name" name="family"/>
+      <Field Caption="Class" Size="6" name="class"/>
+      <Field Caption="Guardian name" name="guardian"/>
+      <Field Caption="Phone" name="phone"/>
+      <Field Caption="Identity No." Size="10" name="idno"/>
+      <Field Caption="Claim type" File="generic.claimtype" Size="2" Type="2" name="claimtype"/>
+      <Field Caption="Doctor" File="generic.claimdoc" Size="2" Type="2" name="claimdoc"/>
+      <Field Caption="Note" Size="50" name="note"/>
+      <Field Caption="Discharge date" Size="4" Type="5" name="discharge"/>
+      <Field Caption="Cheque date" Size="4" Type="5" name="cheque"/>
+      <Field Caption="Amount" Total="1" Format="####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Cheque date 2" Size="4" Type="5" name="cheque2"/>
+      <Field Caption="Amount 2" Total="1" Format="####.##" Size="4" Type="4" name="amount2"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="claim">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="claim[claimdoc]">
+         <IndexEntry name="claimdoc"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="claim[claimtype]">
+         <IndexEntry name="claimtype"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="claim[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="claim_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="claim_receipt">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

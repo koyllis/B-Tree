@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Parent="parent" Child="name" Bookmark="1" System="accounting" SoftDelete="1" Icon="vat" Short="Vat" Index="vat" name="VAT" Common="1"  >
+      <Field Caption="Description" ReportWidth="15"/>
+      <Field Caption="Vat %" Format="##.##" Size="4" ReportWidth="8" Type="4" name="rate" Distinct="1"/>
+      <Field Caption="Parent" File="accounting.vat" Size="2" Type="2" name="parent"/>
+      <Field Caption="Inter Company " Size="20" name="inter_company"/>
+      <Field Caption="Previous VAT" File="accounting.vat" Size="2" Type="2" name="previous_vat"/>
+      <Field Caption="Upto date" Size="4" Type="5" name="date"/>
+      <Field Caption="Close date" Size="4" Type="5" name="close"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Sale,Purchase" name="type"/>
+      <Field Caption="Form box (eg 01,02)" Size="4" Type="1" name="form"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="vat">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="vat[vat]">
+         <IndexEntry name="parent"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="vat[previous_vat]">
+         <IndexEntry name="previous_vat"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="vat_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

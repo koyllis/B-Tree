@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Clients" System="generic">
+      <Field Format="u" name="CNAME"/>
+      <Field Format="u" name="FNAME" Caption="Last name"/>
+      <Field Format="u" name="CADDR1" Caption="Address 1"/>
+      <Field Format="u" name="CADDR2" Caption="Address 2"/>
+      <Field Format="u" name="CADDR3" Caption="Address 3"/>
+      <Field Format="u" name="COUNTRY" Caption="Country"/>
+      <Field Size="10" Format="u" name="CTEL1" Caption="Telephone"/>
+      <Field Size="15" Format="u" name="CTELEX" Caption="Telex"/>
+      <Field Size="15" Format="u" name="CTELFAX" Caption="Fax"/>
+      <Field Size="50" Format="u" name="COMMENT1" Caption="Comment 1"/>
+      <Field Size="50" Format="u" name="COMMENT2" Caption="Comment 2"/>
+      <Field Size="4" Format="#######" Type="2" File="generic.categ" name="categ" Caption="Category"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="clients">
+         <IndexEntry AllDimension="1" name="CNAME"/>
+         <IndexEntry AllDimension="1" name="FNAME"/>
+         <IndexEntry AllDimension="1" name="CADDR1"/>
+      </Index>
+      <Index name="clients_categ">
+         <IndexEntry AllDimension="1" name="categ"/>
+         <IndexEntry AllDimension="1" name="CNAME"/>
+         <IndexEntry AllDimension="1" name="FNAME"/>
+         <IndexEntry AllDimension="1" name="CADDR1"/>
+      </Index>
+   </Table>
+</xml>

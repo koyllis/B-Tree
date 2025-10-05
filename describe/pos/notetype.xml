@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Note Type" System="pos" Bookmark="1">
+      <Field/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Caption="Bookmark" Size="16" name="@bookmark"/>
+      <Index name="notetype">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

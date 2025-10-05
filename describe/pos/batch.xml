@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Dynamic="1" name="Credit Batch" System="pos">
+      <Field Size="4" Type="5" name="date" Auto="1" Caption="Date"/>
+      <Field Size="4" AutoCounter="1" Type="2" name="counter" Auto="1" Caption="Counter"/>
+      <Field Size="32" name="batch" Caption="Batch"/>
+      <Field Size="4" Format="#####.##" Type="4" name="amount" Caption="Amount"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="batch">
+         <IndexEntry name="date"/>
+         <IndexEntry name="counter"/>
+      </Index>
+   </Table>
+</xml>

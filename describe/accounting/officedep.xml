@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Office Department" System="accounting">
+      <Field Size="4" Type="2" File="accounting.office" name="office" Caption="Office"/>
+      <Field Size="4" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="officedep">
+         <IndexEntry name="office"/>
+         <IndexEntry name="chart"/>
+      </Index>
+      <Index name="officedep[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="office"/>
+      </Index>
+   </Table>
+</xml>

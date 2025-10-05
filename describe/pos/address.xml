@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="address" name="Address" System="pos">
+      <Field Size="1" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="60" name="address" Caption="Address"/>
+      <Field Size="2" Type="2" File="pos.area" name="area" Caption="Area"/>
+      <Field Size="4" Type="2" name="zip" Caption="Zip code"/>
+      <Field Size="3" name="grid" Caption="Grid"/>
+      <Field Size="5" name="from" Caption="From number"/>
+      <Field Size="5" name="to" Caption="To number"/>
+      <Field Size="1" Format="b" Type="2" name="noservice" Caption="No service"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="address">
+         <IndexEntry name="location"/>
+         <IndexEntry name="address"/>
+         <IndexEntry name="area"/>
+      </Index>
+      <Index name="address[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="address"/>
+      </Index>
+   </Table>
+</xml>

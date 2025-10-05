@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="stphoto" System="old">
+      <Field Size="12" Format="u" name="ph_item" Caption="Item"/>
+      <Field Size="1" Format="0" Type="2" name="ph_loc" Caption="Loc."/>
+      <Field Size="4" Type="5" name="ph_date" Caption="Date"/>
+      <Field Size="8" Format="#####,###.##" Type="3" name="ph_free" Caption="Available"/>
+      <Field Size="8" Format="#####,###.##" Type="3" name="ph_wayb" Caption="Waybill"/>
+      <Field Size="8" Format="#####,###.##" Type="3" name="ph_cnto" Caption="Cons. to"/>
+      <Field Size="8" Format="#####,###.##" Type="3" name="ph_cnfr" Caption="Cons. from"/>
+      <Field Size="8" Format="#####,###.##" Type="3" name="ph_onor" Caption="On order"/>
+      <Field Size="8" Format="#####,###.##" Type="3" name="ph_reser" Caption="Reserved"/>
+      <Field Size="8" Format="#####,###.##" Type="3" name="ph_frsal" Caption="Free"/>
+      <Field Size="8" Format="#####,###.##" Type="3" name="ph_sales" Caption="Sales"/>
+      <Field Size="8" Format="#######.####" Type="3" name="ph_cost" Caption="Cost"/>
+      <Index name="stphoto">
+         <IndexEntry name="ph_item"/>
+         <IndexEntry name="ph_loc"/>
+         <IndexEntry name="ph_date"/>
+      </Index>
+      <Index name="stphoto_ph_date">
+         <IndexEntry name="ph_date"/>
+         <IndexEntry name="ph_item"/>
+         <IndexEntry name="ph_loc"/>
+      </Index>
+   </Table>
+</xml>

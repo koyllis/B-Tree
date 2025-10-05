@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="showprogram">
+      <Field Caption="Showtime" File="generic.showtime" Size="4" Type="2" name="showtime"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Cycle" Total="1" Size="1" Type="2" Options="KA,KB" name="cycle"/>
+      <Field Caption="Number " Total="1" Format="###" Size="2" Type="2" name="number"/>
+      <Field Strict="1" Caption="School" Size="50" name="school" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="showprogram">
+         <IndexEntry name="showtime"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="cycle"/>
+      </Index>
+      <Index name="showprogram[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="showtime"/>
+         <IndexEntry name="cycle"/>
+      </Index>
+      <Index name="showprogram_school">
+         <IndexEntry name="school"/>
+         <IndexEntry name="showtime"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="cycle"/>
+      </Index>
+   </Table>
+</xml>

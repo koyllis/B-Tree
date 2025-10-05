@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table DataHeader="1" Icon="type" Child="name" Parent="type" name="Types" System="office">
+      <Field Size="80" PrintWrap="1"/>
+      <Field Size="2" Type="2" File="office.type" name="type" Caption="Family"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="type">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="type[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

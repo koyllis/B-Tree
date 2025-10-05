@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="container" System="pos">
+      <Field/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="container">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

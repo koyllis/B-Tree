@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="inrefer" System="old" ModifyStamp="0">
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="f_no" Caption="No"/>
+      <Field Format="u" Dim ="1" name="f_name"/>
+      <Index name="inrefer">
+         <IndexEntry name="f_no"/>
+      </Index>
+   </Table>
+</xml>

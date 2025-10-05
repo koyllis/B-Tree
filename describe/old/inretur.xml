@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="inretur" System="old" ModifyStamp="0">
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="iq_cono" Caption="Comp. No."/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="iq_agno" Caption="Agent No."/>
+      <Field Size="8" Dim ="1" name="iq_code" Caption="Customer"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="iq_inno" Caption="Ins. type"/>
+      <Field Size="4" Type="5" Dim ="1" name="iq_date" Caption="Cancel. date"/>
+      <Field Size="15" Dim ="1" name="iq_policy" Caption="Policy No."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="iq_refer" Caption="Ret. No."/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="iq_prem" Caption="Premium"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="iq_other" Caption="Other"/>
+      <Field Size="40" Dim ="1" name="iq_rem1" Caption="Notes"/>
+      <Field Size="40" Dim ="1" name="iq_rem2" Caption=""/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="iq_gcomm" Caption="Office"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="iq_acomm" Caption="Agent"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="iq_mcomm" Caption="Group"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="iq_kcomm" Caption="Marketing"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="iq_loc" Caption="Loc."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="iq_journal" Caption="Journal No."/>
+      <Index name="inretur">
+         <IndexEntry name="iq_cono"/>
+         <IndexEntry name="iq_agno"/>
+         <IndexEntry name="iq_code"/>
+         <IndexEntry name="iq_inno"/>
+         <IndexEntry name="iq_date"/>
+         <IndexEntry name="iq_policy"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Additional Cards" System="loyalty" Index="addition">
+      <Field Size="4" Format="#######" Type="2" Update="" File="loyalty.customer" name="customer" Caption=""/>
+      <Field Size="4" Format="######" Type="2" Update="" name="idno" Caption="Identity No."/>
+      <Field Size="9" Update="" name="passno" Caption="Passport No."/>
+      <Field Size="20" Update=""/>
+      <Field Size="1" Options="Consort,Child,Brother/Sister,Parent" Format="###" Type="2" Update="" name="relation" Caption="Relation"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="addition">
+         <IndexEntry name="customer"/>
+         <IndexEntry name="idno"/>
+         <IndexEntry name="passno"/>
+      </Index>
+   </Table>
+</xml>

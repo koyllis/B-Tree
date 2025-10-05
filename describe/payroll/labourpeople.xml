@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="Previous Employments">
+      <Field Caption="Person" File="payroll.labourforce" Size="4" Type="2" name="labourforce"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="labourpeople">
+         <IndexEntry name="labourforce"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="labourprof[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="labourforce"/>
+      </Index>
+   </Table>
+</xml>

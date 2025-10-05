@@ -1,0 +1,28 @@
+<xml>
+   <Table DeleteChildren="1" System="pos" Icon="defrag2" name="Group Summary">
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Key" name="key" Type="1" Size="80"/>
+      <Field Caption="Order" Total="1" Size="4" Type="2" name="order"/>
+      <Field Caption="Purchase" Total="1" Size="4" Type="2" name="purchase"/>
+      <Field Caption="Transfer" Total="1" Size="4" Type="2" name="transfer"/>
+      <Field Caption="Movement" Total="1" Size="4" Type="2" name="movement"/>
+      <Field Caption="Sale" Total="1" Size="4" Type="2" name="sale"/>
+      <Field Caption="Discounted sale" Total="1" Size="8" Type="2" name="saledisc"/>
+      <Field Caption="Stock" Total="1" Size="4" Type="2" name="stock"/>
+      <Field Caption="Stock before disc" Total="1" Size="4" Type="2" name="stockdisc"/>
+      <Field Caption="Purchase value" Total="1" Format="#######" Size="8" Type="3" name="purchase_value"/>
+      <Field Caption="Transfer value" Total="1" Format="#######" Size="8" Type="3" name="transfer_value"/>
+      <Field Caption="Sale value" Total="1" Format="#######" Percentage="2" Size="8" Type="3" name="sale_value"/>
+      <Field Caption="Purchase mix%" Format="###" Size="8" Type="3" name="purchmix"/>
+      <Field Caption="Sales mix%" Format="###" Size="8" Type="3" name="salesmix"/>
+      <Field Caption="Discounted sale value" Total="1" Format="#######" Size="8" Type="3" name="saledisc_value"/>
+      <Field Caption="Order value" Total="1" Format="#######" Size="8" Type="3" name="order_value"/>
+      <Field Caption="Cost value" Total="1" Format="#######" Size="8" Type="3" name="cost_value"/>
+      <Field Caption="Stock value" Total="1" Format="#######" Size="8" Type="3" name="stock_value"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="groupsummary">
+         <IndexEntry name="location"/>
+         <IndexEntry name="key"/>
+      </Index>
+   </Table>
+</xml>

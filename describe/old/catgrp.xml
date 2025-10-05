@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="Category Structure" System="old">
+      <Field Size="8" Format="u" name="cg_cgroup" Caption="Group"/>
+      <Field Size="8" Format="u" name="cg_categ" Caption="Category"/>
+      <Index name="catgrp">
+         <IndexEntry name="cg_cgroup"/>
+         <IndexEntry name="cg_categ"/>
+      </Index>
+   </Table>
+</xml>

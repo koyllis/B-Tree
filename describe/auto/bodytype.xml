@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Body Type">
+      <Field Caption="Name" name="name" Type="1" Size="50"/>
+      <Field Caption="Category" File="auto.category" Size="2" Type="2" Tip="1" name="category"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="bodytype">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="bodytype[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

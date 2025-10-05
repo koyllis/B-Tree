@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="briefcase" SoftDelete="1" Dynamic="1" name="Student Books" System="student">
+      <Field Size="4" Type="2" File="student.student" name="student" Caption="Student"/>
+      <Field Size="2" Type="2" File="student.book" name="book" Caption="Book"/>
+      <Field Size="100" Type="1" name="note" Caption="Note"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="studentbook">
+         <IndexEntry name="student"/>
+         <IndexEntry name="book"/>
+      </Index>
+      <Index name="studentbook[book]">
+         <IndexEntry name="book"/>
+         <IndexEntry name="student"/>
+      </Index>
+   </Table>
+</xml>

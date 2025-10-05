@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" Icon="post.ico" name="Tests">
+      <Field Caption="Educator" File="student.associate" Size="4" Type="2" name="associate"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Size="50"/>
+      <Field Caption="Duration (minutes)" Size="2" Type="2" name="duration"/>
+      <Field Caption="From time" Size="2" Type="5" name="ftom"/>
+      <Field Caption="To time" Size="2" Type="5" name="to"/>
+      <Field Caption="Weight(%)" Format="###.##" Size="4" Type="8" name="weight"/>
+      <Field Caption="Subject" File="student.subject" Size="4" Type="2" name="subject"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="test">
+         <IndexEntry name="associate"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="test[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="associate"/>
+      </Index>
+      <Index name="test[subject]">
+         <IndexEntry name="subject"/>
+         <IndexEntry name="associate"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

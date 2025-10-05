@@ -1,0 +1,17 @@
+<xml>
+   <Table System="office" name="Customers">
+      <Field Caption="Phone" Size="10" name="phone"/>
+      <Field Size="60" Tip="1"/>
+      <Field Caption="Email" name="email"/>
+      <Field Caption="Ident. No." Size="10" name="id" Tip="1"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="birthday" Tip="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="schcustomer">
+         <IndexEntry name="phone"/>
+      </Index>
+      <Index name="schcustomer_id">
+         <IndexEntry name="id"/>
+         <IndexEntry name="phone"/>
+      </Index>
+   </Table>
+</xml>

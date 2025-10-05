@@ -1,0 +1,32 @@
+<xml>
+   <Table CanModify="0" System="pos" CanDelete="0" name="concdetail" Unordered="1">
+      <Field Caption="Concentration" File="pos.concentrate" Size="4" Type="2" name="concentrate"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" name="quantity" Total="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="concdetail">
+         <IndexEntry name="concentrate"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="concdetail[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="concentrate"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="concdetail[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="concentrate"/>
+      </Index>
+      <Index name="concdetail[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="concentrate"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

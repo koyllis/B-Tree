@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Location/Size Analysis">
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Purchases" Size="4" Type="2" name="purchase"/>
+      <Field Caption="Movement" Size="4" Type="2" name="movement"/>
+      <Field Caption="Sales" Size="4" Type="2" name="sale"/>
+      <Field Caption="Stock" Size="4" Type="2" name="stock"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="location_size">
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="location_size[size]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="size"/>
+      </Index>
+   </Table>
+</xml>

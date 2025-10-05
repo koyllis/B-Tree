@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="calc1" name="Loan Rates" System="life">
+      <Field Size="2" Force="1" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="4" Force="1" Type="4" name="amount" Caption="Amount"/>
+      <Field Size="8" Format="##.##" Force="1" Type="3" name="rate" Caption="Loan rate%%"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="loanrate">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="amount"/>
+      </Index>
+   </Table>
+</xml>

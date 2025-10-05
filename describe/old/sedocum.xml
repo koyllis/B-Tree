@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="sedocum" System="old" ModifyStamp="0">
+      <Field Size="2" Format="u" Dim ="1" name="sd_doc" Caption="Document"/>
+      <Field Format="u" Dim ="1" name="sd_name"/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="sd_refer" Caption="Next reference"/>
+      <Field Size="1" Format="#" Type="2" Dim ="1" name="sd_copies" Caption="No. of copies"/>
+      <Field Size="1" Options=",,Y,N,A" Format="u" Dim ="1" name="sd_print" Caption="Print (Yes/No/Ask)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="sd_bala" Caption="Print balance(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="sd_date" Caption="Override date(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="sd_oref" Caption="Override reference(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="sd_dupl" Caption="Allow duplicates(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,E,G" Format="u" Dim ="1" name="sd_lang" Caption="Language(E) (English/Greek)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="sd_defacc" Caption="Use definition accounts(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="sd_multd" Caption="Multiple debits(N) (Y/N)?"/>
+      <Field Dim ="1" name="sd_future" Caption="Future"/>
+      <Field Size="1" Options=",,C,R" Format="u" Dim ="1" name="sd_account" Caption="Cash/cRedit (C/R)?"/>
+      <Field Size="1" Options="D,C" Format="u" Dim ="1" name="sd_dc" Caption="Debit/Credit (D/C)?"/>
+      <Field Size="6" Format="u" Dim ="1" name="sd_gross" Caption="Gross"/>
+      <Field Size="6" Format="u" Dim ="1" name="sd_disc" Caption="Discount"/>
+      <Field Size="6" Format="u" Dim ="1" name="sd_vat" Caption="V.A.T."/>
+      <Field Size="50" Dim ="1" name="sd_msg1" Caption="Message"/>
+      <Field Size="50" Dim ="1" name="sd_msg2" Caption=""/>
+      <Field Size="50" Dim ="1" name="sd_msg3" Caption=""/>
+      <Index name="sedocum">
+         <IndexEntry name="sd_doc"/>
+      </Index>
+   </Table>
+</xml>

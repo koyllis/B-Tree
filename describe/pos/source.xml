@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="source" System="pos" Bookmark="1">
+      <Field/>
+      <Field Size="8" Type="3" name="daymax" Caption="Daily maxiumum weight"/>
+      <Field Size="2" Type="2" Format="b" name="option" Options="Excel" Caption="Options"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Field Hide="1" Size="16" System="1" name="@bookmark" Caption="Bookmark"/>
+      <Index name="source">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="source_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

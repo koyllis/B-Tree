@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="money" System="accounting">
+      <Field Size="4" Format="###.##" Type="4" name="value" Caption="Value"/>
+      <Field Size="1" Options="Paper,Coin" Type="2" name="type" Caption="Type"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="money">
+         <IndexEntry name="value"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Unordered="1" System="student" SoftDelete="1" Icon="schedule" Dynamic="1" name="Student Program">
+      <Field Caption="Student" File="student.student" Size="4" Type="2" Force="1" name="student"/>
+      <Field Caption="Program" File="student.program" Size="4" Type="2" Force="1" name="program"/>
+      <Field Strict="1" Caption="Discount" Total="1" Format="####.##" Size="4" Type="4" name="discount" Modify="1"/>
+      <Field Caption="Entry Date" Size="4" Type="5" name="entry"/>
+      <Field Caption="Term. date" Size="4" Type="5" name="stop" Modify="1"/>
+      <Field Caption="Receipt" Strict="1" File="student.receipt" Size="4" Type="2" name="receipt" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="studentprog" CRC64="1">
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+      </Index>
+      <Index name="studentprog[program]" CRC64="1">
+         <IndexEntry name="program"/>
+         <IndexEntry AllDimension="0" Index="student[name]" name="student"/>
+      </Index>
+      <Index name="studentprog[receipt]" CRC64="1">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+      </Index>
+      <Index name="studentprog_entry" CRC64="1">
+         <IndexEntry name="entry"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+      </Index>
+   </Table>
+</xml>

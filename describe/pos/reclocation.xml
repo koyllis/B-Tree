@@ -1,0 +1,15 @@
+<xml>
+   <Table System="pos" name="reclocation">
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Receipt method" File="pos.receipt" Size="2" Type="2" name="receipt"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="reclocation">
+         <IndexEntry name="location"/>
+         <IndexEntry name="receipt"/>
+      </Index>
+      <Index name="reclocation[receipt]">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

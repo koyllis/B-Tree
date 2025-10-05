@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="inmodet" System="old">
+      <Field Size="4" Type="5" name="md_date" Caption="Date"/>
+      <Field Size="2" name="md_doc" Caption="Doc"/>
+      <Field Size="4" Type="2" name="md_refer" Caption="Refer"/>
+      <Field Size="25" name="md_surname" Caption="Surname"/>
+      <Field Size="25" name="md_name" Caption="Name"/>
+      <Field Size="4" Type="2" name="md_id" Caption="ID"/>
+      <Field Size="4" Type="2" name="md_si" Caption="SI"/>
+      <Field Size="4" Type="5" name="md_from" Caption="From"/>
+      <Field Size="4" Type="5" name="md_to" Caption="To"/>
+      <Field Size="4" Type="4" name="md_amount" Caption="Amount"/>
+      <Field Size="4" Type="4" name="md_payabl" Caption="Payable"/>
+      <Field Size="4" Type="4" name="md_commis" Caption="Comm%"/>
+      <Field Size="2" Type="2" name="md_plno" Caption="Plan"/>
+      <Index name="inmodet">
+         <IndexEntry name="md_date"/>
+         <IndexEntry name="md_doc"/>
+         <IndexEntry name="md_refer"/>
+         <IndexEntry name="md_surname"/>
+         <IndexEntry name="md_name"/>
+         <IndexEntry name="md_id"/>
+         <IndexEntry name="md_si"/>
+      </Index>
+   </Table>
+</xml>

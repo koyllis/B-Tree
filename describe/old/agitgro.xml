@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agitgro" System="old" ModifyStamp="0">
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="ig_group" Caption="No."/>
+      <Field Dim ="1" name="ig_name" Caption="Name"/>
+      <Field Size="1" name="ig_mode" Caption="Mode"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="ig_days" Caption="Average"/>
+      <Field Size="22" Dim ="1" name="ig_more" Caption="more"/>
+      <Index name="agitgro">
+         <IndexEntry name="ig_group"/>
+      </Index>
+   </Table>
+</xml>

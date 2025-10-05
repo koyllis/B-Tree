@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="system" name="user_toolbar" Root="1">
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="System" Size="32" name="system"/>
+      <Field Caption="File" Size="32" name="file"/>
+      <Field Caption="Toolbar" Size="32" name="toolbar"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="user_toolbar">
+         <IndexEntry name="user"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="file"/>
+         <IndexEntry name="toolbar"/>
+      </Index>
+   </Table>
+</xml>

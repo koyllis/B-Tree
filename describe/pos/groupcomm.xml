@@ -1,0 +1,37 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Group Commissions">
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Commission%" Format="###.##" Size="8" Type="3" name="commission"/>
+      <Field Caption="Commission per piece" Format="###.##" Size="4" Type="4" name="commissionper"/>
+      <Field Caption="Quantity limit" Format="quantity" Size="4" Type="8" name="quantity_limit"/>
+      <Field Caption="Sales limit" Format="######.##" Size="8" Type="3" name="net_limit"/>
+      <Field Caption="Commission after%" Format="######.##" Size="8" Type="3" name="commission_after"/>
+      <Field Caption="Commision/piece after" Format="###.##" Size="4" Type="4" name="commisionper_after"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="groupcomm">
+         <IndexEntry name="group"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="groupcomm[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="groupcomm[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="groupcomm[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

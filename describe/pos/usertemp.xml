@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="User Item Storage">
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Counter" Strict="1" Size="4" Type="2" AutoCounter="1" name="counter"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="usertemp">
+         <IndexEntry name="user"/>
+         <IndexEntry name="counter"/>
+      </Index>
+   </Table>
+</xml>

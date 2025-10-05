@@ -1,0 +1,50 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" SoftDelete="1" name="Vehicles">
+      <Field Caption="Reg. No." Size="20" Force="1"/>
+      <Field Caption="Chassis No." Size="20" Force="1" name="chassis"/>
+      <Field Caption="Cubic capacity" Size="10" Force="1" name="cc"/>
+      <Field Caption="Weight" Format="####" Size="2" Type="2" name="weight"/>
+      <Field Caption="Power" Format="####" Size="2" Type="2" name="power"/>
+      <Field Caption="Manufacture year" Format="####" Size="2" Type="2" Force="1" name="year"/>
+      <Field Caption="Registration date" Size="4" Type="5" name="regdate"/>
+      <Field Caption="Type" File="life.vehtype" Size="2" Type="2" Force="1" name="vehtype"/>
+      <Field Caption="Make" File="life.vehmake" Size="2" Type="2" Force="1" Tip="1" name="vehmake"/>
+      <Field Caption="Model" Size="20" Force="1" Tip="1" name="model"/>
+      <Field Caption="Category" File="life.vehcateg" Size="2" Type="2" name="vehcateg"/>
+      <Field Caption="Fuel type" Size="1" Options="Petrol,Diesel" Type="2" name="fuel"/>
+      <Field Caption="Steering wheel" Size="1" Options="Right,Left,Middle" Type="2" name="steer"/>
+      <Field Caption="Additional" Format="b" Size="1" Type="2" Options="Airbags,Immobilizer,ABS" name="add"/>
+      <Field Caption="Parking during night" Size="1" Options="Free,Private" Type="2" name="parking"/>
+      <Field Caption="New" Format="b" Size="1" Type="2" name="new"/>
+      <Field Caption="Automatic" Format="b" Size="1" Type="2" name="auto"/>
+      <Field Caption="Seating" Format="##" Size="1" Type="2" name="seating"/>
+      <Field Caption="Standing" Format="##" Size="1" Type="2" name="standing"/>
+      <Field Caption="Color" File="life.vehcolor" Size="2" Type="2" name="color"/>
+      <Field Caption="Value" Format="######.##" Size="4" Type="4" name="value"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="vehicle">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index CRC64="1" name="vehicle[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index CRC64="1" name="vehicle[vehcateg]">
+         <IndexEntry name="vehcateg"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index CRC64="1" name="vehicle[vehmake]">
+         <IndexEntry name="vehmake"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index CRC64="1" name="vehicle[vehtype]">
+         <IndexEntry name="vehtype"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="vehicle_regdate">
+         <IndexEntry name="regdate"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

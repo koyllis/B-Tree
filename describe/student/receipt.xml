@@ -1,0 +1,118 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Unordered="1" System="student" SoftDelete="1" Icon="money32" Dynamic="1" CanDelete="0" name="Receipts">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date" Default="1"/>
+      <Field Caption="Number" Strict="1" Format="######" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Document" File="accounting.document" Size="2" Type="2" Force="1" name="document"/>
+      <Field Caption="Student" File="student.student" Size="4" Type="2" Force="1" name="student"/>
+      <Field Caption="Program" File="student.program" Size="4" Type="2" Force="1" name="program"/>
+      <Field Caption="Type" File="student.type" Size="2" Type="2" Force="1" name="type"/>
+      <Field Caption="Reference" Size="10" name="reference"/>
+      <Field Caption="Amount" Total="1" Format="####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Method" File="pos.receipt" Size="2" Type="2" name="receipt"/>
+      <Field Caption="Bank" File="accounting.bank" Size="2" Type="2" name="bank"/>
+      <Field Caption="Cheque No." Size="10" name="cheque"/>
+      <Field Caption="Instructor" File="student.instructor" Size="2" Type="2" Force="1" name="instructor"/>
+      <Field Caption="Month" Size="1" Options="January,February,March,April,May,June,July,August,September,October,November,December" Type="2" name="month"/>
+      <Field Caption="Mode" Size="1" Options="Settlement,OnAccount" Type="2" name="mode"/>
+      <Field Caption="Notes" name="notes"/>
+      <Field Caption="Journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="User" Strict="1" File="system.user" Size="2" Auto="1" Type="2" name="user" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="receipt">
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="receipt[bank]">
+         <IndexEntry name="bank"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index CRC64="1" name="receipt[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index CRC64="1" name="receipt[instructor]">
+         <IndexEntry name="instructor"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+      </Index>
+      <Index CRC64="1" name="receipt[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+      </Index>
+      <Index CRC64="1" name="receipt[program]">
+         <IndexEntry name="program"/>
+         <IndexEntry Index="student[account]" name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="receipt[receipt]">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index CRC64="1" name="receipt[student]">
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="program"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index CRC64="1" name="receipt[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+      </Index>
+      <Index CRC64="1" name="receipt[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+      </Index>
+      <Index CRC64="1" name="receipt_number">
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="receipt_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="program"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

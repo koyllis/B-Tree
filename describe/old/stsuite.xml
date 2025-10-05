@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="stsuite" System="old" ModifyStamp="0">
+      <Field Caption="Supplier" Format="u" Size="8" name="sc_code" Dim ="1"/>
+      <Field Caption="Supplier item" Size="20" name="sc_suite" Dim ="1"/>
+      <Field Caption="Item" Format="u" Size="12" name="sc_item" Dim ="1"/>
+      <Index name="stsuite">
+         <IndexEntry name="sc_code"/>
+         <IndexEntry name="sc_suite"/>
+      </Index>
+   </Table>
+</xml>

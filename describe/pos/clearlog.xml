@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="clearlog">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="From date" Size="4" Type="5" name="from"/>
+      <Field Caption="To date" Size="4" Type="5" name="to"/>
+      <Field Caption="Concentration" Format="b" Size="1" Type="2" name="conc"/>
+      <Field Caption="Invoice" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="clearlog">
+         <IndexEntry name="people"/>
+         <IndexEntry name="from"/>
+      </Index>
+      <Index name="clearlog[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="from"/>
+      </Index>
+   </Table>
+</xml>

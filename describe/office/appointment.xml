@@ -1,0 +1,77 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="office" Icon="calendar" name="Appointments" UserStamp="1">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Time" Size="2" Type="5" name="time"/>
+      <Field Caption="Staff" File="office.staff" Size="2" Force="1" Type="2" name="staff"/>
+      <Field Caption="Duration" Size="1" Type="2" Options="AllDay,AllMorning,AllAfternoon" name="mode"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Force="1" Type="2" name="area"/>
+      <Field Size="40" Force="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Category" File="office.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Address 1" Size="40" name="address1"/>
+      <Field Caption="Address 2" Size="40" name="address2"/>
+      <Field Caption="Notes" Size="40" name="notes"/>
+      <Field Caption="Phone" Size="20" name="phone"/>
+      <Field Caption="Feeback" File="office.type" Size="2" Type="2" name="type" Modify="1"/>
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" File="system.user" Hide="1" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index name="appointment">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="appointment[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="appointment[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="appointment[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="appointment[phone]">
+         <IndexEntry name="phone"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="appointment[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appointment[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="appointment[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="appointment_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="appointment_time">
+         <IndexEntry name="time"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+      </Index>
+   </Table>
+</xml>

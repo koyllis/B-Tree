@@ -1,0 +1,43 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="installation" Dynamic="1" ChainInsert="instdetails" SoftDelete="1" AutoNumber="1" name="Installations" System="office" DeleteChildren="1">
+      <Field Size="4" Modify="1" Strict="1" Type="2" name="reference" Caption="Installation No."/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="1" Options="Purchase,Rental,Demo,On loan" Type="2" name="type" Caption="Type"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="20" name="agrno" Caption="Agreement No."/>
+      <Field Size="20" name="invno" Caption="Invoice No."/>
+      <Field Size="4" Type="2" File="office.staff" name="staff" Caption="Salesperson"/>
+      <Field Size="4" Type="2" File="office.engineer" name="engineer" Caption="Engineer"/>
+      <Field Size="50" name="comments" Caption="Comments"/>
+      <Field Size="1" Format="b" Type="2" name="greek" Caption="Greek"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" Caption="SoftDelete"/>
+      <Index name="installation">
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="installation[engineer]">
+         <IndexEntry name="engineer"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="installation[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="installation[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="installation_agrno">
+         <IndexEntry name="agrno"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="installation_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="installation_type">
+         <IndexEntry name="type"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

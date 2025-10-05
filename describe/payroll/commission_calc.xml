@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="payroll" name="Commission Calculation">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Month" Size="4" Type="5" name="month"/>
+      <Field Caption="Sales" Format="######.##" Size="4" Type="4" name="sales"/>
+      <Field Caption="Receipts" Format="#####.##" Size="4" Type="4" name="receipts"/>
+      <Field Caption="Commission %" Format="##.####" Size="4" Type="8" name="commission"/>
+      <Field Caption="Actual commission" Format="#####.##" Size="4" Type="4" name="actual"/>
+      <Field Caption="Company" Size="20" name="company"/>
+      <Field Caption="Employee No." Size="4" Type="2" name="code"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="commission_calc">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="month"/>
+      </Index>
+   </Table>
+</xml>

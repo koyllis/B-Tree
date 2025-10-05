@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" Icon="calc4" CanDelete="0" name="Discount Calculation">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" Force="1" name="people"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Number" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Cost" Strict="1" Format="#####.##" Size="8" Type="3" name="cost"/>
+      <Field Caption="Price" Strict="1" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Discount%" Strict="1" Format="###.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Net price" Strict="1" Format="price" Size="8" Type="3" name="netprice"/>
+      <Field Caption="New price" Format="price" Size="8" Force="1" Type="3" name="newprice"/>
+      <Field Caption="New discount" Strict="1" Format="###.##" Size="8" Type="3" name="newdiscount"/>
+      <Field Strict="1" Caption="Profit%" Format="###.##" Size="8" Type="3" name="profit"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="quotascalc">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="quotascalc[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

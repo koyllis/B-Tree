@@ -1,0 +1,43 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" name="itemsample">
+      <Field Caption="Code" Size="20" Force="1" name="code"/>
+      <Field Size="60" Force="1"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" Force="1" name="price"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" Force="1" name="category"/>
+      <Field Caption="Brand" File="pos.brand" Size="2" Type="2" Force="1" name="brand"/>
+      <Field Caption="Season" File="pos.season" Size="2" Type="2" Force="1" name="season"/>
+      <Field Caption="Collection" Format="####" Size="2" Type="2" Force="1" name="collection"/>
+      <Field Caption="Size group" File="pos.sizegroup" Size="2" Type="2" name="sizegroup"/>
+      <Field Strict="1" Caption="Notified" Size="8" Type="5" name="marked" Modify="1"/>
+      <Field Caption="Colors" File="pos.color" Size="2" Type="2" name="colors" Modify="1" Dim="16"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemsample">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="itemsample[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="itemsample[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="itemsample[colors]">
+         <IndexEntry name="colors"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="itemsample[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="itemsample[season]">
+         <IndexEntry name="season"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="itemsample[sizegroup]">
+         <IndexEntry name="sizegroup"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

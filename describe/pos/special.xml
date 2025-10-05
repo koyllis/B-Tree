@@ -1,0 +1,35 @@
+<xml>
+   <Table CanModify="0" System="pos" Icon="special" CanSoftDelete="0" name="Special Price Assignment" UserStamp="1">
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Brand" File="pos.brand" Size="2" Type="2" name="brand"/>
+      <Field Caption="Season" File="pos.season" Size="2" Type="2" Force="1" name="season"/>
+      <Field Caption="Collection" Format="####" Size="2" Type="2" Force="1" name="collection"/>
+      <Field Caption="Date" Strict="1" Size="4" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Caption="Price" Format="price" Size="8" Force="1" Type="3" name="price"/>
+      <Field Caption="Records" Strict="1" Format="######" Size="4" Type="2" name="records" Modify="1"/>
+      <Field Strict="1" Caption="Updated" Size="8" Type="5" name="update" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" File="system.user" Hide="1" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index name="special">
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="season"/>
+         <IndexEntry name="collection"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="special[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="season"/>
+         <IndexEntry name="collection"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="special[season]">
+         <IndexEntry name="season"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="collection"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

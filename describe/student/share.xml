@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" name="Question Sharing">
+      <Field Caption="Associate" File="student.associate" Size="4" Type="2" name="associate"/>
+      <Field Caption="Share with" File="student.associate" Size="4" Type="2" name="share"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="share">
+         <IndexEntry name="associate"/>
+         <IndexEntry name="share"/>
+      </Index>
+      <Index name="share[share]">
+         <IndexEntry name="share"/>
+         <IndexEntry name="associate"/>
+      </Index>
+   </Table>
+</xml>

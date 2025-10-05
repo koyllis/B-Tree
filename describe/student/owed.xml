@@ -1,0 +1,42 @@
+<xml>
+   <Table System="student" name="Owed/Changes" Icon="transfer" SoftDelete="1">
+      <Field Caption="Date" Size="4" Type="5" name="date" Force="1"/>
+      <Field Caption="Slot" File="office.schslot" Size="2" Type="2" name="slot" Force="1"/>
+      <Field Caption="Student" File="student.student" Size="4" Type="2" name="student" Force="1"/>
+      <Field Caption="Class" File="student.class" Size="2" Type="2" name="class" Force="1"/>
+      <Field Caption="instructor" File="student.instructor" Size="4" Force="1" Type="2" name="instructor"/>
+      <Field Caption="Fee" Format="####.##" Size="4" Type="4" name="fee" Strict="1" Total="1"/>
+      <Field Caption="Cancel date" Size="8" Type="5" name="canceled"/>
+      <Field Caption="To date" Size="4" Type="5" name="to_date"/>
+      <Field Caption="To Slot" File="office.schslot" Size="2" Type="2" name="to_slot"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="owed">
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="owed[class]">
+         <IndexEntry name="class"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="owed[slot]">
+         <IndexEntry name="slot"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="owed[student]">
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+      </Index>
+      <Index name="owed[canceled]">
+         <IndexEntry name="canceled"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="calc1" name="Item Costing" System="pos">
+      <Field Size="4" Force="1" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="4" Force="1" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Size="8" Type="3" name="factor" Caption="Factor"/>
+      <Field Size="8" Modify="1" Strict="1" Type="3" name="amount" Caption="Account total"/>
+      <Field Size="8" Modify="1" Strict="1" Type="3" name="sales" Caption="Sales total"/>
+      <Field Size="8" Modify="1" Strict="1" Type="3" name="quantity" Caption="Quantity total"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="itemcosting">
+         <IndexEntry name="item"/>
+         <IndexEntry name="chart"/>
+      </Index>
+      <Index name="itemcosting[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

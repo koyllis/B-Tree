@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="oikotype" System="filing">
+      <Field/>
+      <Field Size="2" name="short" Caption="Short code"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="oikotype">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

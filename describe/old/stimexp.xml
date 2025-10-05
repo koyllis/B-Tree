@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="stimexp" System="old">
+      <Field Size="8" Format="u" name="ce_code" Caption="Supplier"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="ce_date" Caption="Import date"/>
+      <Field Size="8" Format="u" name="ce_purno" Caption="Doc. No."/>
+      <Field Size="1" Options=",,1-99" Format="0" Type="2" name="ce_loc" Caption="Loc."/>
+      <Field Size="3" Format="u" name="ce_expcode" Caption="Expense code"/>
+      <Field Size="4" Format="###,###.##" Type="4" name="ce_amount" Caption="Amount"/>
+      <Field Size="4" Format="###,###.##" Type="4" name="ce_estima" Caption="Estimate"/>
+      <Field Size="4" Format="####,###.##" Type="4" name="ce_foreign" Caption="Foreign"/>
+      <Index name="stimexp">
+         <IndexEntry name="ce_code"/>
+         <IndexEntry name="ce_date"/>
+         <IndexEntry name="ce_purno"/>
+         <IndexEntry name="ce_loc"/>
+         <IndexEntry name="ce_expcode"/>
+      </Index>
+   </Table>
+</xml>

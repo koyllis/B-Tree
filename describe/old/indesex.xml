@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="indesex" System="old">
+      <Field Size="25" name="sx_name" Caption="Name"/>
+      <Field Size="1" name="sx_sex" Caption="Sex"/>
+      <Index name="indesex">
+         <IndexEntry name="sx_name"/>
+      </Index>
+   </Table>
+</xml>

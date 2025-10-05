@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="traffic" name="Departures" System="accounting">
+      <Field Size="4" Type="5" name="date" Caption="Departure date"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Vessel"/>
+      <Field Size="4" Type="5" name="arrival" Caption="Arrival date"/>
+      <Field Size="10" Type="1" name="departport" Caption="Departure port code"/>
+      <Field Size="10" Type="1" name="arriveport" Caption="Arrival port code"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="departure">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="departure[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

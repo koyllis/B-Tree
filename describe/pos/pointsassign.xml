@@ -1,0 +1,39 @@
+<xml>
+   <Table CanModify="0" System="pos" CanDelete="0" name="Points Assign">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" Force="1" name="people"/>
+      <Field Caption="Document" File="pos.division" Size="2" Type="2" Force="1" name="division"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Reference" Size="4" Type="2" Force="1" name="refer"/>
+      <Field Caption="Remove" Format="b" Size="1" Type="2" name="remove"/>
+      <Field Caption="Points" Strict="1" Size="2" Type="2" name="points" Modify="1"/>
+      <Field Caption="From customer" Strict="1" File="accounting.people" Size="4" Type="2" name="people_from" Modify="1"/>
+      <Field Caption="Transaction" Strict="1" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pointsassign">
+         <IndexEntry name="people"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointsassign[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointsassign[people_from]">
+         <IndexEntry name="people_from"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointsassign[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

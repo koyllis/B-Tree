@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" Icon="$" Index="xrates" name="Exchange Rates" Root="1">
+      <Field Caption="Currency" Format="#######" File="accounting.currency" Size="2" Type="2" name="currency"/>
+      <Field Caption="Date" Size="4" Type="5" name="date_"/>
+      <Field Caption="Rate" Format="####.########" Size="8" Type="3" name="rate"/>
+      <Field Caption="Special Rate" Format="####.########" Size="8" Type="3" name="special"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="xrates">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="date_"/>
+      </Index>
+   </Table>
+</xml>

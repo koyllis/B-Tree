@@ -1,0 +1,32 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Message" Unordered="1">
+      <Field name="number" Caption="Nummber" Type="2" Size="4" Strict="1" Modify="1" AutoCounter="1"/>
+      <Field Caption="Conversation" File="auto.conversation" Size="4" Type="2" name="conversation"/>
+      <Field Caption="From" File="auto.webuser" Size="2" Type="2" name="webuser"/>
+      <Field Caption="To" File="auto.webuser" Size="2" Type="2" name="to_webuser"/>
+      <Field name="content" Caption="Content" Type="1" Size="100"/>
+      <Field Caption="Vehicle" File="auto.vehicle" Size="2" Type="4" name="vehicle"/>
+      <Field Caption="Read" Format="b" Size="1" Type="2" name="read"/>
+      <Field name="status" Caption="Status" Type="1" Size="20"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="message" CRC64="1" Large="1">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="message[conversation]" CRC64="1" Large="1">
+         <IndexEntry name="number"/>
+         <IndexEntry name="conversation"/>
+      </Index>
+      <Index name="message[webuser]" CRC64="1" Large="1">
+         <IndexEntry name="webuser"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="message[to_webuser]" CRC64="1" Large="1">
+         <IndexEntry name="to_webuser"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="message[vehicle]" CRC64="1" Large="1">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

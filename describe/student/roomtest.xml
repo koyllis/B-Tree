@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" Icon="timedef" name="Room Test">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="From time" Size="2" Force="1" Type="5" name="from"/>
+      <Field Caption="Room" File="student.room" Size="2" Force="1" Type="2" name="room"/>
+      <Field Caption="To time" Size="2" Force="1" Type="5" name="to"/>
+      <Field Caption="Program" File="student.program" Size="4" Type="2" Force="1" name="program"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="roomtest">
+         <IndexEntry name="date"/>
+         <IndexEntry name="from"/>
+         <IndexEntry name="room"/>
+      </Index>
+      <Index name="roomtest[program]">
+         <IndexEntry name="program"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="from"/>
+         <IndexEntry name="room"/>
+      </Index>
+      <Index name="roomtest[room]">
+         <IndexEntry name="room"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="from"/>
+      </Index>
+   </Table>
+</xml>

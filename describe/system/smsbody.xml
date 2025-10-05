@@ -1,0 +1,12 @@
+<xml>
+   <Table System="system" name="SMS Body" CodePage="windows-1253">
+      <Field Size="50"/>
+      <Field Caption="Subject" Size="11" name="subject"/>
+      <Field Caption="Discount" Size="8" Type="3" name="discount"/>
+      <Field Caption="Minimum sale" Size="8" Type="3" name="minimum"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="smsbody">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

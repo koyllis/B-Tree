@@ -1,0 +1,54 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" Icon="sqlbooks" Export="date_" Dynamic="1" PDA="0" CanDelete="0" name="Stock Take History"  MergeType="2">
+      <Field Caption="Stock date" Size="4" Type="5" name="date_"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Pieces" Total="1" Size="4" Type="2" name="pieces"/>
+      <Field Caption="Quantity" Total="1" Format="######.###" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Expire date" Total="1" Size="4" Type="5" name="expire"/>
+      <Field Caption="Shelf" File="pos.shelf" Size="2" Type="2" name="shelf"/>
+      <Field Caption="Available" Total="1" Format="######.###" Size="4" Type="8" name="available"/>
+      <Field Caption="Added (after stock date)" Format="quantity" Size="4" Type="8" name="added"/>
+      <Field Caption="Cost" Total="1" Format="######.######" Size="8" Type="3" name="cost"/>
+      <Field Caption="Recorded" Size="4" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index CRC64="1" name="takehistory">
+         <IndexEntry name="date_"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index CRC64="1" name="takehistory[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="date_"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index CRC64="1" name="takehistory[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date_"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index CRC64="1" name="takehistory[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date_"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="takehistory[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="date_"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

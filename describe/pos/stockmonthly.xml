@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="treasurechest" name="Monthly Stock">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Location" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Opening" Total="1" Size="4" Type="2" name="opening"/>
+      <Field Caption="Purchases" Total="1" Size="4" Type="2" name="purchase"/>
+      <Field Caption="Purchases value with vat" Total="1" Format="######.##" Size="4" Type="4" name="purchasevalue_withvat"/>
+      <Field Caption="Purchases value" Total="1" Format="######.##" Size="4" Type="4" name="purchasevalue"/>
+      <Field Caption="Sales" Total="1" Size="4" Type="2" name="sale"/>
+      <Field Caption="Sales value with vat" Total="1" Format="######.##" Size="4" Type="4" name="salevalue_withvat"/>
+      <Field Caption="Sales value" Total="1" Format="######.##" Size="4" Type="4" name="salevalue"/>
+      <Field Caption="Returns" Total="1" Size="4" Type="2" name="return"/>
+      <Field Caption="Returns value" Total="1" Format="######.##" Size="4" Type="4" name="returnvalue"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="stockmonthly">
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="stockmonthly[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

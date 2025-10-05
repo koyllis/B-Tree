@@ -1,0 +1,8 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="VAT Box" System="accounting">
+      <Field name="vatbox" Caption="VAT Box"/>
+      <Index name="vatbox">
+         <IndexEntry name="vatbox"/>
+      </Index>
+   </Table>
+</xml>

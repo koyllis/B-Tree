@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="reitems" System="old">
+      <Field Size="12" Format="u" Dim ="1" name="i_item" Caption="Item code"/>
+      <Field Format="u" Dim ="1" name="i_desc" Caption="Description"/>
+      <Field Format="u" Dim ="1" name="i_extd" Caption=""/>
+      <Field Size="8" Format="u" Dim ="1" name="i_code" Caption="Supplier"/>
+      <Field Size="12" Format="u" Dim ="1" name="i_partcode" Caption="Part number"/>
+      <Field Size="3" Format="u" Dim ="1" name="i_unit" Caption="U.O.M."/>
+      <Field Size="4" Format="##.##" Type="4" Dim ="1" name="i_profit" Caption="Profit rate"/>
+      <Field Size="4" Format="#,###.##" Type="4" Dim ="1" name="i_latcost" Caption="Latest cost"/>
+      <Field Size="4" Format="#,###.##" Type="4" Dim ="1" name="i_retail" Caption="Retail price"/>
+      <Field Size="8" Format="u" Dim ="1" name="i_categ" Caption="Category"/>
+      <Index name="reitems">
+         <IndexEntry name="i_item"/>
+      </Index>
+   </Table>
+</xml>

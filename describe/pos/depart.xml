@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="DEPARTMENTS" System="pos">
+      <Field Size="2" Type="2" name="code" Caption="Code"/>
+      <Field/>
+      <Field Size="1" Options="DRIVER,CASHIER,KITCHEN,MANAGER,TRAINEE,WAITER" Type="2" name="type" Caption="Type"/>
+      <Field Size="8" Type="3" name="contr" Caption="Employer contributions(%)"/>
+      <Field Size="1" Type="2" name="break" Caption="Break (minutes)"/>
+      <Field Size="8" Type="3" name="hours" Caption="Hours per day"/>
+      <Field Size="1" Type="2" name="sunday" Caption="Sunday (1-7)"/>
+      <Field Size="8" Type="3" name="subonus" Caption="Sunday bonus(%)"/>
+      <Field Size="8" Type="3" name="ovbonus" Caption="Overtime bonus(%)"/>
+      <Field Size="8" Type="3" name="nibonus" Caption="Nigh-shift bonus(%)"/>
+      <Field Size="8" Type="3" name="hobonus" Caption="Holiday bonus(%)"/>
+      <Field Size="2" Type="2" name="frnight" Caption="From (night)"/>
+      <Field Size="2" Type="2" name="tonight" Caption="To (night)"/>
+      <Field Size="2" Type="2" name="frholiday" Caption="From (holiday)"/>
+      <Field Size="2" Type="2" name="toholiday" Caption="To (holiday)"/>
+      <Field Size="8" Type="3" name="overtime" Caption="Overtime hours"/>
+      <Field Size="1" Type="2" name="maxdays" Caption="Maximum month days"/>
+      <Field Size="8" Type="4" name="minsalary" Caption="Minimum daily salary"/>
+      <Field Size="8" Type="4" name="insminimum" Caption="Insurable daily minimum"/>
+      <Field Size="8" Type="4" name="monthly" Caption="Monthly salary"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="depart">
+         <IndexEntry AllDimension="1" name="code"/>
+      </Index>
+   </Table>
+</xml>

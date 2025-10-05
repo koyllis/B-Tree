@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Employee Holidays" System="payroll">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Type="2" File="payroll.employee" name="employee" Caption="Employee"/>
+      <Field Size="4" Type="5" name="from" Caption="From date"/>
+      <Field Size="4" Type="5" name="to" Caption="To date"/>
+      <Field Size="2" Type="2" name="days" Caption="Days"/>
+      <Field Size="8" Type="3" name="rate" Caption="Rate(%)"/>
+      <Field Size="4" Type="4" name="earnings" Caption="Earnings"/>
+      <Field Size="4" Type="4" name="lesspaid" Caption="Less paid"/>
+      <Field Size="4" Type="4" name="bonus" Caption="Bonus"/>
+      <Field Size="4" Type="4" name="daily" Caption="Daily"/>
+      <Field Size="4" Type="4" name="standard" Caption="Standard"/>
+      <Field Size="4" Type="4" name="difference" Caption="Difference"/>
+      <Field Size="4" Type="4" name="net" Caption="Net"/>
+      <Field Size="1" Type="2" name="extra" Caption="Extra"/>
+      <Field Size="4" Type="4" name="totaldue" Caption="Total"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="holiday">
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="holiday[employee]">
+         <IndexEntry AllDimension="1" name="employee"/>
+      </Index>
+   </Table>
+</xml>

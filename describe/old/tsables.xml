@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="old" name="tsables" ModifyStamp="0">
+      <Field Caption="Code" Size="8" name="ta_code"/>
+      <Field Caption="Date" Size="4" Type="5" name="ta_date"/>
+      <Field Caption="Document" Size="2" name="ta_doc"/>
+      <Field Caption="Ref. No." Size="8" name="ta_refer"/>
+      <Field Caption="Debit" Format="###,###.##" Size="8" Type="4" name="ta_debit"/>
+      <Field Caption="Credit" Format="###,###.##" Size="8" Type="4" name="ta_credit"/>
+      <Field Caption="Currency" Size="3" name="ta_curr"/>
+      <Field Caption="Base" Format="###,###.##" Size="8" Type="4" name="ta_system"/>
+      <Field Caption="Loc." Format="0" Size="1" Type="2" name="ta_loc"/>
+      <Field Caption="W/M" Size="1" Options="W,M" name="ta_wm"/>
+      <Field Caption="Agreement" Size="10" name="ta_agrno"/>
+      <Index name="tsables">
+         <IndexEntry name="ta_code"/>
+         <IndexEntry name="ta_date"/>
+         <IndexEntry name="ta_doc"/>
+         <IndexEntry name="ta_refer"/>
+      </Index>
+      <Index name="tsables_ta_doc">
+         <IndexEntry name="ta_doc"/>
+         <IndexEntry name="ta_date"/>
+         <IndexEntry name="ta_code"/>
+         <IndexEntry name="ta_refer"/>
+      </Index>
+   </Table>
+</xml>

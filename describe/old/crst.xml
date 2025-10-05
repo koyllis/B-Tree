@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="old" ModifyStamp="0" name="crst">
+      <Field Size="12" Dim ="1" name="c_style" Caption="Style"/>
+      <Field Size="5" Dim ="1" name="c_clr" Caption="Colour"/>
+      <Field Size="3" Dim ="1" name="c_size" Caption="Size"/>
+      <Field Size="2" Dim ="1" name="c_store" Caption="Store"/>
+      <Field Size="4" Type="2" Dim ="1" name="c_qty" Caption="Qty"/>
+      <Index name="crst">
+         <IndexEntry name="c_style"/>
+         <IndexEntry name="c_clr"/>
+         <IndexEntry name="c_size"/>
+         <IndexEntry name="c_store"/>
+      </Index>
+   </Table>
+</xml>

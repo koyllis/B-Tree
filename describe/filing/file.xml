@@ -1,0 +1,50 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Short="File" Icon="file" Dynamic="1" Child="filecode" Parent="file" name="Filing" System="filing" Bookmark="1" Index="file">
+      <Field Size="32" Format="00.00.000.00.00.00.00" Strict="1" name="filecode" Caption="No. File"/>
+      <Field Size="192" name="description" Caption="Description"/>
+      <Field Size="4" Format="#######" Type="2" File="filing.chapter" name="chapter" Caption="Chapter"/>
+      <Field Size="20" name="remarks" Caption="Remarks"/>
+      <Field Size="4" Type="5" name="inputdate" Caption="Begining Date"/>
+      <Field Size="4" Type="5" name="stored" Caption="Date Stored"/>
+      <Field Size="1" Options="Common,Confidential,Secret,Top Secret" Format="###" Type="2" name="security" Caption="Security Level"/>
+      <Field Size="4" Format="#######" Type="2" name="nextnumber" Caption="Next number"/>
+      <Field Size="4" Format="#######" Type="2" name="nextpage" Caption="Next Page"/>
+      <Field Size="4" Format="#######" Type="2" File="filing.chapter" name="chapter_related" Caption=""/>
+      <Field Size="4" Format="#######" Type="2" File="filing.file" name="file" Caption="Filing"/>
+      <Field Size="4" Format="#######" Type="2" name="expdate" Caption="Termination Date"/>
+      <Field Size="4" Modify="1" Type="5" name="outdate" Caption="Out Date"/>
+      <Field Size="4" Format="#######" Modify="1" Type="2" File="filing.office" name="office" Caption="Office/Locations"/>
+      <Field Size="4" Modify="1" Type="5" name="indate" Caption="Fixing Return Date"/>
+      <Field Size="4" Modify="1" Type="5" name="actualreturn" Caption="Return Date "/>
+      <Field Size="4" Modify="1" Type="5" name="budate" Caption="Restoration Date"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="16" System="1" name="@bookmark" Caption="Bookmark"/>
+      <Index name="file">
+         <IndexEntry name="filecode"/>
+      </Index>
+      <Index name="file[chapter]">
+         <IndexEntry name="chapter"/>
+         <IndexEntry name="filecode"/>
+      </Index>
+      <Index name="file[chapter_related]" NullKey="1">
+         <IndexEntry name="chapter_related"/>
+         <IndexEntry name="filecode"/>
+      </Index>
+      <Index name="file[file]" NullKey="1">
+         <IndexEntry name="file"/>
+         <IndexEntry name="filecode"/>
+      </Index>
+      <Index name="file[office]" NullKey="1">
+         <IndexEntry name="office"/>
+         <IndexEntry name="filecode"/>
+      </Index>
+      <Index name="file_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="filecode"/>
+      </Index>
+      <Index name="file_description">
+         <IndexEntry name="description"/>
+         <IndexEntry name="filecode"/>
+      </Index>
+   </Table>
+</xml>

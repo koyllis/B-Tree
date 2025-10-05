@@ -1,0 +1,12 @@
+<xml>
+   <Table System="accounting" name="Associate Extra Parameters">
+      <Field Caption="Associate" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Prefix" Size="5" name="prefix"/>
+      <Field Caption="Next No." Format="#####" Size="2" Type="2" name="nextno"/>
+      <Field Caption="Length" Format="##" Size="1" Type="2" name="length"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peoplext">
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

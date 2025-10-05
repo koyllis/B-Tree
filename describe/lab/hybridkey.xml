@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Item/Station key">
+      <Field Size="20"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="hybridkey">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="hybridkey[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="hybridkey[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Directions Label">
+      <Field Caption="Number" Size="2" Type="2" name="number"/>
+      <Field Caption="Name 1" Size="20" name="name1"  Tip="1"/>
+      <Field Caption="Name 2" Size="20" name="name2"  Tip="1"/>
+      <Field Caption="Unit 1" Size="10" name="unit1"/>
+      <Field Caption="Unit 2" Size="10" name="unit2"/>
+      <Field Caption="Method 1" Size="20" Tip="1" name="method11"/>
+      <Field Caption="Method 2" Size="20" Tip="1" name="method12"/>
+      <Field Caption="Method 3" Size="20" Tip="1" name="method13"/>
+      <Field Caption="Method 1" Size="20" name="method21" Tip="1"/>
+      <Field Caption="Method 2" Size="20" name="method22" Tip="1"/>
+      <Field Caption="Method 3" Size="20" name="method23" Tip="1"/>
+      <Field Caption="Note 1" name="note11"/>
+      <Field Caption="Note 2" name="note12"/>
+      <Field Caption="Note 1" name="note21"/>
+      <Field Caption="Note 2" name="note22"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="labeldir">
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

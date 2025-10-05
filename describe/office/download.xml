@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="office" name="download">
+      <Field/>
+      <Field Caption="Password?" Format="b" Size="1" Type="2" name="password"/>
+      <Field Caption="File name" Tip="1" name="filename"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="download">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

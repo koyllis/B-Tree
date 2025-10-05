@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="payroll" Icon="extraholiday" name="Extra Holidays" CanModify="0">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Time No" File="payroll.timedef" Size="4" Type="2" name="timedef"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="leaveextra">
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="timedef"/>
+      </Index>
+      <Index name="leaveextra[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="timedef"/>
+      </Index>
+      <Index name="leaveextra[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+      </Index>
+   </Table>
+</xml>

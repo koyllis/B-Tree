@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Late="1" Repository="1" System="system" Icon="language" PDA="0" Index="language" name="Language translator" Audit="0" Root="1" Dataset="1">
+      <Field Caption="English" Size="1024" name="english"/>
+      <Field Caption="Codepage" Size="4" Type="2" name="codepage"/>
+      <Field Caption="Translation" Size="1536" name="trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="language" PageSize="8" Large="1">
+         <IndexEntry name="english"/>
+         <IndexEntry name="codepage"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,43 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="intraex" System="old" ModifyStamp="0">
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="ie_cono" Caption="Comp. No."/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="ie_agno" Caption="Agent No."/>
+      <Field Size="8" Format="u" Dim ="1" name="ie_code" Caption="Customer"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="ie_inno" Caption="Ins. type"/>
+      <Field Size="4" Type="5" Dim ="1" name="ie_date" Caption="Issue date"/>
+      <Field Size="20" Dim ="1" name="ie_policy" Caption="Policy No."/>
+      <Field Size="8" Dim ="1" name="ie_regno" Caption="Reg. No."/>
+      <Field Size="15" Dim ="1" name="ie_make" Caption="Make"/>
+      <Field Size="15" Dim ="1" name="ie_model" Caption="Model"/>
+      <Field Size="4" Format="####" Type="2" Dim ="1" name="ie_cc" Caption="C.C."/>
+      <Field Size="1" Dim ="1" name="ie_type" Caption="Type (V/S/P/M)"/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="ie_year" Caption="Mfg year"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="ie_value" Caption="Value"/>
+      <Field Size="1" Dim ="1" name="ie_lr" Caption="Left/Right"/>
+      <Field Size="2" Format="##" Type="2" Dim ="1" name="ie_pass" Caption="Passengers"/>
+      <Field Size="1" Dim ="1" name="ie_trade" Caption="Trade (Y/N)?"/>
+      <Field Size="1" Dim ="1" name="ie_roof" Caption="Roof (H/S)?"/>
+      <Field Size="1" Dim ="1" name="ie_sport" Caption="Sport (Y/N)?"/>
+      <Field Size="1" Dim ="1" name="ie_off" Caption="Off-road cover (Y/N)?"/>
+      <Field Size="1" Dim ="1" name="ie_tow" Caption="Tow cover (Y/N)?"/>
+      <Field Size="1" Dim ="1" name="ie_other" Caption="Other vehicle cover (Y/N)?"/>
+      <Field Size="1" Dim ="1" name="ie_wind" Caption="Windshield cover (Y/N)?"/>
+      <Field Size="1" Dim ="1" name="ie_person" Caption="Personal accident cover (Y/N)?"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="ie_excess" Caption="Excess"/>
+      <Field Size="15" Dim ="1" name="ie_plan" Caption="Plan"/>
+      <Field Size="2" Dim ="1" name="ie_table" Caption="Table"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="ie_cover" Caption="Cover"/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="ie_period" Caption="Period"/>
+      <Field Size="15" Dim ="1" name="ie_bens" Caption="Benefits"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="ie_years" Caption="Years"/>
+      <Index name="intraex">
+         <IndexEntry name="ie_cono"/>
+         <IndexEntry name="ie_agno"/>
+         <IndexEntry name="ie_code"/>
+         <IndexEntry name="ie_inno"/>
+         <IndexEntry name="ie_date"/>
+         <IndexEntry name="ie_policy"/>
+         <IndexEntry name="ie_regno"/>
+      </Index>
+   </Table>
+</xml>

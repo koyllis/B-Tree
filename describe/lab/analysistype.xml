@@ -1,0 +1,16 @@
+<xml>
+   <Table DeleteChildren="1" System="lab" Icon="testtubes" name="Analysis Types">
+      <Field Caption="Analysis" File="lab.analysis" Size="4" Type="2" name="analysis"/>
+      <Field Caption="Analysis group" File="lab.analysisgroup" Size="2" Type="2" name="analysisgroup"/>
+      <Field Caption="Price" Format="###.##" Size="4" Type="4" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="analysistype">
+         <IndexEntry name="analysis"/>
+         <IndexEntry name="analysisgroup"/>
+      </Index>
+      <Index name="analysistype[analysisgroup]">
+         <IndexEntry name="analysisgroup"/>
+         <IndexEntry name="analysis"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,20 @@
+<xml>
+   <Table SingleFind="1" Bookmark="1" System="pos" Icon="edit_add" Short="Size" Index="size_name" name="Sizes" Merge="1" json_replicate="1">
+      <Field Caption="Sequence" Size="20" name="seq"/>
+      <Field ReportWidth="15" Tip="1"/>
+      <Field Caption="Web name" ReportWidth="15" name="webname"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="size">
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index Force="1" name="size_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="size_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

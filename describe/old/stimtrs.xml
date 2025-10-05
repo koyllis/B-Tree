@@ -1,0 +1,43 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="stimtrs" System="old">
+      <Field Size="8" name="h_code" Caption="Supplier"/>
+      <Field Size="4" Type="5" name="h_date" Caption="Import date"/>
+      <Field Size="8" name="h_purno" Caption="Purch. No."/>
+      <Field Size="1" Type="2" name="h_loc" Caption="Loc."/>
+      <Field Size="8" name="h_invno" Caption="Inv. No."/>
+      <Field Size="4" Type="5" name="h_duedate" Caption="Due date"/>
+      <Field Size="3" name="h_curr" Caption="Curr."/>
+      <Field Size="8" Format="####.####" Type="3" name="h_rate" Caption="Rate"/>
+      <Field Size="8" Format="####.####" Type="3" name="h_exrate" Caption="Bank rate"/>
+      <Field Size="8" Format="########.##" Type="4" name="h_foreign" Caption="Foreign amount"/>
+      <Field Size="8" Format="######.##" Type="4" name="h_gross" Caption="Local amount"/>
+      <Field Size="8" Format="###.##" Type="3" name="h_disc" Caption="Disc. %"/>
+      <Field Size="8" Format="######.##" Type="3" name="h_totquant" Caption="Total QTY"/>
+      <Field Size="4" Format="######.##" Type="4" name="h_vat" Caption="V.A.T."/>
+      <Field Size="4" Format="######.##" Type="4" name="h_duty" Caption="Import duty"/>
+      <Field Size="4" Format="######.##" Type="4" name="h_cald" Caption="Calc. duty"/>
+      <Field Size="8" name="h_agent" Caption="Agent"/>
+      <Field Size="8" name="h_refer" Caption="Agent refer."/>
+      <Field Size="4" Format="#####.##" Type="4" name="h_agvat" Caption="Agent VAT"/>
+      <Field Size="4" Format="######.##" Type="4" name="h_totexps" Caption="Total exp."/>
+      <Field Size="4" Format="######.##" Type="4" name="h_taxexps" Caption="Taxable exp."/>
+      <Field Size="4" Format="######.##" Type="4" name="h_forexps" Caption="Foreign exp."/>
+      <Field Size="4" Format="######" Type="2" name="h_journal" Caption="Journal No."/>
+      <Field Size="4" Type="5" name="h_process" Caption="Stock uddate"/>
+      <Field Size="4" Type="5" name="h_costpro" Caption="Cost update"/>
+      <Field name="h_note" Caption="Note"/>
+      <Field Size="8" name="h_userid" Caption="User ID"/>
+      <Field Size="1" Format="##" Type="2" name="h_trans" Caption="Transport"/>
+      <Field Size="1" Format="##" Type="2" name="h_type" Caption="Trans. type"/>
+      <Field Size="1" Format="##" Type="2" name="h_stat" Caption="Statistic"/>
+      <Field Size="3" name="h_terms" Caption="Terms"/>
+      <Field Size="4" Type="5" name="h_stockd" Caption="Stock date"/>
+      <Field Size="60" name="h_future" Caption="Future"/>
+      <Index name="stimtrs">
+         <IndexEntry name="h_code"/>
+         <IndexEntry name="h_date"/>
+         <IndexEntry name="h_purno"/>
+         <IndexEntry name="h_loc"/>
+      </Index>
+   </Table>
+</xml>

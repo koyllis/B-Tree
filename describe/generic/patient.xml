@@ -1,0 +1,32 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Patient" System="generic" ModifyStamp="0" CreateStamp="0">
+      <Field Size="4" Format="######" Modify="1" AutoCounter="1" Type="2" name="code" Caption="Code"/>
+      <Field Size="40"/>
+      <Field name="add1" Caption="Address"/>
+      <Field name="add2" Caption="Address"/>
+      <Field Size="20" name="town" Caption="Town"/>
+      <Field Size="4" Type="2" name="zip" Caption="Zip"/>
+      <Field Size="10" name="htele" Caption="Home phone"/>
+      <Field Size="10" name="wtele" Caption="Business phone"/>
+      <Field Size="10" name="fax" Caption="Fax"/>
+      <Field Size="10" name="mobile" Caption="Mobile phone"/>
+      <Field Size="4" Type="2" name="id" Caption="I.D. No."/>
+      <Field Size="4" Type="5" name="birth" Caption="Date of birth"/>
+      <Field Size="1" Options="Male,Female" Type="2" name="sex" Caption="Sex"/>
+      <Field Size="1" Options="Single,Maried,Divorced,Widow" Type="2" name="marital" Caption="Marital status"/>
+      <Field Size="20" name="profession" Caption="Profession"/>
+      <Field Size="8" Modify="1" Type="5" Auto="1" name="date" Caption="Recorded"/>
+
+      <Index name="patient">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="patient_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="patient_birth">
+         <IndexEntry name="birth"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

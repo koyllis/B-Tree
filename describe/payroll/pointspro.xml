@@ -1,0 +1,57 @@
+<xml>
+   <Table System="payroll" name="Points Suggestions">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="For employee" File="payroll.employee" Size="4" Type="2" Force="1" name="employee"/>
+      <Field Caption="Action" File="payroll.action" Size="2" Type="2" Force="1" name="action"/>
+      <Field Strict="1" Caption="Reference" Size="4" Type="2" AutoCounter="1" name="refer"/>
+      <Field Caption="From employee" File="payroll.employee" Size="4" Type="2" Force="1" name="employee_from"/>
+      <Field Caption="Accepted" Strict="1" File="payroll.pointslog" Size="4" Type="2" name="pointslog" Modify="1"/>
+      <Field Strict="1" Caption="Reject reason" File="payroll.reject" Size="2" Type="2" name="reject" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pointspro">
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="action"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointspro[action]">
+         <IndexEntry name="action"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointspro[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="action"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointspro[refer]">
+         <IndexEntry name="refer"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="action"/>
+      </Index>
+      <Index name="pointspro[employee_from]">
+         <IndexEntry name="employee_from"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="action"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointspro[pointslog]">
+         <IndexEntry name="pointslog"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="action"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointspro[reject]">
+         <IndexEntry name="reject"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="action"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

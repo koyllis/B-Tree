@@ -1,0 +1,78 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" Icon="in box" CanDelete="0" name="Plan Changes" CreateStamp="1" UserStamp="1">
+      <Field Caption="Member" File="life.member" Size="4" Type="2" name="member"/>
+      <Field Caption="Contract" File="life.contract" Size="4" Type="2" name="contract"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Standard,Loan" name="type"/>
+      <Field Caption="Assured amount" Total="1" Format="#######.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Account" Size="13" name="accountno"/>
+      <Field Caption="Plan" File="life.contractplan" Size="2" Type="2" name="contractplan"/>
+      <Field Caption="New Plan" File="life.contractplan" Size="2" Type="2" name="contractplan_to"/>
+      <Field Caption="Recorded" Size="4" Type="5" name="record"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Created" Strict="1" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index name="planch">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="contractplan_to"/>
+      </Index>
+      <Index name="planch[accountno]">
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="contractplan_to"/>
+      </Index>
+      <Index name="planch[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="contractplan_to"/>
+      </Index>
+      <Index name="planch[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="contractplan_to"/>
+      </Index>
+      <Index name="planch[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="contractplan_to"/>
+      </Index>
+      <Index name="planch_record">
+         <IndexEntry name="record"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="contractplan_to"/>
+      </Index>
+   </Table>
+</xml>

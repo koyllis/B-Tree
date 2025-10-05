@@ -1,0 +1,42 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" CanDelete="0" name="Product Mix (Monthly)">
+      <Field Caption="Month" Size="4" Type="5" name="month"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item" Distinct="1"/>
+      <Field Caption="Location" File="system.location" Size="1" Type="2" name="location"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" name="division"/>
+      <Field Caption="Quantity" Total="1" Size="4" Type="2" name="quantity"/>
+      <Field Caption="Gross price" Average="1" Format="price" Size="4" Summary="0" Type="4" name="gross_price" Distinct="1"/>
+      <Field Caption="Net price" Average="1" Format="price" Size="4" Summary="0" Type="4" name="net_price" Distinct="1"/>
+      <Field Caption="Gross sales" Total="1" Format="######.##" Size="4" Type="4" name="gross"/>
+      <Field Caption="Net sales" Total="1" Percentage="2" Format="######.##" Size="4" Type="4" name="net"/>
+      <Field Caption="Cost" Average="1" Format="#####.###" Size="8" Summary="0" Type="3" name="cost" Distinct="1"/>
+      <Field Caption="Cost%" Average="1" Format="###.##" Size="8" Type="3" name="cost_perc" Distinct="1"/>
+      <Field Caption="Profit" Average="1" Format="#####.###" Size="8" Summary="0" Type="3" name="profit" Distinct="1"/>
+      <Field Caption="Profit%" Average="1" Format="###.##" Size="8" Type="3" name="profit_perc" Distinct="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="monthlymix">
+         <IndexEntry name="month"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="monthlymix[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="month"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="monthlymix[item]">
+         <IndexEntry Index="item[category]" name="item"/>
+         <IndexEntry name="month"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="monthlymix[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="month"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

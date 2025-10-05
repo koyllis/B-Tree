@@ -1,0 +1,14 @@
+<xml>
+   <Table System="old" name="Bank Balances" ModifyStamp="0">
+      <Field Caption="Bank account" Format="u" Size="6" name="bl_bank"/>
+      <Field Caption="For month ending" Size="4" Type="5" name="bl_recon"/>
+      <Field Caption="Book balance" Format="####,###.##" Size="4" Type="4" name="bl_bookbal"/>
+      <Field Caption="Bank balance" Format="####,###.##" Size="4" Type="4" name="bl_bankbal"/>
+      <Field Caption="Service charge" Format="##,###.##" Size="4" Type="4" name="bl_service"/>
+      <Field Caption="Off balance" Format="##,###.##" Size="4" Type="4" name="bl_offbal"/>
+      <Index name="balances">
+         <IndexEntry name="bl_bank"/>
+         <IndexEntry name="bl_recon"/>
+      </Index>
+   </Table>
+</xml>

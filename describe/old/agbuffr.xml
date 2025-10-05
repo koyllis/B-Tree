@@ -1,0 +1,28 @@
+<xml>
+   <Table name="agbuffr" System="old" ModifyStamp="0">
+      <Field Caption="CUSTOMER" Format="####" Size="2" Type="2" name="ot_cuno"/>
+      <Field Caption="LINE" Format="####" Size="2" Type="2" name="ot_line"/>
+      <Field Caption="ITEM" Format="###" Size="2" Type="2" name="ot_itno"/>
+      <Field Caption="QUAL" Format="#" Size="1" Type="2" name="ot_qual"/>
+      <Field Caption="PRICE" Format="###.##" Size="4" Type="4" name="ot_price"/>
+      <Field Caption="QUANT" Format="###.##" Size="4" Type="4" name="ot_quant"/>
+      <Field Caption="TOTAL" Format="###.##" Size="4" Type="4" name="ot_total"/>
+      <Field Caption="CASES" Format="##" Size="2" Type="2" name="ot_cases"/>
+      <Field Caption="CASEPR" Format="###" Size="4" Type="4" name="ot_caspr"/>
+      <Field Caption="SUPPLIER" Format="####" Size="2" Type="2" name="ot_suno"/>
+      <Field Caption="STORE" Format="######" Size="4" Type="2" name="ot_store"/>
+      <Field Caption="STOCK DATE" Size="4" Type="5" name="ot_stock"/>
+      <Field Caption="TERMINAL" Format="####" Size="2" Type="2" name="ot_ttyno"/>
+      <Field Caption="DATE" Size="4" Type="5" name="ot_date"/>
+      <Field Caption="TIME" Size="2" Type="2" name="ot_time"/>
+      <Field Caption="Special" Format="#" Size="1" Type="2" name="ot_special"/>
+      <Field Caption="NOTE" name="ot_note"/>
+      <Field Caption="Printed" Size="2" Type="2" name="ot_print"/>
+      <Field Caption="Change" Size="2" Type="2" name="ot_change"/>
+      <Field Caption="VAT" Size="3" name="ot_vat"/>
+      <Index name="agbuffr">
+         <IndexEntry name="ot_cuno"/>
+         <IndexEntry name="ot_line"/>
+      </Index>
+   </Table>
+</xml>

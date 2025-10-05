@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Contact Us" CanDelete="0" CanModify="0">
+      <Field name="number" Caption="Number" Type="2" Size="4" AutoCounter="1" Strict="1" Modify="1"/>
+      <Field name="name" Caption="Name" Type="1" Size="20"/>
+      <Field name="surname" Caption="Surname" Type="1" Size="20"/>
+      <Field name="email" Caption="Email" Type="1" Size="40"/>
+      <Field name="subject" Caption="Subject" Type="1" Size="40"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="contactus">
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

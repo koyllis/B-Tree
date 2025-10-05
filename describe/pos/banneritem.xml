@@ -1,0 +1,15 @@
+<xml>
+   <Table System="pos" name="banneritem">
+      <Field Caption="Banner" File="pos.banner" Size="2" Type="2" Force="1" name="banner"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="banneritem">
+         <IndexEntry name="banner"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="banneritem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="banner"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,49 @@
+<xml>
+   <Table Bookmark="1" System="accounting" Color="1" Short="Operation" name="Operation">
+      <Field Size="50"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="Final,SendSMS,DecisionNote,UseDeliveryMethod,Required,AttachEmail" name="option"/>
+      <Field Caption="Department  - Source" File="accounting.department" Size="2" Type="2" name="department"/>
+      <Field Caption="Department - No stock" File="accounting.department" Size="2" Type="2" name="depart_ns"/>
+      <Field Caption="Department - Printing" File="accounting.department" Size="2" Type="2" name="depart_print"/>
+      <Field Caption="Department - No printing" File="accounting.department" Size="2" Type="2" name="depart_np"/>
+      <Field Caption="Link" File="accounting.department" Size="2" Type="2" name="link"/>
+      <Field Caption="Department - Previous" File="accounting.department" Size="2" Type="2" name="previous"/>
+      <Field Caption="Transfer" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Size="8" Format="###.##" Type="3" name="perc" Caption="Project %"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="operation">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="operation[depart_np]">
+         <IndexEntry name="depart_np"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="operation[depart_ns]">
+         <IndexEntry name="depart_ns"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="operation[depart_print]">
+         <IndexEntry name="depart_print"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="operation[department]">
+         <IndexEntry name="department"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="operation[link]">
+         <IndexEntry name="link"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="operation[previous]">
+         <IndexEntry name="previous"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="operation_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

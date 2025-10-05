@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" CanDelete="0" name="ccbaccount">
+      <Field Caption="Old account" Size="12" name="account_old"/>
+      <Field Caption="New account" Size="13" name="account_new"/>
+      <Field Caption="Record/ID" Size="100" name="update"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="ccbaccount">
+         <IndexEntry name="account_old"/>
+      </Index>
+   </Table>
+</xml>

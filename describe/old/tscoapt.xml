@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" System="old" name="tscoapt">
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" Dim ="1" name="ca_date" Caption="Date"/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="ca_refer" Caption="Agr. No."/>
+      <Field Size="4" Dim ="1" name="ca_apt" Caption="Apt No."/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="ca_week" Caption="Week No."/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="ca_occ" Caption="Occupancy"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="ca_net" Caption="Net fee"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="ca_lug" Caption="LUG"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="ca_man" Caption="Maintenance"/>
+      <Index name="tscoapt">
+         <IndexEntry name="ca_date"/>
+         <IndexEntry name="ca_refer"/>
+         <IndexEntry name="ca_apt"/>
+         <IndexEntry name="ca_week"/>
+      </Index>
+   </Table>
+</xml>

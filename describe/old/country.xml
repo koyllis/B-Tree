@@ -1,0 +1,13 @@
+<xml>
+   <Table System="old" name="country" ModifyStamp="0">
+      <Field Caption="Area code" Format="u" Size="3" name="co_country"/>
+      <Field Format="u" Size="15" name="co_name"/>
+      <Field Caption="Currency" Format="u" Size="15" name="co_coin"/>
+      <Field Caption="Exchange rate" Format="#######.##" Size="8" Type="3" name="co_exavg"/>
+      <Field Caption="Area" Format="u" Size="3" name="co_area"/>
+      <Field Caption="Urban/Rural (U/R)?" Format="u" Size="1" Options="U,R" name="co_ur"/>
+      <Index name="country">
+         <IndexEntry name="co_country"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="item_prices" Dynamic="1" name="Item Pricing" System="pos">
+      <Field Size="2" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="pos.size" name="size" Caption="Size"/>
+      <Field Size="2" Type="2" File="pos.price" name="price" Caption="Price"/>
+      <Field Size="8" Format="#####.###" Type="3" name="number" Caption="Number"/>
+      <Field Size="1" Format="b" Type="2" name="percent" Caption="Percentage"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Index name="itemsize">
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="price"/>
+      </Index>
+      <Index name="itemsize[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="itemsize[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="price"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Root="1" ManualIndex="1" Late="1" Static="1" Unsorted="1" name="Soft Delete" System="system" Index="delete">
+      <Field Size="4" Format="#######" Type="2" File="system.master" name="master" Caption="Company"/>
+      <Field Size="32" name="system" Caption="System"/>
+      <Field Size="64" name="file" Caption="File name"/>
+      <Field Size="4" Format="#######" Strict="1" Type="2" name="recpos" Caption="Record position"/>
+      <Field Size="4" Format="t" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Format="#######" Type="2" File="system.user" name="user" Caption="User"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="delete">
+         <IndexEntry AllDimension="1" name="master"/>
+         <IndexEntry AllDimension="1" name="system"/>
+         <IndexEntry AllDimension="1" name="file"/>
+         <IndexEntry AllDimension="1" name="recpos"/>
+      </Index>
+   </Table>
+</xml>

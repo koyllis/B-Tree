@@ -1,0 +1,15 @@
+<xml>
+   <Table System="accounting" name="userpeople">
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="userpeople">
+         <IndexEntry name="user"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="userpeople[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

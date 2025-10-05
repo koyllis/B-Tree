@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="transdet_clear">
+      <Field Caption="Transaction line" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="Pieces" Size="2" Type="2" name="pieces"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Total" Size="8" Type="3" name="total"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transdet_clear">
+         <IndexEntry name="transdet"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,44 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" CanDelete="0" name="Plan Upgrade" System="life">
+      <Field Size="4" Type="2" File="life.member" name="member" Caption="Member"/>
+      <Field Size="2" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="4" Type="5" name="date" Caption="Entry date"/>
+      <Field Size="1" Options="Normal,Loan" Type="2" name="type" Caption="Type"/>
+      <Field Size="4" Type="5" name="change" Caption="Change date"/>
+      <Field Size="2" Type="2" File="life.contractplan" name="contractplan" Caption="Plan"/>
+      <Field Size="4" Format="#####.##" Type="4" name="oldpremium" Caption="Old premium"/>
+      <Field Size="4" Format="#####.##" Type="4" name="newpremium" Caption="New premium"/>
+      <Field Size="4" Modify="1" Strict="1" Type="2" File="life.trans" name="trans" Caption="Transaction"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="planupgrade">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="change"/>
+      </Index>
+      <Index name="planupgrade[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="change"/>
+      </Index>
+      <Index name="planupgrade[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="change"/>
+      </Index>
+      <Index name="planupgrade[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="change"/>
+      </Index>
+   </Table>
+</xml>

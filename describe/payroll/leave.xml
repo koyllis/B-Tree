@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="payroll" Icon="$" DataHeader="1" Dynamic="1" Index="leave" name="Holidays">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Type" File="payroll.timedef" Size="4" Type="2" name="timedef"/>
+      <Field Caption="Year" Format="####" Size="2" Type="2" name="year"/>
+      <Field Caption="Additional" Total="1" Format="b" Size="1" Type="2" name="additional"/>
+      <Field Caption="Carried" Total="1" Format="#####.##" Size="4" Type="2" name="carry"/>
+      <Field Caption="Days" Total="1" Format="#####.##" Size="4" Type="2" name="days"/>
+      <Field Strict="1" Caption="Used" Total="1" Format="#####.##" Size="4" Type="2" name="used"/>
+      <Field Strict="1" Caption="Extra" Total="1" Format="#####.##" Size="4" Type="2" name="extra"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="leave">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="additional"/>
+      </Index>
+      <Index name="leave[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="additional"/>
+      </Index>
+      <Index name="leave[type]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="year"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="acqretu" System="old" ModifyStamp="0">
+      <Field Caption="Return date" Size="4" Type="5" name="qr_rdate"/>
+      <Field Caption="Customer" Format="u" Size="20" name="qr_code"/>
+      <Field Caption="Cheque date" Size="4" Type="5" name="qr_qdate"/>
+      <Field Caption="Cheque No." Format="########" Size="4" Type="2" name="qr_refer"/>
+      <Field Caption="Amount" Format="###,###.##" Size="4" Type="4" name="qr_amount"/>
+      <Field Format="u" name="qr_name"/>
+      <Field Caption="Telephone" Format="u" Size="10" name="qr_tele"/>
+      <Field Caption="Agent" Format="u" Size="8" name="qr_agent"/>
+      <Field Caption="Cash date" Size="4" Type="5" name="qr_cdate"/>
+      <Index name="acqretu">
+         <IndexEntry name="qr_rdate"/>
+         <IndexEntry name="qr_code"/>
+         <IndexEntry name="qr_qdate"/>
+         <IndexEntry name="qr_refer"/>
+      </Index>
+   </Table>
+</xml>

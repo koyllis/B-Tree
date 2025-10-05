@@ -1,0 +1,55 @@
+<xml>
+   <Table Static="1" Parent="parent" Child="name" Bookmark="1" System="accounting" SoftDelete="1" Icon="groups" Color="1" Report="Group" Index="group" name="Associates groups" Common="1">
+      <Field ReportWidth="20" Size="50"/>
+      <Field Caption="Debit/Credit" Format="#" Size="1" Type="2" Options="Debtor,Creditor" name="dc"/>
+      <Field Caption="Default account" Format="#######" File="accounting.chart" Size="4" Type="2" name="chart"/>
+      <Field Caption="Foreign" Format="b" Size="1" Type="2" name="foreign"/>
+      <Field Caption="Restrict" Format="b" Size="1" Type="2" name="restrict"/>
+      <Field Caption="Document" File="accounting.document" Size="4" Type="2" name="document"/>
+      <Field Caption="Copies" Format="##" Size="1" Type="2" name="copies"/>
+      <Field Caption="Link Group" File="accounting.group" Size="2" Type="2" name="link_group"/>
+      <Field Caption="Apply" Format="b" Size="2" Type="2" Options="Factors,Numbering,NoPoints,Agent,ExcludePDA,Supplier,Welcome,PrintBalance,AdminStatement,NoReceipt" name="apply"/>
+      <Field Caption="Document Lines" Size="1" Type="2" name="document_lines"/>
+      <Field Caption="Last bookmark" Size="4" Type="2" name="nextbookmark"/>
+      <Field Caption="Last number" Size="4" Type="2" name="lastnumber"/>
+      <Field Caption="Alias" Size="10" name="alias"/>
+      <Field Caption="Parent group" File="accounting.group" Size="4" Type="2" name="parent"/>
+      <Field Caption="Host group" File="system.hostgroup" Size="2" Type="2" name="hostgroup"/>
+      <Field Caption="Deactivate days" Format="###" Size="2" Type="2" name="deactivate"/>
+      <Field Caption="Minimum value" Format="#####" Size="8" Type="3" name="minimum"/>
+      <Field Caption="Points Multiplier" Format="#####" Size="2" Type="2" name="points"/>
+      <Field Caption="Max Monthly Sales" Format="#####,##" Size="8" Type="3" name="maxsales"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="group">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="group[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="group[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="group[group]">
+         <IndexEntry name="parent"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="group[hostgroup]">
+         <IndexEntry name="hostgroup"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="group[link_group]">
+         <IndexEntry name="link_group"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="group_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="noservice" System="pos">
+      <Field Size="4" Type="2" File="accounting.street" name="street" Caption="Street"/>
+      <Field Size="2" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="noservice">
+         <IndexEntry name="street"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="noservice[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="street"/>
+      </Index>
+   </Table>
+</xml>

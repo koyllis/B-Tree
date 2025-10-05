@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="recateg" ModifyStamp="0" System="old">
+      <Field Size="8" Format="u" Dim ="1" name="ca_categ" Caption="Category"/>
+      <Field Format="u" Dim ="1" name="ca_desc" Caption="Description"/>
+      <Field Size="8" Format="#####" Type="3" Dim ="1" name="ca_round" Caption="Round to the nearest"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="ca_vat" Caption="V.A.T. category"/>
+      <Index name="recateg">
+         <IndexEntry name="ca_categ"/>
+      </Index>
+   </Table>
+</xml>

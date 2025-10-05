@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="intypes" System="old" ModifyStamp="0">
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="id_inno" Caption="Ins. type"/>
+      <Field Format="u" Dim ="1" name="id_desc" Caption="Description"/>
+      <Field Size="1" Options=",,A,I" Format="u" Dim ="1" name="id_collect" Caption="Collection (Agent/Insurance)?"/>
+      <Field Dim ="1" name="id_refers" Caption="References"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="id_other" Caption="Other charge"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="id_rate" Caption="Other rate (%)"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="id_reother" Caption="Renewal charge"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="id_rerate" Caption="Renewal rate (%)"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="id_account" Caption="Affect accounts(Y) (Y/N)?"/>
+      <Index name="intypes">
+         <IndexEntry name="id_inno"/>
+      </Index>
+   </Table>
+</xml>

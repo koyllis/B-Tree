@@ -1,0 +1,66 @@
+<xml>
+   <Table System="accounting" SoftDelete="1" Icon="address3" EMail="email" Dynamic="1" Index="address" name="Addresses" Unordered="1" json_replicate="1">
+      <Field Caption="Business associates" Format="#######" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Address type" Size="1" Type="2" File="accounting.addresstype" name="type"/>
+      <Field Caption="Street" File="accounting.street" Size="4" Type="2" name="street"/>
+      <Field Caption="Address 1" Size="40" name="add1"/>
+      <Field Caption="Address 2" Size="40" name="add2"/>
+      <Field Caption="Address 3" Size="40" name="add3"/>
+      <Field Caption="Postal" Size="12" Type="1" name="zip"/>
+      <Field Caption="P.O.Box" Format="#####" Size="4" Type="2" name="pobox"/>
+      <Field Caption="Zip Box" Format="####" Size="4" Type="2" name="zipbox"/>
+      <Field Caption="Contact" Size="40" name="contact"/>
+      <Field Caption="Tel. (1)" Size="20" name="tel1"/>
+      <Field Caption="Tel. (2)" Size="20" name="tel2"/>
+      <Field Caption="Mobile" Size="20" name="mobile"/>
+      <Field Caption="E-mail" Size="64" name="email"/>
+      <Field Caption="Fax" Size="20" name="fax"/>
+      <Field Caption="Internet (www)" Size="60" name="internet"/>
+      <Field Caption="Building" Size="40" name="building"/>
+      <Field Caption="Flat" Size="5" name="flat"/>
+      <Field Caption="Floor" Size="5" name="floor"/>
+      <Field Caption="Street #" Size="5" name="street_no"/>
+      <Field Caption="Directrions" Size="120" name="directions"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index CRC64="1" name="address">
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="address[street]">
+         <IndexEntry name="street"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="address[street_no]">
+         <IndexEntry name="street"/>
+         <IndexEntry name="street_no"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="address_add1">
+         <IndexEntry name="add1"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="address_email">
+         <IndexEntry name="email"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="address_tel1">
+         <IndexEntry name="tel1"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="address_tel2">
+         <IndexEntry name="tel2"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="address[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,24 @@
+<xml>
+   <Table System="pos" Icon="auction" name="Minimum Stock">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Minimum" Format="quantity" Size="8" Type="3" name="minimum"/>
+      <Field Caption="Maximum" Format="quantity" Size="8" Type="3" name="maximum"/>
+      <Field Caption="Quantity" Format="quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="On Order" Format="quantity" Size="8" Type="3" name="onorder"/>
+      <Field Caption="To Order" Format="quantity" Size="8" Type="3" name="toorder"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="minimum">
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="minimum[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="minimum[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

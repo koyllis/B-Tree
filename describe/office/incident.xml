@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table AutoNumber="1" name="Incidents" System="office">
+      <Field Size="4" Type="2" name="reference" Caption="Reference"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="1" Options="Corrective,Preventive,Complaint" Type="2" name="type" Caption="Type"/>
+      <Field Size="1" Options="HRM,Deadline,Equipment,Process,Client" Type="2" name="category" Caption="Category"/>
+      <Field Size="120" name="description" Caption="Description"/>
+      <Field Size="120" name="action" Caption="Actions"/>
+      <Field Size="120" name="persons" Caption="Persons"/>
+      <Field Size="4" Type="5" name="deadline" Caption="Deadline"/>
+      <Field Size="120" name="outcome" Caption="Outcome"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="incident">
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

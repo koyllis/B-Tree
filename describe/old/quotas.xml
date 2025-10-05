@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="old" name="quotas" ModifyStamp="0">
+      <Field Caption="Code" Format="u" Size="8" name="q_code"/>
+      <Field Caption="Item" Format="u" Size="12" name="q_item"/>
+      <Field Caption="Supplier" Format="u" Size="8" name="q_supp"/>
+      <Field Caption="Price code" Format="u" Size="2" name="q_pcode"/>
+      <Field Caption="Quantity limit" Format="###,###.##" Size="8" Type="3" name="q_quant"/>
+      <Field Caption="Quantity used" Format="###,###.##" Size="8" Type="3" name="q_qused"/>
+      <Field Caption="From date" Size="4" Type="5" name="q_frdate"/>
+      <Field Caption="To date" Size="4" Type="5" name="q_todate"/>
+      <Field Caption="Last sale" Size="4" Type="5" name="q_last"/>
+      <Field Caption="Discount(%)" Format="###.##" Size="8" Type="3" name="q_disc"/>
+      <Field Caption="V.A.T.(%)" Format="###.##" Size="8" Type="3" name="q_vat"/>
+      <Field Caption="Free limit" Format="####.##" Size="8" Type="3" name="q_flimi"/>
+      <Field Caption="Free quant." Format="####.##" Size="8" Type="3" name="q_freeq"/>
+      <Field Caption="Free item" Format="u" Size="12" name="q_fitem"/>
+      <Index name="quotas">
+         <IndexEntry name="q_code"/>
+         <IndexEntry name="q_item"/>
+         <IndexEntry name="q_supp"/>
+      </Index>
+   </Table>
+</xml>

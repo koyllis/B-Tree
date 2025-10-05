@@ -1,0 +1,52 @@
+<xml>
+   <Table AutoNumber="1" DeleteChildren="1" System="hotel" SoftDelete="1" Icon="trans" Dynamic="1" CanDelete="0" name="Reservations">
+      <Field Strict="1" Caption="Reg. No." Format="######" Size="4" Type="2" name="reference" Modify="1"/>
+      <Field Caption="Check-in" Size="4" Type="5" name="checkin"/>
+      <Field Caption="Check-out" Size="4" Type="5" name="checkout"/>
+      <Field Caption="Time in" Size="2" Type="5" name="timein"/>
+      <Field Caption="Time out" Size="2" Type="5" name="timeout"/>
+      <Field Caption="Room" File="hotel.room" Size="2" Type="2" name="room"/>
+      <Field Caption="Customer" File="accounting.people" Size="2" Force="1" Type="2" name="people" Dll="1"/>
+      <Field Caption="Agent" File="accounting.people" Size="2" Type="2" name="agent"/>
+      <Field Caption="Source" File="hotel.source" Size="2" Type="2" name="source"/>
+      <Field Caption="Terms" Size="1" Options="Accomodation Only,Bed And Breakfast,Half Board,Full Board" Force="1" Type="2" name="terms"/>
+      <Field Caption="Persons" Format="##" Size="1" Force="1" Type="2" name="persons"/>
+      <Field Caption="Daily charge" Format="###.##" Size="4" Type="4" name="charge"/>
+      <Field Caption="Note" name="notes"/>
+      <Field Strict="1" Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="registration">
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="registration[agent]">
+         <IndexEntry name="agent"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="registration[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="registration[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="registration[room]">
+         <IndexEntry name="room"/>
+         <IndexEntry name="checkin"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="registration[source]">
+         <IndexEntry name="source"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="registration_checkin">
+         <IndexEntry name="checkin"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="registration_checkout">
+         <IndexEntry name="checkout"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

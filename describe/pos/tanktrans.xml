@@ -1,0 +1,46 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Parent="fromtank" Child="tank" System="pos" SoftDelete="1" Icon="transfers" Dynamic="1" CanDelete="0" name="tanktrans">
+      <Field Caption="To tank" File="pos.tank" Size="2" Type="2" name="tank"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Strict="1" Caption="Number" Format="######" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Item" File="pos.item" Size="4" Force="1" Type="2" name="item"/>
+      <Field Caption="Litres" Format="######" Size="4" Force="1" Type="2" name="quantity"/>
+      <Field Caption="Mpome" Format="###.##" Size="4" Type="8" name="mpome"/>
+      <Field Caption="Temperature" Format="##" Size="2" Type="2" name="temp"/>
+      <Field Caption="Note" Size="50" name="note"/>
+      <Field Caption="From tank" File="pos.tank" Size="2" Type="2" name="fromtank"/>
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="tanktrans">
+         <IndexEntry name="tank"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="tanktrans[fromtank]">
+         <IndexEntry name="fromtank"/>
+         <IndexEntry name="tank"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="tanktrans[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="tank"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="tanktrans[paralavi]">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="tanktrans[tank]">
+         <IndexEntry name="tank"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="tanktrans[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="tank"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" Icon="balance2" Dynamic="1" Index="recbal" name="Reconciliation balances">
+      <Field Caption="Account" Format="#######" File="accounting.chart" Size="4" Force="1" Type="2" name="chart"/>
+      <Field Caption="Month" Size="4" Force="1" Type="5" name="month"/>
+      <Field Caption="Bank balance" Total="1" Format="##########.##" Size="8" Type="4" name="bank"/>
+      <Field Caption="Unpresented" Total="1" Format="##########.##" Size="8" Type="4" name="difference"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="recbal">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="month"/>
+      </Index>
+   </Table>
+</xml>

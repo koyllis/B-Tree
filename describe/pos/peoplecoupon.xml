@@ -1,0 +1,15 @@
+<xml>
+   <Table System="pos" name="peoplecoupon">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" Force="1" name="people"/>
+      <Field Caption="Coupon" File="pos.coupontype" Size="2" Type="2" Force="1" name="coupontype"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peoplecoupon">
+         <IndexEntry name="people"/>
+         <IndexEntry name="coupontype"/>
+      </Index>
+      <Index name="peoplecoupon[coupontype]">
+         <IndexEntry name="coupontype"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

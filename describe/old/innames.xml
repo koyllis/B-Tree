@@ -1,0 +1,32 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="innames" System="old">
+      <Field Size="2" Type="2" name="pm_num" Caption="Number"/>
+      <Field Size="25" name="pm_surname" Caption="Surname"/>
+      <Field Size="25" name="pm_name" Caption="Name"/>
+      <Field Size="4" Type="2" name="pm_id" Caption="ID"/>
+      <Field Size="4" Type="2" name="pm_si" Caption="SI"/>
+      <Field Size="2" Type="2" name="pm_conum" Caption="Company"/>
+      <Field Size="1" name="pm_sex" Caption="Sex"/>
+      <Field Size="4" Type="5" name="pm_birth" Caption="Birtrhday"/>
+      <Field Size="4" Type="5" name="pm_date" Caption="Date"/>
+      <Field Size="4" Type="5" name="pm_death" Caption="Death"/>
+      <Field Size="12" name="pm_acno" Caption="Account"/>
+      <Field Size="4" Type="2" name="pm_mbno" Caption="Member"/>
+      <Field Size="2" Type="2" name="pm_plno" Caption="Plan"/>
+      <Field Size="4" Type="4" name="pm_prem" Caption="Premium"/>
+      <Field Size="4" Type="4" name="pm_paya" Caption="Payable"/>
+      <Field Size="4" Type="4" name="pm_netp" Caption="Net premium"/>
+      <Field Size="4" Type="4" name="pm_extr" Caption="Extra"/>
+      <Field Size="4" Type="4" name="pm_cover" Caption="Cover"/>
+      <Field Size="4" Type="2" name="pm_number" Caption="Number"/>
+      <Field Size="4" Type="5" name="pm_record" Caption="Record"/>
+      <Field Size="20" name="pm_future" Caption="future"/>
+      <Index name="innames">
+         <IndexEntry name="pm_num"/>
+         <IndexEntry name="pm_surname"/>
+         <IndexEntry name="pm_name"/>
+         <IndexEntry name="pm_id"/>
+         <IndexEntry name="pm_si"/>
+      </Index>
+   </Table>
+</xml>

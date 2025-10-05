@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="globe" name="Nationality" System="accounting" Bookmark="1">
+      <Field Size="50" name="code" Caption="Nationality"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Field Hide="1" Size="16" System="1" name="@bookmark" Caption="Bookmark"/>
+      <Index name="nationality">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index Force="1" name="nationality_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

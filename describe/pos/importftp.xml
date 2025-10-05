@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" name="Ftp Import Log" CreateStamp="1" UserStamp="1">
+      <Field Caption="Host" File="system.host" Size="2" Type="2" name="host"/>
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="File name"/>
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="importftp">
+         <IndexEntry name="host"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="importftp[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="host"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="importftp[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="host"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

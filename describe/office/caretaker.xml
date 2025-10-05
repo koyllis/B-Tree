@@ -1,0 +1,9 @@
+<xml>
+   <Table System="office" name="Caretakers">
+      <Field/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="caretaker">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

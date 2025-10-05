@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="tsrecep" System="old" ModifyStamp="0">
+      <Field Caption="Receipt No." Format="###" Size="1" Type="2" name="r_rec"/>
+      <Field Format="u" Size="20" name="r_name"/>
+      <Field Caption="Cash/Install/Maint(C) (C/I/M)?" Format="u" Size="1" Options=",,C,I,M" name="r_cash"/>
+      <Field Caption="Interest(%)" Format="###.##" Size="8" Type="3" name="r_rate"/>
+      <Field Caption="Account" Format="u" Size="6" name="r_account"/>
+      <Index name="tsrecep">
+         <IndexEntry name="r_rec"/>
+      </Index>
+   </Table>
+</xml>

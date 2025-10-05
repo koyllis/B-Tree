@@ -1,0 +1,42 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Dynamic="1" ChainInsert="office|machserv" name="Transaction Cost" System="office">
+      <Field Size="4" Force="1" Type="2" File="office.machtrans" name="machtrans" Caption="Transaction"/>
+      <Field Size="2" Force="1" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="2" Force="1" Type="2" File="office.staff" name="staff" Caption="Staff"/>
+      <Field Size="1" Format="b" Type="2" name="daily" Caption="Daily charge"/>
+      <Field Size="1" Format="###" Type="2" name="hours" Caption="Hours"/>
+      <Field Size="1" Format="###" Type="2" name="overtime" Caption="Overtime"/>
+      <Field Size="1" Format="###" Type="2" name="machours" Caption="Machine hours"/>
+      <Field Size="8" Format="####.###" Type="3" name="quantity" Caption="Quantity"/>
+      <Field Size="4" Type="2" File="accounting.people" name="supplier" Caption="Supplier"/>
+      <Field Size="4" Format="####.##" Type="4" name="tranportation" Caption="Transportation"/>
+      <Field Size="4" Format="####.##" Strict="1" Type="4" name="fuel" Caption="Fuel cost"/>
+      <Field Size="4" Format="####.##" Strict="1" Type="4" name="labour" Caption="Labour cost"/>
+      <Field Size="4" Format="####.##" Strict="1" Type="4" name="transport" Caption="Transport"/>
+      <Field Size="4" Format="####.##" Strict="1" Type="4" name="material" Caption="Material"/>
+      <Field Size="4" Format="####.##" Strict="1" Type="4" name="charge" Caption="Our charge"/>
+      <Field Size="4" Format="####.##" Strict="1" Type="4" name="other" Caption="Other charge"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="machcost">
+         <IndexEntry name="machtrans"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="machcost[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="machtrans"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="machcost[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="machtrans"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="machcost[supplier]">
+         <IndexEntry name="supplier"/>
+         <IndexEntry name="machtrans"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="staff"/>
+      </Index>
+   </Table>
+</xml>

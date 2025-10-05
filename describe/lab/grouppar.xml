@@ -1,0 +1,60 @@
+<xml>
+   <Table System="lab" Icon="defrag2" name="Parameters">
+      <Field Caption="Group" File="lab.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Category" File="lab.category" Size="2" Type="2" Tip="1" name="category"/>
+      <Field Caption="Parameter" File="pos.item" Size="4" Type="2" Tip="1" name="item"/>
+      <Field Caption="Method" File="lab.method" Size="4" Type="2" name="method"/>
+      <Field Caption="Range" Size="20" name="range"/>
+      <Field Caption="Mode" Size="1" Type="2" Options="Absent,Present" name="mode"/>
+      <Field Caption="Hardly acceptable" File="lab.calculation" Size="2" Type="2" name="calc1"/>
+      <Field Caption="Under-estimated" File="lab.calculation" Size="2" Type="2" name="calc2"/>
+      <Field Caption="Inapropriate" File="lab.calculation" Size="2" Type="2" name="calc3"/>
+      <Field Caption="Design average" File="lab.calculation" Size="2" Type="2" name="calc4"/>
+      <Field Caption="Uncertainty" Format="####.###" Size="8" Type="3" name="uncert"/>
+      <Field Caption="LD" Format="####.###" Size="8" Type="3" name="ld"/>
+      <Field Caption="LQ" Format="####.###" Size="8" Type="3" name="lq"/>
+      <Field Caption="Option" Size="1" Type="2" Format="b" Options="ZeroPrice" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="grouppar">
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="grouppar[calc1]">
+         <IndexEntry name="calc1"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="grouppar[calc2]">
+         <IndexEntry name="calc2"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="grouppar[calc3]">
+         <IndexEntry name="calc3"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="grouppar[calc4]">
+         <IndexEntry name="calc4"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="grouppar[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="grouppar[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="grouppar[method]">
+         <IndexEntry name="method"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

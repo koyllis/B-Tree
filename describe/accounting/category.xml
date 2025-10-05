@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Bookmark="1" System="accounting" Short="Category" name="Category">
+      <Field/>
+      <Field Caption="Options" Format="b" Size="2" Options="SMSuse" Type="2" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="category">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="category_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

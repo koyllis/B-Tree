@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="qgroup" System="pos">
+      <Field/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Index name="qgroup">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

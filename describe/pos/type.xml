@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="filesys2" name="Types" System="pos" Bookmark="1">
+      <Field/>
+      <Field Size="1" Type="2" name="seq" Caption="Sequence"/>
+      <Field Size="2" Type="2" name="type" File="pos.type" Caption="Move to"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Field Hide="1" Size="16" System="1" name="@bookmark" Caption="Bookmark"/>
+      <Index name="type">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="type_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="type[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

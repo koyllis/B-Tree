@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="factory" name="Production Stations">
+      <Field/>
+      <Field Caption="WIP days" Format="##" Size="1" Type="2" name="days"/>
+      <Field Caption="Work minutes" Format="###" Size="2" Type="2" name="workminutes"/>
+      <Field Caption="Capacity" Format="####.##" Size="4" Type="8" name="capacity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="station">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

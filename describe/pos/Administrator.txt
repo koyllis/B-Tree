@@ -1,0 +1,12 @@
+12:45:27 09/04/2002 hIcon exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\ShortCutMenuBar.cpp, line:270
+12:45:29 09/04/2002 hIcon exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\ShortCutMenuBar.cpp, line:270
+12:45:29 09/04/2002 hIcon exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\ShortCutMenuBar.cpp, line:270
+12:45:30 09/04/2002 hIcon exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\ShortCutMenuBar.cpp, line:270
+12:45:30 09/04/2002 hIcon exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\ShortCutMenuBar.cpp, line:270
+12:45:31 09/04/2002 hIcon exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\ShortCutMenuBar.cpp, line:270
+14:24:16 09/04/2002 hIcon exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\ShortCutMenuBar.cpp, line:270
+14:25:25 09/04/2002 hIcon exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\ShortCutMenuBar.cpp, line:270
+14:27:01 09/04/2002 hIcon exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\ShortCutMenuBar.cpp, line:270
+11:13:17 17/10/2004 false exe:c:\solution\bin\bbD.exe file:c:\solution\core\btrvcore\btrieve.cpp, line:2299
+14:18:14 20/11/2006 Could not obtain selected cells!
+14:19:10 20/11/2006 Could not obtain selected cells!

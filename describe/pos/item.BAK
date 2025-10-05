@@ -1,0 +1,258 @@
+<xml>
+   <Table PDA="1" Repository="1" Bookmark="1" Toolbar="1" System="pos" SoftDelete="1" Immutable="1" Icon="item" Export="@modify_stamp" Color="1" Dynamic="1" Short="Item" name="Items" Merge="1" FavoriteMatch="pos.itemcolor pos.transdet pos.quotas" CreateStamp="1" Dataset="1" Common="1">
+      <Field Caption="Code" Size="20" name="code" Distinct="1" Dissect="1" Tip="1"/>
+      <Field Size="80" PrintWrap="1" Distinct="1" Tip="1"/>
+      <Field Caption="Retail price" Format="price" Size="8" Type="3" name="price" Next="_prices" Tip="1"/>
+      <Field Caption="Price with VAT" Format="price" Size="8" Type="3" name="pricewith"/>
+      <Field Caption="Special price" Format="price" Size="8" Type="3" name="special"/>
+      <Field Caption="Web price" Format="price" Size="8" Type="3" name="webprice" Distinct="1"/>
+      <Field Caption="Part No." name="partno" Distinct="1" Dissect="1"/>
+      <Field Caption="Barcode" Size="25" name="barcode"/>
+      <Field Caption="Sales Unit" Administrator="1" Size="2" Type="2" name="sale_unit" Modify="1"/>
+      <Field Caption="Foreign price" Format="price" Administrator="1" Size="8" Type="3" name="foreign" Modify="1"/>
+      <Field Caption="Net cost" Format="#####.######" Importable="0" Administrator="1" Size="8" Negative="0" Type="3" name="cost"/>
+      <Field Caption="Last cost" Format="price" Importable="0" Administrator="1" Negative="0" Size="8" Type="3" name="last_cost" Modify="1"/>
+      <Field Caption="Package cost" Format="price" Size="8" Negative="0" Type="3" name="package_cost" Modify="1"/>
+      <Field Caption="Average cost" Strict="1" Format="price" Administrator="1" Negative="0" Size="8" Type="3" name="average_cost" Modify="1"/>
+      <Field Caption="Profit margin(%)" Format="###.##" Administrator="1" Negative="0" Size="8" Type="3" name="profit_margin"/>
+      <Field Caption="Profit(%)" Format="###.##" Administrator="1" Size="8" Negative="0" Type="3" name="profit"/>
+      <Field Caption="Group" File="pos.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" Tip="1" name="location" Distinct="1"/>
+      <Field Caption="Category" File="pos.category" Size="2" Negative="0" Summary="0" Type="2" Force="1" Tip="1" name="category" Distinct="1"/>
+      <Field Caption="Brand" File="pos.brand" Size="2" Type="2" name="brand" Modify="1"/>
+      <Field Caption="Unit" File="pos.unit" Size="2" Type="2" name="unit" Distinct="1"/>
+      <Field Caption="Purchase unit" File="pos.unit" Size="2" Type="2" name="supplier_unit"/>
+      <Field Caption="Supplier" File="accounting.people" Importable="0" Size="4" Type="2" name="people_supplier"/>
+      <Field Caption="Other supplier" File="pos.supplier" Size="2" Type="2" name="supplier"/>
+      <Field Caption="VAT (sales)" File="accounting.vat" Size="1" Type="2" name="vat"/>
+      <Field Caption="VAT (purchases)" File="accounting.vat" Size="1" Type="2" name="purchasevat"/>
+      <Field Caption="Import VAT" File="accounting.vat" Size="1" Type="2" name="importvat"/>
+      <Field Caption="Season" File="pos.season" Size="2" Type="2" name="season" Modify="1"/>
+      <Field Caption="Origin" File="accounting.area" Size="2" Type="2" name="area" Modify="1"/>
+      <Field Caption="Size Group" File="pos.sizegroup" Size="2" Type="2" SubSystem="clothing" name="sizegroup"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" SubSystem="clothing" name="color" Modify="1"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" SubSystem="clothing" name="size" Modify="1"/>
+      <Field Caption="Design" File="pos.design" Size="2" Type="2" name="design" Modify="1"/>
+      <Field Caption="Box type" File="pos.boxtype" Size="2" Type="2" name="boxtype" Modify="1"/>
+      <Field Caption="Channel" File="pos.channel" Size="2" Type="2" SubSystem="clothing" name="channel" Modify="1"/>
+      <Field Caption="Product Line" File="pos.productline" Size="2" Type="2" SubSystem="clothing" name="productline" Modify="1"/>
+      <Field Caption="Composition" File="pos.composition" Size="2" Type="2" SubSystem="clothing" name="material" Modify="1"/>
+      <Field Caption="Style" File="pos.style" Size="2" Type="2" SubSystem="clothing" name="style" Modify="1"/>
+      <Field Caption="Product type" File="pos.producttype" Size="2" Type="2" SubSystem="clothing" name="producttype" Modify="1"/>
+      <Field Caption="Description key" File="pos.itemdesc" Size="4" Type="2" name="itemdesc" Modify="1"/>
+      <Field Caption="Quantity" Format="quantity" Size="8" Type="3" SubSystem="clothing" name="quantity" Modify="1"/>
+      <Field Caption="Collection" Format="####" Size="2" Type="2" SubSystem="clothing" name="collection" Modify="1"/>
+      <Field Caption="Points multiplier" Format="##.####" Size="4" Type="8" name="points" Modify="1"/>
+      <Field Caption="Short description" name="short" Modify="1"/>
+      <Field Caption="Additional Description" Size="60" name="desc2" Modify="1"/>
+      <Field Caption="Properties" Size="80" name="properties" Modify="1"/>
+      <Field Caption="Composition" Size="80" name="composition" Modify="1"/>
+      <Field Caption="Web date" Size="4" Type="5" name="webdate" Modify="1"/>
+      <Field Caption="Width" Size="10" name="width" Modify="1"/>
+      <Field Caption="Thickness" Size="20" name="thickness" Modify="1"/>
+      <Field Caption="Surcharge%" Format="##.###" Size="2" Type="2" name="surcharge" Modify="1"/>
+      <Field Caption="Weight" Format="######,######" Size="8" Type="3" name="weight" Modify="1"/>
+      <Field Caption="Length" Format="####.###" Size="8" Type="3" name="length" Modify="1"/>
+      <Field Caption="Decimals" Round="0" Size="2" Type="2" name="decimals" Modify="1" Distinct="1"/>
+      <Field Caption="Last costing price" Round="0" Format="####.###" Size="8" Type="3" name="last_costing" Modify="1" Distinct="1"/>
+      <Field Caption="Sequence" ReportWidth="6" Size="2" Type="2" name="seq" Modify="1"/>
+      <Field Caption="Discount%" Format="##.##" Size="4" Type="8" name="discount" Modify="1"/>
+      <Field Caption="Yield%" Format="##.##" Size="4" Type="8" SubSystem="touch" name="yield" Modify="1"/>
+      <Field Caption="Waste%" Format="##.##" Size="4" Type="8" SubSystem="touch" name="waste" Modify="1"/>
+      <Field Caption="Toppings" Size="1" Type="2" SubSystem="touch" name="toppings" Modify="1"/>
+      <Field Caption="Additives" Size="1" Type="2" name="add" Modify="1"/>
+      <Field Caption="Deductible" Size="1" Type="2" name="deduct" Modify="1"/>
+      <Field Caption="Stock balance" Size="1" Type="2" Options="Zero,Actual" name="balance" Modify="1"/>
+      <Field Caption="Stock take" Format="b" Size="1" Type="2" name="stock" Modify="1"/>
+      <Field Caption="No receipt discount" Format="b" Size="1" Type="2" name="nodiscount" Modify="1"/>
+      <Field Caption="Modifier" Format="b" Size="1" Type="2" name="modifier" Modify="1"/>
+      <Field Caption="Cost update" Format="b" Size="1" Type="2" name="update" Modify="1"/>
+      <Field Caption="Script" Size="32" name="script" Modify="1"/>
+      <Field Caption="Quantity Unaffected" Format="b" Size="1" Type="2" name="noquantity" Modify="1"/>
+      <Field Caption="Select" Format="b" Size="1" Type="2" name="select" Modify="1"/>
+      <Field Caption="Pound" Format="b" Size="1" Type="2" name="pound" Modify="1"/>
+      <Field Caption="Next Item" File="pos.item" Size="2" Type="2" name="next_item" Modify="1"/>
+      <Field Caption="Color 2" File="pos.color" Size="2" Type="2" name="color2" Modify="1"/>
+      <Field Caption="Group Item" File="pos.item" Size="2" Type="2" name="group_item" Modify="1"/>
+      <Field Caption="Stock item" File="pos.item" Size="2" Type="2" name="redirect_item" Modify="1"/>
+      <Field Caption="Price Link Item" File="pos.item" Size="2" Type="2" name="pricelink_item" Modify="1"/>
+      <Field Caption="Price Link Factor" Format="#####.###" Size="8" Type="3" name="pricelink_factor" Modify="1"/>
+      <Field Caption="Color 1" File="pos.color" Size="2" Type="2" name="color1" Modify="1"/>
+      <Field Caption="Offer Category" File="pos.category" Size="2" Type="2" Tip="1" name="offer_category" Modify="1" Distinct="1"/>
+      <Field Caption="Factor" Format="##.###" Size="4" Type="8" name="factor" Modify="1"/>
+      <Field Caption="Non Serial" Format="b" Size="1" Type="2" name="nonserial" Modify="1"/>
+      <Field Caption="Special calculation" Size="1" Options="Days,Weeks,Months" Type="2" name="pos_calc"/>
+      <Field Caption="Value Type" Size="1" Type="2" Options="Value,weight" name="value_type"/>
+      <Field Caption="To barcode" Size="1" Type="2" Options="Multiple,Single" name="tobarcode" Modify="1"/>
+      <Field Caption="Options" Format="b" Size="4" Type="2" Options="NoDiscount,Reallocate,IgnorePrice,NoPoints,NoAllocation,NoQuotas,NoBalance,Featured,InputPrice,AskNotes,Monthly,DiscountOnPrice,NoService,NoDiscountPercent,Gift,SpecialOccasion,Clearance,ForcePrice,ForcePiece,NoUpdateOnImport,NoWebDiscount,Service,SetPrice,ForbidDiscount" name="option" Modify="1"/>
+      <Field Caption="Maximum discount" Format="###.##" Size="4" Type="8" name="maxdisc" Modify="1"/>
+      <Field Caption="Limit" Format="######.##" Size="8" Type="3" name="limit" Modify="1" Distinct="1"/>
+      <Field Caption="Season / Collection" name="season_collection" Modify="1"/>
+      <Field Caption="Station" File="system.user" Size="2" Type="2" name="user" Modify="1"/>
+      <Field Strict="1" Caption="Average quantity" Size="8" Type="3" name="average_quantity" Modify="1"/>
+      <Field Strict="1" Caption="Average total" Size="8" Type="3" name="average_total" Modify="1"/>
+      <Field Caption="Modified" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete"/>
+      <Index name="item" CRC64="1">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[boxtype]">
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[brand]" CRC64="1">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index CRC64="1" name="item[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[channel]">
+         <IndexEntry name="channel"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[color1]">
+         <IndexEntry name="color1"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[color2]">
+         <IndexEntry name="color2"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index CRC64="1" name="item[design]">
+         <IndexEntry name="design"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[group_item]">
+         <IndexEntry name="group_item"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[importvat]">
+         <IndexEntry name="importvat"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[itemdesc]">
+         <IndexEntry name="itemdesc"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[material]">
+         <IndexEntry name="material"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[next_item]">
+         <IndexEntry name="next_item"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[offer_category]">
+         <IndexEntry name="offer_category"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index CRC64="1" name="item[people_supplier]">
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[pricelink_item]">
+         <IndexEntry name="pricelink_item"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[productline]" CRC64="1">
+         <IndexEntry name="productline"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[producttype]"  CRC64="1">
+         <IndexEntry name="producttype"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[purchasevat]">
+         <IndexEntry name="purchasevat"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[redirect_item]">
+         <IndexEntry name="redirect_item"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[season]">
+         <IndexEntry name="season"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[style]">
+         <IndexEntry name="style"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[supplier]">
+         <IndexEntry name="supplier"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[supplier_unit]">
+         <IndexEntry name="supplier_unit"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[unit]">
+         <IndexEntry name="unit"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index Force="1" name="item_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item_barcode">
+         <IndexEntry name="barcode"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item_desc2">
+         <IndexEntry name="desc2"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item_group">
+         <IndexEntry name="group"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item_partno">
+         <IndexEntry name="partno"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="item_seq">
+         <IndexEntry name="seq"/>
+         <IndexEntry name="code"/>
+      </Index>
+
+      <Index name="item_modifystamp">
+         <IndexEntry name="@modify_stamp"/>
+         <IndexEntry name="code"/>
+      </Index>
+ 
+   </Table>
+</xml>

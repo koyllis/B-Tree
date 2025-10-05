@@ -1,0 +1,2 @@
+16:50:53 16/04/2002 m_pTable exe:C:\projects\bin\bb.exe file:C:\projects\Core\BtrvCore\UGIndexMan.cpp, line:94
+16:51:24 16/04/2002 m_pTable exe:C:\projects\bin\bb.exe file:C:\projects\Core\BtrvCore\UGIndexMan.cpp, line:94

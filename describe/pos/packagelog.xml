@@ -1,0 +1,32 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" CanDelete="0" name="packagelog" UserStamp="1">
+      <Field Caption="Package" File="pos.package" Size="4" Type="2" name="package"/>
+      <Field Caption="Date" Size="8" Auto="1" Type="5" name="date"/>
+      <Field Caption="Route group" File="accounting.people" Size="4" Type="2" name="people_group"/>
+      <Field Caption="Category" File="accounting.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Package lines" Size="2" Type="2" name="lines"/>
+      <Field Caption="New sub-quotas" Size="2" Type="2" name="new"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index name="packagelog">
+         <IndexEntry name="package"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="packagelog[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="package"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="packagelog[people_group]">
+         <IndexEntry name="people_group"/>
+         <IndexEntry name="package"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="packagelog[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="package"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

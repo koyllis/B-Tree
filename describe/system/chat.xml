@@ -1,0 +1,15 @@
+<xml>
+   <Table System="system" name="Chat" Root="1" Audit="0" DeleteChildren="1" TextAnalysis="0" SoftDelete="1">
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Date" Size="8" Type="9" name="date"/>
+      <Field Caption="Title" Size="64" name="title"/>
+      <Field Caption="SoftDelete" Size="1" Type="2" name="@delete" Format="b" Hide="1" System="1" />
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+
+      <Index name="chat" Large="1">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="title"/>
+      </Index>
+   </Table>
+</xml>

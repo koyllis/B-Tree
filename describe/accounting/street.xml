@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" SoftDelete="1" Icon="address" name="Streets">
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Address" Size="60" name="address" Distinct="1"/>
+      <Field Caption="Zip code" Format="######" Size="4" Type="2" name="zip"/>
+      <Field Caption="Grid" Size="3" name="grid"/>
+      <Field Caption="From number" Size="5" name="from"/>
+      <Field Caption="To number" Size="5" name="to"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index CRC64="1" name="street">
+         <IndexEntry name="area"/>
+         <IndexEntry name="address"/>
+      </Index>
+      <Index name="street_address">
+         <IndexEntry name="address"/>
+         <IndexEntry name="area"/>
+      </Index>
+      <Index CRC64="1" name="street_ex">
+         <IndexEntry name="area"/>
+         <IndexEntry name="address"/>
+         <IndexEntry name="grid"/>
+      </Index>
+      <Index name="street_grid">
+         <IndexEntry name="grid"/>
+         <IndexEntry name="area"/>
+         <IndexEntry name="address"/>
+      </Index>
+      <Index CRC64="1" name="street_zip">
+         <IndexEntry name="zip"/>
+         <IndexEntry name="area"/>
+         <IndexEntry name="address"/>
+      </Index>
+   </Table>
+</xml>

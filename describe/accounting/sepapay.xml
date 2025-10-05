@@ -1,0 +1,57 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="accounting" CanDelete="0" Icon="sepa" CreateStamp="1" name="SEPA Payments" UserStamp="1">
+      <Field Caption="Issue date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Bank" File="accounting.bank" Size="2" Force="1" Type="2" name="bank"/>
+      <Field Caption="Reference" Size="4" Force="1" Type="2" name="reference"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Account" File="accounting.chart" Size="2" Type="2" name="chart"/>
+      <Field Caption="IBAN" File="accounting.iban" Size="2" Type="2" name="iban"/>
+      <Field Caption="Duedate" Size="4" Type="5" name="duedate"/>
+      <Field Caption="Amount" Format="######.##" Size="4" Force="1" Type="4" name="amount"/>
+      <Field Caption="Description" Size="50" name="description"/>
+
+      <Field Caption="Status" Size="60" name="status"/>
+
+      <Field Strict="1" Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Strict="1" Caption="Batch" Size="4" Type="2" name="batch" Modify="1"/>
+      <Field Strict="1" Caption="Revolut result id" Size="36" Type="1" name="rev_result_id" Modify="1"/>
+
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="sepapay">
+         <IndexEntry name="date"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="sepapay[bank]">
+         <IndexEntry name="bank"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="sepapay[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="sepapay[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="sepapay[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="sepapay[iban]">
+         <IndexEntry name="iban"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="bank"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

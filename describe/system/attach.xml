@@ -1,0 +1,22 @@
+<xml>
+   <Table System="system" name="attach" Root="1" Unordered="1" Audit="0" DeleteChildren="1" TextAnalysis="0">
+      <Field Caption="Company" File="system.master" Size="2" Type="2" name="master"/>
+      <Field Caption="system" Size="32" name="system"/>
+      <Field Caption="file" Size="32" name="file"/>
+      <Field Caption="Shard" Size="1" Type="2" name="shard"/>
+      <Field Caption="Record" Size="4" Type="2" name="record"/>
+      <Field Caption="Attachment" Size="128" name="attachment"/>
+
+      <Field Caption="Size" Size="4" Type="2" name="size"/>
+      <Field Caption="zip" Size="1" Type="2" Format="b" name="zip"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="attach" Large="1">
+         <IndexEntry name="master"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="file"/>
+         <IndexEntry name="shard"/>
+         <IndexEntry name="record"/>
+         <IndexEntry name="attachment"/>
+      </Index>
+   </Table>
+</xml>

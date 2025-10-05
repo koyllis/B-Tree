@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="office" Icon="calendr1" name="Tasks">
+      <Field Caption="Minutes" File="office.minutes" Size="4" Type="2" Force="1" name="minutes"/>
+      <Field Caption="Line" Size="2" Force="1" Type="2" name="line"/>
+      <Field Caption="Description" Size="100" Force="1" name="description"/>
+      <Field Caption="Staff" File="office.staff" Size="4" Type="2" Force="1" name="staff"/>
+      <Field Caption="Remider" Size="4" Type="5" name="reminder"/>
+      <Field Caption="Completed" Size="4" Type="5" name="completed" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="minutestodo">
+         <IndexEntry name="minutes"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="minutestodo[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="minutes"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="prcodes" System="old">
+      <Field Size="2" Format="u" name="ro_pcode" Caption="Price code"/>
+      <Field Size="10" Format="u" name="ro_desc" Caption="Description"/>
+      <Field Size="1" Options="R,C,D,I" Format="u" name="ro_costrel" Caption="Cost base (R,C,D,I)"/>
+      <Field Size="1" Options=",,L,F" Format="u" name="ro_lf" Caption="Local/Foreign price"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="ro_import" Caption="Include import charges (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="ro_clear" Caption="Include clearing charges (Y/N)?"/>
+      <Field Size="1" Options=",,L,D,A" Format="u" name="ro_cost" Caption="Sales update(L) (Latest/Duty free/Average)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="ro_vat" Caption="Include V.A.T.(N) (Y/N)?"/>
+      <Index name="prcodes">
+         <IndexEntry name="ro_pcode"/>
+      </Index>
+   </Table>
+</xml>

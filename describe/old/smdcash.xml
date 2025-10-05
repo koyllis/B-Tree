@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="smdcash" System="old" ModifyStamp="0">
+      <Field Caption="Date" Size="4" Type="5" name="cd_date"/>
+      <Field Caption="Loc" Size="1" Type="2" name="cd_loc"/>
+      <Field Caption="Cashier" Size="1" Type="2" name="cd_cash"/>
+      <Field Caption="Time" Size="4" Type="4" name="cd_time"/>
+      <Field Caption="Terminal" Size="6" name="cd_ttyno"/>
+      <Field Caption="Opening" Size="4" Type="4" name="cd_open"/>
+      <Field Caption="Sales" Size="4" Type="4" name="cd_sales"/>
+      <Field Caption="Credit" Size="4" Type="4" name="cd_credi"/>
+      <Field Caption="Receipts" Size="4" Type="4" name="cd_recep"/>
+      <Field Caption="Widthdrawals" Size="4" Type="4" name="cd_withd"/>
+      <Field Caption="Closing" Size="4" Type="4" name="cd_close"/>
+      <Field Caption="Counter" Size="4" Type="2" name="cd_count"/>
+      <Field Caption="Lines" Size="4" Type="2" name="cd_lines"/>
+      <Field Caption="Start" Size="4" Type="5" name="cd_start"/>
+      <Field Caption="Time" Size="4" Type="4" name="cd_stime"/>
+      <Field Caption="Journal" Size="4" Type="2" name="cd_journal"/>
+      <Field Caption="Refer" Size="4" Type="2" name="cd_refer"/>
+      <Field Caption="Update" Size="4" Type="5" name="cd_update"/>
+      <Index name="smdcash">
+         <IndexEntry name="cd_date"/>
+         <IndexEntry name="cd_loc"/>
+         <IndexEntry name="cd_cash"/>
+         <IndexEntry name="cd_time"/>
+      </Index>
+   </Table>
+</xml>

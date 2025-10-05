@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" name="division_convert">
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="To Division" File="pos.division" Size="2" Type="2" name="to_division"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="division_convert">
+         <IndexEntry name="division"/>
+         <IndexEntry name="to_division"/>
+      </Index>
+      <Index name="division_convert[to_division]">
+         <IndexEntry name="to_division"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

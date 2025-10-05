@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="insurance" Icon="scroll" name="Drivers">
+      <Field Size="40"/>
+      <Field Caption="Ident. No." Size="20" name="idno"/>
+      <Field Caption="Birthdate" Size="4" Type="5" name="birthdate"/>
+      <Field Caption="License" Size="10" name="license"/>
+      <Field Caption="Licence date" Size="4" Type="5" name="date"/>
+      <Field Caption="Licence nationality" File="accounting.nationality" Size="2" Type="2" name="nationality"/>
+      <Field Caption="Profession" File="payroll.profession" Size="2" Type="2" name="profession"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="driver">
+         <IndexEntry name="name"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="driver[nationality]">
+         <IndexEntry name="nationality"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="driver[profession]">
+         <IndexEntry name="profession"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="idno"/>
+      </Index>
+   </Table>
+</xml>

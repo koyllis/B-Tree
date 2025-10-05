@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Item Extra Options">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Barcode" Size="25" name="barcode"/>
+      <Field Caption="Related" Size="100" name="related"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemextra">
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

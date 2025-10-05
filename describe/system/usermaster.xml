@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="system" name="usermaster" Root="1">
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Master" File="system.master" Size="2" Type="2" name="master"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="usermaster">
+         <IndexEntry name="user"/>
+         <IndexEntry name="master"/>
+      </Index>
+   </Table>
+</xml>

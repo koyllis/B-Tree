@@ -1,0 +1,34 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Stock No." System="pos">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="5" name="date" Caption="Date in"/>
+      <Field Size="20" name="stockno" Caption="Stock No."/>
+      <Field Size="4" Format="##.#####" Type="8" name="rate" Caption="Rate"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="stockno">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="stockno"/>
+      </Index>
+      <Index name="stockno[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="stockno"/>
+      </Index>
+      <Index name="stockno[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="stockno"/>
+      </Index>
+      <Index name="stockno_stockno">
+         <IndexEntry name="stockno"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

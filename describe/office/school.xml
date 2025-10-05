@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="office" Icon="temple" name="Schools" Merge="1">
+      <Field Size="50"/>
+      <Field Caption="Type" Size="1" Type="2" Options="PreSchool,Primary,Gymnasium,Lycium,Technical" name="type"/>
+      <Field Caption="Curator" File="office.curator" Size="2" Type="2" name="curator"/>
+      <Field Caption="Caretaker" File="office.caretaker" Size="2" Type="2" name="caretaker"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="school">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="school[caretaker]">
+         <IndexEntry name="caretaker"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="school[curator]">
+         <IndexEntry name="curator"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

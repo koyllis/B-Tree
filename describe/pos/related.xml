@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="settings" Dynamic="1" name="Related Items">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item" Force="1"/>
+      <Field Caption="Related item" File="pos.item" Size="4" Type="2" name="related" Force="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="related">
+         <IndexEntry name="item"/>
+         <IndexEntry name="related"/>
+      </Index>
+      <Index name="related[related]">
+         <IndexEntry name="related"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="VAT Analysis">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Journal" Size="4" Type="2" name="journal"/>
+      <Field Caption="Net" Total="1" Format="######.##" Size="4" Type="4" name="net"/>
+      <Field Caption="Vat" Total="1" Format="######.##" Size="4" Type="4" name="vat"/>
+      <Field Caption="Calculated" Total="1" Format="######.##" Size="4" Type="4" name="calc"/>
+      <Field Caption="Difference" Total="1" Format="######.##" Size="4" Type="4" name="diff"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vatanalysis">
+         <IndexEntry name="date"/>
+         <IndexEntry name="journal"/>
+      </Index>
+   </Table>
+</xml>

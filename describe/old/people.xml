@@ -1,0 +1,40 @@
+<xml>
+   <Table System="old" name="people" ModifyStamp="0">
+      <Field Format="u" name="ba_name"/>
+      <Field Caption="Code" Format="u" Size="8" name="ba_code"/>
+      <Field Caption="Address" Format="u" name="ba_add1"/>
+      <Field Caption="" Format="u" name="ba_add2"/>
+      <Field Caption="" Format="u" name="ba_add3"/>
+      <Field Caption="Contact" Format="u" name="ba_contact"/>
+      <Field Caption="Tel. (1)" Format="u" Size="15" name="ba_phone"/>
+      <Field Caption="Tel. (2)" Format="u" Size="15" name="ba_phone1"/>
+      <Field Caption="Fax" Format="u" Size="15" name="ba_fax"/>
+      <Field Caption="T.I.C." Format="u" Size="10" name="ba_tic"/>
+      <Field Caption="Future" Size="5" name="ba_future2"/>
+      <Field Caption="Area" Format="u" Size="3" name="ba_country"/>
+      <Field Caption="Group" Format="u" Size="2" name="ba_group"/>
+      <Field Caption="Terms" Format="###" Size="1" Type="2" name="ba_terms"/>
+      <Field Caption="Future" Size="3" name="ba_future1"/>
+      <Field Caption="Balance" Format="#######.##" Size="4" Type="4" name="ba_onacc"/>
+      <Field Caption="Account" Format="u" Size="6" name="ba_account"/>
+      <Field Caption="Currency" Format="u" Size="3" name="ba_curr"/>
+      <Field Caption="Credit limit" Format="#######.##" Size="4" Type="4" name="ba_credit"/>
+      <Field Caption="Credit age" Format="###" Size="2" Type="2" name="ba_crdage"/>
+      <Field Caption="Age of account" Format="###" Size="2" Type="2" name="ba_age"/>
+      <Field Caption="Exclude VAT(N) (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="ba_exvat"/>
+      <Field Caption="Statement(Y) (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="ba_state"/>
+      <Field Caption="Label(Y) (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="ba_label"/>
+      <Field Caption="cRedit/Cash/All(A) (R/C/A)?" Format="u" Size="1" Options=",,R,C,A" name="ba_crcus"/>
+      <Field Caption="Deactivated(N) (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="ba_deact"/>
+      <Field Caption="Debtor/Creditor" Format="u" Size="1" Options="D,C" name="ba_dc"/>
+      <Field Caption="Price code" Format="u" Size="2" name="ba_pcode"/>
+      <Field Caption="Alternate" Format="u" Size="8" name="ba_altc"/>
+      <Field Caption="Account link" Format="u" Size="8" name="ba_accl"/>
+      <Field Caption="Discount matrix horizontal coordinate" Format="###" Size="1" Type="2" name="ba_discode"/>
+      <Field Caption="Commission matrix horizontal coordinate" Format="###" Size="1" Type="2" name="ba_comcode"/>
+      <Index name="people">
+         <IndexEntry name="ba_name"/>
+         <IndexEntry name="ba_code"/>
+      </Index>
+   </Table>
+</xml>

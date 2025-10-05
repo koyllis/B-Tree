@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="itemimage">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Link" Size="128" name="link"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="itemimage">
+         <IndexEntry name="item"/>
+         <IndexEntry name="link"/>
+      </Index>
+   </Table>
+</xml>

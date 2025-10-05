@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="services" name="Services" System="hotel">
+      <Field/>
+      <Field Size="1" Format="b" Type="2" name="credit" Caption="Credit"/>
+      <Field Size="1" Type="2" File="accounting.vat" name="vat" Caption="VAT "/>
+      <Field Size="2" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="service">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="service[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="service[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

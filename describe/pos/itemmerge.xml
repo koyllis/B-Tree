@@ -1,0 +1,58 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Price Notifications" MergeTip="people.@bookmark">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Start date" Size="4" Type="5" name="start"/>
+      <Field Caption="Item 1" File="pos.item" Size="4" Type="2" name="item1"/>
+      <Field Caption="Price 1" Format="price" Size="8" Type="3" name="price1"/>
+      <Field Caption="Item 2" File="pos.item" Size="4" Type="2" name="item2"/>
+      <Field Caption="Price 2" Format="price" Size="8" Type="3" name="price2"/>
+      <Field Caption="Item 3" File="pos.item" Size="4" Type="2" name="item3"/>
+      <Field Caption="Price 3" Format="price" Size="8" Type="3" name="price3"/>
+      <Field Caption="Item 4" File="pos.item" Size="4" Type="2" name="item4"/>
+      <Field Caption="Price 4" Format="price" Size="8" Type="3" name="price4"/>
+      <Field Caption="Item 5" File="pos.item" Size="4" Type="2" name="item5"/>
+      <Field Caption="Price 5" Format="price" Size="8" Type="3" name="price5"/>
+      <Field Caption="Item 6" File="pos.item" Size="4" Type="2" name="item6"/>
+      <Field Caption="Price 6" Format="price" Size="8" Type="3" name="price6"/>
+      <Field Caption="Item 7" File="pos.item" Size="4" Type="2" name="item7"/>
+      <Field Caption="Price 7" Format="price" Size="8" Type="3" name="price7"/>
+      <Field Caption="Item 8" File="pos.item" Size="4" Type="2" name="item8"/>
+      <Field Caption="Price 8" Format="price" Size="8" Type="3" name="price8"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemmerge">
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="itemmerge[item1]">
+         <IndexEntry name="item1"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="itemmerge[item2]">
+         <IndexEntry name="item2"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="itemmerge[item3]">
+         <IndexEntry name="item3"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="itemmerge[item4]">
+         <IndexEntry name="item4"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="itemmerge[item5]">
+         <IndexEntry name="item5"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="itemmerge[item6]">
+         <IndexEntry name="item6"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="itemmerge[item7]">
+         <IndexEntry name="item7"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="itemmerge[item8]">
+         <IndexEntry name="item8"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

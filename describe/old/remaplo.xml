@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="remaplo" System="old">
+      <Field Size="1" Format="0" Type="2" name="rl_loc" Caption="Loc."/>
+      <Field Format="u" name="rl_add1" Caption="Address"/>
+      <Field Size="3" Format="u" name="rl_grid" Caption="Grid"/>
+      <Field Size="2" Format="###" Type="2" name="rl_area" Caption="Area"/>
+      <Field Size="2" Format="###" Type="2" name="rl_fr" Caption="From (now)"/>
+      <Field Size="2" Format="###" Type="2" name="rl_to" Caption="To (now)"/>
+      <Field Size="2" Format="###" Type="2" name="rl_pfr" Caption="From (to be)"/>
+      <Field Size="2" Format="###" Type="2" name="rl_pto" Caption="To (to be)"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="rl_serv" Caption="Serviced(Y) (Y/N)?"/>
+      <Field Size="4" Format="#####" Type="2" name="rl_zip" Caption="Zip"/>
+      <Field Size="16" name="rl_more" Caption="More"/>
+      <Index name="remaplo">
+         <IndexEntry name="rl_loc"/>
+         <IndexEntry name="rl_add1"/>
+      </Index>
+   </Table>
+</xml>

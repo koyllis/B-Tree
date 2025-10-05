@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="staltit" System="old" ModifyStamp="0">
+      <Field Size="12" Format="u" Dim ="1" name="al_item" Caption="Item"/>
+      <Field Size="20" Format="u" Dim ="1" name="al_aitem" Caption="Alternate"/>
+      <Index name="staltit">
+         <IndexEntry name="al_item"/>
+         <IndexEntry name="al_aitem"/>
+      </Index>
+   </Table>
+</xml>

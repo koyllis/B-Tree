@@ -1,0 +1,11 @@
+<xml>
+   <Table name="agcucas" System="old" ModifyStamp="0">
+      <Field Caption="Customer" Size="2" Type="2" name="cc_cuno"/>
+      <Field Caption="Case price" Size="4" Type="4" name="cc_caspr"/>
+      <Field Caption="Case" Size="4" Type="2" name="cc_cases"/>
+      <Index name="agcucas">
+         <IndexEntry name="cc_cuno"/>
+         <IndexEntry name="cc_caspr"/>
+      </Index>
+   </Table>
+</xml>

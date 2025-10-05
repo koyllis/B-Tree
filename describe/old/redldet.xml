@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="redldet" System="old">
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="dd_date" Caption="Date"/>
+      <Field Size="4" Format="######" Type="2" name="dd_refer" Caption="Order No."/>
+      <Field Size="1" Format="0" Type="2" name="dd_loc" Caption="Loc."/>
+      <Field Size="1" Format="u" name="dd_iod" Caption="In/Out/Del"/>
+      <Field Size="1" Type="2" name="dd_line" Caption="Line"/>
+      <Field Size="1" Options="0-999" Format="##" Type="2" name="dd_quant" Caption="Quantity"/>
+      <Field Size="55" Format="u" name="dd_desc" Caption="Description"/>
+      <Field Size="4" Format="#####.##" Type="4" name="dd_total" Caption="Total"/>
+      <Field Size="4" Format="#####.##" Type="4" name="dd_disc" Caption="Discount"/>
+      <Field Size="4" Format="##.##" Type="4" name="dd_vat" Caption="VAT(%)"/>
+      <Field Size="1" Format="##" Type="2" name="dd_round" Caption="Elements"/>
+      <Field Size="1" Format="#" Type="2" name="dd_amend" Caption="Amend"/>
+      <Index name="redldet">
+         <IndexEntry name="dd_date"/>
+         <IndexEntry name="dd_refer"/>
+         <IndexEntry name="dd_loc"/>
+         <IndexEntry name="dd_iod"/>
+         <IndexEntry name="dd_line"/>
+      </Index>
+   </Table>
+</xml>

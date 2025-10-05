@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="timeshare" name="Yearly Maintenance">
+      <Field Caption="Year" Format="####" Size="2" Force="1" Type="2" name="year"/>
+      <Field Strict="1" Caption="Number" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Contract" File="timeshare.contract" Size="4" Force="1" Type="2" name="contract"/>
+      <Field Strict="1" Caption="Currency" File="accounting.currency" Size="2" Type="2" name="currency" Modify="1"/>
+      <Field Caption="Total" Strict="1" Total="1" Format="#####.##" Size="4" Type="4" name="amount" Modify="1"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Strict="1" Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="maintenance">
+         <IndexEntry name="year"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="maintenance[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="maintenance[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="maintenance[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,8 @@
+16:47:30 29/03/2002 nSize == 2 exe:c:\projects\bin\bb.exe file:C:\projects\Core\BtrvBrowse\UGBrowse.cpp, line:4897
+13:14:38 09/04/2002 ixRecord == dwRecord exe:C:\projects\bin\bb.exe file:C:\projects\Core\BtrvCore\Btrieve.cpp, line:5498
+17:58:55 15/04/2002 false exe:c:\projects\bin\bb.exe file:C:\projects\Core\TrySock\CommonSocket.cpp, line:432
+18:04:24 15/04/2002 false exe:c:\projects\bin\bb.exe file:C:\projects\Core\TrySock\CommonSocket.cpp, line:432
+00:13:47 01/07/2003 ixRecord == dwRecord exe:C:\solution\Bin\bb.exe file:c:\solution\core\btrvcore\btrieve.cpp, line:6120
+11:36:09 28/12/2004 field.IsValid() exe:c:\solution\bin\bbD.exe file:c:\solution\core\btrvcore\index.cpp, line:142
+11:36:43 28/12/2004 field.IsValid() exe:c:\solution\bin\bbD.exe file:c:\solution\core\btrvcore\index.cpp, line:142
+11:37:48 28/12/2004 field.IsValid() exe:c:\solution\bin\bbD.exe file:c:\solution\core\btrvcore\index.cpp, line:142

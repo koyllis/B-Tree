@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="grcat_fl" System="old" ModifyStamp="0">
+      <Field Size="5" Dim ="1" name="yy_categ" Caption="Categ"/>
+      <Field Dim ="1" name="yy_categdesc" Caption=""/>
+      <Index name="grcat_fl">
+         <IndexEntry name="yy_categ"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Carnival Dance">
+      <Field Caption="Year" Size="4" Type="2" name="year"/>
+      <Field Caption="School" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Table" Size="2" Type="2" name="table"/>
+      <Field Caption="Persons" Total="1" Size="2" Type="2" name="persons"/>
+      <Field Caption="Note" Size="40" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="carnival">
+         <IndexEntry name="year"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="table"/>
+      </Index>
+      <Index name="carnival[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="table"/>
+         <IndexEntry name="year"/>
+      </Index>
+      <Index name="carnival_table">
+         <IndexEntry name="table"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

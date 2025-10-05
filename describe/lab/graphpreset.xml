@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Preset Graphs" CanDelete="1" CanModify="1">
+      <Field Caption="Name" Size="50" Type="1" Force="1"/>
+      <Field Caption="Site1" File="accounting.people" Size="4" Type="2" name="people1"/>
+      <Field Caption="Site2" File="accounting.people" Size="4" Type="2" name="people2"/>
+      <Field Caption="Site3" File="accounting.people" Size="4" Type="2" name="people3"/>
+      <Field Caption="Site4" File="accounting.people" Size="4" Type="2" name="people4"/>
+      <Field Caption="Parameter1" File="pos.item" Size="4" Type="2" name="item1"/>
+      <Field Caption="Parameter3" File="pos.item" Size="4" Type="2" name="item2"/>
+      <Field Caption="Parameter4" File="pos.item" Size="4" Type="2" name="item3"/>
+      <Field Caption="Parameter5" File="pos.item" Size="4" Type="2" name="item4"/>
+      <Field Caption="Period" Size="1" Type="2" name="period" Options="3Days,Week,Month" Force="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="graphpreset">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

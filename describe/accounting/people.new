@@ -1,0 +1,50 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Name="Business associates" System="accounting" Short="Associate" Icon="face" Index="people" ChainInsert="accounting|address" FavoriteMatch="accounting|detail" DataHeader="0" DeleteChildren="0" AutoNumber="0" UniqueKeys="1" Color="0" Root="0" Sequence="0" SoftDelete="1" Unsorted="0" ManualIndex="0" Common="0" Dynamic="0" Late="0" MapRecord="1" Map="detail" Repository="0" Constraint="0" Bookmark="1" Dataset="0" Phone="">
+      <Field Name="name" Caption="Name" Type="1" Size="40" Force="1"/>
+      <Field Name="group" Caption="Group" Type="3" Size="2" File="accounting.group"/>
+      <Field Name="chart" Caption="Account" Type="3" Size="2" Format="#######" File="accounting.chart"/>
+      <Field Name="balance" Caption="Balance" Type="4" Size="8" Format="#########.##" Strict="1" Total="1"/>
+      <Field Name="novat" Caption="Exclude VAT" Type="2" Size="1" Format="b" Modify="1"/>
+      <Field Name="opendate" Caption="Opening date" Type="5" Size="4" Format="##/##/##"/>
+      <Field Name="closedate" Caption="Closing date" Type="5" Size="4" Format="##/##/##"/>
+      <Field Name="id" Caption="Social ID" Type="2" Size="4" Format="#######"/>
+      <Field Name="area" Caption="Area" Type="3" Size="2" Format="#######" File="accounting.area"/>
+      <Field Name="sex" Caption="Sex" Type="2" Size="1" Format="Male,Female"/>
+      <Field Name="currency" Caption="Currency" Type="3" Size="1" Format="#######" File="accounting.currency"/>
+      <Field Name="iban" Caption="IBAN" Type="1" Size="40" Modify="1"/>
+      <Field Name="bic" Caption="BIC/Swift/BLZ" Type="1" Size="20" Modify="1"/>
+      <Field Name="bank" Caption="Bank Name" Type="1" Size="20" Modify="1"/>
+      <Field Name="bank_account" Caption="Bank Account #" Type="1" Size="20" Modify="1"/>
+      <Field Name="Bank Address" Caption="Bank address" Type="1" Size="50" Modify="1"/>
+      <Field Name="param" Caption="Parameter" Type="3" Size="1" File="accounting.param" Modify="1"/>
+      <Field Name="phone" Caption="Phone" Type="1" Size="20" Tip="1"/>
+      <Index Name="people" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="name"/>
+         <IndexEntry Name="group"/>
+      </Index>
+      <Index Name="people[area]" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="area"/>
+         <IndexEntry Name="name"/>
+         <IndexEntry Name="group"/>
+      </Index>
+      <Index Name="people[chart]" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="chart"/>
+         <IndexEntry Name="name"/>
+         <IndexEntry Name="group"/>
+      </Index>
+      <Index Name="people[currency]" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="currency"/>
+         <IndexEntry Name="name"/>
+         <IndexEntry Name="group"/>
+      </Index>
+      <Index Name="people[group]" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="group"/>
+         <IndexEntry Name="name"/>
+      </Index>
+      <Index Name="people[param]" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="param"/>
+         <IndexEntry Name="name"/>
+         <IndexEntry Name="group"/>
+      </Index>
+   </Table>
+</xml>

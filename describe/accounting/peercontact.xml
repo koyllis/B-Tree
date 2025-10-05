@@ -1,0 +1,14 @@
+<xml>
+   <Table System="accounting" name="Peer Contacts">
+      <Field Caption="Peer" File="accounting.peer" Size="4" Force="1" Type="2" name="peer"/>
+      <Field Size="40" Force="1"/>
+      <Field Caption="Position" Size="20" Force="1" name="position"/>
+      <Field Caption="Mobile" Size="10" Force="1" name="mobile"/>
+      <Field Caption="Email" Size="40" Force="1" name="email"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peercontact">
+         <IndexEntry name="peer"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

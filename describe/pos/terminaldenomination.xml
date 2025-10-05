@@ -1,0 +1,17 @@
+<xml>
+   <Table System="pos" name="terminaldenomination">
+      <Field Caption="Terminal" File="pos.terminal" Size="4" Type="2" name="terminal"/>
+      <Field Caption="Denommination" File="system.denomination" Size="2" Type="2" name="denomination"/>
+      <Field Caption="Quantity" Format="######.##" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Counter" Format="######.##" Size="8" Type="3" name="counter"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="terminaldenomination">
+         <IndexEntry name="terminal"/>
+         <IndexEntry name="denomination"/>
+      </Index>
+      <Index name="terminaldenomination[denomination]">
+         <IndexEntry name="denomination"/>
+         <IndexEntry name="terminal"/>
+      </Index>
+   </Table>
+</xml>

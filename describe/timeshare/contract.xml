@@ -1,0 +1,108 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="timeshare" SoftDelete="1" Icon="author" CanDelete="0" name="Contracts" CreateStamp="1" UserStamp="1">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Strict="1" Caption="Ref. No." Size="4" Type="2" AutoCounter="1" name="reference" Modify="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Agreement No." Size="10" Force="1" Tip="1" name="agrno"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Force="1" Type="2" name="location"/>
+      <Field Caption="Currency" File="accounting.currency" Size="2" Type="2" name="currency"/>
+      <Field Caption="Occupancy" Format="####" Size="2" Type="2" name="occupancy"/>
+      <Field Caption="Representative" File="timeshare.agent" Size="2" Type="2" name="rep"/>
+      <Field Caption="Manager" File="timeshare.agent" Size="2" Type="2" name="manager"/>
+      <Field Caption="OPC" File="timeshare.agent" Size="2" Type="2" name="opc"/>
+      <Field Caption="Float type" Size="1" Type="2" Options="Studio,1Bedroom,2Bedroom, 3Bedroom" name="type"/>
+      <Field Caption="Weeks" Size="1" Type="2" name="weeks"/>
+      <Field Caption="Season" Size="1" Type="2" Options="Blue,Red,White" name="season"/>
+      <Field Caption="Conventional points" Size="4" Type="2" name="conv_points"/>
+      <Field Caption="Pure points" Size="4" Type="2" name="pure_points"/>
+      <Field Caption="Administration" Format="#####.##" Size="4" Type="4" name="admin"/>
+      <Field Caption="Roylaty" Format="#####.##" Size="4" Type="4" name="royalty"/>
+      <Field Caption="Maintenance" Total="1" Format="#####.##" Size="4" Type="4" name="maint" Modify="1"/>
+      <Field Caption="Net fees" Total="1" Format="#####.##" Size="4" Type="4" name="net"/>
+      <Field Strict="1" Caption="Prev. contract" Format="#####.##" Size="4" Type="4" name="upgrade" Modify="1"/>
+      <Field Caption="Related to" Strict="1" File="timeshare.contract" Size="4" Type="2" name="related_to" Modify="1"/>
+      <Field Caption="Related from" Strict="1" File="timeshare.contract" Size="4" Type="2" name="related_from" Modify="1"/>
+      <Field Caption="Maintenance journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal_maint" Modify="1"/>
+      <Field Caption="Journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Strict="1" Caption="Cancelled" Size="4" Type="5" name="cancelled" Modify="1"/>
+      <Field Caption="Refund" Strict="1" Format="#####.##" Size="4" Type="4" name="refund" Modify="1"/>
+      <Field Strict="1" Caption="Cancellation journal" File="accounting.journal" Size="4" Type="2" name="journal_cancel" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="contract">
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[journal_cancel]">
+         <IndexEntry name="journal_cancel"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[journal_maint]">
+         <IndexEntry name="journal_maint"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[manager]">
+         <IndexEntry name="manager"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[opc]">
+         <IndexEntry name="opc"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[related_from]">
+         <IndexEntry name="related_from"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[related_to]">
+         <IndexEntry name="related_to"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract[rep]">
+         <IndexEntry name="rep"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract_agrno">
+         <IndexEntry name="agrno"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract_cancelled">
+         <IndexEntry name="cancelled"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="contract_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

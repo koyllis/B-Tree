@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Doctors" System="life">
+      <Field Size="40"/>
+      <Field Size="40" name="address" Caption="Address"/>
+      <Field Size="4" Format="####" Type="2" name="postal" Caption="Postal"/>
+      <Field Size="20" name="city" Caption="City"/>
+      <Field Size="10" name="phone" Caption="Telephone"/>
+      <Field Size="10" name="fax" Caption="Fax"/>
+      <Field Size="10" name="mobile" Caption="Mobile"/>
+      <Field Size="40" name="email" Caption="E-mail"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="doctor">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

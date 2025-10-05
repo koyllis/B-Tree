@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" PDA="0" name="stscitd" ModifyStamp="0">
+      <Field Caption="Description" name="cd_desc"/>
+      <Field Caption="Item" Size="18" name="cd_item"/>
+      <Index name="stscitd">
+         <IndexEntry name="cd_desc"/>
+         <IndexEntry name="cd_item"/>
+      </Index>
+   </Table>
+</xml>

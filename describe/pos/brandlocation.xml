@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="Brand And Location Analysis" System="pos">
+      <Field Size="4" Type="2" File="system.user" name="user" Caption="User"/>
+      <Field Size="4" Type="2" File="pos.brand" name="brand" Caption="Brand"/>
+      <Field Size="4" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="4" Type="2" name="transfer" Total="1" Caption="Transfers"/>
+      <Field Size="4" Type="2" name="sale" Total="1" Caption="Sales"/>
+      <Field Size="8" Type="3" name="transfer_value" Total="1" Caption="Transfer value"/>
+      <Field Size="8" Type="3" name="sale_value" Total="1" Caption="Sale value"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="brandlocation">
+         <IndexEntry name="user"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="brandlocation[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="brandlocation[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="brand"/>
+      </Index>
+   </Table>
+</xml>

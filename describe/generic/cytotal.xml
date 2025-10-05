@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Account Totals And Balances">
+      <Field Caption="Membership number" File="generic.cymember" Size="4" Type="2" name="memberno"/>
+      <Field Caption="Opening balance" Size="12" name="opening"/>
+      <Field Caption="Closing balance" Size="12" name="closing"/>
+      <Field Caption="Credited" Size="12" name="credited"/>
+      <Field Caption="Debited" Size="12" name="debited"/>
+      <Field Caption="Adjustment" Size="12" name="adjustment"/>
+      <Field Caption="Tier miles " Size="12" name="miles"/>
+      <Field Caption="No. tier sectors acc." Format="########" Size="4" Type="2" name="nosectorsacc"/>
+      <Field Caption="No. tier miles upg." Format="########" Size="4" Type="2" name="nomilesupg"/>
+      <Field Caption="No. tier sectors req." Format="########" Size="4" Type="2" name="nosectorsreq"/>
+      <Field Caption="No. tier miles ret." Format="########" Size="4" Type="2" name="nomilesret"/>
+      <Field Caption="No. tier sectors ret." Format="########" Size="4" Type="2" name="nosectorsret"/>
+      <Field Caption="No. tier miles req. ret." Format="########" Size="4" Type="2" name="nomilesreqret"/>
+      <Field Caption="No. tier sectors req. ret." Format="########" Size="4" Type="2" name="nosectorsreqret"/>
+      <Field Caption="Tier status validity" Size="7" name="status"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cytotal">
+         <IndexEntry name="memberno"/>
+      </Index>
+   </Table>
+</xml>

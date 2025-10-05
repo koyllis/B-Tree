@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table CanModify="0" System="pos" SoftDelete="1" Dynamic="1" CanDelete="0" name="Tank Items">
+      <Field Caption="Tank" File="pos.tanktrans" Size="4" Type="2" Force="1" name="tanktrans"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Quantity" Format="####.###" Size="4" Type="8" Force="1" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="tankitem">
+         <IndexEntry name="tanktrans"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="tankitem_item">
+         <IndexEntry name="item"/>
+         <IndexEntry name="tanktrans"/>
+      </Index>
+   </Table>
+</xml>

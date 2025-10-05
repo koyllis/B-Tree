@@ -1,0 +1,15 @@
+ <xml>
+   <Table System="generic" name="Data Format">
+      <Field Caption="Layout" File="generic.pdflayout" Size="2" Type="2" Tip="1" name="layout"/>
+      <Field Caption="Type" Size="1" Options="Header,Detail" Tip="1" Type="2" name="type"/>
+      <Field Caption="Value" Size="50" name="value"/>
+      <Field Caption="Prefix" Size="40" name="prefix"/>
+      <Field Caption="Suffix" Size="40" name="suffix"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdfformat">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="value"/>
+      </Index>
+   </Table>
+</xml>

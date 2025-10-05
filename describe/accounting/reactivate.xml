@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="accounting" CanDelete="0" name="reactivate">
+      <Field Strict="1" Caption="Date" Size="8" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Strict="1" Caption="User" File="system.user" Size="2" Auto="1" Type="2" name="user" Modify="1"/>
+      <Field Caption="Mode" Size="1" Type="2" Options="Activated,Deactivated" name="mode"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="reactivate">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="reactivate[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="reactivate[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

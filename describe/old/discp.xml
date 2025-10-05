@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="discp" System="old" ModifyStamp="0" >
+      <Field Size="12" name="di_style" Caption="Style"/>
+      <Field Size="3" name="di_depart" Caption="Department"/>
+      <Field Size="8" Type="3" name="di_perc" Caption="Percentage"/>
+      <Field Size="4" Type="5" name="di_date" Caption="Date"/>
+      <Field Size="1" name="di_ask" Caption="Ask"/>
+      <Index name="discp">
+         <IndexEntry name="di_style"/>
+      </Index>
+   </Table>
+</xml>

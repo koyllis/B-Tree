@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="reareas" System="old">
+      <Field Size="1" Type="2" name="ar_loc" Caption="Loc."/>
+      <Field Size="2" Type="2" name="ar_area" Caption="Area"/>
+      <Field Size="20" name="ar_name"/>
+      <Field Size="1" Type="2" name="ar_divert" Caption="Divert loc."/>
+      <Field Size="1" Type="2" name="ar_altdiv1" Caption="Alternate 1"/>
+      <Field Size="1" Type="2" name="ar_altdiv2" Caption="Alternate 2"/>
+      <Field Size="1" Type="2" name="ar_altdiv3" Caption="Alternate 3"/>
+      <Field Size="1" Type="2" name="ar_altdiv4" Caption="Alternate 4"/>
+      <Field Size="1" Type="2" name="ar_altdiv5" Caption="Alternate 5"/>
+      <Field Size="15" name="ar_future" Caption="Future"/>
+      <Index name="reareas">
+         <IndexEntry name="ar_loc"/>
+         <IndexEntry name="ar_area"/>
+      </Index>
+   </Table>
+</xml>

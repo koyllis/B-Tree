@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" Icon="telephone" name="Standards">
+      <Field Caption="Department" Format="#######" File="payroll.timedef" Size="2" Type="2" name="department"/>
+      <Field Caption="Type" Format="#######" File="payroll.timedef" Size="2" Type="2" name="timedef"/>
+      <Field Caption="Days" Format="#######" Size="4" Type="2" name="days"/>
+      <Field Caption="Holidays" Size="2" Type="2" name="holiday"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="standard">
+         <IndexEntry name="department"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="days"/>
+      </Index>
+      <Index name="standard[department]">
+         <IndexEntry name="department"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="days"/>
+      </Index>
+   </Table>
+</xml>

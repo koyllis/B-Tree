@@ -1,0 +1,55 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="journals" Dynamic="1" name="Item Summary">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Reference" Size="4" Type="2" name="refer"/>
+      <Field Caption="Line" Format="###" Size="2" Type="2" name="line"/>
+      <Field Caption="Record" Size="4" Type="2" name="record"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="peoplecust"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Pieces" Format="####" Size="4" Type="2" name="pieces"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Strict="1" Caption="Total" Size="8" Type="3" name="total"/>
+      <Field Caption="Pieces balance" Strict="1" Format="####" Size="4" Type="2" name="piecesbal"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="clearitem">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="clearitem[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="clearitem[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="clearitem[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="clearitem[peoplecust]">
+         <IndexEntry name="peoplecust"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

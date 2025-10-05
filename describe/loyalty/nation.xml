@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Static="1" name="Nationalities" System="loyalty" Index="nation" Color="1">
+      <Field Size="2" Type="2" name="code" Caption="Code"/>
+      <Field Size="20"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="nation">
+         <IndexEntry AllDimension="1" name="code"/>
+      </Index>
+   </Table>
+</xml>

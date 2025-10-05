@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Routes" System="office">
+      <Field/>
+      <Field Size="2" Format="###" Type="2" name="capacity" Caption="Capacity"/>
+      <Field Size="8" Format="##.##" Type="3" name="rate" Caption="Rate"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="route">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

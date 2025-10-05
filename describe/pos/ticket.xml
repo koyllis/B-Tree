@@ -1,0 +1,28 @@
+<xml>
+   <Table System="pos" name="Tickets" Icon="ticket" CreateStamp="1" UserStamp="1" Unordered="1" insert_notes="1">
+      <Field Strict="1" Caption="Reference" Size="4" Type="2" AutoCounter="1" name="refer" Modify="1"/>
+      <Field Caption="Type" File="pos.type" Size="2" Force="1" Type="2" name="type"/>
+      <Field Caption="Priority" Size="1" Options="Normal,Urgent" Type="2" name="priority"/>
+      <Field Caption="Company" name="company" Type="1" Size="40"/>
+      <Field Caption="Contact" name="contact" Type="1" Size="40"/>
+      <Field Caption="Email" name="email" Type="1" Size="40"/>
+      <Field Caption="Telephone" name="phone" Type="1" Size="40"/>
+      <Field Caption="Subject" name="subject"/>
+      <Field Caption="Handled by" File="payroll.employee" Size="2" Type="2" name="employee" Modify="1"/>
+      <Field Caption="Completed" Size="8" Type="5" name="completed" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="ticket">
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="ticket[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="ticket_createtamp">
+         <IndexEntry name="@create_stamp"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

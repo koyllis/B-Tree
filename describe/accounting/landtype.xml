@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Land Types" System="accounting">
+      <Field Size="40"/>
+      <Field Size="3" name="code" Caption="Code"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="landtype">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

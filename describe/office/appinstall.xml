@@ -1,0 +1,77 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="office" Icon="epagelmata" OnExistModify="0" name="Installations" UserStamp="1">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Time" Size="2" Type="5" name="time"/>
+      <Field Caption="Duration" Size="1" Options="AllDay,AllMorning,AllAfternoon" Type="2" name="mode"/>
+      <Field Caption="Equipment?" File="accounting.deliverymethod" Size="1" Force="1" Type="2" name="deliverymethod"/>
+      <Field Caption="Staff 1" File="office.staff" Size="2" Type="2" Force="1" name="staff"/>
+      <Field Caption="Staff 2" File="office.staff" Size="2" Force="1" Type="2" name="staff2"/>
+      <Field Caption="Staff 3" File="office.staff" Size="2" Type="2" name="staff3"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" Force="1" name="area"/>
+      <Field Size="40" Force="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Category" File="office.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Address 1" Size="40" name="address1"/>
+      <Field Caption="Address 2" Size="40" name="address2"/>
+      <Field Caption="Contact" Size="40" name="contact"/>
+      <Field Caption="Notes" Size="100" name="notes"/>
+      <Field Caption="Phone" Size="20" name="phone"/>
+      <Field Caption="Feeback" File="office.type" Size="2" Type="2" name="type" Modify="1"/>
+      <Field Caption="Reminder" Size="2" Type="5" name="reminder" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index name="appinstall">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall[deliverymethod]">
+         <IndexEntry name="deliverymethod"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall[phone]">
+         <IndexEntry name="phone"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall[staff2]">
+         <IndexEntry name="staff2"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="appinstall_time">
+         <IndexEntry name="time"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

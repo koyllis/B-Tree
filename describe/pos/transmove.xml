@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Item Movement">
+      <Field Caption="simplestock" File="pos.simplestock" Size="2" Type="2" name="simplestock"/>
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Quantity In" Total="1" Format="quantity" Size="4" Type="8" name="quantity_in"/>
+      <Field Caption="Quantity Out" Total="1" Format="quantity" Size="4" Type="8" name="quantity_out"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transmove">
+         <IndexEntry name="simplestock"/>
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="transmove[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="simplestock"/>
+      </Index>
+   </Table>
+</xml>

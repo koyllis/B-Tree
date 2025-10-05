@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Root="1" Repository="1" SoftDelete="1" name="Menu Header" System="system" DeleteChildren="1" Dataset="1">
+      <Field/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" Caption="SoftDelete"/>
+      <Index Sculptor="1" name="menuhead">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

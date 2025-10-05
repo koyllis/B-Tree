@@ -1,0 +1,32 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Weeks">
+      <Field Caption="Year" Format="####" Size="2" Force="1" Type="2" Tip="1" name="year"/>
+      <Field Caption="Start date" Size="4" Type="5" Force="1" Tip="1" name="start"/>
+      <Field Caption="Chief" File="generic.leader" Size="4" Type="2" Tip="1" name="leader"/>
+      <Field Caption="Parent" File="generic.leader" Size="4" Type="2" Tip="1" name="parent"/>
+      <Field Caption="Assistant 1" File="generic.leader" Size="4" Type="2" name="assistant"/>
+      <Field Caption="Assistant 2" File="generic.leader" Size="4" Type="2" name="assistant2"/>
+      <Field Caption="Week No." Format="##" Size="1" Type="2" name="number"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="week">
+         <IndexEntry name="year"/>
+         <IndexEntry name="start"/>
+      </Index>
+      <Index name="week[assistant2]">
+         <IndexEntry name="assistant2"/>
+         <IndexEntry name="start"/>
+      </Index>
+      <Index name="week[assistant]">
+         <IndexEntry name="assistant"/>
+         <IndexEntry name="start"/>
+      </Index>
+      <Index name="week[leader]">
+         <IndexEntry name="leader"/>
+         <IndexEntry name="start"/>
+      </Index>
+      <Index name="week[parent]">
+         <IndexEntry name="parent"/>
+         <IndexEntry name="start"/>
+      </Index>
+   </Table>
+</xml>

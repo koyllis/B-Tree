@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Accounts Transactions">
+      <Field Caption="Accounnt" File="generic.hellaccstatic" Size="4" Type="2" name="hellaccstatic"/>
+      <Field Caption="Line" Size="2" Type="2" name="line"/>
+      <Field Caption="Actual date" Size="8" name="actual"/>
+      <Field Caption="Description 1" Size="20" name="desc1"/>
+      <Field Caption="Debit amount" Size="23" name="debit"/>
+      <Field Caption="Credit amount" Size="23" name="credit"/>
+      <Field Caption="Value date" Size="6" name="value"/>
+      <Field Caption="Balance running" Size="23" name="balance"/>
+      <Field Caption="Description 2" Size="20" name="desc2"/>
+      <Field Caption="Trans. serial" Size="8" name="serial"/>
+      <Field Caption="Ending" Size="1" name="ending"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="hellacctrans">
+         <IndexEntry name="hellaccstatic"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

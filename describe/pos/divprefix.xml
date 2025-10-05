@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="divprefix">
+      <Field Caption="Prefix" Size="2" name="prefix"/>
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="divprefix">
+         <IndexEntry name="prefix"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="divprefix[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="prefix"/>
+      </Index>
+   </Table>
+</xml>

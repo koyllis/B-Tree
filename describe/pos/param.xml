@@ -1,0 +1,174 @@
+<xml>
+   <Table System="pos" Icon="swissarmy" name="Parameters" Common="1">
+      <Field Caption="Location" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Interface" Size="1" Options="Stock,Market,Matrix" Type="2" name="interface"/>
+      <Field Caption="Employee Access Index" Size="1" Options="access" Type="2" name="employee_access"/>
+      <Field Caption="Quotas from date" Size="4" Type="5" name="from"/>
+      <Field Caption="Quotas to date" Size="4" Type="5" name="to"/>
+      <Field Caption="Date change hour" Size="2" Type="2" name="hour"/>
+      <Field Caption="Discount start date" Size="4" Type="5" name="discstart"/>
+      <Field Caption="Discount end date" Size="4" Type="5" name="discend"/>
+      <Field Caption="Positive Stock" Size="1" Options="Yes,Warning" Type="2" name="positive_stock"/>
+      <Field Caption="Last stock date" Size="4" Type="5" name="last_stock"/>
+      <Field Caption="Options" Format="b" Size="8" Options="AnalyzeBoxType,CustomerAlphaInput,FastStockStatus,CurrentBalance,NoCheckDigit,Concentration,Coupons,UpperCaseCustomerName,UniformDiscount,Renumber,ImportNumberingLocation,ForceDiscountPricecode,FreeItem,RequestUserLocation,FastPieces,FocusCollected,ClassicItem,ForceColorSize,PerLocationZ,MatrixExtraRow,PeopleDefaultLocation,ItemFindBeep,IgnoreWarningOnImport,ItemPricingByDate,FirstMatch,IgnoreCashierReference,IgnoreConvertExtraDiscount,IgnoreItemDiscount,DeleteOnConvert,FastQuotas,WebView,PositiveStockBrowseItems,SyncItems,OnImportPrintCashier,SyncPosItems,HashAsDiscount,Clearance,BarcodeConversion" Type="2" name="option"/>
+      <Field Caption="Apply" Format="b" Size="8" Options="IgnoreCostDiscount,CustomItemCode,QuotasLocation,EmployeeLocation,TouchScreen,F2,Dispatch,CostAccounting,FreeTable,Recycle,NetVoucher,VoucherDiscount,PrintDuringImport,CashierUpload,Points,PriceAddVat,ManualPunch,ItemTooltip,DynamicItem,AutoItemBarcode,F1,SingleDatePosting,PercentageDiscount,PriceLocationDiscount,BigLocation,AllocationIgnoreExpire,NoteToAccounts,MultipleReceipts,PosSearch,NoDeliveryBrands,EmployeeOnCashier,ManualBarcodePrice,OnlineUpdate,AlwaysShowPrint,CashierReceipt,AllowZeroPrice,F3,Sync,Apollo,ColorSizePrice,StockIncludeDeleted,ItemManualSearch,HttpProtocol,Shortcuts,TcpJCC" Type="2" name="apply"/>
+      <Field Caption="Other options" Format="b" Size="8" Type="2" Options="LastPriceNoDivision,PeopleBalance,HighMinimumStock,MergeCode,MatrixStock,HashAsPrescription,AppendDuplicateItem,TerminalDenominations,OneColor,MoveColor,PosSMS,PrintAgent,StockConvert,ForceEmail,RoundDiscountPercent,SearchPhoneFirst,SearchAll,DoubleBuysell,BoxtypeExact,StockStatusSinglePrice,MatrixAvailable,SizeSearchByName,ChecksumDigit,AppendItem,BoldCodeOnBarcode,RetainVat,NoClearanceDates,PeopleProject,ItemAnalysis,PeopleVehicle,FilterLocation,PiecesStock,EnforceDiscountBookmark,StockStatusCollection,DisableAvailableItemLink" name="other"/>
+      <Field Caption="Allow" Format="b" Size="4" Options="QuantityAmend,CreditCard,RoundDiscount,NoQuantityIncrement,AdvanceDiscount,DeletePunchCard,BarcodeQuantity,DuplicatePhones,AutoPrice,NoZip,ChangeDocument,DuplicateBarcode,NoPhone,CashierTwoStep,SavePeople" Type="2" name="allow"/>
+      <Field Caption="Cells" Size="1" Type="2" name="cells"/>
+      <Field Caption="Numpad Cells" Size="1" Type="2" name="numpad_cells"/>
+      <Field Caption="Script Caption" Size="32" name="script_caption"/>
+      <Field Caption="Default Script" Size="32" name="script"/>
+      <Field Caption="Without Vat" Format="b" Size="1" Type="2" name="without_vat"/>
+      <Field Caption="Printer Set" Size="1" Type="2" name="printerset"/>
+      <Field Caption="Percentage" Format="##" Size="1" Type="2" name="percent"/>
+      <Field Caption="Additional Fields" Size="128" Type="1" name="additional"/>
+      <Field Caption="Delay Message Box Timeout" Format="#####" Size="4" Type="2" name="delay_message_box"/>
+      <Field Caption="Command Center Refresh" Format="###" Size="1" Type="2" name="refresh"/>
+      <Field Caption="Project Layout" Size="32" name="project_layout"/>
+      <Field Caption="Receipt Script" Size="32" name="receipt_script"/>
+      <Field Caption="Numbering Scheme" Size="1" Options="Document,Location,DocumentLocation" Type="2" name="numbering"/>
+      <Field Caption="Ask" Format="b" Size="1" Options="User,Quantity" Type="2" name="ask"/>
+      <Field Caption="Certificate" Size="32" name="certificate"/>
+      <Field Caption="Cash Register" Size="1" Options="Normal,Auto" Type="2" name="cash_register"/>
+      <Field Caption="Analytical Register Report" Format="b" Size="1" Type="2" name="analytical_register_report"/>
+      <Field Caption="Display (1253) " Format="b" Size="1" Type="2" Options="Greek1253,GreekLatin" name="display_1253"/>
+      <Field Caption="Barcode Port" Size="1" Type="2" name="barcodeport"/>
+      <Field Caption="Scale Com Port " Size="1" Type="2" name="comport"/>
+      <Field Caption="Scale Baud Rate" Format="####" Size="2" Type="2" name="baud"/>
+      <Field Caption="Display Reset" Size="1" Negative="0" Type="2" name="display_reset"/>
+      <Field Caption="Display Model" Size="1" Type="2" Options="Toshiba" name="display_model"/>
+      <Field Caption="Window" Size="128" Type="1" name="window"/>
+      <Field Caption="Scale Model" Size="1" Options="Request,Yamato,Freeway,CAS,Avery Berkel,RequestCR,CAS8None,RequestHex5,CASStop1" Type="2" name="scale_model"/>
+      <Field Caption="Scale Thread Delay" Size="2" Type="2" name="scale_thread_delay"/>
+      <Field Caption="Credit Card Company" name="creditcom"/>
+      <Field Caption="Monthly Cost" Format="#####.##" Size="4" Type="4" name="monthly_cost"/>
+      <Field Caption="Monthly Percentage" Format="##.##" Size="2" Type="2" name="monthly_percentage"/>
+      <Field Caption="Receipt Print" Format="b" Size="8" Options="ItemCode,CategoryPrice,ItemPrice,Net,NoDetail,OpenDrawer,ItemCategory,Vat,SizeColor,TotalQuantity,HorizontalModifiers,Tip,CreditCardCut,Barcode,CustomerId,SortItem,RightDuplicate,SeparateItems,KitchenPrice,PeopleBalance,Image,NoDiscountPercentage,DirectCategory,AlwaysOpenDrawer,DescriptionIsColorSize,SortCategory,SortKitchen,Discount,VatAnalysis,BigCategoryLetters,Greek1253,NoTotalDiscountPercentage,CategorySpace,VanillaReference,CashierReceiptColumn,Phone,VoucherNo,NoCompany,PayablBatch,ItemCodeBelow,ExchangeCardPerLine,SkipQuantity,ItemNote,Concise,Relay" Type="2" name="print"/>
+      <Field Caption="Print" Format="b" Size="8" Negative="0" Options="CategoryAnalysis,CustomerGroup,NoCashierDiscount,CustomerNumber,CustomerRoute,NoAging,Import,BoxType,NoItemNotes,CashierReport,ItemAnalysis,CertificatePerLine,ItemProperties,UnitAnalysis,F2,F3,ItemComposition,VatAnalysis,NoCopyMarking,BarcodeDesc2,DiscountPercent,F4,F5,PageFooter,AccountNo,PeopleBookmark,CashierExtraLines,NoBottomMargin,Barcode,Invoice#,Weight,NoteAtEnd,NoDiscount,NoIssued,ZeroTotal,VerbalAmount,ReceiptMethodOnZ,NoCopyOnEmail,NoReceiptMethod,NoLocation,NoHeaderOnFirstCopy,DisableCancel,NoLines,NoColoring,SortCategory,NoVat,CreditLimit,FirstPageHeaderOnly,NoJournal,ReversePieceBalance,SortDescriptionColumn,BarcodeLabel" Type="2" name="print_other"/>
+      <Field Caption="Print phones" Format="b" Size="2" Type="2" Options="Home,Work,Mobile,Fax,Other,Identity" name="print_phone"/>
+      <Field Caption="Display" Format="b" Size="8" Options="GrossColumn,DeleteColumn,ItemCode,SortItemCode,NoTotal,HomeAddress,NoDecimal,DontBrowsePeople,FullName,AlphaPad,GenericCustomer,AllOrders,PDASingleRow,ItemImages,StockStatus,ItemFirst,SizeByName,ExtendedStockStatus,NextPrevious,NoBarcodeChecksum,Progress,CashierResend,DirectionLabel,DisableTab,SupplierStock,LocationOrders,CheckPrice,HttpStockStatus,DiscountReason,SalePurchaseFirst,HidePriceBookmark,ItemName,WebQuotas,NetAvailable,ContainerButton,FinalizeZ,ExpirationStock,Printers,TradeDiscount,CashinEuro,CashinNumpad,PunchIn,PrintBarcodes,StockStatusSales,Loan,F1,TerminalPost,DisableNoCents" Type="2" name="display"/>
+      <Field Caption="Security" Format="b" Size="8" Options="Abort,CashIn,Cancel,PunchIn,Limited,DeleteLine,AccessAbort,MirrorTransfer,HardDelete,Prereceipt,Convert,AllowPunch,DuplicateItem,Drawer,VoucherLocation,ReturnKey,CancelDocument,PreCashier,ZeroQuantity,EnableReturns,DisableDeleteOnPrint,PunchInAdmin,CollectOnCashier,SaveDelete,Voucher,CloseCashier,CheckCustomerNumber,DrawerAdmin,Orders,ForceEmail,VoucherVerify,ConvertTransfer" Type="2" name="security"/>
+      <Field Caption="Below Cost" Size="1" Type="2" Options="Warning,Error" name="below_cost"/>
+      <Field Caption="Back Days Quantity" Format="###" Size="2" Type="2" name="backdays_quantity"/>
+      <Field Caption="Labour cost staff factor" Format="##.##" Size="2" Type="2" name="staff_factor"/>
+      <Field Caption="Labour cost service factor" Format="##.##" Size="2" Type="2" name="service_factor"/>
+      <Field Caption="Out Timeout" Format="##" Size="1" Type="2" name="out_timeout"/>
+      <Field Caption="Out Message" name="out_message"/>
+      <Field Caption="Late Timeout" Format="##" Size="1" Type="2" name="late_timeout"/>
+      <Field Caption="Last Message" name="late_message"/>
+      <Field Caption="Dispatch Timeout" Format="##" Size="1" Type="2" name="dispatch_timeout"/>
+      <Field Caption="Dispatch Message" name="dispatch_message"/>
+      <Field Caption="Dispatch Orders" Format="##" Size="1" Type="2" name="dispatch_orders"/>
+      <Field Caption="Address position" Size="1" Options="Left,Right" Type="2" name="address_pos"/>
+      <Field Caption="Email logo" Size="32" name="email_logo"/>
+      <Field Caption="Logo Scaling" Size="1" Type="2" name="logo_scale"/>
+      <Field Caption="Logo Position" Size="1" Options="Left,Right,None" Type="2" name="logo_pos"/>
+      <Field Caption="Customer Font Size" Size="2" Type="2" name="customer_font_size"/>
+      <Field Caption="Bottom Margin" Size="2" Type="2" name="bottom_margin"/>
+      <Field Caption="Top Margin" Size="2" Type="2" name="top_margin"/>
+      <Field Caption="Logo" name="logo"/>
+      <Field Caption="Footer logo" name="footer_logo"/>
+      <Field Caption="Vertical logo" name="vertical_logo"/>
+      <Field Caption="Signature logo" name="signature_logo"/>
+      <Field Caption="Browse Customer Layout" Size="32" name="browse_customer"/>
+      <Field Caption="Browse Item Layout" Size="32" name="browse_item"/>
+      <Field Caption="Find Scheme" Size="32" name="find_scheme"/>
+      <Field Caption="Layout fields" Size="180" name="layout_fields"/>
+      <Field Caption="Maximum line total" Format="####.##" Size="4" Type="2" name="max_line_total"/>
+      <Field Caption="Default price" File="pos.price" Size="1" Type="2" name="price"/>
+      <Field Caption="Route" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Coupon Polulate" Size="64" name="coupon_ip"/>
+      <Field Caption="Printer port" File="system.port" Size="2" Type="2" name="port"/>
+      <Field Caption="Ftp Host" File="system.host" Size="2" Type="2" name="host"/>
+      <Field Caption="Recipe location" File="system.location" Size="1" Type="2" name="recipe_location"/>
+      <Field Caption="Helpdesk Document" File="pos.division" Size="1" Type="2" name="helpdesk_document"/>
+      <Field Caption="Invoice Document" File="pos.division" Size="1" Type="2" name="invoice_document"/>
+      <Field Caption="Progress document" File="pos.division" Size="1" Type="2" name="progress_document"/>
+      <Field Caption="Stock take Document" File="pos.division" Size="1" Type="2" name="stocktake_document"/>
+      <Field Caption="Stock take costing" Size="1" Options="Latest,Average" Type="2" name="stocktake_costing"/>
+      <Field Caption="Stock take method" Size="1" Options="Current Date,Stock-take Date" Type="2" name="stocktake_method"/>
+      <Field Caption="Costing mark-up" Format="##.##" Size="8" Type="3" name="costing_markup"/>
+      <Field Caption="Order Window Size(10ths)" Format="#" Size="1" Type="2" name="order_wnd"/>
+      <Field Caption="Valid barcode starts with ..." Size="16" name="valid_barcode"/>
+      <Field Caption="Item Start" Format="##" Size="1" Type="2" name="item_start"/>
+      <Field Caption="Item Length" Format="##" Size="1" Type="2" name="item_length"/>
+      <Field Caption="Value Start" Format="##" Size="1" Type="2" name="value_start"/>
+      <Field Caption="Value Length" Format="##" Size="1" Type="2" name="value_length"/>
+      <Field Caption="Weight Value" Format="b" Size="1" Type="2" name="value_type"/>
+      <Field Caption="Points multiplier" Format="##" Size="1" Type="2" name="points"/>
+      <Field Caption="Free Points" Format="####" Size="2" Type="2" name="free_points"/>
+      <Field Caption="Points Ratio" Format="####" Size="2" Type="2" name="points_ratio"/>
+      <Field Caption="Minimum Points" Format="####" Size="2" Type="2" name="points_min"/>
+      <Field Caption="Points Divisor" Format="####" Size="2" Type="2" name="points_div"/>
+      <Field Caption="Cardno Start" Format="##" Size="1" Type="2" name="cardno_start"/>
+      <Field Caption="Cardno Length" Format="##" Size="1" Type="2" name="cardno_length"/>
+      <Field Caption="Item code length" Format="##" Size="1" Type="2" name="itemcode_length"/>
+      <Field Caption="Delivery start interval" Format="##" Size="1" Type="2" name="delivery_start_interval"/>
+      <Field Caption="Delivery end interval" Format="##" Size="1" Type="2" name="delivery_end_interval"/>
+      <Field Caption="Currency" File="accounting.currency" Size="4" Type="2" name="currency"/>
+      <Field Caption="Exchange Rate" Format="####.######" Size="4" Type="8" name="exrate"/>
+      <Field Caption="Otero ID" Size="4" Type="2" name="otero_id"/>
+      <Field Caption="Otero Password" Size="32" name="otero_password"/>
+      <Field Caption="Hotel Interface" Size="1" Type="2" Options="Theova,Fidelio" name="hotel_interface"/>
+      <Field Caption="Status Columns" Size="96" name="status_columns"/>
+      <Field Caption="Print Status Columns" Size="96" name="print_status_columns"/>
+      <Field Caption="Quantity Picture" Size="12" name="quantity_picture"/>
+      <Field Caption="Bluetooth Cashier Procedure" Size="32" name="bluetooth_cashier"/>
+      <Field Caption="Barcode language" Size="2" Type="2" Options="TSPL,ZPL" name="barcode_language"/>
+      <Field Caption="Barcode layout" Size="2" Type="2" Options="BluePink,Tag38x25,Tag45x35" name="barcode_layout"/>
+      <Field Caption="Costing basis" Size="2" Type="2" Options="Quantity,Pieces,Pallets" name="costing"/>
+      <Field Caption="Concetration mode" Size="2" Type="2" Options="BySupplier,ByItem,FromClearance" name="concentration"/>
+      <Field Caption="Concentration options" Size="2" Type="2" Format="b" Options="ActualPrice,NetPrice,Detailed" name="pricemode"/>
+      <Field Caption="Posting debugging" Format="b" Size="1" Options="Log,Browse" Type="2" name="post_debug"/>
+      <Field Caption="History Company" File="system.master" Size="1" Type="2" name="history_company"/>
+      <Field Caption="Replicate Company" File="system.master" Size="1" Type="2" name="replicate_company"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="param">
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[helpdesk_document]">
+         <IndexEntry name="helpdesk_document"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[history_company]">
+         <IndexEntry name="history_company"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[host]">
+         <IndexEntry name="host"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[invoice_document]">
+         <IndexEntry name="invoice_document"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[port]">
+         <IndexEntry name="port"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[progress_document]">
+         <IndexEntry name="progress_document"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[recipe_location]">
+         <IndexEntry name="recipe_location"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[stocktake_document]">
+         <IndexEntry name="stocktake_document"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

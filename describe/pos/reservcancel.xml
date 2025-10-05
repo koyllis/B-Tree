@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table UserStamp="1" CanModify="0" CanDelete="0" Icon="reservcancel" SoftDelete="0" name="Reservation Cancelation" System="pos" Unordered="1">
+      <Field Size="4" Type="5" name="date" Force="1" Caption="Date"/>
+      <Field Size="1" Type="2" File="pos.division" name="division" Caption="Division" Force="1"/>
+      <Field Size="4" Format="#########" Type="2" name="refer" Caption="Reference" Force="1"/>
+      <Field Size="4" Type="2" File="pos.trans" name="trans" Caption="Transaction" Strict="1" Modify="1"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Caption="User" Hide="1" System="1" Size="2" Type="2" name="@user_stamp" File="system.user"/>
+
+      <Index name="reservcancel" CRC64="1">
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+      </Index>
+	  
+      <Index name="reservcancel[division]" CRC64="1">
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+	  
+      <Index name="reservcancel[refer]" CRC64="1">
+         <IndexEntry name="refer"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+      </Index>
+	  
+   </Table>
+</xml>

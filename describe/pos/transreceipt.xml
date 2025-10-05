@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="transreceipt" System="pos">
+      <Field Size="4" Type="2" File="pos.trans" name="trans" Caption="Transaction"/>
+      <Field Size="2" Type="2" File="pos.receipt" name="receipt" Caption="Receipt"/>
+      <Field Size="8" Format="######.##" Type="3" name="amount" Caption="Amount"/>
+      <Field name="reference" Caption="Reference"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="transreceipt">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="receipt"/>
+      </Index>
+      <Index name="transreceipt[receipt]">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

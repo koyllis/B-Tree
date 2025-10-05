@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Parent="item" Child="recipe" System="pos" Icon="settings" Dynamic="1" name="Recipes">
+      <Field Caption="Process" File="pos.process" Size="4" Type="2" name="process"/>
+      <Field Caption="Recipe item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Size factor" Format="####" Size="8" Type="3" name="sizefactor"/>
+      <Field Caption="Quantity" Format="####.########" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Tollerance" Format="###.##" Size="8" Type="3" name="tollerance"/>
+      <Field Caption="Options" Format="b" Size="2" Options="UseWidth,UseLength,UseMatrix,MatrixWidth,MatrixLength,UseConversion" Type="2" name="options"/>
+      <Field Caption="Type" Size="1" Options="JustInTime,Scheduled" Type="2" name="type"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="recipe">
+         <IndexEntry name="process"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="sizefactor"/>
+      </Index>
+      <Index name="recipe[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="process"/>
+         <IndexEntry name="sizefactor"/>
+      </Index>
+   </Table>
+</xml>

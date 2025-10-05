@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" System="old" name="tscontr">
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" Dim ="1" name="c_date" Caption="Date"/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="c_refer" Caption="Refer. No."/>
+      <Field Size="8" Format="u" Dim ="1" name="c_code" Caption="Customer"/>
+      <Field Size="10" Format="u" Dim ="1" name="c_agrno" Caption="Agr. No."/>
+      <Field Size="1" Format="00" Type="2" Dim ="1" name="c_loc" Caption="Loc"/>
+      <Field Size="3" Format="u" Dim ="1" name="c_cur" Caption="Currency"/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="c_occ" Caption="Occupancy"/>
+      <Field Size="8" Format="###,###" Type="4" Dim ="1" name="c_net" Caption="Net fees"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="c_adm" Caption="Administration"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="c_roy" Caption="Royalty"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="c_man" Caption="Maintenance"/>
+      <Field Size="4" Format="###,###" Type="4" Dim ="1" name="c_upg" Caption="Upgrade"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="c_rep" Caption="Rep"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="c_mgr" Caption="Manager"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="c_opc" Caption="OPC"/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="c_relat" Caption="To refer."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="c_from" Caption="From refer."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="c_manjour" Caption="Maint. journal"/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="c_journal" Caption="Journal"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" Dim ="1" name="c_cancel" Caption="Erased"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" Dim ="1" name="c_return" Caption="Cancelled"/>
+      <Field Size="1" Options=",,0,1,2,3" Format="u" Dim ="1" name="c_float" Caption="Type (0123)"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="c_weeks" Caption="Weeks"/>
+      <Field Size="1" Options=",,B,W,R" Format="u" Dim ="1" name="c_season" Caption="Season"/>
+      <Field Size="4" Format="###,###" Type="2" Dim ="1" name="c_points" Caption="Conv points"/>
+      <Field Size="4" Format="###,###" Type="2" Dim ="1" name="c_purepo" Caption="Pure points"/>
+      <Index name="tscontr">
+         <IndexEntry name="c_date"/>
+         <IndexEntry name="c_refer"/>
+         <IndexEntry name="c_code"/>
+      </Index>
+   </Table>
+</xml>

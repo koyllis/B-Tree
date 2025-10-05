@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="routes" name="Routes" System="pos">
+      <Field/>
+      <Field Size="15" name="tele" Caption="Telephone"/>
+      <Field Size="15" name="car" Caption="Car No"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="route">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

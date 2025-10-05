@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="sale_fl" System="old" ModifyStamp="0">
+      <Field Caption="DATE" Format="dd/mm/yyyy" Size="4" Type="5" name="sal_date"/>
+      <Field Caption="STORE         " Size="2" name="sal_store"/>
+      <Field Caption="INVOICE NO." Size="4" Type="2" name="sal_inv"/>
+      <Field Caption="Point Of Sales" Size="3" name="sal_point"/>
+      <Field Caption="Document type (S,D,R)" Size="1" name="sal_doctype"/>
+      <Field Caption="TOTAL GROSS" Size="4" Type="4" name="sal_gross"/>
+      <Field Caption="DISCOUNT" Format="#######.#####" Size="8" Type="3" name="sal_discount2"/>
+      <Field Caption="FREE" Size="1" Type="2" name="sal_free"/>
+      <Field Caption="    CASH" Size="4" Type="4" name="sal_nettotal"/>
+      <Field Caption="    CREDIT" Size="4" Type="4" name="sal_credit"/>
+      <Field Caption="CARD SALES" Size="4" Type="4" name="sal_netcards"/>
+      <Field Caption="V.A.T" Size="4" Type="4" name="sal_vat"/>
+      <Field Caption="Return Qty" Size="1" Type="2" name="sal_returnq"/>
+      <Field Caption="RETURN" Size="4" Type="4" name="sal_return"/>
+      <Field Caption="Free Value" Size="4" Type="4" name="sal_freev"/>
+      <Field Caption="Salesman/Girl" Size="15" name="sal_person"/>
+      <Field Caption="Refund" Size="4" Type="4" name="sal_refund"/>
+      <Index name="sale_fl">
+         <IndexEntry name="sal_date"/>
+         <IndexEntry name="sal_store"/>
+         <IndexEntry name="sal_inv"/>
+         <IndexEntry name="sal_point"/>
+         <IndexEntry name="sal_doctype"/>
+      </Index>
+   </Table>
+</xml>

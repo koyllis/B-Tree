@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" Icon="glyph" name="Exams" Merge="1">
+      <Field Size="50"/>
+      <Field Caption="Distributor" File="student.distributor" Size="2" Type="2" name="distributor"/>
+      <Field Caption="Price" Format="####.##" Size="4" Type="4" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="exam">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="exam[distributor]">
+         <IndexEntry name="distributor"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

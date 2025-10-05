@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="price_group.ico" name="Redeemed" System="loyalty">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Type="2" name="refer" Caption="Reference"/>
+      <Field Size="4" Type="2" File="loyalty.store" name="store" Caption="Store"/>
+      <Field Size="4" Type="2" File="loyalty.customer" name="customer" Caption="Customer"/>
+      <Field Size="4" Type="2" File="loyalty.redmethod" name="redmethod" Caption="Method"/>
+      <Field Size="2" Type="2" name="points" Caption="Points"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="redeem">
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="redeem[customer]">
+         <IndexEntry name="customer"/>
+      </Index>
+      <Index name="redeem[redmethod]">
+         <IndexEntry name="redmethod"/>
+      </Index>
+      <Index name="redeem[store]">
+         <IndexEntry name="store"/>
+      </Index>
+   </Table>
+</xml>

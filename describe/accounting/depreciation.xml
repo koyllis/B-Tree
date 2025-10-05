@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" Icon="defrag2" Dynamic="1" name="Depreciation" System="accounting">
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Date"/>
+      <Field Size="8" Force="1" Type="2" File="accounting.detail" name="detail" Caption="Journal line"/>
+      <Field Size="4" Format="######.##" Type="4" name="depreciation" Total="1" Caption="Depreciation"/>
+      <Field Size="4" Format="######.##" Strict="1" Modify="1" Type="4" name="accumulated" Total="1" Caption="Accumulated"/>
+      <Field Size="4" Modify="1" Strict="1" Type="2" File="accounting.journal" name="journal" Caption="Journal"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="depreciation">
+         <IndexEntry name="date"/>
+         <IndexEntry name="detail"/>
+      </Index>
+      <Index name="depreciation[detail]">
+         <IndexEntry name="detail"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="depreciation[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

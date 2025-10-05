@@ -1,0 +1,67 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" Icon="proposal" Dynamic="1" Short="Member" name="Members" Merge="1" FavoriteMatch="life.contractmem" CreateStamp="1">
+      <Field Caption="Identity No." Size="10" Force="1" name="idno"/>
+      <Field Caption="Social Ins. No." Size="10" Tip="1" name="sino"/>
+      <Field Caption="Number type" Size="1" Type="2" Force="1" Options="Identity Number,Social Insurance Number,Passport Number" Tip="1" name="type"/>
+      <Field Caption="Surname" Force="1" Tip="1" name="surname"/>
+      <Field Force="1" Tip="1"/>
+      <Field Caption="Middle" Size="20" name="middle"/>
+      <Field Caption="Sex" Size="1" Type="2" Options="Male,Female" Force="1" name="sex"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="birthday"/>
+      <Field Caption="Death" Size="4" Type="5" name="death" Modify="1"/>
+      <Field Caption="Address 1" name="add1"/>
+      <Field Caption="Address 2" name="add2"/>
+      <Field Caption="Address 3" name="add3"/>
+      <Field Caption="Postal" Format="####" Size="2" Type="2" name="postal"/>
+      <Field Caption="Email" Size="40" name="email"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Telephone" Size="10" name="phone"/>
+      <Field Caption="Mobile" Size="10" name="mobile"/>
+      <Field Caption="Fax" Size="10" name="fax"/>
+      <Field Caption="Driving license issue date" Size="4" Type="5" name="issue"/>
+      <Field Caption="IBAN" Size="34" name="iban"/>
+      <Field Caption="Profession" File="life.profession" Size="2" Type="2" name="profession"/>
+      <Field Caption="Options" Format="b" Size="2" Options="NoCertificate,Notified,CrossSelling,AllowCredit,NoPromotions,Bankrupt" Type="2" name="option" Modify="1"/>
+      <Field Caption="Identity Number" Strict="1" Format="#########" Size="8" Type="2" name="idnumber" Modify="1"/>
+      <Field Caption="Age" Strict="1" Format="###" Size="2" Type="2" name="age" Modify="1"/>
+      <Field Strict="1" Caption="Serial No." Format="########" Size="4" Type="2" AutoCounter="1" name="serial" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="member">
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="member[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="member[profession]">
+         <IndexEntry name="profession"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="member_birthday">
+         <IndexEntry name="birthday"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="member_idnumber">
+         <IndexEntry name="idnumber"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="member_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="member_serial">
+         <IndexEntry name="serial"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index Force="1" name="member_sino">
+         <IndexEntry name="sino"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="member_surname">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="idno"/>
+      </Index>
+   </Table>
+</xml>

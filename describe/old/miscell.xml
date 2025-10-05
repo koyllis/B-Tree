@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="miscell" System="old">
+      <Field Size="4" Format="0" Type="2" name="mi_number" Caption="Emp. No."/>
+      <Field Size="4" Type="5" name="mi_date" Caption="Period ending"/>
+      <Field Size="1" Format="###" Type="2" name="mi_rateno" Caption="Rate No."/>
+      <Field Size="4" Format="###,###.##" Type="4" name="mi_amount" Caption="Amount"/>
+      <Field Size="8" Format="###,###.##" Type="3" name="mi_hours" Caption="Hours (if any)"/>
+      <Field Size="4" Type="5" name="mi_frdate" Caption="From date"/>
+      <Field Size="4" Type="5" name="mi_todate" Caption="To date"/>
+      <Field Size="20" name="mi_rems" Caption="Remarks"/>
+      <Index name="miscell">
+         <IndexEntry name="mi_number"/>
+         <IndexEntry name="mi_date"/>
+         <IndexEntry name="mi_rateno"/>
+      </Index>
+   </Table>
+</xml>

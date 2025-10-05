@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="hotel" Icon="xcalc" name="Pricing">
+      <Field Caption="Room type" File="hotel.roomtype" Size="2" Type="2" name="type"/>
+      <Field Caption="Terms" Size="1" Type="2" Options="Accomodation,Bed And Breakfast,Half Board,Full Board" name="terms"/>
+      <Field Caption="Month" Format="##" Size="1" Type="2" name="month"/>
+      <Field Caption="Day" Format="##" Size="1" Type="2" name="day"/>
+      <Field Caption="Price" Format="####.##" Size="4" Type="4" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pricing">
+         <IndexEntry name="type"/>
+         <IndexEntry name="terms"/>
+         <IndexEntry name="month"/>
+      </Index>
+      <Index name="pricing[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="terms"/>
+         <IndexEntry name="month"/>
+      </Index>
+   </Table>
+</xml>

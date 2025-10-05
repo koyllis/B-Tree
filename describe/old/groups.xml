@@ -1,0 +1,13 @@
+<xml>
+   <Table System="old" name="groups" ModifyStamp="0">
+      <Field Caption="Group code" Format="u" Size="2" name="g_group"/>
+      <Field Format="u" Size="20" name="g_name"/>
+      <Field Caption="Debtors/Creditors" Format="u" Size="1" Options="D,C" name="g_dc"/>
+      <Field Caption="Price matrix vertical coordinate" Format="###" Size="1" Type="2" name="g_pcode"/>
+      <Field Caption="Access level" Format="###" Size="1" Type="2" name="g_level"/>
+      <Field Caption="Default account" Format="u" Size="6" name="g_defacc"/>
+      <Index name="groups">
+         <IndexEntry name="g_group"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,44 @@
+<xml>
+   <Table System="student" name="Daily Schedule" Icon="calendar">
+      <Field Caption="Date" Size="4" Type="5" name="date" Force="1"/>
+      <Field Caption="Slot" File="office.schslot" Size="2" Type="2" name="slot" Force="1"/>
+      <Field Caption="Student" File="student.student" Size="4" Type="2" name="student" Force="1"/>
+      <Field Caption="Class" File="student.class" Size="2" Type="2" name="class" Force="1"/>
+      <Field Caption="Instructor" File="student.instructor" Size="4" Force="1" Type="2" name="instructor"/>
+      <Field Caption="Extra" Size="1" Type="2" name="extra" Format="b"/>
+      <Field Caption="Pending" Size="1" Type="2" name="pending" Format="b"/>
+      <Field Caption="Fee" Format="####.##" Size="4" Type="4" name="fee" Strict="1" Total="1"/>
+      <Field Caption="Canceled" Size="8" Type="5" name="canceled" Modify="1"/>
+      <Field Caption="Discount" Format="####.##" Size="4" Type="4" name="discount" Total="1" Modify="1"/>
+      <Field Caption="Owed" Size="2" Type="2" name="owed" Total="1" Strict="1" Modify="1"/>
+      <Field Caption="Posted" Size="8" Type="5" name="posted" Strict="1" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="dateslot">
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="dateslot[class]">
+         <IndexEntry name="class"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="dateslot[slot]">
+         <IndexEntry name="slot"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="dateslot[student]">
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+      </Index>
+      <Index name="dateslot[instructor]">
+         <IndexEntry name="instructor"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="student"/>
+      </Index>
+   </Table>
+</xml>

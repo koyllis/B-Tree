@@ -1,0 +1,33 @@
+<xml>
+   <Table System="pos" name="Brand Comparison">
+      <Field Caption="Brand" File="pos.brand" Size="4" Type="2" name="brand"/>
+      <Field Caption="Location" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Order Qty TY" Format="######" Total="1" Size="8" Type="3" name="order_qty_current"/>
+      <Field Caption="Order Qty LY" Format="######" Total="1" Size="8" Type="3" name="order_qty_previous"/>
+      <Field Caption="Order TY" Total="1" Size="8" Type="3" name="order_current"/>
+      <Field Caption="Order LY" Total="1" Size="8" Type="3" name="order_previous"/>
+      <Field Caption="Purchase Qty TY" Format="######" Total="1" Size="8" Type="3" name="purchase_qty_current"/>
+      <Field Caption="Purchase Qty LY" Format="######" Total="1" Size="8" Type="3" name="purchase_qty_previous"/>
+      <Field Caption="Purchase TY" Total="1" Size="8" Type="3" name="purchase_current"/>
+      <Field Caption="Purchase LY" Total="1" Size="8" Type="3" name="purchase_previous"/>
+      <Field Caption="Transfer Qty TY" Format="######" Total="1" Size="8" Type="3" name="transfer_qty_current"/>
+      <Field Caption="Transfer Qty LY" Format="######" Total="1" Size="8" Type="3" name="transfer_qty_previous"/>
+      <Field Caption="Transfer TY" Total="1" Size="8" Type="3" name="transfer_current"/>
+      <Field Caption="Transfer LY" Total="1" Size="8" Type="3" name="transfer_previous"/>
+      <Field Caption="Sale Qty TY" Format="######" Total="1" Size="8" Type="3" name="sale_qty_current"/>
+      <Field Caption="Sale Qty LY" Format="######" Total="1" Size="8" Type="3" name="sale_qty_previous"/>
+      <Field Caption="Sales TY" Total="1" Size="8" Type="3" name="sale_current"/>
+      <Field Caption="Sales LY" Total="1" Size="8" Type="3" name="sale_previous"/>
+      <Field Caption="Cost TY" Total="1" Size="8" Type="3" name="cost_current"/>
+      <Field Caption="Cost LY" Total="1" Size="8" Type="3" name="cost_previous"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="brandcompare">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="brandcompare[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="brand"/>
+      </Index>
+   </Table>
+</xml>

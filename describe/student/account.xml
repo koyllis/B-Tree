@@ -1,0 +1,100 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Unordered="1" Phone="mobile_mother" Bookmark="1" System="student" SoftDelete="1" Icon="family" Dynamic="1" Short="Account" name="Accounts" Hint="people">
+      <Field Caption="Surname" Tip="1" name="surname" Distinct="1"/>
+      <Field Strict="1" Caption="Code" Format="######" Size="4" Summary="0" Type="2" Tip="1" AutoCounter="1" name="code" Modify="1" Distinct="1"/>
+      <Field Caption="Father name" Size="20" Tip="1" name="father" Distinct="1"/>
+      <Field Caption="Mother name" Size="20" Tip="1" name="mother" Distinct="1"/>
+      <Field Caption="Mother maiden name" name="mother_maiden"/>
+      <Field Caption="Father mobile" Size="15" name="mobile_father" Distinct="1"/>
+      <Field Caption="Mother mobile" Size="15" name="mobile_mother" Tip="1" Distinct="1"/>
+      <Field Caption="Father profession" File="payroll.profession" Size="2" Type="2" name="father_prof"/>
+      <Field Caption="Mother profession" File="payroll.profession" Size="2" Type="2" name="mother_prof"/>
+      <Field Caption="Father nationality" File="accounting.nationality" Size="1" Type="2" name="father_nationality"/>
+      <Field Caption="Mother nationality" File="accounting.nationality" Size="1" Type="2" name="mother_nationality"/>
+      <Field Caption="Father origin" File="student.origin" Size="2" Type="2" name="father_origin"/>
+      <Field Caption="Mother origin" File="student.origin" Size="2" Type="2" name="mother_origin"/>
+      <Field Caption="Address " name="add1"/>
+      <Field Caption="Address" name="add2"/>
+      <Field Caption="Town" Size="20" name="town"/>
+      <Field Caption="Zip " Format="####" Size="4" ReportWidth="10" Type="2" name="zip"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Home phone" Size="10" name="home"/>
+      <Field Caption="Father work" Size="10" name="work_father" Distinct="1"/>
+      <Field Caption="Mother work" Size="10" name="work_mother" Distinct="1"/>
+      <Field Caption="Fax " Size="10" name="fax"/>
+      <Field Caption="Father e-mail" Size="40" name="email"/>
+      <Field Caption="Mother e-mail" Size="40" name="mother_email"/>
+      <Field Caption="Category" File="student.accountcateg" Size="2" Type="2" name="accountcateg"/>
+      <Field Caption="Instructor" File="student.instructor" Size="2" Auto="1" Force="1" Type="2" name="instructor"/>
+      <Field Caption="Account" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Strict="1" Caption="Discount" Total="1" Format="####.##" Size="4" Type="4" name="discount" Modify="1"/>
+      <Field Caption="No photos" Format="b" Size="1" Type="2" name="nophoto"/>
+      <Field Caption="Refugee" Strict="1" Format="b" Size="1" Auto="1" Type="2" name="refugee"/>
+      <Field Strict="1" Caption="Recorded" Size="8" Auto="1" Type="5" name="record"/>
+      <Field Strict="1" Caption="Active" Format="b" Hide="1" Size="1" Type="2" name="active" Modify="1" Fetch="1"/>
+      <Field Caption="Names" Strict="1" Hide="1" Size="200" name="xnames" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+      <Index name="account">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[accountcateg]">
+         <IndexEntry name="accountcateg"/>
+         <IndexEntry name="surname"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[father_nationality]">
+         <IndexEntry name="father_nationality"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[father_origin]">
+         <IndexEntry name="father_origin"/>
+         <IndexEntry name="surname"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[father_prof]">
+         <IndexEntry name="father_prof"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[instructor]">
+         <IndexEntry name="instructor"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[mother_nationality]">
+         <IndexEntry name="mother_nationality"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[mother_origin]">
+         <IndexEntry name="mother_origin"/>
+         <IndexEntry name="surname"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[mother_prof]">
+         <IndexEntry name="mother_prof"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index Force="1" name="account_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="surname"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="account_code">
+         <IndexEntry name="code"/>
+         <IndexEntry name="surname"/>
+      </Index>
+      <Index name="account_home">
+         <IndexEntry name="home"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

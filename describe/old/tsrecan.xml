@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="tsrecan" System="old" ModifyStamp="0">
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="rc_date"/>
+      <Field Caption="Refer." Format="######" Size="4" Type="2" name="rc_refer"/>
+      <Field Caption="Customer" Format="u" Size="8" name="rc_code"/>
+      <Field Caption="Loc" Format="00" Size="1" Type="2" name="rc_loc"/>
+      <Field Caption="Cur" Format="u" Size="3" name="rc_cur"/>
+      <Field Caption="Amount" Format="###,###.##" Size="4" Type="4" name="rc_amount"/>
+      <Field Caption="Difference" Format="###,###.##" Size="4" Type="4" name="rc_disc"/>
+      <Field Caption="Extra refer." Size="10" name="rc_xrefer"/>
+      <Field Caption="Trustee" Format="u" Size="8" name="rc_trust"/>
+      <Field Caption="Contract date" Format="dd/mm/yyyy" Size="4" Type="5" name="rc_cdate"/>
+      <Field Caption="Refer." Format="######" Size="4" Type="2" name="rc_crefer"/>
+      <Field Caption="Receipt" Format="###" Size="1" Type="2" name="rc_rec"/>
+      <Field Caption="Receipt date" Format="dd/mm/yyyy" Size="4" Type="5" name="rc_sdate"/>
+      <Field Caption="Journal" Format="######" Size="4" Type="2" name="rc_journal"/>
+      <Field Caption="Receipt" Format="dd/mm/yyyy" Size="4" Type="5" name="rc_rdate"/>
+      <Field Caption="Canceled" Format="dd/mm/yyyy" Size="4" Type="5" name="rc_cancel"/>
+      <Index name="tsrecan">
+         <IndexEntry name="rc_date"/>
+         <IndexEntry name="rc_refer"/>
+         <IndexEntry name="rc_code"/>
+         <IndexEntry name="rc_loc"/>
+      </Index>
+   </Table>
+</xml>

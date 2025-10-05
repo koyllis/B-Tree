@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Modify_flag="1" name="carfile" System="old">
+      <Field Size="8" Format="u" Dim ="1" name="cf_regno" Caption="Reg. No."/>
+      <Field Size="8" Format="u" Dim ="1" name="cf_code" Caption="Customer"/>
+      <Field Size="15" Format="u" Dim ="1" name="cf_chassis" Caption="Chassis No."/>
+      <Field Size="15" Format="u" Dim ="1" name="cf_make" Caption="Make"/>
+      <Field Size="15" Format="u" Dim ="1" name="cf_engine" Caption="Engine No."/>
+      <Field Size="15" Format="u" Dim ="1" name="cf_model" Caption="Model"/>
+      <Field Size="15" Format="u" Dim ="1" name="cf_colour" Caption="Colour"/>
+      <Index name="carfile">
+         <IndexEntry name="cf_regno"/>
+         <IndexEntry name="cf_code"/>
+         <IndexEntry name="cf_chassis"/>
+      </Index>
+   </Table>
+</xml>

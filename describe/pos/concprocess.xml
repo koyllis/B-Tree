@@ -1,0 +1,9 @@
+<xml>
+   <Table System="pos" name="Concetration Procedure">
+      <Field Caption="Transaction line" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="concprocess">
+         <IndexEntry name="transdet"/>
+      </Index>
+   </Table>
+</xml>

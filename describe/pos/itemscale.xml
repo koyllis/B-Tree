@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="itemscale" System="pos">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="pos.color" name="color" Caption="Width"/>
+      <Field Size="2" Type="2" File="pos.size" name="size" Caption="Length"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="itemscale">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="itemscale[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="itemscale[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

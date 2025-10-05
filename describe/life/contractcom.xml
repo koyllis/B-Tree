@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="calc4" name="Contract Commissions" System="life">
+      <Field Size="2" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="2" Type="2" File="life.plangroup" name="package" Caption="Package"/>
+      <Field Size="4" Format="###.##" Type="8" name="commission" Caption="Commission(%)"/>
+      <Field Size="4" Format="###.##" Type="8" name="premium" Caption="Premium%"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="contractcom">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="package"/>
+      </Index>
+      <Index name="contractcom[package]">
+         <IndexEntry name="package"/>
+         <IndexEntry name="contract"/>
+      </Index>
+   </Table>
+</xml>

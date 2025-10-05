@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="samplecolor">
+      <Field Caption="Item sample" File="pos.itemsample" Size="4" Type="2" name="itemsample"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="samplecolor">
+         <IndexEntry name="itemsample"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="samplecolor[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="itemsample"/>
+      </Index>
+   </Table>
+</xml>

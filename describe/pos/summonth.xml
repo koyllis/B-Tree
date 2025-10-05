@@ -1,0 +1,39 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table ManualIndex="1" CanModify="0" System="pos" Export="date" Dynamic="1" PDA="0" CanDelete="0" name="Monthly Analysis">
+      <Field Caption="Month" Size="4" Type="5" name="date"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" PersistentReport="1" name="division"/>
+      <Field Caption="Quantity" Total="1" Percentage="2" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Orders" Total="1" Format="#####" Size="4" Type="2" name="orders"/>
+      <Field Caption="Gross" Total="1" Format="######.##" Size="8" Type="3" name="gross"/>
+      <Field Caption="Discount" Total="1" Format="######.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Net" Total="1" Percentage="2" Format="######.##" Size="8" Type="3" name="net"/>
+      <Field Caption="Cost" Total="1" Format="######.##" Size="8" Type="3" name="cost"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="summonth" CRC64="1">
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index CRC64="1" name="summonth[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index CRC64="1" name="summonth[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index CRC64="1" name="summonth[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

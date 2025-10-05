@@ -1,0 +1,60 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="insurance" SoftDelete="1" Icon="transfers" CanDelete="0" name="Endorsements">
+      <Field Caption="Policy" File="insurance.policy" Size="4" Type="2" name="policy"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Reference" Size="4" Type="2" name="reference"/>
+      <Field Caption="Type" File="insurance.endtype" Size="1" Type="2" name="endtype"/>
+      <Field Caption="Driver" File="insurance.driver" Size="4" Type="2" name="driver"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Vehicle" File="insurance.vehicle" Size="4" Type="2" name="vehicle"/>
+      <Field Caption="Note" Total="1" Size="40" name="note"/>
+      <Field Caption="Premium" Total="1" Format="######.##" Size="4" Type="4" name="premium"/>
+      <Field Caption="Discount" Format="#####.##" Size="4" Type="4" name="discount"/>
+      <Field Caption="General fund" Total="1" Format="######.##" Size="4" Type="4" name="fund"/>
+      <Field Caption="Stamps" Total="1" Format="######.##" Size="4" Type="4" name="stamps"/>
+      <Field Caption="Fees" Total="1" Format="######.##" Size="4" Type="4" name="fees"/>
+      <Field Caption="Other" Total="1" Format="######.##" Size="4" Type="4" name="other"/>
+      <Field Caption="Extra" Format="######.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Total" Total="1" Format="######.##" Size="4" Type="4" name="total"/>
+      <Field Strict="1" Caption="Office commission" Total="1" Format="######.##" Size="4" Type="4" name="officecomm" Modify="1"/>
+      <Field Strict="1" Caption="Agent commission" Total="1" Format="######.##" Size="4" Type="4" name="agentcomm" Modify="1"/>
+      <Field Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="policyend">
+         <IndexEntry name="policy"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policyend[driver]">
+         <IndexEntry name="driver"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policyend[endtype]">
+         <IndexEntry name="endtype"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policyend[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policyend[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policyend[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

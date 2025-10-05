@@ -1,0 +1,9 @@
+<xml>
+   <Table System="office" name="Examination Areas">
+      <Field/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="scharea">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="paytyp" System="old">
+      <Field Size="3" Format="u" name="pt_pycode" Caption="Payment code"/>
+      <Field Size="12" Format="u" name="pt_name"/>
+      <Field Size="8" Format="#.####" Type="3" name="pt_rate" Caption="Rate"/>
+      <Field Size="1" Options=",,C,R,F,E" Format="u" name="pt_crf" Caption="Cash/cRedit/Free/Expense"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="pt_forcur" Caption="Foreign currency (Y/N)?"/>
+      <Field Size="2" Format="u" name="pt_doc" Caption="Credit document"/>
+      <Field Size="6" Format="u" name="pt_account" Caption="Account"/>
+      <Field Size="6" Format="u" name="pt_cardacc" Caption="Credit card expense"/>
+      <Field Size="6" Format="u" name="pt_cardlia" Caption="Credit card liability"/>
+      <Index name="paytyp">
+         <IndexEntry name="pt_pycode"/>
+      </Index>
+   </Table>
+</xml>

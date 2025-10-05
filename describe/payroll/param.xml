@@ -1,0 +1,64 @@
+<xml>
+   <Table System="payroll" Icon="swissarmy" name="Payroll Parameters">
+      <Field Caption="Location" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Time import script" Size="32" name="script"/>
+      <Field Caption="Cheque script" Size="32" name="cheque"/>
+      <Field Caption="Hours in a year" Format="####" Size="2" Type="2" name="hours"/>
+      <Field Caption="Minutes per day" Format="###" Size="2" Type="2" name="minutes"/>
+      <Field Caption="Social discounts maximum factor" Format="##" Size="1" Type="2" name="maxsocial"/>
+      <Field Caption="Monthly maximum insurable earnings" Format="######.##" Size="4" Type="4" name="monthmax"/>
+      <Field Caption="Bonus options" Format="b" Size="2" Type="2" Options="ExcludeFromTax,NoTax,MonthlyRatio,AverageEarnings,HourBasis" name="bonus"/>
+      <Field Caption="Bonus days" Format="###" Size="2" Type="2" name="bonusdays"/>
+      <Field Caption="Allow input of gross salary" Format="b" Size="1" Type="2" name="inputgross"/>
+      <Field Caption="Ignore punch cards" Format="b" Size="1" Type="2" name="ignorepunch"/>
+      <Field Caption="Options" Format="b" Size="2" Options="NoDuplicatePunches,SaturdayNotHoliday,IgnoreHolidays,AllowPastErase,FillDates,TaxonHolidayFund,GoodFridayNotHoliday,NoOvertimeEstimate,RemainingAverage,AllocateJournal,NoEasterFriday,VariableMonthDays,UsePunchHours,IgnoreCostingHours" Type="2" name="options"/>
+      <Field Caption="Slip options" Format="b" Size="2" Type="2" Options="NoHourlyRate,NoAnnualLeave,NoHours,NoTaxCalculation" name="print"/>
+      <Field Caption="Week ends on day" Size="1" Options="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" Type="2" name="weekend"/>
+      <Field Caption="Holiday Weeks" Format="##" Size="1" Type="2" name="weeks"/>
+      <Field Caption="Punch card back days allowed" Format="##" Size="1" Type="2" name="punchback"/>
+      <Field Caption="T.I.C. in charge" Size="9" name="incharge"/>
+      <Field Caption="T.I.C. representative" Size="9" name="represent"/>
+      <Field Caption="T.I.C. auditor" Size="9" name="auditor"/>
+      <Field Caption="T.I.C. submitted" Size="9" name="submit"/>
+      <Field Caption="Position" Size="1" Options="Manager,Secretary,Partner,Authorized,Accountant" Type="2" name="position"/>
+      <Field Caption="Category" Size="1" Options="Company,Partnership,Person" Type="2" name="category"/>
+      <Field Caption="According" Size="1" Options="Audited,Un-audited" Type="2" name="books"/>
+      <Field Caption="First" Size="1" Options="First,Additional" Type="2" name="first"/>
+      <Field Caption="Type" Size="1" Options="Passport,Identity,Tax Identity,Foreign,Social Insurance,Driver license" Type="2" name="type"/>
+      <Field/>
+      <Field Caption="Telephone" Size="20" name="phone"/>
+      <Field Caption="Social Insurance No." Size="15" name="socialno"/>
+      <Field Caption="PFS A accounts" Company="PFS" File="accounting.chart" Size="4" Type="2" name="chart_a"/>
+      <Field Caption="PFS B accounts" Company="PFS" File="accounting.chart" Size="4" Type="2" name="chart_b"/>
+      <Field Caption="Loan accounts" Company="PFS" File="accounting.chart" Size="4" Type="2" name="chart_l"/>
+      <Field Caption="Distribution account" Company="PFS" File="accounting.chart" Size="4" Type="2" name="chart_d"/>
+      <Field Caption="Interest account" Company="PFS" File="accounting.chart" Size="4" Type="2" name="chart_i"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="param">
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[]">
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[chart_a]">
+         <IndexEntry name="chart_a"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[chart_b]">
+         <IndexEntry name="chart_b"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[chart_d]">
+         <IndexEntry name="chart_d"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[chart_i]">
+         <IndexEntry name="chart_i"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[chart_l]">
+         <IndexEntry name="chart_l"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

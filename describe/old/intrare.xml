@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="intrare" System="old">
+      <Field Size="8" name="if_regno" Caption="Reg. No."/>
+      <Field Size="4" Type="5" name="if_date" Caption="Issue date"/>
+      <Field Size="1" Format="###" Type="2" name="if_line" Caption="Line"/>
+      <Field name="if_name"/>
+      <Field Size="4" Type="5" name="if_birth" Caption="Birth-date"/>
+      <Field Size="10" name="if_license" Caption="License No."/>
+      <Field Size="4" Type="5" name="if_ldate" Caption="License date"/>
+      <Field Size="1" Format="###" Type="2" name="if_cono" Caption="Comp. No."/>
+      <Field Size="2" Format="###" Type="2" name="if_agno" Caption="Agent No."/>
+      <Field Size="8" name="if_code" Caption="Customer"/>
+      <Field Size="1" Format="###" Type="2" name="if_inno" Caption="Ins. type"/>
+      <Field Size="20" name="if_policy" Caption="Policy No."/>
+      <Field Size="10" name="if_id" Caption="ID NO."/>
+      <Index name="intrare">
+         <IndexEntry name="if_regno"/>
+         <IndexEntry name="if_date"/>
+         <IndexEntry name="if_line"/>
+      </Index>
+   </Table>
+</xml>

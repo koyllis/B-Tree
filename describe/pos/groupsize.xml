@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="groupsize">
+      <Field Caption="Size group" File="pos.sizegroup" Size="2" Type="2" name="sizegroup"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="groupsize">
+         <IndexEntry name="sizegroup"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="groupsize[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="sizegroup"/>
+      </Index>
+   </Table>
+</xml>

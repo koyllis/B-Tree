@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Static="1" Bookmark="1" System="filing" SoftDelete="1" Icon="location" Index="office" name="Office/Locations" Merge="1">
+      <Field Caption="Office name" Size="50"/>
+      <Field Caption="Floor" File="filing.floor" Size="2" Type="2" name="floor"/>
+      <Field Caption="Office" Format="#######" Size="4" Type="2" AutoCounter="1" name="office" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="office">
+         <IndexEntry name="name"/>
+         <IndexEntry name="floor"/>
+      </Index>
+      <Index name="office[floor]">
+         <IndexEntry name="floor"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="office"/>
+      </Index>
+      <Index Force="1" name="office_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="floor"/>
+      </Index>
+      <Index name="office_office">
+         <IndexEntry name="office"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

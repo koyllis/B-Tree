@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="recipecalc">
+      <Field Caption="Recipe" File="pos.recipe" Size="4" Type="2" name="recipe"/>
+      <Field Caption="Sequence" Size="2" Type="2" name="seq"/>
+      <Field Caption="Factor" Format="####.########" Size="8" Type="3" name="factor"/>
+      <Field Caption="Function" Size="1" Options="Multiply,Divide,Add" Type="2" name="function"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="recipecalc">
+         <IndexEntry name="recipe"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

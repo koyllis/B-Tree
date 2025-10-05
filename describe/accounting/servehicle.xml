@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Dynamic="1" name="Service Vehicles" System="accounting">
+      <Field Size="4" Type="2" File="accounting.service" name="service" Caption="Service"/>
+      <Field Size="4" Type="2" File="accounting.vehicle" name="vehicle" Caption="Vehicle"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="servehicle">
+         <IndexEntry name="service"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="servehicle[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="service"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Committee">
+      <Field Caption="Commitee" File="generic.comtype" Size="2" Type="2" name="comtype"/>
+      <Field Caption="Leader" File="generic.leader" Size="4" Type="2" name="leader"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="committee">
+         <IndexEntry name="comtype"/>
+         <IndexEntry name="leader"/>
+      </Index>
+      <Index name="committee[leader]">
+         <IndexEntry name="leader"/>
+         <IndexEntry name="comtype"/>
+      </Index>
+   </Table>
+</xml>

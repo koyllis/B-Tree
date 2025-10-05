@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="timebreak">
+      <Field Caption="Time definition" File="payroll.timedef" Size="2" Type="2" name="timedef"/>
+      <Field Caption="From time" Size="2" Type="5" name="from"/>
+      <Field Caption="To time" Size="2" Type="5" name="to"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="timebreak">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="from"/>
+      </Index>
+   </Table>
+</xml>

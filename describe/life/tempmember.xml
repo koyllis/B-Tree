@@ -1,0 +1,57 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" Icon="proposal" Dynamic="1" Short="Members" name="Termporary Members" CreateStamp="1">
+      <Field Caption="Identity No." Size="10" Force="1" name="idno"/>
+      <Field Caption="Social Ins. No." Size="10" Tip="1" name="sino"/>
+      <Field Caption="Number type" Size="1" Type="2" Force="1" Options="Identity Number,Social Insurance Number,Passport Number" Tip="1" name="type"/>
+      <Field Caption="Surname" Force="1" Tip="1" name="surname"/>
+      <Field Force="1"/>
+      <Field Caption="Middle" Size="20" name="middle"/>
+      <Field Caption="Sex" Size="1" Type="2" Options="Male,Female" name="sex"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="birthday"/>
+      <Field Caption="Death" Size="4" Type="5" name="death" Modify="1"/>
+      <Field Caption="Address 1" name="add1"/>
+      <Field Caption="Address 2" name="add2"/>
+      <Field Caption="Address 3" name="add3"/>
+      <Field Caption="Postal" Format="####" Size="2" Type="2" name="postal"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Telephone" Size="10" name="phone"/>
+      <Field Caption="Mobile" Size="10" name="mobile"/>
+      <Field Caption="Fax" Size="10" name="fax"/>
+      <Field Caption="Profession" File="life.profession" Size="2" Type="2" name="profession"/>
+      <Field Caption="Member" Strict="1" File="life.member" Size="4" Type="2" name="member"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="tempmember">
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="tempmember[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="tempmember[member]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="tempmember[profession]">
+         <IndexEntry name="profession"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="tempmember_birthday">
+         <IndexEntry name="birthday"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="tempmember_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index Force="1" name="tempmember_sino">
+         <IndexEntry name="sino"/>
+         <IndexEntry name="idno"/>
+      </Index>
+      <Index name="tempmember_surname">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="idno"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,201 @@
+<xml>
+   <Table Bookmark="1" System="payroll" SoftDelete="1" Icon="employee" Export="employment" name="Employees" Immutable="1">
+      <Field Caption="Number" Size="4" Type="2" AutoCounter="1" Tip="1" name="code"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" Force="1" name="location"/>
+      <Field Size="30" Force="1" Tip="1"/>
+      <Field Caption="Surname" Force="1" Tip="1" name="surname" Size="40"/>
+      <Field Caption="Sex" Size="1" Type="2" Options="Male,Female" name="sex"/>
+      <Field Caption="Identity No." ReportWidth="15" Size="20" name="id"/>
+      <Field Caption="S.I. No." Format="#########" ReportWidth="15" Size="4" Type="2" name="si"/>
+      <Field Caption="TAX No." Size="20" name="taxno"/>
+      <Field Caption="Foreign Reg. No." Size="15" name="foreign"/>
+      <Field Caption="Foreign Reg. No. expiration" Size="4" Type="5" name="expire_foreign"/>
+      <Field Caption="Payroll No." Size="10" name="payrollno"/>
+      <Field Caption="Passport No." Size="10" name="passno"/>
+      <Field Caption="Passport expiration" Size="4" Type="5" name="expire_passno"/>
+      <Field Caption="Driver license No." Size="10" name="driver"/>
+      <Field Caption="Issue date L1" Size="4" Type="5" name="driver_date"/>
+      <Field Caption="Issue date L2" Size="4" Type="5" name="driver_date2"/>
+      <Field Caption="Expire date" Size="4" Type="5" name="driver_expire"/>
+      <Field Caption="Pension No." Size="10" name="pension"/>
+      <Field Caption="Pension type" Size="1" Type="2" Options="Normal,Widow" name="pension_type"/>
+      <Field Caption="Street" name="street"/>
+      <Field Caption="Street" name="street2"/>
+      <Field Caption="City" name="city"/>
+      <Field Caption="Postal code" Format="#####" Size="4" Type="2" name="zip"/>
+      <Field Caption="Home phone" Size="10" name="home"/>
+      <Field Caption="Mobile phone" Size="10" name="mobile"/>
+      <Field Caption="Relative" Size="40" name="relative"/>
+      <Field Caption="Relative mobile" Size="10" name="relmobile"/>
+      <Field Caption="Relation" Size="20" name="relation"/>
+      <Field Caption="Guid" Size="36" name="guid"/>
+      <Field Caption="E-mail" Size="40" name="email"/>
+      <Field Caption="Name day" File="accounting.nameday" Size="2" Type="2" name="nameday"/>
+      <Field Caption="Bank" File="accounting.bank" Size="1" Type="2" name="bankcode"/>
+      <Field Caption="Bank account" Size="20" name="bank" Administrator="1"/>
+      <Field Caption="IBAN" Size="34" name="iban" Administrator="1"/>
+      <Field Caption="Bank Swift" Size="11" name="swift"/>
+      <Field Caption="Employment date" Size="4" Type="5" Force="1" name="employment"/>
+      <Field Caption="Start time" Size="2" Format="HH:mm" Type="5" name="time"/>
+      <Field Caption="Termination date" Size="4" Type="5" name="termination" Modify="1"/>
+      <Field Caption="Contract date" Size="4" Type="5" name="contractdate" Modify="1"/>
+      <Field Caption="PFS date in" Size="4" Type="5" name="pfsin" Modify="1"/>
+      <Field Caption="PFS date out" Size="4" Type="5" name="pfsout" Modify="1"/>
+      <Field Caption="Birth date" Size="4" Type="5" name="birthdate"/>
+      <Field Caption="Retirement date" Size="4" Type="5" name="retirement" Modify="1" Strict="1"/>
+      <Field Caption="Minutes per day" Size="2" Type="2" name="minutes"/>
+      <Field Caption="Hours per period" Format="######.##" Size="4" Type="8" name="hours"/>
+      <Field Caption="Basic salary" Strict="1" Format="######.####" Size="4" Type="8" name="basic" Administrator="1"/>
+      <Field Caption="Period" Size="1" Force="1" Type="2" Options="Monthly,Bi-weekly,Weekly,Hourly" name="period"/>
+      <Field Caption="Sequence" Size="2" Type="2" name="seq"/>
+      <Field Caption="Card No." Format="########" Size="4" Type="2" name="cardno"/>
+      <Field Caption="Options" Format="b" Size="2" Options="IgnoreHolidays,Retired,WorkOnSaturday,NoBonusOnTax,NoLocationRestriction,OverrideDiscount,ShowItemCost,NoBankTransfer,KeepAnnualLeaveBalance,Officer" Type="2" name="option"/>
+      <Field Caption="Alternate Access" Size="20" name="alt_access"/>
+      <Field Caption="Access" Administrator="1" Size="40" name="access"/>
+      <Field Caption="Part-time" Format="b" Size="1" Type="2" name="part"/>
+      <Field Caption="Ideal minutes" Format="#####" Size="2" Type="2" name="ideal"/>
+      <Field Caption="Paid minutes" Format="#####" Size="2" Type="2" name="paid"/>
+      <Field Caption="Leader" File="payroll.employee" Size="4" Type="2" name="leader"/>
+      <Field Caption="Category" File="payroll.empcategory" Size="2" Type="2" name="empcategory"/>
+      <Field Caption="Profession" File="payroll.profession" Size="2" Type="2" name="profession"/>
+      <Field Caption="Nationality" File="accounting.nationality" Size="2" Type="2" name="nationality"/>
+      <Field Caption="S.I. group" File="payroll.sigroup" Size="2" Type="2" name="sigroup"/>
+      <Field Caption="Group" File="payroll.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Position" Strict="1" File="payroll.position" Size="2" Type="2" name="position"/>
+      <Field Caption="Department" File="payroll.timedef" Size="2" Type="2" StrictOnModify="1" name="timedef"/>
+      <Field Caption="Sub-Account" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Currency" Strict="1" File="accounting.currency" Size="2" Type="2" name="currency"/>
+      <Field Caption="Last salary change" Strict="1" Size="4" Type="5" name="lastchange"/>
+      <Field Caption="Link" Strict="1" File="payroll.employee" Size="4" Type="2" name="link"/>
+      <Field Caption="Maximum" Format="####.##" Size="4" Type="8" name="maximum"/>
+      <Field Caption="Commission" Format="###.##" Size="2" Type="2" name="commission"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+      <Index name="employee">
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[bankcode]">
+         <IndexEntry name="bankcode"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[empcategory]">
+         <IndexEntry name="empcategory"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[leader]">
+         <IndexEntry name="leader"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[link]">
+         <IndexEntry name="link"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="employee[nameday]">
+         <IndexEntry name="nameday"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[nationality]">
+         <IndexEntry name="nationality"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[position]">
+         <IndexEntry name="position"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[profession]">
+         <IndexEntry name="profession"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee[sigroup]">
+         <IndexEntry name="sigroup"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="employee[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index Force="1" name="employee_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee_access">
+         <IndexEntry name="access"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee_alt_access">
+         <IndexEntry name="alt_access"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee_cardno">
+         <IndexEntry name="cardno"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee_id">
+         <IndexEntry name="id"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee_mobile">
+         <IndexEntry name="mobile"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee_payrollno">
+         <IndexEntry name="payrollno"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee_seq">
+         <IndexEntry name="seq"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="employee_surname">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+
+      <Index name="employee_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="location"/>
+      </Index>
+
+   </Table>
+</xml>

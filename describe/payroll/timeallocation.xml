@@ -1,0 +1,46 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="Time Allocation">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Project" File="system.location" Size="2" Force="1" Type="2" name="project"/>
+      <Field Caption="Where" File="payroll.timewhere" Size="2" Type="2" name="where"/>
+      <Field Caption="From" Size="2" Type="5" name="from"/>
+      <Field Caption="To" Size="2" Type="5" name="to"/>
+      <Field Caption="Hours" Total="1" Format="#####.##" Size="4" Type="8" name="hours"/>
+      <Field Caption="Extra" Total="1" File="payroll.timeextra" Size="2" Type="2" name="timeextra"/>
+      <Field Caption="Cost" Total="1" Format="####.##" Size="4" Type="4" name="cost"/>
+      <Field Caption="Note" Size="80" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="timeallocation" CRC64="1">
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="project"/>
+         <IndexEntry name="where"/>
+      </Index>
+      <Index name="timeallocation[employee]" CRC64="1">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="project"/>
+         <IndexEntry name="where"/>
+      </Index>
+      <Index name="timeallocation[project]" CRC64="1">
+         <IndexEntry name="project"/>
+         <IndexEntry name="where"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="timeallocation[timeextra]" CRC64="1">
+         <IndexEntry name="timeextra"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="project"/>
+         <IndexEntry name="where"/>
+      </Index>
+      <Index name="timeallocation[where]" CRC64="1">
+         <IndexEntry name="where"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="project"/>
+      </Index>
+   </Table>
+</xml>

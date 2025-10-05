@@ -1,0 +1,26 @@
+<xml>
+   <Table System="lab" Icon="excel" name="Excel Layouts">
+      <Field/>
+      <Field Caption="Group" File="lab.group" Size="2" Type="2" name="group"/>
+      <Field Caption="User group" File="system.user_group" Size="2" Type="2" name="user_group"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Heading" Size="50" name="heading"/>
+      <Field Caption="File name" Size="20" name="filename"/>
+      <Field Caption="Last  column" Size="2" Type="2" name="last"/>
+      <Field Caption="Column width" Format="##" Size="1" Type="2" name="width"/>
+      <Field Caption="Logo repetition" Format="##" Size="1" Type="2" name="logocol"/>
+      <Field Caption="Option" Format="b" Size="2" Type="2" Options="IndexBySequence,IndexByItem,IndexByCustomer,DesignAverage,MultipleLimits,TotalsRow" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="excellayout">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="excellayout[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="excellayout[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

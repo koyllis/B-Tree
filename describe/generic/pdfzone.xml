@@ -1,0 +1,10 @@
+<xml>
+   <Table System="generic" name="pdfzone">
+      <Field Caption="Country"/>
+      <Field Caption="Zone" Size="1" Type="2" name="zone"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdfzone">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

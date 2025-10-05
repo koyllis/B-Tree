@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="Compare Stock" System="pos">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="pos.color" name="color" Caption="Color"/>
+      <Field Size="2" Type="2" File="pos.size" name="size" Caption="Size"/>
+      <Field Size="8" Format="system" Type="3" name="quantity" Caption="Stock"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="stockcompare">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="stockcompare[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="stockcompare[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

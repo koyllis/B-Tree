@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Item Directions">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Direction" File="pos.stdirect" Size="2" Type="2" name="stdirect"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemdirection">
+         <IndexEntry name="item"/>
+         <IndexEntry name="stdirect"/>
+      </Index>
+      <Index name="itemdirection[stdirect]">
+         <IndexEntry name="stdirect"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

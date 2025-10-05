@@ -1,0 +1,62 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" SoftDelete="1" Icon="clock" Export="@modify_stamp" Dynamic="1" PDA="0" name="Punch Cards">
+      <Field Caption="Employee" File="payroll.employee" Size="2" Type="2" name="employee"/>
+      <Field Caption="Location" File="system.location" Size="2" Auto="1" PersistentReport="1" Type="2" name="location"/>
+      <Field Caption="Date" Size="4" Auto="1" Type="5" name="date"/>
+      <Field Caption="Type" File="payroll.timedef" Size="1" Type="2" name="timedef"/>
+      <Field Caption="Time-in" Format="HH:mm" Size="2" Type="5" name="timein"/>
+      <Field Caption="Time-out" Format="HH:mm" Size="2" Type="5" name="timeout"/>
+      <Field Caption="Time-in" Format="HH:mm" Size="2" Type="5" name="timein2"/>
+      <Field Caption="Time-out" Format="HH:mm" Size="2" Type="5" name="timeout2"/>
+      <Field Caption="Time-in" Format="HH:mm" Size="2" Type="5" name="timein3"/>
+      <Field Caption="Time-out" Format="HH:mm" Size="2" Type="5" name="timeout3"/>
+      <Field Caption="Time-in" Format="HH:mm" Size="2" Type="5" name="timein4"/>
+      <Field Caption="Time-out" Format="HH:mm" Size="2" Type="5" name="timeout4"/>
+      <Field Caption="Extra" Size="2" Format="HH:mm" Type="5" name="extra"/>
+      <Field Caption="Minutes" Total="1" Format="###.##" Size="4" Type="8" name="hours"/>
+      <Field Caption="Break" Size="4" Type="8" name="break" Modify="1"/>
+      <Field Strict="1" Caption="Cost per hour" Total="1" Format="###.##" Size="4" Type="8" name="cost" Modify="1"/>
+      <Field Caption="Driver last in" Size="2" Type="2" name="lastin"/>
+      <Field Caption="Driver last-out" Size="2" Type="2" name="lastout"/>
+      <Field Caption="Vehicle No." Size="10" name="vehicle"/>
+      <Field Caption="End of day cashin" Size="2" Type="5" name="endofday"/>
+      <Field Caption="Station" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="punchcard">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="timein"/>
+      </Index>
+      <Index CRC64="1" name="punchcard[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="timein"/>
+      </Index>
+      <Index name="punchcard[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="timein"/>
+      </Index>
+      <Index name="punchcard[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="timein"/>
+      </Index>
+      <Index CRC64="1" name="punchcard_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="timein"/>
+      </Index>
+   </Table>
+</xml>

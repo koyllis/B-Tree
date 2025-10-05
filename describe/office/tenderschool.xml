@@ -1,0 +1,15 @@
+<xml>
+   <Table System="office" Icon="school" name="Tender Schools" ImmediateChild="1">
+      <Field Caption="Tender" File="office.tender" Size="4" Type="2" Force="1" name="tender"/>
+      <Field Caption="School" File="office.school" Size="4" Type="2" Force="1" name="school"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="tenderschool">
+         <IndexEntry name="tender"/>
+         <IndexEntry name="school"/>
+      </Index>
+      <Index name="tenderschool[school]">
+         <IndexEntry name="school"/>
+         <IndexEntry name="tender"/>
+      </Index>
+   </Table>
+</xml>

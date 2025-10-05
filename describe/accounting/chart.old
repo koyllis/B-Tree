@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Name="Chart of accounts" System="accounting" Short="Account" Icon="heart" Index="chart" FavoriteMatch="accounting|detail" Parent="chart" Child="code" DataHeader="0" DeleteChildren="0" AutoNumber="0" UniqueKeys="0" Color="1" Root="0" Sequence="0" SoftDelete="1" Unsorted="0" ManualIndex="0" Common="1" Dynamic="0" Late="0" MapRecord="0" Repository="1" Constraint="1" Bookmark="1" Virtual="0" Phone="">
+      <Field Name="code" Caption="Code" Type="1" Size="8"/>
+      <Field Name="description" Caption="Name" Type="1" Size="50"/>
+      <Field Name="type" Caption="Type" Type="2" Size="1" Format="#" Options="Asset,Liability,Capital,Revenue,Expense"/>
+      <Field Name="bank" Caption="Bank" Type="2" Size="1" Format="b"/>
+      <Field Name="balance" Caption="Balance" Type="4" Size="8"/>
+      <Field Name="cash" Caption="Cash Flow" Type="2" Size="1" Format="b"/>
+      <Field Name="fixed" Caption="Fixed Asset" Type="2" Size="1" Format="b"/>
+      <Field Name="accgroup" Caption="Asset group" Type="3" Size="2" File="accounting.accgroup"/>
+      <Field Name="jtype" Caption="Journal Type" Type="2" Size="1" Options="Net,Total,Vat,Discount"/>
+      <Field Name="chart" Caption="Parent" Type="3" Size="2" Format="#######" File="accounting.chart"/>
+      <Index Name="chart" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="code"/>
+      </Index>
+      <Index Name="chart[accgroup]" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="accgroup"/>
+         <IndexEntry Name="code"/>
+      </Index>
+      <Index Name="chart[chart]" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="chart"/>
+         <IndexEntry Name="code"/>
+      </Index>
+      <Index Name="chart_description" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="description"/>
+         <IndexEntry Name="code"/>
+      </Index>
+   </Table>
+</xml>

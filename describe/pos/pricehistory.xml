@@ -1,0 +1,44 @@
+<xml>
+   <Table CanModify="0" System="pos" CanSoftDelete="0" PDA="0" CanDelete="0" name="Price History" Unordered="1" MergeType="2">
+      <Field Caption="Date" Size="8" Auto="1" Type="5" name="date"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Price,Special,Webprice,Foreign,Cost,Pricing" name="type"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="pricecode"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="User" File="system.user" Size="2" Auto="1" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pricehistory">
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="pricecode"/>
+      </Index>
+      <Index name="pricehistory[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="pricecode"/>
+      </Index>
+      <Index name="pricehistory[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="pricehistory[pricecode]">
+         <IndexEntry name="pricecode"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="pricehistory[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

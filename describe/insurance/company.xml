@@ -1,0 +1,40 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Bookmark="1" System="insurance" Icon="temple" Dynamic="1" name="Insurance Companies">
+      <Field Size="40"/>
+      <Field Caption="Sub-account" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Commission account" File="accounting.chart" Size="4" Type="2" name="chart"/>
+      <Field Caption="Fees account" File="accounting.chart" Size="4" Type="2" name="chart_fees"/>
+      <Field Caption="Other account" File="accounting.chart" Size="4" Type="2" name="chart_other"/>
+      <Field Caption="Net commission" Format="b" Size="1" Type="2" name="netcomm"/>
+      <Field Caption="Operation" File="accounting.operation" Size="2" Type="2" name="operation"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Index name="company">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="company[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="company[chart_fees]">
+         <IndexEntry name="chart_fees"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="company[chart_other]">
+         <IndexEntry name="chart_other"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="company[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="company[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="company_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml>
+   <Table System="system" name="urlpost">
+      <Field Caption="Table" name="table"/>
+      <Field Caption="POST" Size="128" name="post"/>
+      <Field Caption="DELETE" Size="128" name="delete"/>
+      <Field Caption="Procedure" Size="20" name="procedure"/>
+      <Field Caption="User name" Size="20" name="username"/>
+      <Field Caption="Password" Size="64" name="password"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="urlpost">
+         <IndexEntry name="table"/>
+         <IndexEntry name="post"/>
+      </Index>
+   </Table>
+</xml>

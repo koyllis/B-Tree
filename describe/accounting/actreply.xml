@@ -1,0 +1,39 @@
+<xml>
+   <Table System="accounting" name="actreply">
+      <Field Caption="Activity log" File="accounting.actilog" Size="4" Type="2" name="actilog"/>
+      <Field Caption="Question" File="accounting.actques" Size="4" Type="2" name="actques"/>
+      <Field Caption="Sequence" Size="1" Type="2" name="seq"/>
+      <Field Caption="Sequence Accompanied" Size="1" Type="2" name="seq2"/>
+      <Field Caption="Reply" Size="100" name="reply"/>
+      <Field Caption="Reply 2" Size="100" name="reply2"/>
+      <Field Caption="Answer" File="accounting.actansw" Size="4" Type="2" name="actansw"/>
+      <Field Caption="Answer 2" File="accounting.actansw" Size="4" Type="2" name="actansw2"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="actreply">
+         <IndexEntry name="actilog"/>
+         <IndexEntry name="actques"/>
+         <IndexEntry name="seq"/>
+         <IndexEntry name="seq2"/>
+      </Index>
+      <Index name="actreply[actansw2]">
+         <IndexEntry name="actansw2"/>
+         <IndexEntry name="actilog"/>
+         <IndexEntry name="actques"/>
+         <IndexEntry name="seq"/>
+         <IndexEntry name="seq2"/>
+      </Index>
+      <Index name="actreply[actansw]">
+         <IndexEntry name="actansw"/>
+         <IndexEntry name="actilog"/>
+         <IndexEntry name="actques"/>
+         <IndexEntry name="seq"/>
+         <IndexEntry name="seq2"/>
+      </Index>
+      <Index name="actreply[actques]">
+         <IndexEntry name="actques"/>
+         <IndexEntry name="actilog"/>
+         <IndexEntry name="seq"/>
+         <IndexEntry name="seq2"/>
+      </Index>
+   </Table>
+</xml>

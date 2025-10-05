@@ -1,0 +1,70 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="fixedasset" name="Fixed Assets" SoftDelete="1">
+      <Field Caption="Number" Strict="1" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Size="80" Tip="1" Force="1"/>
+      <Field Caption="Purchase date" Tip="1" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Disposal date" Size="4" Type="5" name="disposal" Modify="1"/>
+      <Field Caption="Reference" Size="20" Force="1" name="reference"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Original value" Format="#######.##" Size="4" Type="4" Force="1" Total="1" name="value"/>
+      <Field Caption="Accumulated depreciation" Format="#######.##" Size="4" Type="4" Total="1" name="depreciation"/>
+      <Field Caption="Asset category" File="accounting.fixedcateg" Size="2" Type="2" Force="1" name="fixedcateg"/>
+      <Field Caption="Depreciation group" File="accounting.accgroup" Size="2" Type="2" Force="1" name="accgroup"/>
+      <Field Caption="Document" File="accounting.document" Size="2" Type="2" name="document"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Type="2" Force="1" name="location"/>
+      <Field Caption="Office" File="accounting.office" Size="2" Type="2" name="office"/>
+      <Field Caption="Asset account" File="accounting.chart" Size="4" Type="2" name="chart_asset"/>
+      <Field Caption="Depreciation account" File="accounting.chart" Size="4" Force="1" Type="2" name="chart_depreciation"/>
+      <Field Caption="Accumulated account" File="accounting.chart" Size="4" Type="2" name="chart_accumulated"/>
+      <Field Caption="Journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+      <Index name="fixedasset">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[name]">
+         <IndexEntry name="name"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[fixedcateg]">
+         <IndexEntry name="fixedcateg"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[accgroup]">
+         <IndexEntry name="accgroup"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[chart_accumulated]">
+         <IndexEntry name="chart_accumulated"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[chart_asset]">
+         <IndexEntry name="chart_asset"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[chart_depreciation]">
+         <IndexEntry name="chart_depreciation"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[office]">
+         <IndexEntry name="office"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="fixedasset[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

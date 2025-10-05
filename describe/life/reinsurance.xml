@@ -1,0 +1,60 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table FormatField="amount" CanModify="0" System="life" Icon="application" Dynamic="1" CanDelete="0" name="ReInsurance">
+      <Field Caption="Member" File="life.member" Size="4" Type="2" Tip="1" name="member"/>
+      <Field Caption="Entry date" Size="4" Type="5" PersistentReport="1" name="date"/>
+      <Field Caption="Contract" File="life.contract" Size="2" Type="2" PersistentReport="1" name="contract"/>
+      <Field Caption="Account No." Size="12" name="accountno"/>
+      <Field Caption="Transaction date" Size="4" PersistentReport="1" Type="5" name="date_document"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Standard,Loan" PersistentReport="1" name="type"/>
+      <Field Caption="Plan" File="life.contractplan" Size="4" Type="2" name="contractplan"/>
+      <Field Caption="Assured amount" Total="1" Format="#######.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Premium" Total="1" Format="#######.##" Size="4" Type="4" name="premium"/>
+      <Field Caption="Carried" Format="#######.##" Size="8" Type="3" name="carried"/>
+      <Field Caption="Retention" Format="#######.##" Size="8" Type="3" name="retention"/>
+      <Field Caption="Quota share" Format="#######.##" Size="8" Type="3" name="share"/>
+      <Field Caption="Surplus" Format="#######.##" Size="8" Type="3" name="surplus"/>
+      <Field Caption="Retention premium" Format="#######.##" Size="4" Type="4" name="premium_retention"/>
+      <Field Caption="Quota share premium" Format="#######.##" Size="4" Type="4" name="premium_share"/>
+      <Field Caption="Surplus premium" Format="#######.##" Size="4" Type="4" name="premium_surplus"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="reinsurance">
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="date_document"/>
+      </Index>
+      <Index CRC64="1" Force="1" name="reinsurance[accountno]">
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="contract"/>
+      </Index>
+      <Index CRC64="1" name="reinsurance[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="reinsurance[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="reinsurance[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index name="reinsurance_date_document">
+         <IndexEntry name="date_document"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Pre-order" System="pos">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="8" Format="#####.##" Type="3" name="quantity" Total="1" Caption="Quantity"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="preorder">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="preorder[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="preorder[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

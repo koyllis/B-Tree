@@ -1,0 +1,39 @@
+<xml>
+   <Table System="pos" name="Concentration Procedure" DeleteChildren="1">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Reference" Size="10" Type="1" name="refer"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Pieces" Size="2" Type="2" name="pieces" Total="1"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" Total="1" name="quantity"/>
+      <Field Caption="Average price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Actual price" Format="price" Size="8" Type="3" Persistent="1" name="price_actual"/>
+      <Field Caption="Total value" Size="8" Type="3" Total="1" name="totalv"/>
+      <Field Caption="Total quantity" Format="quantity" Size="4" Type="8" name="totalq"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="marketconc">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="marketconc[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="marketconc[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

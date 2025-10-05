@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Icon="folder" name="Condition Extra Fields" System="lab">
+      <Field Size="2" Type="2" File="lab.condition" name="condition" Caption="Condition"/>
+      <Field Size="2" Type="2" File="lab.extra" name="extra" Caption="Extra"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="conditionextra">
+         <IndexEntry name="condition"/>
+         <IndexEntry name="extra"/>
+      </Index>
+      <Index name="conditionextra[extra]">
+         <IndexEntry name="extra"/>
+         <IndexEntry name="condition"/>
+      </Index>
+   </Table>
+</xml>

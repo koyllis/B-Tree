@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Sub Quotas" Unordered="1" ImmediateChild="1">
+      <Field Caption="Quotas" File="pos.quotas" Size="4" Force="1" Type="2" name="quotas"/>
+      <Field Caption="From date" Size="4" Force="1" Type="5" name="frdate"/>
+      <Field Caption="To date" Size="4" Force="1" Type="5" name="todate"/>
+      <Field Caption="Discount%" Format="###.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Discount amount" Format="#####.##" Size="8" Type="3" name="discount_amount"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Caption="Offer%" Format="###.##" Size="8" Type="3" name="offer"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="quotas_sub">
+         <IndexEntry name="quotas"/>
+         <IndexEntry name="frdate"/>
+      </Index>
+      <Index name="quotas_sub[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="quotas"/>
+         <IndexEntry name="frdate"/>
+      </Index>
+      <Index name="quotas_sub_frdate">
+         <IndexEntry name="frdate"/>
+         <IndexEntry name="quotas"/>
+      </Index>
+   </Table>
+</xml>

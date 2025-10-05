@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="office" name="request">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Sequence" Size="2" Type="2" name="seq"/>
+      <Field Caption="Request" Size="200" name="note"/>
+      <Field Caption="Priority" Size="1" Type="2" Options="Low,High" name="priority"/>
+      <Field Caption="Tested" Format="b" Size="1" Type="2" name="tested"/>
+      <Field Caption="Completed" Size="4" Type="5" name="completed"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="request">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="request[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

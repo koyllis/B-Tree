@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Phone="mobile" System="generic" Color="1" name="Leaders">
+      <Field Caption="Mobile" Size="12" Force="1" name="mobile"/>
+      <Field Caption="Surname" Size="20" Force="1" Tip="1" name="surname"/>
+      <Field Size="20" Force="1"/>
+      <Field Caption="School" Size="50" name="school"/>
+      <Field Caption="Age" Size="1" Type="2" name="age"/>
+      <Field Caption="Year in school" Size="1" Type="2" name="year"/>
+      <Field Caption="Other phone" Size="12" name="phone"/>
+      <Field Caption="Address 1" name="address1"/>
+      <Field Caption="Address 2" name="address2"/>
+      <Field Caption="Child" Format="b" Size="1" Type="2" name="child"/>
+      <Field Caption="Email" Size="40" name="email"/>
+      <Field Caption="Sex" Size="1" Options="Male,Female" Type="2" name="sex"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Index name="leader">
+         <IndexEntry name="mobile"/>
+      </Index>
+      <Index name="leader_surname">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="mobile"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Bus Holiday">
+      <Field Caption="Bus group" File="accounting.busgroup" Size="2" Type="2" name="busgroup"/>
+      <Field Caption="Holiday" Size="4" Type="5" name="date"/>
+      <Field Caption="Note" Size="40" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="busholiday">
+         <IndexEntry name="busgroup"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

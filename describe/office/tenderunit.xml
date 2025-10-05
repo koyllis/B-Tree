@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="office" name="Tender Units">
+      <Field/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="tenderunit">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="sesernt" System="old" ModifyStamp="0">
+      <Field Size="4" Type="5" Dim ="1" name="n_date" Caption="Date"/>
+      <Field Size="2" Format="u" Dim ="1" name="n_doc" Caption="Doc."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="n_refer" Caption="Refer."/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="n_line" Caption="Line"/>
+      <Field Size="70" Dim ="1" name="n_note" Caption="Note"/>
+      <Index name="sesernt">
+         <IndexEntry name="n_date"/>
+         <IndexEntry name="n_doc"/>
+         <IndexEntry name="n_refer"/>
+         <IndexEntry name="n_line"/>
+      </Index>
+   </Table>
+</xml>

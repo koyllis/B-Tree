@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table name="stdirec" System="old" ModifyStamp="0">
+      <Field Caption="No" Format="###" Size="2" Type="2" name="di_no"/>
+      <Field Caption="Language 1" Size="20" name="di_lang1"/>
+      <Field Caption="Language 2" Size="20" name="di_lang2"/>
+      <Field Caption="Unit 1" Size="10" name="di_unit"/>
+      <Field Caption="Unit 2" Size="10" name="di_unit2"/>
+      <Field Caption="Method 1" Size="20" name="di_mode1"/>
+      <Field Caption="Method 2" Size="20" name="di_mode2"/>
+      <Field Caption="Method 3" Size="20" name="di_mode3"/>
+      <Field Caption="Method 1" Size="20" name="di_mode4"/>
+      <Field Caption="Method 2" Size="20" name="di_mode5"/>
+      <Field Caption="Method 3" Size="20" name="di_mode6"/>
+      <Field Caption="Note 1" name="di_note1"/>
+      <Field Caption="Note 2" name="di_note2"/>
+      <Field Caption="Note 1" name="di_note3"/>
+      <Field Caption="Note 2" name="di_note4"/>
+      <Index name="stdirec">
+         <IndexEntry name="di_no"/>
+      </Index>
+   </Table>
+</xml>

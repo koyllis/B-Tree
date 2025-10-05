@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="system" PDA="0" name="Search" ModifyStamp="0" Audit="0" Root="1" Dataless="1" TextAnalysis="0" Shards="1">
+      
+      <Field Caption="Table" Size="20" name="table"/>
+      <Field Caption="Company" Size="16" name="company"/>
+      <Field Caption="Word" Size="32" name="word"/>
+      <Field Caption="Record" Format="#########" Size="8" Type="2" name="record"/>
+      <Field Caption="Field" Size="16" Type="1" name="field"/>
+
+      <Index PageSize="2" Large="1" CRC64="1" name="search">
+         <IndexEntry name="table"/>
+         <IndexEntry name="company"/>
+         <IndexEntry name="word"/>
+         <IndexEntry name="record"/>
+         <IndexEntry name="field"/>
+      </Index>
+   </Table>
+</xml>

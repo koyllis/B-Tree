@@ -1,0 +1,54 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" SoftDelete="1" CanDelete="0" name="Vehicle Expenses">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Reference" Strict="1" Size="4" Auto="1" Type="2" AutoCounter="1" name="reference" Modify="1"/>
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="4" Type="2" name="vehicle"/>
+      <Field Caption="Operation" File="accounting.operation" Size="4" Type="2" name="operation"/>
+      <Field Caption="Site" Total="1" File="accounting.site" Size="4" Type="2" name="site"/>
+      <Field Caption="Amount" Total="1" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="VAT" File="accounting.vat" Size="4" Type="2" name="vat"/>
+      <Field Caption="Journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="vehicleexp">
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="vehicleexp[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="vehicleexp[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="vehicleexp[site]">
+         <IndexEntry name="site"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="vehicleexp[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="vehicleexp[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="operation"/>
+      </Index>
+   </Table>
+</xml>

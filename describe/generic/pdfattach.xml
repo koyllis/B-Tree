@@ -1,0 +1,20 @@
+<xml>
+   <Table System="generic" name="File Molds">
+      <Field Caption="Layout" File="generic.pdflayout" Size="2" Type="2" name="layout"/>
+      <Field Caption="Language" Size="8" name="language"/>
+      <Field Caption="Page" Size="1" Type="2" name="page"/>
+      <Field Caption="Top file" Size="30" name="top"/>
+      <Field Caption="Bottom file" Size="30" name="bottom"/>
+      <Field Caption="Footer" Size="50" Type="1" name="footer"/>
+      <Field Caption="Translate" Size="1" Type="2" name="translate" Format="b"/>
+      <Field Caption="Even Pages" Size="1" Type="2" name="even" Format="b"/>
+      <Field Caption="Y coordinate (last)" Size="2" Type="2" name="last_y"/>
+      <Field Caption="Lines per page (last)" Size="2" Type="2" name="last_lines"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdfattach">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="language"/>
+         <IndexEntry name="page"/>
+      </Index>
+   </Table>
+</xml>

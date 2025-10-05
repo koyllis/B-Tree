@@ -1,0 +1,96 @@
+<xml>
+   <Table Parent="location" Child="description" Bookmark="1" System="accounting" SoftDelete="1" Icon="location" Short="Location" CreateStamp="1" Index="location" ChainInsert="accounting|projectstatus" name="Projects" Merge="1" Common="1" hide_soft_erased="1">
+      <Field Caption="Project name" Size="40" name="description"/>
+      <Field Caption="Project note" Size="80" name="parameters"/>
+      <Field Caption="Order No." Size="40" name="address"/>
+      <Field Caption="Contact" Size="40" name="contact"/>
+      <Field Caption="Start Date" Size="4" Type="5" name="start"/>
+      <Field Caption="End Date" Size="4" Type="5" name="end"/>
+      <Field Caption="Commission date" Size="4" Type="5" name="comdate"/>
+      <Field Caption="Estimated hours" Size="4" Type="2" name="hours"/>
+      <Field Caption="Estimated value" Total="1" Format="#######.##" Size="4" Type="4" name="value"/>
+      <Field Caption="Invoiced" Total="1" Format="#######.##" Size="4" Type="4" name="invoiced"/>
+      <Field Caption="Proposal" File="office.proposal" Size="2" Type="2" name="proposal"/>
+      <Field Caption="Commission%" Format="###.##" Size="4" Type="8" name="commission"/>
+      <Field Caption="Year" Size="2" Type="2" name="year"/>
+      <Field Caption="Leader" File="office.staff" Size="2" Type="2" name="leader"/>
+      <Field Caption="Consulant 1" File="office.staff" Size="2" Type="2" name="consult1"/>
+      <Field Caption="Consultant 2" File="office.staff" Size="2" Type="2" name="consult2"/>
+      <Field Caption="Belongs to" File="accounting.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Terms" File="accounting.terms" Size="2" Type="2" name="terms"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Extra" Format="b" Size="1" Type="2" name="extra"/>
+      <Field Caption="Address 1" Size="40" name="add1"/>
+      <Field Caption="Address 2" Size="40" name="add2"/>
+      <Field Caption="Address 3" Size="40" name="add3"/>
+      <Field Caption="Address 4" Size="40" name="add4"/>
+      <Field Strict="1" Modify="1" Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal"/>
+      <Field Strict="1" Caption="Number" Size="4" Auto="1" Type="2" AutoCounter="1" name="number"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="location">
+         <IndexEntry name="description"/>
+      </Index>
+
+      <Index name="location[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="description"/>
+
+      </Index>
+
+      <Index name="location[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location[consult1]">
+         <IndexEntry name="consult1"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location[consult2]">
+         <IndexEntry name="consult2"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location[leader]">
+         <IndexEntry name="leader"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location[proposal]">
+         <IndexEntry name="proposal"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location[terms]">
+         <IndexEntry name="terms"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index Force="1" name="location_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location_comdate">
+         <IndexEntry name="comdate"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location_hours">
+         <IndexEntry name="hours"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="location_number">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="location_start">
+         <IndexEntry name="start"/>
+         <IndexEntry name="description"/>
+      </Index>
+   </Table>
+</xml>

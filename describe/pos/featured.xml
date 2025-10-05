@@ -1,0 +1,41 @@
+<xml>
+   <Table CanModify="0" System="pos" CanDelete="0" name="Web Items" UserStamp="1">
+      <Field Strict="1" Caption="Reference" Format="#######" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Date" Strict="1" Size="8" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Caption="Season" File="pos.season" Size="2" Type="2" name="season"/>
+      <Field Caption="Collection" Format="####" Size="2" Type="2" name="collection"/>
+      <Field Caption="Brand" File="pos.brand" Size="2" Type="2" name="brand"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="supplier"/>
+      <Field Caption="Excel file" Size="30" Type="1" name="excel"/>
+      <Field Caption="Option" Size="1" Force="1" Type="2" Options="Featured,NoQuotas,SpecialOccasion,Clearance" name="type"/>
+      <Field Caption="Activate/Deactivate" Size="1" Options="Activate,Deactivate" Type="2" Force="1" name="mode"/>
+      <Field Caption="Items" Strict="1" Size="2" Type="2" name="count" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index name="featured">
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="featured[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="featured[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="featured[season]">
+         <IndexEntry name="season"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="featured[supplier]">
+         <IndexEntry name="supplier"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

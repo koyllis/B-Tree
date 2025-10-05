@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table CanModify="0" System="pos" SoftDelete="1" Icon="serial_no" Export="transdet.trans.@modify_stamp" Dynamic="1" CanDelete="0" name="Serial No." Unordered="1">
+      <Field Caption="Trans. detail" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="Serial" Size="40" name="serial_"/>
+      <Field Caption="Used by" File="pos.transdet" Size="8" Type="2" name="transdet_used"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="serial" CRC64="1">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="serial_"/>
+      </Index>
+      <Index name="serial[transdet_used]">
+         <IndexEntry name="transdet_used"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="serial_"/>
+      </Index>
+      <Index name="serial_serial_">
+         <IndexEntry name="serial_"/>
+         <IndexEntry name="transdet"/>
+      </Index>
+   </Table>
+</xml>

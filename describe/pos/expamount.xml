@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="expamount">
+      <Field Caption="Expense invoice" File="pos.exptrans" Size="4" Type="2" name="exptrans"/>
+      <Field Caption="Expense type" File="pos.exptype" Size="2" Type="2" name="exptype"/>
+      <Field Caption="Amount" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="expamount">
+         <IndexEntry name="exptrans"/>
+         <IndexEntry name="exptype"/>
+      </Index>
+      <Index name="expamount[exptype]">
+         <IndexEntry name="exptype"/>
+         <IndexEntry name="exptrans"/>
+      </Index>
+   </Table>
+</xml>

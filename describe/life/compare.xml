@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Compare" System="life">
+      <Field Size="4" Type="2" File="life.member" name="member" Caption="Member"/>
+      <Field Size="4" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="4" Type="2" File="life.contractplan" name="contractplan" Caption="Plan"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="compare">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+      </Index>
+      <Index name="compare[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+      </Index>
+      <Index name="compare[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+      </Index>
+   </Table>
+</xml>

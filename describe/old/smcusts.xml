@@ -1,0 +1,38 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="smcusts" System="old" ModifyStamp="0">
+      <Field Caption="No." Format="00000000" Size="4" Type="2" name="c_no"/>
+      <Field Caption="Code" Size="8" name="c_code"/>
+      <Field Caption="Alternate" Size="8" name="c_alter"/>
+      <Field Caption="Forbid?" Format="#" Size="1" Type="2" name="c_forbid"/>
+      <Field Caption="Not europe?" Format="#" Size="1" Type="2" name="c_europe"/>
+      <Field Caption="Future" Size="38" name="c_future"/>
+      <Field Caption="Name" Size="20" name="c_name"/>
+      <Field Caption="Surename" Size="20" name="c_surname"/>
+      <Field Caption="Identity" Size="4" Type="2" name="c_idno"/>
+      <Field Caption="Sex?" Size="1" name="c_sex"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="c_birth"/>
+      <Field Caption="Address1" name="c_add1"/>
+      <Field Caption="" name="c_add2"/>
+      <Field Caption="" name="c_add3"/>
+      <Field Caption="Area" Size="3" name="c_area"/>
+      <Field Caption="Zip" Size="4" Type="2" name="c_zip"/>
+      <Field Caption="PO Box" Size="4" Type="2" name="c_box"/>
+      <Field Caption="Zip" Size="4" Type="2" name="c_boxzip"/>
+      <Field Caption="Home" Size="10" name="c_htele"/>
+      <Field Caption="Work" Size="10" name="c_wtele"/>
+      <Field Caption="Mobile" Size="10" name="c_mtele"/>
+      <Field Caption="E-mail" Size="40" name="c_email"/>
+      <Field Caption="Members" Format="##" Size="2" Type="2" name="c_memb"/>
+      <Field Caption="Points" Format="###,###" Size="4" Type="2" name="c_points"/>
+      <Field Caption="FAX" Size="10" name="c_fax"/>
+      <Field Caption="Age?" Format="##" Size="1" Type="2" name="c_freq"/>
+      <Field Caption="Status" Format="#" Size="1" Type="2" name="c_marital"/>
+      <Field Caption="Redemtption" Format="###,###" Size="4" Type="2" name="c_redeem"/>
+      <Field Caption="Future" Size="44" name="c_future1"/>
+      <Field Caption="Recorded" Size="4" Type="5" name="c_record"/>
+      <Field Caption="User" Size="8" name="c_id"/>
+      <Index name="smcusts">
+         <IndexEntry name="c_no"/>
+      </Index>
+   </Table>
+</xml>

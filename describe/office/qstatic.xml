@@ -1,0 +1,32 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="office" Icon="address3" Dynamic="1" ChainInsert="qinput" name="Data Entry" CreateStamp="1" UserStamp="1">
+      <Field Caption="Questionaire" File="office.questionaire" Size="4" Type="2" name="questionaire"/>
+      <Field Caption="Number" Strict="1" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Operator" File="office.operator" Size="2" Type="2" name="operator"/>
+      <Field Caption="Telephone" Size="15" name="phone"/>
+      <Field Caption="Date" Strict="1" Size="4" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="qstatic">
+         <IndexEntry name="questionaire"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="qstatic[operator]">
+         <IndexEntry name="operator"/>
+         <IndexEntry name="questionaire"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="qstatic_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="questionaire"/>
+         <IndexEntry name="number"/>
+      </Index>
+
+	<Index name="qstatic_user">
+         <IndexEntry name="@user_stamp"/>
+         <IndexEntry name="questionaire"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

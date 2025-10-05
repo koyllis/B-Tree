@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="moon" Common="1" name="Statement Cell" System="accounting" DeleteChildren="1">
+      <Field Size="2" Type="2" File="accounting.stline" name="stline" Caption="Line"/>
+      <Field Size="2" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Size="2" Type="2" File="accounting.stline" name="line" Caption="Previous line"/>
+      <Field Size="32" name="description" Caption="Description"/>
+      <Field Size="8" Format="#########.##" Type="4" name="amount1" Caption="Amount 1"/>
+      <Field Size="8" Format="#########.##" Type="4" name="amount2" Caption="Amount 2"/>
+      <Field Size="8" Format="#########.##" Type="4" name="amount3" Caption="Amount 3"/>
+      <Field Size="1" Options="Add,Deduct,Divide,Multiply" Type="2" name="function" Caption="Function"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="stcell">
+         <IndexEntry name="stline"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="stcell[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="stline"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="stcell[line]">
+         <IndexEntry name="line"/>
+         <IndexEntry name="stline"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="description"/>
+      </Index>
+   </Table>
+</xml>

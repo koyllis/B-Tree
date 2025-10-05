@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="sale_dt" ModifyStamp="0" System="old">
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="sad_date"/>
+      <Field Caption="Store" Size="2" name="sad_store"/>
+      <Field Caption="InvNo" Size="4" Type="2" name="sad_inv"/>
+      <Field Caption="Point" Size="3" name="sad_point"/>
+      <Field Caption="LineNo" Size="2" Type="2" name="sad_line"/>
+      <Field Caption="StyleColourSize" Size="22" name="sad_item"/>
+      <Field Caption="Document" Size="1" name="sad_doctype"/>
+      <Field Caption="Descr" Size="20" name="sad_itemdesc"/>
+      <Field Caption="Qty" Size="2" Type="2" name="sad_qty"/>
+      <Field Caption="Price" Size="4" Type="4" name="sad_price"/>
+      <Field Caption="Vat%" Size="4" Type="4" name="sad_total"/>
+      <Field Caption="Price" Size="8" Type="3" name="sad_vat"/>
+      <Index name="sale_dt" Large="1">
+         <IndexEntry name="sad_date"/>
+         <IndexEntry name="sad_store"/>
+         <IndexEntry name="sad_inv"/>
+         <IndexEntry name="sad_point"/>
+         <IndexEntry name="sad_line"/>
+         <IndexEntry name="sad_item"/>
+         <IndexEntry name="sad_doctype"/>
+      </Index>
+   </Table>
+</xml>

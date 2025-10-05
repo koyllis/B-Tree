@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="payroll" Icon="timetable" name="Schedule Program">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee" Force="1"/>
+      <Field Caption="Date" Size="4" Type="5" name="date" Force="1"/>
+      <Field Caption="Shift" File="payroll.timetable" Size="4" Type="2" name="timetable" Force="1"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Group" File="payroll.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="timeprog">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="timetable"/>
+      </Index>
+      <Index name="timeprog[timetable]">
+         <IndexEntry name="timetable"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+
+	  <Index name="timeprog[date]">
+  	     <IndexEntry name="date"/>
+		 <IndexEntry name="timetable"/>
+		 <IndexEntry name="employee"/>
+      </Index>
+
+	  <Index name="timeprog[location]">
+  	     <IndexEntry name="location"/>
+  	     <IndexEntry name="group"/>
+  	     <IndexEntry name="date"/>
+		 <IndexEntry name="employee"/>
+		 <IndexEntry name="timetable"/>
+      </Index>
+		 
+   </Table>
+</xml>

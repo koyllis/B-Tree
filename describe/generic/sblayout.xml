@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Bookmark="1" System="generic" name="Import Layout">
+      <Field/>
+      <Field Caption="Script" name="script"/>
+      <Field Caption="Scheme" name="scheme"/>
+      <Field Caption="Lines per page" Format="###" Size="1" Type="2" name="lines"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Index name="sblayout">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="sblayout_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

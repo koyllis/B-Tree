@@ -1,0 +1,27 @@
+<xml>
+   <Table Bookmark="1" System="accounting" Icon="temple" name="Banks" Common="1" SoftDelete="1">
+      <Field Size="40"/>
+      <Field Caption="IBAN" Size="40" name="iban"/>
+      <Field Caption="BIC/Swift/BLZ" Size="40" name="bic"/>
+      <Field Caption="Bank account" Size="40" name="bank_account"/>
+      <Field Caption="Address 1" Size="50" name="add1"/>
+      <Field Caption="Address 2" Size="50" name="add2"/>
+      <Field Caption="Address 3" Size="50" name="add3"/>
+      <Field Caption="Client number" Size="36" name="client_number"/>
+      <Field Caption="Business type" Size="1" name="business_type"/>
+      <Field Caption="Payroll script" Size="20" name="payroll"/>
+      <Field Caption="Export type" Size="1" Type="2" name="export" Options="SEPA,AstroBank"/>
+      <Field Caption="ChrgBr XML Tag value" Size="10" name="chrgbr"/>
+      <Field Caption="Options" Format="b" Size="2" Options="NoJournal,Cash,Deposit,PrintOnInvoice,JCC,Revolut" Type="2" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+      <Index name="bank">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="bank_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,60 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agcusts" System="old" ModifyStamp="0">
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="cu_cuno" Caption="No"/>
+      <Field Size="8" Dim ="1" name="cu_code" Caption="Code"/>
+      <Field Dim ="1" name="cu_name" Caption="Name"/>
+      <Field Dim ="1" name="cu_altn" Caption="Alternate"/>
+      <Field Size="8" Format="###.##" Type="3" Dim ="1" name="cu_rate" Caption="Rate%"/>
+      <Field Size="8" Format="###.##" Type="3" Dim ="1" name="cu_muni" Caption="Municipal%"/>
+      <Field Size="8" Format="###.##" Type="3" Dim ="1" name="cu_spcl" Caption="Special%"/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="cu_case" Caption="Case"/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="cu_stock" Caption="Stock"/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="cu_pay" Caption="Payment"/>
+      <Field Size="4" Type="5" Dim ="1" name="cu_last" Caption="Last date"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="cu_maxi" Caption="Max"/>
+      <Field Size="1" name="cu_restr" Caption="Restrict?"/>
+      <Field Size="1" name="cu_notes" Caption="Notes?"/>
+      <Field Size="1" name="cu_credit" Caption="Credit?"/>
+      <Field Size="1" name="cu_disc" Caption="Disc?"/>
+      <Field Size="1" name="cu_casch" Caption="Case charge?"/>
+      <Field Size="1" name="cu_print" Caption="Print?"/>
+      <Field Size="1" name="cu_nocon" Caption="Non conc?"/>
+      <Field Size="1" name="cu_member" Caption="Member?"/>
+      <Field Size="1" name="cu_vat" Caption="Vat?"/>
+      <Field Size="4" Type="5" Dim ="1" name="cu_date" Caption="Date"/>
+      <Field Size="4" Format="##.##" Type="4" Dim ="1" name="cu_discp" Caption="Disc%"/>
+      <Field Size="8" name="cu_return" Caption="Return"/>
+      <Field Size="8" name="cu_fixed" Caption="Fixed"/>
+      <Field Size="6" name="cu_account" Caption="Account"/>
+      <Field Size="6" name="cu_purcacc" Caption="Purch acc"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="cu_ddisc" Caption="D.disc%"/>
+      <Field Size="1" name="cu_deact" Caption="Inactive?"/>
+      <Field Size="4" Format="##.##" Type="4" Dim ="1" name="cu_trans" Caption="Trans"/>
+      <Field Size="3" name="cu_area" Caption="Area"/>
+      <Field Size="1" name="cu_ustock" Caption="Update stock?"/>
+      <Field Size="2" name="cu_group" Caption="Group"/>
+      <Field Size="1" name="cu_zerocase" Caption="Zero case?"/>
+      <Field Size="1" name="cu_datei" Caption="Date input?"/>
+      <Field Size="1" Dim ="1" name="cu_cancel" Caption="Cancel?"/>
+      <Field Size="1" Dim ="1" name="cu_descl" Caption="Descr"/>
+      <Field Size="1" name="cu_clear" Caption="Clear?"/>
+      <Field Size="1" name="cu_recheck" Caption="Recheck?"/>
+      <Field Size="1" name="cu_reprice" Caption="Find price?"/>
+      <Field Size="1" name="cu_deliv" Caption="Delivery?"/>
+      <Field Size="1" name="cu_alldisc" Caption="alldisc?"/>
+      <Field Size="1" name="cu_noautoret" Caption="noautoret?"/>
+      <Field Size="4" Type="5" Dim ="1" name="cu_indate" Caption="indate"/>
+      <Field Size="4" Type="5" Dim ="1" name="cu_outdate" Caption="outdate"/>
+      <Field Size="1" name="cu_subs" Caption="subst?"/>
+      <Field Size="4" Type="5" Dim ="1" name="cu_ytd" Caption="ytd"/>
+      <Field Size="1" name="cu_nolimit" Caption="nolimit?"/>
+      <Field Size="4" Format="##.##" Type="4" Dim ="1" name="cu_caspr" Caption="caspr"/>
+      <Field Size="1" name="cu_iprint" Caption="iprint?"/>
+      <Field Size="4" Format="##.##" Type="4" Dim ="1" name="cu_fixedr" Caption="fixedr"/>
+      <Field Size="1" name="cu_onlysp" Caption="onlysp?"/>
+      <Field Size="64" Dim ="1" name="cu_future" Caption="Future"/>
+      <Index name="agcusts">
+         <IndexEntry name="cu_cuno"/>
+      </Index>
+   </Table>
+</xml>

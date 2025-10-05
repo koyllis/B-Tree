@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Purchase Expenses Invoices">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Reference" Size="20" Force="1" name="referernce"/>
+      <Field Caption="Agent" File="accounting.people" Size="4" Type="2" Force="1" name="people"/>
+      <Field Caption="Total amount" Format="#####.##" Size="4" Type="4" Force="1" name="total"/>
+      <Field Caption="VAT amount" Format="#####.##" Size="4" Type="4" name="vat"/>
+      <Field Strict="1" Caption="Updated" Size="8" Type="5" name="update" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="exptrans">
+         <IndexEntry name="date"/>
+         <IndexEntry name="referernce"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="exptrans[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="referernce"/>
+      </Index>
+   </Table>
+</xml>

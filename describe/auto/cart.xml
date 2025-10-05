@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Cart" Unordered="1">
+      <Field Caption="User" File="auto.webuser" Size="4" Type="2" name="webuser"/>
+      <Field Caption="Item" File="auto.autoitem" Size="4" Type="2" name="autoitem"/>
+      <Field name="quantity" Caption="Quantity" Type="2" Size="2" Format="####"/>
+      <Field name="price" Caption="Price" Type="3" Size="8" Format="####.##"/>
+      <Field Caption="Voucher" File="auto.voucher" Size="2" Type="2" name="voucher"/>
+      <Field Caption="Pricing" File="auto.pricing" Size="2" Type="2" name="pricing"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cart" CRC64="1">
+         <IndexEntry name="webuser"/>
+         <IndexEntry name="autoitem"/>
+      </Index>
+      <Index name="cart[voucher]" CRC64="1">
+         <IndexEntry name="voucher"/>
+         <IndexEntry name="webuser"/>
+         <IndexEntry name="autoitem"/>
+      </Index>
+      <Index name="cart[pricing]" CRC64="1">
+         <IndexEntry name="pricing"/>
+         <IndexEntry name="webuser"/>
+         <IndexEntry name="voucher"/>
+      </Index>
+   </Table>
+</xml>

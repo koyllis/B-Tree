@@ -1,0 +1,22 @@
+<xml>
+   <Table System="pos" SoftDelete="1" PDA="0" name="Transaction details allocations" Unordered="1">
+
+      <Field Caption="Transaction detail" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="Allocated from" File="pos.transdet" Size="8" Type="2" name="transdet_from"/>
+      <Field Caption="Quantity" Size="4" Type="8" name="quantity" Format="quantity" Total="1" Percentage="1" />
+    
+
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+
+      <Index name="transdetalloc">
+         <IndexEntry name="transdet"/>
+	 <IndexEntry name="transdet_from"/>
+      </Index>
+
+      <Index name="transdetalloc_from">
+         <IndexEntry name="transdet_from"/>
+	 <IndexEntry name="transdet"/>
+      </Index>
+   </Table>
+</xml>

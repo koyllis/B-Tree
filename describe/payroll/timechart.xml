@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="lego" name="Account Setup" System="payroll">
+      <Field Size="2" Type="2" File="payroll.timedef" name="timedef" Caption="Time Definition"/>
+      <Field Size="2" Type="2" File="payroll.ratedef" name="ratedef" Caption="Rate Defintion"/>
+      <Field Size="2" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="timechart">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="ratedef"/>
+      </Index>
+      <Index name="timechart[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="ratedef"/>
+      </Index>
+      <Index name="timechart[ratedef]">
+         <IndexEntry name="ratedef"/>
+         <IndexEntry name="timedef"/>
+      </Index>
+   </Table>
+</xml>

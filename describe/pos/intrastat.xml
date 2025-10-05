@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table Icon="prespapers" name="Intrastat" System="pos">
+      <Field Size="10" name="intrastat" Caption="Intrastat"/>
+      <Field Size="2" name="area" Caption="Area"/>
+      <Field Size="2" name="origin" Caption="Origin"/>
+      <Field Size="1" Format="##" Type="2" name="transfer" Caption="Transport"/>
+      <Field Size="1" Format="##" Type="2" name="type" Caption="Exchange code"/>
+      <Field Size="1" Format="##" Type="2" name="stat" Caption="Statistic code"/>
+      <Field Size="3" name="terms" Caption="Deliv. terms"/>
+      <Field Size="8" Format="######.##" Type="3" name="value" Caption="Invoice value" Total="1"/>
+      <Field Size="8" Format="######.##" Type="3" name="stat_value" Caption="Statistic value" Total="1"/>
+      <Field Size="8" Format="######.##" Type="3" name="volume" Caption="Volume" Total="1"/>
+      <Field Size="8" Format="#######" Type="3" name="quantity" Caption="Quantity" Total="1"/>
+      <Field Size="4" Type="2" name="pieces" Caption="Pieces" Total="1"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="intrastat">
+         <IndexEntry name="intrastat"/>
+         <IndexEntry name="area"/>
+         <IndexEntry name="origin"/>
+         <IndexEntry name="transfer"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="stat"/>
+         <IndexEntry name="terms"/>
+      </Index>
+   </Table>
+</xml>

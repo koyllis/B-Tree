@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="inplans" System="old">
+      <Field Size="2" Type="2" name="p_conum" Caption="Company"/>
+      <Field Size="8" name="p_code" Caption="Code"/>
+      <Field Size="4" Type="5" name="p_date" Caption="Date"/>
+      <Field Size="4" Type="2" name="p_count" Caption="Count"/>
+      <Field Size="4" Type="2" name="p_share" Caption="Share"/>
+      <Field Size="4" Type="4" name="p_limit" Caption="Limit"/>
+      <Field Size="1" name="p_refu" Caption="Refund?"/>
+      <Field Size="1" name="p_clos" Caption="Close?"/>
+      <Index name="inplans">
+         <IndexEntry name="p_conum"/>
+      </Index>
+   </Table>
+</xml>

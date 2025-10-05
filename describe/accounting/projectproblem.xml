@@ -1,0 +1,46 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" SoftDelete="1" CanDelete="0" name="Project Problems" CreateStamp="1">
+      <Field Caption="Project" File="accounting.location" Size="2" Force="1" Type="2" name="location"/>
+      <Field Caption="Problem type" File="office.type" Size="2" Force="1" Type="2" name="type"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Finish date" Size="4" Force="1" Type="5" name="finish"/>
+      <Field Caption="Staff" File="office.staff" Size="2" Force="1" Type="2" name="staff"/>
+      <Field Caption="Agent" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Description" Size="60" name="desc1"/>
+      <Field Caption="Description" Size="60" name="desc2"/>
+      <Field Caption="Description" Size="60" name="desc3"/>
+      <Field Strict="1" Caption="Number" Size="4" Auto="1" Type="2" AutoCounter="1" name="number"/>
+      <Field Strict="1" Caption="User" File="system.user" Size="4" Auto="1" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="projectproblem">
+         <IndexEntry name="location"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="projectproblem[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="projectproblem[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="projectproblem[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="projectproblem[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

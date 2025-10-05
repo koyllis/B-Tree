@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="print3" name="Y.K.A." System="payroll">
+      <Field Size="4" Type="2" File="payroll.sigroup" name="sigroup" Caption="S.I. group"/>
+      <Field Size="4" Type="5" name="date" Caption="Hire date"/>
+      <Field Size="4" Type="2" File="payroll.employee" name="employee" Caption="Employee"/>
+      <Field Size="4" Type="4" name="earnings" Caption="Earnings"/>
+      <Field Size="4" Type="4" name="insurable" Caption="Insurable earnings"/>
+      <Field Size="4" Type="4" name="holiday" Caption="Holiday fund"/>
+      <Field Size="4" Type="4" name="social" Caption="Social insurance"/>
+      <Field Size="4" Type="4" name="redundancy" Caption="Redundacy fund"/>
+      <Field Size="4" Type="4" name="industrial" Caption="Industrial fund"/>
+      <Field Size="4" Type="4" name="cohesion" Caption="Cohesion fund"/>
+      <Field Size="4" Type="5" name="terminated" Caption="Terminated"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="yka">
+         <IndexEntry name="sigroup"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="yka[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="sigroup"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

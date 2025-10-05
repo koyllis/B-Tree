@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="events" System="old" ModifyStamp="0">
+      <Field Format="u" name="e_name"/>
+      <Field Caption="Event" Format="u" Size="10" name="e_event"/>
+      <Field Caption="Date" Size="4" Type="5" name="e_date"/>
+      <Index name="events">
+         <IndexEntry name="e_name"/>
+         <IndexEntry name="e_event"/>
+      </Index>
+   </Table>
+</xml>

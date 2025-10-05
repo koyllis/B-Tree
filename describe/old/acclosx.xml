@@ -1,0 +1,12 @@
+<xml>
+   <Table System="old" name="acclosx" ModifyStamp="0">
+      <Field Caption="Code" Size="8" name="c_code"/>
+      <Field Caption="Loc" Size="1" Type="2" name="c_loc"/>
+      <Field Caption="Debits" Format="######.##" Size="8" Type="4" name="c_debits"/>
+      <Field Caption="Credits" Format="######.##" Size="8" Type="4" name="c_credits"/>
+      <Index name="acclosx">
+         <IndexEntry name="c_code"/>
+         <IndexEntry name="c_loc"/>
+      </Index>
+   </Table>
+</xml>

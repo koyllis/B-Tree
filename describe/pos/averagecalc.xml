@@ -1,0 +1,20 @@
+<xml>
+   <Table ImmediateChild="0" System="pos" name="averagecalc">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Transaction" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Value" Size="8" Type="3" name="value"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="averagecalc">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="transdet"/>
+      </Index>
+      <Index name="averagecalc[transdet]">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

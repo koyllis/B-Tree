@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="stexpen" System="old">
+      <Field Size="3" Format="u" name="ec_expcode" Caption="Expense code"/>
+      <Field Size="15" Format="u" name="ec_name"/>
+      <Field Size="1" Format="u" name="ec_tax" Caption="Taxable (Y/N)?"/>
+      <Field Size="1" Format="u" name="ec_vat" Caption="VAT (Y/N)?"/>
+      <Index name="stexpen">
+         <IndexEntry name="ec_expcode"/>
+      </Index>
+   </Table>
+</xml>

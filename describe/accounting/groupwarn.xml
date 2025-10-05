@@ -1,0 +1,15 @@
+<xml>
+   <Table System="accounting" name="Expiration Warnings">
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Days" Size="2" Type="2" name="days"/>
+      <Field Caption="SMS body-EN" Size="2" Type="2" name="smsbodyen" File="system.smsbody"/>
+      <Field Caption="SMS body-GR" Size="2" Type="2" name="smsbodygr" File="system.smsbody"/>
+      <Field Caption="Email body-EN" Size="2" Type="2" name="emailbodyen" File="system.emailbody"/>
+      <Field Caption="Email body-GR" Size="2" Type="2" name="emailbodygr" File="system.emailbody"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="groupwarn">
+         <IndexEntry name="group"/>
+         <IndexEntry name="days"/>
+      </Index>
+   </Table>
+</xml>

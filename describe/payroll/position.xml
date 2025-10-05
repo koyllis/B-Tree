@@ -1,0 +1,11 @@
+<xml>
+   <Table System="payroll" name="position">
+      <Field/>
+      <Field Caption="Authority" Size="1" Options="User,Manager,Administrator" Type="2" name="authority"/>
+      <Field Caption="Maximum leave %" Format="##" Size="1" Type="2" name="maximum"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="position">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

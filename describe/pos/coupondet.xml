@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="coupondet" System="pos">
+      <Field Size="4" Type="2" File="pos.coupon" name="coupon" Caption="Coupon"/>
+      <Field Size="4" Type="2" name="number" Caption="Number"/>
+      <Field Size="4" Type="2" File="pos.trans" name="trans" Caption="Used"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="coupondet">
+         <IndexEntry name="coupon"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="coupondet[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="coupon"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Dynamic="1" name="Machines" System="office">
+      <Field/>
+      <Field Size="2" Format="###" Type="2" name="litre" Caption="Litre/hour"/>
+      <Field Size="4" Format="###.##" Type="4" name="charge" Caption="Our charge"/>
+      <Field Size="4" Format="###.##" Type="4" name="other" Caption="Other charge"/>
+      <Field Size="4" Type="2" File="accounting.people" name="owner" Caption="Owner"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="machine">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="machine[owner]">
+         <IndexEntry name="owner"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

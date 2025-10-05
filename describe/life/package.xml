@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" Icon="folder" name="Packages">
+      <Field Caption="Group" File="life.plangroup" Size="2" Type="2" name="plangroup"/>
+      <Field Caption="Plan" File="life.plan" Size="2" Type="2" name="plan"/>
+      <Field Caption="Age" Size="2" Type="2" name="age"/>
+      <Field Caption="Premium%%" Format="##.######" Size="4" Type="8" name="premium"/>
+      <Field Caption="Charge rate%" Format="##.##" Size="4" Type="8" name="chargerate"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="package">
+         <IndexEntry name="plangroup"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index name="package[plan]">
+         <IndexEntry name="plan"/>
+         <IndexEntry name="plangroup"/>
+      </Index>
+   </Table>
+</xml>

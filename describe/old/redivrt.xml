@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="redivrt" System="old">
+      <Field Size="1" Format="00" Type="2" Dim ="1" name="di_loc" Caption="Store No."/>
+      <Field Size="20" Format="u" Dim ="1" name="di_name"/>
+      <Field Size="20" Dim ="1" name="di_machine" Caption="Machine name"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="di_del" Caption="Delivery menu"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="di_out" Caption="Take-out menu"/>
+      <Field Size="4" Format="##.##" Type="4" Dim ="1" name="di_time" Caption="Time limit"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="di_print" Caption="Print order(N) (Y/N)?"/>
+      <Field Size="4" Format="########" Type="2" Dim ="9" name="di_frtel" Caption="From tel"/>
+      <Field Size="4" Format="########" Type="2" Dim ="9" name="di_totel" Caption="To tel"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="di_ser" Caption="Service%"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="di_cto" Caption="Municipal%"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="di_vat" Caption="V.A.T.%"/>
+      <Field Size="64" Dim ="1" name="di_future" Caption="Future"/>
+      <Index name="redivrt">
+         <IndexEntry name="di_loc"/>
+      </Index>
+   </Table>
+</xml>

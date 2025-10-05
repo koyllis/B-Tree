@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Vehicle Groups">
+      <Field/>
+      <Field Caption="Service limit" Format="#####" Size="4" Type="2" name="limit_service"/>
+      <Field Caption="Oil limit" Format="#####" Size="4" Type="2" name="limit_oil"/>
+      <Field Caption="Warning" Format="###" Size="2" Type="2" name="warning"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vehgroup">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

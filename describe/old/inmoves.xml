@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="inmoves" System="old">
+      <Field Size="4" Type="5" name="m_date" Caption="Date"/>
+      <Field Size="2" name="m_doc" Caption="Doc"/>
+      <Field Size="4" Type="2" name="m_refer" Caption="Refer"/>
+      <Field Size="2" Type="2" name="m_conum" Caption="Company"/>
+      <Field Size="8" name="m_code" Caption="Code"/>
+      <Field Size="2" Type="2" name="m_num" Caption="Number"/>
+      <Field Size="4" Type="4" name="m_total" Caption="Total"/>
+      <Field Size="2" Type="2" name="m_count" Caption="Count"/>
+      <Field Size="2" Type="2" name="m_loans" Caption="Loans"/>
+      <Field Size="1" Format="u" name="m_mode" Caption="Mode"/>
+      <Field Size="4" Type="2" name="m_journal" Caption="Journal"/>
+      <Field Size="4" Type="5" name="m_cancel" Caption="Cancel"/>
+      <Field Size="8" name="m_id" Caption="User"/>
+      <Index name="inmoves">
+         <IndexEntry name="m_date"/>
+         <IndexEntry name="m_doc"/>
+         <IndexEntry name="m_refer"/>
+         <IndexEntry name="m_conum"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Accounts Transactions">
+      <Field Caption="Account" File="generic.hellstatic" Size="4" Type="2" name="hellstatic"/>
+      <Field Caption="Line" Size="2" Type="2" name="line"/>
+      <Field Caption="Actual (raw)" Size="8" name="actual_raw"/>
+      <Field Caption="Actual" Size="6" name="actual"/>
+      <Field Caption="Description 1" Size="20" name="desc1"/>
+      <Field Caption="Debit" Size="14" name="debit"/>
+      <Field Caption="Credit" Size="14" name="credit"/>
+      <Field Caption="Value" Size="8" name="value"/>
+      <Field Caption="Balance" Size="17" name="balance"/>
+      <Field Caption="Description 2" Size="20" name="desc2"/>
+      <Field Caption="Trans. serial" Size="8" name="serial"/>
+      <Field Caption="Ending" Size="1" name="ending"/>
+      <Field Caption="Debit (raw)" Size="23" name="debit_raw"/>
+      <Field Caption="Credit (raw)" Size="23" name="credit_raw"/>
+      <Field Caption="Balance (raw)" Size="23" name="balance_raw"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="helltrans">
+         <IndexEntry name="hellstatic"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

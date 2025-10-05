@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="InterCompany Transfers" System="pos">
+      <Field Size="4" Type="2" File="pos.trans" name="trans" Caption="Transaction"/>
+      <Field Size="8" Strict="1" Type="5" name="date" Auto="1" Caption="Date"/>
+      <Field Size="4" Strict="1" Type="2" File="system.user" name="user" Auto="1" Caption="User"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="intertrans">
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="intertrans[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

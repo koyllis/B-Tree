@@ -1,0 +1,218 @@
+<xml>
+   <Table Phone="phone" FormatField="balance" ManualIndex="1" Bookmark="1" DeleteChildren="1" Toolbar="1" System="accounting" SoftDelete="1" Immutable="1" Icon="face" Color="1" UniqueKeys="1" Dynamic="1" Short="Associate" Index="people" name="Business associates" Merge="1" FavoriteMatch="accounting.detail pos.trans accounting.address pos.transdet pos.quotas" CreateStamp="1" MapRecord="1" Map="detail" json_replicate="1">
+      <Field ReportWidth="30" Size="60" Negative="0" Force="1" Tip="1" Distinct="1" Dissect="1"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group" Tip="1"/>
+      <Field Caption="Number" Size="4" Negative="0" Type="2" AutoCounter="1" name="number" Tip="1"/>
+      <Field Caption="Account" File="accounting.chart" Size="2" Type="2" name="chart"/>
+      <Field Caption="Exclude VAT" Size="1" Options="Both,Purchase,Sale" Type="2" name="novat"/>
+      <Field Caption="Opening date" Size="4" Type="5" name="opendate"/>
+      <Field Caption="Closing date" Size="4" Type="5" name="closedate"/>
+      <Field Caption="ID/Passport" Size="16" name="id"/>
+      <Field Caption="Contact" name="contact" Tip="1"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area" Tip="1"/>
+      <Field Caption="Terms" File="accounting.terms" Size="2" Type="2" name="terms"/>
+      <Field Caption="Category" File="accounting.category" Size="4" Type="2" name="category"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="birth"/>
+      <Field Caption="Sex" Size="1" Type="2" Options="Male,Female" name="sex"/>
+      <Field Caption="Children" Format="##" Size="1" Type="2" name="children"/>
+      <Field Caption="Marital status" Size="1" Type="2" Options="Single,Married,Divorced,Widow" name="marital"/>
+      <Field Caption="Prefix" Size="1" Type="2" Options="The,She,He,They,To the Master of" name="prefix"/>
+      <Field Caption="Name day" File="accounting.nameday" Size="2" Type="2" name="nameday"/>
+      <Field Caption="Currency" File="accounting.currency" Size="1" Type="2" name="currency"/>
+      <Field Caption="Address" Strict="1" Size="45" name="addr"/>
+      <Field Caption="Phone" Size="20" name="phone"/>
+      <Field Caption="Bank" File="accounting.bank" Size="1" Type="2" name="bank" Modify="1"/>
+      <Field Caption="Profession" File="payroll.profession" Size="2" Type="2" name="profession" Modify="1"/>
+      <Field Caption="Nationality" File="accounting.nationality" Size="2" Type="2" name="nationality" Modify="1"/>
+      <Field Caption="Tax office" Size="20" name="tax" Modify="1"/>
+      <Field Caption="Delivery" Size="50" name="delivery" Modify="1"/>
+      <Field Caption="Vat no" Size="20" name="vatno"/>
+      <Field Caption="Allocation back days" Format="###" Size="2" Type="2" name="allocdays"/>
+      <Field Caption="Communication" Size="1" Type="2" Options="Mail,Email,SMS" name="comm"/>
+      <Field Caption="Private / Limited" Size="1" Type="2" Options="Private,Limited" name="gdpr"/>
+      <Field Caption="Statement mode" Size="1" Options="Email,Fax" Type="2" name="statement"/>
+      <Field Caption="Credit Period" Size="1" Type="2" name="credit_period" Modify="1"/>
+      <Field Caption="Credit Status" Size="1" Negative="0" Type="2" Options="Cash,Credit" name="credit"/>
+      <Field Caption="Credit limit" Format="######.##" Size="4" Type="4" name="limit"/>
+      <Field Caption="Installment" Total="1" Format="######.##" Size="4" Type="4" name="installment"/>
+      <Field Caption="Balance" Strict="1" Total="1" Format="#########.##" Size="8" Type="4" Overwrite="0" name="balance"/>
+      <Field Caption="Link" File="accounting.people" Size="2" Type="2" name="link"/>
+      <Field Caption="Route" File="accounting.people" Size="4" Type="2" name="people_route"/>
+      <Field Caption="Other route" File="accounting.route" Size="2" Type="2" name="route"/>
+      <Field Caption="Item Load" Total="1" Size="2" Type="2" name="item_load"/>
+      <Field Caption="Lead time" Total="1" Size="2" Type="2" name="serial"/>
+      <Field Caption="Apply" Format="b" Size="4" Type="2" Options="IgnoreQuotas,ChargePieces,RoundingUp,NoTotals,NonEuropean,PrintPartnumber,NoInterestCharge,NoStatement,NetPrice,NoBalance,NoModification,LaserPrintout,DiscountOnPrice,NoItemBarcode,NotesToName,CostUpdate,OnlineUpdate,NoImportDuty,NoSMS,Concentration,NoClearance,AutoEmail,English,GDPR,NotifyEmail,NotifySms,NotifyAdvertise,Factors,InvoiceNote,NoInvoiceSummary" name="apply"/>
+      <Field Caption="Weekday" Size="1" Type="2" Options="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday" name="weekday"/>
+      <Field Caption="Frequency" Size="1" Type="2" Options="Weekly,2Weekls,3Weeks,Monthly" name="frequency"/>
+      <Field Caption="Delivery method" File="accounting.deliverymethod" Size="1" Type="2" name="deliverymethod"/>
+      <Field Caption="Commission%" Format="###.##" Size="2" Type="2" name="commission"/>
+      <Field Caption="Trade discount%" Format="###.##" Size="2" Type="2" name="trade_discount"/>
+      <Field Caption="Black List" Format="b" Size="1" Type="2" name="black_list"/>
+      <Field Caption="Car No" Size="15" name="car"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Vat" File="accounting.vat" Size="1" Type="2" name="vat"/>
+      <Field Caption="Box Type" File="pos.boxtype" Size="1" Type="2" name="boxtype"/>
+      <Field Caption="Host" File="system.host" Size="2" Type="2" name="host"/>
+      <Field Caption="Codepage" Size="2" Type="2" name="codepage"/>
+      <Field Caption="Notes" name="notes"/>
+      <Field Caption="Menu" File="pos.menu" Size="1" Type="2" name="menu"/>
+
+      <Field Caption="IBAN" Size="2" Type="2" name="iban" File="accounting.iban"/>
+
+      <Field Caption="Token" Size="32" Encrypted="1" name="token"/>
+      <Field Caption="Card No." CreditCard="1" Encrypted="1" Size="16" name="cardno"/>
+      <Field Caption="Expire month" Format="##" Size="1" Type="2" name="card_month"/>
+      <Field Caption="Expire year" Format="##" Size="1" Type="2" name="card_year"/>
+      <Field Caption="Sales account" File="accounting.chart" Size="2" Type="2" name="chart_sale"/>
+      <Field Caption="Purchase account" File="accounting.chart" Size="2" Type="2" name="chart_purchase"/>
+      <Field Caption="Bookmark" Size="16" name="@bookmark"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+      <Field Caption="User" Hide="1" System="1" Size="2" Type="2" name="@user_stamp" File="system.user"/>
+      <Index name="people" CRC64="1">
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="people[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[bank]">
+         <IndexEntry name="bank"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="people[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="people[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="people[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[link]">
+         <IndexEntry name="link"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[nationality]">
+         <IndexEntry name="nationality"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="people[number]">
+         <IndexEntry name="number"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="people[profession]">
+         <IndexEntry name="profession"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" Force="1" name="people_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_addr">
+         <IndexEntry name="addr"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="people_birth">
+         <IndexEntry name="birth"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_contact">
+         <IndexEntry name="contact"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_id">
+         <IndexEntry name="id"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_location">
+         <IndexEntry name="location"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_people_route">
+         <IndexEntry name="people_route"/>
+         <IndexEntry name="serial"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="people_phone">
+         <IndexEntry name="phone"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_route">
+         <IndexEntry name="route"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_serial">
+         <IndexEntry name="serial"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_tax">
+         <IndexEntry name="tax"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_vatno">
+         <IndexEntry name="vatno"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_weekday">
+         <IndexEntry name="weekday"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

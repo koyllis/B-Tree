@@ -1,0 +1,16 @@
+<xml>
+   <Table System="pos" Icon="carousel" SoftDelete="1" name="Carousel">
+      <Field Size="40"/>
+      <Field Caption="Type" File="pos.type" Size="2" Type="2" name="type"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+      <Index name="carousel">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="carousel[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

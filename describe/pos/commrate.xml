@@ -1,0 +1,34 @@
+<xml>
+   <Table System="pos" name="Commission Rates">
+      <Field Caption="Group" File="accounting.group" Size="2" Force="1" Type="2" name="group"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Commission%" Format="##.##" Size="8" Force="1" Type="3" name="rate"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="commrate">
+         <IndexEntry name="group"/>
+         <IndexEntry name="area"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="commrate[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="commrate[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="area"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="commrate[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="area"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,47 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Bus Routes">
+      <Field Caption="Code" Size="20" Force="1" name="code"/>
+      <Field Caption="Category" File="accounting.vehcategory" Size="1" Force="1" Type="2" name="vehcategory"/>
+      <Field Caption="Type" Size="1" Options="Going,Returning,Cycle" Type="2" Force="1" name="type"/>
+      <Field Caption="Alternate code" Size="10" Tip="1" name="alternate"/>
+      <Field Caption="Group" File="accounting.busgroup" Size="1" Force="1" Type="2" name="busgroup"/>
+      <Field Caption="Start from" Size="50" Force="1" name="start"/>
+      <Field Caption="Middle" Size="50" name="middle"/>
+      <Field Caption="End to" Size="50" name="end"/>
+      <Field Caption="Start time" Total="1" Size="2" Type="5" name="start_time"/>
+      <Field Caption="End time" Total="1" Size="2" Type="5" name="end_time"/>
+      <Field Caption="Motorway" Total="1" Format="####.###" Size="4" Type="8" name="motorway"/>
+      <Field Caption="Bi-directional" Total="1" Format="####.###" Size="4" Type="8" name="bidirect"/>
+      <Field Caption="Urban" Total="1" Format="####.###" Size="4" Type="8" name="urban"/>
+      <Field Caption="Rural" Total="1" Format="####.###" Size="4" Type="8" name="rural"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="busroute">
+         <IndexEntry name="code"/>
+         <IndexEntry name="vehcategory"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="busroute[busgroup]">
+         <IndexEntry name="busgroup"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="vehcategory"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="busroute[vehcategory]">
+         <IndexEntry name="vehcategory"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="busroute_alternate">
+         <IndexEntry name="alternate"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="vehcategory"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="busroute_start">
+         <IndexEntry name="start"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="vehcategory"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

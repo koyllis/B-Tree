@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="timer1" name="Production Time" ImmediateChild="1">
+      <Field Caption="Production" File="pos.productitem" Size="4" Force="1" Type="2" name="productitem"/>
+      <Field Caption="Employee" File="payroll.employee" Size="4" Force="1" Type="2" name="employee"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="From time" Size="2" Type="5" name="from"/>
+      <Field Caption="To time" Size="2" Type="5" name="to"/>
+      <Field Caption="Minutes" Strict="1" Size="2" Type="2" name="minutes"/>
+      <Field Strict="1" Caption="Overtime" Size="2" Type="2" name="overtime"/>
+      <Field Caption="Cost" Strict="1" Size="8" Type="3" name="cost"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="producthour">
+         <IndexEntry name="productitem"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="from"/>
+      </Index>
+      <Index name="producthour[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="productitem"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

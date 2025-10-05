@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="scalestep" System="payroll">
+      <Field Size="1" Type="2" File="payroll.scalename" name="scalename" Caption="Scale name"/>
+      <Field Size="4" Format="######.##" Type="4" name="amount" Caption="Amount"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="scalestep">
+         <IndexEntry name="scalename"/>
+         <IndexEntry name="amount"/>
+      </Index>
+   </Table>
+</xml>

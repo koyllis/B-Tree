@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="routecomm" System="pos" Dynamic="1">
+      <Field Size="4" Type="2" File="pos.route" name="route" Caption="Agent"/>
+      <Field Size="2" Type="2" File="pos.category" name="category" Caption="Category"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Format="###.##" Type="2" name="commission" Caption="Commission(%)"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Index name="routecomm">
+         <IndexEntry name="route"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="routecomm[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="route"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="routecomm[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="route"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

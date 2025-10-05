@@ -1,0 +1,40 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="home2" Dynamic="1" name="site">
+      <Field/>
+      <Field Caption="Parcel No." Size="30" Tip="1" name="parcel"/>
+      <Field Caption="Variety" File="pos.item" Tip="1" Size="4" Type="2" name="item"/>
+      <Field Caption="Year" Size="2" Type="2" name="year"/>
+      <Field Caption="Plan No." Size="10" Tip="1" name="plan"/>
+      <Field Caption="Area" File="accounting.area" Tip="1" Size="2" Type="2" name="area"/>
+      <Field Caption="Hectares" Format="####.##" Tip="1" Size="4" Type="8" name="hectares"/>
+      <Field Caption="Owner" File="accounting.people" Size="4" Type="2" name="owner"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="site">
+         <IndexEntry name="name"/>
+         <IndexEntry name="parcel"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="site[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="parcel"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="site[owner]">
+         <IndexEntry name="owner"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="parcel"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="site[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="parcel"/>
+      </Index>
+      <Index name="site[parcel]">
+         <IndexEntry name="parcel"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

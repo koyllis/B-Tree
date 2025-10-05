@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" Icon="cardclass" name="Credit Card Outlet" Bookmark="0">
+      <Field Caption="Number" Size="4" Negative="0" Type="2" name="number"/>
+      <Field Caption="Location" Size="2" Type="2" File="accounting.location" name="location"/>
+      <Field Caption="Cash account" Size="2" Type="2" File="accounting.chart" name="chart_cash"/>
+      <Field Caption="Charges account" Size="2" Type="2" File="accounting.chart" name="chart"/>
+      <Field Caption="Options" Size="2" Type="2" Format="b" Options="ReverseFee" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cardoutlet">
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

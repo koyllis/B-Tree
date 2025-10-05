@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="prepurchase">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Date" Size="8" Type="5" name="date"/>
+      <Field Caption="Sales order" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Delivery" Size="4" Type="5" name="delivery"/>
+      <Field Caption="Processed" Size="8" Type="5" name="processed"/>
+      <Field Caption="Purchase order" File="pos.trans" Size="4" Type="2" name="trans_order"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="prepurchase">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="prepurchase[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="prepurchase[trans_order]">
+         <IndexEntry name="trans_order"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

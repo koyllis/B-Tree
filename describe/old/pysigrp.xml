@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="pysigrp" System="old">
+      <Field Size="3" Format="u" name="sg_igroup" Caption="S.I. group"/>
+      <Field Size="20" Format="u" name="sg_name"/>
+      <Field Size="15" Format="u" name="sg_number" Caption="Number"/>
+      <Field Size="2" Format="u" name="sg_categ" Caption="Category"/>
+      <Index name="pysigrp">
+         <IndexEntry name="sg_igroup"/>
+      </Index>
+   </Table>
+</xml>

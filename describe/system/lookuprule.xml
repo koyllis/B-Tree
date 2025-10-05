@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="system" name="Stock-Lookup Rules">
+      <Field  Dissect="1"/>
+      <Field Caption="Locations" File="system.location" Size="2" Type="2" name="location" Dim="64"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="lookuprule">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

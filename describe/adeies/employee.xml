@@ -1,0 +1,40 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="employee" SoftDelete="1" Static="1" name="Employees" System="adeies" Index="employee_name" DeleteChildren="1">
+      <Field Size="4" Format="#######" Strict="1" AutoCounter="1" Type="2" name="code" Caption="Code"/>
+      <Field/>
+      <Field Size="4" Format="#######" Type="2" File="adeies.position" name="position" Caption="Position"/>
+      <Field Size="4" Format="#######" Type="2" File="adeies.department" name="department" Caption="Department"/>
+      <Field Size="1" Options="Permanent,Temporary,Worker" Format="###" Type="2" name="status" Caption="Status"/>
+      <Field Size="4" Format="##/##/##" Type="5" name="birth" Caption="Birth Date"/>
+      <Field Size="4" Format="##/##/##" Type="5" name="hire" Caption="Hire date"/>
+      <Field Size="4" Format="##/##/##" Type="5" name="term" Caption="Termination"/>
+      <Field Size="4" Format="#######" Type="2" name="idno" Caption="ID"/>
+      <Field Size="4" Format="#######" Type="2" name="sino" Caption="Social Insurance No."/>
+      <Field Size="8" name="mobiletel" Caption="Mobile phone"/>
+      <Field Size="1" Options="Male,Female" Format="###" Type="2" name="sex" Caption="Sex"/>
+      <Field name="address1" Caption="Address"/>
+      <Field name="address2" Caption=""/>
+      <Field name="address3" Caption="0"/>
+      <Field Size="2" Format="####" Type="2" name="zip" Caption="Zip"/>
+      <Field Size="8" name="hometel" Caption="Home phone"/>
+      <Field Size="40" name="remarks" Caption="Remarks"/>
+      <Field Size="1" Format="b" Type="2" name="holidays" Caption="Account holidays"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" HideReport="1" Caption="SoftDelete"/>
+      <Index name="employee">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="employee[department]" NullKey="1">
+         <IndexEntry name="department"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="employee[position]" NullKey="1">
+         <IndexEntry name="position"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="employee_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

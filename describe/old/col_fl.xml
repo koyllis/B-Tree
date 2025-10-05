@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="col_fl" System="old" ModifyStamp="0">
+      <Field Size="5" Dim ="1" name="col_colour" Caption="Colour Code"/>
+      <Field Size="15" Dim ="1" name="col_desc" Caption="Colour Description"/>
+      <Field Size="2" Type="2" Dim ="1" name="col_number" Caption="Colour Number"/>
+      <Index name="col_fl">
+         <IndexEntry name="col_colour"/>
+      </Index>
+   </Table>
+</xml>

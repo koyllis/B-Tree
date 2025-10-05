@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="project" name="Sales Projection" System="pos">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="pos.color" name="color" Caption="Color" Total="1"/>
+      <Field Size="2" Type="2" File="pos.size" name="size" Caption="Size" Total="1"/>
+      <Field Size="8" Format="######.##" Type="3" name="last_period" Total="1" Caption="Quantity (last)"/>
+      <Field Size="8" Format="######.##" Type="3" name="this_period" Total="1" Caption="Quantity (this)"/>
+      <Field Size="8" Format="######.##" Type="3" name="target" Total="1" Caption="Quantity (target)"/>
+      <Field Size="8" Format="######.##" Type="3" name="last_sales" Caption="Sales (last)" Total="1"/>
+      <Field Size="8" Format="######.##" Type="3" name="this_sales" Total="1" Caption="Sales (this)"/>
+      <Field Size="8" Format="######.##" Type="3" name="target_sales" Caption="Sales (target)" Total="1"/>
+      <Field Size="8" Format="######.##" Type="3" name="manual_projection" Total="1" Caption="Manual projection"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="projection">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="projection[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="projection[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

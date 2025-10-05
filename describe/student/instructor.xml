@@ -1,0 +1,44 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Bookmark="1" System="student" SoftDelete="1" Icon="favorites" Short="Instructor" name="Instructors">
+      <Field Strict="1" Caption="Code" Format="######" Size="4" Type="2" AutoCounter="1" name="code" Modify="1"/>
+      <Field Caption="Surname" Size="30" Tip="1" name="surname" Distinct="1"/>
+      <Field Size="20" Tip="1"/>
+      <Field Caption="Ident. No." Format="########" Size="4" Type="2" name="id"/>
+      <Field Caption="S.I. No." Format="########" Size="4" Type="2" name="si"/>
+      <Field Caption="Sex" Size="1" Type="2" Options="Male,Female" name="sex"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="birth"/>
+      <Field Caption="Address" name="add1"/>
+      <Field Caption="Address" name="add2"/>
+      <Field Caption="Town" Size="20" name="town"/>
+      <Field Caption="Zip" Format="#####" Size="4" Type="2" name="zip"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Home phone" Size="10" name="home"/>
+      <Field Caption="Mobile phone" Size="10" name="mobile"/>
+      <Field Caption="Fax" Size="10" name="fax"/>
+      <Field Caption="Email" Size="40" name="email"/>
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="instructor">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="instructor[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="surname"/>
+      </Index>
+      <Index name="instructor[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index Force="1" name="instructor_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="instructor_surname">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

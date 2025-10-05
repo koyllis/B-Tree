@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="stdescs" System="old" ModifyStamp="0">
+      <Field Caption="Description" name="dd_desc"/>
+      <Field Caption="Date" Size="4" Type="5" name="dd_date"/>
+      <Field Caption="Doc." Size="2" name="dd_doc"/>
+      <Field Caption="Refer." Format="######" Size="4" Type="2" name="dd_refer"/>
+      <Index name="stdescs">
+         <IndexEntry name="dd_desc"/>
+         <IndexEntry name="dd_date"/>
+         <IndexEntry name="dd_doc"/>
+         <IndexEntry name="dd_refer"/>
+      </Index>
+   </Table>
+</xml>

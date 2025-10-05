@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Web Grouping">
+      <Field Caption="Group" File="lab.group" Size="4" Type="2" name="group"/>
+      <Field Caption="People" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="grouppeople">
+         <IndexEntry name="group"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="grouppeople[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+      </Index>
+   </Table>
+</xml>

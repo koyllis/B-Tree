@@ -1,0 +1,38 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="itemprice" Common="1" name="Item Combinations" System="pos" Dataset="1" Dynamic="1">
+      <Field Size="2" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="pos.item" name="item2" Caption="Item 2"/>
+      <Field Size="2" Type="2" File="pos.item" name="item3" Caption="Item 3"/>
+      <Field Size="1" Type="2" File="pos.division" name="division" Caption="Division"/>
+      <Field Size="4" Format="system" Type="8" name="quantity" Caption="Quantity"/>
+      <Field Size="8" Format="###.##" Type="3" name="price" Caption="Price"/>
+      <Field Size="8" Format="###.##" Modify="1" Type="3" name="cost" Caption="Cost "/>
+      <Field Size="8" Modify="1" Type="3" name="happyprice" Caption="Happy hour price"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="itemprice">
+         <IndexEntry name="item"/>
+         <IndexEntry name="item2"/>
+         <IndexEntry name="item3"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+      <Index name="itemprice[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="item2"/>
+         <IndexEntry name="item3"/>
+      </Index>
+      <Index name="itemprice[item2]">
+         <IndexEntry name="item2"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="item3"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="itemprice[item3]">
+         <IndexEntry name="item3"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="item2"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

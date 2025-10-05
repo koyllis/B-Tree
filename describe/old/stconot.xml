@@ -1,0 +1,20 @@
+<xml>
+   <Table System="old" name="stconot" ModifyStamp="0">
+      <Field Caption="Code" Format="u" Size="8" name="cn_code"/>
+      <Field Caption="Notes" Format="u" Size="43" name="cn_note1"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note2"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note3"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note4"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note5"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note6"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note7"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note8"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note9"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note10"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note11"/>
+      <Field Caption="" Format="u" Size="43" name="cn_note12"/>
+      <Index name="stconot">
+         <IndexEntry name="cn_code"/>
+      </Index>
+   </Table>
+</xml>

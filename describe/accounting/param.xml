@@ -1,0 +1,58 @@
+<xml>
+   <Table ManualIndex="1" System="accounting" Icon="compass" Index="param" name="General parameters" Common="1">
+      <Field Caption="Default location" Format="#######" File="accounting.location" Size="4" Type="2" name="location"/>
+      <Field Caption="From date" Size="4" Type="5" name="from"/>
+      <Field Caption="To date" Size="4" Type="5" name="to"/>
+      <Field Caption="Print credit balances as negative" Format="b" Size="1" Type="2" name="credit"/>
+      <Field Caption="Scan for duplicates during entries" Format="b" Size="1" Type="2" name="duplscan"/>
+      <Field Caption="No Statement heading" Format="b" Size="1" Type="2" name="nostatementheading"/>
+      <Field Caption="Statement summary" Format="###" Size="1" Options="Period,Year,Total" Type="2" name="statementsummary"/>
+      <Field Caption="Year Ending Month" Format="##" Size="1" Type="2" name="yearend_month"/>
+      <Field Caption="Grid Lines" Format="####" Size="2" Type="2" name="grid_lines"/>
+      <Field Caption="Aging Periods" Format="###" Size="1" Type="2" name="agingperiods"/>
+      <Field Caption="Aging method" Format="###" Size="1" Options="Month,Day" Type="2" name="agingmethod"/>
+      <Field Caption="Aging interval" Format="###" Size="1" Type="2" name="aginginterval"/>
+      <Field Caption="Statement name margin" Format="##" Size="1" Type="2" name="name_margin"/>
+      <Field Caption="Account Description (Auto)" Format="b" Size="1" Type="2" name="copydesc"/>
+      <Field Caption="Auto Due Date" Format="##" Size="1" Type="2" name="autodue"/>
+      <Field Caption="Trial Balance by Account" Format="b" Size="1" Type="2" name="activity_code" Modify="1"/>
+      <Field Caption="Print Aging" Format="b" Size="1" Type="2" name="print_aging" Modify="1"/>
+      <Field Caption="Negative Journal" Format="b" Size="1" Type="2" name="negative_journal" Modify="1"/>
+      <Field Caption="Dont Increment Reference" Format="b" Size="1" Type="2" name="dont_increment_reference" Modify="1"/>
+      <Field Caption="Import Script" Size="32" name="import_script" Modify="1"/>
+      <Field Caption="Reconciliation File" Size="32" name="reconciliation" Modify="1"/>
+      <Field Caption="Reconciliation bank" Size="1" Options="Cyprus,Laiki,Hellenic,Alpha,Coop" Type="2" name="recon_bank" Modify="1"/>
+      <Field Caption="Auto Print Journal" Format="b" Size="1" Type="2" name="autoprint_journal" Modify="1"/>
+      <Field Caption="Disable Internet Rates" Format="b" Size="1" Type="2" name="no_internet_rate" Modify="1"/>
+      <Field Caption="Service Invoice Layout" Size="32" name="service_layout" Modify="1"/>
+      <Field Caption="Logo" name="logo" Modify="1"/>
+      <Field Caption="Logo Scaling" Size="1" Type="2" name="logo_scale" Modify="1"/>
+      <Field Caption="Logo position" Size="1" Options="Left,Right" Type="2" name="logo_pos" Modify="1"/>
+      <Field Caption="Address position" Size="1" Options="Left,Right" Type="2" name="address_pos" Modify="1"/>
+      <Field Caption="Ignore location in service invoicing" Format="b" Size="1" Type="2" name="ignore_location" Modify="1"/>
+      <Field Caption="Recycle" Format="b" Size="1" Type="2" name="recycle" Modify="1"/>
+      <Field Caption="Force" Format="b" Size="1" Options="Location,Operation,Category" Type="2" name="force" Modify="1"/>
+      <Field Caption="Default credit status" Size="1" Options="Cash,Credit" Type="2" name="credit_status" Modify="1"/>
+      <Field Caption="VAT Input reverse charge" File="accounting.chart" Size="2" Type="2" name="vatinput" Modify="1"/>
+      <Field Caption="VAT Output reverce charge" File="accounting.chart" Size="2" Type="2" name="vatoutput" Modify="1"/>
+      <Field Caption="Bank charges" File="accounting.chart" Size="2" Type="2" name="bank_charges" Modify="1"/>
+      <Field Caption="Cash basis temporary account" File="accounting.chart" Size="2" Type="2" name="cash_basis" Modify="1"/>
+      <Field Caption="VAT Close account" File="accounting.chart" Size="2" Type="2" name="vatclose" Modify="1"/>
+      <Field Caption="Last VAT date" Size="4" Type="5" name="vatdate" Modify="1"/>
+      <Field Caption="Currency" File="accounting.currency" Size="2" Type="2" name="currency" Modify="1"/>
+      <Field Caption="Exchange rate" Format="##.######" Size="4" Type="8" name="xrate" Modify="1"/>
+      <Field Caption="Apply" Format="b" Size="8" Options="OnlyEnglish,PeopleToOperation,SoftDeleteBalance,AgingIncludeZero,ByDocumentJournal,AgingInfo,ClearAllocation,NoAllocationMismatch,PartialAllocation,LimitIncludePostDated,PrintBookmarkAging,PrintDueDated,StatementExtend,ShowJournal,StatementOverdueDays,BankDeposits,SplashBirthday,AgingApplyDuedate,ForceAddress,AgingSalesReceipts,No balance on address,NoAssociateBalance,Calculate balance on export,GoButton,AutoFixedDocument,ForceLocation,AllowDuplicatePhones,SendFax,DisableB2B,QuickOrderCategory" Type="2" name="apply" Modify="1"/>
+      <Field Caption="Print (Other)" Format="b" Size="4" Options="ForceTranslate,CashReceiptPlain,NoReceiptGroup,PrintJournal,BalanceOnReceipt,NoRecipient" Type="2" name="print_other" Modify="1"/>
+      <Field Caption="Statement Location" File="accounting.location" Size="2" Type="2" name="statement_location" Modify="1"/>
+      <Field Caption="Statement Browse" Size="32" name="statement_browse" Modify="1"/>
+      <Field Caption="Statement Layout" Size="32" name="statement_layout" Modify="1"/>
+      <Field Caption="Print (Statement)" Format="b" Size="8" Options="NoHeading,NoMessage,NoTotals,NoGroup,PrintDueDated,ExtendDate,AskDate,OverdueDays,Contact,Borders,NoAlternateColors,VerticalLines,NoPageno,NoContact,NoMobile,NoEmail,NoNotes,NoHeaderVAT,Area,NoClosingBalance,ExcludeOutOfRange,DocumentSummaryPeriod" Type="2" name="print_statement" Modify="1"/>
+      <Field Caption="Print (Aging)" Format="b" Size="4" Options="AgingOnStatement,ExcludePhone,IncludeZero,AgingInfo,PrintBookmark,ExcludeDuedate" Type="2" name="print_age" Modify="1"/>
+      <Field Caption="Phones" Format="b" Size="2" Type="2" Options="Home,Fax,Mobile,Business,Other" name="phones" Modify="1"/>
+      <Field Caption="Statement Width Box" Size="1" Type="2" name="statement_width" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="param">
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

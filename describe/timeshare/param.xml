@@ -1,0 +1,49 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="timeshare" name="Location Parameters">
+      <Field Caption="Location" File="accounting.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Invoice" File="accounting.document" Size="2" Type="2" name="invoice"/>
+      <Field Caption="Receipt" File="accounting.document" Size="2" Type="2" name="receipt"/>
+      <Field Caption="Maintenance" File="accounting.document" Size="2" Type="2" name="maintenance"/>
+      <Field Caption="Cancellation" File="accounting.document" Size="2" Type="2" name="cancellation"/>
+      <Field Caption="Interest" File="accounting.document" Size="2" Type="2" name="interest"/>
+      <Field Caption="Discount" File="accounting.document" Size="2" Type="2" name="discount"/>
+      <Field Caption="Contract location" File="accounting.location" Size="2" Type="2" name="location_accounts"/>
+      <Field Caption="Maintenance location" File="accounting.location" Size="2" Type="2" name="location_maint"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="param">
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[cancellation]">
+         <IndexEntry name="cancellation"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[discount]">
+         <IndexEntry name="discount"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[interest]">
+         <IndexEntry name="interest"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[invoice]">
+         <IndexEntry name="invoice"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[location_accounts]">
+         <IndexEntry name="location_accounts"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[location_maint]">
+         <IndexEntry name="location_maint"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[maintenance]">
+         <IndexEntry name="maintenance"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="param[receipt]">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

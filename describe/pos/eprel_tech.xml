@@ -1,0 +1,21 @@
+<xml>
+   <Table System="pos" Icon="document1" name="Techinal Description">
+      <Field Caption="Model" File="pos.eprel_item" Size="4" Type="2" Force="1" name="eprel_item"/>
+      <Field Caption="Type" Size="1" Options="Techinal,Attachment,Subtag" Type="2" Force="1" name="type"/>
+      <Field Caption="Line" Format="##" Size="2" Type="2" Force="1" name="line"/>
+      <Field Caption="Tag" File="pos.eprel_tag" Size="4" Type="2" name="tag"/>
+      <Field Caption="Value" Size="80" Force="1" name="value"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="eprel_tech">
+         <IndexEntry name="eprel_item"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="eprel_tech[tag]">
+         <IndexEntry name="tag"/>
+         <IndexEntry name="eprel_item"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Customer References" System="accounting" ImmediateChild="1">
+      <Field Size="4" Type="2" File="accounting.peopleserv" name="peopleserv" Caption="Service"/>
+      <Field Size="2" Type="2" File="accounting.reftype" name="reftype" Caption="Reference type"/>
+      <Field name="alpha" Caption="Alpha"/>
+      <Field Size="4" Format="#####.##" Type="4" name="amount" Caption="Amount"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="peopleref">
+         <IndexEntry name="peopleserv"/>
+         <IndexEntry name="reftype"/>
+      </Index>
+      <Index name="peopleref[reftype]">
+         <IndexEntry name="reftype"/>
+         <IndexEntry name="peopleserv"/>
+      </Index>
+   </Table>
+</xml>

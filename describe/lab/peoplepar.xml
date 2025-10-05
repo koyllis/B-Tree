@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Icon="defrag2" name="Customer Parameters" System="lab">
+      <Field Size="2" Type="2" File="lab.group" name="group" Caption="Group"/>
+      <Field Size="2" Tip="1" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Tip="1" Type="2" File="pos.item" name="item" Caption="Parameter"/>
+      <Field Size="2" Type="2" File="lab.calculation" name="calc3" Caption="Inapropriate"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="peoplepar">
+         <IndexEntry name="group"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="peoplepar[calc3]">
+         <IndexEntry name="calc3"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="peoplepar[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="peoplepar[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

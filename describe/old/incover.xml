@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="incover" System="old">
+      <Field Size="2" Type="2" name="co_plno" Caption="Plan"/>
+      <Field Size="5" name="co_name" Caption="Name"/>
+      <Field Size="1" Type="2" name="co_year" Caption="Year"/>
+      <Field Size="4" Type="4" name="co_netp" Caption="Net"/>
+      <Field Size="4" Type="4" name="co_prem" Caption="Premium"/>
+      <Field Size="4" Type="4" name="co_paya" Caption="Payable"/>
+      <Field Size="4" Type="4" name="co_cover" Caption="Cover"/>
+      <Field Size="4" Type="4" name="co_accid" Caption="Accident"/>
+      <Field Size="8" Type="3" name="co_comm" Caption="Comm%"/>
+      <Field Size="8" Type="3" name="co_comp" Caption="Company"/>
+      <Index name="incover">
+         <IndexEntry name="co_plno"/>
+      </Index>
+   </Table>
+</xml>

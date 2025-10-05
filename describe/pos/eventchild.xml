@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="holiday" name="Event Children" System="pos">
+      <Field Size="4" Force="1" Type="2" File="pos.event" name="event" Caption="Event"/>
+      <Field Size="20" name="child" Caption="Child name"/>
+      <Field Size="2" Format="##" Type="2" name="age" Caption="Age"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Cake"/>
+      <Field Size="50" name="flavour" Caption="Flavour"/>
+      <Field Size="2" Type="2" File="pos.brand" name="brand" Caption="Brand"/>
+      <Field Size="4" Format="####.##" Type="4" name="price" Caption="Price"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="eventchild">
+         <IndexEntry name="event"/>
+         <IndexEntry name="child"/>
+      </Index>
+      <Index name="eventchild[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="event"/>
+         <IndexEntry name="child"/>
+      </Index>
+      <Index name="eventchild[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="event"/>
+         <IndexEntry name="child"/>
+      </Index>
+   </Table>
+</xml>

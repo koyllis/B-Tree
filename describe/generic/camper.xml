@@ -1,0 +1,34 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Phone="mobile" System="generic" SoftDelete="1" name="camper">
+      <Field Caption="Week" File="generic.week" Size="2" Type="2" name="week"/>
+      <Field Caption="School" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Sex" Size="1" Options="Male,Female" Type="2" name="sex"/>
+      <Field Caption="Surname" Size="20" name="surname"/>
+      <Field Size="20"/>
+      <Field Caption="Sixth grade" Format="b" Size="1" Type="2" name="grade"/>
+      <Field Caption="Father" Size="20" name="father"/>
+      <Field Caption="Mother" Size="20" name="mother"/>
+      <Field Caption="Mobile" Size="20" name="mobile"/>
+      <Field Caption="Mobile 2" Size="20" name="mobile2"/>
+      <Field Caption="Home phone" Size="20" name="home"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Fee" Total="1" Format="###.##" Size="4" Type="4" name="fee"/>
+      <Field Caption="Selected" Format="b" Size="1" Type="2" name="selected"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="camper">
+         <IndexEntry name="week"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="sex"/>
+         <IndexEntry name="surname"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="camper[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="week"/>
+         <IndexEntry name="sex"/>
+         <IndexEntry name="surname"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

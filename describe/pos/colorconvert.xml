@@ -1,0 +1,17 @@
+<xml>
+   <Table System="pos" name="colorconvert">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Color" name="colorcode"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="colorconvert">
+         <IndexEntry name="people"/>
+         <IndexEntry name="colorcode"/>
+      </Index>
+      <Index name="colorconvert[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="colorcode"/>
+      </Index>
+   </Table>
+</xml>

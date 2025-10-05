@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" Icon="emplotraining" name="Empl. Training">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Course" File="payroll.training" Size="4" Type="2" name="training"/>
+      <Field Caption="Completed" Format="b" Size="1" Type="2" name="completed"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="emptrain">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="training"/>
+      </Index>
+      <Index name="emptrain[training]">
+         <IndexEntry name="training"/>
+         <IndexEntry name="employee"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,60 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" Icon="microscope" name="Results"  ImmediateChild="1" Unordered="1">
+      <Field Caption="Transaction" File="lab.trans" Size="4" Force="1" Type="2" name="trans"/>
+      <Field Caption="Parameter" File="lab.grouppar" Size="4" Force="1" Type="2" name="grouppar"/>
+      <Field Caption="Method" File="lab.method" Size="2" Type="2" name="method"/>
+      <Field Caption="Calculation" File="lab.calculation" Size="4" Type="2" name="calculation"/>
+      <Field Caption="Uncertainty" Format="#####.###" Size="8" Type="3" name="uncert"/>
+      <Field Caption="LD" Format="#####.###" Size="8" Type="3" name="ld"/>
+      <Field Caption="LQ" Format="#####.###" Size="8" Type="3" name="lq"/>
+      <Field Caption="Result" Total="1" Average="1" Format="#####.###" Size="8" Type="3" name="result"/>
+      <Field Caption="MRL" Format="#####.##" Size="8" Type="3" name="mrl"/>
+      <Field Caption="MRL%" Format="###.##" Size="8" Type="3" Total="1" name="mrlp"/>
+      <Field Caption="ARID" Format="#####.###" Size="8" Type="3" name="arid"/>
+      <Field Caption="ARID%" Format="###.##" Size="8" Type="3" Total="1" name="aridp"/>
+      <Field Caption="IESTI" Format="###.#####" Size="8" Type="3" name="iesti"/>
+      <Field Caption="RL" Format="###.##" Size="8" Type="3" name="rl"/>
+      <Field Caption="Dilution 1" File="lab.dilution" Size="1" ReportWidth="20" Type="2" name="dilution1" MatchEdit="0"/>
+      <Field Caption="Dilution 2" File="lab.dilution" Size="1" ReportWidth="20" Type="2" name="dilution2" MatchEdit="0"/>
+      <Field Caption="CFU 1" Format="###" Size="2" Type="2" name="cfu1"/>
+      <Field Caption="CFU 2" Format="###" Size="2" Type="2" name="cfu2"/>
+      <Field Caption="Analysis start" Size="4" ReportWidth="15" Type="5" name="date" MatchEdit="0"/>
+      <Field Caption="Analysis end" Size="4" ReportWidth="15" Type="5" name="date_end" MatchEdit="0"/>
+      <Field Caption="Price" Format="#####.##" Size="8" Type="3" name="price" Total="1"/>
+      <Field Caption="Discount" Format="#####.##" Size="8" Type="3" name="discount" Total="1"/>
+      <Field Caption="Accredited" Format="b" ReportWidth="10" Size="1" Type="2" name="accredited"/>
+      <Field Caption="Processed" ReportWidth="10" Size="8" Type="5" name="process"/>
+      <Field Caption="Result Extended" Total="1" Average="1" Format="#####.###" Size="8" Type="3" name="xresult" Strict="1"/>
+      <Field Caption="Item/Station" File="lab.hybridkey" Size="2" ReportWidth="10" Type="2" name="hybridkey" MatchEdit="0" Strict="1"/>
+      <Field Caption="Item/Group" File="lab.hybridgroup" ReportWidth="10" Size="2" Type="2" name="hybridgroup" MatchEdit="0" Strict="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transdet" CRC64="1">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="grouppar"/>
+      </Index>
+      <Index name="transdet[grouppar]" CRC64="1">
+         <IndexEntry name="grouppar"/>
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="transdet[calculation]"  CRC64="1">
+         <IndexEntry name="calculation"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="grouppar"/>
+      </Index>
+      <Index name="transdet[hybridgroup]" CRC64="1">
+         <IndexEntry name="hybridgroup"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="grouppar"/>
+      </Index>
+      <Index name="transdet[hybridkey]" CRC64="1">
+         <IndexEntry name="hybridkey"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="grouppar"/>
+      </Index>
+      <Index name="transdet[method]" CRC64="1">
+         <IndexEntry name="method"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="grouppar"/>
+      </Index>
+   </Table>
+</xml>

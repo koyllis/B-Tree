@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="standard" System="pos">
+      <Field Size="2" Type="2" File="pos.color" name="color" Caption="Width"/>
+      <Field Size="2" Type="2" File="pos.size" name="size" Caption="Length"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="standard">
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="standard[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

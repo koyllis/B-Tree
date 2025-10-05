@@ -1,0 +1,40 @@
+<xml>
+   <Table ChildMutex="1" System="pos" Dynamic="1" name="Extra references" Unordered="1">
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Bill of lading No." Size="20" name="airwaybill"/>
+      <Field Caption="Flight No" Size="20" name="flightno"/>
+      <Field Caption="Departure port" name="departure"/>
+      <Field Caption="Desctination" name="destination"/>
+      <Field Caption="Freight" Format="######,##" Size="8" Type="3" name="freight"/>
+      <Field Caption="Arrival date" Size="4" Type="5" name="arrival"/>
+      <Field Caption="Ship name" Size="20" name="ship"/>
+      <Field Caption="Entry port" Size="20" name="entry"/>
+      <Field Caption="Stock No." Size="20" name="stock"/>
+      <Field Caption="Delivery Order" Size="80" name="delivery"/>
+      <Field Caption="Marks" Size="80" name="marks"/>
+      <Field Caption="Reference" Size="80" name="reference"/>
+      <Field Caption="Container No." name="container"/>
+      <Field Caption="Truck No." name="truck"/>
+      <Field Caption="Gross Weight" name="gross"/>
+      <Field Caption="Net Weight" name="net"/>
+      <Field Caption="Total cases" name="cases"/>
+      <Field Caption="Seaway Bill No." name="seawaybill"/>
+      <Field Caption="Email" name="email"/>
+      <Field Caption="Name" name="name" Size="64"/>
+      <Field Caption="Mobile" name="mobile"/>
+      <Field Caption="ID" name="id" Size="36"/>
+
+      <Field Caption="Invoice date" Size="4" Type="5" name="invoice_date"/>
+      <Field Caption="Invoice No." Size="10" name="invoice_no"/>
+      <Field Caption="Invoice Total" Format="######.##" Size="4" Type="4" name="invoice_total"/>
+      <Field Caption="Customs V.A.T." Format="######.##" Size="4" Type="4" name="customsvat"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transadd">
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="transadd_airwaybill">
+         <IndexEntry name="airwaybill"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

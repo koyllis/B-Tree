@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Import Log">
+      <Field Caption="Category" Size="1" name="category"/>
+      <Field Caption="Date" Size="10" name="date"/>
+      <Field Caption="Accounts" Size="4" Type="2" name="accounts"/>
+      <Field Caption="Transactions" Size="4" Type="2" name="trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="helllog">
+         <IndexEntry name="category"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

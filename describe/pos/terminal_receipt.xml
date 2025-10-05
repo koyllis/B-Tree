@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table CanModify="0" System="pos" CanDelete="0" name="terminal_receipt">
+      <Field Caption="Terminal" File="pos.terminal" Size="4" Type="2" name="terminal"/>
+      <Field Caption="Receipt method" File="pos.receipt" Size="2" Type="2" name="receipt"/>
+      <Field Caption="Amount" Format="#####.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="terminal_receipt">
+         <IndexEntry name="terminal"/>
+         <IndexEntry name="receipt"/>
+      </Index>
+      <Index name="terminal_receipt[receipt]">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="terminal"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml>
+   <Table System="office" name="Ticket Dialogue" Icon="dialogue" Unordered="1">
+      <Field Caption="Ticket" Size="4" Type="2" name="webticket" File="office.webticket" Force="1"/>
+      <Field Caption="Date" Size="8" Type="5" name="date" Auto="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="ticketdialogue">
+         <IndexEntry name="webticket"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="ticketdialogue[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="webticket"/>
+      </Index>
+   </Table>
+</xml>

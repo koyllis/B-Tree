@@ -1,0 +1,34 @@
+<xml>
+   <Table System="pos" name="Receiving Check">
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transcheck">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="transcheck[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="transcheck[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="transcheck[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

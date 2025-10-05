@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Dynamic="1" ChainInsert="office|machcost" name="Transactions" System="office">
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Force="1" Type="2" File="office.machine" name="machine" Caption="Machine"/>
+      <Field Size="4" Format="####" Type="2" name="fuel_litre" Caption="Fuel litres"/>
+      <Field Size="8" Format="##.####" Force="1" Type="3" name="fuelcost" Caption="Fuel cost/litre"/>
+      <Field Size="8" Format="##.####" Type="3" name="transport" Caption="Transport cost"/>
+      <Field Size="8" Format="##.####" Type="3" name="material" Caption="Material cost"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="machtrans">
+         <IndexEntry name="date"/>
+         <IndexEntry name="machine"/>
+      </Index>
+      <Index name="machtrans[machine]">
+         <IndexEntry name="machine"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

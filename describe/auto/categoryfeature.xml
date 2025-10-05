@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Category Features">
+      <Field Caption="Category" File="auto.category" Size="4" Type="2" Tip="1" name="category"/>
+      <Field Caption="Feature" File="auto.feature" Size="2" Type="2" Tip="1" name="feature"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="categoryfeature">
+         <IndexEntry name="category"/>
+         <IndexEntry name="feature"/>
+      </Index>
+      <Index name="categoryfeature[feature]">
+         <IndexEntry name="feature"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

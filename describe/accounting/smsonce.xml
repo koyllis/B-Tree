@@ -1,0 +1,15 @@
+<xml>
+   <Table System="accounting" name="SMS Once">
+      <Field Caption="SMS body" File="system.smsbody" Size="2" Type="2" name="smsbody"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="smsonce">
+         <IndexEntry name="smsbody"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="smsonce[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="smsbody"/>
+      </Index>
+   </Table>
+</xml>

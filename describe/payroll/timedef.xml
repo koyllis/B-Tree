@@ -1,0 +1,72 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Bookmark="1" System="payroll" Icon="timedef" Color="1" PDA="0" SoftDelete="1" name="Time Definitions">
+      <Field Distinct="1"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Off,Leave,Sick,Army" name="type"/>
+      <Field Caption="Ideal minutes" Format="#####" Size="2" Type="2" name="ideal"/>
+      <Field Caption="Paid minutes" Format="#####" Size="2" Type="2" name="paid"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="Paid,NoHolidayFund,NoCopy,SkipWeekends,EraseOnTermination" name="option"/>
+      <Field Caption="Include in bonus" Format="b" Size="1" Type="2" name="bonus"/>
+      <Field Caption="Transferable" Format="b" Size="1" Type="2" name="transfer"/>
+      <Field Caption="Ignore holidays" Format="b" Size="1" Type="2" name="ignorehol"/>
+      <Field Caption="No punchcard" Format="b" Size="1" Type="2" name="nopunch"/>
+      <Field Caption="Day-off" Format="b" Size="1" Type="2" Options="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" name="dayoff"/>
+      <Field Caption="Off bonus(%)" Format="##.##" Size="4" Type="8" name="offbonus"/>
+      <Field Caption="Minutes per day" Format="###.##" Size="4" Type="8" name="minutes"/>
+      <Field Caption="Exception Days" Size="1" Type="2" name="exception"/>
+      <Field Caption="Break minutes" Format="##.##" Size="4" Type="8" name="break"/>
+      <Field Caption="Holiday%" Format="###.##" Size="4" Type="8" name="holiday"/>
+      <Field Caption="Night%" Format="###.##" Size="4" Type="8" name="night"/>
+      <Field Caption="Night starting time" Size="2" Type="5" name="nightstart"/>
+      <Field Caption="Night ending time" Size="2" Type="5" name="nightend"/>
+      <Field Caption="Contribution(%)" Format="##.##" Size="4" Type="8" name="contribution"/>
+      <Field Caption="Overtime factor" Format="##.##" Size="4" Type="8" name="overtime"/>
+      <Field Caption="Overtime rate" Format="##.##" Size="4" Type="4" name="overtime_rate"/>
+      <Field Caption="Next number" Size="4" Type="2" name="number"/>
+      <Field Caption="Time-table" File="payroll.timetable" Size="2" Type="2" name="timetable"/>
+      <Field Caption="Cash account" File="accounting.chart" Size="2" Type="2" name="chart_cash"/>
+      <Field Caption="Bank account" File="accounting.chart" Size="2" Type="2" name="chart_bank"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Numbering Document" File="accounting.document" Size="2" Type="2" name="document"/>
+      <Field Caption="Rate definition" File="payroll.ratedef" Size="2" Type="2" name="ratedef"/>
+      <Field Caption="Operation" File="accounting.operation" Size="2" Type="2" name="operation"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" HideReport="1" Caption="SoftDelete"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="timedef">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="timedef[chart_bank]">
+         <IndexEntry name="chart_bank"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="timedef[chart_cash]">
+         <IndexEntry name="chart_cash"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="timedef[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="timedef[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="timedef[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="timedef[ratedef]">
+         <IndexEntry name="ratedef"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="timedef[timetable]">
+         <IndexEntry name="timetable"/>
+      </Index>
+      <Index Force="1" name="timedef_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

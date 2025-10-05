@@ -1,0 +1,25 @@
+<xml>
+   <Table System="old" name="acbalan" ModifyStamp="0">
+      <Field Caption="Account code" Format="u" Size="6" name="mm_account"/>
+      <Field Caption="Month ending" Size="4" Type="5" name="mm_month"/>
+      <Field Caption="Location" Size="1" Type="2" name="mm_loc"/>
+      <Field Caption="Debits" Format="#######.##" Size="8" Type="4" name="mm_debits"/>
+      <Field Caption="Credits" Format="#######.##" Size="8" Type="4" name="mm_credits"/>
+      <Field Caption="Budget" Format="#######.##" Size="8" Type="4" name="mm_budget"/>
+      <Field Caption="Debits" Format="#######.##" Size="8" Type="4" name="ac_debits"/>
+      <Field Caption="Credits" Format="#######.##" Size="8" Type="4" name="ac_credits"/>
+      <Field Caption="Budget" Format="#######.##" Size="8" Type="4" name="ac_budget"/>
+      <Field Caption="Date closed" Size="4" Type="5" name="mm_closed"/>
+      <Field Caption="Last posting" Size="4" Type="5" name="mm_last"/>
+      <Index name="acbalan">
+         <IndexEntry name="mm_account"/>
+         <IndexEntry name="mm_month"/>
+         <IndexEntry name="mm_loc"/>
+      </Index>
+      <Index name="acbalan_mm_month">
+         <IndexEntry name="mm_month"/>
+         <IndexEntry name="mm_account"/>
+         <IndexEntry name="mm_loc"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml>
+   <Table CanModify="0" System="system" CanDelete="0" name="lotto_when">
+      <Field Caption="Location" File="system.location" Size="2" Force="1" Type="2" name="location"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Hour" Format="##" Size="1" Type="2" Force="1" name="hour"/>
+      <Field Caption="Minute" Format="##" Size="1" Type="2" Force="1" name="minute"/>
+      <Field Caption="Transaction" Strict="1" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="lotto_when">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="hour"/>
+      </Index>
+   </Table>
+</xml>

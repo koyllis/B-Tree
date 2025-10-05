@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="calendr1" Dynamic="1" name="Float Weeks" System="hotel">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="20" name="agreement" Caption="Agreement No."/>
+      <Field Size="1" Options="Studio,One Bedroom,Two Bedroom,Three Bedroom" Type="2" name="type" Caption="Apartment type"/>
+      <Field Size="1" Options="Blue,White,Red" Type="2" name="season" Caption="Season"/>
+      <Field Size="1" Format="##" Type="2" name="weeks" Caption="Weeks"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="float">
+         <IndexEntry name="people"/>
+         <IndexEntry name="agreement"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,39 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Tasks" System="office">
+      <Field Size="4" Type="2" name="number" Caption="Number" Strict="1" Modify="1" AutoCounter="1"/>
+      <Field Size="4" Type="5" name="date" Caption="Request date"/>
+      <Field Size="2" Type="2" File="office.type" name="type" Caption="Type"/>
+      <Field Size="4" Type="5" name="due" Caption="Due Date"/>
+      <Field Size="100" Caption="Description"/>
+      <Field Size="2" Type="2" File="office.staff" name="staff" Caption="Owner"/>
+      <Field Size="2" Type="2" File="office.staff" name="staff_assign" Caption="Assigned"/>
+      <Field Size="2" Type="2" File="accounting.location" name="location" Caption="Location"/>
+      <Field Size="4" Type="5" name="reminder" Caption="Reminder"/>
+      <Field Size="4" Type="5" name="completed" Caption="Completed"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="task">
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="task[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="task[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="task[staff_assign]">
+         <IndexEntry name="staff_assign"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="task[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

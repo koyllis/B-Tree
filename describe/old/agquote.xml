@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agquote" System="old" ModifyStamp="0">
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="qu_cuno" Caption="Cust"/>
+      <Field Size="2" Format="u" Dim ="1" name="qu_group" Caption="Group"/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="qu_itno" Caption="Item"/>
+      <Field Size="1" Format="#" Type="2" Dim ="1" name="qu_igroup" Caption="Category"/>
+      <Field Size="1" Format="#" Type="2" Dim ="1" name="qu_qual" Caption="Qual"/>
+      <Field Size="8" Format="###.##" Type="3" Dim ="1" name="qu_muni" Caption="Munic"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="qu_cases" Caption="Cases"/>
+      <Field Size="4" Format="####.##" Type="4" Dim ="1" name="qu_price" Caption="Price"/>
+      <Field Size="8" Format="###.##" Type="3" Dim ="1" name="qu_disc" Caption="Disc%"/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="qu_discam" Caption="Discount"/>
+      <Field Size="8" Format="###.##" Type="3" Dim ="1" name="qu_markup" Caption="markup"/>
+      <Field Size="4" Type="5" Dim ="1" name="qu_frdate" Caption="From"/>
+      <Field Size="4" Type="5" Dim ="1" name="qu_todate" Caption="To"/>
+      <Field Size="4" Type="5" Dim ="1" name="qu_record" Caption="Record"/>
+      <Field Size="8" Dim ="1" name="qu_user" Caption="User"/>
+      <Field Size="64" Dim ="1" name="cu_future" Caption="Future"/>
+      <Index name="agquote">
+         <IndexEntry name="qu_cuno"/>
+         <IndexEntry name="qu_group"/>
+         <IndexEntry name="qu_itno"/>
+         <IndexEntry name="qu_igroup"/>
+         <IndexEntry name="qu_qual"/>
+      </Index>
+   </Table>
+</xml>

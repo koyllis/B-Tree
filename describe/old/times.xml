@@ -1,0 +1,23 @@
+<xml>
+   <Table System="old" name="times" ModifyStamp="0">
+      <Field Caption="Emp. No." Size="4" Type="2" name="tt_number"/>
+      <Field Caption="Date" Size="4" Type="5" name="tt_date"/>
+      <Field Caption="IN" Size="4" Type="2" name="tt_in1"/>
+      <Field Caption="OUT" Size="4" Type="2" name="tt_ou1"/>
+      <Field Caption="IN" Size="4" Type="2" name="tt_in2"/>
+      <Field Caption="OUT" Size="4" Type="2" name="tt_ou2"/>
+      <Field Caption="IN" Size="4" Type="2" name="tt_in3"/>
+      <Field Caption="OUT" Size="4" Type="2" name="tt_ou3"/>
+      <Field Caption="IN" Size="4" Type="2" name="tt_in4"/>
+      <Field Caption="OUT" Size="4" Type="2" name="tt_ou4"/>
+      <Field Caption="Extra" Size="8" Type="3" name="tt_extra"/>
+      <Field Caption="Normal" Size="8" Type="3" name="tt_hours"/>
+      <Field Caption="Overtime" Size="8" Type="3" name="tt_over"/>
+      <Field Caption="Shift" Size="8" Type="3" name="tt_shift"/>
+      <Field Caption="Shift No." Size="1" Type="2" name="tt_shiftno"/>
+      <Index name="times">
+         <IndexEntry name="tt_number"/>
+         <IndexEntry name="tt_date"/>
+      </Index>
+   </Table>
+</xml>

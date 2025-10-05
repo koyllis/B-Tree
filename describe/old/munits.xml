@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="munits" System="old">
+      <Field Size="3" Format="u" name="um_unit" Caption="Unit code"/>
+      <Field Size="15" Format="u" name="um_name"/>
+      <Field Size="8" Format="#######.##" Type="3" name="um_number" Caption="Our unit"/>
+      <Field Size="8" Format="#######.##" Type="3" name="um_supnum" Caption="Import conversion unit"/>
+      <Field Size="3" Format="u" name="um_sunit" Caption="Supplier unit code"/>
+      <Field Size="8" Format="#######.##" Type="3" name="um_max" Caption="Maximum"/>
+      <Field Size="8" Format="#######.##" Type="3" name="um_min" Caption="Minimum"/>
+      <Index name="munits">
+         <IndexEntry name="um_unit"/>
+      </Index>
+   </Table>
+</xml>

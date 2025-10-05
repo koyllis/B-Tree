@@ -1,0 +1,67 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="doctps" System="old">
+      <Field Size="2" Format="u" name="dt_doc" Caption="Document code"/>
+      <Field Size="25" Format="u" name="dt_name" Caption="Document name"/>
+      <Field Format="u" name="dt_acname" Caption="Accounts name"/>
+      <Field Size="4" Format="#######" Type="2" name="dt_lastno" Caption="Next No."/>
+      <Field Size="1" Format="###" Type="2" name="dt_level" Caption="Access level"/>
+      <Field Size="2" Format="u" name="dt_cttdoc" Caption="Doc. counter link"/>
+      <Field Size="2" Format="u" name="dt_altdoc" Caption="Alternate document"/>
+      <Field Size="3" Format="u" name="dt_crit" Caption="Alternate criterion"/>
+      <Field Size="1" Options=",,Y,N,A" Format="u" name="dt_print" Caption="Print (Yes/No/Ask)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_date" Caption="Override date(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_refer" Caption="Input reference(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_overide" Caption="Override price(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_quant" Caption="Input quantity(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_disc" Caption="Input discount(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_cancel" Caption="Cancelable(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_free" Caption="Allow duplic.(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_reissue" Caption="Reissue(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_links" Caption="Affect links(N) (Y/N)?"/>
+      <Field Size="1" Format="u" name="dt_minprice" Caption="Minimum price(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_prvat" Caption="Print with VAT(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_local" Caption="Local printing(N) (Y/N)?"/>
+      <Field Size="1" Options=",,O,B" Format="u" name="dt_batch" Caption="Online/Batch update(O) (O/B)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_color" Caption="Color analysis(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_limit" Caption="Credit limit(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N,W,F" Format="u" name="dt_ovage" Caption="Override agent(N) (Y/N/Warn/Force)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_ovloc" Caption="Override location(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_salan" Caption="Sales analysis(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,1,2,3" name="dt_desc" Caption="Description line (1/2/3)?"/>
+      <Field Size="8" name="dt_printer" Caption="Printer"/>
+      <Field Size="29" name="dt_device" Caption="Print device"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_amend" Caption="Allow modifications(N) (Y/N)?"/>
+      <Field Size="1" Options=",,C,R" Format="u" name="dt_account" Caption="Account effect (Cash/cRedit)?"/>
+      <Field Size="2" Options=",,SP,SM,WP,WM,CP,CM,RP,RM" Format="u" name="dt_stock" Caption="Stock effect (SP,SM,WP,WM,CP,CM,RP,RM)?"/>
+      <Field Size="2" Format="u" name="dt_candoc" Caption="Cancellation suffix"/>
+      <Field Size="1" name="dt_prog" Caption="Program preffix"/>
+      <Field Size="2" Format="u" name="dt_auto" Caption="Automatic conv. doc."/>
+      <Field Size="1" Format="###" Type="2" name="dt_defloc" Caption="Default acc. loc."/>
+      <Field Size="1" Format="###" Type="2" name="dt_stoloc" Caption="Default stock loc."/>
+      <Field Size="3" Format="u" name="dt_dfpycode" Caption="Default receipt"/>
+      <Field Size="2" Format="u" name="dt_pcode" Caption="Default price"/>
+      <Field Size="8" Format="u" name="dt_code" Caption="Default customer"/>
+      <Field Size="8" Format="#######.##" Type="3" name="dt_disround" Caption="Disc. round"/>
+      <Field Size="8" Format="#######.##" Type="3" name="dt_maxdisc" Caption="Maximum discount(%)"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_curr" Caption="Export document(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_ovtot" Caption="Override total(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="dt_negqu" Caption="Allow neg. quantity(N) (Y/N)?"/>
+      <Field Size="2" Dim="16" Format="u" name="dt_condoc" Caption="Convertible to"/>
+      <Field Size="1" Options=",,Y,N" Dim="16" Format="u" name="dt_codeov" Caption="Override customer (Y/N)?"/>
+      <Field Size="3" Dim="32" Format="u" name="dt_pycode" Caption="Payment"/>
+      <Field Size="2" Dim="16" Format="u" name="dt_group" Caption="Group restriction"/>
+      <Field Size="1" Options=",,D,C" Format="u" name="dt_dcgross" Caption="Debit/Credit"/>
+      <Field Size="6" Format="u" name="dt_relacc" Caption="Gross account"/>
+      <Field Size="6" Format="u" name="dt_disacc" Caption="Discount account"/>
+      <Field Size="6" Format="u" name="dt_vatacc" Caption="V.A.T. account"/>
+      <Field Size="6" Format="u" name="dt_cogacc" Caption="C.O.G.S. account"/>
+      <Field Size="6" Format="u" name="dt_invacc" Caption="Inventory account"/>
+      <Field Size="6" Format="u" name="dt_comacc" Caption="Commission account"/>
+      <Field Size="60" name="dt_msg1" Caption="Message"/>
+      <Field Size="60" name="dt_msg2" Caption=""/>
+      <Field Size="60" name="dt_msg3" Caption=""/>
+      <Index name="doctps">
+         <IndexEntry name="dt_doc"/>
+      </Index>
+   </Table>
+</xml>

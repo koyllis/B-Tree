@@ -1,0 +1,16 @@
+<xml>
+   <Table System="pos" name="Web Orders Log" TextAnalysis="0">
+      <Field Caption="Recorded" Size="8" Auto="1" Type="5" name="recorded"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Reference" Size="20" name="refer"/>
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="importlog">
+         <IndexEntry name="recorded"/>
+      </Index>
+      <Index name="importlog[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="recorded"/>
+      </Index>
+   </Table>
+</xml>

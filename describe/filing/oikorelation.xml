@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Relations" System="filing">
+      <Field Size="4" Type="2" File="filing.oikodomi" name="oikodomi" Caption="File No."/>
+      <Field Size="4" Type="2" File="filing.oikodomi" name="related" Caption="Related"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="oikorelation">
+         <IndexEntry name="oikodomi"/>
+         <IndexEntry name="related"/>
+      </Index>
+      <Index name="oikorelation[related]">
+         <IndexEntry name="related"/>
+         <IndexEntry name="oikodomi"/>
+      </Index>
+   </Table>
+</xml>

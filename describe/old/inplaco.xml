@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="inplaco" System="old">
+      <Field Size="2" Type="2" name="pc_num" Caption="Number"/>
+      <Field Size="2" Type="2" name="pc_plno" Caption="Plan"/>
+      <Field Size="8" Type="3" name="pc_comm" Caption="Comm%"/>
+      <Index name="inplaco">
+         <IndexEntry name="pc_num"/>
+         <IndexEntry name="pc_plno"/>
+      </Index>
+   </Table>
+</xml>

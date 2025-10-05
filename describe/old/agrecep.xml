@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agrecep" System="old" ModifyStamp="0">
+      <Field Size="4" Type="5" name="re_date" Caption="Date"/>
+      <Field Size="2" Type="2" name="re_suno" Caption="Supplier"/>
+      <Field Size="4" Type="2" name="re_refer" Caption="Refer"/>
+      <Field Size="1" Type="2" name="re_loc" Caption="Loc"/>
+      <Field Size="1" Type="2" name="re_line" Caption="Line"/>
+      <Field Size="2" Type="2" name="re_itno" Caption="Item"/>
+      <Field Size="1" Type="2" name="re_qual" Caption="Qual"/>
+      <Field Size="2" Type="2" name="re_cases" Caption="Cases"/>
+      <Field Size="4" Type="4" name="re_quant" Caption="Quant"/>
+      <Field Size="4" Type="4" name="re_price" Caption="Price"/>
+      <Field Size="4" Type="4" name="re_total" Caption="Total"/>
+      <Field Size="4" Type="4" name="re_caspr" Caption="Price"/>
+      <Field Size="4" Type="2" name="re_conc" Caption="Conc"/>
+      <Field Size="4" Type="5" name="re_sdat" Caption="Recdate"/>
+      <Field Size="3" Type="1" name="re_vat" Caption="VAT"/>
+      <Field Size="16" Type="1" name="re_future" Caption="Future"/>
+      <Index name="agrecep">
+         <IndexEntry name="re_date"/>
+         <IndexEntry name="re_suno"/>
+         <IndexEntry name="re_refer"/>
+         <IndexEntry name="re_loc"/>
+         <IndexEntry name="re_line"/>
+         <IndexEntry name="re_itno"/>
+         <IndexEntry name="re_qual"/>
+      </Index>
+   </Table>
+</xml>

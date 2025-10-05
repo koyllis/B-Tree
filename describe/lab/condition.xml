@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Icon="flask" name="Sample Condition" SoftDelete="1" System="lab">
+      <Field Size="50"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="condition">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

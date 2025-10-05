@@ -1,0 +1,21 @@
+<xml>
+  <Table name="Verification Requests" System="office">
+    <Field Caption="Verification Request ID" name="number" Size="4" Type="2" AutoCounter="1" Strict="1" Modify="1"/>
+    <Field Caption="User" name="user" Size="2" Type="2" File="office.prouser"/>
+    <Field Caption="Property" name="property" Size="2" Type="2" File="office.property"/>
+    <Field Caption="Type" name="type" Size="1" Type="2" Options="Identity,Ownership,Document"/>
+    <Field Caption="Status" name="status" Size="1" Type="2" Options="Pending,Approved,Rejected"/>
+    <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+  </Table>
+  <Index name="proverify">
+    <IndexEntry name="number"/>
+  </Index>
+  <Index name="proverify[user]">
+    <IndexEntry name="user"/>
+    <IndexEntry name="number"/>
+  </Index>
+   <Index name="proverify[property]">
+    <IndexEntry name="property"/>
+    <IndexEntry name="number"/>
+  </Index>
+</xml>

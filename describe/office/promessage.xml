@@ -1,0 +1,20 @@
+<xml>
+	<Table name="Messages" System="office">
+	  <Field Caption="Message No." name="number" Size="4" Type="2" AutoCounter="1" Strict="1" Modify="1"/>
+	  <Field Caption="Property" name="property" Size="4" Type="2" File="office.property"/>
+	  <Field Caption="Sender" name="sender" Size="2" Type="2" File="office.prouser"/>
+	  <Field Caption="Receiver" name="receiver" Size="2" Type="2" File="office.prouser"/>
+	  <Field Caption="Content" name="content" Size="800" Type="1" GridWrap="1"/>
+	  <Field Caption="Via WhatsApp" name="whatsapp" Size="1" Type="2" Format="b"/>
+	  <Field Caption="Read" name="read" Size="1" Type="2" Format="b"/>
+	  <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+	</Table>
+	<!-- Indexes -->
+	<Index name="promessage">
+	  <IndexEntry name="number"/>
+	</Index>
+	<Index name="promessage[property]">
+	  <IndexEntry name="property"/>
+	  <IndexEntry name="number"/>
+	</Index>
+</xml>

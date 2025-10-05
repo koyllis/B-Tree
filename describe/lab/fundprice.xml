@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Fund Pricing">
+      <Field Caption="Analysis group" File="lab.analysisgroup" Size="4" Type="2" name="analysisgroup"/>
+      <Field Caption="Fund" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Price" Size="8" Type="3" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="fundprice">
+         <IndexEntry name="analysisgroup"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="fundprice[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="analysisgroup"/>
+      </Index>
+   </Table>
+</xml>

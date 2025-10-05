@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\bbtest\describe\gen.xdr">
+   <Table System="accounting" name="Limit Calculation">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Sales" Total="1" Format="######.##" Size="4" Type="4" name="sales"/>
+      <Field Caption="Limit" Total="1" Format="######.##" Size="4" Type="4" name="limit"/>
+      <Field Caption="Balance" Total="1" Format="######.##" Size="4" Type="4" name="balance"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peoplelimit">
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

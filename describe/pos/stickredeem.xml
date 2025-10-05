@@ -1,0 +1,31 @@
+<xml>
+   <Table System="pos" name="Sticker Redemtpion">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Gift" File="pos.stickgift" Size="2" Type="2" name="stickgift"/>
+      <Field Caption="Last transaction" File="pos.trans" Size="4" Type="2" name="trans_last"/>
+      <Field Caption="Sticker balance" Format="####" Size="2" Type="2" name="balance"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="stickredeem">
+         <IndexEntry name="people"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="stickgift"/>
+      </Index>
+      <Index name="stickredeem[stickgift]">
+         <IndexEntry name="stickgift"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="stickredeem[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="stickgift"/>
+      </Index>
+      <Index name="stickredeem[trans_last]">
+         <IndexEntry name="trans_last"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="stickgift"/>
+      </Index>
+   </Table>
+</xml>

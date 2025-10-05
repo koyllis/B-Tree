@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Late="1" System="system" Icon="docs" PDA="0" Index="document" name="System Documents" Root="1">
+      <Field Caption="Company" Format="#######" File="system.master" Size="2" Type="2" name="master"/>
+      <Field Caption="System" Size="32" name="system"/>
+      <Field Caption="File name" Size="32" name="file"/>
+      <Field Caption="Record" Strict="1" Format="#######" Size="4" Type="2" name="$record"/>
+      <Field Caption="Document" Strict="1" Format="#######" Size="4" Type="2" name="$document"/>
+      <Field Caption="Date" Size="8" Auto="1" Type="5" name="date"/>
+      <Field Caption="Annotation date" Size="4" Type="5" name="anndate"/>
+      <Field Caption="Notes date" Size="4" Type="5" name="notesdate"/>
+      <Field Caption="Has Notes" Format="b" Size="1" Type="2" name="notes"/>
+      <Field Caption="Did you read it" Format="b" Size="1" Type="2" name="isread"/>
+      <Field Caption="User" File="system.user" Size="2" Auto="1" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="document">
+         <IndexEntry name="master"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="file"/>
+         <IndexEntry name="$record"/>
+         <IndexEntry name="$document"/>
+      </Index>
+   </Table>
+</xml>

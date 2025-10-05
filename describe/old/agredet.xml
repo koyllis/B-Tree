@@ -1,0 +1,24 @@
+<xml>
+   <Table name="agredet" System="old" ModifyStamp="0">
+      <Field Caption="DATE" Size="4" Type="5" name="rd_date"/>
+      <Field Caption="REFER" Size="4" Type="2" name="rd_refer"/>
+      <Field Caption="LOC" Size="1" Type="2" name="rd_loc"/>
+      <Field Caption="Line" Size="1" Type="2" name="rd_line"/>
+      <Field Caption="ITEM" Size="2" Type="2" name="rd_itno"/>
+      <Field Caption="QUAL" Size="1" Type="2" name="rd_qual"/>
+      <Field Caption="PRICE" Size="4" Type="4" name="rd_price"/>
+      <Field Caption="QUANT" Size="4" Type="4" name="rd_quant"/>
+      <Field Caption="TOTAL" Size="4" Type="4" name="rd_total"/>
+      <Field Caption="CASES" Size="2" Type="2" name="rd_cases"/>
+      <Field Caption="CASPRICE" Size="4" Type="4" name="rd_caspr"/>
+      <Field Caption="SUNO" Size="2" Type="2" name="rd_suno"/>
+      <Field Caption="VAT" Size="3" name="rd_vat"/>
+      <Field Caption="Future" Size="16" name="rd_future"/>
+      <Index name="agredet">
+         <IndexEntry name="rd_date"/>
+         <IndexEntry name="rd_refer"/>
+         <IndexEntry name="rd_loc"/>
+         <IndexEntry name="rd_line"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="life" name="userdefault">
+      <Field Caption="User" File="system.user" Size="4" Type="2" name="user"/>
+      <Field Caption="Contract" File="life.contract" Size="4" Type="2" name="contract"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="userdefault">
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="userdefault[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

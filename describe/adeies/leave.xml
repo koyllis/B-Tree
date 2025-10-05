@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="adeies" Icon="$" DataHeader="1" Dynamic="1" Index="leave" name="Holidays">
+      <Field Caption="Employee" Format="#######" File="adeies.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Type" Format="#######" File="adeies.type" Size="4" Type="2" name="type"/>
+      <Field Caption="Year" Format="####" Size="2" Type="2" name="year"/>
+      <Field Caption="Additional" Total="1" Format="b" Size="1" Type="2" name="additional"/>
+      <Field Caption="Carried" Total="1" Format="#####.##" Size="4" Type="2" name="carry"/>
+      <Field Caption="Days" Total="1" Format="#####.##" Size="4" Type="2" name="days"/>
+      <Field Caption="Extra" Total="1" Format="#####.##" Size="4" Type="2" name="extra"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="leave">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="additional"/>
+      </Index>
+      <Index NullKey="1" name="leave[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="year"/>
+      </Index>
+   </Table>
+</xml>

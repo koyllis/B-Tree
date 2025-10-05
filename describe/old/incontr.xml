@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="incontr" System="old">
+      <Field Size="2" Type="2" name="c_num" Caption="Number"/>
+      <Field name="c_name" Caption="Name"/>
+      <Field Size="6" name="c_short" Caption="Short"/>
+      <Field Size="4" Type="5" name="c_start" Caption="Start"/>
+      <Field Size="4" Type="5" name="c_end" Caption="End"/>
+      <Field Size="4" Type="2" name="c_count" Caption="Count"/>
+      <Field Size="2" Type="2" name="c_conum" Caption="Company"/>
+      <Field Size="76" name="c_note1" Caption="Note1"/>
+      <Field Size="76" name="c_note2" Caption=""/>
+      <Field Size="76" name="c_note3" Caption=""/>
+      <Field Size="76" name="c_note4" Caption=""/>
+      <Field Size="76" name="c_note5" Caption=""/>
+      <Index name="incontr">
+         <IndexEntry name="c_num"/>
+      </Index>
+   </Table>
+</xml>

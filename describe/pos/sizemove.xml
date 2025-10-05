@@ -1,0 +1,14 @@
+<xml>
+   <Table System="pos" name="sizemove">
+      <Field Caption="Size" File="pos.size" Size="4" Type="2" name="size"/>
+      <Field Caption="To Size" File="pos.size" Size="4" Type="2" name="to_size"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="sizemove">
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="sizemove[to_size]">
+         <IndexEntry name="to_size"/>
+         <IndexEntry name="size"/>
+      </Index>
+   </Table>
+</xml>

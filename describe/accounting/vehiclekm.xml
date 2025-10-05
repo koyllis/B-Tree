@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="gear" name="Vehicle Kilometers">
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="4" Type="2" Force="1" name="vehicle"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Counter" Size="4" Type="2" Force="1" name="counter"/>
+      <Field Caption="Kilometers" Total="1" Size="4" Type="2" name="km"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vehiclekm">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="vehiclekm_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+   </Table>
+</xml>

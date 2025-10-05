@@ -1,0 +1,44 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Frame Customer Details" System="generic">
+      <Field Size="4" Type="2" name="journal" Caption="journal"/>
+      <Field Size="8" Dim="2" Type="3" name="glass_plain" Caption="glass_plain"/>
+      <Field Size="8" Dim="2" Type="3" name="glass_matt" Caption="glass_matt"/>
+      <Field Size="8" Dim="2" Type="3" name="glass_mirror" Caption="glass_mirror"/>
+      <Field Size="8" Dim="2" Type="3" name="board_plain" Caption="board_plain"/>
+      <Field Size="8" Dim="2" Type="3" name="board_foam_3" Caption="board_foam_3"/>
+      <Field Size="8" Dim="2" Type="3" name="board_foam_5" Caption="board_foam_5"/>
+      <Field Size="8" Dim="2" Type="3" name="board_foam_10" Caption="board_foam_10"/>
+      <Field Size="8" Dim="2" Type="3" name="board_laminate" Caption="board_laminate"/>
+      <Field Size="8" Dim="2" Type="3" name="Telaro" Caption="Telaro"/>
+      <Field Size="8" Dim="2" Type="3" name="Selotex" Caption="Selotex"/>
+      <Field Size="8" Dim="2" Type="3" name="Frame_A" Caption="Frame_A"/>
+      <Field Size="8" Dim="2" Type="3" name="Frame_B" Caption="Frame_B"/>
+      <Field Size="8" Dim="2" Type="3" name="Needlework" Caption="Needlework"/>
+      <Field Size="8" Dim="2" Type="3" name="canvas_cotton" Caption="canvas cotton"/>
+      <Field Size="8" Dim="2" Type="3" name="canvas_lino" Caption="canvas lino"/>
+      <Field Size="8" Dim="2" Type="3" name="canvas_polyester" Caption="canvas polyester"/>
+      <Field Size="8" Type="3" name="Width_A" Caption="Width_A"/>
+      <Field Size="8" Type="3" name="Width_B" Caption="Width_B"/>
+      <Field Size="8" Type="3" name="X" Caption="X"/>
+      <Field Size="8" Type="3" name="Y" Caption="Y"/>
+      <Field Size="1" Type="2" name="bGlass" Caption="bGlass"/>
+      <Field Size="1" Type="2" name="nTypeOfFoamBoard" Caption="nTypeOfFoamBoard"/>
+      <Field Size="1" Type="2" name="nTypeOfGlass" Caption="nTypeOfGlass"/>
+      <Field Size="1" Type="2" name="bBoardPlain" Caption="bBoardPlain"/>
+      <Field Size="1" Type="2" name="nBoardPlainQty" Caption="nBoardPlainQty"/>
+      <Field Size="1" Type="2" name="bBoardFoam" Caption="bBoardFoam"/>
+      <Field Size="1" Type="2" name="bBoardLaminate" Caption="bBoardLaminate"/>
+      <Field Size="1" Type="2" name="bTelaro" Caption="bTelaro"/>
+      <Field Size="1" Type="2" name="bSelotex" Caption="bSelotex"/>
+      <Field Size="1" Type="2" name="bNeedlework" Caption="bNeedlework"/>
+      <Field Size="8" Type="3" name="Extra" Caption="Extra"/>
+      <Field Size="10" name="code" Caption="code"/>
+      <Field Size="4" Type="5" name="_date" Caption="date"/>
+      <Field Size="1" Type="2" name="nTypeOfCanavas" Caption="nTypeOfCanvas"/>
+      <Field Size="1" Type="2" name="bCanvas" Caption="bCanvas"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="framecustdet">
+         <IndexEntry AllDimension="1" name="journal"/>
+      </Index>
+   </Table>
+</xml>

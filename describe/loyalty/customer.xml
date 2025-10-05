@@ -1,0 +1,89 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ManualIndex="1" Icon="clients" SoftDelete="1" Virtual="1" name="Customers" System="loyalty" Index="customer" DeleteChildren="1">
+      <Field Size="8" Format="####-####-####-####" Type="2" name="code" Caption="Card No."/>
+      <Field Size="20"/>
+      <Field Size="20" name="surname" Caption="Surname"/>
+      <Field Size="10" name="father" Caption="Father Name"/>
+      <Field Size="25" name="cardname" Caption="Card Name"/>
+      <Field name="address1" Caption="Address"/>
+      <Field name="address2" Caption="Address"/>
+      <Field Size="13" name="city" Caption="City/Village"/>
+      <Field Size="12" name="district" Caption="District"/>
+      <Field Size="4" Format="####" Type="2" name="zip" Caption="Zip"/>
+      <Field Size="4" Format="######" Type="2" name="box" Caption="P.O. Box"/>
+      <Field Size="4" Format="####" Type="2" name="zipbox" Caption="Zip Box"/>
+      <Field Size="4" Format="##-######" Type="2" name="hphone" Caption="Home Phone"/>
+      <Field Size="4" Format="##-######" Type="2" name="wphone" Caption="Work Phone"/>
+      <Field Size="4" Format="##-######" Type="2" name="mphone" Caption="Mobile Phone"/>
+      <Field Size="40" name="email" Caption="E-mail"/>
+      <Field Size="4" Format="#########" Type="2" name="idno" Caption="Identity No."/>
+      <Field Size="9" name="passno" Caption="Passport No."/>
+      <Field Size="4" Format="#######" Type="2" File="loyalty.nation" name="nation" Caption="Nationalities"/>
+      <Field Size="4" Type="5" name="birth" Caption="Birthday Date"/>
+      <Field Size="1" Options="Male,Female" Format="###" Type="2" name="gender" Caption="Gender"/>
+      <Field Size="1" Options="Single,Married,Widower,Disjunctive" Format="###" Type="2" name="marital" Caption="Marital"/>
+      <Field Size="1" Format="###" Type="2" name="children" Caption="Children No."/>
+      <Field Size="4" Format="#######" Type="2" File="loyalty.proffession" name="proffession" Caption="Professions"/>
+      <Field Size="1" Options="Gymnasium/Lyceum,College/University" Format="###" Type="2" name="education" Caption="Education"/>
+      <Field Size="4" Format="#####" Type="2" name="applno" Caption="Application No."/>
+      <Field Size="4" Format="#######" Type="2" File="loyalty.group" name="group" Caption="Categories"/>
+      <Field Size="4" Format="#######" Type="2" File="loyalty.store" name="store" Caption="Stores"/>
+      <Field Size="4" Format="#######" Type="2" File="loyalty.customer" name="customer" Caption="Customers"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Type="5" name="custopendate" Caption="Date"/>
+      <Field Size="13" name="accno" Caption="ACCOUNT"/>
+      <Field Size="1" Format="b" Type="2" name="primary" Caption="Primary Card"/>
+      <Field Size="1" Options="Loyalty,Credit" Type="2" name="type" Caption="Type"/>
+      <Field Size="4" Type="5" name="closed" Caption="Closed"/>
+      <Field Size="4" Format="#######" Type="2" File="loyalty.ranking" name="ranking" Caption="Ranking"/>
+      <Field Size="4" Format="#######" Type="2" File="system.user" name="user" Caption="System Users"/>
+      <Field Size="2" Type="2" name="nsales" Caption="Sales"/>
+      <Field Size="4" Format="#######.##" Type="4" name="totsales" Caption="Total"/>
+      <Field Size="4" Format="#######.##" Type="4" name="dynsales" Caption="Dynamic Total"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" Caption="SoftDelete"/>
+      <Index name="customer">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer[customer]">
+         <IndexEntry name="customer"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer[nation]">
+         <IndexEntry name="nation"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer[proffession]">
+         <IndexEntry name="proffession"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer[ranking]">
+         <IndexEntry name="ranking"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer[store]">
+         <IndexEntry name="store"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer_account">
+         <IndexEntry name="accno"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer_dynsales">
+         <IndexEntry name="dynsales"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer_surname">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="customer_total">
+         <IndexEntry name="totsales"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

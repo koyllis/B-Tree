@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="Materials" System="old">
+      <Field Size="5" Format="u" name="ra_raw" Caption="Material code"/>
+      <Field Size="40" Format="u" name="ra_name"/>
+      <Field Size="40" Format="u" name="ra_desc" Caption="Description"/>
+      <Field Size="8" Format="#######.##" Type="3" name="ra_price" Caption="Stock price"/>
+      <Field Size="8" Format="#######.##" Type="3" name="ra_cost" Caption="Costing price"/>
+      <Field Size="10" name="ra_refer" Caption="Ref. No."/>
+      <Field Size="1" Format="###" Type="2" name="ra_loc" Caption="Location"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ra_trans" Caption="Transport"/>
+      <Field Size="8" Format="#######.##" Type="4" name="ra_rate" Caption="Exch. rate"/>
+      <Field Size="8" Format="#######.##" Type="4" name="ra_local" Caption="Local value (tons)"/>
+      <Field Size="8" Format="#######.##" Type="4" name="ra_forei" Caption="Foreign value (tons)"/>
+      <Field Size="3" Format="u" name="ra_curr" Caption="Currency"/>
+      <Field Size="24" name="ra_future" Caption="Future"/>
+      <Index name="prrawma">
+         <IndexEntry name="ra_raw"/>
+      </Index>
+   </Table>
+</xml>

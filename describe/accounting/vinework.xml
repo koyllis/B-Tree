@@ -1,0 +1,47 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="services" name="Vineyard Works">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Site" File="accounting.site" Size="2" Type="2" Force="1" name="site"/>
+      <Field Caption="Service" File="accounting.servicedef" Size="2" Type="2" Force="1" name="servicedef"/>
+      <Field Caption="Staff" File="office.staff" Size="2" Type="2" Force="1" name="staff"/>
+      <Field Caption="Machine" File="accounting.vehicle" Size="2" Type="2" name="vehicle"/>
+      <Field Caption="Hours" Size="2" Type="2" Force="1" name="hours"/>
+      <Field Caption="Cost" Strict="1" Format="#####.##" Size="4" Type="4" name="cost" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vinework">
+         <IndexEntry name="date"/>
+         <IndexEntry name="site"/>
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="vinework[servicedef]">
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="site"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="vinework[site]">
+         <IndexEntry name="site"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="vinework[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="site"/>
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="vinework[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="site"/>
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="staff"/>
+      </Index>
+   </Table>
+</xml>

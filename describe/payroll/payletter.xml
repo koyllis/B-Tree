@@ -1,0 +1,39 @@
+<xml>
+   <Table System="payroll" name="News Letters" Icon="news">
+      <Field Caption="Number" Strict="1" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Size="50" Force="1"/>
+      <Field Caption="Subject" Size="50" name="subject"/>
+      <Field Caption="Department" File="payroll.timedef" Size="2" Type="2" name="timedef"/>
+      <Field Caption="S.I. Group" File="payroll.sigroup" Size="2" Type="2" name="sigroup"/>
+      <Field Caption="Category" File="payroll.empcategory" Size="2" Type="2" name="empcategory"/>
+      <Field Caption="Group" File="payroll.group" Size="2" Type="2" name="group"/>
+	  <Field Caption="Email body" File="system.emailbody" Size="2" Type="2" name="emailbody"/>
+      <Field Caption="Count" Strict="1" Size="2" Type="2" name="count" Modify="1"/>
+      <Field Caption="Sent" Size="8" Type="5" Strict="1" Modify="1" name="sent"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="payletter">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="payletter[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="payletter[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="payletter[empcategory]">
+         <IndexEntry name="empcategory"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="payletter[sigroup]">
+         <IndexEntry name="sigroup"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="payletter[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

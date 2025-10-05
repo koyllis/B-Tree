@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="IBAN" icon="iban">
+      <Field Caption="Name" Size="40" Force="1" name="name"/>
+      <Field Caption="IBAN" Size="34" name="iban"/>
+      <Field Caption="Revolut tag" Size="32" name="revtag"/>
+      <Field Caption="Revolut Id" Size="36" name="revid"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="iban">
+         <IndexEntry name="name"/>
+      </Index>
+
+     <Index name="iban_iban">
+         <IndexEntry name="iban"/>
+         <IndexEntry name="name"/>
+      </Index>
+
+
+      <Index name="iban_revtag">
+         <IndexEntry name="revtag"/>
+         <IndexEntry name="name"/>
+      </Index>
+
+
+   </Table>
+</xml>

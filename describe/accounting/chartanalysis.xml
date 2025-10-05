@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Account Analysis">
+      <Field Caption="Account" File="accounting.chart" Size="4" Type="2" name="chart"/>
+      <Field Caption="Debit" Total="1" Format="######.##" Size="8" Type="4" name="debit"/>
+      <Field Caption="Credit" Total="1" Format="######.##" Size="8" Type="4" name="credit"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="chartanalysis">
+         <IndexEntry name="chart"/>
+      </Index>
+   </Table>
+</xml>

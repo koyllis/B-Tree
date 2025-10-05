@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="happyhour" System="pos">
+      <Field Size="4" Options="Sunday,Monday,Tuseday,Wednesday,Thursday,Friday,Saturday" Type="2" name="day" Caption="Day"/>
+      <Field Size="2" Type="5" name="from" Caption="From time"/>
+      <Field Size="2" Type="5" name="to" Caption="To time"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="happyhour">
+         <IndexEntry name="day"/>
+         <IndexEntry name="from"/>
+      </Index>
+   </Table>
+</xml>

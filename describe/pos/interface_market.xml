@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" SoftDelete="1" CanDelete="0" name="Market Interface">
+      <Field Caption="Division" File="pos.division" Size="2" Force="1" Type="2" name="division"/>
+      <Field Caption="Reference No." Size="12" Force="1" name="reference"/>
+      <Field Caption="Location" File="system.location" Size="2" Force="1" Type="2" name="location"/>
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Strict="1" Caption="Recorded" Size="8" Auto="1" Type="5" name="record" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="interface_market">
+         <IndexEntry name="division"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="interface_market[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="interface_market[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

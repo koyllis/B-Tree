@@ -1,0 +1,16 @@
+<xml>
+   <Table System="accounting" name="depositdenomination">
+      <Field Caption="Deposit" File="accounting.deposit" Size="4" Type="2" name="deposit"/>
+      <Field Caption="Denomination" File="system.denomination" Size="2" Type="2" name="denomination"/>
+      <Field Caption="Quantity" Size="2" Type="2" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="depositdenomination">
+         <IndexEntry name="deposit"/>
+         <IndexEntry name="denomination"/>
+      </Index>
+      <Index name="depositdenomination[denomination]">
+         <IndexEntry name="denomination"/>
+         <IndexEntry name="deposit"/>
+      </Index>
+   </Table>
+</xml>

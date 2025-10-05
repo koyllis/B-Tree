@@ -1,0 +1,16 @@
+<xml>
+   <Table System="generic" name="Category Grouping">
+      <Field Caption="Layout" File="generic.pdflayout" Size="2" Type="2" name="layout"/>
+      <Field Caption="P.O.Box" Size="1" Type="2" name="pobox"/>
+      <Field Caption="Zone" Size="1" Type="2" name="zone"/>
+      <Field Caption="Language" Size="8" Type="1" name="language"/>
+      <Field Caption="Category" Size="1" Type="2" name="category"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdfgrouping">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="pobox"/>
+         <IndexEntry name="zone"/>
+         <IndexEntry name="language"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table DeleteChildren="1" System="pos" name="Commissions">
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="From date" Size="4" Type="5" name="from"/>
+      <Field Caption="To date" Size="4" Type="5" Tip="1" name="to"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" Tip="1" name="location"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="commtrans">
+         <IndexEntry name="group"/>
+         <IndexEntry name="from"/>
+      </Index>
+      <Index name="commtrans[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="from"/>
+      </Index>
+   </Table>
+</xml>

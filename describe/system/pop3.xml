@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table CanModify="0" System="system" CanDelete="0" name="POP3 mail log" Root="1" CreateStamp="1" UserStamp="1">
+      <Field Caption="Counter" Strict="1" Size="4" Type="2" AutoCounter="1" name="counter"/>
+      <Field Caption="Email" Size="64" name="email"/>
+      <Field Caption="Subject" Size="96" name="subject"/>
+      <Field Caption="Message" Size="640" GridWrap="1" name="message"/>
+      <Field Caption="File" Size="190" name="file"/>
+      <Field Caption="Status" Size="256" name="status"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="pop3">
+         <IndexEntry name="counter"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,51 @@
+<xml>
+   <Table System="pos" Icon="stock_balance" Dynamic="1" name="Historical Stock" Unordered="1">
+      <Field Caption="Date" Size="4" Auto="1" Type="5" name="date"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="4" ReportWidth="10" Type="8" name="quantity"/>
+      <Field Caption="Cost" Format="########.##" Size="8" ReportWidth="10" Type="3" name="cost"/>
+      <Field Caption="De-valued Cost" Format="########.##" Size="8" ReportWidth="10" Type="3" name="devcost"/>
+      <Field Caption="Cost value" Total="1" Format="########.##" Size="8" ReportWidth="10" Type="3" name="value"/>
+      <Field Caption="Price" Total="1" Format="########.##" ReportWidth="10" Size="8" Type="3" name="price"/>
+      <Field Caption="Retail value" Total="1" Format="########.##" Size="8" ReportWidth="10" Type="3" name="value_price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemlocdate">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="itemlocdate[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="itemlocdate[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="itemlocdate[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="itemlocdate[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

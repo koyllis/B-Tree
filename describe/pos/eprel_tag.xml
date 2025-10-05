@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Category Tags">
+      <Field Caption="Category" File="pos.eprel_cat" Size="4" Type="2" Force="1" name="eprel_category"/>
+      <Field Caption="Group" Size="50" name="group"/>
+      <Field Caption="Sequence" Format="###" Size="2" Type="2" Force="1" name="seq"/>
+      <Field Caption="Tag" Size="50" Force="1" name="tag"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="eprel_tag">
+         <IndexEntry name="eprel_category"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="seq"/>
+         <IndexEntry name="tag"/>
+      </Index>
+   </Table>
+</xml>

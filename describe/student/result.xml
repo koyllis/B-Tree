@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" name="Results">
+      <Field Caption="Question" File="student.testquestion" Size="4" Type="2" Force="1" name="testquestion"/>
+      <Field Caption="Breakdown" Size="1" Type="2" name="breakdown"/>
+      <Field Caption="Student" File="student.student" Size="4" Type="2" Force="1" name="student"/>
+      <Field Caption="Result" Size="1" Type="2" Force="1" name="result"/>
+      <Field Strict="1" Caption="Marks" Format="###.##" Size="4" Type="8" name="marks"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="result">
+         <IndexEntry name="testquestion"/>
+         <IndexEntry name="breakdown"/>
+         <IndexEntry name="student"/>
+      </Index>
+      <Index name="result[student]">
+         <IndexEntry name="student"/>
+         <IndexEntry name="testquestion"/>
+         <IndexEntry name="breakdown"/>
+      </Index>
+      <Index name="result[testquestion]">
+         <IndexEntry name="testquestion"/>
+      </Index>
+   </Table>
+</xml>

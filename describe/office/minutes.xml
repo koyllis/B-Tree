@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="office" Icon="edit1" name="Minutes">
+      <Field Caption="Date" Strict="1" Size="4" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Caption="Time" Size="2" Type="5" Force="1" name="time"/>
+      <Field Caption="Subject" Size="80" Force="1" name="subject"/>
+      <Field Caption="Department" File="office.department" Size="2" Type="2" Force="1" name="department"/>
+      <Field Caption="Participants" Size="100" name="participants"/>
+      <Field Caption="Secretary" File="office.secretary" Size="2" Type="2" name="secretary"/>
+      <Field Caption="Return date" Size="4" Type="5" name="returndate"/>
+      <Field Caption="Duration" Format="##.##" Size="4" Type="8" name="duration"/>
+      <Field Caption="File No." Size="20" name="fileno"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="minutes">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="minutes[department]">
+         <IndexEntry name="department"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="minutes[secretary]">
+         <IndexEntry name="secretary"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Agent Routing">
+      <Field Caption="Route" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Type" File="accounting.routetype" Size="1" Type="2" Force="1" name="routetype"/>
+      <Field Caption="Day" Size="1" Force="1" Type="2" Options="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday" name="day"/>
+      <Field Caption="Week" Size="1" Type="2" Force="1" Options="Week 1,Week 2,Week 3,Week 4" name="week"/>
+      <Field Caption="Sequence" Size="2" Type="2" name="seq"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people_customer"/>
+      <Field Caption="Time" Size="20" name="time"/>
+      <Field Caption="Monthly" Format="b" Size="1" Type="2" name="monthly"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peopleroute">
+         <IndexEntry name="people"/>
+         <IndexEntry name="routetype"/>
+         <IndexEntry name="day"/>
+         <IndexEntry name="week"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="peopleroute[people_customer]">
+         <IndexEntry name="people_customer"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="routetype"/>
+         <IndexEntry name="day"/>
+         <IndexEntry name="week"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="peopleroute[routetype]">
+         <IndexEntry name="routetype"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="day"/>
+         <IndexEntry name="week"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

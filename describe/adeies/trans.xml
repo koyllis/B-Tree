@@ -1,0 +1,41 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="details" Dynamic="1" name="Applications" System="adeies" Index="trans">
+      <Field Size="2" Format="#######" Type="2" File="adeies.employee" name="employee" Caption=""/>
+      <Field Size="2" Format="#######" Type="2" File="adeies.type" name="type" Caption=""/>
+      <Field Size="1" Format="b" Type="2" Auto="1" name="additional" Caption="Additional"/>
+      <Field Size="4" Type="5" name="from" Caption="From"/>
+      <Field Size="4" Type="5" name="to" Caption="To"/>
+      <Field Size="2" Format="###.##" Type="2" name="extra" Auto="1" Caption="Extra"/>
+      <Field Size="1" Format="b" Modify="1" Type="2" name="uncert" Auto="1" Caption="Uncertified"/>
+      <Field Size="8" Modify="1" Type="5" name="date" Auto="1" Caption="Date"/>
+      <Field Hide="1" Size="2" Format="#######" Type="2" File="system.user" name="user" Auto="1" Caption="User"/>
+      <Field Negative="0" Size="4" Format="#######" Strict="1" Modify="1" AutoCounter="1" Type="2" Auto="1" name="reference" Caption="Reference"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="trans">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="additional"/>
+         <IndexEntry name="from"/>
+      </Index>
+      <Index name="trans[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="additional"/>
+         <IndexEntry name="from"/>
+      </Index>
+      <Index name="trans[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="from"/>
+         <IndexEntry name="additional"/>
+      </Index>
+      <Index name="trans_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="additional"/>
+         <IndexEntry name="from"/>
+      </Index>
+   </Table>
+</xml>

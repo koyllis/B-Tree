@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" Icon="balance2" name="Pieces Statement" Unordered="1">
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Boxtype" File="pos.boxtype" Size="2" Type="2" name="boxtype"/>
+      <Field Caption="Pieces Out" Total="1" Size="4" Type="2" name="pieces_out"/>
+      <Field Caption="Pieces In" Total="1" Size="4" Type="2" name="pieces_in"/>
+      <Field Caption="Balance" Size="4" Type="2" name="balance" Distinct="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transbox">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="boxtype"/>
+      </Index>
+      <Index name="transbox[boxtype]">
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

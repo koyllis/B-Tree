@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="seserdt" System="old" ModifyStamp="0">
+      <Field Size="4" Type="5" Dim ="1" name="d_date" Caption="Date"/>
+      <Field Size="2" Format="u" Dim ="1" name="d_doc" Caption="Doc."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="d_refer" Caption="Refer."/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="d_line" Caption="Line"/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="d_no" Caption="Service"/>
+      <Field Size="8" Format="###,###.##" Type="4" Dim ="1" name="d_total" Caption="Total"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="d_vat" Caption="V.A.T."/>
+      <Field Size="8" Format="###,###.##" Type="4" Dim ="1" name="d_cost" Caption="Cost"/>
+      <Field Size="4" Format="##.##" Type="4" Dim ="1" name="d_time" Caption="Time"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="d_rate" Caption="Rate"/>
+      <Field Format="u" Dim ="1" name="d_desc" Caption="Description"/>
+      <Index name="seserdt">
+         <IndexEntry name="d_date"/>
+         <IndexEntry name="d_doc"/>
+         <IndexEntry name="d_refer"/>
+         <IndexEntry name="d_line"/>
+         <IndexEntry name="d_no"/>
+      </Index>
+   </Table>
+</xml>

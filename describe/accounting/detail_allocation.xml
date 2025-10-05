@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="detail_allocation" System="accounting">
+      <Field Size="8" Type="2" File="accounting.detail" name="detail_from" Caption="From Line"/>
+      <Field Size="8" Type="2" File="accounting.detail" name="detail_to" Caption="To Line"/>
+      <Field Size="8" Format="########,##" Type="4" name="amount" Caption="Amount"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="detail_allocation">
+         <IndexEntry name="detail_from"/>
+         <IndexEntry name="detail_to"/>
+      </Index>
+      <Index name="detail_allocation[detail_to]">
+         <IndexEntry name="detail_to"/>
+         <IndexEntry name="detail_from"/>
+      </Index>
+   </Table>
+</xml>

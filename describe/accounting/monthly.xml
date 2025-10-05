@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="chart8" name="Monthly Analysis" System="accounting">
+      <Field Size="4" Type="2" File="accounting.stline" name="stline" Caption="Layout line"/>
+      <Field Size="1" Options="January,February,March,April,May,June,July,August,September,October,November,December" Force="1" Type="2" name="month" Caption="Month"/>
+      <Field Size="4" Format="#######.##" Type="4" name="current" Caption="Current period" Total="1"/>
+      <Field Size="4" Format="#######.##" Type="4" name="last" Caption="Last period" Total="1"/>
+      <Field Size="4" Format="#######.##" Type="4" name="budget" Caption="Budget" Total="1"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="monthly">
+         <IndexEntry name="stline"/>
+         <IndexEntry name="month"/>
+      </Index>
+   </Table>
+</xml>

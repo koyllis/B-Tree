@@ -1,0 +1,43 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Applications">
+      <Field Caption="Year" Format="####" Size="2" Force="1" Type="2" name="year"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Leader" File="generic.leader" Size="4" Force="1" Type="2" name="leader"/>
+      <Field Caption="Week 1" Format="b" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="week1"/>
+      <Field Caption="Week 2" Format="b" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="week2"/>
+      <Field Caption="Week 3" Format="b" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="week3"/>
+      <Field Caption="Week 4" Format="b" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="week4"/>
+      <Field Caption="Week 5" Format="b" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="week5"/>
+      <Field Caption="Week 6" Format="b" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="week6"/>
+      <Field Caption="Week 7" Format="b" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="week7"/>
+      <Field Caption="Week 8" Format="b" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="week8"/>
+      <Field Caption="Week 9" Format="b" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="week9"/>
+      <Field Caption="Week10" Format="b" Size="1" Options="Assistant,GroupLeader,NightWatch,Nurse" Type="2" name="week10"/>
+      <Field Caption="Week 11" Format="b" Size="1" Options="Assistant,GroupLeader,NightWatch,Nurse" Type="2" name="week11"/>
+      <Field Caption="Week 12" Format="b" Size="1" Options="Assistant,GroupLeader,NightWatch,Nurse" Type="2" name="week12"/>
+      <Field Caption="Week 13" Format="b" Size="1" Options="Assistant,GroupLeader,NightWatch,Nurse" Type="2" name="week13"/>
+      <Field Caption="Preference" Size="20" name="pref"/>
+      <Field Caption="Selected week" File="generic.week" Size="4" Type="2" name="week"/>
+      <Field Caption="Position" Size="1" Type="2" Options="Assistant,GroupLeader,NightWatch,Nurse" name="position"/>
+      <Field Caption="Children" Format="##" Size="1" Type="2" name="children"/>
+      <Field Caption="No form" Format="b" Size="1" Type="2" name="noform"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="application">
+         <IndexEntry name="year"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="leader"/>
+      </Index>
+      <Index name="application[leader]">
+         <IndexEntry name="leader"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="application[week]">
+         <IndexEntry name="week"/>
+         <IndexEntry name="position"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="leader"/>
+      </Index>
+   </Table>
+</xml>

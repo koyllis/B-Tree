@@ -1,0 +1,40 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="Products" System="old">
+      <Field Size="12" Format="u" name="pd_item" Caption="Item"/>
+      <Field Size="2" Format="###" Type="2" name="pd_mano" Caption="Machine No."/>
+      <Field Size="5" Format="u" name="pd_raw" Caption="Material"/>
+      <Field Size="8" Format="#######.##" Type="3" name="pd_thimin" Caption="Thickness (min)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="pd_thimax" Caption="Thickness (max)"/>
+      <Field Size="8" Options="0-999.99" Format="#######.##" Type="3" name="pd_extdia" Caption="Diameter (min)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="pd_diamax" Caption="Diameter (max)"/>
+      <Field Size="4" Format="#######.##" Type="4" name="pd_promax" Caption="Production (max)"/>
+      <Field Size="4" Format="#######.##" Type="4" name="pd_promin" Caption="Production (min)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="pd_loss" Caption="Loss(%)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="pd_paint" Caption="Color(%)"/>
+      <Field Size="8" Format="#######.##" Type="3" name="pd_distr" Caption="Distr(%)"/>
+      <Field Size="4" Format="#######.##" Type="4" name="pd_weight" Caption="Net weight"/>
+      <Field Size="4" Format="#######.##" Type="4" name="pd_gweigh" Caption="Gross weight"/>
+      <Field Size="4" Format="#######.##" Type="4" name="pd_cweigh" Caption="Control weight"/>
+      <Field Size="1" Options="G,K,P" Format="u" name="pd_gk" Caption="Grams/Kilos (G/K)?"/>
+      <Field Size="1" Options="M,P,S,2" Format="u" name="pd_mp" Caption="Meter/Piece/Set/M2 (M/P/S/2)?"/>
+      <Field Size="8" Format="#######.##" Type="3" name="pd_bin" Caption="Bin capacity"/>
+      <Field Size="8" Format="#######.##" Type="3" name="pd_meters" Caption="Meters"/>
+      <Field Size="2" Format="##,###" Type="2" name="pd_std" Caption="Standard"/>
+      <Field Size="2" Format="##,###" Type="2" name="pd_cstd" Caption="Standard (cost)"/>
+      <Field Size="1" Options="K,M,P,T,2,S" Format="u" name="pd_kmp" Caption="Unit (K/M/P/T/2/S)?"/>
+      <Field Size="1" Options="H,M" Format="u" name="pd_hm" Caption="Hour/Minute (H/M)?"/>
+      <Field Size="1" Options=",,K,M,P,T,2,S,R" Format="u" name="pd_pruni" Caption="Prod. unit (K/M/P/T/2/S/R)?"/>
+      <Field Size="25" Format="u" name="pd_pack" Caption="Packaging"/>
+      <Field Size="50" name="pd_print" Caption="Printing"/>
+      <Field Size="50" name="pd_extdp" Caption=""/>
+      <Field Size="50" name="pd_rems" Caption="Remarks"/>
+      <Field Size="50" name="pd_rems1" Caption=""/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="pd_date" Caption="Last production"/>
+      <Field Size="8" Format="u" name="pd_who" Caption="Who"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="pd_when" Caption="When"/>
+      <Index name="prprods">
+         <IndexEntry name="pd_item"/>
+         <IndexEntry name="pd_mano"/>
+      </Index>
+   </Table>
+</xml>

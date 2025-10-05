@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" Icon="laboratory2" name="Analysis Details">
+      <Field Caption="Analysis report" File="lab.analysistype" Size="4" Type="2" name="analysistype"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Value" name="value"/>
+      <Field Caption="Normal value" Size="200" ReportWidth="50" name="normal"/>
+      <Field Caption="Price" Format="###.##" ReportWidth="50" Size="4" Type="4" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="analysisdetail">
+         <IndexEntry name="analysistype"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="analysisdetail[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="analysistype"/>
+      </Index>
+   </Table>
+</xml>

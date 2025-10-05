@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="carserv" System="old">
+      <Field Size="2" Type="2" Dim ="1" name="cs_serv" Caption="Service No."/>
+      <Field Size="20" Format="u" Dim ="1" name="cs_desc" Caption="Description"/>
+      <Field Size="1" Options="P,L,O" Format="u" Dim ="1" name="cs_pls" Caption="Part/Labour/Outside"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="cs_vat" Caption="V.A.T. rate (%)"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="cs_dis" Caption="Subject to discount(Y) (Y/N)?"/>
+      <Index name="carserv">
+         <IndexEntry name="cs_serv"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,13 @@
+<xml>
+   <Table System="pos" Icon="discount" name="Coupon Type">
+      <Field Force="1"/>
+      <Field Caption="Amount" Format="####.##" Size="4" Type="4" name="price"/>
+      <Field Caption="Discount%" Format="##.##" Size="4" Type="8" name="discount"/>
+      <Field Caption="From date" Size="4" Force="1" Type="5" name="frdate"/>
+      <Field Caption="To date" Size="4" Force="1" Type="5" name="todate"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="coupontype">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

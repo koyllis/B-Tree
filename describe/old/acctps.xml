@@ -1,0 +1,33 @@
+<xml>
+   <Table System="old" name="acctps" ModifyStamp="0">
+      <Field Caption="Document code" Format="u" Size="2" name="at_doc"/>
+      <Field Format="u" name="at_name"/>
+      <Field Caption="Next No." Format="#######" Size="4" Type="2" name="at_lastno"/>
+      <Field Caption="Access level" Format="###" Size="1" Type="2" name="at_level"/>
+      <Field Caption="Account" Format="u" Size="6" name="at_account"/>
+      <Field Caption="Debit/Credit" Format="u" Size="1" Options="D,C" name="at_drcr"/>
+      <Field Caption="Disc. account" Format="u" Size="6" name="at_discount"/>
+      <Field Caption="Debit/Credit" Format="u" Size="1" Options="D,C" name="at_disdc"/>
+      <Field Caption="V.A.T. account" Format="u" Size="6" name="at_vatacc"/>
+      <Field Caption="Debit/Credit" Format="u" Size="1" Options="D,C" name="at_vatdc"/>
+      <Field Caption="Currency" Format="u" Size="3" name="at_curr"/>
+      <Field Caption="Location" Format="###" Size="1" Type="2" name="at_loc"/>
+      <Field Caption="Override refer. No. (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="at_over"/>
+      <Field Caption="Exchange calculation (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="at_exchange"/>
+      <Field Caption="References window (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="at_refers"/>
+      <Field Caption="Credit transactions (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="at_credit"/>
+      <Field Caption="Print doc. (Yes/No/Ask)?" Format="u" Size="1" Options=",,Y,N,A,L" name="at_print"/>
+      <Field Caption="Sales anal. effect (P/N)?" Format="u" Size="1" Options=",,P,N" name="at_anal"/>
+      <Field Caption="Override V.A.T. (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="at_vatover"/>
+      <Field Caption="Overdue days" Format="###" Size="2" Options="0-999" Type="2" name="at_days"/>
+      <Field Caption="Year days" Format="###" Size="2" Options="0-999" Type="2" name="at_year"/>
+      <Field Caption="Interest (%)" Format="#######.##" Size="8" Type="3" name="at_rate"/>
+      <Field Caption="V.A.T. (%)" Format="#######.##" Size="8" Type="3" name="at_vat"/>
+      <Field Caption="Deactivated (Y/N)?" Format="u" Size="1" Options=",,Y,N" name="at_status"/>
+      <Field Caption="VAT Category" Format="u" Size="3" name="at_vatcat"/>
+      <Field Caption="Future" Size="45" name="at_future"/>
+      <Index name="acctps">
+         <IndexEntry name="at_doc"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="journals" name="Customer Plans" System="life">
+      <Field Size="2" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="2" Type="2" File="life.contractplan" name="contractplan" Caption="Plan"/>
+      <Field Size="4" Format="######" Type="2" name="counter" Caption="Counter" Total="1"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="peopleplan">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="contractplan"/>
+      </Index>
+      <Index name="peopleplan[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="peopleplan[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="contractplan"/>
+      </Index>
+   </Table>
+</xml>

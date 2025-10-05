@@ -1,0 +1,38 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="operator_rights" name="Operator Rights" System="pos">
+      <Field Size="4" Type="2" File="pos.operator" name="operator" Caption="Operator"/>
+      <Field Size="4" Type="2" File="pos.division" name="division" Caption="Document"/>
+      <Field Size="4" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="4" Type="2" File="accounting.group" name="group" Caption="Group"/>
+      <Field Size="4" Type="2" File="pos.price" name="price" Caption="Price"/>
+      <Field Size="4" Type="2" File="pos.category" name="category" Caption="Category"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="operatorloc">
+         <IndexEntry name="operator"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="operatorloc[location]">
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="oprights">
+         <IndexEntry name="operator"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="price"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="oprights[category]">
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="oprights[division]">
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="oprights[group]">
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="oprights[price]">
+         <IndexEntry name="price"/>
+      </Index>
+   </Table>
+</xml>

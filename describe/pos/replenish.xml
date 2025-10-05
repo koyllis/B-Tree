@@ -1,0 +1,24 @@
+<xml>
+   <Table System="pos" name="Stock Replenishment" RetainColumns="1">
+      <Field Caption="Key" Hide="1" Size="24" name="key"/>
+      <Field Caption="Code" Size="20" name="code"/>
+      <Field/>
+      <Field Caption="Season" Size="20" name="season"/>
+      <Field Caption="Color" Size="20" name="color"/>
+      <Field Caption="Size" Size="20" name="size"/>
+      <Field Caption="From" File="system.location" Size="2" Type="2" name="location_from"/>
+      <Field Caption="To" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Stock (From)" Total="1" Format="quantity" Size="4" Type="8" name="stock" Width="5"/>
+      <Field Caption="Stock (To)" Total="1" Format="quantity" Size="4" Type="8" name="stock_to" Width="5"/>
+      <Field Caption="Movement" Total="1" Format="quantity" Size="4" Type="8" name="quantity" Width="6"/>
+      <Field Caption="Record key" Hide="1" Size="24" name="keyrec"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="replenish">
+         <IndexEntry name="key"/>
+      </Index>
+      <Index name="replenish_from">
+         <IndexEntry name="location_from"/>
+         <IndexEntry name="key"/>
+      </Index>
+   </Table>
+</xml>

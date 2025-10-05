@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Journal references" System="accounting" Index="refer">
+      <Field Size="2" Format="###" Type="2" name="item_coo" Caption="Item coordinate"/>
+      <Field Size="2" Format="###" Type="2" name="cust_coo" Caption="Customer coordinate"/>
+      <Field Size="8" Format="###.##" Type="3" name="rate" Caption="Rate(%)"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="refer">
+         <IndexEntry name="item_coo"/>
+         <IndexEntry name="cust_coo"/>
+      </Index>
+   </Table>
+</xml>

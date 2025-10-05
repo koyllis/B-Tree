@@ -1,0 +1,46 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="onrecord.ico" name="mainfile" System="legal">
+      <Field Size="4" Format="######" Force="1" Type="2" name="number" Caption="File No."/>
+      <Field Size="1" Options="Defendant,Plaintiff,Applicant,Respondent,Appellant" Force="1" Type="2" name="acting" Caption="Acting for"/>
+      <Field Size="1" Force="1" Type="2" File="accounting.area" name="district" Caption="District"/>
+      <Field Size="1" Force="1" Type="2" File="legal.category" name="category" Caption="Category"/>
+      <Field Size="1" Type="2" File="legal.group" name="group" Caption="Group"/>
+      <Field Size="2" Force="1" Type="2" File="legal.lawyer" name="lawyer" Caption="Lawyer"/>
+      <Field Size="4" Format="######" Force="1" Type="2" name="action" Caption="Number"/>
+      <Field Size="2" Format="####" Force="1" Type="2" name="year" Caption="Year"/>
+      <Field Size="50" Force="1" Caption="Parties"/>
+      <Field Size="50" name="name2" Caption="Parties"/>
+      <Field Size="4" Type="5" name="service" Caption="Service date"/>
+      <Field Size="4" Type="5" name="first" Caption="First appearance"/>
+      <Field Size="1" Format="b" Type="2" name="sc" Caption="Awaiting S/C"/>
+      <Field Size="1" Format="b" Type="2" name="sd" Caption="Awaiting S/D"/>
+      <Field Size="1" Format="b" Type="2" name="sinedie" Caption="Sine Die"/>
+      <Field Size="1" Format="b" Type="2" name="judjement" Caption="Awaiting judjement"/>
+      <Field Size="1" Format="b" Type="2" name="writ" Caption="Writ"/>
+      <Field Size="4" Type="5" name="issue" Caption="Judjement issue"/>
+      <Field Size="1" Format="b" Type="2" name="wa" Caption="W/A"/>
+      <Field Size="1" Format="b" Type="2" name="instruction" Caption="Awaiting Instruction"/>
+      <Field Size="1" Format="b" Type="2" name="settlement" Caption="Awaiting Settlment"/>
+      <Field Size="1" Format="b" Type="2" name="completed" Caption="Completed"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="mainfile">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="mainfile[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="mainfile[district]">
+         <IndexEntry name="district"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="mainfile[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="mainfile[lawyer]">
+         <IndexEntry name="lawyer"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

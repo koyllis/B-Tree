@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="stimdet" System="old">
+      <Field Size="8" name="hc_code" Caption="Supplier"/>
+      <Field Size="4" Type="5" name="hc_date" Caption="Import date"/>
+      <Field Size="8" name="hc_purno" Caption="Purchase No."/>
+      <Field Size="1" Type="2" name="hc_loc" Caption="Loc."/>
+      <Field Size="2" Format="###" Type="2" name="hc_line" Caption="Line No."/>
+      <Field Size="12" name="hc_item" Caption="Item code"/>
+      <Field name="hc_desc" Caption="Description"/>
+      <Field Size="8" Format="#,###.##" Type="3" name="hc_quant" Caption="Quantity"/>
+      <Field Size="8" Format="###,###.###" Type="3" name="hc_cost" Caption="Cost"/>
+      <Field Size="8" Format="####,###.##" Type="3" name="hc_purch" Caption="Foreign"/>
+      <Field Size="8" Format="###,###.##" Type="3" name="hc_fob" Caption="Local"/>
+      <Field Size="8" Format="###.##" Type="3" name="hc_clear" Caption="Clearing"/>
+      <Field Size="8" Format="###,###.##" Type="3" name="hc_cif" Caption="Act. duty"/>
+      <Field Size="8" Format="###,###.##" Type="3" name="hc_total" Caption="Total"/>
+      <Field Size="8" Format="###.##" Type="3" name="hc_dfree" Caption="Duty free"/>
+      <Field Size="8" Format="###.##" Type="3" name="hc_unit" Caption="Duty paid"/>
+      <Field Size="8" Format="###.##" Type="3" name="hc_retail" Caption="Retail"/>
+      <Field Size="3" name="hc_country" Caption="Country"/>
+      <Field Size="16" name="hc_future" Caption="Future"/>
+      <Index name="stimdet">
+         <IndexEntry name="hc_code"/>
+         <IndexEntry name="hc_date"/>
+         <IndexEntry name="hc_purno"/>
+         <IndexEntry name="hc_loc"/>
+         <IndexEntry name="hc_line"/>
+         <IndexEntry name="hc_item"/>
+      </Index>
+   </Table>
+</xml>

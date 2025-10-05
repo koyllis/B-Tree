@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="smdetls" System="old" ModifyStamp="0">
+      <Field Caption="Date" Size="4" Type="5" name="d_date"/>
+      <Field Caption="Refer." Format="######" Size="4" Type="2" name="d_refer"/>
+      <Field Caption="Loc" Format="##" Size="1" Type="2" name="d_loc"/>
+      <Field Caption="Line" Format="###" Size="2" Type="2" name="d_line"/>
+      <Field Caption="Item" Size="12" name="d_item"/>
+      <Field Caption="Quant" Format="####.##" Size="8" Type="3" name="d_quant"/>
+      <Field Caption="Price" Format="####.###" Size="8" Type="3" name="d_price"/>
+      <Field Caption="Total" Format="####.##" Size="4" Type="4" name="d_total"/>
+      <Field Caption="Cost" Format="####.##" Size="4" Type="4" name="d_cost"/>
+      <Field Caption="VAT%" Format="##" Size="1" Type="2" name="d_vat"/>
+      <Field Caption="DIS%" Format="##" Size="1" Type="2" name="d_dis"/>
+      <Field Caption="Comp" Size="5" name="d_com"/>
+      <Field Caption="BIN" Format="###" Size="2" Type="2" name="d_bin"/>
+      <Index name="smdetls">
+         <IndexEntry name="d_date"/>
+         <IndexEntry name="d_refer"/>
+         <IndexEntry name="d_loc"/>
+         <IndexEntry name="d_line"/>
+      </Index>
+   </Table>
+</xml>

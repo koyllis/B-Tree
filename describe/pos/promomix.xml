@@ -1,0 +1,33 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Promo Mix">
+      <Field Caption="Month" Size="4" Type="5" name="month"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Price" Format="price" Size="4" Type="4" name="price"/>
+      <Field Caption="Eat-in" Size="4" Type="2" name="in"/>
+      <Field Caption="Eat-out" Size="4" Type="2" name="out"/>
+      <Field Caption="Promo" Size="4" Type="2" name="promo"/>
+      <Field Caption="Waste" Size="4" Type="2" name="waste"/>
+      <Field Caption="Employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Manager" Size="4" Type="2" name="manager"/>
+      <Field Caption="Total sold" Size="4" Type="2" name="total_sold"/>
+      <Field Caption="Total used" Size="4" Type="2" name="total_used"/>
+      <Field Caption="Sales" Format="######.##" Size="4" Type="4" name="sales"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="promomix">
+         <IndexEntry name="month"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="promomix[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="month"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="promomix[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="month"/>
+      </Index>
+   </Table>
+</xml>

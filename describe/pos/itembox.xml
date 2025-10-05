@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="relation" name="Item Box Options">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Box type" File="pos.boxtype" Size="4" Type="2" name="boxtype"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Quantity" Format="system" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itembox">
+         <IndexEntry name="item"/>
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="itembox[boxtype]">
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="itembox[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="boxtype"/>
+      </Index>
+   </Table>
+</xml>

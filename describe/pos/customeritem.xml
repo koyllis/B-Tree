@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="CustomerItem" System="pos">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="People"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="customeritem" CRC64="1">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="customeritem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

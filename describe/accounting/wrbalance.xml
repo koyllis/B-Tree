@@ -1,0 +1,13 @@
+<xml>
+   <Table CanModify="0" DeleteChildren="1" System="accounting" name="Weekly Recon. Balances">
+      <Field Caption="Account" File="accounting.chart" Size="4" Type="2" name="chart"/>
+      <Field Caption="Week" Size="4" Type="5" name="week"/>
+      <Field Caption="Bank balance" Format="########.##" Size="4" Type="4" name="balance"/>
+      <Field Caption="Book balance" Format="########.##" Size="4" Type="4" name="book"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="wrbalance">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="week"/>
+      </Index>
+   </Table>
+</xml>

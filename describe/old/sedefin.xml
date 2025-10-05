@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="sedefin" System="old" ModifyStamp="0">
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="de_no" Caption="Serv. No."/>
+      <Field Size="3" Format="u" Dim ="1" name="de_code" Caption="Code"/>
+      <Field Format="u" Dim ="1" name="de_name"/>
+      <Field Size="8" Format="###,###.##" Type="4" Dim ="1" name="de_cost" Caption="Cost"/>
+      <Field Size="6" Format="u" Dim ="1" name="de_account" Caption="Revenue account"/>
+      <Field Size="6" Format="u" Dim ="1" name="de_addacc" Caption="Additional account"/>
+      <Field Size="8" Format="###.##" Type="3" Dim ="1" name="de_vat" Caption="V.A.T. (%)"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="de_mar" Caption="Left margin"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="de_inc" Caption="VAT included(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" Dim ="1" name="de_charge" Caption="Chargeable(Y) (Y/N)?"/>
+      <Field Size="1" Format="00" Type="2" Dim ="1" name="de_loc" Caption="Location"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="de_group" Caption="Group"/>
+      <Field Size="40" Dim ="1" name="de_future" Caption="Future"/>
+      <Index name="sedefin">
+         <IndexEntry name="de_no"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table CanModify="0" System="system" CanDelete="0" name="Update Log">
+      <Field Caption="Table" Size="20" name="table"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="updatelog">
+         <IndexEntry name="table"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

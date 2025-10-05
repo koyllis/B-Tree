@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Item Quantity Price" System="pos" Dataset="1" Dynamic="1">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="4" Type="2" File="pos.itemprice" name="itemprice" Caption="Item Price"/>
+      <Field Size="8" Format="####.###" Type="3" name="qty" Caption="Quantity"/>
+      <Field Size="4" Format="####.##" Type="4" name="price" Caption="Price"/>
+      <Field Size="4" Format="####.##" Type="4" name="cost" Caption="Cost"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="itemqty">
+         <IndexEntry name="item"/>
+         <IndexEntry name="itemprice"/>
+         <IndexEntry name="qty"/>
+      </Index>
+      <Index name="itemqty[iteprice]">
+         <IndexEntry name="itemprice"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="qty"/>
+      </Index>
+   </Table>
+</xml>

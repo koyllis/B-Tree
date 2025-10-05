@@ -1,0 +1,11 @@
+<xml>
+   <Table Unordered="1" System="generic" name="Header Data" Audit="0" ModifyStamp="0">
+      <Field Caption="Key" File="generic.pdfkey" Size="4" Type="2" name="key"/>
+      <Field Caption="Field" File="generic.pdffield" Size="4" Type="2" name="field"/>
+      <Field Caption="Value" Size="100" name="value"/>
+      <Index CRC64="1" name="pdfheader" Large="1">
+         <IndexEntry name="key"/>
+         <IndexEntry name="field"/>
+      </Index>
+   </Table>
+</xml>

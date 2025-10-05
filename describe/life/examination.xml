@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" Icon="doctor" name="Examination Type">
+      <Field Size="40"/>
+      <Field Caption="Type" Size="1" Options="Doctor,Lab,Xray,Request" Type="2" Tip="1" name="type"/>
+      <Field Caption="Price" Format="###.##" Size="4" Type="4" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="examination">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

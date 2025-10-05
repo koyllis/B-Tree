@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="BookBinding" System="generic">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Strict="1" Modify="1" AutoCounter="1" Type="2" name="refer" Auto="1" Caption="Reference"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="2" name="quantity" Caption="Quantity"/>
+      <Field Size="40" name="desc" Caption="Description"/>
+      <Field Size="15" name="color" Caption="Color"/>
+      <Field Size="4" Format="####.##" Type="4" name="price" Caption="Price"/>
+      <Field Size="4" Type="5" name="delivery" Caption="Delivery"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="lellos">
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="lellos[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

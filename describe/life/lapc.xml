@@ -1,0 +1,76 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="life" SoftDelete="1" Icon="book #4" name="Tax Certificates" MergeTip="member.idno year serial">
+      <Field Caption="Year" Format="####" Size="2" Type="2" PersistentReport="1" name="year"/>
+      <Field Caption="Contract" File="life.contract" Size="4" Type="2" PersistentReport="1" name="contract"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Member" File="life.member" Size="4" Type="2" PersistentReport="1" name="member"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Standard,Loan" PersistentReport="1" name="type"/>
+      <Field Caption="Plan" File="life.contractplan" Size="2" Type="2" PersistentReport="1" name="contractplan"/>
+      <Field Caption="Coverage" Size="4" Type="2" name="coverage"/>
+      <Field Caption="Account" Size="13" name="accountno"/>
+      <Field Strict="1" Caption="Serial No." Format="########" Size="4" Type="2" AutoCounter="1" name="serial"/>
+      <Field Caption="Premium" Format="#####.##" Size="4" Type="4" name="premium"/>
+      <Field Caption="Total" Total="1" Format="#####.##" Size="4" Type="4" name="total"/>
+      <Field Caption="Charge" Total="1" Format="#####.##" Size="4" Type="4" name="charge"/>
+      <Field Caption="Extra" Total="1" Format="#####.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Guarantee" Total="1" Format="#####.##" Size="4" Type="4" name="guarantee"/>
+      <Field Caption="Life" Total="1" Format="#####.##" Size="4" Type="4" name="life"/>
+      <Field Caption="Disability" Total="1" Format="#####.##" Size="4" Type="4" name="disability"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="From" Size="4" Type="5" name="from"/>
+      <Field Caption="To" Size="4" Type="5" name="to"/>
+      <Field Caption="Death only" Format="b" Size="1" Type="2" name="death"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index CRC64="1" name="lapc">
+         <IndexEntry name="year"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="coverage"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="lapc[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="coverage"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="lapc[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="coverage"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="lapc[member]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="coverage"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="lapc[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="coverage"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+   </Table>
+</xml>

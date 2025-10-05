@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="tsymain" System="old" ModifyStamp="0">
+      <Field Caption="Year" Format="####" Size="2" Type="2" name="ym_year"/>
+      <Field Caption="Reference" Format="u" Size="8" name="ym_refer"/>
+      <Field Caption="Agr. No." Format="u" Size="10" name="ym_agrno"/>
+      <Field Caption="Total" Format="####.##" Size="4" Type="4" name="ym_total"/>
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="ym_date"/>
+      <Field Caption="Journal" Format="######" Size="4" Type="2" name="ym_journal"/>
+      <Field Caption="Apt No." Format="u" Size="4" name="ym_apt" Dim="5"/>
+      <Field Caption="Week No." Format="##" Size="1" Type="2" name="ym_week" Dim="5"/>
+      <Field Caption="Maintenance" Format="####.##" Size="4" Type="4" name="ym_maint" Dim="5"/>
+      <Index name="tsymain">
+         <IndexEntry name="ym_year"/>
+         <IndexEntry name="ym_refer"/>
+         <IndexEntry name="ym_agrno"/>
+      </Index>
+   </Table>
+</xml>

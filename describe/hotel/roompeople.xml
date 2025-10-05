@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Customer Room" System="hotel">
+      <Field Size="4" Type="2" File="hotel.room" name="room" Caption="Room"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="roompeople">
+         <IndexEntry name="room"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="roompeople[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="room"/>
+      </Index>
+   </Table>
+</xml>

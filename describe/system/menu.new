@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Name="User Menus" System="system" Icon="user menus" Index="menu" DataHeader="0" DeleteChildren="0" AutoNumber="0" UniqueKeys="0" Color="0" Root="1" Sequence="0" SoftDelete="0" Unsorted="0" ManualIndex="0" Common="0" Static="1" Late="0" MapRecord="0">
+      <Field Name="user" Caption="User" Type="3" Size="4" Format="#######" File="system.user"/>
+      <Field Name="order" Caption="Sequence" Type="2" Size="4" Format="#######"/>
+      <Field Name="system" Caption="system" Type="1" Size="32"/>
+      <Field Name="file" Caption="File" Type="1" Size="32"/>
+      <Field Name="key" Caption="Hot Key" Type="1" Size="1"/>
+      <Field Name="parent" Caption="Parent" Type="1" Size="32"/>
+      <Field Name="menuhead" Caption="Menu head" Type="3" Size="4" File="system.menuhead"/>
+      <Index Name="menu" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="user" AllDimension="1"/>
+         <IndexEntry Name="order" AllDimension="1"/>
+      </Index>
+      <Index Name="menu_key" UnsortReference="0" NormalData="0" NullKey="0" SpanKey="0" PageSize="1">
+         <IndexEntry Name="key" AllDimension="0"/>
+         <IndexEntry Name="user" AllDimension="0"/>
+         <IndexEntry Name="order" AllDimension="0"/>
+      </Index>
+   </Table>
+</xml>

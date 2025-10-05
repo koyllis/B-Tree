@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="office" Dynamic="1" name="Answers Input">
+      <Field Caption="Question" File="office.qstatic" Size="4" Type="2" name="qstatic"/>
+      <Field Caption="Answer" File="office.qanswer" Size="4" Type="2" name="qanswer"/>
+      <Field Caption="Text input" name="text"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="qinput">
+         <IndexEntry name="qstatic"/>
+         <IndexEntry name="qanswer"/>
+      </Index>
+      <Index name="qinput[qanswer]">
+         <IndexEntry name="qanswer"/>
+         <IndexEntry name="qstatic"/>
+      </Index>
+   </Table>
+</xml>

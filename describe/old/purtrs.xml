@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="purtrs" System="old">
+      <Field Size="4" Type="5" name="ht_date" Caption="Trans. date"/>
+      <Field Size="2" name="ht_doc" Caption="Document"/>
+      <Field Size="4" Format="#######" Type="2" name="ht_refer" Caption="Doc. No."/>
+      <Field Size="8" Format="u" name="ht_code" Caption="Supplier"/>
+      <Field Size="1" Format="###" Type="2" name="ht_loc" Caption="Loc."/>
+      <Field Size="8" Format="u" name="ht_drefer" Caption="Ref."/>
+      <Field Size="1" Format="###" Type="2" name="ht_frloc" Caption="From"/>
+      <Field Size="2" name="ht_pcode" Caption="Price"/>
+      <Field Size="8" name="ht_person" Caption="Operator"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ht_gross" Caption="Gross"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ht_vat" Caption="V.A.T."/>
+      <Field Size="4" Format="#######.##" Type="4" name="ht_disc" Caption="Discount"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ht_net" Caption="Net"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="ht_update" Caption="Update"/>
+      <Field Size="4" Format="#######" Type="2" name="ht_journal" Caption="Journal No."/>
+      <Field Size="8" Format="u" name="ht_userid" Caption="User ID"/>
+      <Index name="purtrs">
+         <IndexEntry name="ht_date"/>
+         <IndexEntry name="ht_doc"/>
+         <IndexEntry name="ht_refer"/>
+         <IndexEntry name="ht_code"/>
+         <IndexEntry name="ht_loc"/>
+      </Index>
+   </Table>
+</xml>

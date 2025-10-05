@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="budget" Dynamic="1" name="Budget" System="accounting">
+      <Field Size="2" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Size="2" Format="####" Type="2" name="year" Caption="Year"/>
+      <Field Size="4" Format="########.##" Type="4" name="estimate" Caption="Estimated" Total="1"/>
+      <Field Size="4" Format="########.##" Type="4" name="addition" Caption="Addition" Total="1"/>
+      <Field Size="4" Format="########.##" Type="4" name="deduction" Caption="Deduction" Total="1"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="budget">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="year"/>
+      </Index>
+      <Index name="budget_year">
+         <IndexEntry name="year"/>
+         <IndexEntry name="chart"/>
+      </Index>
+   </Table>
+</xml>

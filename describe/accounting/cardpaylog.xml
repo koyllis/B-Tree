@@ -1,0 +1,90 @@
+<xml>
+   <Table CanModify="0" System="accounting" Icon="checkbook" CanDelete="0" name="Card Payments Log" CreateStamp="1" UserStamp="1" Unordered="1">
+      <Field Caption="Date" Size="4" Auto="1" Type="5" name="date"/>
+      <Field Caption="Time" Format="HH:mm" Size="2" Auto="1" Type="5" name="time"/>
+      <Field Caption="Journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Reference" Size="20" Force="1" name="reference"/>
+      <Field Caption="Creditor" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Account" File="accounting.chart" Size="2" Type="2" name="chart"/>
+
+      <Field Caption="Amount" Total="1" Format="#######.##" Size="4" Type="4" Force="1" name="amount"/>
+      <Field Caption="Creditor" File="accounting.people" Size="4" Type="2" name="creditor"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Discount" Total="1" Format="#######.##" Size="4" Type="4" name="discount"/>
+      <Field Caption="Recorded by" Strict="1" File="system.user" Size="2" Type="2" name="recorded" Modify="1"/>
+      <Field Caption="Authorized by" Strict="1" File="system.user" Size="2" Type="2" name="authorized" Modify="1"/>
+      <Field Caption="Description" Size="50" name="description"/>
+      <Field Strict="1" Caption="Card No." CreditCard="1" Size="16" name="cardno" Modify="1"/>
+      <Field Caption="Expire month" Strict="1" Format="##" Size="1" Type="2" name="card_month" Modify="1"/>
+      <Field Caption="IBAN" File="accounting.iban" Size="4" Type="2" name="iban"/>
+      <Field Strict="1" Caption="Expire year" Format="####" Size="2" Type="2" name="card_year" Modify="1"/>
+      <Field Caption="Status" Strict="1" Size="60" name="status" Modify="1"/>
+      <Field Strict="1" Caption="Revolut result id" Size="36" Type="1" name="rev_result_id" Modify="1"/>
+
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+
+      <Index CRC64="1" name="cardpaylog">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="chart"/>
+      </Index>
+      <Index name="cardpaylog[authorized]">
+         <IndexEntry name="authorized"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="cardpaylog[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+      </Index>
+
+      <Index name="cardpaylog[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="chart"/>
+      </Index>
+
+      <Index name="cardpaylog[creditor]">
+         <IndexEntry name="creditor"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="chart"/>
+      </Index>
+      <Index name="cardpaylog[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="chart"/>
+      </Index>
+      <Index name="cardpaylog[recorded]">
+         <IndexEntry name="recorded"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="chart"/>
+      </Index>
+   </Table>
+
+</xml>

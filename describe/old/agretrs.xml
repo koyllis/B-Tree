@@ -1,0 +1,24 @@
+<xml>
+   <Table name="agretrs" System="old" ModifyStamp="0">
+      <Field Caption="DATE" Size="4" Type="5" name="rt_date"/>
+      <Field Caption="REFER" Size="4" Type="2" name="rt_refer"/>
+      <Field Caption="CUNO" Size="2" Type="2" name="rt_cuno"/>
+      <Field Caption="LOC" Size="1" Type="2" name="rt_loc"/>
+      <Field Caption="TOTAL" Size="4" Type="4" name="rt_total"/>
+      <Field Caption="CASETOT" Size="4" Type="4" name="rt_casto"/>
+      <Field Caption="DISCOUNT" Size="4" Type="4" name="rt_disc"/>
+      <Field Caption="VAT" Size="4" Type="4" name="rt_vat"/>
+      <Field Caption="CREDIT" Size="1" Type="2" name="rt_credit"/>
+      <Field Caption="CANCEL" Size="4" Type="5" name="rt_cancel"/>
+      <Field Caption="STOCKDATE" Size="4" Type="5" name="rt_sdate"/>
+      <Field Caption="ST.REFER" Size="4" Type="2" name="rt_srefer"/>
+      <Field Caption="JOURNAL" Size="4" Type="2" name="rt_journal"/>
+      <Field Caption="TYPE" Size="1" Type="2" name="rt_type"/>
+      <Index name="agretrs">
+         <IndexEntry name="rt_date"/>
+         <IndexEntry name="rt_refer"/>
+         <IndexEntry name="rt_cuno"/>
+         <IndexEntry name="rt_loc"/>
+      </Index>
+   </Table>
+</xml>

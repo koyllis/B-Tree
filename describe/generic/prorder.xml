@@ -1,0 +1,46 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ChainInsert="prorderdet" AutoNumber="1" name="Tenders" System="generic">
+      <Field Size="4" Format="######" Strict="1" Type="2" name="reference" Caption="Tender No."/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="40" name="attention" Caption="Attention"/>
+      <Field Size="4" Type="2" File="generic.prtype" name="form" Caption="Form type"/>
+      <Field Size="40" name="desc" Caption="Description"/>
+      <Field Size="1" Format="b" Type="2" name="greek" Caption="Greek"/>
+      <Field Size="1" Options="Laser,Continuous,Blocks,Roll,Sheet" Type="2" name="type" Caption="Type"/>
+      <Field name="size" Caption="Size"/>
+      <Field Size="1" Options="Security,Woodfree,NCR,Thermal,Paper,Primax,Plastic,Transparent,Piggy Back,Peelable,Laser" Type="2" name="paper" Caption="Paper"/>
+      <Field name="colour" Caption="Printing colour"/>
+      <Field Size="1" Format="b" Type="2" name="reverse" Caption="Reverse printing"/>
+      <Field Size="1" Format="b" Type="2" name="numbering" Caption="Numbering"/>
+      <Field Size="4" Format="########" Type="2" name="from" Caption="From number"/>
+      <Field name="extras" Caption="Extras"/>
+      <Field Size="40" name="delivery" Caption="Delivery"/>
+      <Field Size="4" Type="2" File="generic.prterms" name="terms" Caption="Payment terms"/>
+      <Field Size="4" Type="5" name="confirm" Caption="Confirmed"/>
+      <Field Size="2" Strict="1" Type="2" File="system.user" Auto="1" name="user" Caption="User"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="prorder">
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="prorder[form]">
+         <IndexEntry name="form"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="prorder[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="prorder[terms]">
+         <IndexEntry name="terms"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="prorder[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="inagent" System="old" ModifyStamp="0">
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="ia_agno" Caption="Agent No."/>
+      <Field Size="8" Dim ="1" name="ia_agent" Caption="Code"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="ia_loc" Caption="Loc."/>
+      <Field Size="6" Dim ="1" name="ia_account" Caption="Revenue account"/>
+      <Index name="inagent">
+         <IndexEntry name="ia_agno"/>
+      </Index>
+   </Table>
+</xml>

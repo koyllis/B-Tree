@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" Icon="fields" Color="1" Dynamic="1" name="Answers">
+      <Field Caption="Question" File="accounting.actques" Size="4" Type="2" name="actques"/>
+      <Field Caption="Sequence" Format="##" Size="1" Negative="0" Type="2" name="seq"/>
+      <Field Caption="Answer" Size="80" Tip="1" name="answer"/>
+      <Field Caption="Comment" Size="80" name="comment"/>
+      <Field Caption="Icon" Size="64" name="ico"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Index name="actansw">
+         <IndexEntry name="actques"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

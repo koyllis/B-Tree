@@ -1,0 +1,14 @@
+<xml>
+   <Table System="pos" name="Dispensing Files">
+      <Field Caption="File name" Size="80"/>
+      <Field Caption="User" File="system.user" Size="2" Auto="1" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="prescfile">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="prescfile[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

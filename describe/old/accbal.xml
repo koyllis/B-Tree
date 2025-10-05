@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="accbal" System="old" ModifyStamp="0">
+      <Field Size="10" Dim ="1" name="ba_code" Caption="AccountCode"/>
+      <Field Size="4" Format="#######.##" Type="4" Dim ="1" name="ba_balance" Caption="Balance"/>
+      <Index name="accbal">
+         <IndexEntry name="ba_code"/>
+         <IndexEntry name="ba_balance"/>
+      </Index>
+   </Table>
+</xml>

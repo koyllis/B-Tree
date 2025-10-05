@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Receipt Division Exclusions" System="pos">
+      <Field Size="2" Type="2" File="pos.division" name="division" Caption="Division"/>
+      <Field Size="2" Type="2" File="pos.receipt" name="receipt" Caption="Receipt"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="recdivision">
+         <IndexEntry name="division"/>
+         <IndexEntry name="receipt"/>
+      </Index>
+      <Index name="recdivision_receipt">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

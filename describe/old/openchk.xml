@@ -1,0 +1,14 @@
+<xml>
+   <Table System="old" name="Open Cheques" ModifyStamp="0">
+      <Field Caption="Bank account" Format="u" Size="6" name="o_bank"/>
+      <Field Caption="Recon. date" Size="4" Type="5" name="o_recon"/>
+      <Field Caption="Refer No." Format="u" Size="8" name="o_refer"/>
+      <Field Caption="Entry date" Size="4" Type="5" name="o_date"/>
+      <Index name="openchk">
+         <IndexEntry name="o_bank"/>
+         <IndexEntry name="o_recon"/>
+         <IndexEntry name="o_refer"/>
+         <IndexEntry name="o_date"/>
+      </Index>
+   </Table>
+</xml>

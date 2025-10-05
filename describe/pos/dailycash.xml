@@ -1,0 +1,33 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table CanModify="1" System="pos" CanDelete="0" name="Daily  Cash">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Total sales" Total="1" Average="1" Format="######.##" Size="4" Type="4" name="total"/>
+      <Field Caption="Refund sales" Total="1" Average="1" Format="######.##" Size="4" Type="4" name="refund"/>
+      <Field Caption="Gross sales" Total="1" Average="1" Format="######.##" Size="4" Type="4" name="gross"/>
+      <Field Caption="Non-product" Format="######.##" Size="4" Type="4" name="gross_non"/>
+      <Field Caption="Vat 5%" Total="1" Format="######.##" Size="4" Type="4" name="vat05"/>
+      <Field Caption="Vat 8%" Total="1" Format="######.##" Size="4" Type="4" name="vat08"/>
+      <Field Caption="Vat 15%" Total="1" Format="######.##" Size="4" Type="4" name="vat15"/>
+      <Field Caption="Total VAT" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="vat" Modify="1"/>
+      <Field Caption="Net 5%" Total="1" Format="######.##" Size="4" Type="4" name="net05"/>
+      <Field Caption="Net 8%" Total="1" Format="######.##" Size="4" Type="4" name="net08"/>
+      <Field Caption="Net 15%" Total="1" Format="######.##" Size="4" Type="4" name="net15"/>
+      <Field Caption="Total NET" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="net" Modify="1"/>
+      <Field Caption="Diff sms/counted" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="diff1"/>
+      <Field Caption="Deposit" Total="1" Average="1" Format="######.##" Size="4" Type="4" name="deposit"/>
+      <Field Caption="Diff actual/comp " Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="diff2"/>
+      <Field Caption="Actual deposit" Total="1" Format="######.##" Size="4" Type="4" name="actual"/>
+      <Field Caption="Over/Short" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="diff3"/>
+      <Field Strict="1" Caption="TC" Total="1" Size="4" Type="2" name="tc"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="dailycash">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="dailycash[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

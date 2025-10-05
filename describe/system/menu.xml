@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Root="1" Icon="user menus" Repository="1" SoftDelete="1" name="User Menus" System="system" Index="menu" Dataset="1">
+      <Field Size="4" Type="2" File="system.menuhead" name="menuhead" Caption="Menu head"/>
+      <Field Size="4" Format="#######" Type="2" name="order" Caption="Sequence"/>
+      <Field Size="32" name="file" Caption="File"/>
+      <Field Size="32" name="system" Caption="system"/>
+      <Field Size="1" Format="b" Type="2" name="grid" Caption="Grid View"/>
+      <Field Size="1" name="key" Caption="Hot Key"/>
+      <Field Size="32" name="parent" Caption="Parent"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" Caption="SoftDelete"/>
+      <Index name="menu">
+         <IndexEntry name="menuhead"/>
+         <IndexEntry name="order"/>
+      </Index>
+      <Index name="menu_key">
+         <IndexEntry name="key"/>
+         <IndexEntry name="menuhead"/>
+         <IndexEntry name="order"/>
+      </Index>
+   </Table>
+</xml>

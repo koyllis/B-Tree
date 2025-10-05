@@ -1,0 +1,28 @@
+<xml>
+   <Table System="pos" name="Concentration Details">
+      <Field Caption="Concentration" File="pos.marketconc" Size="4" Type="2" name="marketconc"/>
+      <Field Caption="Line" Size="2" Type="2" name="line"/>
+      <Field Caption="Name" Size="30" Type="1" name="name"/>
+      <Field Caption="Pieces" Format="#####" Total="1" Size="2" Type="2" name="pieces"/>
+      <Field Caption="Quantity" Format="quantity" Total="1" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Price" Format="price" Total="1" Size="8" Type="3" name="price"/>
+      <Field Caption="Total" Format="price" Total="1" Size="8" Type="3" name="total"/>
+      <Field Caption="Transaction" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="Clearance" File="pos.clearance" Size="4" Type="2" name="clearance"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="marketdetail">
+         <IndexEntry name="marketconc"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="marketdetail[transdet]">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="marketconc"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="marketdetail[clearance]">
+         <IndexEntry name="clearance"/>
+         <IndexEntry name="marketconc"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" Icon="convert" PDA="0" name="Conversion Details" Unordered="1">
+      <Field Caption="From line" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="To line" File="pos.transdet" Size="8" Type="2" name="transdet_to"/>
+      <Field Caption="Quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="transconvert">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="transdet_to"/>
+      </Index>
+      <Index name="transconvert[transdet_to]">
+         <IndexEntry name="transdet_to"/>
+         <IndexEntry name="transdet"/>
+      </Index>
+   </Table>
+</xml>

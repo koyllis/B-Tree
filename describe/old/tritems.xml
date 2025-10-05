@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='windows-1253' standalone='yes'?>
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="tritems" System="old">
+      <Field Size="12" Format="u" Dim ="1" name="ti_item" Caption="Item code"/>
+      <Field Format="u" Dim ="1" name="ti_desc" Caption="Description"/>
+      <Field Format="u" Dim ="1" name="ti_extd" Caption=""/>
+      <Field Size="8" Format="u" Dim ="1" name="ti_code" Caption="Supplier code"/>
+      <Field Size="8" Format="u" Dim ="1" name="ti_categ" Caption="Category"/>
+      <Field Size="8" Format="u" Dim ="1" name="ti_taxgrp" Caption="Tax group"/>
+      <Field Size="12" Format="u" Dim ="1" name="ti_partcode" Caption="Part code"/>
+      <Field Size="3" Format="u" Dim ="1" name="ti_unit" Caption="Unit"/>
+      <Field Size="4" Format="#####.##" Type="4" Dim ="1" name="ti_pack" Caption="Packing"/>
+      <Field Size="4" Format="#####.##" Type="4" Dim ="1" name="ti_weight" Caption="Weight"/>
+      <Field Size="4" Format="#####.##" Type="4" Dim ="1" name="ti_length" Caption="Length"/>
+      <Field Size="1" Format="00" Type="2" Dim ="1" name="ti_loc" Caption="Sales loc."/>
+      <Field Size="8" Format="#.####" Type="3" Dim ="1" name="ti_profit" Caption="Profit rate"/>
+      <Field Size="8" Format="#####.##" Type="3" Dim ="1" name="ti_avgcost" Caption="Average cost"/>
+      <Field Size="8" Format="#####.##" Type="3" Dim ="1" name="ti_avgduty" Caption="DF average cost"/>
+      <Field Size="8" Format="####.######" Type="3" Dim ="1" name="ti_latcost" Caption="Latest cost"/>
+      <Field Size="8" Format="####.######" Type="3" Dim ="1" name="ti_dutcost" Caption="Duty free cost"/>
+      <Field Size="8" Format="####,###.###" Type="3" Dim ="1" name="ti_invalue" Caption="Invoice value"/>
+      <Field Size="8" Format="####,###.###" Type="3" Dim ="1" name="ti_retail" Caption="Retail price"/>
+      <Field Size="1" Options=",,A,S,I,B" Format="u" Dim ="1" name="ti_deact" Caption="Active/Semi-act/Inactive/Blocked (A/S/I/B)?"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="ti_discode" Caption="Discount matrix vert. coord."/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="ti_comcode" Caption="Commission matrix vert. coord."/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="ti_vat" Caption="VAT(%)"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="ti_tax" Caption="Water"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="ti_sun" Caption="Sun"/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="ti_padd" Caption="Other charge(%)"/>
+      <Field Size="8" Format="u" Dim ="1" name="ti_who" Caption="WHO"/>
+      <Field Size="4" Type="5" Dim ="1" name="ti_when" Caption="WHEN"/>
+      <Field Size="8" Type="3" Dim ="1" name="ti_totquant" Caption="Total quantity"/>
+      <Field Size="8" Type="3" Dim ="1" name="ti_totvalue" Caption="Total value"/>
+      <Field Size="8" Type="3" Dim ="1" name="ti_dutquant" Caption="Total DF quant."/>
+      <Field Size="8" Type="3" Dim ="1" name="ti_dutvalue" Caption="Total DF value"/>
+      <Index name="tritems">
+         <IndexEntry name="ti_item"/>
+      </Index>
+   </Table>
+</xml>

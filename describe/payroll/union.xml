@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="payroll">
+      <Field Size="4" Type="2" File="payroll.ratedef" name="ratedef_union" Caption="Union"/>
+      <Field Size="4" Type="2" File="payroll.ratedef" name="ratedef_medical" Caption="Medical fund"/>
+      <Field Size="4" Type="2" File="payroll.ratedef" name="ratedef_profident" Caption="Provident fund"/>
+      <Field Size="4" Type="2" File="payroll.ratedef" name="ratedef_stamp" Caption="Stamp"/>
+      <Field Size="8" Type="3" name="stamp" Caption="Stamp value"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="union">
+         <IndexEntry AllDimension="1" name="ratedef_union"/>
+      </Index>
+      <Index name="union[ratedef_medical]">
+         <IndexEntry AllDimension="1" name="ratedef_medical"/>
+      </Index>
+      <Index name="union[ratedef_profident]">
+         <IndexEntry AllDimension="1" name="ratedef_profident"/>
+      </Index>
+      <Index name="union[ratedef_stamp]">
+         <IndexEntry AllDimension="1" name="ratedef_stamp"/>
+      </Index>
+   </Table>
+</xml>

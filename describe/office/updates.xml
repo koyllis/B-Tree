@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="office" name="updates">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Updated" Size="4" Type="5" name="date"/>
+      <Field Caption="Who" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Where" Size="1" Type="2" Options="Remotely,Onsite" name="mode"/>
+      <Field Caption="Reason for update" Size="50" name="reason"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="updates">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="updates[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

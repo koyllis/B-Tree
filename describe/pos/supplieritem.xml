@@ -1,0 +1,16 @@
+<xml>
+   <Table System="pos" name="supplieritem">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Sequence" Size="2" Type="2" name="seq"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="supplieritem">
+         <IndexEntry name="people"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="supplieritem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

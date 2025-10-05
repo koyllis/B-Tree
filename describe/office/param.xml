@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="office" name="Parameters">
+      <Field Caption="Location" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Logo" name="logo"/>
+      <Field Caption="Logo position" Size="1" Options="Left,Right" Type="2" name="logo_pos"/>
+      <Field Caption="Short name" Size="20" name="short"/>
+      <Field Caption="Address 1" Size="100" name="address1"/>
+      <Field Caption="Address 2" Size="100" name="address2"/>
+      <Field Caption="Address 3" Size="100" name="address3"/>
+      <Field Caption="Installation reference" Size="10" name="installation_ref"/>
+      <Field Caption="Client call reference" Size="10" name="clientcall_ref"/>
+      <Field Caption="Minimum charge" Size="10" name="minimum"/>
+      <Field Caption="Current year" Format="####" Size="2" Type="2" name="year"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="param">
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

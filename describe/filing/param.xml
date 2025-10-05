@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Parameters" System="filing">
+      <Field Size="4" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field name="format" Caption="File No. picture"/>
+      <Field Size="1" Format="b" Type="2" name="zero" Caption="Start from zero"/>
+      <Field Size="1" Format="b" Type="2" name="single" Caption="Single letter numbering"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="param">
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

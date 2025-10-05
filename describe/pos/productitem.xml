@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table DeleteChildren="1" System="pos" SoftDelete="1" Icon="factory" CanDelete="0" name="Production">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Item" File="pos.item" Size="4" Force="1" Type="2" name="item"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Force="1" Type="8" name="quantity"/>
+      <Field Strict="1" Caption="Total Cost" Format="####.####" Size="8" Type="3" name="cost" Modify="1"/>
+      <Field Strict="1" Caption="Item cost" Format="####.####" Size="8" Type="3" name="peritem" Modify="1"/>
+      <Field Caption="Transaction" Strict="1" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="productitem">
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="productitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="productitem[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

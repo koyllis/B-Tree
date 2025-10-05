@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="filesys2" name="Categories">
+      <Field Size="40"/>
+      <Field Caption="Xmlns key" Size="40" name="xmlns"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="eprel_cat">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

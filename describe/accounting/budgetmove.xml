@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="budget_moves" Dynamic="1" name="Budget Moves" System="accounting">
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Date"/>
+      <Field Size="10" Force="1" name="reference" Caption="Reference"/>
+      <Field Size="4" Force="1" Type="2" File="accounting.budget" name="frombudget" Caption="From"/>
+      <Field Size="4" Force="1" Type="2" File="accounting.budget" name="tobudget" Caption="To"/>
+      <Field Size="4" Format="######.##" Force="1" Type="4" name="amount" Caption="Amount"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="budgetmove">
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="budgetmove[frombudget]">
+         <IndexEntry name="frombudget"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="budgetmove[tobudget]">
+         <IndexEntry name="tobudget"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

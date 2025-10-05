@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="Parameters">
+      <Field Caption="Location" File="accounting.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Layout 1" name="layout1"/>
+      <Field Caption="Layout 2" name="layout2"/>
+      <Field Caption="Options" Format="b" Size="2" Options="NoUpdate,NoClaimsRestriction,UnderWriting,ContractMaximum" Type="2" name="option"/>
+      <Field Caption="Maximum cover" Format="#######.##" Size="8" Type="3" name="maxcover"/>
+      <Field Caption="Maximum date" Size="4" Type="5" name="maxdate"/>
+      <Field Caption="Maximum before date" Format="#######.##" Size="8" Type="3" name="maxbef"/>
+      <Field Caption="Maxiumum age" Format="##" Size="2" Type="2" name="maxage"/>
+      <Field Caption="Maximum cover after age" Format="#######.##" Size="8" Type="3" name="maxamount"/>
+      <Field Caption="Certificate year" Format="####" Size="2" Type="2" name="cert_year"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="param">
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

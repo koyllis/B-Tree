@@ -1,0 +1,10 @@
+<xml>
+   <Table System="system" name="browse_field" Root="1">
+      <Field Caption="Browse field" Size="64" name="field"/>
+      <Field Caption="Columns" Size="128" name="browse"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="browse_field">
+         <IndexEntry name="field"/>
+      </Index>
+   </Table>
+</xml>

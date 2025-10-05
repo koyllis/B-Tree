@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Price Automation">
+      <Field Caption="Web price" Size="8" Type="3" name="webprice" Format="price"/>
+      <Field Caption="Price" Size="8" Type="3" Format="price"/>
+      <Field Caption="Cost" Format="price" Size="8" Type="3" name="cost"/>
+      <Field Caption="Price Code 1" Format="price" Size="8" Type="3" name="price1"/>
+      <Field Caption="Price Code 2" Format="price" Size="8" Type="3" name="price2"/>
+      <Field Caption="Price Code 3" Format="price" Size="8" Type="3" name="price3"/>
+      <Field Caption="Price Code 4" Format="price" Size="8" Type="3" name="price4"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="webprice">
+         <IndexEntry name="webprice"/>
+      </Index>
+   </Table>
+</xml>

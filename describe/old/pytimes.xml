@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="pytimes" System="old">
+      <Field Size="1" Options="0-255" Format="###" Type="2" name="ti_timeno" Caption="Time No."/>
+      <Field Size="20" Format="u" name="ti_desc" Caption="Description"/>
+      <Field Size="8" Format="####.##" Type="3" name="ti_maxhours" Caption="Maximum hours"/>
+      <Field Size="8" Format="####.##" Type="3" name="ti_dedhours" Caption="Deductible hours"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="ti_bonus" Caption="Include in bonus (Y/N)?"/>
+      <Field Size="1" Format="###" Type="2" name="ti_rateno" Caption="Related rate No."/>
+      <Index name="pytimes">
+         <IndexEntry name="ti_timeno"/>
+      </Index>
+   </Table>
+</xml>

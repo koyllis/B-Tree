@@ -1,0 +1,49 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="averagelog">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Sequence" Size="2" Type="2" name="seq"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Reference" Size="4" Type="2" name="refer"/>
+      <Field Caption="Currency" File="accounting.currency" Size="2" Type="2" name="currency"/>
+      <Field Caption="Price" Size="8" Type="3" name="price"/>
+      <Field Caption="Total" Size="8" Type="3" name="total"/>
+      <Field Caption="Discount" Size="8" Type="3" name="discount"/>
+      <Field Caption="Expenses" Size="8" Type="3" name="expense"/>
+      <Field Caption="Taxable expenses" Size="8" Type="3" name="taxexp"/>
+      <Field Caption="Total value" Size="8" Type="3" name="totalval"/>
+      <Field Caption="Ex. rate" Format="####.######" Size="8" Type="3" name="xrate"/>
+      <Field Caption="Allocation%" Size="8" Type="3" name="allocation"/>
+      <Field Caption="Local value" Size="8" Type="3" name="net"/>
+      <Field Caption="Exp. alloc." Size="8" Type="3" name="expalloc"/>
+      <Field Caption="Import duty" Size="8" Type="3" name="duty"/>
+      <Field Caption="Cost" Size="8" Type="3" name="cost"/>
+      <Field Caption="Value" Size="8" Type="3" name="value"/>
+      <Field Caption="Quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Balance" Size="8" Type="3" name="balance"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="averagelog">
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="averagelog[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="averagelog[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="averagelog[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

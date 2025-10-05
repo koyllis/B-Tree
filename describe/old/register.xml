@@ -1,0 +1,18 @@
+<xml>
+   <Table System="old" name="register" ModifyStamp="0">
+      <Field Caption="Bank account" Format="u" Size="6" name="rg_bank"/>
+      <Field Caption="Due date" Size="4" Type="5" name="rg_date"/>
+      <Field Caption="Refer. No." Format="u" Size="8" name="rg_refer"/>
+      <Field Caption="Description" name="rg_desc"/>
+      <Field Caption="Debit" Format="###,###.##" Size="4" Type="4" name="rg_debit"/>
+      <Field Caption="Credit" Format="###,###.##" Size="4" Type="4" name="rg_credit"/>
+      <Field Caption="Issue date" Size="4" Type="5" name="rg_idate"/>
+      <Field Caption="Loc." Format="00" Size="1" Type="2" name="rg_loc"/>
+      <Field Caption="Journal No." Format="######" Size="4" Type="2" name="rg_journal"/>
+      <Index name="register">
+         <IndexEntry name="rg_bank"/>
+         <IndexEntry name="rg_date"/>
+         <IndexEntry name="rg_refer"/>
+      </Index>
+   </Table>
+</xml>

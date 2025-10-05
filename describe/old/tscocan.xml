@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="tscocan" System="old" ModifyStamp="0">
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="cc_date"/>
+      <Field Caption="Refer." Format="u" Size="8" name="cc_refer"/>
+      <Field Caption="Customer" Format="u" Size="8" name="cc_code"/>
+      <Field Caption="Refund" Format="###,###.##" Size="4" Type="4" name="cc_refund"/>
+      <Field Caption="Rate" Format="####.####" Size="8" Type="3" name="cc_rate"/>
+      <Field Caption="Cancellation date" Format="dd/mm/yyyy" Size="4" Type="5" name="cc_cdate"/>
+      <Field Caption="Refer. No." Format="######" Size="4" Type="2" name="cc_crefer"/>
+      <Field Caption="Journal" Format="######" Size="4" Type="2" name="cc_journal"/>
+      <Index name="tscocan">
+         <IndexEntry name="cc_date"/>
+         <IndexEntry name="cc_refer"/>
+         <IndexEntry name="cc_code"/>
+      </Index>
+   </Table>
+</xml>

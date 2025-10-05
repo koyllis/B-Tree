@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Notification" Unordered="1">
+      <Field name="number" Caption="Nummber" Type="2" Size="4" Strict="1" Modify="1" AutoCounter="1"/>
+      <Field name="from" Caption="From" Type="2" Size="1" Options="Assistant,Server"/>
+      <Field Caption="To" File="auto.webuser" Size="2" Type="2" name="webuser"/>
+      <Field name="title" Caption="Title" Type="1" Size="100"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="notification" CRC64="1" Large="1">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="notification[webuser]" CRC64="1" Large="1">
+         <IndexEntry name="webuser"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

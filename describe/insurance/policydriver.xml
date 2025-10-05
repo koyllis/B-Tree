@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="insurance" name="Policy Drivers" Unordered="1">
+      <Field Caption="Policy vehicle" File="insurance.policyvehicle" Size="4" Type="2" name="policyvehicle"/>
+      <Field Caption="Driver" File="insurance.driver" Size="4" Type="2" name="driver"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="policydriver">
+         <IndexEntry name="policyvehicle"/>
+         <IndexEntry name="driver"/>
+      </Index>
+      <Index name="policydriver[driver]">
+         <IndexEntry name="driver"/>
+         <IndexEntry name="policyvehicle"/>
+      </Index>
+   </Table>
+</xml>

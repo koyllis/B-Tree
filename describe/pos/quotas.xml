@@ -1,0 +1,218 @@
+<xml>
+   <Table System="pos" SoftDelete="1" Icon="quotas" Dynamic="1" PDA="0" name="Quotas" RetainColumns="1" json_replicate="1">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Brand" File="pos.brand" Size="2" Type="2" name="brand"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people_supplier"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Season/Collection" name="season_collection"/>      
+      <Field Caption="Quantity" Format="#####.##" Size="4" Type="8" name="quantity"/>
+
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Caption="Discount(%)" Format="###.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Discount" Format="###.##" Size="4" Type="8" name="discount_amount"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price_amount"/>
+      <Field Caption="Cost markup(%)" Format="###.##" Size="8" Type="3" name="markup"/>
+      <Field Caption="Price markup(%)" Format="###.##" Size="8" Type="3" name="price_markup"/>
+      <Field Caption="From date" Size="4" Type="5" name="frdate"/>
+      <Field Caption="To date" Size="4" Type="5" name="todate"/>
+      <Field Caption="Week day" Format="b" Size="1" Type="2" Options="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" name="weekday"/>
+      <Field Caption="Maximum quantity" Format="#####.##" Size="4" Type="8" name="max"/>
+      <Field Caption="Group" File="pos.qgroup" Size="1" Type="2" name="qgroup"/>
+      <Field Caption="Free item" File="pos.item" Size="4" Type="2" name="free_item"/>
+      <Field Caption="Free limit" Size="4" Type="8" name="free_limit"/>
+      <Field Caption="Free quantity" Size="4" Type="8" name="free_qty"/>
+      <Field Caption="Free Color" File="pos.color" Size="2" Type="2" name="free_color"/>
+      <Field Caption="Free Size" File="pos.size" Size="2" Type="2" name="free_size"/>
+     
+      <Field Caption="Special discount%" Format="###.##" Size="2" Type="2" name="special_discount"/>
+      <Field Caption="Options" Format="b" Size="1" Type="2" Options="ForbidSale,IgnoreDiscount,Force,OnlySales,IgnoreMaxQuota" name="option"/>
+      <Field Strict="1" Caption="Last  date" Size="4" Type="5" name="last_date" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+
+      <Index CRC64="1" name="quotas">
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+       <Index CRC64="1" name="quotas_fast" Unordered="1" force="1">
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      
+      
+      <Index CRC64="1" name="quotas[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas[category]" >
+         <IndexEntry name="category"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas[color]" >
+         <IndexEntry name="color"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas[group]" >
+         <IndexEntry name="group"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas_item">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas[item]" >
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas[free_item]" >
+         <IndexEntry name="free_item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas[location]" >
+         <IndexEntry name="location"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas[price]" >
+         <IndexEntry name="price"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas[qgroup]" >
+         <IndexEntry name="qgroup"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas_frdate" >
+         <IndexEntry name="frdate"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+
+      <Index CRC64="1" name="quotas_people_supplier" >
+         <IndexEntry name="people_supplier"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="season_collection"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+   </Table>
+</xml>

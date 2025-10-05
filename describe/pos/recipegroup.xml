@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="recipegroup" System="pos">
+      <Field/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="recipegroup">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

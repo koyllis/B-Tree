@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="types" name="Types" System="adeies" Index="type">
+      <Field/>
+      <Field Size="1" Format="b" Type="2" name="transfer" Caption="Transferable"/>
+      <Field Size="1" Format="b" Type="2" name="holiday" Caption="Don't Account holidays"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="type">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

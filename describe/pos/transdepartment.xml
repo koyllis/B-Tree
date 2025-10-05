@@ -1,0 +1,17 @@
+<xml>
+   <Table System="pos" name="Department Status">
+      <Field Caption="Transactions" File="pos.trans" Size="4" Force="1" Type="2" name="trans"/>
+      <Field Caption="Department" File="accounting.department" Size="2" Force="1" Type="2" name="department"/>
+      <Field Caption="Deadline" Size="4" Type="5" name="deadline"/>
+      <Field Caption="Employee" File="payroll.employee" Size="2" Type="2" name="employee"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transdepartment">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="department"/>
+      </Index>
+      <Index name="transdepartment[department]">
+         <IndexEntry name="department"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

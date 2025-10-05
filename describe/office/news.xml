@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="office" name="news">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Size="40" Tip="1"/>
+      <Field Caption="Video link" Size="128" name="link"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="news">
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

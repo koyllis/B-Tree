@@ -1,0 +1,16 @@
+<xml>
+   <Table System="pos" name="Prescription Execution" Unordered="1">
+      <Field Caption="Prescription line" File="pos.prescdetail" Size="8" Type="2" name="prescdetail"/>
+      <Field Caption="Transaction detail" Size="8" Type="2" name="transdet" File="pos.transdet"/>
+      <Field Caption="Quantity" Format="quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="prescexec">
+         <IndexEntry name="prescdetail"/>
+         <IndexEntry name="transdet"/>
+      </Index>
+      <Index name="prescexec[transdet]">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="prescdetail"/>
+      </Index>
+   </Table>
+</xml>

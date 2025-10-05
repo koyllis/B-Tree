@@ -1,0 +1,19 @@
+<xml>
+   <Table System="accounting" name="vehiclemark">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="4" Type="2" name="vehicle"/>
+      <Field Caption="Type" Size="2" Type="2" Options="OilChange,Service" name="type"/>
+      <Field Caption="Vehicle counter" Size="4" Type="2" name="vehiclecount"/>
+      <Field Caption="Expense counter" Size="4" Type="2" name="expensecount"/>
+      <Field Caption="Difference" Size="2" Type="2" name="difference"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vehiclemark">
+         <IndexEntry name="date"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="vehiclemark[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

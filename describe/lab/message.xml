@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" Icon="edit1" name="Messages">
+      <Field Caption="Message type" File="pos.season" Size="2" Type="2" name="season"/>
+      <Field Caption="Sequence" Size="1" Type="2" name="seq"/>
+      <Field Caption="Message" Size="150"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="message">
+         <IndexEntry name="season"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

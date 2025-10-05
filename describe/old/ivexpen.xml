@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="ivexpen" System="old">
+      <Field Size="3" Format="u" name="e_expense" Caption="Expense code"/>
+      <Field name="e_desc" Caption="Description"/>
+      <Field Size="1" Format="##" Type="2" name="e_rank" Caption="Print rank"/>
+      <Field Size="1" Format="##" Type="2" name="e_report" Caption="Report column"/>
+      <Field Size="6" Format="u" name="e_account" Caption="Revenue account"/>
+      <Field Size="8" Format="##.##" Type="3" name="e_vat" Caption="V.A.T. rate (%)"/>
+      <Field Size="8" Format="####.####" Type="3" name="e_factor" Caption="Division factor"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_print" Caption="Print description(N) (Y/N)?"/>
+      <Field Size="1" Options=",,D,W,M,Y,N" Format="u" name="e_calc" Caption="Calculations(N) (D/W/M/Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_recha" Caption="Carry recharge(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_prof" Caption="Exclude from profit(N) (Y/N)?"/>
+      <Field Size="4" Format="####.##" Type="4" name="e_min" Caption="Minimum charge"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_group" Caption="Account groupage(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_acdesc" Caption="Journal description(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_upref" Caption="Update references(N) (Y/N)?"/>
+      <Index name="ivexpen">
+         <IndexEntry name="e_expense"/>
+      </Index>
+   </Table>
+</xml>

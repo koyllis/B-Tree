@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" name="brandsummary">
+      <Field Caption="Brand" File="pos.brand" Size="4" Type="2" name="brand"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Year" Format="####" Size="2" Type="2" name="year"/>
+      <Field Caption="Loc_Year" Size="10" name="locyear"/>
+      <Field Caption="Order" Total="1" Size="8" Type="3" name="order"/>
+      <Field Caption="Purchase" Total="1" Size="8" Type="3" name="purchase"/>
+      <Field Caption="Transfer" Total="1" Size="8" Type="3" name="transfer"/>
+      <Field Caption="Sale" Total="1" Size="8" Type="3" name="sale"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="brandsummary">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="year"/>
+      </Index>
+      <Index name="brandsummary[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="year"/>
+      </Index>
+      <Index name="brandsummary_locyear">
+         <IndexEntry name="locyear"/>
+         <IndexEntry name="brand"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,16 @@
+<xml>
+   <Table System="pos" name="reasonbrand">
+      <Field Caption="Reason" File="pos.reason" Size="4" Type="2" Force="1" name="reason"/>
+      <Field Caption="Brand" File="pos.brand" Size="2" Type="2" Force="1" name="brand"/>
+      <Field Caption="Discount%" Format="##.##" Size="8" Type="3" Force="1" name="discount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="reasonbrand">
+         <IndexEntry name="reason"/>
+         <IndexEntry name="brand"/>
+      </Index>
+      <Index name="reasonbrand[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="reason"/>
+      </Index>
+   </Table>
+</xml>

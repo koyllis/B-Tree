@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="generic" name="unifi">
+      <Field Caption="Date" Size="8" Type="5" name="date"/>
+      <Field Caption="EMail" Size="64" name="email"/>
+      <Field Caption="Mobile" Size="16" name="mobile"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="unifi">
+         <IndexEntry name="date"/>
+         <IndexEntry name="email"/>
+      </Index>
+   </Table>
+</xml>

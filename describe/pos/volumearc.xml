@@ -1,0 +1,40 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Volume Discounts Archive">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" Force="1" name="people"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Set" Size="1" Type="2" name="set"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Category" File="pos.category" Size="4" Type="2" name="category"/>
+      <Field Caption="Discount %" Format="##.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Year discount %" Format="##.##" Size="8" Type="3" name="yearly"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="volumearc">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="set"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="volumearc[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="set"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="volumearc[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="set"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="volumearc_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="set"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

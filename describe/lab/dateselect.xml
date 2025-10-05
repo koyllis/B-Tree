@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Report Date Filter" Unordered="1">
+      <Field Caption="Report" File="system.report" Size="4" Type="2" name="report"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="dateselect">
+         <IndexEntry name="report"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,37 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="employee" System="old">
+      <Field Size="4" Options="0-99999" Format="0" Type="2" name="e_number" Caption="Emp. No."/>
+      <Field Format="u" name="e_name"/>
+      <Field Size="4" Format="########" Type="2" name="e_id" Caption="Ident. card No."/>
+      <Field Size="4" Format="########" Type="2" name="e_si" Caption="Soc. Ins. No."/>
+      <Field Size="4" Format="########" Type="2" name="e_fr" Caption="Foreign reg. no."/>
+      <Field Size="10" name="e_pn" Caption="Passport No."/>
+      <Field Format="u" name="e_street" Caption="Address"/>
+      <Field Format="u" name="e_city" Caption="City"/>
+      <Field Size="12" Format="u" name="e_phone" Caption="Telephone"/>
+      <Field Size="4" Type="5" name="e_hire" Caption="Empl. date"/>
+      <Field Size="4" Type="5" name="e_fire" Caption="Term. date"/>
+      <Field Size="4" Type="5" name="e_birth" Caption="Birth date"/>
+      <Field Size="4" Format="##,###.##" Type="4" name="e_basic" Caption="Salary"/>
+      <Field Size="8" Options="0-500" Format="###.##" Type="3" name="e_hours" Caption="Hours/period"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_holh" Caption="Allow holidays(Y) (Y/N)?"/>
+      <Field Size="1" Options="W,B,M" Format="u" name="e_period" Caption="Weekly/Bi-weekly/Monthly (W/B/M)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_part" Caption="Part time(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_infadj" Caption="Exclude C.O.L.A.(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="e_excempt" Caption="Social charges excemption(N) (Y/N)?"/>
+      <Field Size="1" Options="M,F" Format="u" name="e_mf" Caption="Male/Female (M/F)?"/>
+      <Field Size="20" name="e_accno" Caption="Bank A/C"/>
+      <Field Size="3" Format="u" name="e_nation" Caption="Nationality"/>
+      <Field Size="3" Format="u" name="e_proff" Caption="Proffesion"/>
+      <Field Size="3" Format="u" name="e_crit" Caption="Area"/>
+      <Field Size="3" Format="u" name="e_igroup" Caption="S.I. group"/>
+      <Field Size="1" Format="###" Type="2" name="e_dptno" Caption="Depart. No."/>
+      <Field Size="1" Format="###" Type="2" name="e_group" Caption="Group No."/>
+      <Field Size="3" Format="u" name="e_curr" Caption="Currency"/>
+      <Field Size="64" name="e_future" Caption="Future"/>
+      <Index name="oldemplo">
+         <IndexEntry name="e_number"/>
+         <IndexEntry name="e_name"/>
+      </Index>
+   </Table>
+</xml>

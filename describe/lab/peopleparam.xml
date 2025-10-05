@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Customer Invoice Parameters">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="T1 charge" Format="###.##" Size="4" Type="4" name="chargeT1"/>
+      <Field Caption="T2 charge" Format="###.##" Size="4" Type="4" name="chargeT2"/>
+      <Field Caption="COD load" Format="####" Size="8" Type="3" name="codload"/>
+      <Field Caption="Penalty" Format="####.##" Size="4" Type="4" name="penalty"/>
+      <Field Caption="Charge base" Size="1" Options="COD,SO42-,SS" Type="2" name="charge_base"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peopleparam">
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

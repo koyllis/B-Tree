@@ -1,0 +1,53 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" Icon="print4" name="Monthly Analysis">
+      <Field Caption="Contract" File="life.contract" Size="4" Type="2" name="contract"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Plan" File="life.contractplan" Size="4" Type="2" name="contractplan"/>
+      <Field Caption="Month" Size="1" Type="2" Options="January,February,March,April,May,June,July,August,September,October,November,December" name="month"/>
+      <Field Caption="Initial coverage" Total="1" Format="#######.##" Size="8" Type="3" name="initamount"/>
+      <Field Caption="Initial charge" Total="1" Format="######.##" Size="4" Type="4" name="initial"/>
+      <Field Caption="Initial charge" Total="1" Format="######.##" Size="4" Type="4" name="initcharge"/>
+      <Field Caption="Initial extra" Total="1" Format="######.##" Size="4" Type="4" name="initextra"/>
+      <Field Caption="Initial guarantee" Total="1" Format="######.##" Size="4" Type="4" name="initguarantee"/>
+      <Field Caption="Initial members" Total="1" Size="4" Type="2" name="initcount"/>
+      <Field Caption="Additions" Total="1" Size="4" Type="2" name="addition"/>
+      <Field Caption="Deductions" Total="1" Size="4" Type="2" name="deduction"/>
+      <Field Caption="Debit coverage" Total="1" Format="#######.##" Size="8" Type="3" name="amount_debit"/>
+      <Field Caption="Credit coverage" Total="1" Format="#######.##" Size="8" Type="3" name="amount_credit"/>
+      <Field Caption="Debit" Total="1" Format="######.##" Size="4" Type="4" name="debit"/>
+      <Field Caption="Credit" Total="1" Format="######.##" Size="4" Type="4" name="credit"/>
+      <Field Caption="Extra debit" Total="1" Format="######.##" Size="4" Type="4" name="extra_debit"/>
+      <Field Caption="Extra credit" Total="1" Format="######.##" Size="4" Type="4" name="extra_credit"/>
+      <Field Caption="Guarantee" Total="1" Format="######.##" Size="4" Type="4" name="guarantee"/>
+      <Field Caption="Charge" Total="1" Format="######.##" Size="4" Type="4" name="charge"/>
+      <Field Caption="Corrections" Total="1" Format="######.##" Size="4" Type="4" name="correction"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="monthly">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="month"/>
+      </Index>
+      <Index name="monthly[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="month"/>
+      </Index>
+      <Index name="monthly[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="month"/>
+      </Index>
+      <Index name="monthly[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="month"/>
+      </Index>
+      <Index name="monthly_month">
+         <IndexEntry name="month"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="contractplan"/>
+      </Index>
+   </Table>
+</xml>

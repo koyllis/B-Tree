@@ -1,0 +1,33 @@
+<xml>
+   <Table CanModify="0" System="pos" CanDelete="0" name="Deliv. Order Interface">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Details" Size="80" name="refer"/>
+      <Field Caption="Total" Format="#####.##" Size="4" Type="4" name="total"/>
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Cash receipt" File="accounting.cashreceipt" Size="4" Type="2" name="cashreceipt"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="dointerface">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="dointerface[cashreceipt]">
+         <IndexEntry name="cashreceipt"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="dointerface[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="dointerface[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

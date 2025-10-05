@@ -1,0 +1,31 @@
+<xml>
+   <Table System="pos" name="Import Items" Icon="importitem">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="File name" name="filename"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Separator" Size="1" Type="2" Options="Comma,Semicolon,Tab,Space" name="separator"/>
+      <Field Caption="Update existing" Format="b" Size="1" Type="2" name="update"/>
+      <Field Caption="User part No. as search key" Format="b" Size="1" Type="2" name="partno"/>
+      <Field Caption="Build code" Format="b" Size="1" Type="2" name="build"/>
+      <Field Caption="Create color/size" Format="b" Size="1" Type="2" name="colorsize"/>
+      <Field Strict="1" Caption="New" Size="4" Type="2" name="new" Modify="1"/>
+      <Field Strict="1" Caption="Matrix" Size="4" Type="2" name="matrix" Modify="1"/>
+      <Field Strict="1" Caption="Updated" Size="4" Type="2" name="upd" Modify="1"/>
+      <Field Strict="1" Caption="Exist" Size="4" Type="2" name="exist" Modify="1"/>
+      <Field Strict="1" Caption="Errors" Size="4" Type="2" name="err" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="importitem">
+         <IndexEntry name="date"/>
+         <IndexEntry name="filename"/>
+      </Index>
+      <Index name="importitem[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="importitem[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

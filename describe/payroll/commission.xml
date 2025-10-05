@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="Employee Commission">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Receipts group" File="accounting.group" Size="4" Type="2" name="group"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="Exclude,Receipts,Sales" name="option"/>
+      <Field Caption="Percentage%" Format="##.####" Size="4" Type="8" name="perce"/>
+      <Field Caption="Company" Size="20" name="company"/>
+      <Field Caption="Employee No." Size="4" Type="2" name="code"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="commission">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="commission[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="commission[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="commission[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="employee"/>
+      </Index>
+   </Table>
+</xml>

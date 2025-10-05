@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Static="1" name="Categories" System="loyalty" Index="group">
+      <Field Size="2" Type="2" name="code" Caption="Category"/>
+      <Field Size="20"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="group">
+         <IndexEntry AllDimension="1" name="code"/>
+      </Index>
+   </Table>
+</xml>

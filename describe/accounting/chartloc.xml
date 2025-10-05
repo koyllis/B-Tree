@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Chart Location" System="accounting">
+      <Field Size="2" Type="2" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Size="2" Type="2" File="accounting.location" name="location" Caption="Location"/>
+      <Field Size="4" Format="###.##" Type="8" name="percentage" Caption="Percentage"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="chartloc">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="chartloc[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="chart"/>
+      </Index>
+   </Table>
+</xml>

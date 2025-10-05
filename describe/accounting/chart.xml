@@ -1,0 +1,71 @@
+<xml>
+   <Table HTML="1" Repository="1" Parent="chart" Child="description" Bookmark="1" System="accounting" SoftDelete="1" Icon="heart" Color="1" OnExistModify="0" Short="Account" Index="chart" name="Chart of accounts" FavoriteMatch="accounting|detail" MapRecord="1" Map="detail"  Dataset="1" Common="1">
+      <Field Caption="Description" Size="50" name="description" Distinct="1" Dissect="1"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Asset,Liability,Capital,Revenue,Expense" Force="1" name="type"/>
+      <Field Caption="Bank" Format="b" Size="1" Type="2" name="bank" Modify="1"/>
+      <Field Caption="Balance" Size="8" Type="4" name="balance" Modify="1"/>
+      <Field Caption="Cash Flow" Format="b" Size="1" Type="2" name="cash" Modify="1"/>
+      <Field Caption="Fixed Asset" Format="b" Size="1" Type="2" name="fixed" Modify="1"/>
+      <Field Caption="Asset group" File="accounting.accgroup" Size="2" Type="2" name="accgroup" Modify="1"/>
+      <Field Caption="Accumulated depreciation" File="accounting.chart" Size="2" Type="2" name="chart_accumulated" Modify="1"/>
+      <Field Caption="Depreciation expense" File="accounting.chart" Size="2" Type="2" name="chart_depreciation" Modify="1"/>
+      <Field Caption="Journal Type" Size="1" Type="2" Options="Net,Total,Vat,Discount" name="jtype" Modify="1"/>
+      <Field Caption="Force" Format="b" Size="1" Type="2" Options="Location,Operation,Category,VAT,NoVAT" name="force" Modify="1"/>
+      <Field Caption="Reconciliation bank" Size="1" Type="2" Options="Cyprus,Eurobank,Hellenic,Alpha,Societe,Ancoria,Astrobank" name="recon_bank" Modify="1"/>
+      <Field Caption="Allocation base" Size="1" Options="Quantity,Sales" Type="2" name="allocation" Modify="1"/>
+      <Field Caption="Group" File="accounting.chartgroup" Size="2" Type="2" name="chartgroup" Modify="1" Distinct="1"/>
+      <Field Caption="Vat" File="accounting.vat" Size="1" Type="2" name="vat" Modify="1"/>
+      <Field Caption="Currency" Format="#######" File="accounting.currency" Size="2" Type="2" name="currency" Modify="1"/>
+      <Field Caption="Parent" Format="#######" File="accounting.chart" Size="2" Type="2" name="chart"/>
+      <Field Caption="Interface code" Size="20" name="interface"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark" Dissect="1"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="chart">
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[accgroup]">
+         <IndexEntry name="accgroup"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index Force="1" name="chart[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[chart_accumulated]">
+         <IndexEntry name="chart_accumulated"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[chart_depreciation]">
+         <IndexEntry name="chart_depreciation"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[chartgroup]">
+         <IndexEntry name="chartgroup"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index Force="1" name="chart_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart_type">
+         <IndexEntry name="type"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart_interface">
+         <IndexEntry name="interface"/>
+         <IndexEntry name="description"/>
+      </Index>
+   </Table>
+</xml>

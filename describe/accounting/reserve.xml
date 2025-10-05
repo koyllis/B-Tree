@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Reservations" System="accounting">
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Force="1" Type="5" name="time" Caption="Time"/>
+      <Field Size="4" Force="1" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="20" Force="1" name="room" Caption="Room"/>
+      <Field Size="2" Force="1" Type="2" File="accounting.servicedef" name="service" Caption="Service"/>
+      <Field Size="4" Force="1" Type="2" name="persons" Caption="Persons"/>
+      <Field Size="10" Force="1" name="menu" Caption="Menu"/>
+      <Field Size="4" Format="####.##" Type="4" name="price" Caption="Price"/>
+      <Field Size="4" Format="####.##" Type="4" name="deposit" Caption="Deposit"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="reserve">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="reserve[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="reserve[service]">
+         <IndexEntry name="service"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+   </Table>
+</xml>

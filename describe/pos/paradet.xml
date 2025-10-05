@@ -1,0 +1,39 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" SoftDelete="1" Dynamic="1" name="Collection Details">
+      <Field Caption="Collection" File="pos.paralavi" Size="4" Type="2" name="paralavi"/>
+      <Field Caption="Line" Size="1" Type="2" name="line"/>
+      <Field Caption="Item" File="pos.item" Size="2" Type="2" name="item"/>
+      <Field Caption="Site" File="accounting.site" Size="2" Type="2" name="site"/>
+      <Field Caption="Gross weight" Total="1" Format="######" Size="4" Type="2" name="gross"/>
+      <Field Caption="Fyra" Total="1" Format="######" Size="4" Type="2" name="fyra"/>
+      <Field Caption="Cases IN" Format="#####" Size="2" Type="2" name="casesin"/>
+      <Field Caption="Cases OUT" Format="#####" Size="2" Type="2" name="cases"/>
+      <Field Caption="Price" Format="#####.###" Size="8" Type="3" name="price"/>
+      <Field Caption="Mpome" Total="1" Format="####.##" Size="4" Type="8" name="mpome"/>
+      <Field Caption="Tank" Total="1" File="pos.tank" Size="2" Type="2" name="tank"/>
+      <Field Caption="Net weight" Total="1" Format="######" Size="4" Type="2" name="net"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="paradet">
+         <IndexEntry name="paralavi"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="paradet[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="paralavi"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="paradet[site]">
+         <IndexEntry name="site"/>
+         <IndexEntry name="paralavi"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="paradet[tank]">
+         <IndexEntry name="tank"/>
+         <IndexEntry name="paralavi"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

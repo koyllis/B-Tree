@@ -1,0 +1,115 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table FormatField="balance" FavoriteMatch="accounting|detail" ManualIndex="1" Short="Associate" Map="detail" Icon="face" Dynamic="1" ChainInsert="accounting|address" MapRecord="1" SoftDelete="1" name="Business associates" System="accounting" Bookmark="1" Index="people" UniqueKeys="1">
+      <Field Size="50" Force="1"/>
+      <Field Size="2" Type="3" File="accounting.group" name="group" Caption="Group"/>
+      <Field Negative="0" Size="4" Format="######" Strict="1" Modify="1" AutoCounter="1" Type="2" name="number" Caption="Number"/>
+      <Field Size="2" Format="#######" Type="3" File="accounting.chart" name="chart" Caption="Account"/>
+      <Field Size="8" Format="#########.##" Strict="1" Type="4" name="balance" Caption="Balance" Total="1"/>
+      <Field Size="1" Format="b" Modify="1" Type="2" name="novat" Caption="Exclude VAT"/>
+      <Field Size="4" Type="5" name="opendate" Caption="Opening date"/>
+      <Field Size="4" Type="5" name="closedate" Caption="Closing date"/>
+      <Field Size="10" name="id" Caption="ID/Passport"/>
+      <Field Size="2" Format="#######" Type="3" File="accounting.area" name="area" Caption="Area"/>
+      <Field Size="4" Type="5" name="birth" Caption="Date of birth"/>
+      <Field Size="1" Format="Male,Female" Type="2" name="sex" Caption="Sex"/>
+      <Field Size="1" Format="##" Type="2" name="children" Caption="Children"/>
+      <Field Size="1" Format="#######" Type="3" File="accounting.currency" name="currency" Caption="Currency"/>
+      <Field Size="45" name="addr" Caption="Address"/>
+      <Field Size="20" name="phone" Caption="Phone"/>
+      <Field Size="1" Modify="1" Type="3" File="accounting.bank" name="bank" Caption="Bank"/>
+      <Field Size="2" Modify="1" Type="3" File="payroll.profession" name="profession" Caption="Profession"/>
+      <Field Size="2" Modify="1" Type="3" File="accounting.nationality" name="nationality" Caption="Nationality"/>
+      <Field Size="20" Modify="1" name="tax" Caption="Tax office"/>
+      <Field Size="50" Modify="1" name="delivery" Caption="Delivery"/>
+      <Field Size="15" Modify="1" name="vatno" Caption="Vat no"/>
+      <Field Size="1" Modify="1" Type="2" name="credit_period" Caption="Credit Period"/>
+      <Field Size="1" Options="Cash,Credit" Modify="1" Type="2" name="credit" Caption="Credit Status"/>
+      <Field Size="4" Format="######.##" Modify="1" Type="4" name="limit" Caption="Credit limit"/>
+      <Field Size="2" Modify="1" Type="3" File="accounting.people" name="link" Caption="Link"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="16" System="1" name="@bookmark" Caption="Bookmark"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" Caption="SoftDelete"/>
+      <Index name="people">
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[bank]">
+         <IndexEntry name="bank"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="addr"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[link]">
+         <IndexEntry name="link"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[nationality]">
+         <IndexEntry name="nationality"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people[profession]">
+         <IndexEntry name="profession"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_addr">
+         <IndexEntry name="addr"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_number">
+         <IndexEntry name="number"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="people_phone">
+         <IndexEntry name="phone"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="people_vatno">
+         <IndexEntry name="vatno"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

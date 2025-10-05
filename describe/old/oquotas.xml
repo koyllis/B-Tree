@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="oquotas" System="old">
+      <Field Size="8" Format="u" Dim ="1" name="q_code" Caption="Code"/>
+      <Field Size="12" Format="u" Dim ="1" name="q_item" Caption="Item"/>
+      <Field Size="8" Format="u" Dim ="1" name="q_supp" Caption="Supplier"/>
+      <Field Size="2" Format="u" Dim ="1" name="q_pcode" Caption="Price code"/>
+      <Field Size="8" Format="###,###.##" Type="3" Dim ="1" name="q_quant" Caption="Quantity limit"/>
+      <Field Size="8" Format="###,###.##" Type="3" Dim ="1" name="q_qused" Caption="Quantity used"/>
+      <Field Size="4" Type="5" Dim ="1" name="q_frdate" Caption="From date"/>
+      <Field Size="4" Type="5" Dim ="1" name="q_todate" Caption="To date"/>
+      <Field Size="4" Type="5" Dim ="1" name="q_last" Caption="Last sale"/>
+      <Field Size="8" Format="###.##" Type="3" Dim ="1" name="q_disc" Caption="Discount(%)"/>
+      <Field Size="8" Format="###.##" Type="3" Dim ="1" name="q_vat" Caption="V.A.T.(%)"/>
+      <Field Size="8" Format="####.##" Type="3" Dim ="1" name="q_flimi" Caption="Free limit"/>
+      <Field Size="8" Format="####.##" Type="3" Dim ="1" name="q_freeq" Caption="Free quant."/>
+      <Field Size="12" Format="u" Dim ="1" name="q_fitem" Caption="Free item"/>
+      <Index name="oquotas">
+         <IndexEntry name="q_code"/>
+         <IndexEntry name="q_item"/>
+         <IndexEntry name="q_supp"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml>
+   <Table System="old" name="acalloc" ModifyStamp="0">
+      <Field Caption="Code" Format="u" Size="8" name="al_code"/>
+      <Field Caption="Date" Size="4" Type="5" name="al_date"/>
+      <Field Caption="Ref. No." Format="u" Size="10" name="al_invno"/>
+      <Field Caption="Doc." Size="2" name="al_doc"/>
+      <Field Caption="Reference" Size="8" name="al_refer"/>
+      <Field Caption="Allocation" Size="4" Type="5" name="al_adate"/>
+      <Index name="acalloc">
+         <IndexEntry name="al_code"/>
+         <IndexEntry name="al_date"/>
+         <IndexEntry name="al_invno"/>
+      </Index>
+   </Table>
+</xml>

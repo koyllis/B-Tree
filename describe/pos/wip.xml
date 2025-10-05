@@ -1,0 +1,81 @@
+<xml>
+   <Table System="pos" Icon="new_post" name="Work-In-Progress">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Station" File="pos.station" Size="2" Type="2" name="station"/>
+      <Field Caption="Transaction" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Width" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Length" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Quantity" Total="1" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Total quantity" Size="8" Type="3" name="totalqty"/>
+      <Field Caption="Employee" File="payroll.employee" Size="2" Type="2" name="employee"/>
+      <Field Caption="Completed" Size="8" Type="5" name="completed"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="wip">
+         <IndexEntry name="date"/>
+         <IndexEntry name="station"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="wip[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="station"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="wip[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="station"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="wip[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="station"/>
+         <IndexEntry name="transdet"/>
+      </Index>
+      <Index CRC64="1" name="wip[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="station"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index CRC64="1" name="wip[station]">
+         <IndexEntry name="station"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="wip[transdet]">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="station"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="wip_completed">
+         <IndexEntry name="completed"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="station"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+   </Table>
+</xml>

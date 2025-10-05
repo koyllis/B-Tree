@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="pydprel" System="old">
+      <Field Size="1" Format="###" Type="2" name="dr_dptno" Caption="Dep. No."/>
+      <Field Size="1" Format="###" Type="2" name="dr_rateno" Caption="Rate No."/>
+      <Field Size="6" Format="u" name="dr_debit" Caption="Expense account"/>
+      <Index name="pydprel">
+         <IndexEntry name="dr_dptno"/>
+         <IndexEntry name="dr_rateno"/>
+      </Index>
+   </Table>
+</xml>

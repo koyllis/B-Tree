@@ -1,0 +1,22 @@
+<xml>
+   <Table System="pos" name="amazonlay">
+      <Field/>
+      <Field Caption="Order word" name="order"/>
+      <Field Caption="Refund word" name="refund"/>
+      <Field Caption="Date separator" Size="1" name="separator"/>
+      <Field Caption="Time separator" Size="1" name="timesep"/>
+      <Field Caption="Replace (.)" Format="b" Size="1" Type="2" name="replace"/>
+      <Field Caption="Old layout" Format="b" Size="1" Type="2" name="time"/>
+      <Field Caption="Month string" Size="60" name="months"/>
+      <Field Caption="Currency" File="accounting.currency" Size="2" Type="2" name="currency"/>
+      <Field Caption="Rate" Format="####.####" Size="8" Type="3" name="rate"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="amazonlay">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="amazonlay[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

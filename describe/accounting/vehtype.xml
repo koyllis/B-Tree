@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="vehtype" System="accounting">
+      <Field/>
+      <Field name="prop1" Caption="Property 1"/>
+      <Field name="prop2" Caption="Property 2"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="vehtype">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

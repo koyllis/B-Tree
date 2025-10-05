@@ -1,0 +1,23 @@
+<xml>
+   <Table Unordered="1" System="pos" PDA="0" name="Order Progress" CreateStamp="1">
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Operation" File="accounting.operation" Size="2" Type="2" name="operation"/>
+      <Field Caption="Employee" File="payroll.employee" Size="2" Type="2" name="employee"/>
+      <Field Caption="Completed" Size="8" Type="5" name="completed"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="transprogress">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="transprogress[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index CRC64="1" name="transprogress[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

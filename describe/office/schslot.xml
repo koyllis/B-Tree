@@ -1,0 +1,10 @@
+<xml>
+   <Table System="office" name="Time Slots" Icon="time_schedule">
+      <Field Size="14"/>
+      <Field Caption="Minutes" Format="###" Size="2" Type="2" name="minutes"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="schslot">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="summdetail">
+      <Field Caption="Member summary" File="life.membersumm" Size="4" Type="2" name="membersumm"/>
+      <Field Caption="Plan" File="life.plan" Size="2" Type="2" name="plan"/>
+      <Field Caption="Coverage" Format="#######.##" Size="8" Type="3" name="coverage"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="summdetail">
+         <IndexEntry name="membersumm"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index CRC64="1" name="summdetail[plan]">
+         <IndexEntry name="plan"/>
+         <IndexEntry name="membersumm"/>
+      </Index>
+   </Table>
+</xml>

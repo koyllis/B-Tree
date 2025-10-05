@@ -1,0 +1,27 @@
+<xml>
+   <Table Bookmark="1" System="pos" Icon="script" Index="price" name="Price Codes">
+      <Field Caption="Description" Format="u" Size="20"/>
+      <Field Caption="Cost base" Format="#" Size="1" Type="2" Options="Retail,Cost,Foreign,Average" name="base"/>
+      <Field Caption="Percentage" Size="1" Type="2" name="percentage"/>
+      <Field Caption="Round" Format="###" Size="2" Type="2" name="round"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="price">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="price[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="price[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="price_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

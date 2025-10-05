@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="intrans" System="old" ModifyStamp="0">
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="it_cono" Caption="Comp. No."/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="it_agno" Caption="Agent No."/>
+      <Field Size="8" Dim ="1" name="it_code" Caption="Customer"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="it_inno" Caption="Ins. type"/>
+      <Field Size="4" Type="5" Dim ="1" name="it_date" Caption="Issue date"/>
+      <Field Size="20" Dim ="1" name="it_policy" Caption="Policy No."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="it_refer" Caption="Inv. No."/>
+      <Field Size="8" Dim ="1" name="it_inref" Caption="Ref. No."/>
+      <Field Size="4" Type="5" Dim ="1" name="it_expd" Caption="Expiry date"/>
+      <Field Size="4" Type="5" Dim ="1" name="it_dued" Caption="Due date"/>
+      <Field Size="4" Type="5" Dim ="1" name="it_charge" Caption="Charge date"/>
+      <Field Size="1" Dim ="1" name="it_renew" Caption="Renewal(N) (Y/N)?"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="it_prem" Caption="Premium"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="it_other" Caption="Other"/>
+      <Field Size="60" Dim ="1" name="it_rem1" Caption="Notes"/>
+      <Field Size="60" Dim ="1" name="it_rem2" Caption=""/>
+      <Field Size="8" Dim ="1" name="it_regno" Caption="Reg. No."/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="it_gcomm" Caption="Office"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="it_acomm" Caption="Agent"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="it_mcomm" Caption="Manager"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="it_kcomm" Caption="Marketing"/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="it_loc" Caption="Loc."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="it_journal" Caption="Journal No."/>
+      <Index name="intrans">
+         <IndexEntry name="it_cono"/>
+         <IndexEntry name="it_agno"/>
+         <IndexEntry name="it_code"/>
+         <IndexEntry name="it_inno"/>
+         <IndexEntry name="it_date"/>
+         <IndexEntry name="it_policy"/>
+      </Index>
+   </Table>
+</xml>

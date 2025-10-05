@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="transfers" Dynamic="1" name="Room Transfers" System="hotel">
+      <Field Size="4" Type="2" File="hotel.registration" name="registration" Caption="Registration"/>
+      <Field Size="4" Type="2" File="hotel.room" name="room" Caption="Room"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Type="5" name="time" Caption="Time"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="roomtransfer">
+         <IndexEntry name="registration"/>
+         <IndexEntry name="room"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="roomtransfer[room]">
+         <IndexEntry name="room"/>
+         <IndexEntry name="registration"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+   </Table>
+</xml>

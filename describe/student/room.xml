@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Short="Room" Icon="temple" name="Rooms" System="student">
+      <Field Size="20" ReportWidth="10"/>
+      <Field Size="4" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="room">
+         <IndexEntry name="name"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="room[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

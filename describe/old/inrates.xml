@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="inrates" System="old" ModifyStamp="0">
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="ir_cono" Caption="Comp. No."/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="ir_agno" Caption="Agent No."/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="ir_inno" Caption="Ins. type"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="ir_cocom" Caption="Office (%)"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="ir_agcom" Caption="Agent (%)"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="ir_macom" Caption="Group (%)"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="ir_mkcom" Caption="Marketing (%)"/>
+      <Index name="inrates">
+         <IndexEntry name="ir_cono"/>
+         <IndexEntry name="ir_agno"/>
+         <IndexEntry name="ir_inno"/>
+      </Index>
+   </Table>
+</xml>

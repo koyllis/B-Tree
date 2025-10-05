@@ -1,0 +1,51 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ManualIndex="1" System="accounting" SoftDelete="1" Icon="details" Dynamic="1" Index="recurrd" name="Recurring details" MapRecord="1" Unordered="1">
+      <Field File="accounting.recurring" Size="2" Type="2" name="recurring"/>
+      <Field Caption="Line No." Format="###" Size="2" Type="2" name="line"/>
+      <Field Caption="Ref. No." Size="10" name="reference"/>
+      <Field Caption="Description" Size="50" name="description"/>
+      <Field Caption="Due date" Size="4" Type="5" name="duedate"/>
+      <Field Caption="Chart of accounts" Format="#######" File="accounting.chart" Size="2" Type="2" name="chart"/>
+      <Field Caption="Business associates" Format="#######" File="accounting.people" Size="2" Type="2" name="people"/>
+      <Field Caption="Location" File="accounting.location" Size="1" Type="2" name="location"/>
+      <Field Caption="VAT codes" Format="#######" File="accounting.vat" Size="1" Type="2" name="vat"/>
+      <Field Caption="Currency" Format="#######" File="accounting.currency" Size="1" Type="2" name="currency"/>
+      <Field Caption="Base amount" Total="1" Format="#########.##" Size="8" Type="4" name="system"/>
+      <Field Caption="Amount" Total="1" Format="#########.##" Size="8" Type="4" name="amount"/>
+      <Field Caption="Presented Date" Size="4" Type="5" name="presented" Modify="1"/>
+      <Field Caption="Asset No." Size="4" Type="2" name="number"/>
+      <Field Caption="Office" File="accounting.office" Size="2" Type="2" name="office"/>
+      <Field Caption="Accumulated Depreciation" Size="8" Type="4" name="accdep"/>
+      <Field Caption="Category" File="accounting.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Operation" File="accounting.operation" Size="2" Type="2" name="operation"/>
+      <Field Caption="Channel" File="pos.channel" Size="2" Type="2" name="channel"/>
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="2" Type="2" name="vehicle"/>
+      <Field Caption="Other" Format="#####.##" Size="4" Type="2" name="other"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="recurrd">
+         <IndexEntry name="recurring"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="recurrd[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="recurring"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="recurrd[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="recurring"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="recurrd[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="recurring"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="recurrd[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="recurring"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

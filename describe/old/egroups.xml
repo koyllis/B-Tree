@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="egroups" System="old">
+      <Field Size="1" Format="###" Type="2" name="eg_group" Caption="Group"/>
+      <Field Size="20" Format="u" name="eg_name" Caption="Group name"/>
+      <Field Size="15" name="eg_number" Caption="Related No."/>
+      <Index name="egroups">
+         <IndexEntry name="eg_group"/>
+      </Index>
+   </Table>
+</xml>

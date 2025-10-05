@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="empother" System="old">
+      <Field Size="4" Format="0" Type="2" name="eo_number" Caption="Emp. No."/>
+      <Field Size="6" Format="u" name="eo_lacc" Caption="Loan A/C"/>
+      <Field Size="6" Format="u" name="eo_aacc" Caption="Prov. fund A A/C"/>
+      <Field Size="6" Format="u" name="eo_bacc" Caption="Prov. fund B A/C"/>
+      <Field Size="1" Format="###" Type="2" name="eo_lrateno" Caption="Loan rate no."/>
+      <Field Size="1" Format="###" Type="2" name="eo_frateno" Caption="Fund A rate no."/>
+      <Field Size="1" Format="###" Type="2" name="eo_fbrate" Caption="Fund B rate No."/>
+      <Field Size="4" Type="5" name="eo_datei" Caption="Date in"/>
+      <Field Size="4" Type="5" name="eo_dateo" Caption="Date out"/>
+      <Field Size="2" Format="###,###" Type="2" name="eo_hotel" Caption="Profit share units"/>
+      <Field Size="8" Format="###,###.##" Type="3" name="eo_calc" Caption="Calculation"/>
+      <Index name="empother">
+         <IndexEntry name="eo_number"/>
+      </Index>
+   </Table>
+</xml>

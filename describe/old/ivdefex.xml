@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="ivdefex" System="old">
+      <Field Size="8" Format="u" name="de_code" Caption="Customer"/>
+      <Field Size="3" Format="u" name="de_exp" Caption="Expense"/>
+      <Field Size="1" Format="0" Type="2" name="de_loc" Caption="Loc."/>
+      <Field Size="4" Format="####.##" Type="4" name="de_cost" Caption="Cost"/>
+      <Field Size="4" Format="####.##" Type="4" name="de_recha" Caption="Recharge"/>
+      <Field Format="u" name="de_note1" Caption="Notes"/>
+      <Field Format="u" name="de_note2" Caption=""/>
+      <Field Format="u" name="de_note3" Caption=""/>
+      <Field Format="u" name="de_note4" Caption=""/>
+      <Index name="ivdefex">
+         <IndexEntry name="de_code"/>
+         <IndexEntry name="de_exp"/>
+         <IndexEntry name="de_loc"/>
+      </Index>
+   </Table>
+</xml>

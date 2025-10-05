@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table name="Lab Recordings" Icon="add" System="lab" Unordered="1">
+      <Field Size="4" Type="2" File="lab.transdet" name="transdet" Caption="Transaction Detail"/>
+      <Field Size="4" Type="5" name="datein" Caption="Date In"/>
+      <Field Size="4" Type="5" name="dateout" Caption="Date Out"/>
+      <Field Size="2" Type="2" Format="###" name="colonies" Caption="Presumptive colonies 1"/>
+      <Field Size="2" Type="2" Format="###" name="colonies2" Caption="Presumptive colonies 2"/>
+      <Field Size="2" Type="2" name="batch" Caption="Batch" File="lab.batch"/>
+      <Field Size="2" Type="2" name="incubator" Caption="Incubator" File="pos.style"/>
+      <Field Caption="Observation" Size="1" Type="2" Options="Negative,Positive" name="obs"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="transdetlab">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="datein"/>
+      </Index>
+      <Index name="transdetlab[datein]">
+         <IndexEntry name="datein"/>
+         <IndexEntry name="transdet"/>
+      </Index>
+      <Index name="transdetlab[batch]">
+         <IndexEntry name="batch"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="datein"/>
+      </Index>
+      <Index name="transdetlab[incubator]">
+         <IndexEntry name="incubator"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="datein"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,23 @@
+<xml>
+   <Table name="agputrs" System="old" ModifyStamp="0">
+      <Field Caption="DATE" Size="4" Type="5" name="pt_date"/>
+      <Field Caption="REFER" Format="######" Size="4" Type="2" name="pt_refer"/>
+      <Field Caption="SUPPLIER" Format="####" Size="2" Type="2" name="pt_suno"/>
+      <Field Caption="LOC" Size="1" Type="2" name="pt_loc"/>
+      <Field Caption="TOTAL" Format="####.##" Size="4" Type="4" name="pt_total"/>
+      <Field Caption="COMMIS" Format="####.##" Size="4" Type="4" name="pt_comm"/>
+      <Field Caption="MUNIC" Format="####.##" Size="4" Type="4" name="pt_muni"/>
+      <Field Caption="VAT" Format="####.##" Size="4" Type="4" name="pt_vat"/>
+      <Field Caption="SPECIAL" Format="####.##" Size="4" Type="4" name="pt_spcl"/>
+      <Field Caption="LAST" Size="4" Type="5" name="pt_last"/>
+      <Field Caption="CANCEL" Size="4" Type="5" name="pt_cancel"/>
+      <Field Caption="PAID" Format="########" Size="4" Type="2" name="pt_paid"/>
+      <Field Caption="JOURNAL" Format="######" Size="4" Type="2" name="pt_journal"/>
+      <Index name="agputrs">
+         <IndexEntry name="pt_date"/>
+         <IndexEntry name="pt_refer"/>
+         <IndexEntry name="pt_suno"/>
+         <IndexEntry name="pt_loc"/>
+      </Index>
+   </Table>
+</xml>

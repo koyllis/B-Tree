@@ -1,0 +1,26 @@
+<xml>
+   <Table name="agpudet" System="old" ModifyStamp="0">
+      <Field Caption="DATE" Size="4" Type="5" name="pd_date"/>
+      <Field Caption="REFER" Format="######" Size="4" Type="2" name="pd_refer"/>
+      <Field Caption="LOC" Size="1" Type="2" name="pd_loc"/>
+      <Field Caption="PARAL" Size="4" Type="5" name="pd_sdat"/>
+      <Field Caption="ITEM" Format="####" Size="2" Type="2" name="pd_itno"/>
+      <Field Caption="QUAL" Format="#" Size="1" Type="2" name="pd_qual"/>
+      <Field Caption="PRICE" Format="###.##" Size="4" Type="4" name="pd_price"/>
+      <Field Caption="CASES" Format="###" Size="2" Type="2" name="pd_cases"/>
+      <Field Caption="QUANT" Format="###.##" Size="4" Type="4" name="pd_quant"/>
+      <Field Caption="TOTAL" Format="###.##" Size="4" Type="4" name="pd_total"/>
+      <Field Caption="STOCK" Size="4" Type="5" name="pd_stock"/>
+      <Field Caption="AMEND" Size="8" name="pd_amend"/>
+      <Field Caption="VAT" Size="3" name="pd_vat"/>
+      <Index name="agpudet">
+         <IndexEntry name="pd_date"/>
+         <IndexEntry name="pd_refer"/>
+         <IndexEntry name="pd_loc"/>
+         <IndexEntry name="pd_sdat"/>
+         <IndexEntry name="pd_itno"/>
+         <IndexEntry name="pd_qual"/>
+         <IndexEntry name="pd_price"/>
+      </Index>
+   </Table>
+</xml>

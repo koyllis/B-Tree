@@ -1,0 +1,53 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" SoftDelete="1" CanDelete="0" name="Rentals">
+      <Field Caption="Invoice date" Size="4" Type="5" name="date"/>
+      <Field Caption="Reference No." Size="4" Type="2" AutoCounter="1" Strict="1" Modify="1" name="reference"/>
+      <Field Caption="Agreement date" Size="4" Force="1" Type="5" name="agreement"/>
+      <Field Caption="Agreement No." Size="30" Force="1" Type="1" name="agrno"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Project" File="accounting.location" Size="2" Force="1" Type="2" name="location"/>
+      <Field Caption="Item" File="pos.item" Size="4" Force="1" Type="2" name="item"/>
+      <Field Caption="Quantity" Size="8" Type="3" name="quantity" Total="1"/>
+      <Field Caption="Price" Format="####.##" Size="4" Force="1" Type="4" name="price"/>
+      <Field Caption="Setup cost" Size="4" Type="4" name="setup"/>
+      <Field Caption="Setup item" File="pos.item" Size="4" Type="2" name="setup_item"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="SkipAutoInvoice" name="option" Modify="1"/>
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Terminated" Size="4" Type="5" name="terminated" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="rental">
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="rental[reference]">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="rental[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="rental[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="rental[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="rental[setup_item]">
+         <IndexEntry name="setup_item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="rental[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

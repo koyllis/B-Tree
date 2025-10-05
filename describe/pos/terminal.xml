@@ -1,0 +1,74 @@
+<xml>
+   <Table CanModify="0" System="pos" SoftDelete="1" Icon="piggy" Export="date" Dynamic="1" PDA="4" CanDelete="0" name="Cashier Terminal">
+      <Field Caption="Date" Size="4" Type="5" Option="" name="date"/>
+      <Field Caption="Location" File="system.location" Size="1" Type="2" Option="" name="location"/>
+      <Field Caption="User" File="system.user" Size="2" Type="2" Option="" name="user"/>
+      <Field Caption="Open Time" Format="HH:mm" Size="2" Type="5" Option="" name="time"/>
+      <Field Caption="Open Amount" Total="1" Format="######.##" Size="4" Type="8" Option="" name="open"/>
+      <Field Caption="Close Date" Size="4" Type="5" Option="" name="close_date"/>
+      <Field Caption="Close Time" Format="HH:mm" Size="2" Type="5" Option="" name="close_time"/>
+      <Field Caption="Close Amount" Total="1" Format="######.##" Size="4" Type="8" Option="" name="close"/>
+      <Field Caption="Close Refer" Format="#########" Size="4" Type="2" Option="" name="close_refer"/>
+      <Field Caption="Cash" Format="#####.##" Size="4" Type="8" Option="" name="cash"/>
+      <Field Caption="Drawer Counter" Format="######" Size="4" Type="2" Option="" name="drawer"/>
+      <Field Caption="Z number" Format="######" Size="4" Type="2" AutoCounter="1" Option="" name="z"/>
+      <Field Caption="Journal" File="accounting.journal" Importable="0" Size="4" Type="2" Option="" name="journal" Immutable="1"/>
+      <Field Caption="Employee" File="payroll.employee" Size="2" Type="2" Option="" name="employee"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+
+      <Index name="terminal">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index CRC64="1" name="terminal[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index CRC64="1" name="terminal[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index CRC64="1" name="terminal[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index CRC64="1" name="terminal_close_date">
+         <IndexEntry name="close_date"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index CRC64="1" name="terminal_user">
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index CRC64="1" name="terminal_userdate">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="time"/>
+      </Index>
+
+      <Index name="terminal_z">
+         <IndexEntry name="z"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="time"/>
+      </Index>
+   </Table>
+</xml>

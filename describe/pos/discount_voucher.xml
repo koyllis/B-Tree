@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="discount_voucher">
+      <Field Caption="Sales total" Format="######.##" Size="4" Type="4" name="total"/>
+      <Field Caption="Normal discount%" Format="###.##" Size="8" Type="3" name="normal"/>
+      <Field Caption="Sales discount%" Format="###.##" Size="8" Type="3" name="sales"/>
+      <Field Caption="Normal discount amount" Format="###.##" Size="4" Type="4" name="normal_amount"/>
+      <Field Caption="Sales discount amount" Format="###.##" Size="4" Type="4" name="sales_amount"/>
+      <Field Caption="Valid for ? days" Format="###" Size="2" Type="2" name="days"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="discount_voucher">
+         <IndexEntry name="total"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,52 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" SoftDelete="1" Icon="money" Dynamic="1" CanDelete="0" name="Old Claims">
+      <Field Caption="File No." Format="####-####" Size="4" Type="2" StrictOnModify="1" AutoCounter="1" name="reference"/>
+      <Field Caption="Payment date" Size="4" Type="5" name="paydate"/>
+      <Field Caption="Ident. No." Size="10" name="idno"/>
+      <Field Caption="S.I. No." Size="10" name="sino"/>
+      <Field Size="20"/>
+      <Field Caption="Surname" Size="20" name="surname"/>
+      <Field Caption="Member link" File="life.member" Size="4" Type="2" name="member"/>
+      <Field Caption="Contract" Size="10" name="contract"/>
+      <Field Caption="Cover" Size="12" name="plan"/>
+      <Field Caption="Plan" Size="5" name="contractplan"/>
+      <Field Caption="Event date" Size="4" Type="5" name="event"/>
+      <Field Caption="Entry date" Size="4" Type="5" name="entry"/>
+      <Field Caption="Reject date" Size="4" Type="5" name="reject"/>
+      <Field Caption="Notice date" Size="4" Type="5" name="date"/>
+      <Field Caption="Amount" Total="1" Format="######.##" Size="8" Type="4" name="amount"/>
+      <Field Caption="Original amount" Total="1" Format="######.##" Size="8" Type="4" StrictOnModify="1" name="original"/>
+      <Field Caption="Payment" Total="1" Format="######.##" Size="8" Type="4" name="payment"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="claim_old">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="paydate"/>
+      </Index>
+      <Index name="claim_old[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="paydate"/>
+      </Index>
+      <Index name="claim_old[member]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="paydate"/>
+      </Index>
+      <Index name="claim_old[plan]">
+         <IndexEntry name="plan"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="paydate"/>
+      </Index>
+      <Index name="claim_old_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="paydate"/>
+      </Index>
+      <Index name="claim_old_idno">
+         <IndexEntry name="idno"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="paydate"/>
+      </Index>
+   </Table>
+</xml>

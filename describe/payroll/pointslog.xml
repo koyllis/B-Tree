@@ -1,0 +1,34 @@
+<xml>
+   <Table System="payroll" name="Points Log">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" Force="1" name="employee"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Action" File="payroll.action" Size="2" Type="2" Force="1" name="action"/>
+      <Field Strict="1" Caption="Reference" Size="4" Type="2" AutoCounter="1" name="refer"/>
+      <Field Caption="Points" Total="1" Format="####" Size="2" Type="2" Force="1" name="points"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pointslog">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="action"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointslog[action]">
+         <IndexEntry name="action"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointslog[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="action"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="pointslog[refer]">
+         <IndexEntry name="refer"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="action"/>
+      </Index>
+   </Table>
+</xml>

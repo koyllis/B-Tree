@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='windows-1253' standalone='yes'?>
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="trtrans" System="old">
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" Dim ="1" name="tt_date" Caption="†‹„‹."/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="tt_refer" Caption="A."/>
+      <Field Size="1" Format="00" Type="2" Dim ="1" name="tt_loc" Caption="€."/>
+      <Field Size="4" Format="#####.##" Type="4" Dim ="1" name="tt_gross" Caption="‰"/>
+      <Field Size="4" Format="#####.##" Type="4" Dim ="1" name="tt_disc" Caption="„‰’—‘†"/>
+      <Field Size="4" Format="#####.##" Type="4" Dim ="1" name="tt_vat" Caption="”..€."/>
+      <Field Size="4" Format="#####.##" Type="4" Dim ="1" name="tt_cost" Caption="‰‘’‘"/>
+      <Field Size="4" Format="#####.##" Type="4" Dim ="1" name="tt_change" Caption="„‘’€"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="tt_rec" Caption="„‘€†"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" Dim ="1" name="tt_rdate" Caption="†‹„‹†€"/>
+      <Field Size="2" Format="##:##" Type="2" Dim ="1" name="tt_time" Caption="—€"/>
+      <Field Size="2" Format="######" Type="2" Dim ="1" name="tt_ttyno" Caption="’„‹."/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="tt_cash" Caption="’€‹„€‘"/>
+      <Field Size="4" Format="00000000" Type="2" Dim ="1" name="tt_no" Caption="„€’†‘"/>
+      <Field Size="4" Format="00000000" Type="2" Dim ="1" name="tt_agent" Caption="ANTIP."/>
+      <Field Size="2" Format="##:##" Type="2" Dim ="1" name="tt_cancel" Caption="€‰“—‘†"/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="tt_journal" Caption="€. „‚‚."/>
+      <Field Size="2" Format="##:##" Type="2" Dim ="1" name="tt_amend" Caption="EEMBA‘H"/>
+      <Field Size="2" Format="####" Type="2" Dim ="1" name="tt_points" Caption="BA‡MOI"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="tt_manager" Caption="EEMBA‘H"/>
+      <Field Size="1" Format="###" Type="2" Dim ="1" name="tt_issue" Caption="EKƒOTH‘"/>
+      <Field Size="4" Format="######" Type="2" Dim ="1" name="tt_relate" Caption="‘Y‘XET."/>
+      <Field Size="6" Dim ="1" name="tt_future" Caption="Future"/>
+      <Index name="trtrans">
+         <IndexEntry name="tt_date"/>
+         <IndexEntry name="tt_refer"/>
+         <IndexEntry name="tt_loc"/>
+      </Index>
+   </Table>
+</xml>

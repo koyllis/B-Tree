@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agquali" System="old" ModifyStamp="0">
+      <Field Size="1" Type="2" Dim ="1" name="q_qual" Caption="No."/>
+      <Field Size="2" Dim ="1" name="q_desc" Caption="Name"/>
+      <Index name="agquali">
+         <IndexEntry name="q_qual"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,11 @@
+<xml>
+   <Table System="old" name="exrates" ModifyStamp="0">
+      <Field Caption="Country code" Format="u" Size="3" name="r_country"/>
+      <Field Caption="Date" Size="4" Type="5" name="r_date"/>
+      <Field Caption="Exchange rate" Format="###,###.####" Size="8" Type="3" name="r_exch"/>
+      <Index name="exrates">
+         <IndexEntry name="r_country"/>
+         <IndexEntry name="r_date"/>
+      </Index>
+   </Table>
+</xml>

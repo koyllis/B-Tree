@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="system" name="SMS Schedule">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Time" Size="2" Type="5" Force="1" name="time"/>
+      <Field Caption="SMS body" File="system.smsbody" Size="2" Type="2" Force="1" name="smsbody"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Category" File="accounting.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Send" Strict="1" Size="8" Type="5" name="send" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="smssched">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+   </Table>
+</xml>

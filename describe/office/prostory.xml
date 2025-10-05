@@ -1,0 +1,17 @@
+<xml>
+	<Table name="Stories" System="office" CreateStamp="1">
+	  <Field Caption="Story ID" name="number" Size="4" Type="2" AutoCounter="1" Strict="1" Modify="1"/>
+	  <Field Caption="Property" name="property" Size="4" Type="2" File="office.property"/>
+	  <Field Caption="Expires At" name="expire" Size="4" Type="5"/>
+	  <Field Caption="Featured Priority" name="featured_priority" Size="2" Type="2"/>
+	  <Field Strict="1" Hide="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+	  <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+	</Table>
+    <Index name="prostory">
+      <IndexEntry name="number"/>
+    </Index>
+	<Index name="prostory[property]">
+	  <IndexEntry name="property"/>
+	  <IndexEntry name="number"/>
+	</Index>
+</xml>

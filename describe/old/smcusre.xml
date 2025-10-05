@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="smcusre" System="old" ModifyStamp="0">
+      <Field Caption="Date" Size="4" Type="5" name="cr_date"/>
+      <Field Caption="Refer" Size="4" Type="2" name="cr_refer"/>
+      <Field Caption="Loc" Size="1" Type="2" name="cr_loc"/>
+      <Field Caption="No" Size="4" Type="2" name="cr_no"/>
+      <Field Caption="Amount" Size="4" Type="4" name="cr_amount"/>
+      <Field Caption="Discount" Size="4" Type="4" name="cr_disc"/>
+      <Field Caption="Cashier" Size="1" Type="2" name="cr_cash"/>
+      <Field Caption="Terminal" Size="4" Type="2" name="cr_ttyno"/>
+      <Field Caption="Time" Size="4" Type="4" name="cr_time"/>
+      <Field Caption="Cancel" Size="4" Type="4" name="cr_cancel"/>
+      <Field Caption="Due date" Size="4" Type="5" name="cr_duedate"/>
+      <Field Caption="Cheque" Size="10" name="cr_cheque"/>
+      <Field Caption="User" Size="8" name="cr_user"/>
+      <Field Caption="Journal" Format="#######" Size="4" Type="2" name="cr_journal"/>
+      <Index name="smcusre">
+         <IndexEntry name="cr_date"/>
+         <IndexEntry name="cr_refer"/>
+         <IndexEntry name="cr_loc"/>
+         <IndexEntry name="cr_no"/>
+      </Index>
+   </Table>
+</xml>

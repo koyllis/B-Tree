@@ -1,0 +1,16 @@
+<xml>
+   <Table System="pos" Icon="application" name="Model Details">
+      <Field Caption="Model" File="pos.eprel_item" Size="4" Type="2" name="eprel_item"/>
+      <Field Caption="Tag" File="pos.eprel_tag" Size="4" Type="2" name="tag"/>
+      <Field Caption="Value" name="value"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="eprel_detail">
+         <IndexEntry name="eprel_item"/>
+         <IndexEntry name="tag"/>
+      </Index>
+      <Index name="eprel_detail[tag]">
+         <IndexEntry name="tag"/>
+         <IndexEntry name="eprel_item"/>
+      </Index>
+   </Table>
+</xml>

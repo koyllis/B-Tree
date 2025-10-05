@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Alternate Codes">
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Code" Size="20" name="code"/>
+      <Field Caption="Item " File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="alternate">
+         <IndexEntry name="location"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="alternate[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

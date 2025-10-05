@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="application" System="legal">
+      <Field Size="4" Type="2" File="legal.mainfile" name="mainfile" Caption="File"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="40" name="note" Caption="Note"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="application">
+         <IndexEntry name="mainfile"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

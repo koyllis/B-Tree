@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="system" name="user_report" Root="1" Unordered="1">
+      <Field Caption="User" File="system.user" Size="4" Type="2" name="user"/>
+      <Field Caption="Report" File="system.report" Size="4" Type="2" name="report"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+
+      <Index name="user_report">
+         <IndexEntry name="user"/>
+         <IndexEntry name="report"/>
+      </Index>
+
+      <Index name="user_report[report]">
+         <IndexEntry name="report"/>
+         <IndexEntry name="user"/>
+      </Index>
+
+   </Table>
+</xml>

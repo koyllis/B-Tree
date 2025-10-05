@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="payroll" System="old">
+      <Field Size="4" Type="5" name="pr_date" Caption="Period"/>
+      <Field Size="4" Type="2" name="pr_number" Caption="Emp. No."/>
+      <Field Size="4" Format="##,###.##" Type="4" name="pr_adds" Caption="Earnings"/>
+      <Field Size="4" Format="##,###.##" Type="4" name="pr_deds" Caption="Deductions"/>
+      <Field Size="4" Format="##,###.##" Type="4" name="pr_salary" Caption="Net salary"/>
+      <Field Size="4" Format="##,###.##" Type="4" name="pr_cont" Caption="Contributions"/>
+      <Field Size="4" Format="##,###.##" Type="4" name="pr_insear" Caption="Ins. earnings"/>
+      <Field Size="4" Format="##,###.##" Type="4" name="pr_dedear" Caption="Ded. earnings"/>
+      <Field Size="8" Format="###.##" Type="3" name="pr_hours" Caption="Normal"/>
+      <Field Size="8" Format="###.##" Type="3" name="pr_offhr" Caption="Off And Paid"/>
+      <Field Size="8" Format="###.##" Type="3" name="pr_over" Caption="Overtime"/>
+      <Field Size="8" Format="###.##" Type="3" name="pr_shift" Caption="Shift"/>
+      <Field Size="8" Format="###.##" Type="3" name="pr_absent" Caption="Absent"/>
+      <Field Size="8" name="pr_cheque" Caption="Refer."/>
+      <Field Size="1" name="pr_period" Caption="W/B/M"/>
+      <Field Size="1" Format="###" Type="2" name="pr_dptno" Caption="Dept. No."/>
+      <Field Size="1" Format="###" Type="2" name="pr_group" Caption="Group No."/>
+      <Field Size="4" Type="5" name="pr_posted" Caption="Closed on"/>
+      <Field Size="4" Format="######" Type="2" name="pr_pfsjour" Caption="Prov. Fund"/>
+      <Field Size="4" Format="######" Type="2" name="pr_chqjour" Caption="Cheque jour."/>
+      <Field Size="4" Format="######" Type="2" name="pr_journal" Caption="Journal No."/>
+      <Field Size="20" name="pr_future" Caption="Future"/>
+      <Index name="payroll">
+         <IndexEntry name="pr_date"/>
+         <IndexEntry name="pr_number"/>
+      </Index>
+   </Table>
+</xml>

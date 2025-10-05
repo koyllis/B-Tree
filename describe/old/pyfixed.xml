@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="pyfixed" System="old">
+      <Field Size="4" Format="0" Type="2" name="fx_number" Caption="Emp. No."/>
+      <Field Size="2" Format="####" Type="2" name="fx_year" Caption="Year"/>
+      <Field Size="1" Format="###" Type="2" name="fx_rateno" Caption="Rate No."/>
+      <Field Size="4" Format="####.##" Type="4" name="fx_amount" Caption="Amount"/>
+      <Field Size="4" Format="####.##" Type="4" name="fx_balance" Caption="Balance"/>
+      <Index name="pyfixed">
+         <IndexEntry name="fx_number"/>
+         <IndexEntry name="fx_year"/>
+         <IndexEntry name="fx_rateno"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,43 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" SoftDelete="1" Icon="gear" Dynamic="1" name="Offers">
+      <Field Caption="Offer Item" File="pos.item" Size="2" Type="2" name="offer"/>
+      <Field Caption="Sequence" Size="2" Type="2" name="seq"/>
+      <Field Caption="Item" File="pos.item" Size="2" Type="2" name="item"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" name="division"/>
+      <Field Caption="Day" Format="b" Size="1" Options="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" Type="2" name="day"/>
+      <Field Caption="Discount" Format="###.##" Size="2" Type="2" name="discount"/>
+      <Field Caption="Discount is amount" Format="b" Size="1" Type="2" name="discount_amount"/>
+      <Field Caption="Occurences" Format="##" Size="1" Type="2" name="occurence"/>
+      <Field Caption="Price" Format="####.##" Size="4" Type="8" name="price"/>
+      <Field Caption="Additive" Format="##" Size="1" Type="2" name="additive"/>
+      <Field Caption="Group" Size="1" Type="2" name="group"/>
+      <Field Caption="Option" Format="b" Size="2" Options="ForcePrice,Manual,Primary,Illegal,Force,InheritPrice,MinimumOccurence,ZeroMinimum,Optional,DiscountAll" Type="2" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="offer">
+         <IndexEntry name="offer"/>
+         <IndexEntry name="seq"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="day"/>
+      </Index>
+      <Index name="offer[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="offer"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="offer[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="offer"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="offer[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="offer"/>
+      </Index>
+   </Table>
+</xml>

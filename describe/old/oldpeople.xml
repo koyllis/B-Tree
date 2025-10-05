@@ -1,0 +1,44 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="oldpeople" System="old">
+      <Field Format="u" name="ba_name"/>
+      <Field Size="8" Format="u" name="ba_code" Caption="Code"/>
+      <Field Format="u" name="ba_add1" Caption="Address"/>
+      <Field Format="u" name="ba_add2" Caption=""/>
+      <Field Format="u" name="ba_add3" Caption=""/>
+      <Field Format="u" name="ba_contact" Caption="Contact"/>
+      <Field Size="15" Format="u" name="ba_phone" Caption="Tel. (1)"/>
+      <Field Size="15" Format="u" name="ba_phone1" Caption="Tel. (2)"/>
+      <Field Size="15" Format="u" name="ba_fax" Caption="Fax"/>
+      <Field Size="10" Format="u" name="ba_tic" Caption="T.I.C."/>
+      <Field Size="5" name="ba_future2" Caption="Future"/>
+      <Field Size="3" Format="u" name="ba_country" Caption="Area"/>
+      <Field Size="2" Format="u" name="ba_group" Caption="Group"/>
+      <Field Size="1" Format="###" Type="2" name="ba_terms" Caption="Terms"/>
+      <Field Size="3" name="ba_future1" Caption="Future"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ba_onacc" Caption="Balance"/>
+      <Field Size="6" Format="u" name="ba_account" Caption="Account"/>
+      <Field Size="3" Format="u" name="ba_curr" Caption="Currency"/>
+      <Field Size="4" Format="#######.##" Type="4" name="ba_credit" Caption="Credit limit"/>
+      <Field Size="2" Format="###" Type="2" name="ba_crdage" Caption="Credit age"/>
+      <Field Size="2" Format="###" Type="2" name="ba_age" Caption="Age of account"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="ba_exvat" Caption="Exclude VAT(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="ba_state" Caption="Statement(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="ba_label" Caption="Label(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,R,C,A" Format="u" name="ba_crcus" Caption="cRedit/Cash/All(A) (R/C/A)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="ba_deact" Caption="Deactivated(N) (Y/N)?"/>
+      <Field Size="1" Options="D,C" Format="u" name="ba_dc" Caption="Debtor/Creditor"/>
+      <Field Size="2" Format="u" name="ba_pcode" Caption="Price code"/>
+      <Field Size="8" Format="u" name="ba_altc" Caption="Alternate"/>
+      <Field Size="8" Format="u" name="ba_accl" Caption="Account link"/>
+      <Field Size="1" Format="###" Type="2" name="ba_discode" Caption="Discount matrix horizontal coordinate"/>
+      <Field Size="1" Format="###" Type="2" name="ba_comcode" Caption="Commission matrix horizontal coordinate"/>
+      <Index name="oldpeople">
+         <IndexEntry name="ba_name"/>
+         <IndexEntry name="ba_code"/>
+      </Index>
+      <Index name="people">
+         <IndexEntry name="ba_name"/>
+         <IndexEntry name="ba_code"/>
+      </Index>
+   </Table>
+</xml>

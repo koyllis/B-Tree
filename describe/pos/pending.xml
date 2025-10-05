@@ -1,0 +1,24 @@
+<xml>
+   <Table System="pos" name="Purchasing Pending " CreateStamp="1">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Reference" Size="4" Force="1" Type="2" name="refer"/>
+      <Field Caption="Item" File="pos.item" Size="4" Force="1" Type="2" name="item"/>
+      <Field Caption="Quantity" Format="quantity" Size="8" Force="1" Type="3" name="quantity"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Strict="1" Caption="Total" Format="price" Size="8" Type="3" name="total" Modify="1"/>
+      <Field Caption="Executed on" Size="4" Type="5" name="exec" Modify="1"/>
+      <Field Caption="Reference" Size="4" Type="2" name="execrefer" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="pending">
+         <IndexEntry name="people"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="pending[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

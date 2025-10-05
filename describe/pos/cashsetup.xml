@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="temple" name="Location Machines" System="pos">
+      <Field Size="2" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="2" Type="2" File="office.machine" name="machine" Caption="Machine"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="cashsetup">
+         <IndexEntry name="location"/>
+         <IndexEntry name="machine"/>
+      </Index>
+      <Index name="cashsetup[machine]">
+         <IndexEntry name="machine"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

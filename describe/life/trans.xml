@@ -1,0 +1,72 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table CanModify="0" DeleteChildren="1" System="life" SoftDelete="1" Icon="system menu" Dynamic="1" CanDelete="0" name="Transactions" FavoriteMatch="life|transdet">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Document" File="accounting.document" Size="2" Force="1" Type="2" name="document"/>
+      <Field Strict="1" Caption="Number" Format="######" Size="4" PersistentReport="1" Type="2" name="number"/>
+      <Field Strict="1" Caption="Time" Size="2" Auto="1" Type="5" name="time"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Force="1" Type="2" name="location"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" Tip="1" name="people"/>
+      <Field Caption="Contract" File="life.contract" Size="2" PersistentReport="1" Force="1" Type="2" name="contract"/>
+      <Field Caption="Type" Size="1" Options="Standard,Loans" Type="2" name="type"/>
+      <Field Caption="From date" Size="4" Type="5" name="from"/>
+      <Field Caption="To date" Size="4" Type="5" name="to"/>
+      <Field Strict="1" Caption="Yearly" Format="b" Size="1" Type="2" name="yearly"/>
+      <Field Caption="User" File="system.user" Size="2" Auto="1" Type="2" name="user"/>
+      <Field Strict="1" Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal"/>
+      <Field Caption="LAPC date" Strict="1" Size="4" Type="5" name="lapc_date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index CRC64="1" name="trans">
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="trans[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="trans[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="trans[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="trans[lapc_date]">
+         <IndexEntry name="lapc_date"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="trans[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="trans[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="trans[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index CRC64="1" name="trans_number">
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+      </Index>
+   </Table>
+</xml>

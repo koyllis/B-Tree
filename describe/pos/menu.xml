@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Common="1" name="Menus" System="pos" Dataset="1">
+      <Field/>
+      <Field Size="1" Format="##" Type="2" name="best" Caption="Best"/>
+      <Field Size="1" Format="##" Type="2" name="days" Caption="Days back"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="menu">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

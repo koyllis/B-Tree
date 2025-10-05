@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="old" name="tsyinte" ModifyStamp="0">
+      <Field Caption="Month" Format="##-####" Size="4" Type="2" name="yi_month"/>
+      <Field Caption="Reference" Size="8" name="yi_refer"/>
+      <Field Caption="Agr. No." Size="10" name="yi_agrno"/>
+      <Field Caption="Total" Format="####.##" Size="4" Type="4" name="yi_total"/>
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="yi_date"/>
+      <Field Caption="Journal" Format="######" Size="4" Type="2" name="yi_journal"/>
+      <Index name="tsyinte">
+         <IndexEntry name="yi_month"/>
+         <IndexEntry name="yi_refer"/>
+         <IndexEntry name="yi_agrno"/>
+      </Index>
+      <Index name="tsyinte_yi_date">
+         <IndexEntry name="yi_date"/>
+         <IndexEntry name="yi_month"/>
+         <IndexEntry name="yi_refer"/>
+         <IndexEntry name="yi_agrno"/>
+      </Index>
+   </Table>
+</xml>

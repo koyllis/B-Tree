@@ -1,0 +1,19 @@
+<xml>
+   <Table System="pos" name="itemsummarysize">
+      <Field Caption="Item summary" File="pos.itemsummary" Size="4" Type="2" name="itemsummary"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Purchase,Sale" name="type"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Quantity" Total="1" Format="#####" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemsummarysize">
+         <IndexEntry name="itemsummary"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="itemsummarysize[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="itemsummary"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

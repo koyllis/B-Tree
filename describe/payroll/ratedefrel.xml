@@ -1,0 +1,16 @@
+<xml>
+   <Table System="payroll" name="Definition Relations">
+      <Field Caption="Primary definition" File="payroll.ratedef" Size="2" Type="2" name="ratedef"/>
+      <Field Caption="Related" File="payroll.ratedef" Size="2" Type="2" name="ratedef_child"/>
+      <Field Caption="Function" Size="1" Options="Add,Deduct" Type="2" name="function"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="ratedefrel">
+         <IndexEntry name="ratedef"/>
+         <IndexEntry name="ratedef_child"/>
+      </Index>
+      <Index name="ratedefrel[ratedef_child]">
+         <IndexEntry name="ratedef_child"/>
+         <IndexEntry name="ratedef"/>
+      </Index>
+   </Table>
+</xml>

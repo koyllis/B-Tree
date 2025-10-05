@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Report Delivery" CanDelete="0" CanModify="0">
+      <Field Caption="Reference" Size="4" Type="2" name="number" AutoCounter="1" Strict="1" Modify="1"/>
+      <Field Caption="From date" Size="4" Type="5" name="frdate"/>
+      <Field Caption="To date" Size="4" Type="5" name="todate"/>
+      <Field Caption="Agent" File="accounting.people" Size="4" Type="2" name="agent"/>
+      <Field Caption="Temperature" Size="5" name="temperature"/>
+      <Field Caption="Contact" Size="40" name="contact"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="delivery">
+         <IndexEntry name="number"/>
+      </Index>
+     <Index name="delivery[frdate]">
+         <IndexEntry name="frdate"/>
+         <IndexEntry name="number"/>
+      </Index>
+     <Index name="delivery[agent]">
+         <IndexEntry name="agent"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

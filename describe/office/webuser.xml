@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="office" name="Web Users" SoftDelete="1" CreateStamp="1">
+      <Field name="email" Caption="Email" Type="1" Size="40"/>
+      <Field name="surname" Caption="Surname" Type="1" Size="20"/>
+      <Field name="name" Caption="Name" Type="1" Size="20"/>
+      <Field name="business" Caption="Business name" Type="1" Size="40"/>
+      <Field name="mobile" Caption="Mobile" Type="1" Size="20"/>
+      <Field Caption="Updates" Format="b" Size="1" Type="2" name="newsletter" Options="ProductUpdates,WeeklyNewsletters"/>
+      <Field name="language" Caption="Language" Type="2" Size="1" Options="English,Greek"/>
+      <Field name="password" Caption="Password" Format="e" Type="1" Size="20"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+
+      <Index name="webuser">
+         <IndexEntry name="email"/>
+      </Index>
+
+      <Index name="webuser[surname]">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="email"/>
+      </Index>
+
+      <Index name="webuser[mobile]">
+         <IndexEntry name="mobile"/>
+      </Index>
+
+   </Table>
+</xml>

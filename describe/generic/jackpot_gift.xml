@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="jackpot_gift">
+      <Field Size="50"/>
+      <Field Caption="Daily" Size="2" Type="2" name="count"/>
+      <Field Caption="Maxiumum" Size="2" Type="2" name="maximum"/>
+      <Field Caption="Used" Size="2" Type="2" name="used"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="jackpot_gift">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

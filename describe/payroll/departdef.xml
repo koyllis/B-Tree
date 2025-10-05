@@ -1,0 +1,15 @@
+<xml>
+   <Table System="payroll" name="Department Relations">
+      <Field Caption="Department" File="payroll.timedef" Size="2" Type="2" name="timedef"/>
+      <Field Caption="Rate definition" File="payroll.ratedef" Size="2" Type="2" name="ratedef"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="departdef">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="ratedef"/>
+      </Index>
+      <Index name="departdef[ratedef]">
+         <IndexEntry name="ratedef"/>
+         <IndexEntry name="timedef"/>
+      </Index>
+   </Table>
+</xml>

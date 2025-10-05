@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="accounting" name="Delivery Maximum">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Route" File="accounting.route" Size="2" Type="2" name="route"/>
+      <Field Caption="Maximum" Format="###" Size="2" Type="2" name="maximum"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="deliverymax">
+         <IndexEntry name="date"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="deliverymax[route]">
+         <IndexEntry name="route"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

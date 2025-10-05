@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="generic">
+      <Field Size="4" Format="#######" Type="2" name="v_code" Caption="Code"/>
+      <Field Size="20" name="v_name"/>
+      <Field Size="20" name="v_sname" Caption="Surname"/>
+      <Field Size="25" name="v_occup" Caption="Occupation"/>
+      <Field Size="1" name="v_area" Caption="Area"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="visitor">
+         <IndexEntry name="v_code"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,19 @@
+<xml>
+	<Table name="Roommate Matches" System="office">
+	  <Field Caption="Match ID" name="number" Size="4" Type="2" AutoCounter="1" Strict="1" Modify="1"/>
+	  <Field Caption="User" name="user" Size="4" Type="2" File="office.prouser"/>
+	  <Field Caption="Property" name="property" Size="4" Type="2" File="office.property"/>
+	  <Field Caption="Match Score" name="matchScore" Size="4" Type="3"/>
+	  <Field Caption="Status" name="status" Size="1" Type="2" Options="New,Accepted,Rejected,Contacted"/>
+	  <Field Caption="Seen" name="seen" Size="8" Type="5"/>
+	  <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+	</Table>
+	<!-- Indexes -->
+	<Index name="promatch">
+	  <IndexEntry name="number"/>
+	</Index>
+	<Index name="promatch[user]">
+	  <IndexEntry name="user"/>
+	  <IndexEntry name="number"/>
+	</Index>
+</xml>

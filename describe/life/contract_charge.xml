@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="Contract Charge">
+      <Field Caption="Contract" File="life.contract" Size="2" Type="2" name="contract"/>
+      <Field Caption="Amount" Format="#######.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Charge" Format="##.##" Size="4" Type="4" name="charge"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="contract_charge">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="amount"/>
+      </Index>
+   </Table>
+</xml>

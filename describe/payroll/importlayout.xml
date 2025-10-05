@@ -1,0 +1,13 @@
+<xml>
+   <Table System="payroll" name="Import Layouts">
+      <Field/>
+      <Field Caption="Brand" Size="2" Type="2" Options="Generic,Finiris,Sebury,Virdi,Zks,Inner,Granding,Finiris2,Finiris3" name="brand"/>
+      <Field Caption="File name prefix" Size="10" name="prefix"/>
+      <Field Caption="File extention" Size="10" name="extention"/>
+      <Field Caption="Fields separator" Size="1" Options="Comma,Semicolon,Tab,Space" Type="2" name="separator"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="importlayout">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

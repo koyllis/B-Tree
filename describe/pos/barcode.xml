@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" Icon="dirtree3" Export="@modify_stamp" Dynamic="1" name="Barcodes" PDA="1">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Barcode" Size="40" name="barcode"/>
+      <Field Caption="Unit" Format="###" Size="2" Type="2" name="conversion"/>
+      <Field Size="60"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Cost" Format="price" Size="8" Type="3" name="cost"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+
+      <Index name="barcode" Unordered="1">
+         <IndexEntry name="item"/>
+         <IndexEntry name="barcode"/>
+      </Index>
+
+      <Index name="barcode_barcode" Unordered="1">
+         <IndexEntry name="barcode"/>
+         <IndexEntry name="item"/>
+      </Index>
+
+      <Index name="barcode_barcode_ordered">
+         <IndexEntry name="barcode"/>
+         <IndexEntry name="item"/>
+      </Index>
+
+   </Table>
+</xml>

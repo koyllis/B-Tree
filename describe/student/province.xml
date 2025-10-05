@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Bookmark="1" System="student" Icon="tohome" name="Provinces">
+      <Field/>
+      <Field Caption="Prefix" Size="1" Type="2" Options="To1,To2,To3,To4,To5,To6,To7" name="prefix"/>
+      <Field Caption="Accusative" name="accusative"/>
+      <Field Caption="Code" Size="10" name="code"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="WebExclude" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Index name="province">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="province_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="depts" System="old">
+      <Field Size="1" Options="0-199" Format="###" Type="2" name="de_dptno" Caption="Department No."/>
+      <Field Size="20" Format="u" name="de_desc" Caption="Description"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="de_shift" Caption="Shift schedule (Y/N)?"/>
+      <Field Size="1" Options="Y,N" Format="u" name="de_timet" Caption="Requires time tickets (Y/N)?"/>
+      <Field Size="1" Format="###" Type="2" name="de_overno" Caption="Overtime No."/>
+      <Field Size="1" Format="###" Type="2" name="de_abseno" Caption="Absent time No."/>
+      <Field Size="1" Format="#" Type="2" name="de_level" Caption="Access level"/>
+      <Field Size="6" Format="u" name="de_debitpay" Caption="Payroll expense"/>
+      <Field Size="6" Format="u" name="de_debitcon" Caption="Contribution expense"/>
+      <Field Size="6" Format="u" name="de_cash" Caption="Cash account"/>
+      <Field Size="6" Format="u" name="de_bank" Caption="Bank account"/>
+      <Field Size="1" Format="0" Type="2" name="de_loc" Caption="Accounts loc."/>
+      <Field Size="4" Format="##:##" Dim="7" Type="2" name="de_start" Caption="Day starts at"/>
+      <Field Size="4" Format="##:##" Dim="7" Type="2" name="de_end" Caption="Day ends at"/>
+      <Field Size="8" Options="0-9.99" Format="#.##" Dim="7" Type="3" name="de_over" Caption="Overtime rate"/>
+      <Field Size="4" Format="##:##" Type="2" name="de_ou1" Caption="Break 1"/>
+      <Field Size="4" Format="##:##" Type="2" name="de_in1" Caption=""/>
+      <Field Size="4" Format="##:##" Type="2" name="de_ou2" Caption="Break 2"/>
+      <Field Size="4" Format="##:##" Type="2" name="de_in2" Caption=""/>
+      <Field Size="4" Format="##:##" Type="2" name="de_ou3" Caption="Break 3"/>
+      <Field Size="4" Format="##:##" Type="2" name="de_in3" Caption=""/>
+      <Index name="depts">
+         <IndexEntry name="de_dptno"/>
+      </Index>
+   </Table>
+</xml>

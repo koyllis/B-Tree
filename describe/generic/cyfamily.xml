@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Family Members Personal Details">
+      <Field Caption="Membership No." File="generic.cymember" Size="4" Type="2" name="memberno"/>
+      <Field Caption="Sequence" Format="##" Size="2" Type="2" name="seq"/>
+      <Field Caption="Card No." Size="11" name="cardno"/>
+      <Field Caption="Preferred card" Size="44" name="preferred"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cyfamily">
+         <IndexEntry name="memberno"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

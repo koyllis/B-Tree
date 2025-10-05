@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="relation" name="Type References" System="insurance">
+      <Field Size="2" Type="2" File="insurance.type" name="type" Caption="Type"/>
+      <Field Size="2" Type="2" File="insurance.reftype" name="reftype" Caption="Reference"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="typereference">
+         <IndexEntry name="type"/>
+         <IndexEntry name="reftype"/>
+      </Index>
+      <Index name="typereference[reftype]">
+         <IndexEntry name="reftype"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,22 @@
+<xml>
+   <Table System="pos" name="Barcode Item Text">
+      <Field Caption="Barcode layout" File="pos.barclayout" Size="2" Type="2" name="barclayout"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Text" name="text"/>
+      <Field Caption="Row" Format="####" Size="2" Type="2" name="row"/>
+      <Field Caption="Column" Format="####" Size="2" Type="2" name="column"/>
+      <Field Caption="Font" Size="10" name="font"/>
+      <Field Caption="Orientation" Size="1" Options="90,180,270" Type="2" name="orientation"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="barcitem">
+         <IndexEntry name="barclayout"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="text"/>
+      </Index>
+      <Index name="barcitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="barclayout"/>
+         <IndexEntry name="text"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="box" name="Customer Box Balance">
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Box type" File="pos.boxtype" Size="2" Force="1" Type="2" name="boxtype"/>
+      <Field Caption="Location" File="system.location" Size="2" Force="1" Type="2" name="location"/>
+      <Field Caption="Pieces" Total="1" Size="4" Type="2" name="pieces"/>
+      <Field Caption="Pieces Clone" Total="1" Hide="1" Size="4" Type="2" name="pieces_clone"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peoplebox">
+         <IndexEntry name="people"/>
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="peoplebox[boxtype]">
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="peoplebox[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="boxtype"/>
+      </Index>
+   </Table>
+</xml>

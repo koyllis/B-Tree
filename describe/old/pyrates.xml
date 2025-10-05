@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="pyrates" System="old">
+      <Field Size="1" Format="###" Type="2" name="ra_rateno" Caption="Rate No."/>
+      <Field Size="20" Format="u" name="ra_desc" Caption="Description"/>
+      <Field Size="8" Format="#.####" Type="3" name="ra_rate" Caption="Rate (%)"/>
+      <Field Size="8" Format="###.####" Type="3" name="ra_actual" Caption="Actual amount"/>
+      <Field Size="1" Options="P,D,H" Format="u" name="ra_every" Caption="Every Period/Day/Hour"/>
+      <Field Size="5" Format="u" name="ra_ad" Caption="Behavior code"/>
+      <Field Size="5" Format="u" name="ra_bonus" Caption="Earnings application code"/>
+      <Field Size="8" Format="###" Type="3" name="ra_round" Caption="Round (100 = 1)"/>
+      <Field Size="2" Format="####" Type="2" name="ra_days" Caption="Implementation period"/>
+      <Field Size="8" Format="#.####" Type="3" name="ra_irate" Caption="Rate before period (%)"/>
+      <Field Size="8" Format="#.####" Type="3" name="ra_prate" Caption="Rate after maximum (%)"/>
+      <Field Size="4" Format="####.##" Type="4" name="ra_wmaxa" Caption="Weekly max. earn."/>
+      <Field Size="4" Format="####.##" Type="4" name="ra_mmaxa" Caption="Monthly max. earn."/>
+      <Field Size="4" Format="####.##" Type="4" name="ra_wmax" Caption="Weekly max. ded."/>
+      <Field Size="4" Format="####.##" Type="4" name="ra_mmax" Caption="Monthly max. ded."/>
+      <Field Size="4" Format="####.##" Type="4" name="ra_ymax" Caption="Year max. ded."/>
+      <Field Size="1" Format="###" Type="2" name="ra_timeno" Caption="Related time No."/>
+      <Field Size="6" Format="u" name="ra_credit" Caption="Liability account"/>
+      <Field Size="6" Format="u" name="ra_debit" Caption="Expense account"/>
+      <Field Size="5" Format="u" name="ra_column" Caption="Report column"/>
+      <Field Size="1" Options="Y,N" Format="u" name="ra_holiday" Caption="Holiday fund(N) (Y/N)?"/>
+      <Field Size="1" Options="Y,N" Format="u" name="ra_special" Caption="Special form(N) (Y/N)?"/>
+      <Field Size="63" name="ra_future" Caption="Future"/>
+      <Index name="pyrates">
+         <IndexEntry name="ra_rateno"/>
+      </Index>
+   </Table>
+</xml>

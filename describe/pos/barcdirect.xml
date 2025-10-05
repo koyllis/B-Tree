@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" CanDelete="0" name="barcdirect">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Recorded" Strict="1" Size="8" Type="5" name="date"/>
+      <Field Caption="Cost" Strict="1" Size="8" Type="3" name="cost"/>
+      <Field Caption="Profit" Strict="1" Size="8" Type="3" name="profit"/>
+      <Field Caption="Price" Strict="1" Size="8" Type="3" name="price"/>
+      <Field Caption="New price" Size="8" Type="3" name="new"/>
+      <Field Caption="Barcodes" Format="###" Size="2" Type="2" name="quantity"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="barcdirect">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="library" name="Library" System="office">
+      <Field Size="120" Caption="Title"/>
+      <Field Size="100" name="author" Caption="Author"/>
+      <Field Size="60" name="publication" Caption="Publication"/>
+      <Field Size="20" Type="1" name="isbn" Caption="ISBN"/>
+      <Field Size="2" Type="2" File="office.media" name="media" Caption="Media Type"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="library">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="library[media]">
+         <IndexEntry name="media"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

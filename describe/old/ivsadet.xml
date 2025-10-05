@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="ivsadet" ModifyStamp="0" System="old">
+      <Field Caption="Date" Size="4" Type="5" name="id_date"/>
+      <Field Caption="Inv. No." Format="000000" Size="4" Type="2" name="id_invno"/>
+      <Field Caption="Customer" Format="u" Size="8" name="id_code"/>
+      <Field Caption="Loc" Format="00" Size="1" Type="2" name="id_loc"/>
+      <Field Caption="Expense" Format="u" Size="3" name="id_exp"/>
+      <Field Caption="Description" Format="u" Size="15" name="id_desc"/>
+      <Field Caption="Cost" Format="##,###.##" Size="4" Type="4" name="id_cost"/>
+      <Field Caption="Recharge" Format="##,###.##" Size="4" Type="4" name="id_recha"/>
+      <Field Caption="Discount" Format="##,###.##" Size="4" Type="4" name="id_disc"/>
+      <Field Caption="VAT%" Format="##.##" Size="8" Type="3" name="id_vatper"/>
+      <Field Caption="Number" Format="####" Size="2" Type="2" name="id_number"/>
+      <Field Caption="Value" Format="####.##" Size="4" Type="4" name="id_value"/>
+      <Field Caption="Rate" Format="####.####" Size="8" Type="3" name="id_rate"/>
+      <Field Caption="From" Format="dd/mm/yyyy" Size="4" Type="5" name="id_frdate"/>
+      <Field Caption="To" Format="dd/mm/yyyy" Size="4" Type="5" name="id_todate"/>
+      <Index name="ivsadet">
+         <IndexEntry name="id_date"/>
+         <IndexEntry name="id_invno"/>
+         <IndexEntry name="id_code"/>
+         <IndexEntry name="id_loc"/>
+         <IndexEntry name="id_exp"/>
+      </Index>
+   </Table>
+</xml>

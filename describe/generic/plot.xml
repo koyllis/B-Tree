@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="generic">
+      <Field Size="10" name="plotno" Caption="Plot No"/>
+      <Field name="village" Caption="Village"/>
+      <Field name="quarter" Caption="Quarter"/>
+      <Field Size="15" name="registration" Caption="Registration"/>
+      <Field Size="10" name="sheet" Caption="Sheet/Plan"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="plot">
+         <IndexEntry name="plotno"/>
+      </Index>
+   </Table>
+</xml>

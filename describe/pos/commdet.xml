@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Commission Details">
+      <Field Caption="Commission" File="pos.commtrans" Size="4" Type="2" name="commtrans"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Net sales" Total="1" Format="#####.##" Size="8" Type="3" name="net"/>
+      <Field Caption="Commission%" Format="###.##" Size="8" Type="3" name="commission"/>
+      <Field Caption="Per piece" Format="###.##" Size="4" Type="4" name="commissionper"/>
+      <Field Caption="Commission" Total="1" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Quantity limit" Size="4" Type="8" name="quantity_limit"/>
+      <Field Caption="Sales limit" Size="8" Type="3" name="net_limit"/>
+      <Field Caption="Commission after%" Format="###.##" Size="8" Type="3" name="commission_after"/>
+      <Field Caption="Per piece after" Format="###.##" Size="4" Type="4" name="commissionper_after"/>
+      <Field Caption="Commission after" Total="1" Format="#####.##" Size="4" Type="4" name="amount_after"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="commdet">
+         <IndexEntry name="commtrans"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="commdet[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="commtrans"/>
+      </Index>
+   </Table>
+</xml>

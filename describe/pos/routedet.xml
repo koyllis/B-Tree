@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Route Details" System="pos">
+      <Field Size="4" Type="2" File="pos.route" name="route" Caption="Route"/>
+      <Field Size="2" Type="2" name="serial" Caption="Serial No."/>
+      <Field Size="1" Options="First,Second,Third,Fourth" Type="2" name="week" Caption="Week"/>
+      <Field Size="1" Options="Monday,Tuesday,Wedsday,Thursday,Friday,Saturday,Sunday" Type="2" name="day" Caption="Day"/>
+      <Field Size="1" Options="WEEKLY,BI-WEEKLY,MONTHLY" Type="2" name="mode" Caption="Visit mode"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="routedet">
+         <IndexEntry name="route"/>
+         <IndexEntry name="serial"/>
+      </Index>
+      <Index name="routedet[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="route"/>
+         <IndexEntry name="serial"/>
+      </Index>
+   </Table>
+</xml>

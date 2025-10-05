@@ -1,0 +1,45 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table DeleteChildren="1" System="life" SoftDelete="1" Icon="discount.ico" CanDelete="0" name="Doctor Visits" CreateStamp="1" UserStamp="1">
+      <Field Caption="Member" File="life.member" Size="4" Type="2" Force="1" name="member"/>
+      <Field Caption="Contract" File="life.contract" Size="4" Force="1" Type="2" name="contract"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Proposal date" Size="4" Type="5" name="prodate"/>
+      <Field Caption="Doctor date" Size="4" Type="5" name="visit"/>
+      <Field Caption="Account No." Size="12" name="accountno"/>
+      <Field Caption="Decision" Size="1" Type="2" Options="StandardPremium,ExtraCharge,Reject,BasicCoverOnly,BorderLineStdRates" name="option"/>
+      <Field Caption="Notes" Size="50" name="notes"/>
+      <Field Caption="Notification date" Size="4" Type="5" name="notify"/>
+      <Field Caption=" Proposal" Strict="1" File="life.proposal" Size="4" Type="2" name="proposal" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="doctorvisit">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="prodate"/>
+         <IndexEntry name="visit"/>
+      </Index>
+      <Index name="doctorvisit[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="prodate"/>
+         <IndexEntry name="visit"/>
+      </Index>
+      <Index name="doctorvisit[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="prodate"/>
+         <IndexEntry name="visit"/>
+      </Index>
+      <Index name="doctorvisit[proposal]">
+         <IndexEntry name="proposal"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="prodate"/>
+         <IndexEntry name="visit"/>
+      </Index>
+   </Table>
+</xml>

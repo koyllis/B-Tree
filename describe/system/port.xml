@@ -1,0 +1,24 @@
+<xml>
+   <Table EnableImport="0" System="system" Icon="ports" name="Ports" Root="1">
+      <Field Caption="Code" Size="32" name="code" Tip="1"/>
+      <Field Caption="Port" Size="16" name="port"/>
+      <Field Caption="Computer" Size="16"/>
+      <Field Caption="share" Size="16" name="share" Tip="1"/>
+      <Field Caption="Global" Format="b" Size="1" Type="2" name="global"/>
+      <Field Caption="Width" Format="###" Size="1" Type="2" name="width"/>
+      <Field Caption="Password" Size="20" name="password" Format="e"/>
+      <Field Caption="User" name="user"/>
+      <Field Caption="Driver" Size="20" name="driver"/>
+      <Field Caption="Prnter" Format="printer" Size="64" name="printer"/>
+      <Field Caption="Drawer" Size="32" name="drawer"/>
+      <Field Caption="Smb Client" Format="b" Size="1" Type="2" name="smb"/>
+      <Field Caption="Smb Port" Format="#####" Size="4" Type="2" name="smb_port"/>
+      <Field Caption="LPR" Format="b" Size="1" Type="2" name="lpr"/>
+      <Field Caption="LPD" Format="b" Size="1" Type="2" name="lpd"/>
+      <Field Caption="LPD Port" Format="#####" Size="4" Type="2" name="lpd_port"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="port">
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

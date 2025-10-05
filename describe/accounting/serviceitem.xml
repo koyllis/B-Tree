@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="serviceref" System="accounting" Unordered="1">
+      <Field Size="4" Type="2" File="accounting.service" name="service" Caption="Service"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Stock item"/>
+      <Field Caption="Quantity" Total="1" Size="8" Type="3" Format="#####.##" name="quantity"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="serviceitem">
+         <IndexEntry name="service"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="serviceitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="service"/>
+      </Index>
+   </Table>
+</xml>

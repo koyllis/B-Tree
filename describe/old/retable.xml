@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="retable" System="old">
+      <Field Size="2" Format="###" Type="2" name="ta_table" Caption="Table"/>
+      <Field Size="2" Format="##" Type="2" name="ta_sub" Caption="Sub."/>
+      <Field Size="1" Format="##" Type="2" name="ta_floor" Caption="Floor"/>
+      <Field Size="1" Format="##" Type="2" name="ta_count" Caption="Persons"/>
+      <Field Size="4" Format="######" Type="2" name="ta_refer" Caption="Order No."/>
+      <Field Size="4" Format="######" Type="2" name="ta_last" Caption="Last order"/>
+      <Index name="retable">
+         <IndexEntry name="ta_table"/>
+         <IndexEntry name="ta_sub"/>
+      </Index>
+   </Table>
+</xml>

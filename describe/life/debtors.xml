@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" CanSoftDelete="0" name="debtors">
+      <Field Caption="Identity" Size="10" name="idno"/>
+      <Field Caption="Account" Size="20" name="accountno"/>
+      <Field Caption="Member" File="life.member" Size="4" Type="2" name="member"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="debtors">
+         <IndexEntry name="idno"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index name="debtors[member]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="idno"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+   </Table>
+</xml>

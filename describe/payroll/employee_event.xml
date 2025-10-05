@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="Employee Events">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Event" File="payroll.event" Size="2" Type="2" name="event"/>
+      <Field Caption="Note" Size="40" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="employee_event">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="event"/>
+      </Index>
+      <Index name="employee_event[event]">
+         <IndexEntry name="event"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

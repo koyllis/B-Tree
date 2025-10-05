@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="pointsrange">
+      <Field Caption="Points range" Size="4" Type="2" name="points"/>
+      <Field Caption="Category" File="accounting.category" Size="2" Type="2" name="category"/>
+      <Field Caption="SMS body" File="system.smsbody" Size="2" Type="2" name="smsbody"/>
+      <Field Caption="SMS body - english" File="system.smsbody" Size="2" Type="2" name="smsbody_english"/>
+      <Field Caption="Event type" File="accounting.eventtype" Size="2" Type="2" name="eventtype"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pointsrange">
+         <IndexEntry name="points"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="pointsrange[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="points"/>
+      </Index>
+      <Index name="pointsrange[eventtype]">
+         <IndexEntry name="eventtype"/>
+         <IndexEntry name="points"/>
+      </Index>
+      <Index name="pointsrange[smsbody]">
+         <IndexEntry name="smsbody"/>
+         <IndexEntry name="points"/>
+      </Index>
+      <Index name="pointsrange[smsbody_english]">
+         <IndexEntry name="smsbody_english"/>
+         <IndexEntry name="points"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

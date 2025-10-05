@@ -1,0 +1,14 @@
+<xml>
+   <Table System="pos" Icon="reccuring" name="Banners">
+      <Field Size="40"/>
+      <Field Caption="Type" File="pos.bannertype" Size="2" Type="2" name="bannertype"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="banner">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="banner[bannertype]">
+         <IndexEntry name="bannertype"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,158 @@
+<xml>
+   <Table System="pos" name="Divan Processing">
+      <Field Caption="Trans. refer." Size="4" Type="2" name="refer"/>
+      <Field Caption="Order date" Size="4" Type="5" name="order"/>
+      <Field Caption="Delivery date" Size="4" Type="5" name="delivery"/>
+      <Field Caption="Transaction date" Size="4" Type="5" name="date"/>
+      <Field Caption="Line" Size="2" Type="2" name="line"/>
+      <Field Caption="Divan item" File="pos.item" Size="4" Type="2" name="item_divan"/>
+      <Field Caption="Width" File="pos.color" Size="2" Type="2" name="width"/>
+      <Field Caption="Length" File="pos.size" Size="2" Type="2" name="length"/>
+      <Field Caption="Divan quantity" Format="quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Upholstery item" File="pos.item" Size="4" Type="2" name="item_uphol"/>
+      <Field Caption="Upholstery color" File="pos.color" Size="2" Type="2" name="uphol_color"/>
+      <Field Caption="Upholstery quantity" Format="quantity" Size="8" Type="3" name="uphol_quantity"/>
+      <Field Caption="Headboard item" File="pos.item" Size="4" Type="2" name="item_head"/>
+      <Field Caption="Headboard width" File="pos.color" Size="2" Type="2" name="head_width"/>
+      <Field Caption="Headboard length" File="pos.size" Size="2" Type="2" name="head_length"/>
+      <Field Caption="Headboard quantity" Format="quantity" Size="8" Type="3" name="head_quantity"/>
+      <Field Caption="Headboard Upholstery item" File="pos.item" Size="4" Type="2" name="head_uphol_item"/>
+      <Field Caption="Upholstery color" File="pos.color" Size="2" Type="2" name="head_uphol_color"/>
+      <Field Caption="Upholstery quantity" Format="quantity" Size="8" Type="3" name="head_uphol_quantity"/>
+      <Field Caption="Leg item" File="pos.item" Size="4" Type="2" name="item_leg"/>
+      <Field Caption="Leg size" File="pos.size" Size="2" Type="2" name="leg_size"/>
+      <Field Caption="Leg type" File="pos.color" Size="2" Type="2" name="leg_color"/>
+      <Field Caption="Divan height" Size="2" Type="2" name="height_divan"/>
+      <Field Caption="Mattress height" Size="2" Type="2" name="height_mattress"/>
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Completed - divan" Strict="1" Size="8" Type="5" name="completed_divan" Modify="1"/>
+      <Field Strict="1" Caption="Completed - headboard" Size="8" Type="5" name="completed_head" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="wipdivan">
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[head_length]">
+         <IndexEntry name="head_length"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[head_uphol_color]">
+         <IndexEntry name="head_uphol_color"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[head_uphol_item]">
+         <IndexEntry name="head_uphol_item"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[head_width]">
+         <IndexEntry name="head_width"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[item_divan]">
+         <IndexEntry name="item_divan"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[item_head]">
+         <IndexEntry name="item_head"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[item_leg]">
+         <IndexEntry name="item_leg"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[item_uphol]">
+         <IndexEntry name="item_uphol"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[leg_color]">
+         <IndexEntry name="leg_color"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[leg_size]">
+         <IndexEntry name="leg_size"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[length]">
+         <IndexEntry name="length"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[uphol_color]">
+         <IndexEntry name="uphol_color"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan[width]">
+         <IndexEntry name="width"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="order"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="wipdivan_order">
+         <IndexEntry name="order"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="delivery"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

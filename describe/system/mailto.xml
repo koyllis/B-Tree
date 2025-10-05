@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ImportTrigger="1" System="system" name="mailto" Root="1">
+      <Field Size="60"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="mailto">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

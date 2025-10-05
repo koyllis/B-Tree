@@ -1,0 +1,58 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table Icon="cake" ChainInsert="pos|eventchild" name="Events" System="pos" DeleteChildren="1">
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Force="1" Type="2" File="system.location" name="location" Caption="Room"/>
+      <Field Size="4" Modify="1" Strict="1" AutoCounter="1" Type="2" name="number" Caption="Number"/>
+      <Field Size="4" Options="09:00,09:30,10:00,10:30,11:00,11:30,12:00,12:30,13:00,13:30,14:00,14:30,15:00,15:30,16:00,16:30,17:00,17:30,18:00,18:30,19:00,19:30,20:00,20:30,21:00" Force="1" Type="2" name="time" Caption="Time"/>
+      <Field Size="2" Force="1" Type="2" File="pos.type" name="type" Caption="Event"/>
+      <Field Size="4" Force="1" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Buffet"/>
+      <Field Size="2" Format="####" Type="2" name="persons" Caption="Persons"/>
+      <Field Size="2" Format="####" Type="2" name="buffet" Caption="Buffet persons"/>
+      <Field Size="2" Format="####" Type="2" name="alacart" Caption="Ala Cart persons"/>
+      <Field Size="4" Format="####.##" Type="4" name="deposit" Caption="Deposit" Total="1"/>
+      <Field Size="2" Modify="1" Type="2" File="pos.table" name="table" Caption="Table"/>
+      <Field Size="4" Strict="1" Modify="1" Type="2" File="system.user" name="user" Auto="1" Caption="User"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="event">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="event[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="event[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="event[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="event[table]">
+         <IndexEntry name="table"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="event[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="event[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

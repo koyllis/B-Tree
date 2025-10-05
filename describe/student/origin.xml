@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" name="Origins" Merge="1">
+      <Field/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="origin">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

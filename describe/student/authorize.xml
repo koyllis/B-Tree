@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" name="Authorizations" CreateStamp="1" UserStamp="1">
+      <Field Caption="Account" File="student.account" Size="4" Type="2" Force="1" name="account"/>
+      <Field Caption="Document" File="accounting.document" Size="4" Type="2" Force="1" name="document"/>
+      <Field Caption="Monthly amount" Format="#####.##" Size="4" Type="4" Force="1" name="amount"/>
+      <Field Caption="Authorized" Strict="1" Size="8" Type="5" name="authorized" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="authorize">
+         <IndexEntry name="account"/>
+         <IndexEntry name="document"/>
+      </Index>
+   </Table>
+</xml>

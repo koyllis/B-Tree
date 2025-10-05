@@ -1,0 +1,22 @@
+<xml>
+   <Table name="agempty"  System="old" ModifyStamp="0">
+      <Field Caption="Date" Size="4" Type="5" name="em_date"/>
+      <Field Caption="Refer" Format="######" Size="4" Type="2" name="em_refer"/>
+      <Field Caption="Customer" Format="####" Size="2" Type="2" name="em_cuno"/>
+      <Field Caption="Loc" Size="1" Type="2" name="em_loc"/>
+      <Field Caption="Cases" Format="###" Size="2" Type="2" name="em_cases" Dim="3"/>
+      <Field Caption="Price" Format="###" Size="4" Type="4" name="em_caspr" Dim="3"/>
+      <Field Caption="Total" Format="####.##" Size="4" Type="4" name="em_total"/>
+      <Field Caption="Credit" Format="#" Size="1" Type="2" name="em_credit"/>
+      <Field Caption="Cancel" Size="4" Type="5" name="em_cancel"/>
+      <Field Caption="Journal" Format="######" Size="4" Type="2" name="em_journal"/>
+      <Field Caption="Term" Format="######" Size="2" Type="2" name="em_ttyno"/>
+      <Field Caption="Waybill" Size="10" name="em_wayb"/>
+      <Index name="agempty">
+         <IndexEntry name="em_date"/>
+         <IndexEntry name="em_refer"/>
+         <IndexEntry name="em_cuno"/>
+         <IndexEntry name="em_loc"/>
+      </Index>
+   </Table>
+</xml>

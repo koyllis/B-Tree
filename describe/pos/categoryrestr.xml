@@ -1,0 +1,23 @@
+<xml>
+   <Table System="pos" name="Category Restrictions">
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="categoryrestr">
+         <IndexEntry name="category"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="categoryrestr[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="categoryrestr[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" Icon="percent1" name="Coupons">
+      <Field Caption="Number" Size="4" Type="2" name="number"/>
+      <Field Caption="Coupon type" File="pos.coupontype" Size="1" Type="2" name="coupontype"/>
+      <Field Caption="Expiration" Size="4" Type="5" name="expire"/>
+      <Field Caption="Date" Size="4" Type="5" name="trans_date"/>
+      <Field Caption="Reference" Size="4" Type="2" name="refer"/>
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="coupon">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="coupon[coupontype]">
+         <IndexEntry name="coupontype"/>
+         <IndexEntry name="number"/>
+      </Index>
+
+      <Index name="coupon_refer">
+         <IndexEntry name="refer"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="number"/>
+      </Index>
+
+      <Index name="coupon[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

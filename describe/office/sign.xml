@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="sign" System="office" Bookmark="1">
+      <Field/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Supplier"/>
+      <Field Size="1" Options="Piza,Trivision,Super Piza" Type="2" name="type" Caption="Type"/>
+      <Field Size="1" Type="2" name="dimension" Caption="Dimension"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="16" System="1" name="@bookmark" Caption="Bookmark"/>
+      <Index name="sign">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="sign[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="sign_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

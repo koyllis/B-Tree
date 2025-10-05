@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Short="Credit" Icon="internet" Dynamic="1" SoftDelete="1" name="Credit Transactions" System="pos">
+      <Field Size="4" Type="2" File="pos.trans" name="trans" Caption="Transaction"/>
+      <Field Size="16" name="auth" Caption="Auth"/>
+      <Field Size="1" Options="Sale,Credit,VoidSale,PreAuth,PostAuth,VoidCredit,VoidPost" Type="2" name="action" Caption="Action"/>
+      <Field Size="8" Format="##################" Type="2" name="card" Caption="Card"/>
+      <Field Size="4" name="expire" Caption="Expire"/>
+      <Field Size="16" name="ref" Caption="Reference"/>
+      <Field Size="4" Format="####.##" Type="8" name="amount" Total="1" Caption="Amount"/>
+      <Field Size="4" Format="#####.##" Type="8" name="tip" Total="1" Caption="Tip"/>
+      <Field Size="4" Format="#######" Type="2" name="id" Caption="id"/>
+      <Field Size="20"/>
+      <Field Size="1" Options="Visa,MC,AMEX,Disc" Type="2" name="type" Caption="Type"/>
+      <Field Size="20" name="track" Caption="Track"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" HideReport="1" Caption="SoftDelete"/>
+      <Index name="credit">
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

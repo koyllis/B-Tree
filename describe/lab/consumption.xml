@@ -1,0 +1,37 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Chemical Consuption">
+      <Field Caption="Date" Size="4" Type="5" name="date" Auto="1"/>
+      <Field Caption="Time" Size="2" Type="5" name="time" Auto="1"/>
+      <Field Caption="Place" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Location" File="lab.customerlocation" Size="2" Type="2" name="customerlocation" FilterFunction="FilterLocation"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Checked" Format="b" Size="2" Options="ΦΡΕΑΤΙΟ ΣΥΝΔΕΣΗΣ,ΙΔΙΩΤΙΚΗ ΥΠΟΝΟΜΟΣ,ΛΙΠΟΠΑΓΙΔΑ,ΑΝΤΛΙΟΣΤΑΣΙΟ,ΕΣΩΤΕΡΙΚΑ ΦΡΕΑΤΙΑ,ΚΟΥΖΙΝΑ" Type="2" name="check"/>
+      <Field Caption="Contact" Size="40" name="contact"/>
+      <Field Caption="Height" Format="#####.##" Size="4" Type="8" name="height"/>
+      <Field Caption="Remaining" Format="#######" Size="4" Type="2" name="remaining"/>
+      <Field Caption="Consumption" Total="1" Format="#######" Size="4" Type="2" name="consumption"/>
+      <Field Caption="Measurement" Total="1" Format="#######" Size="8" Type="3" name="measurement"/>
+      <Field Caption="Deadline" Size="4" Type="5" name="deadline"/>
+      <Field Caption="Card No." Format="######" Size="4" Type="4" name="cardno"/>
+      <Field Caption="Place" Strict="1" Size="12" name="people_item" Modify="1"/>
+      <Field Strict="1" Caption="Cost" Total="1" Format="######.##" Size="4" Type="4" name="cost" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="consumption">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="consumption[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="consumption[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

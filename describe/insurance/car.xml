@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="car" System="insurance">
+      <Field Size="10" Dim ="1" name="registration" Caption="Registration"/>
+      <Field Size="1" Type="2" Dim ="1" name="reftype" Caption="Type"/>
+      <Field Dim ="1" name="description" Caption="Description"/>
+      <Field Size="8" Type="5" Dim ="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="car">
+         <IndexEntry name="registration"/>
+         <IndexEntry name="reftype"/>
+      </Index>
+   </Table>
+</xml>

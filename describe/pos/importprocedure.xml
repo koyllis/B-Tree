@@ -1,0 +1,27 @@
+<xml>
+   <Table System="pos" name="importprocedure">
+      <Field/>
+      <Field Caption="Icon" name="icon"/>
+      <Field Caption="Procedure" name="procedure"/>
+      <Field Caption="Fields (separate with ;)" Size="400" name="fields"/>
+      <Field Caption="Document" File="pos.division" Size="2" Type="2" name="document"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Receipt method" File="pos.receipt" Size="2" Type="2" name="receipt"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="importprocedure">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="importprocedure[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="importprocedure[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="importprocedure[receipt]">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

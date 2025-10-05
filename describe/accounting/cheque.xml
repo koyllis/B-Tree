@@ -1,0 +1,117 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" SoftDelete="1" Icon="checkbook" CanDelete="0" name="Cheque Issue" CreateStamp="1">
+      <Field Caption="Document" File="accounting.document" Size="2" Force="1" Type="2" name="document"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Cheque No." Size="4" Type="2" name="cheque" Modify="1"/>
+      <Field Size="40" Force="1"/>
+      <Field Caption="Amount" Format="#####.##" Size="4" Force="1" Type="4" name="amount"/>
+      <Field Caption="Discount/Charge" Format="#####.##" Size="4" Type="4" name="discount"/>
+      <Field Caption="V.A.T." Format="#####.##" Size="4" Type="4" name="vat"/>
+      <Field Caption="VAT category" File="accounting.vat" Size="1" Type="2" name="vatcode"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Force="1" Type="2" name="location"/>
+      <Field Caption="Account" File="accounting.chart" Size="2" Force="1" Type="2" name="chart"/>
+      <Field Caption="Sub-account" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Journal line" File="accounting.detail" Size="8" Type="2" name="detail"/>
+      <Field Caption="Gain/Loss" Format="#####.##" Size="4" Type="4" name="gain" Modify="1"/>
+      <Field Caption="Amount (breakdown)" Format="#####.##" Size="4" Type="4" name="amount0"/>
+      <Field Caption="Description" Size="40" name="description"/>
+      <Field Caption="Amount 1" Format="#####.##" Size="4" Type="4" name="amount1"/>
+      <Field Caption="Account 1" File="accounting.chart" Size="2" Type="2" name="chart1"/>
+      <Field Caption="Description 1" Size="40" name="description1"/>
+      <Field Caption="Amount 2" Format="#####.##" Size="4" Type="4" name="amount2"/>
+      <Field Caption="Account 2" File="accounting.chart" Size="2" Type="2" name="chart2"/>
+      <Field Caption="Description 2" Size="40" name="description2"/>
+      <Field Caption="Amount 3" Format="#####.##" Size="4" Type="4" name="amount3"/>
+      <Field Caption="Account 3" File="accounting.chart" Size="2" Type="2" name="chart3"/>
+      <Field Caption="Description 3" Size="40" name="description3"/>
+      <Field Caption="Amount 4" Format="#####.##" Size="4" Type="4" name="amount4"/>
+      <Field Caption="Account 4" File="accounting.chart" Size="2" Type="2" name="chart4"/>
+      <Field Caption="Description 4" Size="40" name="description4"/>
+      <Field Strict="1" Caption="Issue date" Size="4" Type="5" name="issue" Modify="1"/>
+      <Field Strict="1" Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="cheque">
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[chart1]">
+         <IndexEntry name="chart1"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[chart2]">
+         <IndexEntry name="chart2"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[chart3]">
+         <IndexEntry name="chart3"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[chart4]">
+         <IndexEntry name="chart4"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[detail]">
+         <IndexEntry name="detail"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque[vatcode]">
+         <IndexEntry name="vatcode"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque_cheque">
+         <IndexEntry name="cheque"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="cheque_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="cheque_issue">
+         <IndexEntry name="issue"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+   </Table>
+</xml>

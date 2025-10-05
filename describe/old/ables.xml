@@ -1,0 +1,28 @@
+<xml>
+   <Table System="old" name="ables" ModifyStamp="0">
+      <Field Caption="Code" Format="u" Size="8" name="a_code"/>
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="a_date"/>
+      <Field Caption="Ref. No." Format="u" Size="10" name="a_invno"/>
+      <Field Caption="Debit" Format="######.##" Size="4" Type="4" name="a_debit"/>
+      <Field Caption="Credit" Format="######.##" Size="4" Type="4" name="a_credit"/>
+      <Field Caption="Currency" Format="u" Size="3" name="a_curr"/>
+      <Field Caption="Base" Format="######.##" Size="4" Type="4" name="a_system"/>
+      <Field Caption="Loc." Format="0" Size="1" Type="2" name="a_loc"/>
+      <Field Caption="Age date" Size="4" Type="5" name="a_adat"/>
+      <Index name="ables">
+         <IndexEntry name="a_code"/>
+         <IndexEntry name="a_date"/>
+         <IndexEntry name="a_invno"/>
+      </Index>
+      <Index name="ables_a_date">
+         <IndexEntry name="a_date"/>
+         <IndexEntry name="a_code"/>
+         <IndexEntry name="a_invno"/>
+      </Index>
+      <Index name="ables_a_invno">
+         <IndexEntry name="a_invno"/>
+         <IndexEntry name="a_code"/>
+         <IndexEntry name="a_date"/>
+      </Index>
+   </Table>
+</xml>

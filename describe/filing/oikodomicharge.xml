@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Dynamic="1" name="oikodomicharge" System="filing">
+      <Field Size="4" Type="2" File="filing.application" name="application" Caption="Application"/>
+      <Field Size="1" Type="2" File="filing.chargetype" name="chargetype" Caption="Charge type"/>
+      <Field Size="4" Format="######.##" Type="4" name="amount" Caption="Amount"/>
+      <Field Size="4" Format="######" Type="2" name="receiptno" Caption="Receipt No."/>
+      <Field Size="4" Type="5" name="receiptdate" Caption="Receipt date"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="oikodomicharge">
+         <IndexEntry name="application"/>
+         <IndexEntry name="chargetype"/>
+      </Index>
+      <Index name="oikodomicharge[application]">
+         <IndexEntry name="application"/>
+         <IndexEntry name="chargetype"/>
+      </Index>
+      <Index name="oikodomicharge[chargetype]">
+         <IndexEntry name="chargetype"/>
+         <IndexEntry name="application"/>
+      </Index>
+   </Table>
+</xml>

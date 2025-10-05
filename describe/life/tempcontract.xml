@@ -1,0 +1,89 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table FormatField="amount" System="life" SoftDelete="1" Icon="sqlbooks" Dynamic="1" name="Temporary Contract Members" CreateStamp="1">
+      <Field Caption="Member" File="life.tempmember" Size="4" Force="1" Type="2" Tip="1" name="tempmember"/>
+      <Field Caption="Contract" File="life.contract" Size="4" Force="1" Type="2" name="contract"/>
+      <Field Caption="Type" Size="1" Options="Standard,Loan" Force="1" Type="2" name="type"/>
+      <Field Caption="Entry date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Reference" Size="4" Type="2" name="reference"/>
+      <Field Caption="Account No." Size="13" name="accountno"/>
+      <Field Caption="Charge No." Size="13" name="chargeno"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Plan" File="life.contractplan" Size="4" Type="2" name="contractplan"/>
+      <Field Caption="Member No." Size="12" name="memberno"/>
+      <Field Caption="Initial amount" Total="1" Format="######.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Extra" Total="1" Format="####.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Persons" Size="1" Type="2" name="persons" Modify="1"/>
+      <Field Caption="Notes" name="notes" Modify="1"/>
+      <Field Caption="Status" Format="b" Size="1" Type="2" Options="DiffBirthday,DiffSurname,DiffName" name="status" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="tempcontract">
+         <IndexEntry name="tempmember"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index name="tempcontract[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="tempmember"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="tempcontract[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="tempmember"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index name="tempcontract[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="tempmember"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index name="tempcontract[reference]">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="tempmember"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index Force="1" name="tempcontract_accountno">
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="tempmember"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="tempcontract_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="tempmember"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index name="tempcontract_memberno">
+         <IndexEntry name="memberno"/>
+         <IndexEntry name="tempmember"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+   </Table>
+</xml>

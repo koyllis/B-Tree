@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" name="Subsidy Calculations">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Reference" Size="4" Type="2" name="reference"/>
+      <Field Caption="Quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Subsidy" Total="1" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="subsidy">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="subsidy[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="subsidy[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="subsidy[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

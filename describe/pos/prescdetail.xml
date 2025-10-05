@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Prescription Details" Unordered="1">
+      <Field Caption="Prescription" File="pos.prescription" Size="4" Type="2" name="prescription"/>
+      <Field Caption="Line" Size="2" Type="2" name="line"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Completed" Size="8" Type="5" name="completed"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="CoPayment" Total="1" Format="###.##" Size="4" Type="4" name="beneficiary"/>
+      <Field Caption="PC2 amount" Total="1" Format="###.##" Size="4" Type="4" name="pc2"/>
+      <Field Caption="Total amount" Total="1" Format="###.##" Size="4" Type="4" name="total"/>
+      <Field Caption="Dispense No." Size="4" Type="2" name="dispense"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="prescdetail" CRC64="1">
+         <IndexEntry name="prescription"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="prescdetail[item]" CRC64="1">
+         <IndexEntry name="item"/>
+         <IndexEntry name="prescription"/>
+      </Index>
+      <Index name="prescdetail_completed" CRC64="1">
+         <IndexEntry name="completed"/>
+         <IndexEntry name="prescription"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="prescdetail_dispense" CRC64="1">
+         <IndexEntry name="dispense"/>
+         <IndexEntry name="prescription"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

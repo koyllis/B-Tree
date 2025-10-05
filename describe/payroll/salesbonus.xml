@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="Sales Bonus">
+      <Field Caption="Month" Size="4" Type="5" name="month"/>
+      <Field Caption="Bonus%" Format="##.##" Size="4" Type="8" name="bonus"/>
+      <Field Caption="Employees" Format="####" Size="2" Type="2" name="count"/>
+      <Field Strict="1" Caption="Budget" Format="#######.##" Size="4" Type="4" name="budget" Modify="1"/>
+      <Field Strict="1" Caption="Sales" Format="#######.##" Size="4" Type="4" name="sales" Modify="1"/>
+      <Field Caption="Receipts" Strict="1" Format="#######.##" Size="4" Type="4" name="receipts" Modify="1"/>
+      <Field Strict="1" Caption="Bonus amount" Format="#######.##" Size="4" Type="4" name="amount" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="salesbonus">
+         <IndexEntry name="month"/>
+      </Index>
+   </Table>
+</xml>

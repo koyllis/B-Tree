@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="terminaldet" System="pos">
+      <Field Size="4" Type="2" File="pos.terminal" name="terminal" Caption=" Terminal"/>
+      <Field Size="1" Type="2" File="system.denomination" name="denomination" Caption="Denomination"/>
+      <Field Size="2" Type="2" name="count" Caption="Count"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="terminaldet">
+         <IndexEntry name="terminal"/>
+         <IndexEntry name="denomination"/>
+      </Index>
+      <Index name="terminaldet[denomination]">
+         <IndexEntry name="denomination"/>
+         <IndexEntry name="terminal"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" CanDelete="0" name="Cost of Sales">
+      <Field Caption="Month" Size="4" Type="5" name="date"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Opening quantity" Total="1" Format="quantity" Size="4" Type="8" name="open"/>
+      <Field Caption="Opening value" Total="1" Size="8" Type="3" name="open_value"/>
+      <Field Caption="Quantity in" Total="1" Format="quantity" Size="4" Type="8" name="in"/>
+      <Field Caption="Value in" Total="1" Size="8" Type="3" name="in_value"/>
+      <Field Caption="Average cost" Size="8" Type="3" name="average"/>
+      <Field Caption="Quantity out" Total="1" Format="quantity" Size="4" Type="8" name="out"/>
+      <Field Caption="Cost of sales" Total="1" Size="8" Type="3" name="cos"/>
+      <Field Caption="Journal" File="accounting.journal" Size="4" Type="2" name="journal"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="coscalc">
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="coscalc[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="coscalc[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

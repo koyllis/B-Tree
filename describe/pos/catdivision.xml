@@ -1,0 +1,51 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" Icon="catdiv" Dynamic="1" name="Category Division" Dataset="1" Common="1">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" name="division"/>
+      <Field Caption="Location" File="system.location" Size="1" Type="2" name="location"/>
+      <Field Caption="Vat" File="accounting.vat" Size="1" Type="2" name="vat"/>
+      <Field Caption="Modfier" Format="b" Size="1" Type="2" name="modifier"/>
+      <Field Caption="Price" Format="####.##" Size="4" Type="8" name="price"/>
+      <Field Caption="Happy Hour Price" Format="####.##" Size="4" Type="8" name="happy"/>
+      <Field Caption="Non Stock" Format="b" Size="1" Type="2" name="nonstock"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="catdivision">
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="catdivision[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="catdivision[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="catdivision[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="catdivision[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="catdivision[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

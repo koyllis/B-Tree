@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="itprice" System="old">
+      <Field Size="12" Format="u" Dim ="1" name="ip_item" Caption="Item code"/>
+      <Field Size="2" Format="u" Dim ="1" name="ip_pcode" Caption="Price code"/>
+      <Field Size="8" Format="####.###" Type="3" Dim ="1" name="ip_number" Caption="Number"/>
+      <Field Size="1" Options=",,%" Dim ="1" name="ip_percent" Caption="Percent"/>
+      <Index name="itprice">
+         <IndexEntry name="ip_item"/>
+         <IndexEntry name="ip_pcode"/>
+      </Index>
+   </Table>
+</xml>

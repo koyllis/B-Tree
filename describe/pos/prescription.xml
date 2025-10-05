@@ -1,0 +1,31 @@
+<xml>
+   <Table DeleteChildren="1" System="pos" name="Prescriptions">
+      <Field Strict="1" Caption="Number" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Size="40"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Doctor" File="accounting.people" Size="4" Type="2" name="doctor"/>
+      <Field Caption="Repeat" Strict="1" Size="2" Type="2" name="repeat" Modify="1"/>
+      <Field Strict="1" Caption="Prescription No." Size="4" Type="2" name="prescrno" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="prescription">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="prescription[doctor]">
+         <IndexEntry name="doctor"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="prescription[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="prescription_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="prescription_prescrno">
+         <IndexEntry name="prescrno"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

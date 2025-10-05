@@ -1,0 +1,77 @@
+<xml>
+   <Table PDA="1" ImportTrigger="1" System="pos" SoftDelete="1" Icon="item_prices" Export="@modify_stamp" Dynamic="1" name="Item Pricing" CreateStamp="1"  ImmediateChild="1" json_replicate="1">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Negative="0" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Negative="0" Type="2" name="size"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Caption="Barcode" Size="25" name="barcode"/>
+      <Field Caption="Barcode2" Size="25" name="barcode2"/>
+      <Field Caption="Number" Total="1" Format="price" Size="8" Type="3" name="number"/>
+      <Field Caption="Percentage" Format="b" Size="1" Type="2" name="percent"/>
+      <Field Caption="Cost" Format="#####.####" Size="8" Type="3" name="cost"/>
+      <Field Caption="Composition" File="pos.composition" Size="2" Type="2" name="composition"/>
+      <Field Caption="Web color" File="pos.color" Size="2" Type="2" name="webcolor"/>
+      <Field Caption="Websize" name="websize" Dissect="1"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" Options="WebExclude" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Created" Strict="1" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="itemcolor" CRC64="1" Unordered="1">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="price"/>
+      </Index>
+      <Index CRC64="1" name="itemcolor[color]" Unordered="1">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="itemcolor[composition]" Unordered="1">
+         <IndexEntry name="composition"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="price"/>
+      </Index>
+      <Index name="itemcolor[price]" CRC64="1" Unordered="1">
+         <IndexEntry name="price"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="itemcolor[size]" Unordered="1">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="itemcolor[webcolor]" Unordered="1">
+         <IndexEntry name="webcolor"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="price"/>
+      </Index>
+      <Index CRC64="1" name="itemcolor_barcode" Unordered="1">
+         <IndexEntry name="barcode"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+
+      <Index CRC64="1" name="itemcolor_barcode_ordered">
+         <IndexEntry name="barcode"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+
+      <Index CRC64="1" name="itemcolor_barcode2" Unordered="1">
+         <IndexEntry name="barcode2"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="price"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,11 @@
+<xml>
+  <Table name="Favorites" System="office">
+    <Field Caption="User" name="user" Size="2" Type="2" File="office.prouser"/>
+    <Field Caption="Poperty" name="property" Size="4" Type="2" File="office.property"/>
+    <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+  </Table>
+  <Index name="profavor">
+    <IndexEntry name="user"/>
+    <IndexEntry name="property"/>
+  </Index>
+</xml>

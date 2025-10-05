@@ -1,0 +1,20 @@
+<xml>
+   <Table System="system" name="OTP Log" Root="1">
+      <Field Size="4" Type="5" name="date" Auto="1" Caption="Date"/>
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Strict="1" Caption="Password" Size="20" Type="1" name="password" Modify="1"/>
+      <Field Caption="Used" Strict="1" Size="8" Type="5" name="used" Modify="1"/>
+      <Field Caption="Note" Strict="1" Size="200" name="note" Modify="1"/>
+      <Field Strict="1" Caption="phone" Size="8" name="phone" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="otp">
+         <IndexEntry name="date"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="password"/>
+      </Index>
+      <Index name="otp_password">
+         <IndexEntry name="password"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

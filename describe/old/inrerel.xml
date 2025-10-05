@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="inrerel" System="old" ModifyStamp="0">
+      <Field Size="8" Dim ="1" name="fr_regno" Caption="Reg. No."/>
+      <Field Size="4" Type="5" Dim ="1" name="fr_date" Caption="Issue"/>
+      <Field Size="2" Format="###" Type="2" Dim ="1" name="fr_no" Caption="No."/>
+      <Field Size="30" Dim ="1" name="fr_desc" Caption="Description"/>
+      <Index name="inrerel">
+         <IndexEntry name="fr_regno"/>
+         <IndexEntry name="fr_date"/>
+         <IndexEntry name="fr_no"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="ownership" System="accounting">
+      <Field Size="4" Type="2" File="accounting.land" name="land" Caption="Land"/>
+      <Field Size="4" Type="2" File="accounting.landowner" name="landowner" Caption="Owner"/>
+      <Field Size="8" name="nominator" Caption="Nominator"/>
+      <Field Size="8" name="denominator" Caption="Denominator"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="ownership">
+         <IndexEntry name="land"/>
+         <IndexEntry name="landowner"/>
+      </Index>
+      <Index name="ownership[landowner]">
+         <IndexEntry name="landowner"/>
+         <IndexEntry name="land"/>
+      </Index>
+   </Table>
+</xml>

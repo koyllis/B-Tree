@@ -1,0 +1,40 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="Labour Force">
+      <Field Caption="Mobile" Size="15" Force="1" name="mobile"/>
+      <Field Caption="Surname" Size="20" Force="1" Tip="1" name="surname"/>
+      <Field Size="20" Force="1" Tip="1"/>
+      <Field Caption="Nickname" Size="20" name="nickname"/>
+      <Field Caption="Email" name="email"/>
+      <Field Caption="Identity No." Size="20" name="identity"/>
+      <Field Caption="Voter No." Size="20" name="voter"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="birthtday"/>
+      <Field Caption="Sex" Size="1" Type="2" Options="Male,Female,Everyday" name="sex"/>
+      <Field Caption="Refered by" Size="20" Type="1" name="refered"/>
+      <Field Caption="Desired profession" File="payroll.profession" Size="2" Type="2" name="profession"/>
+      <Field Caption="Second profession" File="payroll.profession" Size="2" Type="2" name="profession2"/>
+      <Field Caption="Third profession" File="payroll.profession" Size="2" Type="2" name="profession3"/>
+      <Field Caption="Part-time" Size="1" Type="2" Format="b" name="parttime"/>
+      <Field Caption="Desired shift" Size="1" Type="2" Format="b" name="shift" Options="Morning,Afternoon,Night,Mix,Split"/>
+      <Field Caption="Desired days" Size="1" Type="2" name="days" Options="Monday-Friday,AllDays,5Days,6Days"/>
+      <Field Caption="Nationality" File="accounting.nationality" Size="2" Type="2" name="nationality"/>
+      <Field Caption="Address1" Size="40" Type="1" name="address1"/>
+      <Field Caption="Address2" Size="40" Type="1" name="address1"/>
+      <Field Caption="Postal" Size="4" Type="2" Format="####" name="postal"/>
+      <Field Caption="Residence area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Work area" File="accounting.area" Size="2" Type="2" name="area_work"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Since" Size="4" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="labourforce">
+         <IndexEntry name="mobile"/>
+      </Index>
+      <Index name="labourforce[nationality]">
+         <IndexEntry name="nationality"/>
+         <IndexEntry name="mobile"/>
+      </Index>
+      <Index name="labourforce[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="mobile"/>
+      </Index>
+   </Table>
+</xml>

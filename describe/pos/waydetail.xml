@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table name="Waybill Details" System="pos">
+      <Field Size="4" Type="2" File="pos.waybill" name="waybill" Caption="Waybill"/>
+      <Field Size="4" Type="2" File="pos.order" name="order" Caption="Order"/>
+      <Field Size="4" Format="#####.###" Type="8" name="quantity" Total="1" Caption="Quantity"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="waydetail">
+         <IndexEntry name="waybill"/>
+         <IndexEntry name="order"/>
+      </Index>
+      <Index name="waydetail[order]">
+         <IndexEntry name="order"/>
+         <IndexEntry name="waybill"/>
+      </Index>
+   </Table>
+</xml>

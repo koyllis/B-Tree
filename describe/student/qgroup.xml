@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" name="Matching Groups">
+      <Field Caption="Educator" File="student.associate" Size="4" Type="2" name="associate"/>
+      <Field Size="50"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="qgroup">
+         <IndexEntry name="associate"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="qgroup[associate]">
+         <IndexEntry name="associate"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

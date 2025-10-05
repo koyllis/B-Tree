@@ -1,0 +1,18 @@
+<xml>
+   <Table System="payroll" name="employeeoff">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Day" Size="1" Options="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" Type="2" name="day"/>
+      <Field Caption="Slot" File="office.schslot" Size="2" Type="2" name="slot"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="employeeoff">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="day"/>
+         <IndexEntry name="slot"/>
+      </Index>
+      <Index name="employeeoff[slot]">
+         <IndexEntry name="slot"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="day"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,27 @@
+<xml>
+   <Table System="generic" Icon="ship" name="Boarding Pass">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Serial" Size="4" Type="2" Force="1" name="serial"/>
+      <Field Caption="Reference" Size="4" Type="2" Force="1" name="reference"/>
+      <Field Caption="Surname" Size="40" Force="1" name="surname"/>
+      <Field Size="20" Force="1"/>
+      <Field Caption="Cabin" Size="10" Force="1" name="cabin"/>
+      <Field Caption="Vehicle" Size="20" name="vehicle"/>
+      <Field Caption="Reg. No." Size="20" Type="1" name="regno"/>
+      <Field Caption="Make" Size="2" Type="2" name="make" File="accounting.make"/>
+      <Field Caption="Model" Size="2" Type="2" name="model" File="accounting.vehmodel"/>
+      <Field Caption="Deed No." Size="20" Type="1" name="deedno"/>
+      <Field Caption="Pet" Size="20" Type="1" name="pet"/>
+      <Field Size="8" Type="5" name="boarded" Caption="Boarded" Strict="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="boarding">
+         <IndexEntry name="date"/>
+         <IndexEntry name="serial"/>
+      </Index>
+      <Index name="boarding[reference]">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="serial"/>
+      </Index>
+   </Table>
+</xml>

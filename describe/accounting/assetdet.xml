@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Asset Details" System="accounting">
+      <Field Size="8" Type="2" File="accounting.detail" name="detail" Caption="Journal line"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="1" Options="Depreciation,Disposal,Transfer" Type="2" name="type" Caption="Type"/>
+      <Field Size="4" Format="#####.##" Type="4" name="value" Caption="Value"/>
+      <Field Size="4" Format="#####.##" Type="4" name="depreciation" Caption="Depreciation"/>
+      <Field Size="4" Format="#####.##" Type="4" name="wear_tear" Caption="Wear And Tear"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="assetdet">
+         <IndexEntry name="detail"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

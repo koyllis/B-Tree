@@ -1,0 +1,31 @@
+<xml>
+   <Table System="pos" name="Transfer Out"  retainColumns="1">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Time" Size="2" Type="5" name="time"/>
+      <Field Caption="Reference" Size="4" Type="2" name="refer"/>
+      <Field Caption="Quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Select" Total="1" Format="b" Size="1" Type="2" name="select" Persistent="1"/>
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transferout">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="transferout[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+      </Index>
+      <Index name="transferout[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="refer"/>
+      </Index>
+   </Table>
+</xml>

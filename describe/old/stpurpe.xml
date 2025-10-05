@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="stpurpe" System="old">
+      <Field Size="8" Format="u" name="hp_person" Caption="Operator"/>
+      <Field Size="1" Dim="99" Format="###" Type="2" name="hp_loc" Caption="Locations"/>
+      <Field Size="1" Dim="99" Format="###" Type="2" name="hp_frloc" Caption="From loc"/>
+      <Field Size="2" Dim="99" Format="u" name="hp_doc" Caption="Documents"/>
+      <Field Size="2" Dim="99" Format="u" name="hp_pcode" Caption="Price codes"/>
+      <Field Size="2" Dim="99" Format="u" name="hp_group" Caption="Groups"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="hp_cust" Caption="Forbid supplier creation (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="hp_disc" Caption="Allow input of discount (Y/N)?"/>
+      <Field Size="8" Format="u" name="hp_id" Caption="User ID"/>
+      <Field Size="1" Format="###" Type="2" name="hp_mincode" Caption="Minimum supplier characters"/>
+      <Field Size="1" Format="###" Type="2" name="hp_minitem" Caption="Minimum item characters"/>
+      <Field Size="8" name="hp_access" Caption="Cancellation access"/>
+      <Index name="stpurpe">
+         <IndexEntry name="hp_person"/>
+      </Index>
+   </Table>
+</xml>

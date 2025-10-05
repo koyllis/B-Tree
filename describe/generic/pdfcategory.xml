@@ -1,0 +1,14 @@
+<xml>
+   <Table System="generic" name="Category Naming">
+      <Field Caption="Layout" File="generic.pdflayout" Size="2" Type="2" name="layout"/>
+      <Field Caption="Category" Size="2" Type="2" name="category"/>
+      <Field Caption="Zone" Size="1" Type="2" name="zone"/>
+      <Field Caption="Name" Size="20" name="name"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdfcategory">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="zone"/>
+      </Index>
+   </Table>
+</xml>

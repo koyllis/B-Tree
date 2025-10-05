@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Delivery Details" ImmediateChild="1">
+      <Field Caption="Delivery order" File="pos.delivorder" Size="4" Type="2" name="delivorder"/>
+      <Field Caption="Container No." Size="20" Force="1" name="container"/>
+      <Field Caption="Amount" Format="####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Account" File="accounting.chart" Size="2" Type="2" name="chart"/>
+      <Field Strict="1" Caption="Invoice" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="delivdet">
+         <IndexEntry name="delivorder"/>
+         <IndexEntry name="container"/>
+      </Index>
+      <Index name="delivdet[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="delivorder"/>
+         <IndexEntry name="container"/>
+      </Index>
+      <Index name="delivdet[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="delivorder"/>
+         <IndexEntry name="container"/>
+      </Index>
+   </Table>
+</xml>

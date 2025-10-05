@@ -1,0 +1,64 @@
+<xml>
+   <Table System="pos" name="Item Pre-Orders" Unordered="1">
+      <Field Caption="Date" Total="1" Size="4" Type="5" name="date" Force="1"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location" Force="1"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Customer" Total="1" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Barcode" Size="20" Type="1" name="barcode"/>
+      <Field Caption="Barcode2" Size="20" Type="1" name="barcode2" Strict="1" Modify="1"/>
+      <Field Caption="Quantity" Total="1" Size="2" Type="2" name="quantity" Force="1"/>
+      <Field Caption="Select" Total="1" Format="b" Size="1" Type="2" name="select" Persistent="1"/>
+      <Field Caption="Delivered" Total="1" Size="2" Type="2" name="delivered" Persistent="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemorder" CRC64="1">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index CRC64="1" name="itemorder[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index CRC64="1" name="itemorder[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index CRC64="1" name="itemorder[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index CRC64="1" name="itemorder[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index CRC64="1" name="itemorder[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

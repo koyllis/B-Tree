@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Icon="math1" name="Receipt Numbering" System="lab">
+      <Field Size="4" Type="5" name="date" Caption="Date" Force="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" Force="1" name="people"/>
+      <Field Caption="Location" File="lab.customerlocation" Size="2" Type="2" Force="1" name="customerlocation"/>
+      <Field Size="4" Type="2" name="number" Caption="Number" AutoCounter="1"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="receiptno">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="customerlocation"/>
+      </Index>
+      <Index name="receiptno[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="customerlocation"/>
+         <IndexEntry name="date"/>
+      </Index>
+
+      <Index name="receiptno_number">
+         <IndexEntry name="number"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="customerlocation"/>
+      </Index>
+
+   </Table>
+</xml>

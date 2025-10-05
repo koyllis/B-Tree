@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Project Invoice Log" System="accounting">
+      <Field Size="2" Type="2" File="accounting.projectstatus" name="projectstatus" Caption="Project Operation"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="8" Format="###.##" Type="3" name="perc" Caption="Percentage%"/>
+      <Field Size="4" Format="######.##" Type="4" name="amount" Caption="Amount" Strict="1"/>
+      <Field Size="40" Type="1" name="note" Caption="Note"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="projectilog">
+         <IndexEntry name="projectstatus"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="projectilog[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="projectstatus"/>
+      </Index>
+   </Table>
+</xml>

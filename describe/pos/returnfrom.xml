@@ -1,0 +1,34 @@
+<xml>
+   <Table System="pos" name="Warehouse Returns">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color" Modify="1"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size" Modify="1"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location" Modify="1"/>
+      <Field Caption="Quantity" Format="quantity" Size="4" Type="8" name="quantity" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="returnfrom">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="returnfrom[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="returnfrom[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="returnfrom[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

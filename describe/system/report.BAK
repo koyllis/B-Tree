@@ -1,0 +1,115 @@
+<xml>
+   <Table DeleteChildren="1" System="system" TextAnalysis="0" Dynamic="1" PDA="0" Index="report" name="Custom reports" Audit="0" Root="1" Dataset="1">
+      <Field Caption="System" Size="32" name="system"/>
+      <Field Caption="File" Size="32" name="file"/>
+      <Field Caption="Output" Format="###" Size="1" Negative="0" Type="2" Options="Printer,Screen,Constraint,Relative" name="output"/>
+      <Field Caption="Type" Size="32" name="type"/>
+      <Field Size="128"/>
+      <Field Caption="Tab" Size="1" Negative="0" Type="2" name="tab"/>
+      <Field Caption="Scheme" Size="32" name="scheme"/>
+      <Field Caption="Relay Script" Size="32" name="relay_script"/>
+      <Field Caption="Sheet" Size="32" name="sheet"/>
+      <Field Caption="Group" File="system.report-group" Size="2" Type="2" name="group"/>
+      <Field Caption="Driving Field" Format="####" Size="2" Type="2" name="field" Dim="8"/>
+      <Field Caption="Keys" Format="##" Category="Special" Size="1" Type="2" name="keys" Dim="8"/>
+      <Field Caption="Sorting Field" Format="####" Category="General" Size="2" Type="2" name="sort" Dim="8"/>
+      <Field Caption="Label Margins" Format="####" Size="2" Type="2" name="label" Dim="8"/>
+      <Field Caption="Node Mode" Format="###" Category="Special" Size="1" Type="2" Options="Child,Parent,Orphan,All" name="nodemode" Default="All"/>
+      <Field Caption="Center Label" Format="b" Size="1" Type="2" name="center_label"/>
+      <Field Caption="Distinct" Format="b" Category="General" Size="1" Type="2" name="distinct"/>
+      <Field Caption="Descending" Format="b" Size="1" Type="2" name="descending"/>
+      <Field Caption="Complement" Format="b" Size="1" Type="2" name="complement"/>
+      <Field Caption="Print Summary" Category="General" Size="1" Type="2" Options="Driving,Footer,None" name="print_summary"/>
+      <Field Caption="Soft Erased" Category="General" Size="1" Type="2" Options="Include,Only" name="softerase"/>
+      <Field Caption="Borders" Category="General" Size="1" Type="2" Options="Light,None" name="border"/>
+      <Field Caption="Email Body File" Category="Special" Size="48" name="email_body"/>
+      <Field Caption="Header Images" Category="Special" Size="64" name="header_images"/>
+      <Field Caption="Mapping Field" Category="Special" Size="32" name="mapping_field"/>
+      <Field Caption="Mapping" Category="General" Size="1" Type="2" Options="Mapped,Unmapped" name="mapping"/>
+      <Field Caption="Grid Lines" Format="b" Size="1" Type="2" name="grid_lines" Category="Special"/>
+      <Field Caption="Header" Format="b" Category="General" Size="1" Type="2" name="header" Default="1"/>
+      <Field Caption="Footer" Format="b" Category="General" Size="1" Type="2" name="footer" Default="1"/>
+      <Field Caption="Chart Type" Category="General" Size="2" Options="Column,Line,Pie" Type="2" name="chart" Default="Detailed"/>
+      <Field Caption="Criteria" Category="General" Size="1" Type="2" Options="Detailed,Simple" name="criteria" Default="Detailed"/>
+      <Field Caption="Totals" Category="General" Size="1" Type="2" Options="Yes,Force" name="totals" Default="Yes"/>
+      <Field Caption="Average" Category="Special" Size="1" Type="2" Options="Both,only" name="average"/>
+      <Field Caption="Notes" Format="b" Size="1" Type="2" name="notes"/>
+      <Field Caption="Count" Format="b" Category="General" Size="1" Type="2" name="count"/>
+      <Field Caption="Update" Format="b" Category="Special" Size="1" Type="2" name="update"/>
+      <Field Caption="Split Caption" Format="b" Category="Special" Size="1" Type="2" name="split_caption"/>
+      <Field Caption="Summary View" Format="b" Category="General" Size="1" Type="2" name="summary_view"/>
+      <Field Caption="Summary" Format="b" Category="General" Size="1" Type="2" name="summary"/>
+      <Field Caption="Numbering" Format="b" Category="General" Size="1" Type="2" name="numbering"/>
+      <Field Caption="Margins" Format="b" Size="1" Type="2" name="margins"/>
+      <Field Caption="Frame" Format="b" Category="Special" Size="1" Type="2" name="frame" Default="1"/>
+      <Field Caption="Variance" Format="b" Category="Special" Size="1" Type="2" name="variance"/>
+      <Field Caption="Percentage Columns" Format="b" Deffault="1" Size="1" Type="2" name="percentage"/>
+      <Field Caption="No Header" Format="b" Category="Special" Size="1" Type="2" name="no_header"/>
+      <Field Caption="No Heading" Format="b" Category="Special" Size="1" Type="2" name="no_heading"/>
+      <Field Caption="Print Starting" Format="b" Category="General" Size="1" Type="2" name="print_starting" Default="1"/>
+      <Field Caption="Alternate Bold" Format="b" Size="1" Type="2" name="alternate_bold"/>
+      <Field Caption="Print Join driving" Format="b" Size="1" Type="2" name="print_join_driving"/>
+      <Field Caption="Force Driving" Format="b" Category="General" Size="1" Type="2" name="force_driving"/>
+      <Field Caption="Optimize Memory" Format="b" Size="1" Type="2" name="optimize_memory"/>
+      <Field Caption="All Memory" Format="b" Size="1" Type="2" name="all_memory"/>
+      <Field Caption="Source Mapping" Format="b" Size="1" Type="2" name="source_mapping"/>
+      <Field Caption="Ignore Criteria" Format="b" Size="1" Type="2" name="ignore_criteria"/>
+      <Field Caption="CSV" Format="b" Category="General" Size="1" Type="2" name="csv"/>
+      <Field Caption="Retain Columns" Format="b" Category="General" Size="1" Type="2" name="retain_columns"/>
+      <Field Caption="Break" Category="Special" Size="1" Negative="0" Type="2" name="break"/>
+      <Field Caption="Remove Split Columns" Category="Special" Size="1" Type="2" Options="Count,No" name="remove_split_columns"/>
+      <Field Caption="Heading" Category="General" Size="128" name="heading"/>
+      <Field Caption="Heading Font" Size="92" name="heading_font"/>
+      <Field Caption="Font Family" Size="32" name="font_family"/>
+      <Field Caption="Font Size" Size="2" Type="2" name="font_size"/>
+      <Field Caption="Font" Size="92" name="font"/>
+      <Field Caption="Footing" Category="General" Size="128" name="footing"/>
+      <Field Caption="Driving Field" Size="64" name="field_driving"/>
+      <Field Caption="Group Field" Size="64" name="field_group"/>
+      <Field Caption="Sort Field" Size="64" name="field_sort"/>
+      <Field Caption="Arrange Fields" Size="384" name="arrange"/>
+      <Field Caption="Security" Size="1" Type="2" Options="User,Manager" name="security"/>
+      <Field Caption="Split Sort" Category="General" Size="32" name="split_sort"/>
+      <Field Caption="Index" Category="General" Size="32" name="index"/>
+      <Field Caption="Barcode" Category="Special" Size="32" name="barcode"/>
+      <Field Caption="Parent Caption" Format="b" Category="Special" Size="1" Type="2" name="parent_caption" Default="1"/>
+      <Field Caption="Image Alignment" Category="Special" Size="1" Type="2" Options="Center,Right" name="image_alignment"/>
+      <Field Caption="Fit To Page" Format="b" Size="1" Type="2" name="fit_to_page"/>
+      <Field Caption="Extend Date" Category="Special" Size="1" Type="2" Options="None,Day,Day+Week" name="extend_date"/>
+      <Field Caption="Super" Format="b" Size="1" Type="2" name="super"/>
+      <Field Caption="Color" Format="b" Category="General" Size="1" Type="2" name="color" Default="1"/>
+      <Field Caption="Favorite" Format="b" Category="General" Size="1" Type="2" name="favorite"/>
+      <Field Caption="schedule Time" Category="Special" Size="18" name="schedule_time"/>
+      <Field Caption="schedule" Category="Special" Size="1" Type="2" Options="None,Daily,Saturday" name="schedule"/>
+      <Field Caption="Page Lines" Size="2" Type="2" name="page_lines"/>
+      <Field Caption="Background Color" Size="4" Negative="0" Type="2" name="back_color"/>
+      <Field Caption="EMail" Category="Special" Negative="0" Size="96" name="email"/>
+      <Field Caption="EMail Field" Size="32" Negative="0" name="email_field"/>
+      <Field Caption="Watermark" Category="Special" Size="32" Negative="0" name="watermark"/>
+      <Field Caption="Paper Source" Category="Special" Size="32" Negative="0" name="papersource"/>
+      <Field Caption="Sms Phone" Category="Special" Negative="0" Size="32" name="sms_phone"/>
+      <Field Caption="Empty Rows" Format="b" Size="1" Negative="0" Type="2" name="empty_rows"/>
+      <Field Caption="Landscape" Format="b" Category="General" Negative="0" Size="1" Type="2" name="landscape"/>
+      <Field Caption="No Report Name" Format="b" Category="Special" Size="1" Negative="0" Type="2" name="no_reportname"/>
+      <Field Caption="On Import" Format="b" Category="Special" Negative="0" Size="1" Type="2" name="onimport"/>
+      <Field Caption="Summary Totals" Format="b" Category="General" Size="1" Negative="0" Type="2" name="summary_totals"/>
+      <Field Caption="Pos Report" Category="Special" Negative="0" Size="1" Options="SystemLocation,AccountingLocation,ToLocation,NoLocation" Type="2" name="pos_report"/>
+      <Field Caption="Line Height" Format="###.##" Size="8" Negative="0" Type="3" name="line_height"/>
+      <Field Caption="Shift Label" Format="b" Negative="0" Size="1" Type="2" name="shift_label"/>
+      <Field Caption="Barcode Width" Format="##" Negative="0" Size="1" Type="2" name="barcode_width"/>
+      <Field Caption=".Net" Format="b" Size="1" Negative="0" Type="2" name="dotnet"/>
+      <Field Caption="Export Notes" Format="b" Negative="0" Size="1" Type="2" name="export_notes"/>
+      <Field Caption="Bold Headings" Format="b" Size="1" Negative="0" Type="2" name="bold_headings"/>
+      <Field Caption="PDF" Format="b" Size="1" Negative="0" Type="2" name="pdf"/>
+      <Field Caption="Dont Print Company" Format="b" Negative="0" Size="1" Type="2" name="dont_print_company" Category="Special"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="report">
+         <IndexEntry name="system"/>
+         <IndexEntry name="file"/>
+         <IndexEntry name="output"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="name"/>
+         <IndexEntry name="tab"/>
+      </Index>
+   </Table>
+</xml>

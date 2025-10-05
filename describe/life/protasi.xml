@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="protasi" System="life">
+      <Field Size="4" Format="######" Type="2" name="number" Caption="Proposal No."/>
+      <Field Size="2" name="accounty" Caption="Account type"/>
+      <Field Size="10" name="accountno" Caption="Account No."/>
+      <Field Size="2" name="plan" Caption="Plan"/>
+      <Field Size="4" Format="######.##" Type="4" name="amount" Caption="Amount"/>
+      <Field Size="4" Format="####.##" Type="4" name="extra" Caption="Extra"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Type="5" name="term" Caption="Termination"/>
+      <Field Size="1" Type="2" name="persons" Caption="Persons"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="protasi">
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

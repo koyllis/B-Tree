@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="inmotot" System="old">
+      <Field Size="4" Type="5" name="ms_date" Caption="Date"/>
+      <Field Size="2" name="ms_doc" Caption="Doc"/>
+      <Field Size="4" Type="2" name="ms_refer" Caption="Refer"/>
+      <Field Size="2" Type="2" name="ms_plno" Caption="Plan"/>
+      <Field Size="4" Type="4" name="ms_amount" Caption="Amount"/>
+      <Field Size="4" Type="5" name="ms_from" Caption="From"/>
+      <Field Size="4" Type="5" name="ms_to" Caption="To"/>
+      <Field Size="4" Type="2" name="ms_count" Caption="Count"/>
+      <Field Size="4" Type="4" name="ms_extra" Caption="Extra"/>
+      <Index name="inmotot">
+         <IndexEntry name="ms_date"/>
+         <IndexEntry name="ms_doc"/>
+         <IndexEntry name="ms_refer"/>
+         <IndexEntry name="ms_plno"/>
+         <IndexEntry name="ms_amount"/>
+         <IndexEntry name="ms_from"/>
+      </Index>
+   </Table>
+</xml>

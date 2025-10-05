@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="system" name="Group Members">
+      <Field Caption="SMS group" File="system.smsgroup" Size="2" Type="2" name="smsgroup"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="smspeople">
+         <IndexEntry name="smsgroup"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

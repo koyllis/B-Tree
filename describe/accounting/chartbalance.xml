@@ -1,0 +1,16 @@
+<xml>
+   <Table System="accounting" name="Account Balances">
+      <Field Caption="Account" File="accounting.chart" Size="4" Type="2" name="chart"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Balance" Format="#####,##" Size="8" Type="4" name="balance"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="chartbalance">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="chartbalance_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="chart"/>
+      </Index>
+   </Table>
+</xml>

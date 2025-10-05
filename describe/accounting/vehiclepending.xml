@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="accounting" CanDelete="0" name="Pending Actions">
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="4" Type="2" name="vehicle"/>
+      <Field Caption="Type" Size="2" Type="2" Options="OilChange,Service" name="type"/>
+      <Field Caption="Expense" File="accounting.vehicleexp" Size="4" Type="2" name="vehicleexp"/>
+      <Field Caption="Vehicle counter" Size="4" Type="2" name="vehiclecount"/>
+      <Field Caption="Expense counter" Size="4" Type="2" name="expensecount"/>
+      <Field Caption="Difference" Size="2" Type="2" name="difference"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vehiclepending">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="vehiclepending[vehicleexp]">
+         <IndexEntry name="vehicleexp"/>
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

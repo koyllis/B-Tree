@@ -1,0 +1,28 @@
+<xml>
+   <Table System="accounting" name="compare">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Document" Size="10" name="document"/>
+      <Field Caption="Supplier reference" Size="20" name="suprefer"/>
+      <Field Caption="Reference" Size="20" name="reference"/>
+      <Field Caption="Debit" Size="8" Type="4" name="debit" Total="1"/>
+      <Field Caption="Credit" Size="8" Type="4" name="credit" Total="1"/>
+      <Field Caption="Journal" File="accounting.detail" Size="8" Type="2" name="detail"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="compare">
+         <IndexEntry name="date"/>
+         <IndexEntry name="document"/>
+         <IndexEntry name="suprefer"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="compare[detail]">
+         <IndexEntry name="detail"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="suprefer"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="compare_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

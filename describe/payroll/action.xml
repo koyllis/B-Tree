@@ -1,0 +1,12 @@
+<xml>
+   <Table System="payroll" name="Points Actions">
+      <Field Caption="Type" Size="1" Type="2" Options="Action,Reward" name="type"/>
+      <Field Size="128"/>
+      <Field Caption="Points" Format="###" Size="2" Type="2" name="points"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="action">
+         <IndexEntry name="type"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

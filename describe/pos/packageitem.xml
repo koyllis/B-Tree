@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Package Items">
+      <Field Caption="Package" File="pos.package" Size="2" Type="2" name="package"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Caption="Discount%" Format="##.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Offer%" Format="##.##" Size="8" Type="3" name="offer"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="packageitem">
+         <IndexEntry name="package"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="packageitem[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="package"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="packageitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="package"/>
+      </Index>
+      <Index name="packageitem[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="package"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

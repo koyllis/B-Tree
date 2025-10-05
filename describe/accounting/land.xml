@@ -1,0 +1,43 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Land" System="accounting">
+      <Field Size="10" name="code" Caption="Reg. No."/>
+      <Field Size="35"/>
+      <Field Size="4" Type="2" File="accounting.area" name="county" Caption="County"/>
+      <Field Size="4" Type="2" File="accounting.area" name="city" Caption="City"/>
+      <Field Size="4" Type="2" File="accounting.area" name="parish" Caption="Parish"/>
+      <Field Size="2" name="department" Caption="Department"/>
+      <Field Size="4" Format="########.##" Type="4" name="value1980" Caption="Value 1980"/>
+      <Field Size="4" Format="########.##" Type="4" name="value1920" Caption="Value 1920"/>
+      <Field Size="10" name="area" Caption="Area"/>
+      <Field Size="2" name="issue" Caption="Issue"/>
+      <Field Size="11" name="plan" Caption="Plan"/>
+      <Field Size="2" name="partA" Caption="Part A"/>
+      <Field Size="4" name="sectionA" Caption="Section A"/>
+      <Field Size="2" name="partB" Caption="Part B"/>
+      <Field Size="4" name="sectionB" Caption="Section B"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="land">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="land[city]">
+         <IndexEntry name="city"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="land[county]">
+         <IndexEntry name="county"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="land[parish]">
+         <IndexEntry name="parish"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="land_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="land_sectionA">
+         <IndexEntry name="sectionA"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

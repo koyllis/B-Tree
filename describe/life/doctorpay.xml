@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="Doctor Payments">
+      <Field Caption="Issue date" Size="4" Type="5" name="issue"/>
+      <Field Caption="Cheque No." Size="4" Type="2" name="cheque"/>
+      <Field Caption="Cheque amount" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Creditor" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Recorded" Size="4" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="doctorpay">
+         <IndexEntry name="issue"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+      <Index name="doctorpay[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="cheque"/>
+      </Index>
+   </Table>
+</xml>

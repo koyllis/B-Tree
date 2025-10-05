@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="calculator" Dynamic="1" name="Service Pricing">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Service" File="accounting.servicedef" Size="2" Type="2" name="servicedef"/>
+      <Field Caption="Quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="Price" Format="####.##" Size="4" Type="4" name="price"/>
+      <Field Caption="Previous price" Format="####.##" Size="4" Type="4" name="previous"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="serviceprice">
+         <IndexEntry name="people"/>
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+      <Index name="serviceprice[servicedef]">
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="quantity"/>
+      </Index>
+   </Table>
+</xml>

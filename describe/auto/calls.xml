@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Calls" Unordered="1">
+      <Field name="number" Caption="Nummber" Type="2" Size="4" Strict="1" Modify="1" AutoCounter="1"/>
+      <Field Caption="Date" Size="8" Type="5" name="date"/>
+      <Field Caption="Failed" Size="1" Type="2" name="failed" Format="b"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="calls" CRC64="1">
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="maintenance" Dynamic="1" ChainInsert="maintdet" name="Maintenance" System="office" DeleteChildren="1">
+      <Field Size="4" Force="1" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Format="#####.##" Force="1" Type="4" name="amount" Caption="Amount"/>
+      <Field Size="1" Format="##" Force="1" Type="2" name="expire" Caption="Expire month"/>
+      <Field Size="1" Options="Same day,Next day,24 hours,Week" Force="1" Type="2" name="mode" Caption="Type of maintenance"/>
+      <Field Size="1" Options="Hardware,Software,Both" Type="2" name="typeof" Caption="Type"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="maintenance">
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

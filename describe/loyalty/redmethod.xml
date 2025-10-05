@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="leave.ico" name="Redemption Method" System="loyalty">
+      <Field Size="8" name="code" Caption="Code"/>
+      <Field/>
+      <Field Size="1" Format="b" Type="2" name="type" Caption="Value"/>
+      <Field Size="8" Format="###.###" Type="3" name="factor" Caption="Factor"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="redmethod">
+         <IndexEntry AllDimension="1" name="code"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="system" Profile="1" name="User Profile">
+      <Field Caption="User" Format="u" Size="64" name="user"/>
+      <Field Caption="Password" name="password"/>
+      <Field Caption="Authority" Size="1" Negative="0" Type="2" Options="User,Manager,Administrator" name="authority"/>
+      <Field Caption="Profile" File="system.profile" Size="2" Type="2" name="profile"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="userprofile">
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

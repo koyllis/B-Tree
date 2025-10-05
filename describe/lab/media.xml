@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Icon="writingpad" name="Media" System="lab">
+      <Field/>
+      <Field Caption="Days" Size="2" Type="2" name="days"/>
+      <Field Caption="Category" File="pos.brand" Size="2" Type="2" name="brand" Modify="1"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="media">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="media[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="traffic" name="Vehicle References" System="insurance">
+      <Field Size="4" Type="2" File="insurance.policyvehicle" name="policyvehicle" Caption="Policy"/>
+      <Field Size="1" Type="2" File="insurance.reftype" name="reftype" Caption="Type"/>
+      <Field name="description" Caption="Description"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="vehicledet_reftype">
+         <IndexEntry name="reftype"/>
+         <IndexEntry name="policyvehicle"/>
+      </Index>
+      <Index name="vehicledet">
+         <IndexEntry name="policyvehicle"/>
+         <IndexEntry name="reftype"/>
+      </Index>
+   </Table>
+</xml>

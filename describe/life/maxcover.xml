@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table DeleteChildren="1" System="life" name="maxcover">
+      <Field Caption="Member" File="life.member" Size="4" Type="2" name="member"/>
+      <Field Caption="Counter" Size="2" Type="2" name="count"/>
+      <Field Caption="Amount" Size="8" Type="4" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="maxcover">
+         <IndexEntry name="member"/>
+      </Index>
+   </Table>
+</xml>

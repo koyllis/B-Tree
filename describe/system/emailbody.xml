@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="system" name="emailbody">
+      <Field/>
+      <Field Caption="Subject" Size="50" name="subject"/>
+      <Field Caption="Field" Size="20" name="field"/>
+      <Field Caption="Days" Size="2" Type="2" name="days"/>
+      <Field Caption="Day of month" Size="1" Type="2" name="dayofmonth"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="emailbody">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

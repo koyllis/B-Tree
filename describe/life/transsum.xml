@@ -1,0 +1,22 @@
+ <xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" Icon="journal_entries" Dynamic="1" CanDelete="0" name="Summary">
+      <Field Caption="Transaction" File="life.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Plan" File="life.contractplan" Size="2" Type="2" name="contractplan"/>
+      <Field Caption="Members" Total="1" Size="4" Type="2" name="count"/>
+      <Field Caption="Premium" Total="1" Format="####.##" Size="4" Type="4" name="premium"/>
+      <Field Caption="Charge" Total="1" Format="####.##" Size="4" Type="4" name="charge"/>
+      <Field Caption="Commission" Total="1" Format="####.######" Size="8" Type="3" name="commission"/>
+      <Field Caption="Guarantee" Total="1" Format="####.##" Size="4" Type="4" name="guarantee"/>
+      <Field Caption="Extra" Total="1" Format="####.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Loan amount" Total="1" Format="########.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transsum">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="contractplan"/>
+      </Index>
+      <Index name="transsum[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

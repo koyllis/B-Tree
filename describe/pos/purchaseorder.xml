@@ -1,0 +1,35 @@
+<xml>
+   <Table System="pos" name="Purchase Order">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Item" File="pos.item" Size="4" Force="1" Type="2" name="item"/>
+      <Field Caption="Stock" Total="1" Format="quantity" Size="4" Type="8" name="quantity"/>
+      <Field Caption="On order" Total="1" Format="quantity" Size="4" Type="8" name="onorder"/>
+      <Field Caption="Reserved" Total="1" Format="quantity" Size="4" Type="8" name="reserved"/>
+      <Field Caption="Total qty" Total="1" Format="quantity" Size="4" Type="8" name="totalq"/>
+      <Field Caption="Current sales" Total="1" Format="quantity" Size="4" Type="8" name="sales_this"/>
+      <Field Caption="Previous sales" Total="1" Format="quantity" Size="4" Type="8" name="sales_prev"/>
+      <Field Caption="Last sales" Total="1" Format="quantity" Size="4" Type="8" name="sales_last"/>
+      <Field Caption="Target sales" Total="1" Format="quantity" Size="4" Type="8" name="sales_target"/>
+      <Field Caption="Last purchase" Total="1" Format="quantity" Size="4" Type="8" name="last"/>
+      <Field Caption="Date" Size="4" Type="5" name="last_date"/>
+      <Field Caption="Order quantity" Total="1" Format="quantity" Size="4" Type="8" name="order"/>
+      <Field Caption="Safety stock" Total="1" Format="quantity" Size="4" Type="8" name="safety"/>
+      <Field Caption="Zero stock" Total="1" Format="quantity" Size="4" Type="8" name="zero"/>
+      <Field Caption="First date" Size="4" Type="5" name="first_date"/>
+      <Field Caption="Delivery " Total="1" Size="4" Type="5" name="delivery"/>
+      <Field Caption="Stock(safety)" Total="1" Format="quantity" Size="4" Type="8" name="quantity_safety"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="purchaseorder">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="purchaseorder[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="purchaseorder[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

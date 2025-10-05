@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Item History">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Retail price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Net cost" Format="#####.######" Administrator="1" Size="8" Negative="0" Type="3" name="cost"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemlog">
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="itemlog[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

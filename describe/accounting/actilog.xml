@@ -1,0 +1,54 @@
+<xml>
+   <Table System="accounting" name="Activity Log">
+      <Field Strict="1" Caption="Date" Size="4" Type="5" name="date" Modify="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Activity" File="accounting.activity" Size="2" Force="1" Type="2" name="activity"/>
+      <Field Caption="Sequence" Size="1" Type="2" name="seq"/>
+      <Field Caption="Accompanied by" Size="1" Options="Wife,Husband,Partner,Friend,Child,Parent" Type="2" name="accompanied"/>
+      <Field Size="40"/>
+      <Field Caption="Transaction" Strict="1" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Strict="1" Caption="User" File="system.user" Size="2" Auto="1" Type="2" name="user" Modify="1"/>
+      <Field Strict="1" Caption="Location" File="system.location" Size="2" Auto="1" Type="2" name="location" Modify="1"/>
+      <Field Caption="To Time" Strict="1" Size="8" Auto="1" Type="5" name="totime" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="actilog">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="activity"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="actilog[activity]">
+         <IndexEntry name="activity"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="actilog[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="activity"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="actilog[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="activity"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="actilog[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="activity"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="actilog[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="activity"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Conversation" Unordered="1">
+      <Field name="number" Caption="Nummber" Type="2" Size="4" Strict="1" Modify="1" AutoCounter="1"/>
+      <Field Caption="From" File="auto.webuser" Size="2" Type="2" name="webuser"/>
+      <Field Caption="To" File="auto.webuser" Size="2" Type="2" name="to_webuser"/>
+      <Field name="last" Caption="Last message" Type="1" Size="100"/>
+      <Field name="lasttime" Caption="Last message time" Type="5" Size="8"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="conversation" CRC64="1" Large="1">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="conversation[webuser]" CRC64="1" Large="1">
+         <IndexEntry name="webuser"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="conversation[to_webuser]" CRC64="1" Large="1">
+         <IndexEntry name="webuser"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

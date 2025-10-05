@@ -1,0 +1,20 @@
+<xml>
+   <Table System="generic" name="Fields Children">
+      <Field Caption="Field" File="generic.pdffield" Size="2" Type="2" name="field"/>
+      <Field Caption="Language" Size="30" name="language"/>
+      <Field Caption="Page No." Size="1" Type="2" name="page"/>
+      <Field Caption="X" Format="####.##" Size="4" Type="8" name="x"/>
+      <Field Caption="Y" Format="####.##" Size="4" Type="8" name="y"/>
+      <Field Caption="Bold?" Options="Yes,No" Size="1" Type="2" name="bold"/>
+      <Field Caption="Font size" Size="1" Type="2" name="font"/>
+      <Field Caption="Footer" Size="50" Type="1" name="footer"/>
+      <Field Caption="Options" Size="2" Options="SpacedDate,SpacedAmount,AlternateSource" Format="b" Type="2" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdffieldchild">
+         <IndexEntry name="field"/>
+         <IndexEntry name="language"/>
+         <IndexEntry name="page"/>
+         <IndexEntry name="x"/>
+      </Index>
+   </Table>
+</xml>

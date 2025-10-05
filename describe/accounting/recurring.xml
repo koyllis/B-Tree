@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table DeleteChildren="1" System="accounting" SoftDelete="1" Icon="recurring" Dynamic="1" name="Recurring header">
+      <Field Caption="User" File="system.user" Size="4" Auto="1" Type="2" name="user"/>
+      <Field Caption="Code" name="code"/>
+      <Field Caption="Date" Size="4" Auto="1" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="recurring">
+         <IndexEntry name="user"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

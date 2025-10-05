@@ -1,0 +1,33 @@
+<xml>
+   <Table CanModify="0" DeleteChildren="1" System="pos" CanDelete="0" name="Concentration">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Document" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Cost markup %" Format="##.##" Size="8" Type="3" name="markup"/>
+      <Field Caption="Transactions" Strict="1" Size="2" Type="2" name="count_trans" Modify="1"/>
+      <Field Caption="Lines" Strict="1" Size="2" Type="2" name="count_detail" Modify="1"/>
+      <Field Caption="Quantity" Strict="1" Size="8" Type="3" name="count_quantity" Modify="1" Format="quantity"/>
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="concentrate">
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="concentrate[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="concentrate[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,44 @@
+<xml>
+   <Table System="pos" name="Size Conversion">
+      <Field Caption="Brand" File="pos.brand" Size="2" Type="2" name="brand"/>
+      <Field Caption="Design" File="pos.design" Size="2" Type="2" name="design"/>
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Mapped size" name="xsize"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Websize" Size="10" name="websize"/>
+      <Field Caption="Non-European size" name="noneurope"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="sizeconvert">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="design"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="xsize"/>
+      </Index>
+      <Index name="sizeconvert[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="design"/>
+         <IndexEntry name="xsize"/>
+      </Index>
+      <Index name="sizeconvert[design]">
+         <IndexEntry name="design"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="xsize"/>
+      </Index>
+      <Index name="sizeconvert[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="design"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="xsize"/>
+      </Index>
+      <Index name="sizeconvert_websize">
+         <IndexEntry name="websize"/>
+         <IndexEntry name="brand"/>
+         <IndexEntry name="design"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="xsize"/>
+      </Index>
+   </Table>
+</xml>

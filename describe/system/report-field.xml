@@ -1,0 +1,43 @@
+<xml>
+   <Table Unordered="1" System="system" TextAnalysis="0" Dynamic="1" PDA="0" Index="report-field" name="Report fields" Audit="0" Root="1" Dataset="1">
+      <Field Caption="Report" Format="#######" File="system.report" Size="4" Type="2" name="report" Force="1"/>
+      <Field Caption="Company" File="system.master" Size="2" Type="2" name="master"/>
+      <Field Caption="Field" Size="64" name="field_"/>
+      <Field Caption="Type" Format="###" Size="1" Type="2" Options="From,To,Other" name="type"/>
+      <Field Caption="Data" Size="1536" name="data"/>
+      <Field Caption="Columns" Size="256" name="columns"/>
+      <Field Caption="Selection" Format="b" Size="1" Type="2" name="selection"/>
+      <Field Caption="Checked" Format="b" Size="1" Type="2" name="checked"/>
+      <Field Caption="Date Interval" Size="1" Type="2" Options="Weekly,Monthly,Yearly" name="date_interval"/>
+      <Field Caption="Time Interval" Size="4" Type="2" name="interval"/>
+      <Field Caption="Node Mode" Format="###" Size="1" Type="2" Options="Child,Parent,Orphan,All" name="nodemode"/>
+      <Field Caption="Split field" Format="b" Size="1" Type="2" name="split"/>
+      <Field Caption="Index" Size="32" name="index"/>
+      <Field Caption="Sort" Format="b" Size="1" Type="2" name="sort"/>
+      <Field Caption="Exclude Print Criteria" Format="b" Size="1" Type="2" name="exclude_criteria"/>
+      <Field Caption="Exclude" Format="b" Size="1" Type="2" name="exclude"/>
+      <Field Caption="Summary fields" Size="64" name="summary"/>
+      <Field Caption="Bookmark" Format="b" Size="1" Type="2" name="bookmark"/>
+      <Field Caption="Relative" File="system.report" Size="4" Type="2" name="relative"/>
+      <Field Caption="Sequence" Size="2" Type="2" name="sequence"/>
+      <Field Caption="Ignore Criteria" Format="b" Size="1" Type="2" name="ignore_criteria"/>
+      <Field Caption="Comparison" Format="b" Size="1" Type="2" name="comparison"/>
+      <Field Caption="Criteria behavior" Format="b" Size="1" Type="2" name="criteria_behavior"/>
+      <Field Caption="Lock" Format="b" Size="1" Type="2" name="lock"/>
+      <Field Caption="Split Type" Size="1" Type="2" name="split_type"/>
+      <Field Caption="Split Size" Size="1" Type="2" name="split_size"/>
+      <Field Caption="Report width" Negative="0" Size="1" Type="2" name="report_width"/>
+      <Field Caption="Caption" Size="64" name="caption"/>
+      <Field Caption="Persistent" Format="b" Size="1" Type="2" name="persistent"/>
+      <Field Caption="Bold" Format="b" Size="1" Type="2" name="bold"/>
+      <Field Caption="Format" Size="12" name="format"/>
+      <Field Caption="Distinct" Format="b" Size="1" Type="2" name="distinct"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="report-field">
+         <IndexEntry name="report"/>
+         <IndexEntry name="master"/>
+         <IndexEntry name="field_"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

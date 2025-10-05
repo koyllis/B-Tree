@@ -1,0 +1,23 @@
+<xml>
+   <Table System="pos" name="Pricing Calculation">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item" Strict="1"/>
+      <Field Caption="Quantity" Format="quantity" Size="8" Type="3" name="quantity" Strict="1"/>
+      <Field Caption="Cost" Format="####.###" Size="8" Type="3" name="cost" Strict="1"/>
+      <Field Caption="Last cost" Format="####.###" Size="8" Type="3" name="cost_last" Strict="1"/>
+      <Field Caption="Difference" Format="####.###" Size="8" Type="3" name="cost_diff" Strict="1"/>
+      <Field Caption="Perc%" Format="##.##" Size="8" Type="3" name="cost_perc" Strict="1"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price" Strict="1"/>
+      <Field Caption="New price" Format="price" Size="8" Type="3" name="price_new"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="pricecode" Strict="1"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="amount" Strict="1"/>
+      <Field Caption="New price" Format="price" Size="8" Type="3" name="amount_new"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pricing">
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="pricing[pricecode]">
+         <IndexEntry name="pricecode"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

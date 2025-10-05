@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="inextra" System="old" ModifyStamp="0">
+      <Field Size="8" Format="u" Dim ="1" name="ib_code" Caption="Customer"/>
+      <Field Format="u" Dim ="1" name="ib_add1" Caption="Work add."/>
+      <Field Format="u" Dim ="1" name="ib_add2" Caption=""/>
+      <Field Format="u" Dim ="1" name="ib_add3" Caption=""/>
+      <Field Size="20" Format="u" Dim ="1" name="ib_occup" Caption="Occupation"/>
+      <Field Size="10" Format="u" Dim ="1" name="ib_icno" Caption="I.C. No."/>
+      <Field Size="1" Options=",,M,F" Format="u" Dim ="1" name="ib_mf" Caption="M/F"/>
+      <Field Size="4" Type="5" Dim ="1" name="ib_birth" Caption="Birthday"/>
+      <Field Size="20" Format="u" Dim ="1" name="ib_place" Caption="Birth place"/>
+      <Field Size="1" Options=",,S,M,D,W" Format="u" Dim ="1" name="ib_msta" Caption="S/M/D/W"/>
+      <Index name="inextra">
+         <IndexEntry name="ib_code"/>
+      </Index>
+   </Table>
+</xml>

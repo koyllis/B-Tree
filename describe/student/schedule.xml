@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" Icon="clipboard" Dynamic="1" ChainInsert="progbook" name="Schedule">
+      <Field Caption="Program" File="student.program" Size="4" Force="1" Type="2" name="program"/>
+      <Field Caption="Day" Size="1" Force="1" Options="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday" Type="2" name="day"/>
+      <Field Caption="From" Size="2" Force="1" Type="5" name="from"/>
+      <Field Caption="To" Size="2" Force="1" Type="5" name="to"/>
+      <Field Caption="Room" File="student.room" Size="2" Type="2" Force="1" name="room"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="schedule">
+         <IndexEntry name="program"/>
+         <IndexEntry name="day"/>
+      </Index>
+      <Index name="schedule[room]">
+         <IndexEntry name="room"/>
+         <IndexEntry name="program"/>
+         <IndexEntry name="day"/>
+      </Index>
+   </Table>
+</xml>

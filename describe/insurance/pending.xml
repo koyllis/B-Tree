@@ -1,0 +1,39 @@
+<xml>
+   <Table System="insurance" name="Pending Events">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Type" File="insurance.type" Size="2" Force="1" Type="2" name="type"/>
+      <Field Caption="Company" File="insurance.company" Size="2" Type="2" name="company"/>
+      <Field Caption="Agent" File="insurance.agent" Size="2" Type="2" name="agent"/>
+      <Field Caption="Amount" Format="####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Note" Size="50" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pending">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="pending[agent]">
+         <IndexEntry name="agent"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="pending[company]">
+         <IndexEntry name="company"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="pending[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="pending[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

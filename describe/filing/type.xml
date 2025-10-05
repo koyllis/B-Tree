@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Type" System="filing">
+      <Field Size="4" Format="#######" Type="2" name="type" Caption="Letter Type"/>
+      <Field Caption="Description"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="type">
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

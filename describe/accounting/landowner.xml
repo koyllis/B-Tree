@@ -1,0 +1,63 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Land Owners" System="accounting">
+      <Field Size="12" name="code" Caption="Identity"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="35"/>
+      <Field Size="15" name="middle" Caption="Middle"/>
+      <Field Size="35" Tip="1" name="surname" Caption="Surname"/>
+      <Field Size="50" name="shortcom" Caption="Short Company"/>
+      <Field Size="50" Tip="1" name="fullcom" Caption="Full Company" Distinct="1"/>
+      <Field Size="4" Type="2" File="accounting.area" name="county" Caption="County"/>
+      <Field Size="4" Type="2" File="accounting.area" name="city" Caption="City"/>
+      <Field Size="4" Type="2" File="accounting.area" name="parish" Caption="Parish"/>
+      <Field Size="4" Type="2" File="accounting.street" name="street" Caption="Street"/>
+      <Field Size="4" name="no" Caption="Number"/>
+      <Field Size="1" name="noadd" Caption="Number extra"/>
+      <Field Size="4" name="apart" Caption="Apartment"/>
+      <Field Size="4" Type="2" File="accounting.landcategory" name="landcategory" Caption="Category"/>
+      <Field Size="4" Format="#######.##" Type="4" name="value1980" Caption="Value 1980"/>
+      <Field Size="2" Format="###" Type="2" name="count" Caption="Property count"/>
+      <Field Size="4" Format="#######.##" Type="4" name="totalvalue" Caption="Total value"/>
+      <Field Size="4" Format="#######.##" Type="4" name="totaldue" Caption="Total due"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="landowner">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="landowner[city]">
+         <IndexEntry name="city"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="landowner[county]">
+         <IndexEntry name="county"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="landowner[landcategory]">
+         <IndexEntry name="landcategory"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="landowner[parish]">
+         <IndexEntry name="parish"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="landowner[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="landowner[street]">
+         <IndexEntry name="street"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="landowner_fullcom">
+         <IndexEntry name="fullcom"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="landowner_name">
+         <IndexEntry name="name"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="landowner_surname">
+         <IndexEntry name="surname"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

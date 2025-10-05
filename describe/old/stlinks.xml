@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="stlinks" System="old">
+      <Field Size="12" Format="u" Dim ="1" name="sl_item" Caption="Item code"/>
+      <Field Size="12" Format="u" Dim ="1" name="sl_affect" Caption="Affected item"/>
+      <Field Size="1" Options="L,U,T,A,F,D,P,R,C" Format="u" Dim ="1" name="sl_perlu" Caption="Type (U/L/T/A/F/D/P/R/C)?"/>
+      <Field Size="1" Format="00" Type="2" Dim ="1" name="sl_loc" Caption="Loc."/>
+      <Field Size="8" Format="###,###.####" Type="3" Dim ="1" name="sl_quant" Caption="Quantity"/>
+      <Index name="stlinks">
+         <IndexEntry name="sl_item"/>
+         <IndexEntry name="sl_affect"/>
+      </Index>
+   </Table>
+</xml>

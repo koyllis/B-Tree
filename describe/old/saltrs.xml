@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="saltrs" System="old">
+      <Field Size="4" Type="5" name="st_date" Caption="Trans. date"/>
+      <Field Size="2" name="st_doc" Caption="Document"/>
+      <Field Size="4" Format="######" Type="2" name="st_refer" Caption="Doc. No."/>
+      <Field Size="8" name="st_code" Caption="Customer"/>
+      <Field Size="1" Type="2" name="st_loc" Caption="Location"/>
+      <Field Size="2" name="st_pcode" Caption="Price"/>
+      <Field Size="8" name="st_agent" Caption="Agent"/>
+      <Field Size="8" name="st_person" Caption="Operator"/>
+      <Field Size="4" Format="###,###.##" Type="4" name="st_gross" Caption="Gross"/>
+      <Field Size="4" Format="###.##" Type="4" name="st_vat" Caption="V.A.T."/>
+      <Field Size="4" Format="###.##" Type="4" name="st_disc" Caption="Discount"/>
+      <Field Size="4" Format="###,###.##" Type="4" name="st_net" Caption="Net"/>
+      <Field Size="4" Format="###,###.##" Type="4" name="st_cost" Caption="Cost"/>
+      <Field Size="4" Type="5" name="st_adat" Caption="Alloc. date"/>
+      <Field Size="4" Type="5" name="st_analysis" Caption="Analysis"/>
+      <Field Size="8" Format="u" name="st_userid" Caption="User ID"/>
+      <Field Size="4" Format="######" Type="2" name="st_journal" Caption="Journal No."/>
+      <Index name="saltrs">
+         <IndexEntry name="st_date"/>
+         <IndexEntry name="st_doc"/>
+         <IndexEntry name="st_refer"/>
+         <IndexEntry name="st_code"/>
+         <IndexEntry name="st_loc"/>
+      </Index>
+   </Table>
+</xml>

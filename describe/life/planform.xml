@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="Plan Forms">
+      <Field Caption="Plan" File="life.plan" Size="2" Type="2" name="plan"/>
+      <Field Caption="Form" File="life.reqform" Size="2" Type="2" name="reqform"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="planform">
+         <IndexEntry name="plan"/>
+         <IndexEntry name="reqform"/>
+      </Index>
+      <Index name="planform[reqform]">
+         <IndexEntry name="reqform"/>
+         <IndexEntry name="plan"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,67 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Unordered="1" Phone="mobile" Bookmark="1" System="student" SoftDelete="1" Icon="student" Dynamic="1" Short="Student" ChainInsert="student|studentprog" name="Students" Color="1">
+      <Field Strict="1" Caption="Student ID" Format="######" Size="4" Type="2" AutoCounter="1" name="code" Modify="1" Tip="1"/>
+      <Field Caption="Name" Size="30" Force="1" Tip="1"/>
+      <Field Caption="Account" File="student.account" Size="4" Force="1" Type="2" Tip="1" name="account"/>
+      <Field Caption="ID" Size="10" name="id"/>
+      <Field Caption="Surname (certificates)" name="surname"/>
+      <Field Caption="Mobile" Size="15" name="mobile"/>
+      <Field Caption="E-mail" Size="40" name="email"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="birth"/>
+      <Field Caption="Sex" Size="1" Options="Male,Female" Type="2" name="sex"/>
+      <Field Caption="Primary" File="student.primary" Size="2" Type="2" name="primary"/>
+      <Field Caption="Secondary" File="student.secondary" Size="2" Type="2" name="secondary"/>
+      <Field Caption="Lyceum" File="student.lyceum" Size="2" Type="2" name="lyceum"/>
+      <Field Caption="Entry date" Size="4" Type="5" name="entry"/>
+      <Field Caption="L.D. doctor" File="student.doctor" Size="2" Type="2" name="doctor"/>
+      <Field Caption="Sibling" Format="b" Size="1" Type="2" name="sibling"/>
+      <Field Caption="Adult" Format="b" Size="1" Type="2" name="adult"/>
+      <Field Caption="Class" Size="1" Type="2" name="classno"/>
+      <Field Caption="UCI number" Size="20" name="class"/>
+      <Field Caption="Grade" Size="10" Auto="1" name="grade"/>
+      <Field Caption="Major" Size="20" Auto="1" name="major"/>
+      <Field Strict="1" Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Strict="1" Caption="Recorded" Size="8" Auto="1" Type="5" name="record"/>
+      <Field Caption="Family name" Strict="1" Size="50" name="student_name" Modify="1"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="student">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="student[account]">
+         <IndexEntry name="account"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="student[doctor]">
+         <IndexEntry name="doctor"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="student[lyceum]">
+         <IndexEntry name="lyceum"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="student[primary]">
+         <IndexEntry name="primary"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="student[secondary]">
+         <IndexEntry name="secondary"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="student[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index Force="1" name="student_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="student[name]">
+         <IndexEntry name="name"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

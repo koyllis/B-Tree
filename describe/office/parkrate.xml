@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="parkrate" System="office">
+      <Field Size="4" Type="2" name="counter" Caption="Counter"/>
+      <Field Size="2" Type="2" File="office.parkgroup" name="group" Caption="Group"/>
+      <Field Size="4" Format="###.##" Type="4" name="rate" Caption="Rate"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="parkrate">
+         <IndexEntry name="counter"/>
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="parkrate[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="counter"/>
+      </Index>
+   </Table>
+</xml>

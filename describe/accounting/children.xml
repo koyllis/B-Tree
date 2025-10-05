@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Children" System="accounting">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Sub-account"/>
+      <Field Size="20"/>
+      <Field Size="4" Type="5" name="birth" Caption="Date of birth"/>
+      <Field Size="4" Type="5" name="army" Caption="Army discharge"/>
+      <Field Size="4" Type="5" name="univercity" Caption="Univercity discharge"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="children">
+         <IndexEntry name="people"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="inloans" System="old">
+      <Field Size="2" Type="2" name="ml_num" Caption="Number"/>
+      <Field Size="25" name="ml_surname" Caption="Surname"/>
+      <Field Size="25" name="ml_name" Caption="Name"/>
+      <Field Size="4" Type="2" name="ml_id" Caption="ID"/>
+      <Field Size="4" Type="2" name="ml_si" Caption="SI"/>
+      <Field Size="4" Type="5" name="ml_date" Caption="Date"/>
+      <Field Size="4" Type="4" name="ml_amount" Caption="Amount"/>
+      <Field Size="4" Type="4" name="ml_extamo" Caption="Extra"/>
+      <Field Size="4" Type="4" name="ml_charge" Caption="Charge"/>
+      <Field Size="4" Type="4" name="ml_paymen" Caption="Payment"/>
+      <Field Size="4" Type="4" name="ml_extra" Caption="Extra"/>
+      <Index name="inloans">
+         <IndexEntry name="ml_num"/>
+         <IndexEntry name="ml_surname"/>
+         <IndexEntry name="ml_name"/>
+         <IndexEntry name="ml_id"/>
+         <IndexEntry name="ml_si"/>
+         <IndexEntry name="ml_date"/>
+      </Index>
+   </Table>
+</xml>

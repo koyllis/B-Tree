@@ -1,0 +1,39 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="accounting" Dynamic="1" CanDelete="0" name="Invoice Details">
+      <Field Caption="Invoice" File="accounting.invoice" Size="4" Force="1" Type="2" name="invoice"/>
+      <Field Caption="Line" Size="2" Force="1" Type="2" name="line"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Reference" Size="10" Force="1" name="reference"/>
+      <Field Caption="Service" File="accounting.servicedef" Size="2" Force="1" Type="2" name="servicedef"/>
+      <Field Caption="Quantity" Format="####" Size="2" Type="2" name="quantity"/>
+      <Field Caption="Amount" Total="1" Format="######.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Vat" File="accounting.vat" Size="1" Type="2" name="vat"/>
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="2" Type="2" name="vehicle"/>
+      <Field Caption="Extra ref" Size="20" name="extraref"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="invoicedet">
+         <IndexEntry name="invoice"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="invoicedet[invoice]">
+         <IndexEntry name="invoice"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="invoicedet[servicedef]">
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="invoicedet[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="invoice"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="invoicedet[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="invoice"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

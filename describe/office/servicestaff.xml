@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="office" name="servicestaff">
+      <Field Size="4" Type="2" File="accounting.servicedef" name="servicedef" Caption="Service"/>
+      <Field Size="2" Type="2" File="office.staff" name="staff" Total="1" Caption="Staff"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="servicestaff">
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="servicestaff[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="servicedef"/>
+      </Index>
+   </Table>
+</xml>

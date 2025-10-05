@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="calc4" name="Formulas" System="lab">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Parameter"/>
+      <Field Size="150" name="sequence" Caption="Sequence"/>
+      <Field Size="150" name="comp1" Caption="Component 1"/>
+      <Field Size="150" name="comp2" Caption="Component 2"/>
+      <Field Size="150" name="comp3" Caption="Component 3"/>
+      <Field Size="150" name="comp4" Caption="Component 4"/>
+      <Field Size="150" name="comp5" Caption="Component 5"/>
+      <Field Size="150" name="comp6" Caption="Component 6"/>
+      <Field Size="150" name="comp7" Caption="Component 7"/>
+      <Field Size="150" name="comp8" Caption="Component 8"/>
+      <Field Size="150" name="comp9" Caption="Component 9"/>
+      <Field Size="150" name="comp10" Caption="Component 10"/>
+      <Field Size="150" name="comp11" Caption="Component 11"/>
+      <Field Size="150" name="comp12" Caption="Component 12"/>
+      <Field Size="150" name="comp13" Caption="Component 13"/>
+      <Field Size="150" name="comp14" Caption="Component 14"/>
+      <Field Size="150" name="comp15" Caption="Component 15"/>
+      <Field Size="150" name="comp16" Caption="Component 16"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="formula">
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

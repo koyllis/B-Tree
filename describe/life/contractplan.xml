@@ -1,0 +1,49 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Bookmark="1" System="life" SoftDelete="1" Icon="calc4" Dynamic="1" Short="Contract" name="Contract Plans">
+      <Field Caption="Contract" File="life.contract" Size="2" Type="2" Force="1" name="contract"/>
+      <Field Caption="Plan" Size="2" Options="A,B,G,D,E,ST,Z,H,U,I,K,L,M,N,J,O,P,R,S,T,Y,F,X,C,V,A+,B+,G+,D+,E+,ST+,Z+,H+,U+,I+,K+,L+,M+,N+,J+,O+,P+,R+,S+,T+,Y+,F+,X+,C+,V+" Type="2" Force="1" name="plan"/>
+      <Field Caption="Coverage" Total="1" Size="4" Type="2" name="coverage"/>
+      <Field Caption="Discount%" Format="####.####" Size="4" Type="8" name="discount"/>
+      <Field Caption="Commission%" Format="####.####" Size="4" Type="8" name="commission"/>
+      <Field Caption="Premium%%" Format="##.##" Size="4" Type="8" name="premium"/>
+      <Field Caption="Extra cover%" Format="##.##" Size="4" Type="8" name="extracover"/>
+      <Field Caption="Retired charge%" Format="##.##" Size="4" Type="8" name="retired"/>
+      <Field Caption="LAPC factor" Format="##.##" Size="4" Type="8" name="lapc"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Persons" Size="1" Options="OnePerson,MoreThanOne,MoreThanTwo" Type="2" name="persons"/>
+      <Field Caption="Cover type" Size="1" Options="Share,Whole" Type="2" name="covertype"/>
+      <Field Caption="Account type" Format="b" Size="1" Type="2" Options="Loan,Current,Fixed" name="account_type"/>
+      <Field Caption="From age" Format="##" Size="1" Type="2" name="age_from"/>
+      <Field Caption="To age" Format="##" Size="1" Type="2" name="age_to"/>
+      <Field Caption="Disability age" Format="##" Size="1" Type="2" name="age_disab"/>
+      <Field Caption="Merge target" File="life.contractplan" Size="4" Type="2" name="merge"/>
+      <Field Caption="Plan group" File="life.plangroup" Size="2" Type="2" name="plangroup"/>
+      <Field Caption="Fixed additional premium" Format="###.##" Size="4" Type="4" name="fixedprem"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="contractplan">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index name="contractplan[merge]">
+         <IndexEntry name="merge"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index name="contractplan[plangroup]">
+         <IndexEntry name="plangroup"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index Force="1" name="contractplan_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index name="contractplan_plan">
+         <IndexEntry name="plan"/>
+         <IndexEntry name="contract"/>
+      </Index>
+   </Table>
+</xml>

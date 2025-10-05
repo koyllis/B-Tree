@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="exportsem">
+      <Field Caption="Transaction" File="life.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="exportsem">
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

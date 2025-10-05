@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="healthfund" System="accounting">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Member"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Format="######" Type="2" name="member" Caption="Member days"/>
+      <Field Size="4" Format="######" Type="2" name="spouce" Caption="Spouce days"/>
+      <Field Size="4" Format="######" Type="2" name="children" Caption="Children days"/>
+      <Field Size="4" Format="####.##" Type="4" name="memberall" Caption="Member allocation"/>
+      <Field Size="4" Format="####.##" Type="4" name="childrenall" Caption="Children allocation"/>
+      <Field Size="4" Type="2" File="accounting.journal" name="journal" Caption="Journal"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="healthfund">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="healthfund[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

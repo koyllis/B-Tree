@@ -1,0 +1,41 @@
+<xml>
+   <Table System="accounting" Icon="ship" name="Boarding Pass">
+      <Field Caption="Departure" Size="2" Type="2" Force="1" name="departure" File="accounting.departure"/>
+      <Field Caption="Serial" Size="4" Type="2" Force="1" name="serial"/>
+      <Field Caption="Reference" Size="4" Type="2" Force="1" name="reference"/>
+      <Field Caption="Surname" Size="40" Force="1" name="surname"/>
+      <Field Size="20" Force="1"/>
+      <Field Caption="Cabin" Size="10" Force="1" name="cabin"/>
+      <Field Caption="Vehicle type" Size="2" Type="2" name="vehcategory" File="accounting.vehcategory"/>
+      <Field Caption="Reg. No." Size="2" Type="2" name="regno" File="accounting.vehicle"/>
+      <Field Caption="Pet" Size="20" Type="1" name="pet"/>
+      <Field Caption="Nationality" Size="2" Type="2" name="nationality" File="accounting.nationality"/>
+      <Field Caption="Birth date" Size="4" Type="5" name="birthdate"/>
+      <Field Caption="Place of birth" Size="30" Type="1" name="birthplace"/>
+      <Field Caption="Document type" Size="1" Type="2" name="doctype" Options="Identity,Passport,Visa"/>
+      <Field Caption="Document No." Size="20" Type="1" name="docnumber"/>
+      <Field Caption="Issue date" Size="4" Type="5" name="issuedate"/>
+      <Field Caption="Expire date" Size="4" Type="5" name="expiredate"/>
+      <Field Caption="Gender" Size="1" Type="2" name="gender" Options="Male,Female"/>
+      <Field Caption="Mobile" Size="15" Type="1" name="mobile"/>
+      <Field Caption="Email" Size="40" Type="1" name="email"/>
+      <Field Size="8" Type="5" name="boarded" Caption="Boarded" Strict="1"/>
+      <Field Size="8" Type="5" name="print_pass" Caption="Print pass" Strict="1"/>
+      <Field Size="8" Type="5" name="print_label" Caption="Print label" Strict="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="boarding">
+         <IndexEntry name="departure"/>
+         <IndexEntry name="serial"/>
+      </Index>
+      <Index name="boarding[reference]">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="departure"/>
+         <IndexEntry name="serial"/>
+      </Index>
+      <Index name="boarding[vehcategory]">
+         <IndexEntry name="vehcategory"/>
+         <IndexEntry name="departure"/>
+         <IndexEntry name="serial"/>
+      </Index>
+   </Table>
+</xml>

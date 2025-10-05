@@ -1,0 +1,40 @@
+<xml>
+	<Table name="Users" System="office" SoftDelete="1" CreateStamp="1">
+	  <Field Caption="Name" name="name" Size="50" Type="1"/>
+	  <Field Caption="Email" name="email" Size="100" Type="1"/>
+	  <Field Caption="Mobile phone" name="mobile" Size="20" Type="1"/>
+	  <Field Caption="Password Hash" name="password" Size="255" Type="1" Format="e"/>
+	  <Field Caption="Role" name="role" Size="1" Type="2" Options="Owner,Agent,Tenant,Amin"/>
+	  <Field Caption="Verified" name="verified" Size="1" Type="2" Format="b"/>
+	  <Field Caption="Bio" name="bio" Size="300" Type="1" GridWrap="1"/>
+	  <Field Caption="Status" name="status" Size="1" Type="2" Options="Active,Suspended,Deleted,Pending"/>
+	  <Field Caption="Notification preferences" name="notify" Size="1" Type="2" Format="b" Options="SMS,Email,Push"/>
+	  <Field Caption="Looking for Room" name="isLooking" Size="1" Type="2" Format="b"/>
+	  <Field Caption="Bio" name="bio" Size="255" Type="1"/>
+	  <Field Caption="Budget Min" name="budgetMin" Size="8" Type="3"/>
+	  <Field Caption="Budget Max" name="budgetMax" Size="8" Type="3"/>
+	  <Field Caption="Preferred City" name="procity" File="office.procity"/>
+	  <Field Caption="Move In Date" name="moveInDate" Size="4" Type="5"/>
+	  <Field Caption="Move Out Date" name="moveOutDate" Size="4" Type="5"/>
+	  <Field Caption="Smoker" name="smoker" Size="1" Type="2" Format="b"/>
+	  <Field Caption="Pets" name="pets" Size="1" Type="2" Format="b"/>
+	  <Field Caption="Gender" name="gender" Size="1" Type="2" Options="Male,Female,Other,Any"/>
+	  <Field Caption="Cleanliness" name="cleanliness" Size="10" Type="2" Options="Neat,Average,Messy"/>
+	  <Field Caption="Quiet Hours" name="quiet_hours" Size="1" Type="2" Format="b"/>
+	  <Field Caption="Preferred Gender" name="preferred_gender" Size="1" Type="2" Options="Male,Female,Other,Any"/>
+	  <Field Caption="Preferred Age Min" name="age_min" Size="2" Type="2"/>
+	  <Field Caption="Preferred Age Max" name="age_max" Size="2" Type="2"/>
+	  <Field Caption="Interests" name="interests" Size="300" Type="1" GridWrap="1"/>
+	  <Field Strict="1" Hide="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+	  <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+	</Table>
+ <!-- Indexes -->
+    <Index name="prouser">
+      <IndexEntry name="name"/>
+    </Index>
+    <Index name="prouser[email]">
+      <IndexEntry name="email"/>
+      <IndexEntry name="name"/>
+    </Index>
+</xml>

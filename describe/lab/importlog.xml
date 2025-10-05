@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Dynamic="1" name="Import Log" System="lab" Icon="import" CanModify="0" CanDelete="0">
+      <Field Size="4" Type="5" name="date" Caption="Date" Force="1"/>
+      <Field Size="4" Type="2" name="agent" Caption="Agent" File="accounting.people" Force="1"/>
+      <Field Caption="Type" ReportWidth="20" Size="1" Type="2" Force="1" Options="Chemical,Microbiological,LabelControl,Organoleptic" name="type"/>
+      <Field Size="2" Type="2" name="staff" Caption="Staff" File="office.staff" Force="1"/>
+      <Field Size="2" Type="2" name="group" Caption="Group" File="lab.group" Force="1"/>
+      <Field Size="40" name="file" Caption="File name"/>
+      <Field Size="2" Type="2" name="records" Caption="Records" Modify="1" Strict="1"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="importlog">
+         <IndexEntry name="date"/>
+         <IndexEntry name="agent"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="importlog[agent]">
+         <IndexEntry name="agent"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

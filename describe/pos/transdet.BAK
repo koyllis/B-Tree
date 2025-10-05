@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="windows-1253"?>
+<xml>
+  <Table Icon="transaction" Dynamic="1" name="Transaction details" System="pos" CanDelete="0" CanModify="0" SoftDelete="1" ManualIndex="1" DeleteChildren="1" DataHeader="1" PDA="4" ImmediateChild="1" Unordered="1"  FavoriteMatch="pos|transdet" Large="1" File="transdet" MatchEdit="0">
+    <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" Force="1" name="trans" />
+    <Field Caption="Line" Size="2" Type="2" name="line" />
+    <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people" Modify="1"/>
+    <Field Caption="Associate" File="accounting.people" Size="4" Type="2" name="people_shadow" Modify="1" Important="1" />
+    <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item" />
+    <Field Caption="Location" File="system.location" Size="2" Type="2" name="location" PersistentReport="1" />
+    <Field Caption="Project" File="accounting.location" Size="2" Type="2" name="project" PersistentReport="1" />
+    <Field Caption="Vat" File="accounting.vat" Size="1" Type="2" name="vat" />
+    <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color" Negative="0" />
+    <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size" Negative="0" />
+    <Field Caption="Offer" File="pos.item" Size="2" Type="2" name="offer" Negative="0" />
+    <Field Caption="Box type" File="pos.boxtype" Size="2" Type="2" name="boxtype" Negative="0" />
+    <Field Caption="Origin" File="accounting.area" Size="2" Type="2" name="area" Negative="0" />
+    <Field Caption="Quantity" Size="4" Type="8" name="quantity" Format="quantity" Total="1" Percentage="1" />
+    <Field Caption="Reserved" Size="4" Type="8" name="reserved" Format="quantity" Total="1" ReportWidth="12" />
+    <Field Caption="On order" Size="4" Type="8" name="onorder" Format="quantity" Total="1" />
+    <Field Caption="Quotation" Size="4" Type="8" name="quotation" Format="quantity" Total="1" />
+    <Field Caption="Customer Quantity" Size="4" Type="8" name="people_quantity" Format="quantity" Total="1" />
+    <Field Caption="Transfer" Size="4" Type="8" name="transfer" Format="quantity" Total="1" Percentage="1" />
+    <Field Caption="Cost" Size="8" Type="3" name="cost" Format="#######.##" Total="1" Round="0" />
+    <Field Caption="Total" Size="8" Type="3" name="total" Format="#######.##" Total="1" Percentage="1" Round="0" />
+    <Field Caption="Price" Size="8" Type="3" name="price" Format="price" ReportWidth="12" Distinct="1" Round="0" />
+    <Field Caption="Voucher discount" Size="8" Type="3" name="voucher_discount" Format="#####.##" Total="1" Round="0" />
+    <Field Caption="Discount" Size="8" Type="3" name="discount" Format="#####.##" Total="1" Round="0" />
+    <Field Caption="Pieces" Size="4" Type="2" name="pieces" Format="#####" Total="1" ReportWidth="8" />
+    <Field Caption="Voucher" Size="4" Type="2" name="voucher" />
+    <Field Caption="Function" Size="1" Type="2" name="function" Options="Add,Deduct,Whole,Half,Service,ExchangeCard" />
+    <Field Caption="Group" Size="1" Type="2" name="group" Format="b" />
+    <Field Caption="Points" Size="4" Type="8" name="points" Format="##.####" Modify="1" Total="1" />
+    <Field Caption="Option" Size="1" Type="2" name="option" Format="b" Modify="1" Total="1" Options="Amend,Recipe,Converted,PiecePrice,Offer,Quota,OnlySerial,Closed" />
+    <Field Caption="Return" Size="1" Type="2" name="return" Format="b" Modify="1" Total="1" />
+    <Field Caption="Recipe" Size="1" Type="2" name="recipe" Format="b" />
+    <Field Caption="Value" Size="8" Type="3" name="value" Format="######.##" Modify="1" Total="1" />
+    <Field Caption="Expire Date" Size="4" Type="5" name="expire" Modify="1"/>
+    <Field Caption="Completed" Size="8" Type="5" name="completed" Hide="1" />
+    <Field Caption="Kitchen Sequence" Size="1" Type="2" name="kitchen_seq" Options="Starter,Main,Dessert" Negative="0" />
+    <Field Caption="User" File="system.user" Size="2" Type="2" name="user" Auto="1" />
+    <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="pricecode" />
+    <Field Caption="Barcode" File="pos.barcode" Size="4" Type="2" name="barcode" />
+    <Field Caption="To Location" File="system.location" Size="2" Type="2" name="to_location" />
+    <Field Caption="Modified" Size="8" Type="5" name="@modify_stamp" Hide="1" System="1" />
+    <Field Caption="SoftDelete" Size="1" Type="2" name="@delete" Format="b" Hide="1" System="1" />
+    <Index CRC64="1" name="transdet" Unordered="1" Large="1">
+      <IndexEntry name="trans" />
+      <IndexEntry name="line" />
+    </Index>
+    <Index CRC64="1" name="transdet[people]" Unordered="1" Large="1">
+      <IndexEntry name="people" />
+      <IndexEntry name="item" />
+      <IndexEntry name="location" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="total" />
+      <IndexEntry name="quantity" />
+      <IndexEntry name="line" />
+      <IndexEntry name="@delete" />
+    </Index>
+    <Index CRC64="1" name="transdet[people_shadow]" Unordered="1" Large="1">
+      <IndexEntry name="people_shadow" />
+      <IndexEntry name="item" />
+      <IndexEntry name="location" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="total" />
+      <IndexEntry name="quantity" />
+      <IndexEntry name="pieces" />
+      <IndexEntry name="line" />
+      <IndexEntry name="@delete" />
+    </Index>
+    <Index CRC64="1" name="transdet_boxtype" Unordered="1" Large="1">
+      <IndexEntry name="people_shadow" />
+      <IndexEntry name="location" />
+      <IndexEntry name="boxtype" />
+      <IndexEntry name="pieces" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="line" />
+    </Index>
+    <Index CRC64="1" name="transdet[boxtype]" Unordered="1" Large="1">
+      <IndexEntry name="boxtype" />
+      <IndexEntry name="pieces" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="line" />
+    </Index>
+    <Index CRC64="1" name="transdet_project" Unordered="1" Large="1">
+      <IndexEntry name="project" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="line" />
+    </Index>
+    <Index CRC64="1" name="transdet_item" PageSize="2" Unordered="1" Large="1">
+      <IndexEntry name="item" />
+      <IndexEntry name="location" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="color" />
+      <IndexEntry name="size" />
+      <IndexEntry name="line" />
+      <IndexEntry name="quantity" />
+      <IndexEntry name="onorder" />
+      <IndexEntry name="reserved" />
+      <IndexEntry name="quotation" />
+      <IndexEntry name="transfer" />
+      <IndexEntry name="cost" />
+      <IndexEntry name="total" />
+      <IndexEntry name="discount" />
+      <IndexEntry name="@delete" />
+    </Index>
+    <Index CRC64="1" name="transdet_expire" PageSize="2" Unordered="1" Large="1">
+      <IndexEntry name="expire" />
+      <IndexEntry name="item" />
+      <IndexEntry name="location" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="color" />
+      <IndexEntry name="size" />
+      <IndexEntry name="line" />
+      <IndexEntry name="quantity" />
+      <IndexEntry name="onorder" />
+      <IndexEntry name="reserved" />
+      <IndexEntry name="quotation" />
+      <IndexEntry name="transfer" />
+      <IndexEntry name="cost" />
+      <IndexEntry name="total" />
+      <IndexEntry name="discount" />
+      <IndexEntry name="@delete" />
+    </Index>
+    <Index CRC64="1" name="transdet_location" Unordered="1" Large="1">
+      <IndexEntry name="location" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="line" />
+    </Index>
+    <Index name="transdet_offer" Unordered="1" Large="1">
+      <IndexEntry name="offer" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="line" />
+    </Index>
+    <Index CRC64="1" name="transdet_voucher" PageSize="2" Unordered="1" Large="1">
+      <IndexEntry name="voucher" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="line" />
+    </Index>
+    <Index CRC64="1" name="transdet_size" Unordered="1" Large="1">
+      <IndexEntry name="size" />
+      <IndexEntry name="trans" />
+      <IndexEntry name="line" />
+    </Index>
+    <Index CRC64="1" name="transdet_color" Unordered="1" Large="1">
+      <IndexEntry name="color"/>
+      <IndexEntry name="trans"/>
+      <IndexEntry name="line"/>
+    </Index>
+
+    <Index CRC64="1" name="transdet_vat" Unordered="1" Large="1">
+      <IndexEntry name="vat"/>
+      <IndexEntry name="trans"/>
+      <IndexEntry name="line"/>
+    </Index>
+
+  </Table>
+</xml>

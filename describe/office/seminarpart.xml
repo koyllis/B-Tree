@@ -1,0 +1,38 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="office" Icon="emplotraining" name="Participants">
+      <Field Caption="Seminar" File="office.seminar" Size="4" Type="2" name="seminar"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people" Dll="1"/>
+      <Field Caption="First name" Size="20" name="first"/>
+      <Field Caption="Last name" Size="40" name="last"/>
+      <Field Caption="Discount" File="pos.discount" Size="2" Type="2" name="discount"/>
+      <Field Strict="1" Caption="Cert. No." Format="########" Size="4" Type="2" name="number" Modify="1"/>
+      <Field Caption="Amount" Format="####.##" Size="4" Type="4" name="amount" Modify="1"/>
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="seminarpart">
+         <IndexEntry name="seminar"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="first"/>
+         <IndexEntry name="last"/>
+      </Index>
+      <Index name="seminarpart[discount]">
+         <IndexEntry name="discount"/>
+         <IndexEntry name="seminar"/>
+         <IndexEntry name="first"/>
+         <IndexEntry name="last"/>
+      </Index>
+      <Index name="seminarpart[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="seminar"/>
+         <IndexEntry name="first"/>
+         <IndexEntry name="last"/>
+      </Index>
+      <Index name="seminarpart[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="seminar"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="first"/>
+         <IndexEntry name="last"/>
+      </Index>
+   </Table>
+</xml>

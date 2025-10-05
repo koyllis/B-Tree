@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" name="division_group">
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="division_group">
+         <IndexEntry name="division"/>
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="division_group[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

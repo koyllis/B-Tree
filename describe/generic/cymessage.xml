@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Messages">
+      <Field Caption="Membership No." File="generic.cymember" Size="4" Type="2" name="memberno"/>
+      <Field Caption="Type" Size="5" name="type"/>
+      <Field Caption="Code" Size="5" name="code"/>
+      <Field Caption="Priority" Size="5" name="priority"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cymessage">
+         <IndexEntry name="memberno"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

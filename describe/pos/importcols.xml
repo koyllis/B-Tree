@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="importcols">
+      <Field/>
+      <Field Caption="Item" Size="1" Type="2" name="item"/>
+      <Field Caption="Size" Size="1" Type="2" name="size"/>
+      <Field Caption="Barcode" Size="1" Type="2" name="barcode"/>
+      <Field Caption="Color" Size="1" Type="2" name="color"/>
+      <Field Caption="Trim" Format="b" Size="1" Type="2" name="trim"/>
+      <Field Caption="Separator" Size="1" name="separator"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="importcols">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

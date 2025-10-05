@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" CanDelete="0" name="Amount Changes" CreateStamp="1">
+      <Field Caption="Compensation" File="life.compensation" Size="4" Type="2" name="compensation"/>
+      <Field Caption="Date" Size="8" Type="5" name="date"/>
+      <Field Caption="Amount" Format="######.##" Size="8" Type="4" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="compenchange">
+         <IndexEntry name="compensation"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

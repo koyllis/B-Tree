@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="Labour Force">
+      <Field Caption="Mobile" Size="15" Force="1" name="mobile"/>
+      <Field Caption="Surname" Size="20" Force="1" Tip="1" name="surname"/>
+      <Field Size="20" Force="1" Tip="1"/>
+      <Field Caption="Email" name="email"/>
+      <Field Caption="Identity No." Size="20" name="identity"/>
+      <Field Caption="Birthday" Size="4" Type="5" name="birthtday"/>
+      <Field Caption="Sex" Size="1" Type="2" Options="Male,Female,Everyday" name="sex"/>
+      <Field Caption="Desired profession" File="payroll.profession" Size="2" Type="2" name="profession"/>
+      <Field Caption="Nationality" File="accounting.nationality" Size="2" Type="2" name="nationality"/>
+      <Field Caption="Residence area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Work area" File="accounting.area" Size="2" Type="2" name="area_work"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Since" Size="4" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="labourforce">
+         <IndexEntry name="mobile"/>
+      </Index>
+      <Index name="labourforce[nationality]">
+         <IndexEntry name="nationality"/>
+         <IndexEntry name="mobile"/>
+      </Index>
+      <Index name="labourforce[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="mobile"/>
+      </Index>
+   </Table>
+</xml>

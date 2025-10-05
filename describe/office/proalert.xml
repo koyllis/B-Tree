@@ -1,0 +1,21 @@
+<xml>
+	<Table name="Alerts" System="office">
+	  <Field Caption="Alert ID" name="number" Size="4" Type="2" AutoCounter="1" Strict="1" Modify="1"/>
+	  <Field Caption="User" name="user" Size="2" Type="2" File="office.prouser"/>
+	  <Field Caption="Area" name="area" Size="2" Type="2" File="office.proarea"/>
+	  <Field Caption="City" name="city" Size="2" Type="2" File="office.procity"/>
+	  <Field Caption="Price Min" name="price_min" Size="8" Type="3"/>
+	  <Field Caption="Price Max" name="price_max" Size="8" Type="3"/>
+	  <Field Caption="Type" name="type" Size="1" Type="2" Options="Apartment,Commercial,House,Land,Room,Studio"/>
+	  <Field Caption="Bedrooms" name="bedrooms" Size="1" Type="2"/>
+	  <Field Caption="Bathrooms" name="bathrooms" Size="1" Type="2"/>
+	  <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+	</Table>
+	<Index name="proalert">
+	  <IndexEntry name="number"/>
+	</Index>
+	<Index name="proalert[user]">
+	  <IndexEntry name="user"/>
+	  <IndexEntry name="number"/>
+	</Index>
+</xml>

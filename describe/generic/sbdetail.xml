@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Municipal Details">
+      <Field Caption="Transaction" File="generic.sbtrans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Line" Size="2" Type="2" name="line"/>
+      <Field Caption="Description" Size="43" name="description"/>
+      <Field Caption="Share" Size="11" name="share"/>
+      <Field Caption="Duedate" ReportWidth="11" Size="4" Type="5" name="duedate"/>
+      <Field Caption="Year" Size="8" name="year"/>
+      <Field Caption="Value" Size="13" name="value"/>
+      <Field Caption="Surcharge" Size="8" name="surcharge"/>
+      <Field Caption="Rate" Size="8" name="rate"/>
+      <Field Caption="Amount" Total="1" Size="12" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="sbdetail">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

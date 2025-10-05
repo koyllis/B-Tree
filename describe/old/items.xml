@@ -1,0 +1,38 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="items" System="old">
+      <Field Size="12" Format="u" name="i_item" Caption="Item code"/>
+      <Field Format="u" name="i_desc" Caption="Description"/>
+      <Field Format="u" name="i_extd" Caption=""/>
+      <Field Size="8" Format="u" name="i_code" Caption="Supplier code"/>
+      <Field Size="8" Format="u" name="i_categ" Caption="Category"/>
+      <Field Size="8" Format="u" name="i_taxgrp" Caption="Tax group"/>
+      <Field Size="12" Format="u" name="i_partcode" Caption="Part number"/>
+      <Field Size="3" Format="u" name="i_unit" Caption="Unit"/>
+      <Field Size="4" Format="#######.##" Type="4" name="i_pack" Caption="Packing"/>
+      <Field Size="4" Format="#######.##" Type="4" name="i_weight" Caption="Weight"/>
+      <Field Size="4" Format="#######.##" Type="4" name="i_length" Caption="Length"/>
+      <Field Size="1" Format="###" Type="2" name="i_loc" Caption="Sales loc."/>
+      <Field Size="8" Format="#####.####" Type="3" name="i_profit" Caption="Profit rate"/>
+      <Field Size="8" Format="#####.####" Type="3" name="i_avgcost" Caption="Average cost"/>
+      <Field Size="8" Format="#####.####" Type="3" name="i_avgduty" Caption="DF average cost"/>
+      <Field Size="8" Format="#####.####" Type="3" name="i_latcost" Caption="Latest cost"/>
+      <Field Size="8" Format="#####.####" Type="3" name="i_dutcost" Caption="Duty free cost"/>
+      <Field Size="8" Format="#######.####" Type="3" name="i_invalue" Caption="Invoice value"/>
+      <Field Size="8" Format="#####.####" Type="3" name="i_retail" Caption="Retail price"/>
+      <Field Size="1" Options=",,A,I,B" Format="u" name="i_deact" Caption="Active/Inactive/Blocked (A/I/B)?"/>
+      <Field Size="1" Format="###" Type="2" name="i_discode" Caption="Discount matrix vert. coord."/>
+      <Field Size="1" Format="###" Type="2" name="i_comcode" Caption="Commission matrix vert. coord."/>
+      <Field Size="2" Format="####" Type="2" name="i_vat" Caption="VAT(%)"/>
+      <Field Size="2" Type="2" name="i_future" Caption="Future"/>
+      <Field Size="2" Format="####" Type="2" name="i_padd" Caption="Other charge(%)"/>
+      <Field Size="8" Format="u" name="i_who" Caption="WHO"/>
+      <Field Size="4" Type="5" name="i_when" Caption="WHEN"/>
+      <Field Size="8" Type="3" name="i_totquant" Caption="Total quantity"/>
+      <Field Size="8" Type="3" name="i_totvalue" Caption="Total value"/>
+      <Field Size="8" Type="3" name="i_dutquant" Caption="Total DF quant."/>
+      <Field Size="8" Type="3" name="i_dutvalue" Caption="Total DF value"/>
+      <Index name="items">
+         <IndexEntry name="i_item"/>
+      </Index>
+   </Table>
+</xml>

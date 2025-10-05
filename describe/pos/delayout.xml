@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="delayout">
+      <Field/>
+      <Field Caption="Partner code" name="code"/>
+      <Field Caption="Email" Size="40" name="email"/>
+      <Field Caption="File name" Size="40" name="filename"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="delayout">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

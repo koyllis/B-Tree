@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table Icon="box-2" name="Pre Defined Prices" System="pos">
+      <Field Size="2" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="8" Format="####.##" Type="3" name="price" Caption="Price"/>
+      <Field Size="90" name="note" Caption="Note"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="predefined">
+         <IndexEntry name="location"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="predefined[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="predefined[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

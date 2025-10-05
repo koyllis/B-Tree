@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Dynamic="1" ChainInsert="returndet" name="Return/RMA" System="office">
+      <Field Size="4" Format="######" Modify="1" Strict="1" AutoCounter="1" Type="2" name="reference" Caption="Reference No."/>
+      <Field Size="2" Force="1" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Force="1" Type="2" File="accounting.people" name="people" Caption="Supplier"/>
+      <Field Size="1" Options="Pending,Completed" Modify="1" Type="2" name="status" Caption="Status"/>
+      <Field Size="4" Modify="1" Type="2" File="system.user" name="user" Auto="1" Caption="User"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Index name="return">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="return[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="return[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="return[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

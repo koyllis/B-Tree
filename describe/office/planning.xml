@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="planning" name="Project planning" System="office">
+      <Field Size="2" Type="2" File="accounting.location" name="location" Caption="Project"/>
+      <Field Size="2" Type="2" name="sequence" Caption="Sequence"/>
+      <Field Size="80" name="description" Caption="Tasks"/>
+      <Field Size="4" Type="5" name="start" Caption="Start"/>
+      <Field Size="4" Type="5" name="finish" Caption="Finish"/>
+      <Field Size="2" Type="2" name="mandays" Caption="Man days"/>
+      <Field Size="4" Type="2" File="office.staff" name="staff" Caption="Resource"/>
+      <Field Size="1" Options="Completed,In progress,Cancelled" Type="2" name="status" Caption="Status"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="planning">
+         <IndexEntry name="location"/>
+         <IndexEntry name="sequence"/>
+      </Index>
+      <Index name="planning[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

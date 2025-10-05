@@ -1,0 +1,10 @@
+<xml>
+   <Table System="generic" name="Page Group">
+      <Field Caption="Name"/>
+      <Field Caption="Columns" Size="1" Type="2" name="columns"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdfpagegroup">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="fourseasons" name="Seasons" System="pos" Bookmark="1"  Color="1" json_replicate="1">
+      <Field Type="1" Size="40" PrintWrap="1"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Field Hide="1" Size="16" name="@bookmark" System="1" Caption="Bookmark"/>
+      <Index name="season">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="season_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

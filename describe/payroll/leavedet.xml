@@ -1,0 +1,41 @@
+<xml>
+   <Table System="payroll" Icon="details" Dynamic="1" SoftDelete="1" Index="trans" name="Applications">
+      <Field Caption="Employee" File="payroll.employee" Size="2" Type="2" name="employee"/>
+      <Field Caption="Time definition" File="payroll.timedef" Size="2" Type="2" name="timedef"/>
+      <Field Caption="From" Size="4" Type="5" name="from"/>
+      <Field Caption="To" Size="4" Type="5" name="to"/>
+      <Field Caption="Extra" Format="###.##" Size="2" Auto="1" Type="2" name="extra"/>
+      <Field Caption="Uncertified" Format="b" Size="1" Auto="1" Type="2" name="uncert" Modify="1"/>
+      <Field Caption="Department" File="payroll.timedef" Size="2" Type="2" name="department" Modify="1"/>
+      <Field Strict="1" Caption="Date" Size="8" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Caption="User" Hide="1" File="system.user" Size="2" Auto="1" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="leavedet">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="from"/>
+      </Index>
+      <Index CRC64="1" name="leavedet[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="from"/>
+      </Index>
+      <Index CRC64="1" name="leavedet[from]">
+         <IndexEntry name="from"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="timedef"/>
+      </Index>
+      <Index CRC64="1" name="leavedet[to]">
+         <IndexEntry name="to"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="timedef"/>
+      </Index>
+      <Index CRC64="1" name="leavedet[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="from"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="Caption keys" CanDelete="1" CanModify="1">
+      <Field name="key" Caption="Key" Type="1" Size="100"/>
+      <Field name="english" Caption="English" Type="1" Size="4096"/>
+      <Field name="greek" Caption="Greek" Type="1" Size="6500"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="captions">
+         <IndexEntry name="key"/>
+      </Index>
+   </Table>
+</xml>

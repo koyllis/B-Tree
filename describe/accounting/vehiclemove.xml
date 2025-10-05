@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Vehicle Movements">
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="4" Type="2" name="vehicle"/>
+      <Field Caption="Date" Size="8" Type="5" name="date"/>
+      <Field Caption="Address" Size="50" name="address"/>
+      <Field Caption="Note" Size="20" name="Note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vehiclemove">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="office" Icon="proposal" Dynamic="1" name="Proposal">
+      <Field Caption="Reference" Size="20" AutoCounter="1" name="referece"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Demo date" Size="4" Type="5" name="demo "/>
+      <Field Caption="Consultant" File="office.staff" Size="2" Type="2" name="staff"/>
+      <Field Caption="Source" name="source"/>
+      <Field Caption="Customer" File="accounting.people" Size="2" Force="1" Type="2" name="people"/>
+      <Field Caption="Project Type" File="accounting.projecttype" Size="2" Type="2" name="projecttype"/>
+      <Field Caption="Value" Format="######.##" Size="4" Type="4" name="value"/>
+      <Field Caption="Maintenance" Format="####.##" Size="4" Type="4" name="maint"/>
+      <Field Caption="Status" Size="1" Options="Pending,Positive,Negative,Idle" Type="2" name="status"/>
+      <Field Caption="Subsidy" File="office.subsidy" Size="2" Type="2" name="office"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="proposal">
+         <IndexEntry name="referece"/>
+      </Index>
+      <Index name="proposal[office]">
+         <IndexEntry name="office"/>
+         <IndexEntry name="referece"/>
+      </Index>
+      <Index name="proposal[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="referece"/>
+      </Index>
+      <Index name="proposal[projecttype]">
+         <IndexEntry name="projecttype"/>
+         <IndexEntry name="referece"/>
+      </Index>
+      <Index name="proposal[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="referece"/>
+      </Index>
+   </Table>
+</xml>

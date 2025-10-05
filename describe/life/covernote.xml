@@ -1,0 +1,36 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="life" name="Cover Note" CreateStamp="1" UserStamp="1" >
+      <Field Caption="Proposal No." Strict="1" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Customer" File="life.member" Size="4" Type="2" Force="1" Tip="1" name="member"/>
+      <Field Caption="From date" Size="4" Type="5" Force="1" name="from"/>
+      <Field Caption="To date" Size="4" Type="5" Force="1" name="to"/>
+      <Field Caption="Start time" Strict="1" Size="2" Type="5" Force="1" name="time"/>
+      <Field Caption="Vehicle" File="life.vehicle" Size="4" Force="1" Type="2" Tip="1" name="vehicle"/>
+      <Field Caption="Usage" Size="1" Type="2" Options="PrivateSocial,PrivateCommercial,Company" Force="1" name="usage"/>
+      <Field Caption="Type" Size="1" Force="1" Options="ThirdParty,FireTheft,ComprehensiveCommercial,ComprehensivePrivate" Type="2" name="type"/>
+      <Field Caption="Value" Format="######" Size="4" Type="2" Tip="1" name="value"/>
+      <Field Caption="Any driver" Format="b" Size="1" Type="2" name="any"/>
+      <Field Strict="1" Caption="Excess" Format="####.##" Size="4" Type="2" name="excess"/>
+      <Field Caption="Contract No." Format="#########" Size="4" Type="2" name="conumber" Modify="1"/>
+      <Field Caption="Contract" Strict="1" File="life.contract" Size="4" Type="2" name="contract"/>
+      <Field Caption="Extra Notes" Size="80" name="notes"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="covernote">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="covernote[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="covernote[member]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="covernote[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

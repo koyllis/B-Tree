@@ -1,0 +1,24 @@
+<xml>
+   <Table System="generic" name="Batch Totals">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Layout" File="generic.pdflayout" Size="2" Type="2" name="layout"/>
+      <Field Caption="Category" Size="1" Type="2" name="category"/>
+      <Field Caption="Statements" Format="######" Size="4" Type="2" name="statements"/>
+      <Field Caption="Pages" Format="######" Size="4" Type="2" name="pages"/>
+      <Field Caption="Transactions" Format="######" Size="4" Type="2" name="transactions"/>
+      <Field Caption="Actual statements" Format="######" Size="4" Type="2" name="actual_state"/>
+      <Field Caption="Actual pages" Format="######" Size="4" Type="2" name="actual_pages"/>
+      <Field Caption="Actual transactions" Format="######" Size="4" Type="2" name="actual_trans"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pdfbatch">
+         <IndexEntry name="date"/>
+         <IndexEntry name="layout"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="pdfbatch[layout]">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

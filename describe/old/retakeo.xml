@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="retakeo" System="old">
+      <Field Size="1" Format="0" Type="2" name="rt_loc" Caption="Loc."/>
+      <Field Size="4" Format="#########" Type="2" name="rt_phone" Caption="Phone No."/>
+      <Field Size="2" Format="####" Type="2" name="rt_ext" Caption="Ext."/>
+      <Field Format="u" name="rt_name"/>
+      <Field Format="u" name="rt_add1" Caption="Address"/>
+      <Field Size="2" Format="###" Type="2" name="rt_stno" Caption="Number"/>
+      <Field Size="6" Format="u" name="rt_flat" Caption="Flat"/>
+      <Field Size="6" Format="u" name="rt_build" Caption="Building"/>
+      <Field Size="4" Format="0" Type="2" name="rt_vatno" Caption="VAT NO."/>
+      <Field Size="2" Format="####" Type="2" name="rt_points" Caption="Points"/>
+      <Field Size="8" Format="##.##" Type="3" name="rt_disc" Caption="Discount(%)"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="rt_last" Caption="Last report"/>
+      <Field Size="4" Format="######" Type="2" name="rt_refer" Caption="Last refer."/>
+      <Field Size="23" name="rt_future" Caption="Future"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="rt_vat" Caption="V.A.T.(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,H,W" Format="u" name="rt_home" Caption="Home/Work(H) (H/W)?"/>
+      <Field Size="1" Format="##" Type="2" name="rt_child" Caption="Children"/>
+      <Index name="retakeo">
+         <IndexEntry name="rt_loc"/>
+         <IndexEntry name="rt_phone"/>
+         <IndexEntry name="rt_ext"/>
+         <IndexEntry name="rt_name"/>
+      </Index>
+   </Table>
+</xml>

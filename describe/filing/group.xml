@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Short="Group" Icon="user menus" Static="1" AutoNumber="1" name="Groups" System="filing" Index="group" Color="1">
+      <Field Size="4" Format="#######" Strict="1" Type="2" name="code" Caption="Group"/>
+      <Field Size="80" name="description" Caption="Description"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Field Hide="1" Size="4" Type="2" System="1" name="@color_front" Caption="Foreground Color"/>
+      <Field Hide="1" Size="4" Type="2" System="1" name="@color_back" Caption="Background Color"/>
+      <Index name="group">
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

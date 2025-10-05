@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table name="stprhis" System="old" ModifyStamp="0">
+      <Field Caption="Item code" Format="u" Size="12" name="ph_item"/>
+      <Field Caption="Date" Size="4" Type="5" name="ph_date"/>
+      <Field Caption="Price code" Format="u" Size="2" name="ph_pcode"/>
+      <Field Caption="Old price" Format="####.###" Size="8" Type="3" name="ph_old"/>
+      <Field Caption="New price" Format="####.###" Size="8" Type="3" name="ph_new"/>
+      <Field Caption="Notes" Format="u" name="ph_note"/>
+      <Field Caption="User" Size="8" name="ph_id"/>
+      <Index name="stprhis">
+         <IndexEntry name="ph_item"/>
+         <IndexEntry name="ph_date"/>
+         <IndexEntry name="ph_pcode"/>
+      </Index>
+   </Table>
+</xml>

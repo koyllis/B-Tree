@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Blocked Stock">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Stock" Total="1" Format="#######.##" Size="4" Type="4" name="stock"/>
+      <Field Caption="Active" Total="1" Format="#######.##" Size="4" Type="4" name="active"/>
+      <Field Caption="Blocked" Total="1" Format="#######.##" Size="4" Type="4" name="blocked"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="blocked">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

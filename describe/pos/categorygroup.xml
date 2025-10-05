@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" name="Category Group Restrictions">
+      <Field Caption="Category" File="pos.category" Size="4" Type="2" name="category"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="categorygroup">
+         <IndexEntry name="category"/>
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="categorygroup[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

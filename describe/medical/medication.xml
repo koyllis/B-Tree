@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Medication" System="medical">
+      <Field Size="4" Type="2" File="medical.patient" name="patient" Caption="Patient"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Type="2" File="medical.drug" name="drug" Caption="Drug"/>
+      <Field name="dosage" Caption="Dosage"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="medication">
+         <IndexEntry name="patient"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="drug"/>
+      </Index>
+      <Index name="medication[drug]">
+         <IndexEntry name="drug"/>
+         <IndexEntry name="patient"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

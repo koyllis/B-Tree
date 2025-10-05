@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="Area Maximum" System="accounting">
+      <Field Size="4" Type="2" File="accounting.area" name="area" Caption="Area"/>
+      <Field Size="1" Options="Monday,Tuesday,Wednesday,Thursday,Friday" Type="2" name="day" Caption="Day"/>
+      <Field Size="2" Format="###" Type="2" name="maximum" Caption="Maximum pieces"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="areamax">
+         <IndexEntry name="area"/>
+         <IndexEntry name="day"/>
+      </Index>
+   </Table>
+</xml>

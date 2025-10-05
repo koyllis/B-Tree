@@ -1,0 +1,33 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="engineers" name="Layout Details">
+      <Field Caption="Barcode layout" File="pos.barclayout" Size="1" Type="2" name="barclayout"/>
+      <Field Caption="Line" Size="8" Type="2" Options="Barcode,Item,Description,Price,PartNo,Composition,Width,Thickness,Properties,Website,Supplier,SuppplierNumber,Color,Size,Water,Sun,CategoryType,NetPrice,Season,Collection,Customer,Logo,AdditionalDescription,Shelf,OtherPrice,SalesUnit,Date,Time,Scale,Total,Category,CompanyLogo,Note,Expiration,QuotasPrice,Brand,SpecialPrice,BatchNo,PriceWeight,Image" name="line"/>
+      <Field Caption="Type" Size="2" Type="2" Options="Name,Address1,Address2,Address3,Zip,P.O.Box,BoxZip,Area,Note,Reference,Pager,DeliveryTerms,Switch,ToLocation,Document,Decision" name="type"/>
+      <Field Caption="Row" Format="####" Size="2" Type="2" name="row"/>
+      <Field Caption="Column" Format="####" Size="2" Type="2" name="column"/>
+      <Field Caption="Length" Size="10" name="length"/>
+      <Field Caption="Font No." Size="10" name="font"/>
+      <Field Caption="Image options" Size="10" name="image"/>
+      <Field Caption="Prefix" name="prefix"/>
+      <Field Caption="Value in barcode" Size="1" Options="Value,Weight" Type="2" name="value_barcode"/>
+      <Field Caption="Orientation" Size="1" Type="2" Options="90,180,270" name="orientation"/>
+      <Field Caption="Factor" Format="####.##" Size="8" Type="3" name="factor"/>
+      <Field Caption="Price codification" Format="b" Size="1" Type="2" name="pricecode"/>
+      <Field Caption="Price Code" File="pos.price" Size="1" Type="2" name="price"/>
+      <Field Caption="Height font" Size="10" name="height_font"/>
+      <Field Caption="Width font" Size="10" name="width_font"/>
+      <Field Caption="Option" Format="b" Size="2" Options="NoFonts,Reverse,Xmark,Box" Type="2" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="barcdetail">
+         <IndexEntry name="barclayout"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="barcdetail[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="barclayout"/>
+         <IndexEntry name="line"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

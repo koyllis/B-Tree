@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Icon="calendr1" name="Installments" System="lab">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="5" name="start" Caption="Start date"/>
+      <Field Size="1" Format="##" Type="2" name="installments" Caption="Installments"/>
+      <Field Size="4" Format="#####.##" Type="4" name="amount" Caption="Amount"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="installment">
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

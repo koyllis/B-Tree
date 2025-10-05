@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Icon="folder" name="Group Items" System="lab">
+      <Field Size="4" Type="2" File="lab.analysisgroup" name="analysisgroup" Caption="Group"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="groupitem">
+         <IndexEntry name="analysisgroup"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="groupitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="analysisgroup"/>
+      </Index>
+   </Table>
+</xml>

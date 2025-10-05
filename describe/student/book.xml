@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="books" name="Books" System="student">
+      <Field Size="50" Caption="Title"/>
+      <Field Size="20" name="isbn" Caption="ISBN"/>
+      <Field name="edition" Caption="Edition"/>
+      <Field name="published" Caption="Published"/>
+      <Field Size="2" Format="####" Type="2" name="copyright" Caption="Copyright year"/>
+      <Field Size="2" Format="####" Type="2" name="pages" Caption="Pages"/>
+      <Field Size="4" Format="####.##" Type="4" name="price" Caption="Price"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Index name="book">
+         <IndexEntry name="name"/>
+         <IndexEntry name="isbn"/>
+      </Index>
+   </Table>
+</xml>

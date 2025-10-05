@@ -1,0 +1,69 @@
+<xml>
+   <Table Bookmark="1" System="payroll" Icon="cash" PDA="0" Short="Definition" name="Rate Definitions" MapRecord="1">
+      <Field Caption="Sequence" Format="##" Size="4" Type="2" name="seq"/>
+      <Field Caption="Action" Size="1" Type="2" Options="Addition,Deduction,Contribution" Tip="1" name="action"/>
+      <Field Size="40" Tip="1"/>
+      <Field Caption="Rate(%)" Format="###.###" Size="8" Type="3" name="rate"/>
+      <Field Caption="Rate after maximum(%)" Format="###.###" Size="8" Type="3" name="maxrate"/>
+      <Field Caption="Amount" Format="#######.####" Size="4" Type="8" name="amount"/>
+      <Field Caption="Frequency" Size="1" Type="2" Options="Period,Day,Hour" name="frequency"/>
+      <Field Caption="Implementation days" Size="2" Type="2" name="days"/>
+      <Field Caption="Income type" Format="b" Size="2" Options="Insurable,Taxable,Basic,HealthFund,CohesionFund,InKind,TaxHealthFund" Type="2" name="sequence"/>
+      <Field Caption="Report column" Size="2" Type="2" Options="Social Insurance,Income Tax,Provident Fund,Health Fund,Union,Holiday Fund,Redundancy Fund,Industrial Fund,Cohesion Fund,Stamps,Special Contribution,National Health" name="report"/>
+      <Field Caption="Calculation basis" Size="1" Type="2" Options="Insurable,Taxable,Basic,HealthFund,CohesionFund,InKind,TaxHealthFund" name="options"/>
+      <Field Caption="Amount factor" Format="###.###" Size="8" Type="3" name="factor"/>
+      <Field Caption="Rounding factor" Format="##.##" Size="4" Type="4" name="min"/>
+      <Field Caption="Period maximum" Format="######.##" Size="4" Type="4" name="max"/>
+      <Field Caption="Year maximum" Format="######.##" Size="4" Type="4" name="maxyear"/>
+      <Field Caption="Insurable Earnings" Format="b" Size="1" Type="2" name="insurable"/>
+      <Field Caption="Non-taxable" Format="b" Size="1" Type="2" name="notax"/>
+      <Field Caption="Not basic" Format="b" Size="1" Type="2" name="nobasic"/>
+      <Field Caption="Bonus " Format="b" Size="1" Type="2" name="bonus"/>
+      <Field Caption="Rounding On" Format="b" Size="1" Type="2" name="round"/>
+      <Field Caption="Holiday fund" Format="b" Size="1" Type="2" name="holiday"/>
+      <Field Caption="Include in basic" Format="b" Size="1" Type="2" name="basic"/>
+      <Field Caption="Benefit in-kind" Format="b" Size="1" Type="2" name="inkind"/>
+      <Field Caption="Options" Format="b" Size="2" Type="2" name="option" Options="Loan,Union,Pension,OtherPension,DirectScaling"/>
+      <Field Caption="Expense account" File="accounting.chart" Size="2" Type="2" name="chart_expense"/>
+      <Field Caption="Liability account" File="accounting.chart" Size="2" Type="2" name="chart_liability"/>
+      <Field Caption="Procedure" Size="32" name="procedure"/>
+      <Field Caption="Old Code" Size="5" name="oldcode"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="ratedef">
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="ratedef[chart_expense]">
+         <IndexEntry name="chart_expense"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="ratedef[chart_liability]">
+         <IndexEntry name="chart_liability"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index Force="1" name="ratedef_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="ratedef_action">
+         <IndexEntry name="action"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="ratedef_oldcode">
+         <IndexEntry name="oldcode"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="ratedef_proc">
+         <IndexEntry name="procedure"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="ratedef_report">
+         <IndexEntry name="report"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="ratedef_sequence">
+         <IndexEntry name="sequence"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

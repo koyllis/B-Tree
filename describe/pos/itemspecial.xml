@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="calc1" name="Special Prices" System="pos">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="8" Format="system" Type="3" name="price" Caption="Price"/>
+      <Field Size="8" Format="system" Type="3" name="special" Caption="Special price"/>
+      <Field Size="1" Format="b" Type="2" name="offer" Caption="Offer"/>
+      <Field Size="4" Type="2" File="pos.item" name="price_link" Caption="Price link"/>
+      <Field Size="8" Format="###.##" Type="3" name="factor" Caption="Price factor"/>
+      <Field Size="8" Format="system" Type="3" name="newprice" Caption="New price"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="itemspecial">
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="itemspecial[price_link]">
+         <IndexEntry name="price_link"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

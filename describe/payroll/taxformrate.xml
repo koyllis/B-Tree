@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Tax Form/Rates" System="payroll">
+      <Field Size="2" Type="2" File="payroll.taxform" name="taxform" Caption="Tax form"/>
+      <Field Size="2" Type="2" File="payroll.ratedef" name="ratedef" Caption="Rate definition"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="taxformrate">
+         <IndexEntry name="taxform"/>
+         <IndexEntry name="ratedef"/>
+      </Index>
+      <Index name="taxformrate[ratedef]">
+         <IndexEntry name="ratedef"/>
+         <IndexEntry name="taxform"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" CanDelete="0" name="Under Writing Totals">
+      <Field Caption="Member" File="life.member" Size="4" Force="1" Type="2" name="member"/>
+      <Field Caption="Plan" File="life.plan" Size="2" Force="1" Type="2" name="plan"/>
+      <Field Caption="Coverage" Format="#######.##" Size="8" Type="3" name="coverage"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="undertotal">
+         <IndexEntry name="member"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index name="undertotal[plan]">
+         <IndexEntry name="plan"/>
+         <IndexEntry name="member"/>
+      </Index>
+   </Table>
+</xml>

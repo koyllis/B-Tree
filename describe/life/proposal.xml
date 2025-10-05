@@ -1,0 +1,81 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="life" SoftDelete="1" Icon="prespapers" CanDelete="0" name="Proposals" CreateStamp="1" MergeTip="reference">
+      <Field Caption="Proposal No." Size="4" Type="2" AutoCounter="1" name="reference" Modify="1"/>
+      <Field Caption="Member" File="life.member" Size="4" Force="1" Type="2" name="member"/>
+      <Field Caption="Contract" File="life.contract" Size="4" Force="1" Type="2" name="contract"/>
+      <Field Caption="Plan" File="life.contractplan" Size="4" Type="2" name="contractplan"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Proposal date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Account No." Size="13" name="accountno"/>
+      <Field Caption="Member No." Size="12" name="memberno"/>
+      <Field Caption="Initial amount" Total="1" Format="######.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Plan change" Strict="1" Format="b" Size="1" Type="2" name="change" Modify="1"/>
+      <Field Caption="Type" Strict="1" Size="1" Options="Standard,Loan" Type="2" name="type" Modify="1"/>
+      <Field Caption="Cancel accounts" Size="50" name="cancel_acc"/>
+      <Field Caption="Height(cm)" Format="###" Size="2" Type="2" name="height"/>
+      <Field Caption="Weight(kg)" Format="###" Size="2" Type="2" name="weight"/>
+      <Field Caption="Decision" Size="1" Type="2" Options="StandardPremium,ExtraCharge,Reject,BasicCoverOnly,BorderLineStdRates" name="decision" Modify="1"/>
+      <Field Caption="Extra" Format="#####.##" Size="4" Type="4" name="extra" Modify="1"/>
+      <Field Caption="Loading%" Format="###.##" Size="8" Type="3" name="loading" Modify="1"/>
+      <Field Caption="Loading%%" Format="###.##" Size="8" Type="3" name="loading2" Modify="1"/>
+      <Field Caption="Loading reason" Format="b" Size="1" Type="2" Options="Medical,Occupational,Residential,Avocational" name="loading_reason" Modify="1"/>
+      <Field Caption="Death only" Format="b" Size="1" Type="2" name="death" Modify="1"/>
+      <Field Caption="Doctor" Format="b" Size="1" Type="2" name="doctor" Modify="1"/>
+      <Field Caption="Examination" File="life.examination" Size="2" Type="2" name="examination" Modify="1"/>
+      <Field Caption="Request" Format="b" Size="1" Type="2" name="request" Modify="1"/>
+      <Field Caption="Examination" File="life.examination" Size="2" Type="2" name="examination_request" Modify="1"/>
+      <Field Caption="Note" Size="40" name="note" Modify="1"/>
+      <Field Strict="1" Caption="Checked" File="system.user" Size="2" Type="2" name="ok" Modify="1"/>
+      <Field Caption="Checked date" Strict="1" Size="4" Type="5" name="check" Modify="1"/>
+      <Field Strict="1" Caption="Accepted" Size="4" Type="5" name="accept" Modify="1"/>
+      <Field Strict="1" Caption="Rejected" Size="4" Type="5" name="reject" Modify="1"/>
+      <Field Caption="Entry date" Strict="1" Size="4" Type="5" name="entry" Modify="1"/>
+      <Field Strict="1" Caption="Problem" File="life.problem" Size="2" Type="2" name="problem" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="proposal">
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="proposal[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="proposal[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="proposal[doctor]">
+         <IndexEntry name="doctor"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="proposal[examination]">
+         <IndexEntry name="examination"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="proposal[examination_request]">
+         <IndexEntry name="examination_request"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="proposal[member]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="proposal[ok]">
+         <IndexEntry name="ok"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="proposal[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="proposal[problem]">
+         <IndexEntry name="problem"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

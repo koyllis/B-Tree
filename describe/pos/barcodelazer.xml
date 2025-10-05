@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="print" Dynamic="1" name="Lazer Barcodes" System="pos">
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="pos.color" name="color" Caption="Color"/>
+      <Field Size="2" Type="2" File="pos.size" name="size" Caption="Size"/>
+      <Field Size="2" Format="####" Force="1" AutoCounter="1" Type="2" name="seq" Caption="Sequence"/>
+      <Field Size="25" name="barcode" Caption="Barcode"/>
+      <Field Size="8" Format="price" Type="3" name="price" Caption="Price"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="barcodelazer">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="barcodelazer[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="seq"/>
+      </Index>
+      <Index name="barcodelazer[size]">
+         <IndexEntry name="size"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="seq"/>
+      </Index>
+   </Table>
+</xml>

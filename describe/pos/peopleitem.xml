@@ -1,0 +1,22 @@
+<xml>
+   <Table name="Customer-Item Options" System="pos" Unordered="1">
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="4" Type="8" Format="quantity" name="quantity" Caption="Quantity"/>
+      <Field Size="2" Type="2" File="pos.boxtype" name="boxtype" Caption="Box type"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="peopleitem">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="peopleitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="peopleitem[boxtype]">
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

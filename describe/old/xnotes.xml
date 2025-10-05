@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="xnotes" System="old">
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="xn_date" Caption="Date"/>
+      <Field Size="2" Format="u" name="xn_doc" Caption="Doc"/>
+      <Field Size="4" Options="0-999999" Format="#######" Type="2" name="xn_refer" Caption="No."/>
+      <Field Size="8" Format="u" name="xn_code" Caption="Customer"/>
+      <Field Size="1" Options=",,1-99" Format="###" Type="2" name="xn_loc" Caption="Loc"/>
+      <Field Format="u" name="xn_name"/>
+      <Field Format="u" name="xn_add1" Caption="Address"/>
+      <Field Format="u" name="xn_add2" Caption=""/>
+      <Field Format="u" name="xn_add3" Caption=""/>
+      <Field Size="10" Format="u" name="xn_tele" Caption="Telephone"/>
+      <Field Size="4" Format="#######" Type="2" name="xn_arefer" Caption="Refer."/>
+      <Field Size="2" Format="u" name="xn_ldoc" Caption="All.doc"/>
+      <Field Size="4" Format="#######" Type="2" name="xn_lrefer" Caption="All.ref"/>
+      <Index name="xnotes">
+         <IndexEntry name="xn_date"/>
+         <IndexEntry name="xn_doc"/>
+         <IndexEntry name="xn_refer"/>
+         <IndexEntry name="xn_code"/>
+         <IndexEntry name="xn_loc"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="payroll" CanDelete="0" name="employee_change">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Date " Size="8" Type="5" name="date"/>
+      <Field Caption="Salary" Format="#####.####" Size="4" Type="8" name="basic"/>
+      <Field Caption="Position" File="payroll.position" Size="4" Type="2" name="position"/>
+      <Field Caption="Department" File="payroll.timedef" Size="4" Type="2" name="timedef"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="employee_change">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="employee_change[employee]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="employee_change[position]">
+         <IndexEntry name="position"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="employee_change[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

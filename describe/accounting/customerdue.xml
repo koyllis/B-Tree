@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Customer Credit Analysis">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Balance" Total="1" Format="######.##" Size="4" Type="4" name="balance"/>
+      <Field Caption="Sales" Total="1" Format="######.##" Size="4" Type="4" name="sales"/>
+      <Field Caption="Returns" Total="1" Format="######.##" Size="4" Type="4" name="returns"/>
+      <Field Caption="Receipts" Total="1" Format="######.##" Size="4" Type="4" name="receipts"/>
+      <Field Caption="Last sale" Size="4" Type="5" name="last_sale"/>
+      <Field Caption="Last return" Size="4" Type="5" name="last_return"/>
+      <Field Caption="Last receipt" Size="4" Type="5" name="last_receipt"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="customerdue">
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

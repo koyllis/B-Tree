@@ -1,0 +1,14 @@
+<xml>
+   <Table System="system" name="SMS Phones" Root="1">
+      <Field Caption="System" Size="32" name="system"/>
+      <Field Caption="File" Size="32" name="file"/>
+      <Field Caption="Phone" Size="20" name="phone"/>
+      <Field Caption="Email" Size="64" name="email"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="smsphone">
+         <IndexEntry name="system"/>
+         <IndexEntry name="file"/>
+         <IndexEntry name="phone"/>
+      </Index>
+   </Table>
+</xml>

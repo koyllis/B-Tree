@@ -1,0 +1,46 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table FormatField="amount" CanModify="0" DeleteChildren="1" System="life" Icon="library" Dynamic="1" CanDelete="0" name="Member Summary">
+      <Field Caption="Member" File="life.member" Size="4" Type="2" Tip="1" name="member"/>
+      <Field Caption="Entry date" Size="4" PersistentReport="1" Type="5" name="date"/>
+      <Field Caption="Contract" File="life.contract" Size="2" PersistentReport="1" Type="2" name="contract"/>
+      <Field Caption="Account No." Size="12" name="accountno"/>
+      <Field Caption="Type" Size="1" PersistentReport="1" Options="Standard,Loan" Type="2" name="type"/>
+      <Field Caption="Plan" File="life.contractplan" Size="4" Type="2" name="contractplan"/>
+      <Field Caption="Assured amount" Total="1" Format="#######.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Premium" Total="1" Format="####.##" Size="4" Type="4" name="premium"/>
+      <Field Caption="Retired" Total="1" Format="####.##" Size="4" Type="4" name="retired"/>
+      <Field Caption="LAPC history" Total="1" Size="80" name="lapc"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="membersumm">
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" Force="1" name="membersumm[accountno]">
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="contract"/>
+      </Index>
+      <Index CRC64="1" name="membersumm[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="membersumm[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="membersumm[date]">
+         <IndexEntry name="date"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+   </Table>
+</xml>

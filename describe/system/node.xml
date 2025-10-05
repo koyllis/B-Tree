@@ -1,0 +1,11 @@
+<xml>
+   <Table System="system" name="node" Unordered="1" Root="1" Audit="0" ImmediateChild="1" TextAnalysis="0" Shards="1">
+      <Field Caption="Attachment" File="system.attach" Size="4" Type="2" name="attach"/>
+      <Field Caption="Chunk " Size="4" Type="2" name="chunk" Force="1"/>
+      <Field Caption="Data"  Size="1024" Type="1" name="data"/>
+      <Index name="node" Large="1">
+         <IndexEntry name="attach"/>
+         <IndexEntry name="chunk"/>
+      </Index>
+   </Table>
+</xml>

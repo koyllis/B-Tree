@@ -1,0 +1,37 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="Order Status" System="pos">
+      <Field Size="2" Type="2" File="system.user" name="user" Caption="User"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Supplier"/>
+      <Field Size="4" Type="2" File="pos.brand" name="brand" Caption="Brand"/>
+      <Field Size="4" Type="2" name="order" Total="1" Caption="Order"/>
+      <Field Size="4" Type="2" name="purchase" Total="1" Caption="Purchase"/>
+      <Field Size="4" Type="2" name="transfer" Total="1" Caption="Transfer"/>
+      <Field Size="4" Type="2" name="sale" Caption="Sale" Total="1"/>
+      <Field Size="4" Type="2" name="saledisc" Caption="Discount sale" Total="1"/>
+      <Field Size="8" Type="3" name="order_value" Total="1" Caption="Order value"/>
+      <Field Size="8" Type="3" name="purchase_value" Total="1" Caption="Purchase value"/>
+      <Field Size="8" Type="3" name="transfer_value" Total="1" Caption="Transfer value"/>
+      <Field Size="8" Type="3" name="sale_value" Caption="Sale value" Total="1"/>
+      <Field Size="8" Type="3" name="saledisc_value" Total="1" Caption="Discount sale value"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="supplierbrand">
+         <IndexEntry name="user"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="brand"/>
+      </Index>
+      <Index name="supplierbrand[brand]">
+         <IndexEntry name="brand"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="supplierbrand[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="brand"/>
+      </Index>
+      <Index name="supplierbrand[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="brand"/>
+      </Index>
+   </Table>
+</xml>

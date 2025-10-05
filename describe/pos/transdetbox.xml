@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" SoftDelete="1" Icon="case" PDA="0" name="Box Details" Unordered="1" ImmediateChild="1">
+      <Field Caption="Transaction line" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="Box type" File="pos.boxtype" Size="2" Type="2" Force="1" name="boxtype"/>
+      <Field Caption="Container No." Size="20" name="container"/>
+      <Field Caption="Seal No." Size="20" name="seal"/>
+      <Field Caption="Pieces" Total="1" Size="4" Type="2" Force="1" name="pieces"/>
+      <Field Caption="Pallets" Total="1" Size="4" Type="2" name="pallets"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Associate" File="accounting.people" Size="4" Type="2" name="people" Assign="transdet.people_shadow"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="transdetbox">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="container"/>
+      </Index>
+      <Index UnsortReference="1" CRC64="1" name="transdetbox[boxtype]">
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="container"/>
+      </Index>
+      <Index CRC64="1" name="transdetbox[people]" AlwaysCheck="1">
+         <IndexEntry name="people"/>
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="boxtype"/>
+         <IndexEntry name="container"/>
+         <IndexEntry name="pieces"/>
+      </Index>
+   </Table>
+</xml>

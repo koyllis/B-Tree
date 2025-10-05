@@ -1,0 +1,76 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table DeleteChildren="1" System="office" SoftDelete="1" Icon="project" CanDelete="0" name="Seminars">
+      <Field Caption="Number" Strict="1" Size="4" Auto="1" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Reference No." Size="10" name="reference"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Time" Size="2" Type="5" name="time"/>
+      <Field Caption="End date" Size="4" Type="5" name="end"/>
+      <Field Caption="Duration" Format="##.##" Size="4" Type="8" Force="1" name="duration"/>
+      <Field Caption="Hours/Days" Size="1" Type="2" Force="1" Options="Hours,Days" name="durtype"/>
+      <Field Caption="Category" File="office.category" Size="2" Type="2" Force="1" name="category"/>
+      <Field Caption="Type" File="office.type" Size="2" Type="2" Force="1" name="type"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Commission agent" File="accounting.people" Size="4" Type="2" name="commission"/>
+      <Field Caption="Notes" Size="60" name="notes"/>
+      <Field Caption="Maximum participants" Format="###" Size="2" Type="2" name="max"/>
+      <Field Caption="Instructor" File="office.staff" Size="2" Type="2" Force="1" name="staff"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Place" File="accounting.area" Size="2" Type="2" Force="1" name="area"/>
+      <Field Caption="Venue" Size="20" name="venue"/>
+      <Field Caption="Subsidy" File="office.subsidy" Size="2" Type="2" name="subsidy"/>
+      <Field Caption="Subsidy amount" Format="####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Subsidy account" File="accounting.people" Size="4" Type="2" name="people_subsidy"/>
+      <Field Caption="Discount" Format="###.##" Size="4" Type="4" name="discount"/>
+      <Field Caption="No details" Format="b" Size="1" Type="2" name="nodetails"/>
+      <Field Caption="Reminder" Size="4" Type="5" name="reminder"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="seminar">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar[commission]">
+         <IndexEntry name="commission"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar[people_subsidy]">
+         <IndexEntry name="people_subsidy"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar[subsidy]">
+         <IndexEntry name="subsidy"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="seminar_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

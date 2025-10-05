@@ -1,0 +1,29 @@
+<xml>
+   <Table Bookmark="1" System="pos" Icon="package" name="Box Types" Common="1">
+      <Field ReportWidth="15"/>
+      <Field Caption="Price" Format="#####.##" Size="8" Type="3" name="price"/>
+      <Field Caption="No charge" Format="b" Size="1" Type="2" name="nocharge"/>
+      <Field Caption="Confirm" Format="b" Size="1" Type="2" name="confirm"/>
+      <Field Caption="Weight" Format="###.###" Size="4" Type="8" name="weight"/>
+      <Field Caption="Thickness" Format="###.###" Size="4" Type="8" name="thickness"/>
+      <Field Caption="Width" Format="###.###" Size="4" Type="8" name="width"/>
+      <Field Caption="Length" Format="###.###" Size="4" Type="8" name="length"/>
+      <Field Caption="Option" Format="b" Size="2" Options="PiecePrice,NoBalance,NoTotal,NoLabel" Type="2" name="option"/>
+      <Field Caption="Quantity" Format="quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Box group" File="pos.boxgroup" Size="2" Type="2" name="boxgroup"/>
+      <Field Caption="Production fields" Size="200" name="production"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="32" name="@bookmark"/>
+      <Index name="boxtype">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="boxtype[boxgroup]">
+         <IndexEntry name="boxgroup"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="boxtype_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

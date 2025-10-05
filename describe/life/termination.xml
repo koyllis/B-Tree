@@ -1,0 +1,103 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table FormatField="amount" System="life" Icon="stop2" Dynamic="1" name="Terminations">
+      <Field Caption="Member" File="life.member" Size="4" Type="2" Force="1" Tip="1" name="member"/>
+      <Field Caption="Contract" File="life.contract" Size="2" Type="2" Force="1" name="contract"/>
+      <Field Caption="Type" Size="1" Type="2" Force="1" Options="Standard,Loan" name="type"/>
+      <Field Caption="Entry date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Termination" Size="4" Type="5" Force="1" name="term"/>
+      <Field Caption="Reference" Strict="1" Size="4" Type="2" AutoCounter="1" name="reference" Modify="1"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Plan" File="life.contractplan" Size="4" Type="2" name="contractplan"/>
+      <Field Caption="Account No." Size="13" name="accountno"/>
+      <Field Caption="Charge No." Size="13" name="chargeno"/>
+      <Field Caption="Return No." Size="13" name="creditno"/>
+      <Field Caption="Member No." Size="13" name="memberno"/>
+      <Field Caption="Initial amount" Format="######.##" Size="8" Type="3" name="initial"/>
+      <Field Caption="Assured amount" Format="######.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Premium" Total="1" Format="####.##" Size="4" Type="4" name="premium" Modify="1"/>
+      <Field Caption="Extra" Total="1" Format="####.##" Size="4" Type="4" name="extra" Modify="1"/>
+      <Field Caption="Notes" name="notes" Modify="1"/>
+      <Field Caption="Expiration" Size="4" Type="5" name="expire" Modify="1"/>
+      <Field Caption="Installment" Format="####.##" Size="4" Type="4" name="installment" Modify="1"/>
+      <Field Caption="Months" Format="###" Size="2" Type="2" name="months" Modify="1"/>
+      <Field Caption="Reason" Size="1" Type="2" Options="Settlement,OtherInsurance,OtherReason,CompetitionContractAssignment,NoCreditFacility,BadDebt" name="reason"/>
+      <Field Caption="Note" Size="40" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="termination">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="term"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="termination[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="term"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="termination[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="term"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="termination[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="term"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="termination[reference]">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="term"/>
+      </Index>
+      <Index CRC64="1" name="termination_accountno">
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="term"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="termination_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="term"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="termination_memberno">
+         <IndexEntry name="memberno"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="term"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index CRC64="1" name="termination_term">
+         <IndexEntry name="term"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

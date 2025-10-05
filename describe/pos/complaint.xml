@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="complaint" System="pos">
+      <Field Size="4" Type="5" Auto="1" name="date" Caption="Date"/>
+      <Field Size="2" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="1" Type="2" File="office.type" name="type" Caption="Type"/>
+      <Field Size="8" Type="5" name="marked" Caption="Marked"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="complaint">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="complaint[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="complaint[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="complaint[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="people"/>
+      </Index>
+   </Table>
+</xml>

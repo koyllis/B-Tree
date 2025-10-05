@@ -1,0 +1,73 @@
+<xml>
+   <Table CanModify="0" System="pos" SoftDelete="1" CanDelete="0" name="Matrix Import" CreateStamp="1" UserStamp="1">
+      <Field Strict="1" Caption="Number" Size="4" Type="2" AutoCounter="1" name="number"/>
+      <Field Caption="Supplier" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Document" File="pos.division" Size="2" Type="2" Force="1" name="division"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" Force="1" name="location"/>
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Delivery" Size="4" Type="5" Force="1" name="delivery"/>
+      <Field Caption="Reference" Size="8" Force="1" Type="2" name="refer" Format="###############"/>
+      <Field Caption="Season" File="pos.season" Size="2" Type="2" name="season"/>
+      <Field Caption="Collection" Format="####" Size="2" Type="2" name="collection"/>
+      <Field Caption="Net weight" Format="####.###" Size="4" Type="8" name="weight"/>
+      <Field Caption="Quantity" Format="quantity" Size="8" Type="3" Force="1" name="quantity"/>
+      <Field Caption="Total" Format="######.##" Size="4" Force="1" Type="4" name="total"/>
+      <Field Caption="Discount" Format="#####.##" Size="4" Type="4" name="discount"/>
+      <Field Caption="File name" Format="file" Size="80" Force="1" name="file"/>
+      <Field Caption="Location pricing" File="system.location" Size="2" Type="2" name="pricelocation"/>
+      <Field Caption="Markup %" Format="##.##" Size="8" Type="3" name="markup"/>
+      <Field Caption="Featured" Format="b" Size="1" Type="2" name="featured"/>
+      <Field Caption="Special Occasion" Format="b" Size="1" Type="2" name="specialoccasion"/>
+      <Field Caption="Wholesale to special" Format="b" Size="1" Type="2" name="special"/>
+      <Field Caption="Ignore new prices" Format="b" Size="1" Type="2" name="ignore"/>
+      <Field Caption="Layout type" Size="1" Options="Static,Dynamic" Type="2" name="layout"/>
+      <Field Caption="Transfer price" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Strict="1" Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans" Modify="1"/>
+      <Field Caption="Transfers" Strict="1" Size="60" name="transfer" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="matriximport">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="matriximport[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="matriximport[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="matriximport[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="matriximport[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="matriximport[pricelocation]">
+         <IndexEntry name="pricelocation"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="matriximport[season]">
+         <IndexEntry name="season"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="matriximport[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="matriximport_file">
+         <IndexEntry name="file"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="matriximport_refer">
+         <IndexEntry name="refer"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

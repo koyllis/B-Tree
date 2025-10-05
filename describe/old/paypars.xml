@@ -1,0 +1,59 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="paypars" System="old">
+      <Field Size="3" Format="u" name="pp_com" Caption="Company code"/>
+      <Field Size="4" Options="1-99999" Format="0" Type="2" name="pp_number" Caption="Next employee No."/>
+      <Field Size="1" Options="1-7" Format="#" Type="2" name="pp_weekend" Caption="Week starts on day"/>
+      <Field Size="1" Options="1-31" Format="##" Type="2" name="pp_yeday" Caption="Year-end (day)"/>
+      <Field Size="1" Options="1-12" Format="##" Type="2" name="pp_yemonth" Caption="Year-end (month)"/>
+      <Field Size="4" Type="5" name="pp_cutd" Caption="Summary cut-date"/>
+      <Field Size="3" Format="u" name="pp_curr" Caption="Currency"/>
+      <Field Size="8" Options="0-100" Format="###" Type="3" name="pp_round" Caption="Round (100 = 1)"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="pp_retroa" Caption="Include bonus in tax calculation(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,N,C,A" Format="u" name="pp_holid" Caption="Incl. hol. fund in tax(N) (Cumul/All/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="pp_over" Caption="Apply tax to overtime(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="pp_taxadj" Caption="Recalculate tax every period(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="pp_above" Caption="Apply tax to bonus salary(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="pp_reduce" Caption="Estimate overtime for tax(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="pp_amend" Caption="Amend(N) (Y/N)?"/>
+      <Field Size="1" Options=",,Y,N" Format="u" name="pp_close" Caption="Close previous period(Y) (Y/N)?"/>
+      <Field Size="1" Options=",,E,G,C" Format="u" name="pp_slip" Caption="Payslip (English/Greek/Custom)?"/>
+      <Field Size="1" Format="##" Type="2" name="pp_topmar" Caption="Payslip top margin"/>
+      <Field Size="1" Format="##" Type="2" name="pp_botmar" Caption="Payslip bottom margin"/>
+      <Field Size="1" Format="##" Type="2" name="pp_chqtop" Caption="Cheque top margin"/>
+      <Field Size="1" Format="##" Type="2" name="pp_chqbot" Caption="Cheque bottom margin"/>
+      <Field Size="8" Format="#.####" Type="3" name="pp_inflation" Caption="Inflation rate"/>
+      <Field Size="8" Format="#.####" Type="3" name="pp_oldinflat" Caption="Prev. inflation rate"/>
+      <Field Size="4" Type="5" name="pp_lastdate" Caption="Date of latest change"/>
+      <Field Size="8" Format="####.##" Type="3" name="pp_13rate" Caption="Hours in a year"/>
+      <Field Size="8" Format="##" Type="3" name="pp_13min" Caption="Bi-weekly factor"/>
+      <Field Size="8" Format="##.##" Type="3" name="pp_weeks" Caption="Bonus weeks"/>
+      <Field Size="8" Format="##.##" Type="3" name="pp_months" Caption="Bonus months"/>
+      <Field Size="1" Format="##" Type="2" name="pp_14day" Caption="14 Salary day"/>
+      <Field Size="1" Format="##" Type="2" name="pp_14month" Caption="14 Salary month"/>
+      <Field Size="1" Format="##" Type="2" name="pp_14factor" Caption="14 Salary factor"/>
+      <Field Size="1" Format="##" Type="2" name="pp_retmal" Caption="Male retirem. year"/>
+      <Field Size="1" Format="##" Type="2" name="pp_retfem" Caption="Female retirem. year"/>
+      <Field Size="5" name="pp_future" Caption="Future"/>
+      <Field Size="13" Format="u" name="pp_comsi" Caption="S.I. No."/>
+      <Field name="pp_drive" Caption="Drive and file name"/>
+      <Field Format="u" name="pp_name" Caption="Payroll person"/>
+      <Field Size="20" Format="u" name="pp_phone" Caption="Telephone"/>
+      <Field Size="1" Format="###" Type="2" name="pp_inno" Caption="Inflation"/>
+      <Field Size="1" Format="###" Type="2" name="pp_bsno" Caption="Basic Salary"/>
+      <Field Size="1" Format="###" Type="2" name="pp_otno" Caption="Overtime"/>
+      <Field Size="1" Format="###" Type="2" name="pp_abno" Caption="Absences"/>
+      <Field Size="1" Format="###" Type="2" name="pp_itno" Caption="Income tax"/>
+      <Field Size="1" Format="###" Type="2" name="pp_avno" Caption="Cash advance"/>
+      <Field Size="1" Format="###" Type="2" name="pp_rano" Caption="Retroactive benefits"/>
+      <Field Size="1" Format="###" Type="2" name="pp_bono" Caption="Bonus (13th salary)"/>
+      <Field Size="1" Format="###" Type="2" name="pp_hlno" Caption="Holiday time"/>
+      <Field Size="1" Format="###" Type="2" name="pp_hfno" Caption="Holiday fund"/>
+      <Field Size="2" Format="###" Type="2" name="pp_war1" Caption="1st warning interval"/>
+      <Field Size="2" Format="###" Type="2" name="pp_war2" Caption="2nd warning interval"/>
+      <Field Size="2" Format="###" Type="2" name="pp_war3" Caption="3rd warning interval"/>
+      <Field Size="70" name="pp_msg" Caption="Slip msg"/>
+      <Index name="paypars">
+         <IndexEntry name="pp_com"/>
+      </Index>
+   </Table>
+</xml>

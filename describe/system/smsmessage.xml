@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="system" name="SMS Messages" >
+      <Field/>
+      <Field Caption="Subject" Size="11" name="subject"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="smsmessage">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="smsmessage_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

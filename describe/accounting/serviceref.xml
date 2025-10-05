@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="serviceref" System="accounting">
+      <Field Size="2" Type="2" File="accounting.servicedef" name="servicedef" Caption="Service"/>
+      <Field Size="2" Type="2" File="accounting.reftype" name="reftype" Caption="Rerefence type"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="serviceref">
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="reftype"/>
+      </Index>
+      <Index name="serviceref[reftype]">
+         <IndexEntry name="reftype"/>
+         <IndexEntry name="servicedef"/>
+      </Index>
+   </Table>
+</xml>

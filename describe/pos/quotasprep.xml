@@ -1,0 +1,56 @@
+<xml>
+   <Table Unordered="1" System="pos" Icon="quotas" Dynamic="1" PDA="0" name="Quotas Preparation">
+      <Field Caption="Activation date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Category" File="accounting.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Item" File="pos.item" Size="4" Force="1" Type="2" name="item"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Caption="Discount(%)" Format="###.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Processed" Strict="1" Size="8" Type="5" name="processed" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="quotasprep">
+         <IndexEntry name="date"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="quotasprep[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="quotasprep[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index CRC64="1" name="quotasprep[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="quotasprep[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index CRC64="1" name="quotasprep[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

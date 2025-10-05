@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="inloter" System="old">
+      <Field Size="2" Type="2" name="lt_num" Caption="Number"/>
+      <Field Size="25" name="lt_surname" Caption="Surname"/>
+      <Field Size="25" name="lt_name" Caption="Name"/>
+      <Field Size="4" Type="2" name="lt_id" Caption="ID"/>
+      <Field Size="4" Type="2" name="lt_si" Caption="SI"/>
+      <Field Size="4" Type="5" name="lt_date" Caption="Date"/>
+      <Field Size="4" Type="5" name="lt_ldate" Caption="Loan date"/>
+      <Field Size="4" Type="4" name="lt_amount" Caption="Amount"/>
+      <Field Size="4" Type="4" name="lt_extamo" Caption="Extra"/>
+      <Field Size="4" Type="4" name="lt_charge" Caption="Charge"/>
+      <Field Size="4" Type="4" name="lt_paymen" Caption="Payment"/>
+      <Field Size="4" Type="4" name="lt_extra" Caption="Extra"/>
+      <Field Size="4" Type="5" name="lt_record" Caption="Record"/>
+      <Index name="inloter">
+         <IndexEntry name="lt_num"/>
+         <IndexEntry name="lt_surname"/>
+         <IndexEntry name="lt_name"/>
+         <IndexEntry name="lt_id"/>
+         <IndexEntry name="lt_si"/>
+         <IndexEntry name="lt_date"/>
+      </Index>
+   </Table>
+</xml>

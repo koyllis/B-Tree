@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" CanDelete="0" name="Over Limit Log" UserStamp="1">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Time" Size="2" Auto="1" Type="5" name="time"/>
+      <Field Caption="Transaction" File="pos.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Mode" Size="1" Type="2" Options="CreditLimit,BelowCost" name="mode"/>
+      <Field Caption="User" File="system.user" Size="4" Auto="1" Type="2" name="user"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index name="overuser">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="overuser[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="overuser[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

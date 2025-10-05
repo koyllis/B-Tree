@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="Definition Scale">
+      <Field Caption="Rate definition" File="payroll.ratedef" Size="2" Type="2" name="ratedef"/>
+      <Field Caption="Range" Format="######.##" Size="4" Type="4" name="range"/>
+      <Field Caption="Rate%" Format="###.##" Size="8" Type="3" name="rate"/>
+      <Field Caption="Minimum " Format="#####.##" Size="4" Type="4" name="minimum"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="ratedefrange">
+         <IndexEntry name="ratedef"/>
+         <IndexEntry name="range"/>
+      </Index>
+   </Table>
+</xml>

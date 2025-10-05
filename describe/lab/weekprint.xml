@@ -1,0 +1,44 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Week Print" Icon="calendar">
+      <Field Caption="No." Format="###" Size="4" Type="2" AutoCounter="1" name="line"/>
+      <Field Caption="Monday Sample" Size="12" name="monday"/>
+      <Field Caption="Customer" Size="128" name="monday_people" PrintWrap="1"/>
+      <Field Caption="File No." Size="12" name="monday_fileno"/>
+      <Field Caption="Tuesday Sample" Size="12" name="tuesday"/>
+      <Field Caption="Customer" Size="128" name="tuesday_people" PrintWrap="1"/>
+      <Field Caption="File No." Size="12" name="tuesday_fileno"/>
+      <Field Caption="Wednesday Sample" Size="12" name="wednesday"/>
+      <Field Caption="Customer" Size="128" name="wednesday_people" PrintWrap="1"/>
+      <Field Caption="File No." Size="12" name="wednesday_fileno"/>
+      <Field Caption="Thursday Sample" Size="12" name="thursday"/>
+      <Field Caption="Customer" Size="128" name="thursday_people" PrintWrap="1"/>
+      <Field Caption="File No." Size="12" name="thursday_fileno"/>
+      <Field Caption="Friday Sample" Size="12" name="friday"/>
+      <Field Caption="Customer" Size="128" name="friday_people" PrintWrap="1"/>
+      <Field Caption="File No." Size="12" name="friday_fileno"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="weekprint">
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="weekprint[friday_people]">
+         <IndexEntry name="friday_people"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="weekprint[monday_people]">
+         <IndexEntry name="monday_people"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="weekprint[thursday_people]">
+         <IndexEntry name="thursday_people"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="weekprint[tuesday_people]">
+         <IndexEntry name="tuesday_people"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="weekprint[wednesday_people]">
+         <IndexEntry name="wednesday_people"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

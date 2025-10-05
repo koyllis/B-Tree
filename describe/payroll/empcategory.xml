@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="empcategory">
+      <Field Size="40"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="empcategory">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

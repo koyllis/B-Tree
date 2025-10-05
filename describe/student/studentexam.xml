@@ -1,0 +1,48 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="clock" Dynamic="1" name="Student Exams" System="student">
+      <Field Size="4" Force="1" Type="2" File="student.student" name="student" Caption="Student"/>
+      <Field Size="4" Force="1" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Force="1" Type="2" File="student.exam" name="exam" Caption="Exam"/>
+      <Field Size="4" Type="2" File="student.program" name="program" Caption="Program"/>
+      <Field Size="4" Format="####.##" Type="4" name="fee" Total="1" Caption="Fee"/>
+      <Field Size="10" name="grade" Caption="Grade"/>
+      <Field Size="10" name="candidateno" Caption="Candidate No"/>
+      <Field name="center" Caption="Center"/>
+      <Field Size="20" Modify="1" name="uci" Caption="U.C.I."/>
+      <Field Size="4" Modify="1" Type="2" File="student.receipt" name="receipt" Caption="Receipt"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="studentexam">
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="exam"/>
+      </Index>
+      <Index name="studentexam[exam]">
+         <IndexEntry name="exam"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="studentexam[program]">
+         <IndexEntry name="program"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="exam"/>
+      </Index>
+      <Index name="studentexam[receipt]">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="exam"/>
+      </Index>
+      <Index name="studentexam_candidateno">
+         <IndexEntry name="candidateno"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="exam"/>
+      </Index>
+      <Index name="studentexam_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="student"/>
+         <IndexEntry name="exam"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="depart_fl" System="old" ModifyStamp="0">
+      <Field Size="3" Dim ="1" name="de_depart" Caption="Department/Section"/>
+      <Field Size="15" Dim ="1" name="de_descr" Caption="Description"/>
+      <Field Size="15" Dim ="1" name="de_secdescr" Caption="Section Description"/>
+      <Index name="depart_fl">
+         <IndexEntry name="de_depart"/>
+      </Index>
+   </Table>
+</xml>

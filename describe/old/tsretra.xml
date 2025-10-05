@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="tsretra" System="old" ModifyStamp="0">
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="rt_date"/>
+      <Field Caption="Refer." Format="######" Size="4" Type="2" name="rt_refer"/>
+      <Field Caption="Customer" Format="u" Size="8" name="rt_code"/>
+      <Field Caption="Loc" Format="00" Size="1" Type="2" name="rt_loc"/>
+      <Field Caption="Cur" Format="u" Size="3" name="rt_cur"/>
+      <Field Caption="Amount" Format="###,###.##" Size="4" Type="4" name="rt_amount"/>
+      <Field Caption="Difference" Format="###,###.##" Size="4" Type="4" name="rt_disc"/>
+      <Field Caption="Extra refer." Size="10" name="rt_xrefer"/>
+      <Field Caption="Trustee" Format="u" Size="8" name="rt_trust"/>
+      <Field Caption="Note" Format="u" Size="20" name="rt_note"/>
+      <Field Caption="Contract date" Format="dd/mm/yyyy" Size="4" Type="5" name="rt_cdate"/>
+      <Field Caption="Refer." Format="######" Size="4" Type="2" name="rt_crefer"/>
+      <Field Caption="Receipt" Format="###" Size="1" Type="2" name="rt_rec"/>
+      <Field Caption="Receipt date" Format="dd/mm/yyyy" Size="4" Type="5" name="rt_sdate"/>
+      <Field Caption="Points" Format="###,###" Size="4" Type="2" name="rt_points"/>
+      <Field Caption="Journal" Format="######" Size="4" Type="2" name="rt_journal"/>
+      <Field Caption="Reversal journal" Format="######" Size="4" Type="2" name="rt_revjour"/>
+      <Field Caption="Canceled" Format="dd/mm/yyyy" Size="4" Type="5" name="rt_cancel"/>
+      <Index name="tsretra">
+         <IndexEntry name="rt_date"/>
+         <IndexEntry name="rt_refer"/>
+         <IndexEntry name="rt_code"/>
+         <IndexEntry name="rt_loc"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,15 @@
+<xml>
+   <Table System="pos" name="division_employee">
+      <Field Caption="Division" File="pos.division" Size="2" Type="2" name="division"/>
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="division_employee">
+         <IndexEntry name="division"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="division_employee[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,31 @@
+<xml>
+   <Table System="pos" name="pda_item">
+      <Field Caption="Code" Size="20" name="code"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="Barcode" Size="20" name="barcode"/>
+      <Field Caption="Partno" Size="20" name="partno"/>
+      <Field Size="40"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Cost" Size="8" Type="3" name="cost"/>
+      <Field Caption="Supplier" name="supplier"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pda_item">
+         <IndexEntry name="code"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="pda_item_barcode">
+         <IndexEntry name="barcode"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="pda_item_partno">
+         <IndexEntry name="partno"/>
+         <IndexEntry name="code"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+   </Table>
+</xml>

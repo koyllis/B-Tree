@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="jackpot_param">
+      <Field Caption="Location" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="From reference" Size="4" Type="2" name="from"/>
+      <Field Caption="To reference" Size="4" Type="2" name="to"/>
+      <Field Caption="Day start" Size="2" Type="5" name="start"/>
+      <Field Caption="Day end" Size="2" Type="5" name="end"/>
+      <Field Caption="Average tickets per day" Size="2" Type="2" name="tickets"/>
+      <Field Caption="Background image" Size="40" name="background"/>
+      <Field Caption="Winning sound" Size="40" name="sound"/>
+      <Field Caption="Options" Format="b" Size="2" Options="ParseDate" Type="2" name="options"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="jackpot_param">
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

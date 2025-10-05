@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Government Price List">
+      <Field Caption="Code" Size="20" name="code"/>
+      <Field Size="50"/>
+      <Field Caption="Package" Size="50" name="package"/>
+      <Field Caption="Ingredient" Size="100" name="ingredient"/>
+      <Field Caption="Supplier" Size="60" Type="1" name="supplier"/>
+      <Field Caption="Agent" Size="60" Type="1" name="agent"/>
+      <Field Caption="ATC" Size="20" Type="1" name="atc"/>
+      <Field Caption="Price" Size="8" Type="3" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="itemgovernment">
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

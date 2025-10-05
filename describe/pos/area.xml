@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="area" name="AREAS" System="pos">
+      <Field Size="4" Type="2" File="accounting.location" name="location" Caption="Location"/>
+      <Field Size="2" Type="2" name="area" Caption="Area"/>
+      <Field/>
+      <Field Size="4" Type="2" File="accounting.location" name="divert" Caption="Divert location"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="area">
+         <IndexEntry AllDimension="1" name="location"/>
+      </Index>
+      <Index name="area[divert]">
+         <IndexEntry AllDimension="1" name="divert"/>
+      </Index>
+   </Table>
+</xml>

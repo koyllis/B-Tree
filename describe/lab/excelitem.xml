@@ -1,0 +1,35 @@
+<xml>
+   <Table System="lab" Icon="tree" name="Excel Sequence">
+      <Field Caption="Layout" File="lab.excellayout" Size="2" Type="2" name="excellayout"/>
+      <Field Caption="Line" Format="###" Size="2" Type="2" name="line"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Tip="1" name="item"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" Tip="1" name="people"/>
+      <Field Caption="Frequency" File="pos.producttype" Size="2" Type="2" Tip="1" name="producttype"/>
+      <Field Caption="Unit" File="pos.unit" Size="2" Type="2" Tip="1" name="unit"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="excelitem">
+         <IndexEntry name="excellayout"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="excelitem[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="excellayout"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="excelitem[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="excellayout"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="excelitem[producttype]">
+         <IndexEntry name="producttype"/>
+         <IndexEntry name="excellayout"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index name="excelitem[unit]">
+         <IndexEntry name="unit"/>
+         <IndexEntry name="excellayout"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

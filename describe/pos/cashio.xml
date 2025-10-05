@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="money" name="Daily Cash" System="pos">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="1" Options="Morning,Night" Type="2" name="shift" Caption="Shift"/>
+      <Field Size="2" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="2" Type="2" File="office.machine" name="machine" Caption="Machine"/>
+      <Field Size="4" Format="#####.##" Type="4" name="amount" Total="1" Caption="Amount"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="cashio">
+         <IndexEntry name="date"/>
+         <IndexEntry name="shift"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="machine"/>
+      </Index>
+      <Index name="cashio[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="shift"/>
+         <IndexEntry name="machine"/>
+      </Index>
+      <Index name="cashio[machine]">
+         <IndexEntry name="machine"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="shift"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

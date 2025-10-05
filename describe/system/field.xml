@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Late="1" System="system" Icon="field" PDA="4" Index="field" name="Field properties" Root="1">
+      <Field Caption="Company" Format="#######" File="system.master" Size="4" Type="2" name="master"/>
+      <Field Caption="System" Size="32" name="system"/>
+      <Field Caption="File" Size="32" name="file"/>
+      <Field Caption="Record" Format="#######" Size="4" Type="2" name="$record"/>
+      <Field Caption="Field" Size="32" name="field"/>
+      <Field Caption="Counter" Format="#############" Size="8" Type="2" name="counter" Update="1"/>
+      <Field Caption="Minimum" Format="#######" Size="4" Type="2" name="min"/>
+      <Field Caption="Maximum" Format="#######" Size="4" Type="2" name="max"/>
+      <Field Caption="Range" Format="#######" Size="4" Type="2" name="range"/>
+      <Field Caption="Default (record)" Format="b" Size="1" Type="2" name="default"/>
+      <Field Caption="Insert (record)" Format="b" Size="1" Type="2" name="rec_insert"/>
+      <Field Caption="Back Color" Format="#######" Size="4" Type="2" name="colortext"/>
+      <Field Caption="Text Color " Format="#######" Size="4" Type="2" name="colorback"/>
+      <Field Caption="Updates" Format="#######" Size="4" Type="2" name="updates"/>
+      <Field Caption="Font" Size="60" name="font"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+
+      <Index name="field">
+         <IndexEntry name="master"/>
+         <IndexEntry name="system"/>
+         <IndexEntry name="file"/>
+         <IndexEntry name="$record"/>
+         <IndexEntry name="field"/>
+      </Index>
+
+   </Table>
+</xml>

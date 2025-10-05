@@ -1,0 +1,66 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Week Program">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Sampler" File="office.staff" Size="2" Force="1" Type="2" name="staff"/>
+      <Field Caption="Route" File="accounting.route" Size="2" Force="1" Type="2" name="route"/>
+      <Field Caption="Parameter group" File="lab.group" Size="2" Force="1" Type="2" name="group"/>
+      <Field Caption="Sample group" File="lab.group" Size="2" Force="1" Type="2" name="group_sample"/>
+      <Field Caption="User" File="system.user" Size="2" Force="1" Type="2" name="user"/>
+      <Field Caption="Agent" File="accounting.people" Size="4" Type="2" Force="1" name="agent"/>
+      <Field Caption="Condition" File="lab.condition" Size="2" Type="2" Force="1" name="condition"/>
+      <Field Caption="Procedure" File="lab.procedure" Size="2" Force="1" Type="2" name="procedure"/>
+      <Field Caption="Samples" Strict="1" Size="2" Type="2" name="count" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="program">
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="program[agent]">
+         <IndexEntry name="agent"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="program[condition]">
+         <IndexEntry name="condition"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="program[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="program[group_sample]">
+         <IndexEntry name="group_sample"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="program[procedure]">
+         <IndexEntry name="procedure"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="program[route]">
+         <IndexEntry name="route"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="program[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="program[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="route"/>
+      </Index>
+   </Table>
+</xml>

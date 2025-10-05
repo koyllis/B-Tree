@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="checkdata.ico" SoftDelete="1" Static="1" name="TARGET GROUPS" System="loyalty" DeleteChildren="1">
+      <Field Size="20" name="target" Caption="Target name"/>
+      <Field Hide="1" Size="4" Type="5" name="date" Auto="1" Caption="Date"/>
+      <Field Hide="1" Size="4" Type="2" File="system.user" name="user" Auto="1" Caption="User"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" Caption="SoftDelete"/>
+      <Index name="target">
+         <IndexEntry name="target"/>
+      </Index>
+      <Index name="target[user]">
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

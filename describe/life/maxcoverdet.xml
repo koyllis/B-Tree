@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="maxcoverdet">
+      <Field Caption="Max cover" File="life.maxcover" Size="4" Type="2" name="maxcover"/>
+      <Field Caption="Contract" File="life.contract" Size="2" Type="2" name="contract"/>
+      <Field Caption="Account" Size="12" name="accountno"/>
+      <Field Caption="Amount" Size="8" Type="4" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="maxcoverdet">
+         <IndexEntry name="maxcover"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index name="maxcoverdet[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="maxcover"/>
+      </Index>
+   </Table>
+</xml>

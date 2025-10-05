@@ -1,0 +1,51 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="files1" name="Category Accounts">
+      <Field Caption="Category" File="pos.category" Size="4" Type="2" name="category"/>
+      <Field Caption="Product type" File="pos.producttype" Size="2" Type="2" name="producttype"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Type" Size="1" Type="2" Force="1" Options="Gross,Discount,VAT,Cost of Sales,Stock,Commission" name="type"/>
+      <Field Caption="Debit account" File="accounting.chart" Size="2" Type="2" name="chart_debit"/>
+      <Field Caption="Credit account" File="accounting.chart" Size="2" Type="2" name="chart_credit"/>
+      <Field Caption="Operation" File="accounting.operation" Size="1" Type="2" name="operation"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="categoryaccount">
+         <IndexEntry name="category"/>
+         <IndexEntry name="producttype"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="categoryaccount[chart_credit]">
+         <IndexEntry name="chart_credit"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="producttype"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="categoryaccount[chart_debit]">
+         <IndexEntry name="chart_debit"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="producttype"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="categoryaccount[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="producttype"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="categoryaccount[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="producttype"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="categoryaccount[producttype]">
+         <IndexEntry name="producttype"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="group"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

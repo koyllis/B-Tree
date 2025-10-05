@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="calendar.ico" name="dates" System="legal">
+      <Field Size="4" Type="2" File="legal.mainfile" name="mainfile" Caption="File"/>
+      <Field Size="1" Options="Application,Direction,Hearing,Opposition,Preliminary,Address" Type="2" name="type" Caption="Type"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="40" name="note" Caption="Note"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="dates">
+         <IndexEntry name="mainfile"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="dates_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="mainfile"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,21 @@
+<xml>
+   <Table System="payroll" SoftDelete="1" Icon="folder" Dynamic="1" PDA="0" CanDelete="0" name="Payroll Details" MatchEdit="0" Unordered="1">
+      <Field Caption="Transaction" File="payroll.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Rate " File="payroll.ratedef" Size="2" Type="2" name="ratedef"/>
+      <Field Caption="Amount" Total="1" Format="######.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp" HideReport="1"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index CRC64="1" name="transdet">
+         <IndexEntry name="trans"/>
+         <IndexEntry Index="ratedef_action" name="ratedef"/>
+      </Index>
+      <Index CRC64="1" name="transdet[ratedef]">
+         <IndexEntry name="ratedef"/>
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index CRC64="1" name="transdet_id">
+         <IndexEntry name="trans"/>
+         <IndexEntry Index="ratedef_action" name="ratedef"/>
+      </Index>
+   </Table>
+</xml>

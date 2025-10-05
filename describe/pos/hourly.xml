@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="pos" CanDelete="0" name="Hourly Sales">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Time" Size="1" Type="2" name="time"/>
+      <Field Caption="Location" File="system.location" Size="1" Type="2" name="location"/>
+      <Field Caption="Division" Total="1" Percentage="2" File="pos.division" Size="1" Type="2" name="division"/>
+      <Field Caption="Sales" Total="1" Format="#####.##" Percentage="2" Size="4" Type="4" name="sales"/>
+      <Field Caption="TC" Total="1" Percentage="2" Size="4" Type="2" name="tc"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="hourly">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="hourly[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="hourly[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+         <IndexEntry name="division"/>
+      </Index>
+      <Index name="hourly_time">
+         <IndexEntry name="time"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

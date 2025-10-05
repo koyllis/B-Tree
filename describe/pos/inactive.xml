@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Dynamic="1" SoftDelete="1" name="inactive" System="pos">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="1" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" HideReport="1" Caption="SoftDelete"/>
+      <Index name="inactive">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="inactive[division]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="inactive[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="inactive[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,11 @@
+<xml>
+   <Table Unordered="1" System="generic" name="Detail Properties" Audit="0" ModifyStamp="0">
+      <Field Caption="Key" File="generic.pdfkey" Size="4" Type="2" name="key"/>
+      <Field Caption="Line" Size="2" Type="2" name="line"/>
+      <Field Caption="Bold?" Format="b" Size="1" Type="2" name="bold"/>
+      <Index CRC64="1" name="pdfdetailprop" Large="1">
+         <IndexEntry name="key"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

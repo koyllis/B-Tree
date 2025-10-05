@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="agsadet" System="old" ModifyStamp="0">
+      <Field Size="4" Type="5" name="sd_date" Caption="Date"/>
+      <Field Size="4" Type="2" name="sd_refer" Caption="Refer"/>
+      <Field Size="1" Type="2" name="sd_loc" Caption="Loc"/>
+      <Field Size="1" Type="2" name="sd_line" Caption="Line"/>
+      <Field Size="2" Type="2" name="sd_itno" Caption="Item"/>
+      <Field Size="1" Type="2" name="sd_qual" Caption="Qual"/>
+      <Field Size="4" Type="4" name="sd_price" Caption="Price"/>
+      <Field Size="4" Type="4" name="sd_quant" Caption="Quantity"/>
+      <Field Size="4" Type="4" name="sd_total" Caption="Total"/>
+      <Field Size="2" Type="2" name="sd_cases" Caption="Cases"/>
+      <Field Size="4" Type="4" name="sd_caspr" Caption="Case price"/>
+      <Field Size="2" Type="2" name="sd_suno" Caption="Supplier"/>
+      <Field Size="4" Type="2" name="sd_rrefer" Caption="Reference"/>
+      <Field Size="3" name="sd_vat" Caption="VAT"/>
+      <Field Size="1" name="sd_future" Caption="Future"/>
+      <Index name="agsadet">
+         <IndexEntry name="sd_date"/>
+         <IndexEntry name="sd_refer"/>
+         <IndexEntry name="sd_loc"/>
+         <IndexEntry name="sd_line"/>
+      </Index>
+   </Table>
+</xml>

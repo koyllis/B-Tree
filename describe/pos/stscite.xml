@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" PDA="0" name="stscite" ModifyStamp="0">
+      <Field Caption="Item" Size="18" name="c_item"/>
+      <Field Caption="Desc." name="c_desc"/>
+      <Field Caption="Supplier" Size="20" name="c_supp"/>
+      <Field Caption="Price" Format="###.###" Size="8" Type="3" name="c_price"/>
+      <Field Caption="Unit" Format="###.###" Size="8" Type="3" name="c_unit"/>
+      <Field Caption="Stock" Format="####.##" Size="8" Type="3" name="c_quant"/>
+      <Index name="stscite">
+         <IndexEntry name="c_item"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="timeshare" name="Apartment Pricing">
+      <Field Caption="Week" Format="##" Size="1" Type="2" name="week"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Studio,1Bedroom,2Bedroom,3Bedroom" name="type"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Currency" File="accounting.currency" Size="2" Type="2" name="currency"/>
+      <Field Caption="Price" Format="#####.##" Size="4" Type="4" name="price"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="price">
+         <IndexEntry name="week"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="currency"/>
+      </Index>
+      <Index name="price[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="week"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="price[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="week"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="currency"/>
+      </Index>
+   </Table>
+</xml>

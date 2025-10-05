@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Category Matrix Status">
+      <Field Caption="User" File="system.user" Size="4" Type="2" name="user"/>
+      <Field Caption="Category" File="pos.category" Size="4" Type="2" name="category"/>
+      <Field Caption="Size" Size="5" name="size" Dim="20"/>
+      <Field Caption="Order" Size="4" Type="2" name="order" Dim="20"/>
+      <Field Caption="Purchase" Size="4" Type="2" name="purchase" Dim="20"/>
+      <Field Caption="Transfer" Size="4" Type="2" name="transfer" Dim="20"/>
+      <Field Caption="Movement" Size="4" Type="2" name="movement" Dim="20"/>
+      <Field Caption="Sale" Size="4" Type="2" name="sale" Dim="20"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="categorymatrix">
+         <IndexEntry name="user"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="categorymatrix[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

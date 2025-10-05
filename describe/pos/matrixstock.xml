@@ -1,0 +1,30 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos" name="Item Matrix Stock">
+      <Field Caption="User" File="system.user" Size="4" Type="2" name="user"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" Size="5" name="size" Dim="32"/>
+      <Field Caption="Quantity" Total="1" Size="4" Type="2" name="quantity" Dim="32"/>
+      <Field Caption="Value" Total="1" Format="#######.##" Size="8" Type="3" name="value" Dim="32"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="matrixstock">
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="matrixsummary[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="matrixsummary[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="matrixsummary[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

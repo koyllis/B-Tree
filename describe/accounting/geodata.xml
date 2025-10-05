@@ -1,0 +1,11 @@
+<xml>
+   <Table Bookmark="1" System="accounting" Color="1" Short="Geo" name="Geo Data" Root="1">
+      <Field Size="120"/>
+      <Field Caption="Longitude" Size="8" Type="3" name="long"/>
+      <Field Caption="Latiitude" Size="8" Type="3" name="lat"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="geodata">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

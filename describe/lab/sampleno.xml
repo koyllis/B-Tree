@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table Icon="math1" name="Sampe Numbering" System="lab">
+      <Field Size="2" Type="2" name="year" Caption="Year"/>
+      <Field Size="2" Type="2" name="month" Caption="Month"/>
+      <Field Size="4" Type="2" name="number" Caption="Number"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="sampleno">
+         <IndexEntry name="year"/>
+         <IndexEntry name="month"/>
+      </Index>
+   </Table>
+</xml>

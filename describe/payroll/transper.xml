@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="payroll" SoftDelete="1" Icon="calendr1" PDA="0" name="Periodic Transactions">
+      <Field Caption="Employee" File="payroll.employee" Size="2" Type="2" name="employee"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Rate" File="payroll.ratedef" Size="2" Type="2" name="ratedef"/>
+      <Field Caption="Amount" Total="1" Format="#####.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Hours" Size="8" Type="3" name="hours" Total="1"/>
+      <Field Caption="Notes" name="notes"/>
+      <Field Strict="1" Caption="Auto" Format="b" Size="1" Type="2" name="auto" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="transper">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="ratedef"/>
+      </Index>
+      <Index name="transper[ratedef]">
+         <IndexEntry name="ratedef"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="transper_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="ratedef"/>
+      </Index>
+   </Table>
+</xml>

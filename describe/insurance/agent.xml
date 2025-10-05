@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Bookmark="1" System="insurance" Icon="student" Dynamic="1" name="Agents">
+      <Field Size="40"/>
+      <Field Caption="Sub-account" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Caption="Commission account" File="accounting.chart" Size="4" Type="2" name="chart"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Index name="agent">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="agent[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="agent[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="agent_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

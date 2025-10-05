@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="group" System="old">
+      <Field Size="8" name="code" Caption="Group"/>
+      <Field Size="30"/>
+      <Index name="group">
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

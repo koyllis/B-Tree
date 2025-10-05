@@ -1,0 +1,31 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="peoplecompl" CreateStamp="1" UserStamp="1">
+      <Field Caption="Number" Strict="1" Size="4" Type="2" AutoCounter="1" name="number"/>
+      <Field Strict="1" Size="40"/>
+      <Field Strict="1" Caption="Phone" Size="10" name="phone"/>
+      <Field Caption="Addres" Size="40" name="address"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="people"/>
+      <Field Strict="1" Caption="Type" File="office.type" Size="2" Type="2" name="type"/>
+      <Field Caption="Note" Size="100" name="note"/>
+      <Field Strict="1" Caption="Staff" File="office.staff" Size="2" Type="2" name="staff"/>
+      <Field Caption="Solved" Size="4" Type="5" name="solved" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="peoplecompl">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="peoplecompl[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="peoplecompl[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="peoplecompl[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

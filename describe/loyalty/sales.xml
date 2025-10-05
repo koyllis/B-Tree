@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table DataHeader="1" Icon="sales1" name="Sales" System="loyalty" Index="sales">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Format="#######" Type="2" File="loyalty.store" name="store" Caption="Store"/>
+      <Field Size="4" Format="#######" Type="2" name="reference" Caption="Reference"/>
+      <Field Size="1" name="type" Caption="Type"/>
+      <Field Size="4" Format="#######.##" Type="4" Average="1" name="net" Caption="Net sale" Total="1"/>
+      <Field Size="4" Format="#######" Type="2" name="points" Caption="Points" Total="1"/>
+      <Field Size="2" Type="2" name="povalue" Caption="Points value" Total="1"/>
+      <Field Size="4" Format="#######" Type="2" name="items" Caption="Items"/>
+      <Field Size="1" name="method" Caption="Payment"/>
+      <Field Size="2" Type="5" name="time" Caption="Time"/>
+      <Field Size="4" Format="#######" Type="2" File="loyalty.customer" name="customer" Caption="Customer"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="sales">
+         <IndexEntry name="date"/>
+         <IndexEntry name="store"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="sales[customer]">
+         <IndexEntry name="customer"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="store"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="sales[store]">
+         <IndexEntry name="store"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

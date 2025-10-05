@@ -1,0 +1,23 @@
+<xml>
+   <Table System="pos" name="Department Process History">
+      <Field Caption="Transactions" File="pos.trans" Size="4" Force="1" Type="2" name="trans"/>
+      <Field Caption="Department" File="accounting.department" Size="2" Force="1" Type="2" name="department"/>
+      <Field Caption="Deadline" Size="4" Type="5" name="deadline"/>
+      <Field Caption="Processed" Size="8" Type="5" name="process"/>
+      <Field Caption="Employee" File="payroll.employee" Size="2" Type="2" name="employee"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transdepthist">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="department"/>
+      </Index>
+      <Index name="transdepthist[department]">
+         <IndexEntry name="department"/>
+         <IndexEntry name="trans"/>
+      </Index>
+      <Index name="transdepthist[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="department"/>
+      </Index>
+   </Table>
+</xml>

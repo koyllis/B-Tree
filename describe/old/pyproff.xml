@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="pyproff" System="old">
+      <Field Size="3" Format="u" name="pf_proff" Caption="Proffesion"/>
+      <Field Size="25" Format="u" name="pf_name"/>
+      <Index name="pyproff">
+         <IndexEntry name="pf_proff"/>
+      </Index>
+   </Table>
+</xml>

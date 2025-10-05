@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="filing" Icon="relation" Dynamic="1" Index="relation" name="Relations">
+      <Field Caption="" Format="#######" File="filing.letter" Size="4" Type="2" name="letter"/>
+      <Field Caption="" Format="#######" File="filing.file" Size="2" Type="2" name="file"/>
+      <Field Caption="Part" Format="##" Size="1" Type="2" name="section"/>
+      <Field Caption="Original" Format="b" Size="1" Type="2" name="original"/>
+      <Field Caption="Page" Size="10" name="pageno"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="relation">
+         <IndexEntry name="letter"/>
+         <IndexEntry name="file"/>
+         <IndexEntry name="section"/>
+      </Index>
+      <Index CRC64="1" name="relation[file]">
+         <IndexEntry name="file"/>
+         <IndexEntry name="letter"/>
+         <IndexEntry name="section"/>
+      </Index>
+   </Table>
+</xml>

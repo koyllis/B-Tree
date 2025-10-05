@@ -1,0 +1,51 @@
+<xml>
+   <Table System="payroll" name="Employee Schedule">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Slot" File="office.schslot" Size="2" Force="1" Type="2" name="slot"/>
+      <Field Caption="Employee" File="payroll.employee" Size="4" Force="1" Type="2" name="employee"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" Force="1" name="location"/>
+      <Field Caption="Type" File="payroll.timedef" Size="2" Force="1" Type="2" name="timedef"/>
+      <Field Caption="Minutes" Total="1" Size="2" Type="2" name="minutes"/>
+      <Field Caption="Time-off" Strict="1" Format="b" Size="1" Type="2" name="timeoff" Modify="1"/>
+      <Field Strict="1" Caption="Authorized" File="system.user" Size="2" Type="2" name="user" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="schedule">
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="schedule[employee]">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="schedule[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="schedule[slot]">
+         <IndexEntry name="slot"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="schedule[timedef]">
+         <IndexEntry name="timedef"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="schedule[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="slot"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

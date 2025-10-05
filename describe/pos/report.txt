@@ -1,0 +1,40 @@
+barcode.xml:      <Field Size="4" Type="3" File="pos.item" name="item" Caption="Item"/>
+catdivision.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+category.xml:   <Table FavoriteMatch="pos|item" Short="Category" Icon="GroupC" Common="1" Child="name" Repository="1" Parent="category" SoftDelete="1" name="Categories" System="pos" Bookmark="1" Dataset="1">
+divparam.xml:      <Field Size="2" Type="3" File="pos.item" name="service_charge" Caption="Service Charge"/>
+item.xml:      <Field Size="2" Modify="1" Type="3" File="pos.item" name="next_item" Caption="Next Item"/>
+item.xml:      <Field Size="2" Modify="1" Type="3" File="pos.item" name="group_item" Caption="Group Item"/>
+item.xml:      <Field Size="2" Modify="1" Type="3" File="pos.item" name="redirect_item" Caption="Stock item"/>
+item.xml2:      <Field Size="2" Modify="1" Type="3" File="pos.item" name="next_item" Caption="Next Item"/>
+item.xml2:      <Field Size="2" Modify="1" Type="3" File="pos.item" name="redirect_item" Caption="Stock item"/>
+itemcolor.xml:      <Field Size="2" Force="1" Type="3" File="pos.item" name="item" Caption="Item"/>
+itemloc.xml:      <Field Size="4" Type="3" File="pos.item" name="item" Caption="Item"/>
+itemprice.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+itemprice.xml:      <Field Size="2" Type="3" File="pos.item" name="item2" Caption="Item 2"/>
+itemprice.xml:      <Field Size="2" Type="3" File="pos.item" name="item3" Caption="Item 3"/>
+itemprint.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+itemqty.xml:      <Field Size="4" Type="3" File="pos.item" name="item" Caption="Item"/>
+itemqty.xml:      <Field Size="4" Type="3" File="pos.itemprice" name="itemprice" Caption="Item Price"/>
+itemrule.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+itemrule.xml:      <Field Size="2" Type="3" File="pos.item" name="next_item" Caption="Next Item"/>
+itemsize.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+link.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Parent"/>
+link.xml:      <Field Size="2" Force="1" Type="3" File="pos.item" name="child" Caption="Child"/>
+offer.xml:      <Field Size="2" Type="3" File="pos.item" name="offer" Caption="Offer Item"/>
+offer.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+order.xml:      <Field Size="4" Type="3" File="pos.item" name="item" Caption="Item"/>
+paradet.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+priceitem.xml:      <Field Size="4" Type="3" File="pos.item" name="item" Caption="Item"/>
+product.xml:      <Field Size="4" Type="3" File="pos.item" name="item" Caption="Item"/>
+quotas.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+recipe.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+recipe.xml:      <Field Size="2" Type="3" File="pos.item" name="recipe" Caption="Recipe"/>
+recipestock.xml:      <Field Size="4" Force="1" Type="3" File="pos.item" name="item" Caption="Item"/>
+routecomm.xml:      <Field Size="4" Type="3" File="pos.item" name="item" Caption="Item"/>
+stocktake.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+sumdetail.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+takehistory.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+tobarcode.xml:      <Field Size="4" Type="3" File="pos.item" name="item" Caption="Item"/>
+transdet.xml:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>
+transdet.xml:      <Field Size="2" Type="3" File="pos.item" name="offer" Caption="Offer"/>
+transdet.xml2:      <Field Size="2" Type="3" File="pos.item" name="item" Caption="Item"/>

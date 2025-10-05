@@ -1,0 +1,79 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="journals" Dynamic="1" name="Clearance" AutoBestfit="0" Unordered="1">
+      <Field Caption="Supplier" File="accounting.people" Size="4" Type="2" name="people" Tip="1"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item" Tip="1"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" name="division"/>
+      <Field Caption="Reference" Size="4" Type="2" AutoCounter="1" name="refer"/>
+      <Field Caption="Line" Format="###" Size="2" Type="2" name="line"/>
+      <Field Caption="Record" Size="8" Type="2" name="record" File="pos.transdet"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" name="peoplecust" Tip="1"/>
+      <Field Caption="Pieces" Total="1" Format="####" Size="4" Type="2" name="pieces"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="4" Type="8" name="quantity" Tip="1"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Total" Strict="1" Total="1" Size="8" Type="3" name="total"/>
+      <Field Strict="1" Caption="Pieces balance" Format="####" Size="4" Type="2" name="piecesbal"/>
+      <Field Caption="Average price" Strict="1" Format="price" Size="8" Type="3" name="average"/>
+      <Field Caption="Change" Size="8" Type="5" name="change" Strict="1" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="clearance">
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="clearance[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="clearance[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="clearance[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="clearance[peoplecust]">
+         <IndexEntry name="peoplecust"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="clearance_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="refer"/>
+         <IndexEntry name="line"/>
+      </Index>
+      <Index CRC64="1" name="clearance_record">
+         <IndexEntry name="record"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="deposit" SoftDelete="1" name="Deposits">
+      <Field Caption="Number" Strict="1" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Document" File="accounting.document" Size="2" Type="2" Force="1" name="document"/>
+      <Field Caption="Project" File="accounting.location" Size="2" Type="2" Force="1" name="location"/>
+      <Field Caption="Bank" File="accounting.bank" Size="2" Type="2" Force="1" name="bank"/>
+      <Field Caption="Reference" Size="20" Type="1" name="reference"/>
+      <Field Caption="Amount" Format="######.##" Size="4" Type="4" Force="1" name="amount"/>
+      <Field Caption="Cash" Format="######.##" Size="4" Type="4" name="cash"/>
+      <Field Caption="Commission" Format="######.##" Size="4" Type="4" name="commission"/>
+      <Field Caption="Journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="deposit">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="deposit[document]">
+         <IndexEntry name="document"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="deposit[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

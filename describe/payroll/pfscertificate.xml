@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" Icon="author" name="PFS Certificates">
+      <Field Caption="Employee" File="payroll.employee" Size="4" Type="2" name="employee"/>
+      <Field Caption="Index" Size="10" name="index"/>
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Journal" Size="4" Type="2" name="journal"/>
+      <Field Caption="Reference" Size="12" name="reference"/>
+      <Field Caption="Description" Size="50" name="description"/>
+      <Field Caption="Debit" Format="######.##" Size="8" Type="4" name="debit"/>
+      <Field Caption="Credit" Format="######.##" Size="8" Type="4" name="credit"/>
+      <Field Caption="Balance" Format="######.##" Size="8" Type="4" name="balance"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="pfscertificate">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="index"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="journal"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,58 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table FavoriteMatch="accounting|detail" Short="Account" Map="detail" Icon="heart" Common="1" Child="description" Repository="1" Parent="chart" MapRecord="1" SoftDelete="1" name="Chart of accounts" System="accounting" Bookmark="1" Index="chart" Dataset="1" Constraint="1" Color="1">
+      <Field Size="50" name="description" Caption="Description" Distinct="1"/>
+      <Field Size="1" Options="Asset,Liability,Capital,Revenue,Expense" Type="2" name="type" Caption="Type"/>
+      <Field Size="1" Format="b" Modify="1" Type="2" name="bank" Caption="Bank"/>
+      <Field Size="8" Modify="1" Type="4" name="balance" Caption="Balance"/>
+      <Field Size="1" Format="b" Modify="1" Type="2" name="cash" Caption="Cash Flow"/>
+      <Field Size="1" Format="b" Modify="1" Type="2" name="fixed" Caption="Fixed Asset"/>
+      <Field Size="2" Modify="1" Type="3" File="accounting.accgroup" name="accgroup" Caption="Asset group"/>
+      <Field Size="2" Modify="1" Type="3" File="accounting.chart" name="chart_accumulated" Caption="Accumulated depreciation"/>
+      <Field Size="1" Options="Net,Total,Vat,Discount" Modify="1" Type="2" name="jtype" Caption="Journal Type"/>
+      <Field Size="2" Modify="1" Type="3" File="accounting.chartgroup" name="chartgroup" Caption="Group"/>
+      <Field Size="1" Modify="1" Type="3" File="accounting.vat" name="vat" Caption="Vat"/>
+      <Field Size="2" Format="#######" Modify="1" Type="3" File="accounting.currency" name="currency" Caption="Currency"/>
+      <Field Size="2" Format="#######" Type="3" File="accounting.chart" name="chart" Caption="Parent"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="4" Type="2" System="1" name="@color_front" Caption="Foreground Color"/>
+      <Field Hide="1" Size="4" Type="2" System="1" name="@color_back" Caption="Background Color"/>
+      <Field Hide="1" Size="16" System="1" name="@bookmark" Caption="Bookmark"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" HideReport="1" Caption="SoftDelete"/>
+      <Index name="chart">
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[accgroup]">
+         <IndexEntry name="accgroup"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index Force="1" name="chart[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="type"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[chart_accumulated]">
+         <IndexEntry name="chart_accumulated"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[chartgroup]">
+         <IndexEntry name="chartgroup"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart[vat]">
+         <IndexEntry name="vat"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index Force="1" name="chart_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="description"/>
+      </Index>
+      <Index name="chart_type">
+         <IndexEntry name="type"/>
+         <IndexEntry name="description"/>
+      </Index>
+   </Table>
+</xml>

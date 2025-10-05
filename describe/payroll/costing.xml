@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="timedef" name="Costing" System="payroll">
+      <Field Size="4" Type="2" File="payroll.trans" name="trans" Caption="Transactions"/>
+      <Field Size="2" Type="2" File="system.location" name="location" Caption="Location"/>
+      <Field Size="4" Format="###.##" Type="8" name="hours" Caption="Hours"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="costing">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="costing[location]">
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

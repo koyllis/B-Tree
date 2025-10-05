@@ -1,0 +1,18 @@
+<xml>
+   <Table Phone="Phones" System="accounting" Icon="phone1" Dynamic="1" name="phone" Unordered="1" json_replicate="1">
+      <Field Caption="People" File="accounting.people" Size="4" Type="2" Force="1" name="people"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Home,Work,Mobile,Fax,Other,Mobile2" Force="1" name="type"/>
+      <Field Caption="Phone" Size="20" Force="1" name="phone"/>
+      <Field Size="40"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index CRC64="1" name="phone">
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index CRC64="1" name="phone_phone">
+         <IndexEntry name="phone"/>
+         <IndexEntry name="people"/>
+
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Patients" System="medical">
+      <Field Size="4" Format="########" Type="2" name="id" Caption="Ident. No."/>
+      <Field Size="20"/>
+      <Field Size="20" name="surname" Caption="Surname"/>
+      <Field Size="40" name="address" Caption="Address"/>
+      <Field Size="1" Type="2" File="medical.area" name="area" Caption="Area"/>
+      <Field Size="4" Format="####" Type="2" name="zip" Caption="Zip"/>
+      <Field Size="10" name="home" Caption="Home phone"/>
+      <Field Size="10" name="mobile" Caption="Mobile phone"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="patient">
+         <IndexEntry name="id"/>
+      </Index>
+      <Index name="patient[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="id"/>
+      </Index>
+   </Table>
+</xml>

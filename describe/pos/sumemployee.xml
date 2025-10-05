@@ -1,0 +1,36 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ManualIndex="1" CanModify="0" System="pos" Export="date" Dynamic="1" PDA="0" CanDelete="0" name="Employee Analysis" MergeType="1">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" PersistentReport="1" name="division"/>
+      <Field Caption="Employee" Total="1" Percentage="2" File="payroll.employee" Size="2" Type="2" name="employee" PercentageLocal="1"/>
+      <Field Caption="Quantity" Total="1" Percentage="2" Format="quantity" Size="4" Type="8" name="quantity" PercentageLocal="1"/>
+      <Field Caption="Orders" Total="1" Format="#####" Size="4" Type="2" name="orders"/>
+      <Field Caption="Total" Total="1" Format="######.##" Size="8" Type="3" name="total"/>
+      <Field Caption="Net" Total="1" Percentage="2" Format="######.##" Size="8" Type="3" name="net" PercentageLocal="1"/>
+      <Field Caption="Discount" Total="1" Format="######.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="sumemployee">
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="sumemployee[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="employee"/>
+      </Index>
+      <Index name="sumemployee_employee">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

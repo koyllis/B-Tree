@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" Icon="titan" Color="1" Report="accounting|detail" name="Financial line" Common="1">
+      <Field Caption="Statement" File="accounting.statement" Size="1" Type="2" name="statement"/>
+      <Field Caption="Line" Size="2" Type="2" Tip="1" name="line" HideReport="1"/>
+      <Field Caption="Description" Size="60" Tip="1" name="desc"/>
+      <Field Caption="Field name" Size="20" name="field"/>
+      <Field Caption="Current year" Strict="1" Format="#########.##" Size="8" Type="4" name="amount" Modify="1"/>
+      <Field Strict="1" Caption="Previous year" Format="#########.##" Size="8" Type="4" name="amount_prev" Modify="1"/>
+      <Field Caption="Field-1" Format="#########.##" Hide="1" Size="8" Type="3" name="custom1"/>
+      <Field Caption="Field-2" Format="#########.##" Hide="1" Size="8" Type="3" name="custom2"/>
+      <Field Caption="Field-3" Format="#########.##" Hide="1" Size="8" Type="3" name="custom3"/>
+      <Field Caption="Field-4" Format="#########.##" Hide="1" Size="8" Type="3" name="custom4"/>
+      <Field Caption="Field-5" Format="#########.##" Hide="1" Size="8" Type="3" name="custom5"/>
+      <Field Caption="Field-6" Format="#########.##" Hide="1" Size="8" Type="3" name="custom6"/>
+      <Field Caption="Field-7" Format="#########.##" Hide="1" Size="8" Type="3" name="custom7"/>
+      <Field Caption="Field-8" Format="#########.##" Hide="1" Size="8" Type="3" name="custom8"/>
+      <Field Caption="Field-9" Format="#########.##" Hide="1" Size="8" Type="3" name="custom9"/>
+      <Field Caption="Field-10" Format="#########.##" Hide="1" Size="8" Type="3" name="custom10"/>
+      <Field Caption="Field-11" Format="#########.##" Hide="1" Size="8" Type="3" name="custom11"/>
+      <Field Caption="Field-12" Format="#########.##" Hide="1" Size="8" Type="3" name="custom12"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Foreground Color" Hide="1" System="1" Size="4" Type="2" name="@color_front"/>
+      <Field Caption="Background Color" Hide="1" System="1" Size="4" Type="2" name="@color_back"/>
+      <Index name="stline">
+         <IndexEntry name="statement"/>
+         <IndexEntry name="line"/>
+      </Index>
+   </Table>
+</xml>

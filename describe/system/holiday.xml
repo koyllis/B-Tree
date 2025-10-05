@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Late="1" System="system" Icon="holiday" Index="holiday" name="Holidays" Root="1">
+      <Field Caption="Note" name="note"/>
+      <Field Caption="Day" Format="##" Size="2" Type="2" name="day"/>
+      <Field Caption="Month" Format="##" Size="2" Type="2" name="month"/>
+      <Field Caption="Ignore" Format="b" Size="1" Type="2" name="ignore"/>
+      <Field Caption="Not public" Format="b" Size="1" Type="2" name="notpublic"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="holiday">
+         <IndexEntry name="note"/>
+      </Index>
+      <Index name="holiday_day">
+         <IndexEntry name="day"/>
+         <IndexEntry name="month"/>
+         <IndexEntry name="note"/>
+      </Index>
+   </Table>
+</xml>

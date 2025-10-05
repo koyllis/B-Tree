@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" PDA="0" name="Vehicle Counter">
+      <Field Caption="Date" Size="4" Auto="1" Type="5" name="date"/>
+      <Field Caption="Vehicle" File="accounting.vehicle" Size="4" Force="1" Type="2" name="vehicle"/>
+      <Field Caption="Counter" Format="########" Size="4" Type="2" name="counter"/>
+      <Field Caption="Time" Strict="1" Size="2" Auto="1" Type="5" name="time" Modify="1"/>
+      <Field Strict="1" Caption="Charged" Size="8" Type="5" name="charge" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vehcount">
+         <IndexEntry name="date"/>
+         <IndexEntry name="vehicle"/>
+      </Index>
+      <Index name="vehcount[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

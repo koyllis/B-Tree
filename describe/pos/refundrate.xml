@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Refund Rates" System="pos">
+      <Field Size="4" Format="######.##" Type="4" name="limit" Caption="Limit"/>
+      <Field Size="4" Format="####.##" Type="4" name="refund" Caption="Refund"/>
+      <Field Size="4" Format="###.##" Type="8" name="rate" Caption="Rate%"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="refundrate">
+         <IndexEntry name="limit"/>
+      </Index>
+   </Table>
+</xml>

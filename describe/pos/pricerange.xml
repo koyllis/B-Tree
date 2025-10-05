@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Price Range" System="pos" Icon="lego">
+      <Field Size="4" Type="2" File="accounting.group" name="group" Caption="Group"/>
+      <Field Size="4" Format="###.##" Type="8" name="pricerange" Caption="Price range"/>
+      <Field Size="8" Format="###.##" Type="3" name="discount" Caption="Discount%"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="pricerange">
+         <IndexEntry name="group"/>
+         <IndexEntry name="pricerange"/>
+      </Index>
+   </Table>
+</xml>

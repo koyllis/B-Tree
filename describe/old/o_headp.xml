@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="o_headp" System="old" ModifyStamp="0">
+      <Field Caption="OrderNo" Size="4" Type="2" name="oh_number"/>
+      <Field Caption="CustCode" Size="10" name="oh_ccode"/>
+      <Field Caption="OrderCode" Size="10" name="oh_dcode"/>
+      <Field Caption="DelivDate" Size="4" Type="5" name="oh_ddate"/>
+      <Field Caption="OrderDate" Size="4" Type="5" name="oh_odate"/>
+      <Field Caption="Details1" Size="50" name="oh_comments1"/>
+      <Field Caption="Details2" Size="50" name="oh_comments2"/>
+      <Field Caption="Details3" Size="50" name="oh_comments3"/>
+      <Field Caption="Price" Size="1" name="oh_rwprice"/>
+      <Field Caption="Status" Size="1" name="oh_status"/>
+      <Field Caption="Curr" Size="1" name="oh_curr"/>
+      <Field Caption="Disc%" Size="4" Type="4" Format="##.##" name="oh_disc"/>
+      <Field Caption="Ref" Size="15" name="oh_ref"/>
+      <Field Caption="DiscAmnt" Size="8" Type="4" Format="######.##" name="oh_disc_a"/>
+      <Index name="o_headp">
+         <IndexEntry name="oh_number"/>
+      </Index>
+   </Table>
+</xml>

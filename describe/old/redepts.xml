@@ -1,0 +1,27 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="redepts" System="old">
+      <Field Size="1" Format="##" Type="2" name="de_dptno" Caption="Dep. No."/>
+      <Field Size="20" Format="u" name="de_name"/>
+      <Field Size="1" Options="W,K,C,D,T,M" Format="u" name="de_drive" Caption="Division (W/K/C/D/T/M)?"/>
+      <Field Size="8" Format="###.##" Type="3" name="de_cont" Caption="Employer contributions(%)"/>
+      <Field Size="4" Format="##.##" Type="4" name="de_break" Caption="Break (hh.mm)"/>
+      <Field Size="8" Format="##.###" Type="3" name="de_hours" Caption="Hours per day"/>
+      <Field Size="1" Format="#" Type="2" name="de_ofday" Caption="Sunday (1-7)"/>
+      <Field Size="8" Format="###.##" Type="3" name="de_bonus" Caption="Sunday bonus(%)"/>
+      <Field Size="8" Format="###.##" Type="3" name="de_overt" Caption="Overtime(%)"/>
+      <Field Size="8" Format="###.##" Type="3" name="de_night" Caption="Night-shift(%)"/>
+      <Field Size="8" Format="###.##" Type="3" name="de_holid" Caption="Holiday(%)"/>
+      <Field Size="4" Format="##.##" Type="4" name="de_fnight" Caption="From"/>
+      <Field Size="4" Format="##.##" Type="4" name="de_tnight" Caption="To"/>
+      <Field Size="4" Format="##.##" Type="4" name="de_fholid" Caption="From"/>
+      <Field Size="4" Format="##.##" Type="4" name="de_tholid" Caption="To"/>
+      <Field Size="4" Format="###.##" Type="4" name="de_ohours" Caption="Overtime hours"/>
+      <Field Size="1" Format="##" Type="2" name="de_xdays" Caption="Maximum month days"/>
+      <Field Size="4" Format="####,###.##" Type="4" name="de_min" Caption="Minimum daily salary"/>
+      <Field Size="4" Format="####,###.##" Type="4" name="de_ins" Caption="Insurable daily minimum"/>
+      <Field Size="4" Format="####,###.##" Type="4" name="de_mrate" Caption="Monthly salary"/>
+      <Index name="redepts">
+         <IndexEntry name="de_dptno"/>
+      </Index>
+   </Table>
+</xml>

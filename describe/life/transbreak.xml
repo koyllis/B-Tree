@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="transbreak" System="life">
+      <Field Size="4" Type="2" File="life.transdet" name="transdet" Caption="Invoice line"/>
+      <Field Size="2" Type="2" File="life.plan" name="plan" Caption="Plan"/>
+      <Field Size="4" Type="8" name="premium" Caption="Premium%"/>
+      <Field Size="4" Type="4" name="amount" Caption="Amount"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="transbreak">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index name="transbreak[plan]">
+         <IndexEntry name="plan"/>
+         <IndexEntry name="transdet"/>
+      </Index>
+   </Table>
+</xml>

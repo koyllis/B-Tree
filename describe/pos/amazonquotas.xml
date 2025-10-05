@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Amazon Quotas">
+      <Field Caption="Category" File="pos.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Dscount%" Format="###.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Discount amount" Format="###.##" Size="4" Type="8" name="discount_amount"/>
+      <Field Caption="Price" Format="####.##" Size="8" Type="3" name="price"/>
+      <Field Caption="From date" Size="4" Type="5" name="from"/>
+      <Field Caption="To date" Size="4" Type="5" name="to"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="amazonquotas">
+         <IndexEntry name="category"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="amazonquotas[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

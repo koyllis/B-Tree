@@ -1,0 +1,33 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table name="Item Matrix Status" System="pos">
+      <Field Size="4" Type="2" File="system.user" name="user" Caption="User"/>
+      <Field Size="4" Type="2" File="pos.item" name="item" Caption="Item"/>
+      <Field Size="2" Type="2" File="pos.color" name="color" Caption="Color"/>
+      <Field Size="5" Dim="24" name="size" Caption="Size"/>
+      <Field Size="4" Dim="24" Type="2" name="order" Caption="Order"/>
+      <Field Size="4" Dim="24" Type="2" name="purchase" Caption="Purchase"/>
+      <Field Size="4" Dim="24" Type="2" name="transfer" Caption="Transfer"/>
+      <Field Size="4" Dim="24" Type="2" name="movement" Caption="Movement"/>
+      <Field Size="4" Dim="24" Type="2" name="sale" Caption="Sale"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="matrixsummary">
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="matrixsummary[color]">
+         <IndexEntry name="color"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="matrixsummary[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="color"/>
+      </Index>
+      <Index name="matrixsummary[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="wordpad" name="Tax Discounts" System="payroll">
+      <Field Size="4" Type="2" File="payroll.taxdata" name="taxdata" Caption="Tax data"/>
+      <Field Size="4" Type="2" File="payroll.taxform" name="taxform" Caption="Tax form"/>
+      <Field Size="4" Format="######.##" Type="4" name="amount" Caption="Discount"/>
+      <Field Size="4" Format="######.##" Type="4" name="maximum" Caption="Base maximum"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="taxlines">
+         <IndexEntry name="taxdata"/>
+         <IndexEntry name="taxform"/>
+      </Index>
+      <Index name="taxlines[taxform]">
+         <IndexEntry name="taxform"/>
+         <IndexEntry name="taxdata"/>
+      </Index>
+   </Table>
+</xml>

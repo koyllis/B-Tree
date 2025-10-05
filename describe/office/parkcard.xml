@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table SoftDelete="1" name="parkcard" System="office">
+      <Field Size="4" Type="2" name="number" Caption="Number"/>
+      <Field Size="10" name="card" Caption="Card No."/>
+      <Field Size="20"/>
+      <Field Size="20" name="surname" Caption="Surname"/>
+      <Field Size="10" name="home" Caption="Home phone"/>
+      <Field Size="10" name="mobile" Caption="Mobile phone"/>
+      <Field Size="20" name="carplate" Caption="Car Plate"/>
+      <Field Size="2" Type="2" File="office.parkgroup" name="parkgroup" Caption="Group"/>
+      <Field Size="4" Strict="1" Type="5" name="expire" Caption="Expire"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="1" Format="b" Type="2" System="1" name="@delete" HideReport="1" Caption="SoftDelete"/>
+      <Index name="parkcard">
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="parkcard[parkgroup]">
+         <IndexEntry name="parkgroup"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="parkcard_card">
+         <IndexEntry name="card"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

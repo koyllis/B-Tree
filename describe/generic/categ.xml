@@ -1,0 +1,10 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Clients Categories" System="generic">
+      <Field Size="5" name="code" Caption="code"/>
+      <Field name="description" Caption="description"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="categ">
+         <IndexEntry AllDimension="1" name="code"/>
+      </Index>
+   </Table>
+</xml>

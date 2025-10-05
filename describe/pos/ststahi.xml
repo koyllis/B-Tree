@@ -1,0 +1,18 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="pos">
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="th_date" Caption="Date"/>
+      <Field Size="4" Format="#######" Type="2" name="th_refer" Caption="Reference"/>
+      <Field Size="12" Format="u" name="th_item" Caption="Item"/>
+      <Field Size="1" Format="###" Type="2" name="th_loc" Caption="Loc"/>
+      <Field Size="8" Format="#######.##" Type="3" name="th_quant" Caption="Quantity"/>
+      <Field Size="8" Format="#######.##" Type="3" name="th_diff" Caption="Difference"/>
+      <Field Size="8" Format="#######.##" Type="3" name="th_cost" Caption="Cost"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="ststahi">
+         <IndexEntry name="th_date"/>
+         <IndexEntry name="th_refer"/>
+         <IndexEntry name="th_item"/>
+         <IndexEntry name="th_loc"/>
+      </Index>
+   </Table>
+</xml>

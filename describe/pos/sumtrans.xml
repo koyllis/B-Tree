@@ -1,0 +1,31 @@
+<xml>
+   <Table CanModify="0" System="pos" Export="date" Dynamic="1" PDA="0" CanDelete="0" name="Transactions Analysis">
+      <Field Caption="Date" Size="4" Type="5" name="date"/>
+      <Field Caption="Division" File="pos.division" Size="1" PersistentReport="1" Type="2" name="division"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Total" Total="1" Average="1" Round="0" Format="######.##" Size="8" Type="3" PercentageBase="1" name="total"/>
+      <Field Caption="Net" Total="1" Round="0" Format="######.##" Size="8" Type="3" name="net"/>
+      <Field Caption="Discount" Total="1" Format="######.##" Size="8" Type="3" name="discount"/>
+      <Field Caption="Voucher discount" Total="1" Format="######.##" Size="8" Type="3" name="voucher_discount"/>
+      <Field Caption="Non Customer" Total="1" Format="######.##" Size="8" Type="3" name="no_customer"/>
+      <Field Caption="Quotas" Total="1" Format="######.##" Size="8" Type="3" name="quota"/>
+      <Field Caption="Cost" Total="1" Format="######.##" Size="8" Type="3" name="cost"/>
+      <Field Caption="Orders" Total="1" Format="#######" Size="4" Type="2" name="orders"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="sumtrans" Unordered="1">
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="sumtrans[division]" Unordered="1">
+         <IndexEntry name="division"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="sumtrans[location]" Unordered="1">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="division"/>
+      </Index>
+   </Table>
+</xml>

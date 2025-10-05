@@ -1,0 +1,55 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Line Merge Components">
+      <Field Caption="Statement line" File="accounting.stline" Size="2" Type="2" name="stline"/>
+      <Field Caption="Chart" File="accounting.chart" Size="2" Type="2" name="chart"/>
+      <Field Caption="Channel" File="pos.channel" Size="2" Type="2" name="channel"/>
+      <Field Caption="Operation" File="accounting.operation" Size="2" Type="2" name="operation"/>
+      <Field Caption="Category" File="accounting.category" Size="2" Type="2" name="category"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="stmerge">
+         <IndexEntry name="stline"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="channel"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="category"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="stmerge[category]">
+         <IndexEntry name="category"/>
+         <IndexEntry name="stline"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="channel"/>
+         <IndexEntry name="operation"/>
+      </Index>
+      <Index name="stmerge[channel]">
+         <IndexEntry name="channel"/>
+         <IndexEntry name="stline"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="stmerge[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="stline"/>
+         <IndexEntry name="channel"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="stmerge[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="stline"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="channel"/>
+         <IndexEntry name="operation"/>
+         <IndexEntry name="category"/>
+      </Index>
+      <Index name="stmerge[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="stline"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="channel"/>
+         <IndexEntry name="category"/>
+      </Index>
+   </Table>
+</xml>

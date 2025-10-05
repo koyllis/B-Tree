@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="stlast" system="old" ModifyStamp="0">
+      <Field Size="8" Format="u" Dim ="1" name="dd_code" Caption="Customer"/>
+      <Field Size="4" Type="5" Dim ="1" name="dd_date" Caption="Trans. date"/>
+      <Field Size="2" Format="u" Dim ="1" name="dd_doc" Caption="Document"/>
+      <Field Size="4" Options="0-999999" Format="######" Type="2" Dim ="1" name="dd_refer" Caption="Refer. No."/>
+      <Field Size="1" Format="##" Type="2" Dim ="1" name="dd_line" Caption="Line"/>
+      <Field Size="12" Format="u" Dim ="1" name="dd_item" Caption="Item"/>
+      <Field Format="u" Dim ="1" name="dd_desc" Caption="Description"/>
+      <Field Size="8" Options="0-999" Format="####.##" Type="3" Dim ="1" name="dd_quant" Caption="Quantity"/>
+      <Field Size="8" Options="0-9999.999" Format="####.###" Type="3" Dim ="1" name="dd_price" Caption="Price"/>
+      <Field Size="4" Format="###.##" Type="4" Dim ="1" name="dd_disc" Caption="Discount"/>
+      <Field Size="4" Format="###,###.##" Type="4" Dim ="1" name="dd_total" Caption="Total"/>
+      <Field Size="4" Format="####.####" Type="4" Dim ="1" name="dd_cost" Caption="Cost"/>
+      <Field Size="15" Dim ="1" name="dd_serial" Caption="Serial No."/>
+      <Index name="stlast">
+         <IndexEntry name="dd_code"/>
+         <IndexEntry name="dd_date"/>
+         <IndexEntry name="dd_doc"/>
+         <IndexEntry name="dd_refer"/>
+         <IndexEntry name="dd_line"/>
+         <IndexEntry name="dd_item"/>
+      </Index>
+   </Table>
+</xml>

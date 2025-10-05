@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Advance" System="payroll">
+      <Field Size="2" Type="2" File="payroll.employee" name="employee" Caption="Employee"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="4" Type="5" name="start" Caption="Start date"/>
+      <Field Size="4" Type="4" name="amount" Caption="Amount"/>
+      <Field Size="1" Type="2" name="periods" Caption="Periods"/>
+      <Field Size="2" Type="2" File="system.user" name="user" Caption="User"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="advance">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="payroll">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="payroll[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

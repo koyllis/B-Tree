@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Basic Scale" System="payroll">
+      <Field Size="8" name="code" Caption="Code"/>
+      <Field Size="8" Format="######.####" Type="3" name="start" Caption="Starting salary"/>
+      <Field Size="8" Format="######.####" Type="3" name="scale" Caption="Scale"/>
+      <Field Size="1" Format="##" Type="2" name="steps" Caption="Steps"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="scale">
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

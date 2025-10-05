@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="scalelog" System="payroll">
+      <Field Size="4" Type="2" File="payroll.employee" name="employee" Caption="Employee"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="8" Format="#####.###" Type="3" name="newbasic" Caption="New salary"/>
+      <Field Size="8" Format="#####.###" Type="3" name="oldbasic" Caption="Old salary"/>
+      <Field Size="2" Type="2" File="payroll.scalestep" name="scalestep" Caption="Scale step"/>
+      <Field Size="50" name="remarks" Caption="Remarks"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="scalelog">
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="scalelog[scalestep]">
+         <IndexEntry name="scalestep"/>
+         <IndexEntry name="employee"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

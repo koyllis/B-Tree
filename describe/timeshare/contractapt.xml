@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="timeshare" Icon="home2" name="Contract Apartments">
+      <Field Caption="Contract" File="timeshare.contract" Size="4" Force="1" Type="2" name="contract"/>
+      <Field Caption="Apartment" File="timeshare.apartment" Size="2" Type="2" name="apartment"/>
+      <Field Caption="Week" Format="##" Size="1" Force="1" Type="2" name="week"/>
+      <Field Strict="1" Caption="Occupancy" Size="2" Type="2" name="occupancy" Modify="1"/>
+      <Field Caption="Net fees" Format="######.##" Size="4" Type="4" name="net"/>
+      <Field Strict="1" Caption="LUG" Format="######.##" Size="4" Type="4" name="lug" Modify="1"/>
+      <Field Strict="1" Caption="Maintenance" Format="######.##" Size="4" Type="4" name="maint" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="contractapt">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="apartment"/>
+         <IndexEntry name="week"/>
+      </Index>
+      <Index name="contractapt[apartment]">
+         <IndexEntry name="apartment"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="week"/>
+      </Index>
+   </Table>
+</xml>

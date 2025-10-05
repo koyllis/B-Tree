@@ -1,0 +1,22 @@
+<xml>
+   <Table System="pos" name="Customer Order">
+      <Field Caption="Customer" File="accounting.people" Size="4" Type="2" Force="1" name="people"/>
+      <Field Caption="Date" Strict="1" Size="8" Auto="1" Type="5" name="date" Modify="1"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="4" Type="8" Force="1" name="quantity"/>
+      <Field Caption="Price" Format="price" Size="8" Type="3" name="price"/>
+      <Field Caption="Total" Size="8" Type="3" Format="#####.##" name="total" Total="1"/>
+      <Field Caption="Note" Size="50" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="peoplesale">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="peoplesale[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

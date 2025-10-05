@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="timeshare" SoftDelete="1" Icon="temple" name="Apartments">
+      <Field Caption="Apartment" Size="10"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Type" Size="1" Type="2" Options="Studio,1Bedroom,2Bedroom,3Bedroom" name="type"/>
+      <Field Caption="Occupants" Format="##" Size="1" Type="2" name="occupants"/>
+      <Field Caption="Maintenance week" Format="##" Size="1" Type="2" name="week"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="apartment">
+         <IndexEntry name="name"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="apartment[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

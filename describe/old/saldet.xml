@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="saldet" System="old">
+      <Field Size="4" Type="5" name="sd_date" Caption="Trans. date"/>
+      <Field Size="2" name="sd_doc" Caption="Document"/>
+      <Field Size="4" Format="######" Type="2" name="sd_refer" Caption="Refer. No."/>
+      <Field Size="1" Format="##" Type="2" name="sd_line" Caption="Line"/>
+      <Field Size="12" name="sd_item" Caption="Item"/>
+      <Field Size="1" Type="2" name="sd_loc" Caption="Loc."/>
+      <Field name="sd_desc" Caption="Description"/>
+      <Field Negative="1" Size="8"  Format="####.##" Type="3" name="sd_quant" Caption="Quantity"/>
+      <Field Size="8" Format="####.###" Type="3" name="sd_price" Caption="Price"/>
+      <Field Size="4" Format="###.##" Type="4" name="sd_disc" Caption="Discount"/>
+      <Field Negative="1" Size="4" Format="###,###.##" Type="4" name="sd_total" Caption="Total"/>
+      <Field Size="4" Format="###.##" Type="4" name="sd_vat" Caption="V.A.T."/>
+      <Field Size="10" name="sd_convert" Caption="Converted"/>
+      <Field Size="8" Format="####.####" Type="3" name="sd_cons" Caption="Cost"/>
+      <Index name="saldet">
+         <IndexEntry name="sd_date"/>
+         <IndexEntry name="sd_doc"/>
+         <IndexEntry name="sd_refer"/>
+         <IndexEntry name="sd_line"/>
+         <IndexEntry name="sd_item"/>
+      </Index>
+   </Table>
+</xml>

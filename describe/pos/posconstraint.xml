@@ -1,0 +1,52 @@
+<xml>
+   <Table System="pos" Icon="lock" name="User Constraints">
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Location" File="system.location" Size="2" Type="2" name="location"/>
+      <Field Caption="Division" File="pos.division" Size="1" Type="2" name="division"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Caption="Group" File="accounting.group" Size="2" Type="2" name="group"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="posconstraint">
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="price"/>
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="userrights">
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="price"/>
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="userrights[division]">
+         <IndexEntry name="division"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="price"/>
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="userrights[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="price"/>
+      </Index>
+      <Index name="userrights[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="price"/>
+         <IndexEntry name="group"/>
+      </Index>
+      <Index name="userrights[price]">
+         <IndexEntry name="price"/>
+         <IndexEntry name="user"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="division"/>
+         <IndexEntry name="group"/>
+      </Index>
+   </Table>
+</xml>

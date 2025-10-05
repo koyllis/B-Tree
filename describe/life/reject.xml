@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="stop3" Dynamic="1" name="Rejected" System="life">
+      <Field Size="4" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="4" Type="2" File="life.member" name="member" Caption="Member"/>
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="1" Type="2" File="life.problem" name="problem" Caption="Problem"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="reject">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+      </Index>
+      <Index name="reject[member]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+      </Index>
+      <Index name="reject[problem]">
+         <IndexEntry name="problem"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+      </Index>
+   </Table>
+</xml>

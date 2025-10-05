@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Parent="subject" Child="name" System="student" Icon="break" name="Subjects">
+      <Field Caption="Educator" File="student.associate" Size="4" Type="2" name="associate"/>
+      <Field Caption="Subject" Size="100"/>
+      <Field Caption="Parent" File="student.subject" Size="4" Type="2" name="subject"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="subject">
+         <IndexEntry name="associate"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="subject[associate]">
+         <IndexEntry name="associate"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="subject[subject]">
+         <IndexEntry name="subject"/>
+         <IndexEntry name="associate"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

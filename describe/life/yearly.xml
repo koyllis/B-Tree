@@ -1,0 +1,44 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" CanDelete="0" Icon="taxform" name="Yearly" System="life">
+      <Field Size="2" Format="####" Type="2" name="year" Caption="Year"/>
+      <Field Size="2" Type="2" File="life.contract" name="contract" Caption="Contract"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="1" Options="Standard,Loan" Type="2" name="type" Caption="Type"/>
+      <Field Size="4" Type="2" File="life.trans" name="trans" Caption="Transaction"/>
+      <Field Size="4" Modify="1" Strict="1" Type="2" File="accounting.journal" name="journal" Auto="1" Caption="Journal"/>
+      <Field Size="8" Strict="1" Modify="1" Type="5" Auto="1" name="date" Caption="Date"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="yearly">
+         <IndexEntry name="year"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="yearly[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="yearly[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="yearly[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="yearly[trans]">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="year"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="type"/>
+      </Index>
+   </Table>
+</xml>

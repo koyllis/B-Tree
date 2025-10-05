@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="fields" Dynamic="1" name="Project costing" System="accounting">
+      <Field Size="4" Type="5" name="date" Caption="Date"/>
+      <Field Size="2" Type="2" File="accounting.location" name="location" Caption="Location"/>
+      <Field Size="2" Type="2" File="accounting.servicedef" name="servicedef" Caption="Service"/>
+      <Field Size="50" name="name1" Caption="Description 1"/>
+      <Field Size="50" name="name2" Caption="Description 2"/>
+      <Field Size="2" Format="####" Type="2" name="square" Caption="Square meters"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" HideReport="1" Caption="Modified"/>
+      <Index name="projcost">
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+         <IndexEntry name="servicedef"/>
+      </Index>
+      <Index name="projcost[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="projcost[servicedef]">
+         <IndexEntry name="servicedef"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

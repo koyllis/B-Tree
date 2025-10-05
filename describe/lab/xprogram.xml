@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="lab" name="Month Program">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Sampler" File="office.staff" Size="2" Force="1" Type="2" name="staff"/>
+      <Field Caption="Route" File="accounting.route" Size="2" Force="1" Type="2" name="route"/>
+      <Field Caption="Programs" Strict="1" Size="2" Type="2" name="count" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="xprogram">
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+         <IndexEntry name="route"/>
+      </Index>
+      <Index name="xprogram[route]">
+         <IndexEntry name="route"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="staff"/>
+      </Index>
+      <Index name="xprogram[staff]">
+         <IndexEntry name="staff"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="route"/>
+      </Index>
+   </Table>
+</xml>

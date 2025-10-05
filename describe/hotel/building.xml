@@ -1,0 +1,9 @@
+<xml>
+   <Table System="hotel" name="building">
+      <Field/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="building">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

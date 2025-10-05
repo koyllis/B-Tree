@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="syuser" System="old">
+      <Field Size="8" Format="u" name="u_id" Caption="User ID"/>
+      <Field Size="20" Format="u" name="u_name" Caption="User name"/>
+      <Field Size="16" Format="e" name="u_pass" Caption="Password"/>
+      <Field Size="2" Format="##,###" Type="2" name="u_times" Caption="Times used"/>
+      <Field Size="1" Options="1-9" Format="###" Type="2" name="u_level" Caption="Access level"/>
+      <Field Size="1" Format="###" Type="2" name="u_loc" Caption="Menu No."/>
+      <Field Size="8" name="u_printer" Caption="Printer"/>
+      <Field name="u_lpt" Caption="Device"/>
+      <Index name="syuser">
+         <IndexEntry name="u_id"/>
+      </Index>
+   </Table>
+</xml>

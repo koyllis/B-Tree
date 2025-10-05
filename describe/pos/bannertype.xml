@@ -1,0 +1,9 @@
+<xml>
+   <Table System="pos" name="bannertype">
+      <Field/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="bannertype">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

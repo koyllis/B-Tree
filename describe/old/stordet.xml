@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="stordet" System="old" ModifyStamp="0">
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="od_date"/>
+      <Field Caption="Refer." Format="######" Size="4" Options="0-999999" Type="2" name="od_refer"/>
+      <Field Caption="Line" Format="##" Size="2" Type="2" name="od_line"/>
+      <Field Caption="Item" Format="u" Size="12" name="od_item"/>
+      <Field Caption="Loc" Format="00" Size="1" Type="2" name="od_loc"/>
+      <Field Caption="Description" Format="u" name="od_desc"/>
+      <Field Caption="Quantity" Format="######.##" Size="8" Options="0-999" Type="3" name="od_quant"/>
+      <Field Caption="Delivered" Format="######.##" Size="8" Type="3" name="od_deliq"/>
+      <Field Caption="Price" Format="#####.###" Size="8" Options="0-9999.999" Type="3" name="od_price"/>
+      <Field Caption="Discount" Format="###.##" Size="8" Type="4" name="od_disc"/>
+      <Field Caption="Total" Format="####,###.##" Size="8" Type="4" name="od_total"/>
+      <Field Caption="Cost" Format="####,###.##" Size="8" Type="4" name="od_cost"/>
+      <Index name="stordet">
+         <IndexEntry name="od_date"/>
+         <IndexEntry name="od_refer"/>
+         <IndexEntry name="od_line"/>
+         <IndexEntry name="od_item"/>
+      </Index>
+   </Table>
+</xml>

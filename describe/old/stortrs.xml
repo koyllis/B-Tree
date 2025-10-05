@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="stortrs" System="old" ModifyStamp="0">
+      <Field Caption="Date" Format="dd/mm/yyyy" Size="4" Type="5" name="ot_date"/>
+      <Field Caption="Refer." Format="######" Size="4" Options="0-999999" Type="2" name="ot_refer"/>
+      <Field Caption="Supplier" Format="u" Size="8" name="ot_code"/>
+      <Field Caption="Delivery" Format="dd/mm/yyyy" Size="4" Type="5" name="ot_deld"/>
+      <Field Caption="Other ref." Format="u" Size="10" name="ot_arefer"/>
+      <Field Caption="Currency" Format="u" Size="3" name="ot_curr"/>
+      <Field Caption="Gross" Format="####,###.##" Size="8" Type="4" name="ot_gross"/>
+      <Field Caption="Discount" Format="####,###.##" Size="8" Type="4" name="ot_disc"/>
+      <Field Caption="Cost" Format="####,###.##" Size="8" Type="4" name="ot_cost"/>
+      <Field Caption="Doc" Format="u" Size="2" name="ot_doc"/>
+      <Field Caption="Canceled" Format="dd/mm/yyyy" Size="4" Type="5" name="ot_cancel"/>
+      <Field Caption="User" Format="u" Size="8" name="ot_user"/>
+      <Index name="stortrs">
+         <IndexEntry name="ot_date"/>
+         <IndexEntry name="ot_refer"/>
+         <IndexEntry name="ot_code"/>
+      </Index>
+   </Table>
+</xml>

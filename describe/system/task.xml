@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="system" name="task" Root="1" UserStamp="1">
+      <Field Caption="User" File="system.user" Size="2" Force="1" Type="2" name="user"/>
+      <Field Caption="Date" Size="8" Force="1" Type="5" name="date"/>
+      <Field Caption="Task description" Size="128" GridWrap="1" Force="1"/>
+      <Field Caption="From User" File="system.user" Size="2" Type="2" name="from" Strict="1"/>
+      <Field Strict="1" Caption="Completed" Size="8" Type="5" name="completed" Modify="1"/>
+      <Field Caption="Ok" Strict="1" Format="b" Size="1" Type="2" name="ok" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="User" File="system.user" System="1" Size="2" Type="2" name="@user_stamp" Hide="1"/>
+      <Index name="task" CRC64="1" Unordered="1">
+         <IndexEntry name="user"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

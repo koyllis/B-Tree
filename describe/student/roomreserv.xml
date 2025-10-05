@@ -1,0 +1,40 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" Icon="timedef" name="Room Reservations">
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="From time" Size="2" Type="5" Force="1" name="from"/>
+      <Field Caption="Room" File="student.room" Size="2" Type="2" Force="1" name="room"/>
+      <Field Caption="To time" Size="2" Type="5" Force="1" name="to"/>
+      <Field Caption="Class" File="student.class" Size="2" Force="1" Type="2" name="class"/>
+      <Field Caption="Instructor" File="student.instructor" Size="2" Type="2" name="instructor"/>
+      <Field Caption="Program" Strict="1" File="student.program" Size="4" Type="2" name="program" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="roomreserv">
+         <IndexEntry name="date"/>
+         <IndexEntry name="from"/>
+         <IndexEntry name="room"/>
+      </Index>
+      <Index name="roomreserv[class]">
+         <IndexEntry name="class"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="from"/>
+         <IndexEntry name="room"/>
+      </Index>
+      <Index name="roomreserv[instructor]">
+         <IndexEntry name="instructor"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="from"/>
+         <IndexEntry name="room"/>
+      </Index>
+      <Index name="roomreserv[program]">
+         <IndexEntry name="program"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="from"/>
+         <IndexEntry name="room"/>
+      </Index>
+      <Index name="roomreserv[room]">
+         <IndexEntry name="room"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="from"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,47 @@
+<xml>
+   <Table System="accounting" Icon="checkbook" name="Card Payments" CreateStamp="1">
+      <Field Caption="Creditor" File="accounting.people" Size="4" Force="0" Type="2" name="people"/>
+      <Field Caption="Account" File="accounting.chart" Size="2" Type="2" name="chart"/>
+      <Field Caption="Reference" Size="20" Force="1" name="reference"/>
+      <Field Caption="Amount" Total="1" Format="#######.##" Size="4" Force="1" Type="4" name="amount"/>
+      <Field Caption="Discount" Total="1" Format="#######.##" Size="4" Type="4" name="discount"/>
+
+      <Field Caption="Creditor" File="accounting.people" Size="4" Type="2" name="creditor"/>
+      <Field Caption="Location" File="accounting.location" Size="2" Type="2" name="location"/>
+      <Field Caption="IBAN" File="accounting.iban" Size="4" Type="2" name="iban"/>
+	  <Field Caption="Description" Size="50" Force="1" name="description"/>
+      <Field Strict="1" Caption="Authorized by" File="system.user" Size="2" Type="2" name="authorized" Modify="1"/>
+      <Field Strict="1" Caption="Recorded by" File="system.user" Size="2" Type="2" name="recorded" Modify="1"/>
+      <Field Caption="Status" Strict="1" Size="120" name="status" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Strict="1" Caption="Created" System="1" Size="8" Type="5" name="@create_stamp"/>
+      <Index name="cardpay">
+         <IndexEntry name="people"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="cardpay[authorized]">
+         <IndexEntry name="authorized"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="cardpay[chart]">
+         <IndexEntry name="chart"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="cardpay[creditor]">
+         <IndexEntry name="creditor"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="cardpay[recorded]">
+         <IndexEntry name="recorded"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="chart"/>
+         <IndexEntry name="reference"/>
+      </Index>
+   </Table>
+</xml>

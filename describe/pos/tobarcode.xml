@@ -1,0 +1,35 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" Icon="print" Dynamic="1" name="Print Barcodes">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" Force="1" name="item"/>
+      <Field Caption="Color" File="pos.color" Size="2" Type="2" name="color"/>
+      <Field Caption="Size" File="pos.size" Size="2" Type="2" name="size"/>
+      <Field Caption="User" File="system.user" Size="2" Auto="1" Type="2" name="user"/>
+      <Field Caption="Package barcode" Size="20" Type="1" name="barcode"/>
+      <Field Caption="Quantity" Format="####" Size="2" Force="1" Type="2" name="quantity" Total="1"/>
+      <Field Caption="Available" Strict="1" Format="quantity" Size="4" Type="8" name="available"/>
+      <Field Caption="Production date" Size="4" Type="5" name="date"/>
+      <Field Caption="Expire date" Size="4" Type="5" name="expire"/>
+      <Field Caption="Price code" File="pos.price" Size="2" Type="2" name="price"/>
+      <Field Caption="Line" Size="4" Type="2" name="line" AutoCounter="1" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="tobarcode">
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="tobarcode[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+      </Index>
+      <Index name="tobarcode[line]">
+         <IndexEntry name="line"/>
+         <IndexEntry name="item"/>
+         <IndexEntry name="color"/>
+         <IndexEntry name="size"/>
+         <IndexEntry name="user"/>
+      </Index>
+   </Table>
+</xml>

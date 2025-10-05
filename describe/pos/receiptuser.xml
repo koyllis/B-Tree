@@ -1,0 +1,27 @@
+<xml>
+   <Table System="pos" name="receiptuser">
+      <Field Caption="Receipt" File="pos.receipt" Size="2" Type="2" name="receipt"/>
+      <Field Caption="User" File="system.user" Size="2" Type="2" name="user"/>
+      <Field Caption="Host" File="system.host" Size="2" Type="2" name="host"/>
+      <Field Caption="Port" File="system.port" Size="2" Type="2" name="port"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="receiptuser">
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="receiptuser[host]">
+         <IndexEntry name="host"/>
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="receiptuser[port]">
+         <IndexEntry name="port"/>
+         <IndexEntry name="receipt"/>
+         <IndexEntry name="user"/>
+      </Index>
+      <Index name="receiptuser[user]">
+         <IndexEntry name="user"/>
+         <IndexEntry name="receipt"/>
+      </Index>
+   </Table>
+</xml>

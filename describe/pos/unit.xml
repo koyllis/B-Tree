@@ -1,0 +1,19 @@
+<xml>
+   <Table Bookmark="1" System="pos" Icon="BOX" Short="Unit" name="UNITS" Merge="1" Common="1">
+      <Field Size="20" ReportWidth="8"/>
+      <Field Caption="Purchase description" Size="20" name="puname"/>
+      <Field Caption="Order description" Size="20" name="orname"/>
+      <Field Caption="Purchase conversion" Format="#####.######" Size="8" Type="3" name="conversion"/>
+      <Field Caption="Denominator" Format="##" Size="1" Type="2" name="denominator"/>
+      <Field Caption="Scale" Format="b" Size="1" Type="2" name="scale"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="Bookmark" Hide="1" System="1" Size="16" name="@bookmark"/>
+      <Index name="unit">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="unit_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

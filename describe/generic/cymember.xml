@@ -1,0 +1,36 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="Member Personal Details">
+      <Field Caption="Membership number" Size="11" name="memberno"/>
+      <Field Caption="Counter" Size="4" Type="2" name="counter"/>
+      <Field Caption="Tier code" Size="8" name="tier"/>
+      <Field Caption="Title" Size="20" name="title"/>
+      <Field Caption="First name" Size="24" Tip="1" name="first"/>
+      <Field Caption="Middle name" Tip="1" name="middle"/>
+      <Field Caption="Last name" Size="32" Tip="1" name="last"/>
+      <Field Caption="Honours" Size="20" name="honours"/>
+      <Field Caption="Job title" name="job"/>
+      <Field Caption="Department name" name="department"/>
+      <Field Caption="Company name" Size="50" name="company"/>
+      <Field Caption="Location prefix" Size="50" name="prefix"/>
+      <Field Caption="Building" Size="50" name="building"/>
+      <Field Caption="Street" Size="50" name="street"/>
+      <Field Caption="Locality" Size="50" name="locality"/>
+      <Field Caption="Town" name="town"/>
+      <Field Caption="Region" name="region"/>
+      <Field Caption="Post code" Size="14" name="postcode"/>
+      <Field Caption="P.O.Box" Size="15" name="pobox"/>
+      <Field Caption="Country " Size="50" name="country"/>
+      <Field Caption="Language" Size="25" name="language"/>
+      <Field Caption="Care of" Size="50" name="careof"/>
+      <Field Caption="Email" Size="60" name="email"/>
+      <Field Caption="Pages" Size="2" Type="2" name="pages"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="cymember">
+         <IndexEntry name="memberno"/>
+      </Index>
+      <Index name="cymember_counter">
+         <IndexEntry name="counter"/>
+         <IndexEntry name="memberno"/>
+      </Index>
+   </Table>
+</xml>

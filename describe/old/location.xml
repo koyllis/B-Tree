@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="location" System="old">
+      <Field Size="1" Type="2" name="lo_loc" Caption="Location"/>
+      <Field Size="20" name="lo_name"/>
+      <Field Size="1" Format="###" Type="2" name="lo_group" Caption="Group"/>
+      <Field Size="1" Format="###" Type="2" name="lo_type" Caption="Type"/>
+      <Field Size="1" Format="###" Type="2" name="lo_area" Caption="Area"/>
+      <Field Size="40" name="lo_future" Caption="Future"/>
+      <Index name="location">
+         <IndexEntry name="lo_loc"/>
+      </Index>
+   </Table>
+</xml>

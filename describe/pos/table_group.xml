@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="table_group" System="pos">
+      <Field/>
+      <Field Size="1" Type="2" File="pos.menu" name="menu" Caption="Menu"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" HideReport="1" Caption="Modified"/>
+      <Index name="table_group">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="table_group[menu]">
+         <IndexEntry name="menu"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

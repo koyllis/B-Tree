@@ -1,0 +1,13 @@
+<xml>
+   <Table System="generic" name="boardcoord">
+      <Field Caption="Layout" Size="2" Options="BoardingPass,Luggage" Type="2" name="layout"/>
+      <Field Caption="Field" name="field"/>
+      <Field Caption="Row" Size="2" Type="2" name="row"/>
+      <Field Caption="Column" Size="2" Type="2" name="col"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="boardcoord">
+         <IndexEntry name="layout"/>
+         <IndexEntry name="field"/>
+      </Index>
+   </Table>
+</xml>

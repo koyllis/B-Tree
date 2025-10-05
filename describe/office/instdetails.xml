@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="instdetails" Dynamic="1" ChainInsert="instserial" name="Installation details" System="office" DeleteChildren="1">
+      <Field Size="4" Type="2" File="office.installation" name="installation" Caption="Installation"/>
+      <Field Size="2" Type="2" PrintWrap="1" File="office.type" name="type" Caption="Type"/>
+      <Field Negative="0" Size="1" Format="###" Type="2" name="quantity" ReportWidth="3" Caption="Qty"/>
+      <Field Size="60" PrintWrap="1" name="desc" Caption="Description"/>
+      <Field Size="4" Type="5" name="expire" Caption="Expiration"/>
+      <Field Size="10" name="year1" Caption="Year 1"/>
+      <Field Size="10" name="year2" Caption="Year 2"/>
+      <Field Size="10" name="year3" Caption="Year 3"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="instdetails">
+         <IndexEntry name="installation"/>
+         <IndexEntry name="type"/>
+      </Index>
+      <Index name="instdetails[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="installation"/>
+      </Index>
+   </Table>
+</xml>

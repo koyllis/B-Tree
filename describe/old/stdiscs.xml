@@ -1,0 +1,15 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="stdiscs" System="old">
+      <Field Size="8" Format="u" Dim ="1" name="vd_code" Caption="Customer"/>
+      <Field Size="12" Format="u" Dim ="1" name="vd_categ" Caption="Item/Category"/>
+      <Field Size="8" Format="u" Dim ="1" name="vd_supp" Caption="Supplier"/>
+      <Field Size="1" Format="#" Type="2" Dim ="1" name="vd_group" Caption="Group"/>
+      <Field Size="8" Format="##.##" Type="3" Dim ="1" name="vd_disc" Caption="Discount (%)"/>
+      <Field Size="8" Format="#####.##" Type="3" Dim ="1" name="vd_quant" Caption="Quantity limit"/>
+      <Index name="stdiscs">
+         <IndexEntry name="vd_code"/>
+         <IndexEntry name="vd_categ"/>
+         <IndexEntry name="vd_supp"/>
+      </Index>
+   </Table>
+</xml>

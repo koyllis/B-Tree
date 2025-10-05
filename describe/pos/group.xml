@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Merge="1"  Icon="folderwhat" Common="1" name="Groups" System="pos" Bookmark="1">
+      <Field Distinct="1"/>
+      <Field Size="10" name="intrastat" Caption="IntraStat" Tip="1"/>
+      <Field Size="4" Format="###.##" Type="8" name="import" Caption="Import Duty %" Tip="1"/>
+      <Field Size="4" Format="#####.##" Type="4" name="quantity" Caption="Quantity"/>
+      <Field Size="4" Format="#####.##" Type="4" name="amount" Caption="Amount"/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Field Hide="1" Size="16" name="@bookmark" System="1" Caption="Bookmark"/>
+      <Index name="group">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index Force="1" name="group_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="group[intrastat]">
+         <IndexEntry name="intrastat"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table name="Question" System="office">
+      <Field Size="4" Type="2" File="office.qstatic" name="qstatic" Caption="Question"/>
+      <Field Size="4" name="number" Caption="Number"/>
+      <Field name="question"/>
+      <Index name="qdynamic">
+         <IndexEntry name="qstatic"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>

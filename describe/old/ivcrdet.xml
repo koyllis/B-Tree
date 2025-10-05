@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="ivcrdet" ModifyStamp="0" System="old">
+      <Field Caption="Date" Size="4" Type="5" name="rd_date"/>
+      <Field Caption="Inv. No." Format="000000" Size="4" Type="2" name="rd_invno"/>
+      <Field Caption="Customer" Format="u" Size="8" name="rd_code"/>
+      <Field Caption="Loc" Format="00" Size="1" Type="2" name="rd_loc"/>
+      <Field Caption="Expense" Format="u" Size="3" name="rd_exp"/>
+      <Field Caption="Description" Format="u" Size="15" name="rd_desc"/>
+      <Field Caption="Cost" Format="##,###.##" Size="4" Type="4" name="rd_cost"/>
+      <Field Caption="Recharge" Format="##,###.##" Size="4" Type="4" name="rd_recha"/>
+      <Field Caption="Discount" Format="##,###.##" Size="4" Type="4" name="rd_disc"/>
+      <Field Caption="VAT%" Format="##.##" Size="8" Type="3" name="rd_vatper"/>
+      <Field Caption="Number" Format="####" Size="2" Type="2" name="rd_number"/>
+      <Field Caption="Value" Format="####.##" Size="4" Type="4" name="rd_value"/>
+      <Field Caption="Rate" Format="####.####" Size="8" Type="3" name="rd_rate"/>
+      <Index name="ivcrdet">
+         <IndexEntry name="rd_date"/>
+         <IndexEntry name="rd_invno"/>
+         <IndexEntry name="rd_code"/>
+         <IndexEntry name="rd_loc"/>
+         <IndexEntry name="rd_exp"/>
+      </Index>
+   </Table>
+</xml>

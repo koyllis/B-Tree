@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="office" Icon="money" name="Payments">
+      <Field Caption="Tender" File="office.tender" Size="4" Type="2" Force="1" name="tender"/>
+      <Field Caption="Date" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Reference" Size="20" name="reference"/>
+      <Field Caption="Amount" Format="#####.##" Size="4" Type="4" Force="1" name="amount"/>
+      <Field Caption="School" File="office.school" Size="2" Type="2" name="school"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="tenderpayment">
+         <IndexEntry name="tender"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="tenderpayment[school]">
+         <IndexEntry name="school"/>
+         <IndexEntry name="tender"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

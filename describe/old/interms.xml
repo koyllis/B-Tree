@@ -1,0 +1,33 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="interms" System="old">
+      <Field Size="4" Type="5" name="pt_term" Caption="Term"/>
+      <Field Size="2" Type="2" name="pt_num" Caption="Number"/>
+      <Field Size="25" name="pt_surname" Caption="Surname"/>
+      <Field Size="25" name="pt_name" Caption="Name"/>
+      <Field Size="4" Type="2" name="pt_id" Caption="ID"/>
+      <Field Size="4" Type="2" name="pt_si" Caption="SI"/>
+      <Field Size="2" Type="2" name="pt_conum" Caption="COM NUM"/>
+      <Field Size="1" name="pt_sex" Caption="SEX"/>
+      <Field Size="4" Type="5" name="pt_birth" Caption="BIRTHDAY"/>
+      <Field Size="4" Type="5" name="pt_date" Caption="DATE"/>
+      <Field Size="4" Type="5" name="pt_death" Caption="DEATH"/>
+      <Field Size="12" name="pt_acno" Caption="ACCOUNT"/>
+      <Field Size="4" Type="2" name="pt_mbno" Caption="MEMBER"/>
+      <Field Size="2" Type="2" name="pt_plno" Caption="PLAN"/>
+      <Field Size="4" Type="4" name="pt_prem" Caption="PREMIUM"/>
+      <Field Size="4" Type="4" name="pt_paya" Caption="PAYABLE"/>
+      <Field Size="4" Type="4" name="pt_netp" Caption="NET PREM"/>
+      <Field Size="4" Type="4" name="pt_extr" Caption="EXTRA"/>
+      <Field Size="4" Type="4" name="pt_cover" Caption="COVER"/>
+      <Field Size="4" Type="2" name="pt_number" Caption="NUMBER"/>
+      <Field Size="4" Type="5" name="pt_record" Caption="RECORD"/>
+      <Index name="interms">
+         <IndexEntry name="pt_term"/>
+         <IndexEntry name="pt_num"/>
+         <IndexEntry name="pt_surname"/>
+         <IndexEntry name="pt_name"/>
+         <IndexEntry name="pt_id"/>
+         <IndexEntry name="pt_si"/>
+      </Index>
+   </Table>
+</xml>

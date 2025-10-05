@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="Special Coverage">
+      <Field Caption="Contract plan" File="life.contractplan" Size="4" Type="2" name="contractplan"/>
+      <Field Caption="Plan" File="life.plan" Size="4" Type="2" name="plan"/>
+      <Field Caption="Coverage" Size="4" Type="2" name="coverage"/>
+      <Field Caption="Double" Format="b" Size="1" Type="2" name="double"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="plancover">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index name="plancover[plan]">
+         <IndexEntry name="plan"/>
+         <IndexEntry name="contractplan"/>
+      </Index>
+   </Table>
+</xml>

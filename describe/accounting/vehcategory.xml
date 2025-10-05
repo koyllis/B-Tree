@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Vehicle Categories">
+      <Field Caption="Code" Size="20" name="code"/>
+      <Field Caption="Type" File="accounting.vehtype" Size="4" Type="2" name="vehtype"/>
+      <Field Caption="Rent" Format="#####.##" Size="4" Type="4" name="rent"/>
+      <Field Caption="Maintenance" Format="#####.##" Size="4" Type="4" name="maintenance"/>
+      <Field Caption="Class" Size="10" name="class"/>
+      <Field Caption="Commodity" Size="10" name="commodity"/>
+      <Field Caption="Weight" Size="10" name="weight"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="vehcategory">
+         <IndexEntry name="code"/>
+      </Index>
+      <Index name="vehcategory[vehtype]">
+         <IndexEntry name="vehtype"/>
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

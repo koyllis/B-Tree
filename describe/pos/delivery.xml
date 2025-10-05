@@ -1,0 +1,29 @@
+<xml xmlns="x-schema:f:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Delivery Schedule">
+      <Field Caption="Source" File="pos.source" Size="2" Type="2" name="source"/>
+      <Field Caption="Area" File="accounting.area" Size="2" Type="2" name="area"/>
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="Quantity" Total="1" Format="quantity" Size="8" Type="3" name="quantity"/>
+      <Field Caption="Weight" Total="1" Format="#####.###" Size="8" Type="3" name="weight"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="delivery">
+         <IndexEntry name="source"/>
+         <IndexEntry name="area"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="delivery[area]">
+         <IndexEntry name="area"/>
+         <IndexEntry name="source"/>
+         <IndexEntry name="item"/>
+      </Index>
+      <Index name="delivery[item]">
+         <IndexEntry name="item"/>
+         <IndexEntry name="area"/>
+      </Index>
+      <Index name="delivery[source]">
+         <IndexEntry name="source"/>
+         <IndexEntry name="area"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

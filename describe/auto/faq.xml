@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="auto" name="FAQs">
+      <Field name="question" Caption="Question" Type="1" Size="200"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="faq">
+         <IndexEntry name="question"/>
+      </Index>
+   </Table>
+</xml>

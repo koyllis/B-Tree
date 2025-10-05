@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="smdiscs" System="old" ModifyStamp="0">
+      <Field Caption="No." Size="4" Type="2" name="cd_no"/>
+      <Field Caption="Item/Category" Size="12" name="cd_item"/>
+      <Field Caption="Disc(%)" Format="##.##" Size="8" Type="3" name="cd_disc"/>
+      <Field Caption="Price code" Size="2" name="cd_pcode"/>
+      <Index name="smdiscs">
+         <IndexEntry name="cd_no"/>
+         <IndexEntry name="cd_item"/>
+      </Index>
+   </Table>
+</xml>

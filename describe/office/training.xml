@@ -1,0 +1,24 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Icon="support" Dynamic="1" name="Training" System="office">
+      <Field Size="4" Type="5" name="date" Caption="From date"/>
+      <Field Size="4" Type="5" name="todate" Caption="To date"/>
+      <Field Size="2" Format="HH:mm" Type="5" name="from" Caption="From time"/>
+      <Field Size="2" Type="5" name="to" Caption="To time"/>
+      <Field Size="80" name="subject" Caption="Subject"/>
+      <Field Size="4" Type="2" File="accounting.people" name="people" Caption="Customer"/>
+      <Field Size="4" Type="2" File="office.staff" name="staff" Caption="Staff"/>
+      <Field Size="40" name="comments" Caption="Comments"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="training">
+         <IndexEntry name="date"/>
+         <IndexEntry name="todate"/>
+         <IndexEntry name="from"/>
+      </Index>
+      <Index name="training[people]">
+         <IndexEntry AllDimension="1" name="people"/>
+      </Index>
+      <Index name="training[staff]">
+         <IndexEntry AllDimension="1" name="staff"/>
+      </Index>
+   </Table>
+</xml>

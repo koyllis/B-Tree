@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Pre-defined Directions" >
+      <Field/>
+      <Field Caption="Line 1" name="line1"/>
+      <Field Caption="Line 2" name="line2"/>
+      <Field Caption="Line 3" name="line3"/>
+      <Field Caption="Line 4" name="line4"/>
+      <Field Caption="Line 5" name="line5"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="stdirect">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

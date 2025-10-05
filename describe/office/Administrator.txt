@@ -1,0 +1,3 @@
+12:04:09 26/01/2005 &table exe:c:\solution\bin\bbd.exe file:c:\solution\core\btrvcore\rtable.cpp, line:693
+16:12:32 04/02/2005 this exe:c:\solution\bin\bbD.exe file:c:\solution\core\btrvcore\bfield.cpp, line:1063
+16:15:46 04/02/2005 field.IsValid() exe:c:\solution\bin\bbD.exe file:c:\solution\core\bbui\uginsert.cpp, line:1284

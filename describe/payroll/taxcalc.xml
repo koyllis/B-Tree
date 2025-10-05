@@ -1,0 +1,20 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table DeleteChildren="1" System="payroll" Icon="calculator" Dynamic="1" PDA="0" name="Tax Calculations">
+      <Field Caption="Payroll" File="payroll.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Year-to-date earnings" Format="######.##" Size="4" Type="4" name="yeartodate"/>
+      <Field Caption="Remaining periods" Format="####" Size="2" Type="2" name="periods"/>
+      <Field Caption="This period earnings" Format="######.##" Size="4" Type="4" name="thisperiod"/>
+      <Field Caption="Estimated earnings" Format="######.##" Size="4" Type="4" name="estimated"/>
+      <Field Caption="Estimated bonus" Format="######.##" Size="4" Type="4" name="estbonus"/>
+      <Field Caption="Estimated overtime" Format="######.##" Size="4" Type="4" name="estovertime"/>
+      <Field Caption="Estimated holiday fund" Format="######.##" Size="4" Type="4" name="estholiday"/>
+      <Field Caption="Estimated other" Format="######.##" Size="4" Type="4" name="estother"/>
+      <Field Caption="Discounts" Format="######.##" Size="4" Type="4" name="discount"/>
+      <Field Caption="Tax due" Format="######.##" Size="4" Type="4" name="taxdue"/>
+      <Field Caption="Tax paid" Format="######.##" Size="4" Type="4" name="taxpaid"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="taxcalc">
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

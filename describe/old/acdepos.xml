@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="acdepos" System="old" ModifyStamp="0">
+      <Field Caption="Date" Size="4" Type="5" name="bd_date"/>
+      <Field Caption="Bank" Format="u" Size="3" name="bd_bank"/>
+      <Field Caption="Branch" Format="#####" Size="4" Type="2" name="bd_branch"/>
+      <Field Caption="Refer. No." Format="########" Size="4" Type="2" name="bd_refer"/>
+      <Field Format="u" name="bd_name"/>
+      <Field Caption="Account" Format="u" Size="20" name="bd_code"/>
+      <Field Caption="Amount" Format="###,###.##" Size="4" Type="4" name="bd_amount"/>
+      <Field Caption="Agent" Format="u" Size="8" name="bd_agent"/>
+      <Field Caption="Entry date" Size="4" Type="5" name="bd_entry"/>
+      <Field Caption="Dep. bank" Size="6" name="bd_dbank"/>
+      <Index name="acdepos">
+         <IndexEntry name="bd_date"/>
+         <IndexEntry name="bd_bank"/>
+         <IndexEntry name="bd_branch"/>
+         <IndexEntry name="bd_refer"/>
+         <IndexEntry name="bd_name"/>
+      </Index>
+   </Table>
+</xml>

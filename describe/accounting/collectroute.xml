@@ -1,0 +1,23 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="accounting" name="Collection Report">
+      <Field Caption="Date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Caption="Time" Size="2" Force="1" Type="5" name="time"/>
+      <Field Caption="To time" Size="2" Type="5" Force="1" name="totime"/>
+      <Field Caption="Amount" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Address" Size="50" name="address"/>
+      <Field Caption="Phone" Size="10" name="phone"/>
+      <Field Caption="Note" Size="80" name="note"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="collectroute">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="time"/>
+      </Index>
+      <Index name="collectroute[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+   </Table>
+</xml>

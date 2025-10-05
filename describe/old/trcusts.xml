@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='windows-1253' standalone='yes'?>
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table ModifyStamp="0" name="trcusts" System="old">
+      <Field Size="4" Format="00000000" Type="2" Dim ="1" name="tc_no" Caption="€‡‹‘"/>
+      <Field Size="8" Format="u" Dim ="1" name="tc_code" Caption="‰—ƒ‰‘"/>
+      <Field Size="8" Dim ="1" name="tc_alter" Caption="EXTPA K—ƒIKO‘"/>
+      <Field Size="1" Format="#" Type="2" Dim ="1" name="tc_forbid" Caption="AA‚OPEY‘H —H‘E—N (1/0)?"/>
+      <Field Size="1" Format="#" Type="2" Dim ="1" name="tc_europe" Caption="EKTO‘ EYP—H‘ (1/0)?"/>
+      <Field Size="38" Dim ="1" name="tc_future" Caption="Future"/>
+      <Field Size="20" Format="u" Dim ="1" name="tc_name" Caption="ONOMA"/>
+      <Field Size="20" Format="u" Dim ="1" name="tc_surname" Caption="EI‡ETO"/>
+      <Field Size="4" Format="00000000" Type="2" Dim ="1" name="tc_idno" Caption="AP.TAYT."/>
+      <Field Size="1" Dim ="1" name="tc_sex" Caption="”YO (A/‡)?"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" Dim ="1" name="tc_birth" Caption="HMEP.‚ENNH‘H‘"/>
+      <Field Format="u" Dim ="1" name="tc_add1" Caption="ƒIEY‡YN‘H"/>
+      <Field Format="u" Dim ="1" name="tc_add2" Caption=""/>
+      <Field Format="u" Dim ="1" name="tc_add3" Caption=""/>
+      <Field Size="3" Format="u" Dim ="1" name="tc_area" Caption="EAPXIA"/>
+      <Field Size="4" Format="0000" Type="2" Dim ="1" name="tc_zip" Caption="T.T."/>
+      <Field Size="4" Format="00000" Type="2" Dim ="1" name="tc_box" Caption="T.‡."/>
+      <Field Size="4" Format="0000" Type="2" Dim ="1" name="tc_boxzip" Caption="T.T."/>
+      <Field Size="10" Dim ="1" name="tc_htele" Caption="TH OIKIA‘"/>
+      <Field Size="10" Dim ="1" name="tc_wtele" Caption="TH EP‚A‘IA‘"/>
+      <Field Size="10" Dim ="1" name="tc_mtele" Caption="KINHTO"/>
+      <Field Size="40" Dim ="1" name="tc_email" Caption="E-mail"/>
+      <Field Size="2" Format="##" Type="2" Dim ="1" name="tc_memb" Caption="MEH NOIKOKYPIOY"/>
+      <Field Size="4" Format="###,###" Type="2" Dim ="1" name="tc_points" Caption="BA‡MOI"/>
+      <Field Size="10" Dim ="1" name="tc_fax" Caption="FAX"/>
+      <Field Size="1" Options="0,1,4,12,99" Format="##" Type="2" Dim ="1" name="tc_freq" Caption="XPONIAIE‘ EI‘KE–EI‘"/>
+      <Field Size="1" Options="1,2,3,4" Format="#" Type="2" Dim ="1" name="tc_marital" Caption="OIK.KATA‘."/>
+      <Field Size="4" Format="###,###" Type="2" Dim ="1" name="tc_redeem" Caption="EAP‚YP."/>
+      <Field Size="44" Dim ="1" name="tc_future1" Caption="Future"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" Dim ="1" name="tc_record" Caption="KATA‚PA”H"/>
+      <Field Size="8" Dim ="1" name="tc_id" Caption="XEIPI‘TH‘"/>
+      <Index name="trcusts">
+         <IndexEntry name="tc_no"/>
+      </Index>
+   </Table>
+</xml>

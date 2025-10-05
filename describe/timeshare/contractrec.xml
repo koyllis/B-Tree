@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="timeshare" Icon="money" name="Contract Receipts">
+      <Field Caption="Contract" File="timeshare.contract" Size="4" Type="2" name="contract"/>
+      <Field Caption="Receipt method" File="timeshare.receipttype" Size="2" Type="2" name="receipttype"/>
+      <Field Caption="Starting date" Size="4" Type="5" name="start"/>
+      <Field Caption="Amount" Format="######.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Installment" Format="######.##" Size="4" Type="4" name="installment"/>
+      <Field Caption="No. of installments" Size="2" Type="2" name="count"/>
+      <Field Caption="Paid installments" Size="2" Type="2" name="paid"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="contractrec">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="receipttype"/>
+         <IndexEntry name="start"/>
+      </Index>
+      <Index name="contractrec[receipttype]">
+         <IndexEntry name="receipttype"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="start"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,157 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table AutoNumber="1" System="insurance" SoftDelete="1" Icon="script" CanDelete="0" name="Contracts">
+      <Field Caption="Policy No." Force="1" Tip="1" name="policy"/>
+      <Field Caption="Issue date" Size="4" Type="5" Force="1" name="issue"/>
+      <Field Caption="Reference No." Strict="1" Size="4" Type="2" AutoCounter="1" name="reference" Modify="1"/>
+      <Field Caption="Expire date" Size="4" Type="5" name="expire"/>
+      <Field Caption="Customer" File="accounting.people" Size="2" Type="2" Force="1" name="people" Dll="1"/>
+      <Field Caption="Company" File="insurance.company" Size="2" Type="2" Force="1" name="company"/>
+      <Field Caption="Agent" File="insurance.agent" Size="2" Type="2" Force="1" name="agent"/>
+      <Field Caption="Shadow Agent" File="insurance.agent" Size="2" Type="2" name="extagent"/>
+      <Field Caption="Sub-agent" File="insurance.agent" Size="2" Type="2" name="subagent"/>
+      <Field Caption="Type" File="insurance.type" Size="1" Negative="0" Type="2" Force="1" name="type"/>
+      <Field Caption="Operation" File="accounting.operation" Size="1" Type="2" name="operation"/>
+      <Field Caption="Group" File="insurance.group" Size="1" Type="2" name="group"/>
+      <Field Caption="Renewal" Format="b" Size="1" Type="2" name="renew"/>
+      <Field Caption="Due date" Size="4" Type="5" name="due"/>
+      <Field Caption="Charge date" Size="4" Type="5" name="charge"/>
+      <Field Caption="Charge reference" Size="12" name="charge_reference"/>
+      <Field Caption="Vehicle" File="insurance.vehicle" Size="4" Type="2" name="vehicle"/>
+      <Field Caption="Installments" Size="1" Type="2" name="installments"/>
+      <Field Caption="Currency" Total="1" File="accounting.currency" Size="2" Type="2" name="currency"/>
+      <Field Caption="Premium" Total="1" Format="######.##" Size="4" Type="4" name="premium"/>
+      <Field Caption="Discount" Format="#####.##" Size="4" Type="4" name="discount"/>
+      <Field Caption="General fund" Total="1" Format="######.##" Size="4" Type="4" name="fund"/>
+      <Field Caption="Stamps" Total="1" Format="######.##" Size="4" Type="4" name="stamps"/>
+      <Field Caption="Fees" Total="1" Format="######.##" Size="4" Type="4" name="fees"/>
+      <Field Caption="Other" Total="1" Format="######.##" Size="4" Type="4" name="other"/>
+      <Field Caption="Extra" Format="######.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Total" Total="1" Format="######.##" Size="4" Type="4" name="total"/>
+      <Field Caption="Cancelation type" Size="1" Type="2" Options="Cancellation,ReductionOfValue,DriverRemoval,PremiumCorrection,Change,Additional" name="canceltype"/>
+      <Field Caption="Commission%" Format="###.####" Size="8" Type="3" name="commission"/>
+      <Field Caption="Notes" Size="50" name="notes"/>
+      <Field Caption="Syndicate" Size="50" name="syndicate"/>
+      <Field Caption="Internal notes" Size="50" name="internalnotes"/>
+      <Field Caption="Bank" File="accounting.bank" Size="2" Type="2" name="bank"/>
+      <Field Caption="Office commission" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="officecomm" Modify="1"/>
+      <Field Caption="Agent commission" Strict="1" Total="1" Format="######.##" Size="4" Type="4" name="agentcomm" Modify="1"/>
+      <Field Caption="Sub-agent commission" Strict="1" Format="######.##" Size="4" Type="4" name="subagentcomm" Modify="1"/>
+      <Field Strict="1" Caption="Extra commission" Format="######.##" Size="4" Type="4" name="extracomm" Modify="1"/>
+      <Field Caption="Cancellation policy" Strict="1" File="insurance.policy" Size="4" Type="2" name="cancelpolicy" Modify="1"/>
+      <Field Caption="Journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal" Modify="1"/>
+      <Field Caption="Charge date journal" Strict="1" File="accounting.journal" Size="4" Type="2" name="journal_charge" Modify="1"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="policy">
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[agent]">
+         <IndexEntry name="agent"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[bank]">
+         <IndexEntry name="bank"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[cancelpolicy]">
+         <IndexEntry name="cancelpolicy"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[company]">
+         <IndexEntry name="company"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[currency]">
+         <IndexEntry name="currency"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[group]">
+         <IndexEntry name="group"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[journal]">
+         <IndexEntry name="journal"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[journal_charge]">
+         <IndexEntry name="journal_charge"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[people]">
+         <IndexEntry name="people"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[subagent]">
+         <IndexEntry name="subagent"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy[vehicle]">
+         <IndexEntry name="vehicle"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy_charge">
+         <IndexEntry name="charge"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy_due">
+         <IndexEntry name="due"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy_expire">
+         <IndexEntry name="expire"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy_issue">
+         <IndexEntry name="issue"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="reference"/>
+      </Index>
+      <Index name="policy_reference">
+         <IndexEntry name="reference"/>
+         <IndexEntry name="policy"/>
+         <IndexEntry name="issue"/>
+      </Index>
+   </Table>
+</xml>

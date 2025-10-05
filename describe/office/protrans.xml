@@ -1,0 +1,25 @@
+<xml>
+	<Table name="Transactions" System="office" SoftDelete="1">
+	  <Field Caption="Transaction No." name="number" Size="4" Type="2" AutoCounter="1" Strict="1" Modify="1"/>
+	  <Field Caption="User" name="prouser" Size="2" Type="2" File="office.prouser"/>
+	  <Field Caption="Property" name="property" Size="4" Type="2" File="office.property"/>
+	  <Field Caption="Type" name="type" Size="1" Type="2" Options="ListingPayment,Subscription"/>
+	  <Field Caption="Payment Method" name="promethod" Size="2" Type="2" File="office.promethod"/>
+	  <Field Caption="Amount" name="amount" Size="8" Type="3"/>
+	  <Field Caption="Status" name="status" Size="1" Type="2" Options="Pending,Completed,Failed"/>
+	  <Field Caption="Modified" Hide="1" System="1" Size="8" Type="9" name="@modify_stamp"/>
+	  <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="0"/>
+	</Table>
+	<!-- Indexes -->
+	<Index name="protrans">
+	  <IndexEntry name="number"/>
+	</Index>
+	<Index name="protrans[property]">
+	  <IndexEntry name="property"/>
+	  <IndexEntry name="number"/>
+	</Index>
+	<Index name="protrans[prouser]">
+	  <IndexEntry name="prouser"/>
+	  <IndexEntry name="number"/>
+	</Index>
+</xml>

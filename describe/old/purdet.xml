@@ -1,0 +1,25 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table ModifyStamp="0" name="purdet" System="old">
+      <Field Size="4" Type="5" name="hd_date" Caption="Trans. date"/>
+      <Field Size="2" name="hd_doc" Caption="Document"/>
+      <Field Size="4" Format="#######" Type="2" name="hd_refer" Caption="Refer. No."/>
+      <Field Size="1" Format="###" Type="2" name="hd_line" Caption="Line"/>
+      <Field Size="12" name="hd_item" Caption="Item"/>
+      <Field Size="1" Format="###" Type="2" name="hd_loc" Caption="Loc."/>
+      <Field name="hd_desc" Caption="Description"/>
+      <Field Size="8" Format="#######.##" Type="3" name="hd_quant" Caption="Quantity"/>
+      <Field Size="8" Format="#######.##" Type="3" name="hd_price" Caption="Price"/>
+      <Field Size="4" Format="#######.##" Type="4" name="hd_disc" Caption="Discount"/>
+      <Field Size="4" Format="#######.##" Type="4" name="hd_total" Caption="Total"/>
+      <Field Size="4" Format="#######.##" Type="4" name="hd_vat" Caption="V.A.T."/>
+      <Field Size="10" name="hd_convert" Caption="Converted to"/>
+      <Field Size="4" Format="#######.##" Type="4" name="hd_newpr" Caption="New price."/>
+      <Index name="purdet">
+         <IndexEntry name="hd_date"/>
+         <IndexEntry name="hd_doc"/>
+         <IndexEntry name="hd_refer"/>
+         <IndexEntry name="hd_line"/>
+         <IndexEntry name="hd_item"/>
+      </Index>
+   </Table>
+</xml>

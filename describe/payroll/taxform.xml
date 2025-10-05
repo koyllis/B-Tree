@@ -1,0 +1,14 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" Icon="taxform" PDA="0" name="Tax Form">
+      <Field Caption="Line" Size="1" Type="2" name="code"/>
+      <Field Caption="Description" Tip="1" Size="50"/>
+      <Field Caption="Discount" Size="4" Type="4" Format="#####.##" name="discount"/>
+      <Field Caption="Maximum allowed(%)" Format="###.##" Size="8" Type="3" name="maxperc"/>
+      <Field Caption="Maximum gross(%)" Format="###.##" Size="8" Type="3" name="maxgross"/>
+      <Field Caption="Options" Format="b" Size="2" Options="ExcludeFromMaximum,UseRemaining,LifeInsurance" Type="2" name="option"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="taxform">
+         <IndexEntry name="code"/>
+      </Index>
+   </Table>
+</xml>

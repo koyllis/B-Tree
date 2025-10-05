@@ -1,0 +1,25 @@
+<xml>
+   <Table System="hotel" Icon="Home" name="Rooms">
+      <Field Size="20"/>
+      <Field Caption="Type" File="hotel.roomtype" Size="2" Type="2" name="type"/>
+      <Field Caption="Building" File="hotel.building" Size="2" Type="2" name="building"/>
+      <Field Caption="Floor" Size="1" Type="2" name="floor"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="room">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="room[building]">
+         <IndexEntry name="building"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="room[type]">
+         <IndexEntry name="type"/>
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="room_floor">
+         <IndexEntry name="building"/>
+         <IndexEntry name="floor"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,40 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" SoftDelete="1" CanDelete="0" name="Under Writing">
+      <Field Caption="Member" File="life.member" Size="4" Force="1" Type="2" name="member"/>
+      <Field Caption="Contract" File="life.contract" Size="2" Force="1" Type="2" name="contract"/>
+      <Field Caption="Entry date" Size="4" Force="1" Type="5" name="date"/>
+      <Field Caption="Account No." Size="13" name="accountno"/>
+      <Field Caption="Plan" File="life.plan" Size="2" Force="1" Type="2" name="plan"/>
+      <Field Caption="Coverage" Format="#######.##" Size="8" Type="3" name="coverage"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index name="underwrite">
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index CRC64="1" name="underwrite[contract]">
+         <IndexEntry name="contract"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="accountno"/>
+         <IndexEntry name="plan"/>
+      </Index>
+      <Index CRC64="1" name="underwrite[plan]">
+         <IndexEntry name="plan"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="underwrite_plan">
+         <IndexEntry name="member"/>
+         <IndexEntry name="plan"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="contract"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+   </Table>
+</xml>

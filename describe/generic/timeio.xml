@@ -1,0 +1,21 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table System="generic">
+      <Field Size="4" Type="2" File="generic.visitor" name="visitor" Caption="Visitor"/>
+      <Field Size="4" Format="dd/mm/yyyy" Type="5" name="t_date" Caption="Date"/>
+      <Field Size="4" Format="#######" Type="2" name="t_in" Caption="In"/>
+      <Field Size="4" Format="#######" Type="2" name="t_out" Caption="Out"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="timeio">
+         <IndexEntry name="visitor"/>
+         <IndexEntry name="t_date"/>
+         <IndexEntry name="t_in"/>
+         <IndexEntry name="t_out"/>
+      </Index>
+      <Index name="timeio[visitor]">
+         <IndexEntry name="visitor"/>
+         <IndexEntry name="t_date"/>
+         <IndexEntry name="t_in"/>
+         <IndexEntry name="t_out"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,26 @@
+<xml>
+   <Table System="pos" name="Detail Line Progress" Unordered="1" ImmediateChild="1" UserStamp="1">
+      <Field Caption="Transaction detail" File="pos.transdet" Size="8" Type="2" name="transdet"/>
+      <Field Caption="Operation" File="accounting.operation" Type="2" Size="2" name="operation"/>
+      <Field Caption="Modified" Size="8" Type="9" name="@modify_stamp"/>
+	  <Field Caption="User" Hide="1" File="system.user" System="1" Size="2" Type="2" name="@user_stamp"/>
+      <Index name="transdetprogress">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="operation"/>
+      </Index>
+
+      <Index name="transdetprogress[operation]">
+         <IndexEntry name="operation"/>
+         <IndexEntry name="transdet"/>
+      </Index>
+
+
+      <Index name="transdetprogress[modify]">
+         <IndexEntry name="transdet"/>
+         <IndexEntry name="@modify_stamp"/>
+         <IndexEntry name="operation"/>
+
+      </Index>
+
+   </Table>
+</xml>

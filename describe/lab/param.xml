@@ -1,0 +1,19 @@
+<xml>
+   <Table System="lab" name="Parameters">
+      <Field Caption="Location" File="system.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Options" Format="b" Size="4" Options="PrintLabel,SimpleSampleNo,ItemAlphaSort" Type="2" name="option"/>
+      <Field Caption="Sample days back" Format="####" Size="2" Type="2" name="daysback"/>
+      <Field Caption="T1 charge" Format="###.##" Size="4" Type="4" name="chargeT1"/>
+      <Field Caption="T2 charge" Format="###.##" Size="4" Type="4" name="chargeT2"/>
+      <Field Caption="Flow discount%" Format="###.##" Size="8" Type="3" name="flowdisc"/>
+      <Field Caption="COD load" Format="####" Size="8" Type="3" name="codload"/>
+      <Field Caption="Penalty" Format="####.##" Size="4" Type="4" name="penalty"/>
+      <Field Caption="Accredited limit%" Format="##" Size="2" Type="2" name="accredited"/>
+      <Field Caption="Director" Size="40" name="director"/>
+      <Field Caption="Certification No." Size="10" name="certno"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="param">
+         <IndexEntry name="location"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,22 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table name="Suppliers" System="pos" Bookmark="1">
+      <Field Size="50"/>
+      <Field Size="40" name="address1" Caption="Address 1"/>
+      <Field Size="40" name="address2" Caption="Address 2"/>
+      <Field Size="40" name="address3" Caption="Address 3"/>
+      <Field Size="20" name="phone" Caption="Phone"/>
+      <Field Size="20" name="fax" Caption="Fax"/>
+      <Field Size="50" name="email" Caption="Email"/>
+      <Field name="contact" Caption="Contact"/>
+      <Field Caption="Options" Format="b" Size="2" Options="ItemButtons" Type="2" name="option"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Field Hide="1" Size="16" System="1" name="@bookmark" Caption="Bookmark"/>
+      <Index name="supplier">
+         <IndexEntry name="name"/>
+      </Index>
+      <Index name="supplier_@bookmark">
+         <IndexEntry name="@bookmark"/>
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

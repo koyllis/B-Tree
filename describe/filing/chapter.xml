@@ -1,0 +1,13 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Short="Chapter" Icon="chapters" Dynamic="1" name="Chapters" System="filing" Index="chapter">
+      <Field Size="4" Format="#######" Type="2" File="filing.group" name="group" Caption="Group"/>
+      <Field Size="2" Format="#####" Type="2" name="chapter" Caption="Chapter"/>
+      <Field Size="50" name="description" Caption="Description"/>
+      <Field Size="4" Format="#######" Type="2" name="nextnumber" Caption="Last Number"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="chapter">
+         <IndexEntry name="group"/>
+         <IndexEntry name="chapter"/>
+      </Index>
+   </Table>
+</xml>

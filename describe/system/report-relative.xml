@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\solution\describe\gen.xdr">
+   <Table Root="1" System="system" name="Report Relative">
+      <Field Size="4" Type="2" File="system.report" name="report" Caption="Report"/>
+      <Field Size="4" Type="2" File="system.report" name="relative" Caption="Relative"/>
+      <Field Hide="1" Size="8" Type="5" System="1" name="@modify_stamp" Caption="Modified"/>
+      <Index name="report-relative">
+         <IndexEntry name="report"/>
+         <IndexEntry name="relative"/>
+      </Index>
+   </Table>
+</xml>

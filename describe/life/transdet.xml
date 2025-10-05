@@ -1,0 +1,49 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="life" SoftDelete="1" Icon="journal_entries" Dynamic="1" CanDelete="0" name="Details">
+      <Field Caption="Transaction" File="life.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Member" File="life.member" Size="4" Type="2" Force="1" name="member"/>
+      <Field Caption="Plan" File="life.contractplan" Size="2" Type="2" Force="1" name="contractplan"/>
+      <Field Caption="Entry" Size="4" Type="5" Force="1" name="date"/>
+      <Field Caption="Account No." Size="13" name="accountno"/>
+      <Field Caption="Members" Total="1" Size="4" Type="2" name="count"/>
+      <Field Caption="Premium" Total="1" Format="######.##" Size="4" Force="1" Type="4" name="premium"/>
+      <Field Caption="Charge" Total="1" Format="######.##" Size="4" Type="4" name="charge"/>
+      <Field Caption="Extra" Total="1" Format="######.##" Size="4" Type="4" name="extra"/>
+      <Field Caption="Commission" Total="1" Format="####.######" Size="8" Type="3" name="commission"/>
+      <Field Caption="Guarantee" Total="1" Format="######.##" Size="4" Type="4" name="guarantee"/>
+      <Field Caption="Retired" Total="1" Format="######.##" Size="4" Type="4" name="retired"/>
+      <Field Caption="Loan amount" Total="1" Format="######.##" Size="8" Type="3" name="amount"/>
+      <Field Caption="Death only" Total="1" Format="b" Size="1" Type="2" name="death"/>
+      <Field Caption="Reference" Total="1" Size="4" Type="2" name="reference"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Field Caption="SoftDelete" Format="b" Hide="1" System="1" Size="1" Type="2" name="@delete" HideReport="1"/>
+      <Index CRC64="1" name="transdet">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="transdet[contractplan]">
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="transdet[member]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+      <Index CRC64="1" name="transdet[member_date]">
+         <IndexEntry name="member"/>
+         <IndexEntry name="date"/>
+         <IndexEntry name="trans"/>
+         <IndexEntry name="contractplan"/>
+         <IndexEntry name="accountno"/>
+      </Index>
+   </Table>
+</xml>

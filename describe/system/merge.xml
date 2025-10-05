@@ -1,0 +1,12 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="system" name="merge">
+      <Field Caption="User" File="system.user" Size="4" Type="2" name="user"/>
+      <Field Caption="Cell" Size="20" name="cell"/>
+      <Field Caption="Amount" Format="########.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="merge">
+         <IndexEntry name="user"/>
+         <IndexEntry name="cell"/>
+      </Index>
+   </Table>
+</xml>

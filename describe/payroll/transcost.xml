@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="payroll" name="Project Costing">
+      <Field Caption="Payroll" File="payroll.trans" Size="4" Type="2" name="trans"/>
+      <Field Caption="Location" File="accounting.location" Size="4" Type="2" name="location"/>
+      <Field Caption="Hours" Total="1" Format="###.##" Size="8" Type="3" name="hours"/>
+      <Field Caption="Cost" Total="1" Format="####.##" Size="4" Type="4" name="cost"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="transcost">
+         <IndexEntry name="trans"/>
+         <IndexEntry name="location"/>
+      </Index>
+      <Index name="transcost[location]">
+         <IndexEntry name="location"/>
+         <IndexEntry name="trans"/>
+      </Index>
+   </Table>
+</xml>

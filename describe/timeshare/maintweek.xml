@@ -1,0 +1,19 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="timeshare" name="maintweek">
+      <Field Caption="Maintenance" File="timeshare.maintenance" Size="4" Type="2" name="maintenance"/>
+      <Field Caption="Apartment" File="timeshare.apartment" Size="2" Type="2" name="apartment"/>
+      <Field Caption="Week" Format="##" Size="1" Type="2" name="week"/>
+      <Field Caption="Amount" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="maintweek">
+         <IndexEntry name="maintenance"/>
+         <IndexEntry name="apartment"/>
+         <IndexEntry name="week"/>
+      </Index>
+      <Index name="maintweek[apartment]">
+         <IndexEntry name="apartment"/>
+         <IndexEntry name="maintenance"/>
+         <IndexEntry name="week"/>
+      </Index>
+   </Table>
+</xml>

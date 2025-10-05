@@ -1,0 +1,145 @@
+<xml>
+
+	<edit>
+		<before>
+			<script>
+			<![CDATA[
+
+				if ( _p1_ == 2) //modify
+					return true ;
+
+				btdet = manager.Create("detail", "accounting") ;
+				btdet.SetIndex("people") ;
+				btdet.Clear() ;
+
+				btdet.Field("people").Integer = bt.GetRecord() ;
+
+				detindex = btdet.Index ;
+
+				if ( detindex.readkey(4) == 1) //find
+				{
+					bt.Agent("Can't modify this field!\nThis customer is already in the general ledger") ;
+					return false ;
+				}
+
+				return true ;
+									
+				]]>
+			</script>
+		</before>
+
+		<after>
+			<script>
+				<![CDATA[
+					lastix = bt.SetIndex("") ;
+
+					cell = ug.FindCell("code") ;
+					bt.Field("code").String = cell.String ;
+
+					if ( bt.Test() == 1 )
+					{
+						bt.Agent("Duplicate Code! Please choose another!", "Alert") ;
+						return false ;
+						
+					}
+
+					bt.Index = lastix ;
+					return true ;
+				]]>
+			</script>
+		</after>
+
+		<verify>
+			<script>
+				<![CDATA[
+					if (field.GetID() <= 1)
+					{
+						illegal = "`~!@#$%^*_+[]|\\,;:<>?{}" ;
+						illegal += '"' ;
+
+						// no spaces in code
+
+						if (field.GetName() == "code")
+							illegal += ' ' ;
+
+						re = new RegExp(_p1_, "i") ;
+
+						if (illegal.search(re) != -1)
+						{
+							bt.Agent("Illegal characters", "Surprised") ;
+							return false ;
+						}
+					}
+				return true ;
+
+			]]>
+			</script>
+		</verify>
+
+		<change>
+			<script>
+				<![CDATA[
+				btparam = manager.Create("param", "accounting") ;
+				btparam.Field(0).String =  manager.SystemTable("user").Field("master").String ;
+
+				nDigits=44 ;
+				if (  btparam.Read(4, 0) & 3 )						
+					nDigits = btparam( "codestructure" ).Integer ;
+
+				nLeft   = nDigits / 10 ;
+				nRight  = nDigits % 10 ;
+
+				var s, s2 ;
+				name = _string_.String ;
+
+				if (  nDigits && field.GetName() == "name")
+				{
+					re = new RegExp(" ", "i") ;
+
+					nPos = name.search(re) ;					
+
+					if (nPos >= 0)
+						s2 = name.substr(0, Math.min(nPos, nLeft) ) + name.substr(nPos + 1, nRight) ;
+					else
+						s2 = name.substr(0, nLeft + nRight) ;
+
+
+					cell = ug.FindCell("code") ;
+					cell.String = s2 ;
+					ug.RedrawCell(cell.TempCol, cell.TempRow) ;
+//					RedrawRow(1) ;
+				}
+		
+			]]>
+			</script>
+		</change>
+
+	</edit>
+
+	<startinsert>
+		<script>
+			<![CDATA[
+
+			btparam = manager.Create("param", "accounting") ;
+			btparam.Field("code").String =  manager.SystemTable("user").Field("master").String ;
+			rs = btparam.Read() ;
+
+			btparam.SyncForeign("") ;
+		]]>
+		</script>
+	</startinsert>
+
+	<evaluaterecord>
+		<script>
+			<![CDATA[
+	]]>
+		</script>
+			
+	</evaluaterecord>
+
+	<insert>
+	</insert>
+
+
+</xml>
+	

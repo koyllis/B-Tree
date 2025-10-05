@@ -1,0 +1,26 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table CanModify="0" System="accounting" Dynamic="1" name="Balance Reply">
+      <Field Caption="Customer" File="accounting.people" Size="4" Force="1" Type="2" name="people"/>
+      <Field Strict="1" Caption="Date" Size="8" Auto="1" Type="5" name="date"/>
+      <Field Caption="Person" Size="20" Force="1" name="person"/>
+      <Field Caption="Reply" Size="60" Force="1" name="reply"/>
+      <Field Caption="Type" Size="1" Options="MailCheque,PickupCheck,CallAgain,NoAnswer" Type="2" name="type"/>
+      <Field Caption="Reminder date" Size="4" Type="5" name="reminder"/>
+      <Field Caption="Receipt date" Size="4" Type="5" name="receipt"/>
+      <Field Caption="Amount" Format="#####.##" Size="4" Type="4" name="amount"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="reply">
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+      <Index name="reply_date">
+         <IndexEntry name="date"/>
+         <IndexEntry name="people"/>
+      </Index>
+      <Index name="reply_reminder">
+         <IndexEntry name="reminder"/>
+         <IndexEntry name="people"/>
+         <IndexEntry name="date"/>
+      </Index>
+   </Table>
+</xml>

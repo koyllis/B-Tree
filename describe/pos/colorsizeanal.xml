@@ -1,0 +1,17 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="pos" name="Color And Size Analysis">
+      <Field Caption="Item" File="pos.item" Size="4" Type="2" name="item"/>
+      <Field Caption="ColorSize" Size="7" name="colorsize"/>
+      <Field Caption="Quantity" Total="1" Percentage="2" Format="#####" Size="2" Type="2" name="quantity" PercentageLocal="1"/>
+      <Field Caption="Net sales" Total="1" Format="#####.##" Size="4" Type="4" name="total"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="colorsizeanal">
+         <IndexEntry name="item"/>
+         <IndexEntry name="colorsize"/>
+      </Index>
+      <Index name="colorsizeanal_colorsize">
+         <IndexEntry name="colorsize"/>
+         <IndexEntry name="item"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,16 @@
+<xml xmlns="x-schema:d:\mmhbb\describe\gen.xdr">
+   <Table System="old" ModifyStamp="0" name="szstyle">
+      <Field Size="12" Dim ="1" name="sz_style" Caption="Style"/>
+      <Field Size="3" Dim ="1" name="sz_size" Caption="Size"/>
+      <Field Size="4" Type="4" Dim ="1" name="sz_price1" Caption="Foreign"/>
+      <Field Size="4" Type="4" Dim ="1" name="sz_price2" Caption="Cost"/>
+      <Field Size="4" Type="4" Dim ="1" name="sz_price3" Caption="Special"/>
+      <Field Size="4" Type="4" Dim ="1" name="sz_price4" Caption="Retail"/>
+      <Field Size="4" Type="4" Dim ="1" name="sz_price5" Caption="Price5"/>
+      <Field Size="4" Type="4" Dim ="1" name="sz_price6" Caption="Price"/>
+      <Index name="szstyle">
+         <IndexEntry name="sz_style"/>
+         <IndexEntry name="sz_size"/>
+      </Index>
+   </Table>
+</xml>

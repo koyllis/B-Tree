@@ -1,0 +1,11 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="generic" name="showtime">
+      <Field Caption="Date" Size="4" Type="5" Tip="1" name="date"/>
+      <Field Caption="Time" Size="2" Type="5" Tip="1" name="time"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="showtime">
+         <IndexEntry name="date"/>
+         <IndexEntry name="time"/>
+      </Index>
+   </Table>
+</xml>

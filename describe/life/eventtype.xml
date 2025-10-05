@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:e:\mmhbb\describe\gen.xdr">
+   <Table System="life" name="eventtype">
+      <Field/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="eventtype">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

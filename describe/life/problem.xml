@@ -1,0 +1,9 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table Icon="types" name="Problem Types" System="life">
+      <Field/>
+      <Field Hide="1" Size="8" Type="5" name="@modify_stamp" System="1" Caption="Modified"/>
+      <Index name="problem">
+         <IndexEntry name="name"/>
+      </Index>
+   </Table>
+</xml>

@@ -1,0 +1,28 @@
+<xml xmlns="x-schema:c:\mmhbb\describe\gen.xdr">
+   <Table System="student" Icon="glyph" name="Questions">
+      <Field Caption="Educator" File="student.associate" Size="4" Type="2" Force="1" name="associate"/>
+      <Field Strict="1" Caption="Number" Size="4" Type="2" AutoCounter="1" name="number" Modify="1"/>
+      <Field Caption="Description" Size="50"/>
+      <Field Caption="Type" Size="2" Type="2" Options="MultipleChoice,TrueFalse,Essay,FillTheBlanks" Force="1" name="type"/>
+      <Field Caption="True/False type" File="student.truefalse" Size="2" Type="2" name="version"/>
+      <Field Caption="Matching group" File="student.qgroup" Size="2" Type="2" name="qgroup"/>
+      <Field Caption="No. of choices" Size="1" Type="2" Force="1" name="count"/>
+      <Field Caption="Correct" Size="1" Type="2" name="correct"/>
+      <Field Caption="Force last" Format="b" Size="1" Type="2" name="last"/>
+      <Field Caption="Modified" Hide="1" System="1" Size="8" Type="5" name="@modify_stamp"/>
+      <Index name="question">
+         <IndexEntry name="associate"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="question[qgroup]">
+         <IndexEntry name="qgroup"/>
+         <IndexEntry name="associate"/>
+         <IndexEntry name="number"/>
+      </Index>
+      <Index name="question[version]">
+         <IndexEntry name="version"/>
+         <IndexEntry name="associate"/>
+         <IndexEntry name="number"/>
+      </Index>
+   </Table>
+</xml>
